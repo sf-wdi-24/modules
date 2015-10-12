@@ -8,7 +8,9 @@
 
 3. If you haven't already, install the <a href="https://toolbelt.heroku.com" target="_blank">Heroku toolbelt</a>.
 
-4. Add a new remote to your project repository that points to Heroku's servers. **Your project must be a git repo to continue.**
+## Create Your Heroku App
+
+1. Add a new remote to your project repository that points to Heroku's servers. **Your project must be a git repo to continue.**
 
   In the Terminal, from your project's root directory, run:
 
@@ -18,7 +20,7 @@
 
   If you don't supply a name for your app, Heroku will create a random one for you. We strongly suggest giving your app a name to personalize it and reflect its purpose.
 
-5. Also in the Terminal, from your project's root directory, run:
+2. Also in the Terminal, from your project's root directory, run:
 
   ```bash
   $ git remote -v
@@ -33,7 +35,7 @@
   origin	https://github.com/YOUR_GITHUB_USERNAME/YOUR_GITHUB_REPO_NAME.git (push)
   ```
 
-## To Start
+## Prepare Your App for Deploy
 
 1. In the Terminal, from your project's root directory, create a `Procfile`. "Procfile" should have a capital "P", it should not have an extension, and it should be in the same folder as your main server file (usually `server.js`).
 
@@ -54,7 +56,24 @@
   app.listen(process.env.PORT || 3000);
   ```
 
-## Heroku MongoLab
+4. Check your `package.json` to make sure all your dependencies are present. If something is missing, install it. For example, run the following if you're using `express` and `body-parser` but don't have them listed under `"dependencies"`:
+
+  ```bash
+  $ npm install --save express body-parser
+  ```
+
+5. Now add a `start` script for your application in your `package.json`:
+
+  ```js
+  // package.json
+  "scripts": {
+    "start": "node server.js"
+  }
+  ```
+
+  This is assuming your main application file is called `server.js`. If your main file is called something else, adjust the script to use your file name.
+
+## Add Heroku MongoLab
 
 1. In the Terminal, from your project's root directory, add a Mongo database to your Heroku app:
 
@@ -75,28 +94,9 @@
   );
   ```
 
-## Dependencies (Node Modules)
+## Deploy to Heroku
 
-1. In Sublime, check your `package.json` to make sure all your dependencies are present. If something is missing, install it. For example, run the following if you're using `express` and `body-parser` but don't have them listed under `"dependencies"`:
-
-  ```bash
-  $ npm install --save express body-parser
-  ```
-
-2. Now add a `start` script for your application in your `package.json`:
-
-  ```js
-  // package.json
-  "scripts": {
-    "start": "node server.js"
-  }
-  ```
-
-  This is assuming your main application file is called `server.js`. If your main file is called something else, adjust the script to use your file name.
-
-## Deploying
-
-1. You should be all set up now, so add and commit your changes before pushing to Heroku:
+1. You should be all set up now, so add and commit your changes, then push to Heroku:
 
   ```bash
   $ git status
@@ -111,3 +111,17 @@
   ```bash
   $ heroku open
   ```
+
+## Debugging
+
+Hopefully your app works on Heroku, however, you may see a sad page that looks like this...
+
+![heroku-application-error](https://cloud.githubusercontent.com/assets/7833470/10436335/9a97efce-70da-11e5-87ba-bdb4ae0c8596.png)
+
+1. If this happens to you, check your Heroku logs in the Terminal:
+
+  ```bash
+  $ heroku logs
+  ```
+
+2. Scan all of the logs for error messages. If you see obvious error messages, goole what they mean. If you still can't find a solution, now would be a good time to ask an instructor for help.
