@@ -24,6 +24,9 @@ Checkout other codewars.
 ### Medium
 * Not assigning `function (a) { a + 1; return a;}(1)`
 * Missing parameters `function () {return a;}(2)`
+* Order of function calls.
+* Order of operation
+* `var a = "Hello Number: " + number + 1;`
 
 ### Hard
 * State mutation problem `a = 2; b = a; b += 1; a == 2;`
