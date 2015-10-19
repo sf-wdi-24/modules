@@ -12,6 +12,6 @@
 * Make pull requests from feature branches to "develop" branch
 * Add "WIP" to the title for in-progress pull requests
 * Don't merge your own branch
-* At least one other instructor must review your branch before its ready to merge into "develop"
+* At least one other instructor must review your branch before it's ready to merge into "develop"
 * When done reviewing a pull request, add a comment with "+1"
 * Zoe merges pull requests from "develop" into "master"
