@@ -1,4 +1,5 @@
 ## Week 1 - Controlling the DOM
+
 <table>
   <tr>
     <th></th>
@@ -11,36 +12,36 @@
   <tr>
     <td>Drills</td>
     <td>Course Overview</td>
-    <td>JS Data Types</td>
-    <td>JS Data Types</td>
-    <td>JS Functions</td>
+    <td>Debugging JavaScript</td>
+    <td>JavaScript Data Types</td>
+    <td>JavaScript Functions</td>
     <td>Assessment</td>
   </tr>
   <tr>
     <td>Module1</td>
     <td>Culture Setting</td>
-    <td>HTML/CSS</td>
-    <td>JS Control Flow</td>
-    <td>Intro DOM Manipulation & jQuery</td>
+    <td>HTML/CSS, Sublime Text</td>
+    <td>JavaScript Control Flow</td>
+    <td>Intro DOM Manipulation</td>
     <td>Review</td>
   </tr>
   <tr>
     <td>Module2</td>
     <td>
       Assessment<br><br>
-      What is the Internet?
+      What is the Internet, Terminal, Git/GitHub
     </td>
     <td>Intro Bootstrap</td>
-    <td>JS Functions</td>
-    <td>DOM Context & Event Binding</td>
-    <td>Intro Weekend Lab</td>
+    <td>JavaScript Functions</td>
+    <td>DOM Context & Event-Binding</td>
+    <td>Intro Weekend Lab (Tic Tac Toe)</td>
   </tr>
   <tr>
     <td>HW</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Command Line Mystery</td>
+    <td>Build Website in HTML/CSS, Bootstrap</td>
+    <td>JavaScript Functions</td>
+    <td>Add Interactivity to Tues HW</td>
+    <td>Weekend Lab (Tic Tac Toe)</td>
   </tr>
 </table>
