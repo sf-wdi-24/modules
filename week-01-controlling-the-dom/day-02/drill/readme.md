@@ -37,11 +37,12 @@ For advanced challenges we'll use [CodeWars](http://www.codewars.com/) which we 
   * [http://jsfiddle.net/eerwitt/2rvpLw66/](http://jsfiddle.net/eerwitt/2rvpLw66/)
 
 ### Medium
-* Not assigning `function (a) { a + 1; return a;}(1)`
-* Missing parameters `function () {return a;}(2)`
-* Order of function calls.
-* Order of operation
-* `var a = "Hello Number: " + number + 1;`
+* Fix the function `ghostify` to properly `alert` that Casper is a ghost.
+  * [http://jsfiddle.net/eerwitt/64uwoz3y/](http://jsfiddle.net/eerwitt/64uwoz3y/)
+* Fix the function `currentTime` to report the current date.
+  * [http://jsfiddle.net/eerwitt/2uxcrhwo/](http://jsfiddle.net/eerwitt/2uxcrhwo/)
+* Fix the function `castFinalVote` to properly report the number of votes for each player.
+  * [http://jsfiddle.net/eerwitt/fyr23kg6/](http://jsfiddle.net/eerwitt/fyr23kg6/)
 
 ### Hard
 * [Debug Celsius converter](http://www.codewars.com/kata/grasshopper-debug)
