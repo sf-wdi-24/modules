@@ -1,18 +1,34 @@
-# Intro in to Bootstrap
 
-* show an example of non-responsive website
-* pull up websites that use the responsive design of Bootstrap
-* emphasize the ordering of the stylesheets in the head of the document
-* go over more customization for the docs
-* walk through an example of creating a document, using the getbootstrap site, and implementing and element from there.
-* introduce the challenges for the afternoon (keeping them light in anticipation for the HW lab)
-*  Intro the HW lab (recreating a site that they find on the web.)
 
-## Sites that use Bootstrap
+#  <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" width="60">  Intro to Bootstrap
 
-#### <a href="https://www.instacart.com/">Instacart</a><br>
-#### <a href="https://www.lyft.com/">Lyft</a><br>
-#### <a href="https://www.meteor.com/">Meteor</a><br>
+### Why you might want to use Bootstrap
+ 1. <b>Speed of Development</b><br>
+  The use of Bootstrap really increases the speed at which a developer can stylize their webpage.  There are a lot of prewritten tools that allow the developer to put together a page without coding from scratch.
+
+ 2. <b>Responsiveness</b><br>
+  Bootstrap comes with a responsive design pattern that allows programmers to create pages that respond to the different screen sizes of phones, tablets, and computer monitors.
+
+ 3. <b>Customization</b><br>
+  While Bootstrap comes with a lot of built in features, a developer can customize the different components of Bootstrap to create a look that fits the needs of the site.
+
+ 4. <b>Support</b><br>
+  There is a large community of developers that use Bootstrap in their personal projects and on the professional landscape.  Because of this, there is a large and well-documented community of support throughout the web whenever a developer has a question or runs into a problem.
+
+### How to use Bootstrap
+<li>Add the viewport meta tag and the <a href="http://getbootstrap.com/getting-started/#download">Bootstrap CDN</a> to the ```<head></head>``` of your HTML file.
+
+``` <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+```
+
+## Bootstrap on the Web!!!
+
+#### <a href="https://www.instacart.com/">Instacart</a>
+#### <a href="https://www.lyft.com/">Lyft</a>
+#### <a href="https://www.meteor.com/">Meteor</a>
 
 ## Challenges
 
@@ -24,5 +40,5 @@
 
 ## Further Reading
 
-Understanding the Bootstrap System
-Inspiring Uses of Bootstrap
+<a href="https://scotch.io/tutorials/understanding-the-bootstrap-3-grid-system">Understanding the Bootstrap System</a><br>
+<a href="http://expo.getbootstrap.com/">Inspiring Uses of Bootstrap</a>
