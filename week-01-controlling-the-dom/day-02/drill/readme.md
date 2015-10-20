@@ -6,6 +6,14 @@
 | Understand common developer pitfalls. |
 | Fix common problems which impact developers. |
 
+## Why?
+
+> If debugging is the process of removing bugs, then programming must be the process of putting them in. [Edsger W. Dijkstra](https://en.wikiquote.org/wiki/Programming#Debugging)
+
+We are human and make mistakes. It's OK to make mistakes but in a complex computer program they are hard to track down. Becoming comfortable with debugging will make it easier to track down errors in logic.
+
+The real world impact of bugs can be both funny and deadly. [List of software bugs](https://en.wikipedia.org/wiki/List_of_software_bugs) **incomplete**
+
 ### Challenges
 
 Challenges are primarily available as independent JSFiddle code snippets. The code in JSFiddle can be executed as if it were running on your website.
@@ -17,12 +25,16 @@ To execute a challenge on JSFiddle, click the "Run" button.
 For advanced challenges we'll use [CodeWars](http://www.codewars.com/) which we recommend using for practice. A CodeWars account is required for an advanced challenge.
 
 ### Easy
-* Fix the function `subtract` to properly subtract two number.
+* Fix the function `subtract` to properly subtract two numbers.
   * [http://jsfiddle.net/eerwitt/wwp7L069/](http://jsfiddle.net/eerwitt/wwp7L069/)
-* Missing semicolon.
-* Misspelled variables `var a = 7; a1 + 2;`
-* `var function () {}`
-* `var a = return 2; a();`
+* Fix the function `multiply` to properly multiply two numbers.
+  * [http://jsfiddle.net/eerwitt/8p27eo1r/](http://jsfiddle.net/eerwitt/8p27eo1r/)
+* Fix the function `pizzaCooker` to return the amount of dough required after making a pizza.
+  * [http://jsfiddle.net/eerwitt/6umogevv/](http://jsfiddle.net/eerwitt/6umogevv/)
+* Fix the function `isPartyTime` to be true when it's time to party.
+  * [http://jsfiddle.net/eerwitt/oLLmbfrk/](http://jsfiddle.net/eerwitt/oLLmbfrk/)
+* Fix the code to return the number 2 from a function call.
+  * [http://jsfiddle.net/eerwitt/2rvpLw66/](http://jsfiddle.net/eerwitt/2rvpLw66/)
 
 ### Medium
 * Not assigning `function (a) { a + 1; return a;}(1)`
@@ -32,5 +44,6 @@ For advanced challenges we'll use [CodeWars](http://www.codewars.com/) which we 
 * `var a = "Hello Number: " + number + 1;`
 
 ### Hard
-* State mutation problem `a = 2; b = a; b += 1; a == 2;`
+* [Find variable which breaks strict comparison!](http://www.codewars.com/kata/find-variable-which-breaks-strict-comparison)
+* [Debug Celsius converter](http://www.codewars.com/kata/grasshopper-debug)
 * [Infinite loop](http://www.codewars.com/kata/unfinished-loop-bug-fixing-number-1/)
