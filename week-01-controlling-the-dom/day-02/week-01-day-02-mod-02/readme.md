@@ -1,6 +1,12 @@
 
 
 #  <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" width="60">  Intro to Bootstrap
+| Objectives|
+|-----------|
+|To understand why and how Bootstrap can help with stylish development|
+|To create a page using HTML/CSS|
+|To implement the Bootstrap library into existing and future projects|
+
 
 ### Why you might want to use Bootstrap
  1. <b>Speed of Development</b><br>
@@ -16,19 +22,41 @@
   There is a large community of developers that use Bootstrap in their personal projects and on the professional landscape.  Because of this, there is a large and well-documented community of support throughout the web whenever a developer has a question or runs into a problem.
 
 ### How to use Bootstrap
-<li>Add the viewport meta tag and the <a href="http://getbootstrap.com/getting-started/#download">Bootstrap CDN</a> to the ```<head></head>``` of your HTML file.
+Add the viewport meta tag and the <a href="http://getbootstrap.com/getting-started/#download">Bootstrap CDN</a> to the ```<head></head>``` of your HTML file.
 
-``` <head>
+```
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
 ```
 
-## Bootstrap on the Web!!!
+### Bootstrap Grid System
+1.  `.container` class holds `.row` classes
+2.  Rows create horizontal groups of columns
+3.  Site content lives in columns
+```
+<body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <p>This column takes up half the page.</p>
+        </div>
+        <div class="col-sm-6">
+          <p>And so does this one!</p>
+        </div>
+      </div>
+    </div>
+</body>
+```
+4.  `xs-*`, `sm-*`, `md-*`, `lg-*` refer to targeted device sizes  
+5.  The best way to learn about the Bootstrap grid system is to see it in action.
 
-#### <a href="https://www.instacart.com/">Instacart</a>
-#### <a href="https://www.lyft.com/">Lyft</a>
-#### <a href="https://www.meteor.com/">Meteor</a>
+## Bootstrap FTW!!!
+
+<b><a href="https://www.instacart.com/">Instacart</a></b><br>
+<b><a href="https://www.lyft.com/">Lyft</a></b><br>
+<b><a href="https://www.meteor.com/">Meteor</a></b>
 
 ## Challenges
 
@@ -36,6 +64,7 @@
 2. Add one container, one row, and three col-** classes (your columns can be any width that add up to 12).
 3. Make sure your three columns stack vertically when you are on mobile (xs) devices.
 4. Add content to your columns.
+5. Add some buttons!!
 
 
 ## Further Reading
