@@ -1,4 +1,4 @@
-# What is the Internet?
+# What is the Internet, Terminal, Git/GitHub
 
 ## Client vs Server
 
@@ -23,9 +23,29 @@ Items to cover.
 
 ## Create Development Directory
 
-Save under `~/develop`, don't put this in git ever.
+As a developer, you'll want to have a designated directory on your computer where you keep all your projects. This makes it faster to navigate to specific projects, since you know you can find them all in one place.
 
-Should we setup a global git ignore for that directory? [more info](https://help.github.com/articles/ignoring-files/)
+Follow these steps to set up your development directory (which we'll call `develop`):
+
+1. Change into your home directory:
+
+  ```bash
+  $ cd ~
+  ```
+
+2. Create a new directory called `develop`:
+
+  ```bash
+  $ mkdir develop
+  ```
+
+3. Whenever you start a new project, change into your `develop` directory, then you're ready to go!
+
+  ```bash
+  $ cd ~/develop
+  ```
+
+**Important:** DO NOT turn your home (`~`) or development (`~/develop`) directory into a git repository. This would be done by running `git init` in either directory (which you DO NOT want to do). If `~` or `~/develop` is a git repository, any project you create inside `~/develop` won't be properly tracked by GitHub.
 
 ## Start Homework
 
