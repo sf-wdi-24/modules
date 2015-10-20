@@ -44,6 +44,5 @@ For advanced challenges we'll use [CodeWars](http://www.codewars.com/) which we 
 * `var a = "Hello Number: " + number + 1;`
 
 ### Hard
-* [Find variable which breaks strict comparison!](http://www.codewars.com/kata/find-variable-which-breaks-strict-comparison)
 * [Debug Celsius converter](http://www.codewars.com/kata/grasshopper-debug)
 * [Infinite loop](http://www.codewars.com/kata/unfinished-loop-bug-fixing-number-1/)
