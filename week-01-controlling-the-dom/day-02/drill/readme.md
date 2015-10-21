@@ -11,7 +11,7 @@
 
 We are human and make mistakes. It's OK to make mistakes but in a complex computer program they are hard to track down. Becoming comfortable with debugging will make it easier to track down errors in logic.
 
-The real world impact of bugs can be both funny and deadly. [List of software bugs](https://en.wikipedia.org/wiki/List_of_software_bugs) **incomplete**
+The real world impact of bugs can be both funny and deadly. <a href="https://en.wikipedia.org/wiki/List_of_software_bugs" target="_blank">List of software bugs</a> **incomplete**
 
 ### Challenges
 
