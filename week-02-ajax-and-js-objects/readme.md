@@ -1,4 +1,4 @@
-## Week 1 - Controlling the DOM
+## Week 2 - AJAX & JavaScript Objects
 
 <table>
   <tr>
