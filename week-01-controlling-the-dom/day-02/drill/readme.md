@@ -2,9 +2,8 @@
 
 | Objectives |
 | :--- |
-| Follow logic a program as it runs. |
-| Understand common developer pitfalls. |
-| Fix common problems which impact developers. |
+| Analyze existing code for problems or invalid logic (bugs). |
+| Describe common issues in JavaScript code like missing semicolons. |
 
 ## Why?
 
@@ -22,9 +21,15 @@ To execute a challenge on JSFiddle, click the "Run" button.
 
 ![Run Challenge](https://cloud.githubusercontent.com/assets/1329385/10594818/bfc44ff8-7685-11e5-8b6a-dadc6f2d6fa5.png)
 
-For advanced challenges we'll use [CodeWars](http://www.codewars.com/) which we recommend using for practice. A CodeWars account is required for an advanced challenge.
+### Advanced Challenges
 
-### Easy
+For advanced challenges we'll use [CodeWars](http://www.codewars.com/) which we recommend using for practice. We use this site because it has a large number of different challenges created by other developers.
+
+Many challenges are commonly seen in developer interviews.
+
+[Details on creating a CodeWars account.](#create-codewars-account)
+
+### Fundamental
 * Fix the function `subtract` to properly subtract two numbers.
   * [http://jsfiddle.net/eerwitt/wwp7L069/](http://jsfiddle.net/eerwitt/wwp7L069/)
 * Fix the function `multiply` to properly multiply two numbers.
@@ -36,7 +41,7 @@ For advanced challenges we'll use [CodeWars](http://www.codewars.com/) which we 
 * Fix the code to return the number 2 from a function call.
   * [http://jsfiddle.net/eerwitt/2rvpLw66/](http://jsfiddle.net/eerwitt/2rvpLw66/)
 
-### Medium
+### More Challenging
 * Fix the function `ghostify` to properly `alert` that Casper is a ghost.
   * [http://jsfiddle.net/eerwitt/64uwoz3y/](http://jsfiddle.net/eerwitt/64uwoz3y/)
 * Fix the function `currentTime` to report the current date.
@@ -44,6 +49,19 @@ For advanced challenges we'll use [CodeWars](http://www.codewars.com/) which we 
 * Fix the function `castFinalVote` to properly report the number of votes for each player.
   * [http://jsfiddle.net/eerwitt/fyr23kg6/](http://jsfiddle.net/eerwitt/fyr23kg6/)
 
-### Hard
+### Advanced
 * [Debug Celsius converter](http://www.codewars.com/kata/grasshopper-debug)
 * [Infinite loop](http://www.codewars.com/kata/unfinished-loop-bug-fixing-number-1/)
+
+If you've finished the advanced challenges, continue on to new challenges in CodeWars.
+
+
+### Create CodeWars Account
+
+Goto [codewars.com](http://www.codewars.com/) and find the link which says "JavaScript".
+
+![Click JavaScript to Start Challenges](https://cloud.githubusercontent.com/assets/1329385/10649783/b8534ed8-77fa-11e5-9d58-23c9a57361c2.png)
+
+They'll ask to fix at least one JavaScript challenge and submit it before creating an account.
+
+Once you've passed all the JavaScript challenges you can connect with your GitHub. After you associate your GitHub account you are able to use CodeWars and progress on your own schedule.
