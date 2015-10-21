@@ -2,7 +2,7 @@
 
 | Objectives |
 | :--- |
-| Gain experience following a program as it runs. |
+| Follow logic a program as it runs. |
 | Understand common developer pitfalls. |
 | Fix common problems which impact developers. |
 
