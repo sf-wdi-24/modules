@@ -77,6 +77,7 @@ More specifically, **a version control system allows you to:**
 | Add file to git repo (stage for commit) | `git add <filename>` |
 | Add (stage) all files in current directory | `git add .` |
 | Commit (save) a version | `git commit -m "message describing changes"` |
+| Push commits to GitHub (remote repository) | `git push <remote> <branch>` |
 | Show version history | `git log <filename>` |
 | Get help with git commands | `git help <command>` |
 
@@ -107,9 +108,23 @@ More specifically, **a version control system allows you to:**
   $ cd command-line-mystery
   ```
 
-![screen-shot-2015-10-20-at-17 25 24](https://cloud.githubusercontent.com/assets/7833470/10625506/ba15d4cc-7758-11e5-8302-a9c412567cc0.png)
+6. At this point, begin writing code to complete the assignment. Make sure you're committing frequently and pushing to GitHub. A typical workflow looks something like this:
 
-![screen-shot-2015-10-20-at-17 25 49](https://cloud.githubusercontent.com/assets/7833470/10625507/bc97d38a-7758-11e5-8fe9-e4846e06e454.png)
+  ```bash
+  # make changes using your text editor
+  $ git status
+  $ git add .
+  $ git commit -m "message describing changes"
+  $ git push origin master
+  ```
+
+7. Once you're done with the assignment and have committed and pushed ALL of your changes to GitHub, it's time to make a pull request back to the original homework repo. Go to your forked copy of the repo on GitHub, and click the "Pull Request" button.
+
+  ![screen-shot-2015-10-20-at-17 25 24](https://cloud.githubusercontent.com/assets/7833470/10625506/ba15d4cc-7758-11e5-8302-a9c412567cc0.png)
+
+8. GitHub takes you to a new view and asks if you want to create the pull request. Click the green button, and that's it - you've now created a pull request to submit your homework!
+
+  ![screen-shot-2015-10-20-at-17 25 49](https://cloud.githubusercontent.com/assets/7833470/10625507/bc97d38a-7758-11e5-8fe9-e4846e06e454.png)
 
 ## Resources
 
