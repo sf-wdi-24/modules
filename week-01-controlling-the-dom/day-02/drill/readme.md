@@ -19,7 +19,7 @@ Challenges are primarily available as independent JSFiddle code snippets. The co
 
 To execute a challenge on JSFiddle, click the "Run" button.
 
-![Run Challenge](https://cloud.githubusercontent.com/assets/1329385/10594818/bfc44ff8-7685-11e5-8b6a-dadc6f2d6fa5.png)
+[![Run Challenge](https://cloud.githubusercontent.com/assets/1329385/10594818/bfc44ff8-7685-11e5-8b6a-dadc6f2d6fa5.png)](http://jsfiddle.net)
 
 ### Advanced Challenges
 
@@ -60,7 +60,7 @@ If you've finished the advanced challenges, continue on to new challenges in Cod
 
 Goto [codewars.com](http://www.codewars.com/) and find the link which says "JavaScript".
 
-![Click JavaScript to Start Challenges](https://cloud.githubusercontent.com/assets/1329385/10649783/b8534ed8-77fa-11e5-9d58-23c9a57361c2.png)
+[![Click JavaScript to Start Challenges](https://cloud.githubusercontent.com/assets/1329385/10649783/b8534ed8-77fa-11e5-9d58-23c9a57361c2.png)](http://www.codewars.com)
 
 They'll ask to fix at least one JavaScript challenge and submit it before creating an account.
 
