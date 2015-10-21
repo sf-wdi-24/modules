@@ -1,5 +1,11 @@
 # What is the Internet, Terminal, Git/GitHub
 
+| Objectives |
+| :--- |
+| Explain how a client and a server interact |
+| Navigate and manipulate files through the Terminal |
+| Practice forking and cloning GitHub repositories |
+
 ## Client vs Server
 
 * TCP/IP Basics
@@ -47,6 +53,40 @@ Follow these steps to set up your development directory (which we'll call `devel
 
 **Important:** DO NOT turn your home (`~`) or development (`~/develop`) directory into a git repository. This would be done by running `git init` in either directory (which you DO NOT want to do). If `~` or `~/develop` is a git repository, any project you create inside `~/develop` won't be properly tracked by GitHub.
 
-## Start Homework
+## Git/GitHub
 
-In person start the homework, walk over process to fork the repository and clone it locally then create a pull request to submit it.
+You'll be using git and GitHub every day throughout this course (and as a developer in the industry) for version control. **Version control** is a system that records changes to a file or set of files over time so that you can recall specific versions later.
+
+More specifically, **a version control system allows you to:**
+
+* Review changes made over time
+* Revert files (or an entire project) back to a previous state
+* Collaborate on a project with other developers
+* Track down the origin of bugs in the code
+* Back up your projects on a remote server
+
+**Git** is a version control system and **GitHub** is a social network built around git.
+
+### Git Basics
+
+| Action | Command |
+| :--- | :--- |
+| Create new git repository | `git init` |
+| Check status of git repo | `git status` |
+| Check differences since last commit | `git diff <filename>` |
+| Add file to git repo (stage for commit) | `git add <filename>` |
+| Add (stage) all files in current directory | `git add .` |
+| Commit (save) a version | `git commit -m "message describing changes"` |
+| Show version history | `git log <filename>` |
+| Get help with git commands | `git help <command>` |
+
+### Forking a GitHub Repo
+
+Forking a GitHub repository creates a remote copy of that repo on your GitHub account.
+
+<!-- @TODO: Add screenshots of forking/cloning -->
+
+## Resources
+
+* <a href="https://github.com/0nn0/terminal-mac-cheatsheet/wiki/Terminal-Cheatsheet-for-Mac-(-basics-)" target="_blank">Terminal Cheatsheet for Mac</a>
+* <a href="https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf" target="_blank">Git Cheat Sheet</a>
