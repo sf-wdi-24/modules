@@ -3,9 +3,17 @@
 #  <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" width="60">  Intro to Bootstrap
 | Objectives|
 |-----------|
-|To understand why and how Bootstrap can help with stylish development|
-|To create a page using HTML/CSS|
-|To implement the Bootstrap library into existing and future projects|
+|Describe what Bootstrap is and explain how the grid system works|
+|Place different Bootstrap components onto a static page|
+|Manipulate different Bootstrap elements with custom CSS|
+|Design and create webpages using Bootstrap elements and styling|
+
+### How important is style to web development?
+ 1. Along with writing elegant code we as developers want to be able to present our pages in a beautiful and user-friendly manner.
+
+ 2. Great presentation and user experience through styling creates a site that users will want to repeatedly visit.
+
+ 3. Finally, many employers will use a challenge for front-end developers to recreate a site using views and specifications of their site.
 
 
 ### Why you might want to use Bootstrap
