@@ -31,23 +31,23 @@ Many challenges are commonly seen in developer interviews.
 
 ### Fundamental
 * Fix the function `subtract` to properly subtract two numbers.
-  * <a href="http://jsfiddle.net/eerwitt/wwp7L069/" target="_blank">http://jsfiddle.net/eerwitt/wwp7L069/</a>
+  * <a href="http://jsfiddle.net/eerwitt/wwp7L069/" target="_blank">Subtraction Challenge</a>
 * Fix the function `multiply` to properly multiply two numbers.
-  * <a href="http://jsfiddle.net/eerwitt/8p27eo1r/" target="_blank">http://jsfiddle.net/eerwitt/8p27eo1r/</a>
+  * <a href="http://jsfiddle.net/eerwitt/8p27eo1r/" target="_blank">Multiplication Challenge</a>
 * Fix the function `pizzaCooker` to return the amount of dough required after making a pizza.
-  * <a href="http://jsfiddle.net/eerwitt/6umogevv/" target="_blank">http://jsfiddle.net/eerwitt/6umogevv/</a>
+  * <a href="http://jsfiddle.net/eerwitt/6umogevv/" target="_blank">Pizza Cooker Challenge</a>
 * Fix the function `isPartyTime` to be true when it's time to party.
-  * <a href="http://jsfiddle.net/eerwitt/oLLmbfrk/" target="_blank">http://jsfiddle.net/eerwitt/oLLmbfrk/</a>
+  * <a href="http://jsfiddle.net/eerwitt/oLLmbfrk/" target="_blank">Andrew W.K. Challenge</a>
 * Fix the code to return the number 2 from a function call.
-  * <a href="http://jsfiddle.net/eerwitt/2rvpLw66/" target="_blank">http://jsfiddle.net/eerwitt/2rvpLw66/</a>
+  * <a href="http://jsfiddle.net/eerwitt/2rvpLw66/" target="_blank">Giving Up Challenge</a>
 
 ### More Challenging
 * Fix the function `ghostify` to properly `alert` that Casper is a ghost.
-  * <a href="http://jsfiddle.net/eerwitt/64uwoz3y/" target="_blank">http://jsfiddle.net/eerwitt/64uwoz3y/</a>
+  * <a href="http://jsfiddle.net/eerwitt/64uwoz3y/" target="_blank">Ghostify Challenge</a>
 * Fix the function `currentTime` to report the current date.
-  * <a href="http://jsfiddle.net/eerwitt/2uxcrhwo/" target="_blank">http://jsfiddle.net/eerwitt/2uxcrhwo/</a>
+  * <a href="http://jsfiddle.net/eerwitt/2uxcrhwo/" target="_blank">Current Time Challenge</a>
 * Fix the function `castFinalVote` to properly report the number of votes for each player.
-  * <a href="http://jsfiddle.net/eerwitt/fyr23kg6/" target="_blank">http://jsfiddle.net/eerwitt/fyr23kg6/</a>
+  * <a href="http://jsfiddle.net/eerwitt/fyr23kg6/" target="_blank">Ronaldo vs Messi Challenge</a>
 
 ### Advanced
 * <a href="http://www.codewars.com/kata/grasshopper-debug" target="_blank">Debug Celsius converter</a>
