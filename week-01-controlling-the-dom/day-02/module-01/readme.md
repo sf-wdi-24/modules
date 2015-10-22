@@ -73,7 +73,7 @@ h2.column-title>div#calendar>span>button
 
 ## Challenges
 
-Fork and clone the css-basics-challenges repo, and work through the challenges below. *Note you will have to link the CSS file first.*
+Fork and clone the <a href="https://github.com/sf-wdi-24/css-basics-challenges" target="_blank">css-basics-challenges</a> repo, and work through the challenges below. *Note you will have to link the CSS file first.*
 
 1. Make an unordered HTML list of the following animals:  
   * mouse
