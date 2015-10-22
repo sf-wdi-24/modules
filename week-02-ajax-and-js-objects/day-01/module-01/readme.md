@@ -1,10 +1,10 @@
 # Debugging JavaScript
 
- | Objectives |
- | :--- |
- | Inspect a variable's state using Chrome's JavaScript Debugger. |
- | Summarize why a debugger is useful while developing software. |
- | Analyze a debugger's watch list to find an out of scope variable. |
+| Objectives |
+| :--- |
+| Inspect a variable's state using Chrome's JavaScript Debugger. |
+| Summarize why a debugger is useful while developing software. |
+| Analyze a debugger's watch list to find an out of scope variable. |
 
 **It's OK if you don't know what all the terms in the objective mean, you will by the end of this module.**
 
@@ -40,31 +40,44 @@ My perfect cup of coffee includes these things:
 http://jsfiddle.net/eerwitt/uxazkv8m/
 
 # What is a debugger?
-* Show a complex program
-* Show a debugger
-* Some quotes from industry
+
+
+
 # Launching Chrome's JavaScript Debugger
+
 * Launch from inspecting element
 * Launch from keyword
+
 # Set a break point in Chrome's JavaScript Debugger
+
 * Debugging with console logging.
 * What is a break point.
 * Why set a break point.
 * Ask people to try setting a breakpoint.
 * Use the `debugger` keyword to set a breakpoint.
+
 # Inspect a variable's state while execution is paused
+
 * Look at a variables value
 * Inspect an object
 * Update an object
+
 # Continue execution of the program
+
 * When to continue
+
 # Stepping in and over code
+
 * Investigate deeper
 * Ignore misleading statements
+
 # Using the watch list in Chrome's JavaScript Debugger
+
 * Create for loop
 * Show outer scope, and inner scope
+
 # Conclusion
+
 * Challenge to try using the debugger.
 * Compare difficulty of debugging something more complex.
 * Practice with this tool will help in the projects you create and your ability to do them quicker.
