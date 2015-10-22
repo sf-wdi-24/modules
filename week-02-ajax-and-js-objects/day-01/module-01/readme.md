@@ -6,34 +6,39 @@
  | Summarize why a debugger is useful while developing software. |
  | Analyze a debugger's watch list to find an out of scope variable. |
 
-
-Explicit it is OK to not know it, ask for explanations of terms later.
-
-https://en.wikipedia.org/wiki/State_(computer_science)
-https://pragprog.com/magazines/2012-04/sand-piles-and-software
-http://blog.codinghorror.com/the-first-rule-of-programming-its-always-your-fault/
-
-## Terminology
-Variable State
-Debugger
-Debugging
-Execution
-Breaking
-Continuing
-Stepping over
-Step into
-step out
-Watch
-Call Stack
-Scope
-
+**It's OK if you don't know what all the terms in the objective mean, you will by the end of this module.**
 
 # Why use a debugger?
-* Did anyone experience frustration while not able to figure out why something is broken?
-* How did you fix your program?
-* Someone will come up to you and tell you something is broken, your product will be judged based on how quickly you respond to that issue.
-  * Ask about experiences with something broken and if it felt well when it was fixed quickly.
-* Ask about real world debugging (broken car, bad coffee)
+
+> Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it. [Brian W. Kernighan](http://www.amazon.com/gp/product/0070342075)
+
+Have you written code which doesn't seem to work and it's all the computers fault? You've reached the limit of your patience because the stupid computer won't do what you said. Well, unfortunately it wasn't the computer's fault, [it's always your fault](http://blog.codinghorror.com/the-first-rule-of-programming-its-always-your-fault/).
+
+Using a debugger will reduce the stress caused by your program not doing what you expect. It is a tool you will utilize when something strange is happening and you need to find out why.
+
+## The "real" world.
+
+![Move Fast and Break Things](https://imgs.xkcd.com/comics/move_fast_and_break_things.png)
+
+Have you ever received a broken product? Maybe a refrigerator which keeps food nice and warm instead of cold? It sucks but does it seem a little better when the refrigerator maker fixes it quickly?
+
+When you deliver software to your boss, a client or your customers they expect it to "work". This often isn't the case, something will be broken and there is an assumption that you will fix it quickly.
+
+Sometimes your software doesn't make it to anyone. It is stuck in an unfinished state where you give up on it. One of the most common reasons I've seen to leave work unfinished was caused by a bug which couldn't be figured out.
+
+## Debug my coffee.
+
+Let's work together to figure out why my coffee tastes bad. I usually make a "perfect" cup of coffee.
+
+My perfect cup of coffee includes these things:
+
+* Super hot water.
+* Super fresh coffee grounds.
+* 2 creamers.
+* 2 sugars.
+
+http://jsfiddle.net/eerwitt/uxazkv8m/
+
 # What is a debugger?
 * Show a complex program
 * Show a debugger
@@ -42,6 +47,7 @@ Scope
 * Launch from inspecting element
 * Launch from keyword
 # Set a break point in Chrome's JavaScript Debugger
+* Debugging with console logging.
 * What is a break point.
 * Why set a break point.
 * Ask people to try setting a breakpoint.
@@ -54,7 +60,7 @@ Scope
 * When to continue
 # Stepping in and over code
 * Investigate deeper
-* Ingore misleading statements
+* Ignore misleading statements
 # Using the watch list in Chrome's JavaScript Debugger
 * Create for loop
 * Show outer scope, and inner scope
@@ -63,3 +69,8 @@ Scope
 * Compare difficulty of debugging something more complex.
 * Practice with this tool will help in the projects you create and your ability to do them quicker.
 * Next time your program does something unexpected, try using the debugger.
+
+## References
+
+* [Computer State Wiki](https://en.wikipedia.org/wiki/State_%28computer_science%29)
+* [Sand Piles and Software](https://pragprog.com/magazines/2012-04/sand-piles-and-software)
