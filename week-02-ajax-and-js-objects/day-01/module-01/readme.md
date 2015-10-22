@@ -10,9 +10,9 @@
 
 # Why use a debugger?
 
-> Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it. [Brian W. Kernighan](http://www.amazon.com/gp/product/0070342075)
+> Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it. <a href="http://www.amazon.com/gp/product/0070342075" target="_blank">Brian W. Kernighan</a>
 
-Have you written code which doesn't seem to work and it's all the computers fault? You've reached the limit of your patience because the stupid computer won't do what you said. Well, unfortunately it wasn't the computer's fault, [it's always your fault](http://blog.codinghorror.com/the-first-rule-of-programming-its-always-your-fault/).
+Have you written code which doesn't seem to work and it's all the computers fault? You've reached the limit of your patience because the stupid computer won't do what you said. Well, unfortunately it wasn't the computer's fault, <a href="http://blog.codinghorror.com/the-first-rule-of-programming-its-always-your-fault/" target="_blank">it's always your fault</a>.
 
 Using a debugger will reduce the stress caused by your program not doing what you expect. It is a tool you will utilize when something strange is happening and you need to find out why.
 
@@ -85,5 +85,5 @@ http://jsfiddle.net/eerwitt/uxazkv8m/
 
 ## References
 
-* [Computer State Wiki](https://en.wikipedia.org/wiki/State_%28computer_science%29)
-* [Sand Piles and Software](https://pragprog.com/magazines/2012-04/sand-piles-and-software)
+* <a href="https://en.wikipedia.org/wiki/State_%28computer_science%29" target="_blank">Computer State Wiki</a>
+* <a href="https://pragprog.com/magazines/2012-04/sand-piles-and-software" target="_blank">Sand Piles and Software</a>
