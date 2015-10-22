@@ -138,19 +138,91 @@ pet.name
 
 ## Challenges
 
-1. Store your first name in a string variable
-2. Concatenate your last name with your first name
-3. Use [`split`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split) to turn your string variable into an array
-4. Use [`typeof`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof) to show how the output of [`split`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split) is different from the input
-5. Define a new array and concatenate the first and last elements
+1. Store your first name in a variable.
+2. Concatenate your first name with your last name, and store the result in another variable.
+3. Use the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split" target="_blank">`split`</a> method to turn your string variable from challenge #2 into an array.
+4. Use the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof" target="_blank">`typeof`</a> method to show how the output of the `split` operation from challenge #3 is different from the input.
+
+1. Find the fourth name in the following array:
+
+  ```js
+  var friends = [
+    "Moe",
+    "Larry",
+    "Curly",
+    "Jane",
+    "Emma",
+    "Elizabeth",
+    "Greg",
+    "Lydia"
+  ];
+  ```
+
+2. Change the name "Elizabeth" to "Liz" in the friends array.
+
+3. Add your name to the end of the `friends` array, and add another name to beginning. (push, shift)
+
+4. Sort the `friends` array in alphabetical order. (sort)
+
+5. Now we have two lists of friends below. Combine them into one list and sort them. (concat)
+
+  ```js
+  var myFriends = [
+    "Rickon",
+    "Meera",
+    "Hodor",
+    "Jojen",
+    "Osha",
+    "Rickard",
+    "Maester"
+  ];
+
+  var yourFriends = [
+    "Bilbo",
+    "Boromir",
+    "Elrond",
+    "Faramir",
+    "Frodo",
+    "Gandalf",
+    "Legolas",
+    "Pippin"
+  ];
+  ```
+
+6. I have a list of favorite foods below. If "Popcorn" is my favorite food and "Potato chips" my second favorite, how would you find the rank of another food. Try "Pho". (indexOf)
+
+  ```js
+  var foods = [
+    "Popcorn",
+    "Potato chips",
+    "Shrimp",
+    "Tacos",
+    "French toast",
+    "Crab",
+    "Pho",
+    "Lasagna",
+    "Brownie",
+    "Lobster",
+    "Donuts",
+    "Ice cream",
+    "Hamburger",
+    "Sushi",
+    "Chocolate",
+    "Pizza"
+  ];
+  ```
+
+7. I made a mistake with my favorite foods. How can I find the index of "Donuts" and remove it? (splice)
+
+8. My friends want to know what my 5th to 10th favorite foods are. (slice)
+
+1. How would you represent the following data using an object literal? Then update John's address to "1234 Park Ln".
+
+  ```
+  John, Doe, 36, 1234 Park St.
+  ```
 
 ## Stretch Challenges
-
-1. Explain why `null == undefined` and `null !== undefined` are both true statements.
-2. Find a partner to exchange secret messages with
-  * How you encode your message is up to you.
-  * You might want to [convert your message to binary](http://www.binaryhexconverter.com/ascii-text-to-binary-converter) and/or use some built-in JS functions ([`slice`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice), [`replace`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace), etc) to obscure the data you are sending.
-  * Get creative and make sure to include detailed instructions so that your partner knows how to decode the message.
 
 ## Further Reading
 
@@ -158,4 +230,4 @@ pet.name
 2. [Different ways to define an object [SO]](http://stackoverflow.com/questions/1143498/difference-between-an-object-and-a-hash)
 3. [Working with strings](http://learnjsdata.com/strings.html)
 
-<!-- Lesson notes: "" and '' for strings, var and camelCase, JS comments -->
+<!-- Lesson notes: "" and '' for strings, var and camelCase, JS comments, array methods -->
