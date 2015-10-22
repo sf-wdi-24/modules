@@ -2,9 +2,9 @@
 
 | Objectives |
 | :--- |
-| Identify JavaScript primitive data types and perform basic expressions on them |
-| Explain the difference between primitive and reference data types |
+| Identify JavaScript primitive and reference data types |
 | Use the JS console to manipulate data and create objects |
+| Use JavaScript's built-in array methods to manipulate more complex data |
 
 ## Primitives
 
@@ -138,10 +138,18 @@ pet.name
 
 ## Challenges
 
+*For the first set of challenges, use the JS console in the browser. Press `cmd + option + J` to open the console.*
+
+### Strings
+
 1. Store your first name in a variable.
 2. Concatenate your first name with your last name, and store the result in another variable.
 3. Use the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split" target="_blank">`split`</a> method to turn your string variable from challenge #2 into an array.
 4. Use the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof" target="_blank">`typeof`</a> method to show how the output of the `split` operation from challenge #3 is different from the input.
+
+*For the remaining challenges, use Sublime to record your responses in a file, but make sure to test them out in the JS console!*
+
+### Arrays
 
 1. Find the fourth name in the following array:
 
@@ -160,11 +168,11 @@ pet.name
 
 2. Change the name "Elizabeth" to "Liz" in the friends array.
 
-3. Add your name to the end of the `friends` array, and add another name to beginning. (push, shift)
+3. Add your name to the end of the `friends` array, and add another name to beginning.
 
-4. Sort the `friends` array in alphabetical order. (sort)
+4. Sort the `friends` array in alphabetical order.
 
-5. Now we have two lists of friends below. Combine them into one list and sort them. (concat)
+5. Now we have two lists of friends below. Combine them into one list and sort them.
 
   ```js
   var myFriends = [
@@ -189,7 +197,7 @@ pet.name
   ];
   ```
 
-6. I have a list of favorite foods below. If "Popcorn" is my favorite food and "Potato chips" my second favorite, how would you find the rank of another food. Try "Pho". (indexOf)
+6. I have a list of favorite foods below. If "Popcorn" is my favorite food and "Potato chips" my second favorite, how would you find the rank of another food. Try "Pho". **Hint:** Look up the `indexOf` array method.
 
   ```js
   var foods = [
@@ -212,9 +220,11 @@ pet.name
   ];
   ```
 
-7. I made a mistake with my favorite foods. How can I find the index of "Donuts" and remove it? (splice)
+7. I made a mistake with my favorite foods. How can I find the index of "Donuts" and remove it? **Hint:** Look up the `splice` array method.
 
-8. My friends want to know what my 5th to 10th favorite foods are. (slice)
+8. My friends want to know what my 5th to 10th favorite foods are. **Hint:** Look up the `slice` array method.
+
+### Object Literals
 
 1. How would you represent the following data using an object literal? Then update John's address to "1234 Park Ln".
 
@@ -222,12 +232,31 @@ pet.name
   John, Doe, 36, 1234 Park St.
   ```
 
+2. How would you represent the following data using a combination of object literals and arrays?
+
+  ```
+  Jane, Doe, 32, 1239 Spark St.
+  Mary, Doe, 31, 1231 Spark St.
+  Greg, Doe, 34, 1214 Park St.
+  Harriet, Doe, 32, 1324 Park St.
+  ```
+
 ## Stretch Challenges
+
+1. In the following list of ages, find the median age. **Note:** The median is the middle index of the sorted array. **Hint:** `sort`, and use the length of `ages`.
+
+  ```js
+  var ages = [83, 53, 37, 29, 60, 30, 66, 19, 59, 41, 9, 64, 19, 80, 24, 53, 70, 1, 53, 40, 92, 4, 71, 65, 8, 2, 51, 80, 94, 37, 80, 64, 19, 6, 14];
+  ```
+
+2. How would you sort the list of names below? **Hint:** Use string and array methods.
+
+  ```js
+  var friends = "Moe,Larry,Curly,Jane,Emma,Elizabeth,Greg,Lydia";
+  ```
 
 ## Further Reading
 
-1. [JavaScript data types and data structures [MDN]](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
-2. [Different ways to define an object [SO]](http://stackoverflow.com/questions/1143498/difference-between-an-object-and-a-hash)
-3. [Working with strings](http://learnjsdata.com/strings.html)
-
-<!-- Lesson notes: "" and '' for strings, var and camelCase, JS comments, array methods -->
+* <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures" target="_blank">JavaScript data types and data structures</a>
+* <a href="http://learnjsdata.com/strings.html" target="_blank">Working with Strings</a>
+* <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank">Array - JavaScript</a>
