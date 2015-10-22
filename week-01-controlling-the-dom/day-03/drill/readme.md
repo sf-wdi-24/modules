@@ -138,7 +138,7 @@ pet.name
 
 ## Challenges
 
-*For the first set of challenges, use the JS console in the browser. Press `cmd + option + J` to open the console.*
+*Use the JS console in the browser to solve the challenges. Press `cmd + option + J` to open the console. Feel free to also record your responses in a file, but make sure you test them in the console!*
 
 ### Strings
 
@@ -146,8 +146,6 @@ pet.name
 2. Concatenate your first name with your last name, and store the result in another variable.
 3. Use the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split" target="_blank">`split`</a> method to turn your string variable from challenge #2 into an array.
 4. Use the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof" target="_blank">`typeof`</a> method to show how the output of the `split` operation from challenge #3 is different from the input.
-
-*For the remaining challenges, use Sublime to record your responses in a file, but make sure to test them out in the JS console!*
 
 ### Arrays
 
@@ -197,7 +195,26 @@ pet.name
   ];
   ```
 
-6. I have a list of favorite foods below. If "Popcorn" is my favorite food and "Potato chips" my second favorite, how would you find the rank of another food. Try "Pho". **Hint:** Look up the `indexOf` array method.
+### Object Literals
+
+1. How would you represent the following data using an object literal? Then update John's address to "1234 Park Ln".
+
+  ```
+  John, Doe, 36, 1234 Park St.
+  ```
+
+2. How would you represent the following data using a combination of object literals and arrays?
+
+  ```
+  Jane, Doe, 32, 1239 Spark St.
+  Mary, Doe, 31, 1231 Spark St.
+  Greg, Doe, 34, 1214 Park St.
+  Harriet, Doe, 32, 1324 Park St.
+  ```
+
+## Stretch Challenges
+
+1. I have a list of favorite foods below. If "Popcorn" is my favorite food and "Potato chips" my second favorite, how would you find the rank of another food. Try "Pho". **Hint:** Look up the `indexOf` array method.
 
   ```js
   var foods = [
@@ -220,36 +237,11 @@ pet.name
   ];
   ```
 
-7. I made a mistake with my favorite foods. How can I find the index of "Donuts" and remove it? **Hint:** Look up the `splice` array method.
+2. I made a mistake with my favorite foods. How can I find the index of "Donuts" and remove it? **Hint:** Look up the `splice` array method.
 
-8. My friends want to know what my 5th to 10th favorite foods are. **Hint:** Look up the `slice` array method.
+3. My friends want to know what my 5th to 10th favorite foods are. **Hint:** Look up the `slice` array method.
 
-### Object Literals
-
-1. How would you represent the following data using an object literal? Then update John's address to "1234 Park Ln".
-
-  ```
-  John, Doe, 36, 1234 Park St.
-  ```
-
-2. How would you represent the following data using a combination of object literals and arrays?
-
-  ```
-  Jane, Doe, 32, 1239 Spark St.
-  Mary, Doe, 31, 1231 Spark St.
-  Greg, Doe, 34, 1214 Park St.
-  Harriet, Doe, 32, 1324 Park St.
-  ```
-
-## Stretch Challenges
-
-1. In the following list of ages, find the median age. **Note:** The median is the middle index of the sorted array. **Hint:** `sort`, and use the length of `ages`.
-
-  ```js
-  var ages = [83, 53, 37, 29, 60, 30, 66, 19, 59, 41, 9, 64, 19, 80, 24, 53, 70, 1, 53, 40, 92, 4, 71, 65, 8, 2, 51, 80, 94, 37, 80, 64, 19, 6, 14];
-  ```
-
-2. How would you sort the list of names below? **Hint:** Use string and array methods.
+4. How would you sort the list of names below? **Hint:** Use string and array methods.
 
   ```js
   var friends = "Moe,Larry,Curly,Jane,Emma,Elizabeth,Greg,Lydia";
