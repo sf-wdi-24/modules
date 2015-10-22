@@ -73,7 +73,7 @@ h2.column-title>div#calendar>span>button
 
 ## Challenges
 
-Fork and clone the css-basics-challenges repo, and work through the following challenges. *Note you will have to link the CSS file first.*
+Fork and clone the css-basics-challenges repo, and work through the challenges below. *Note you will have to link the CSS file first.*
 
 1. Make an unordered HTML list of the following animals:  
   * mouse
@@ -99,7 +99,7 @@ Fork and clone the css-basics-challenges repo, and work through the following ch
   * parakeet "color: lime"
   * tuna "color: purple"
 
-3. Add the following background colors to your existing classes:
+3. Add the following background colors to the list using classes:
   * mammal "lavenderblush"
   * bird "lightgray"
   * fish "lightyellow"
