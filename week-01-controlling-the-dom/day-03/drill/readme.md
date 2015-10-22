@@ -247,7 +247,7 @@ pet.name
   var friends = "Moe,Larry,Curly,Jane,Emma,Elizabeth,Greg,Lydia";
   ```
 
-## Further Reading
+## Resources
 
 * <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures" target="_blank">JavaScript data types and data structures</a>
 * <a href="http://learnjsdata.com/strings.html" target="_blank">Working with Strings</a>
