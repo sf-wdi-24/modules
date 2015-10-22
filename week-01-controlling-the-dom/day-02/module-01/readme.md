@@ -1,4 +1,4 @@
-# HTML/CSS, Sublime, Emmet
+# HTML/CSS, Sublime Text
 
 ## Lesson Plan
 
