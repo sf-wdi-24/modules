@@ -10,7 +10,7 @@
     <th>Friday</th>
   </tr>
   <tr>
-    <td>Drills</td>
+    <td>Drill</td>
     <td>Course Overview</td>
     <td>Debugging JavaScript</td>
     <td>JavaScript Data Types</td>
