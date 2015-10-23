@@ -131,3 +131,5 @@ That said, there's still value in creating your own grid from scratch to solidif
 ## Resources
 
 * <a href="http://docs.emmet.io/cheat-sheet" target="_blank">Emmet Cheat Sheet</a>
+* <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Common_CSS_Questions" target="_blank">Common CSS Questions</a>
+* <a href="http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048" target="_blank">30 CSS Selectors You Must Memorize</a>
