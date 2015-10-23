@@ -80,53 +80,61 @@ document.body.appendChild(newDiv);
 
 ### Including jQuery
 
-You can only use jQuery if it's included in your page.
+To use jQuery, you must include the library in your page. The quickest way to include jQuery in your project is to copy the link to the CDN (content delivery network) and put it into a script tag at the bottom of your HTML `<body>`. You can get the CDN by searching for "jQuery" on <a href="https://cdnjs.com" target="_blank">cdnjs</a>.
 
-The quickest way to include jQuery in your project is to grab the jQuery library using a "CDN" (a blazing fast "content delivery network") and dropping it into a script tag in the head of your html (just google "jQuery cdn" and copy paste!):
+**Important:** Your JavaScript file MUST come after jQuery in the order you require scripts. This is because the page loads in order, so the jQuery library must be loaded before you can use any of it's functionality.
 
 ``` html
 <!DOCTYPE html>
-<html>
-    <head>
-        <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
-    </head>
-    <body>
-        <!-- Nothing here yet! -->
-    </body>
-</html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <!-- html code here -->
 
+  <!-- jquery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+  <!-- custom script -->
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
 ```
 
-Sites like: github.com, css-tricks.com, and jquery.com (!) all include the jQuery library on their page. This means all you have to do is open up your Chrome Developer Console on one of those sites, and you can start playing with jQuery on the page
+Sites like GitHub, CSS-Tricks, and jquery.com (!) all include the jQuery library on their page. This means all you have to do is open up the Chrome Developer Console on one of those sites, and you can start experimenting with jQuery on the page.
 
 ### Using jQuery
 
 You know you're working with jQuery any time you see a `$` in your code.
 
-As you're working with jQuery to manipulate DOM elements, you are almost always either *getting* or *setting* a value. Memorize this pattern:  
+As you're working with jQuery to manipulate DOM elements, you are almost always either *getting* or *setting* a value. Memorize this pattern:
+
 - `$("CSS Selector").someJqueryMethodName()` - **getting** a value
 - `$("CSS Selector").someJqueryMethodName(setterValue)` - **setting** a value
 
-For example, if you are viewing this readme on github.com, then you can try the following in your Chrome Developer Console:  
+For example, if you are viewing this readme on github.com, then you can try the following in your Chrome Developer Console:
+
 - `$('article').text()` -- **get** the text of the readme (it lives inside of an `article` tag)
 - `$('article').text("Boo!")` -- **set** the text of the readme to "Boo!"
 
-Wowa!
+Let's try another:
 
-Let's try another:  
 - `$('article').css("background-color")` -- **get** the background color
 - `$('article').css("background-color", "blue")` -- **set** the background color to blue.
 
 ### Documentation
 
 Check out the `.text()` and `.css()` methods in the jQuery API Documentation: [text](http://api.jquery.com/text/), [css](http://api.jquery.com/css/).
+
 - Pay close attention in the documentation: there's one section that talks about how to "get" text, and there's another section that talks about how to "set" text.
 - `.text()` and `.css()` are not native javascript methods! They only work on jQuery-wrapped DOM Elements (that's what that `$` is doing).
 
 For more cool DOM manipulation tricks, you'll need to hit the docs:
+
 - jQuery API [Documentation]([jquery.com](jquery.com))
-    - [Manipulation Methods](http://api.jquery.com/category/manipulation/)
-    - [Tree Traversal Methods](http://api.jquery.com/category/traversing/)
+  - [Manipulation Methods](http://api.jquery.com/category/manipulation/)
+  - [Tree Traversal Methods](http://api.jquery.com/category/traversing/)
 
 ## Challenges
 
