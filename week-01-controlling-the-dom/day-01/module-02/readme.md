@@ -273,7 +273,7 @@ More specifically, **a version control system allows you to:**
 
 **Git** is a version control system and **GitHub** is a social network built around git.
 
-The purpose of Git is to manage a project, or a set of files, as they change over time. Git stores this information in a data structure called a repository. A git repository contains, among other things, the following: A set of commit objects.
+Git stores information about your project in a **repository**. A git repository holds the current version of your project's files, as well as the complete history of all past versions.
 
 ### Git Basics
 
