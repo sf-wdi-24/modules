@@ -20,7 +20,7 @@
   <tr>
     <td>Module1</td>
     <td>Culture Setting</td>
-    <td>HTML/CSS, Sublime Text</td>
+    <td>[HTML/CSS, Sublime Text](day-02/module-01)</td>
     <td>JavaScript Control Flow</td>
     <td>Intro DOM Manipulation</td>
     <td>Review</td>
