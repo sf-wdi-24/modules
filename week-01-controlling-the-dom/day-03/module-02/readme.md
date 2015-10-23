@@ -183,35 +183,9 @@ firstClassFunction("Functions are fun!", consoleMe);
 
 ## Challenges
 
-1. Write a `multiply` function that finds the product of two numbers.
+Fork and clone <a href="https://github.com/sf-wdi-24/functions-basics-challenges">this</a> repo to begin the challenges.
 
-  ```js
-  multiply(5, 7) => 35
-  ```
 
-2. Write a function that takes in a number and returns `true` if the number is even and `false` if the number is odd (**Hint:** Look up the `%` operator).
-
-  ```js
-  isEven(4) => true
-  ```
-
-3. Write a function that swaps two values at two different indexes in an array.
-
-  ```js
-  swap(["moe", "larry", "curly"], 0, 2) => ["curly", "larry", "moe"]
-  ```
-
-4. Write a function that generates a random number in a specified range (**Hint:** Look up Math.random()).
-
-  ```js
-  getRand(5, 10) => 8 (any number between 5 and 10)
-  ```
-
-5. Write a function that generates an array of specified length that contains random numbers from 1 to 100.
-
-  ```js
-  randArr(3) => [23, 11, 82]
-  ```
 
 
 ## Evening Challenges
