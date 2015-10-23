@@ -10,13 +10,13 @@
 
 # What is a debugger?
 
+> The terms "bug" and "debugging" are popularly attributed to Admiral Grace Hopper in the 1940s. While she was working on a Mark II Computer at Harvard University, her associates discovered a moth stuck in a relay and thereby impeding operation, whereupon she remarked that they were "debugging" the system. [Debugging Wikipedia](https://en.wikipedia.org/wiki/Debugging)
 > A debugger or debugging tool is a computer program that is used to test and debug other programs. [Debugger Wikipedia Entry](https://en.wikipedia.org/wiki/Debugger)
 
 It is software to help remove bugs from software.
 
 But. What is a *bug*?
 
-> The terms "bug" and "debugging" are popularly attributed to Admiral Grace Hopper in the 1940s.[1] While she was working on a Mark II Computer at Harvard University, her associates discovered a moth stuck in a relay and thereby impeding operation, whereupon she remarked that they were "debugging" the system. [Debugging Wikipedia](https://en.wikipedia.org/wiki/Debugging)
 
 # Why use a debugger?
 
