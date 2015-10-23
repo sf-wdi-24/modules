@@ -287,6 +287,9 @@ while (j < 10) {
   j += 2;
 }
 ```
+## Exercises
+
+[YAY! Exercises to practice](https://github.com/sf-wdi-24/control-flow-exercises)
 
 ## Resources
 
