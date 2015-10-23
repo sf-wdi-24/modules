@@ -8,6 +8,12 @@
 
 ## Client vs Server
 
+Clients (ex. your computer) make requests to servers and servers send back responses. This is a really important mental model to have. Throughout this course, we'll be learning to write code that lives either on the client or on the server and it's important to know where it is.
+
+![client-server.png](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Client-server-model.svg/2000px-Client-server-model.svg.png)
+
+Servers respond with `HTML`, `CSS`, `Javascript`, and/or pure data. Browsers have been created to know what to do with the code that servers send back.
+
 * TCP/IP Basics
 
 ## Terminal Introduction
