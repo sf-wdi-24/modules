@@ -17,9 +17,11 @@ Servers respond with `HTML`, `CSS`, `Javascript`, and/or pure data. Browsers hav
 * TCP/IP Basics
 
 
-## Living in the Command Line
+## Living on the Command Line
 
-Web programmers have to live on the command line.  It gives us fast, reliable, and automatable control over computers.  Web servers usually don't have graphical interfaces, so we need to interact with them through command line and programmatic interfaces.  Once you become comfortable using the command line, staying on the keyboard will also help you keep an uninterrupted flow of work going without the disruption of shifting to the mouse.
+Working as a developer requires a firm understanding of the command line. It will allow you to control many aspects of your computer as well as servers.
+
+## Be Careful!
 
 ![Careful with scripts](http://www.commitstrip.com/wp-content/uploads/2014/05/Strip-Roulette-russe-650-finalenglish.jpg)
 
@@ -27,26 +29,8 @@ Regarding scripts which you may find on the web while searching for solutions, a
 
 Important Note:
 
-*** You should not copy / paste scripts from web pages and run them in your terminal until you have read them and understand what they do, bad things can happen, particularly with sudo and su commands ***
+__You should not copy / paste scripts from web pages and run them in your terminal until you have read them and understand what they do, bad things can happen, particularly with sudo and su commands__
 
-## Topics
-
-* [Introduction](#terminal-introduction)
-  * What is the Terminal
-  * Opening the Terminal Application
-* [Current Working Directory](#current-working-directory)
-  * Current Directory
-  * Home Directory
-  * `ls`,`pwd`, commands
-* [Navigating Around](#navigating-around)
-  * Root Directory
-  * `cd`
-  * Absolute and Relative Paths
-  * Tab Completion
-* [File Manipulation](#file-manipulation)
-  * `mkdir`
-  * Editing Files
-  * Moving, Copying and Removing
 
 # Terminal Introduction
 
@@ -56,7 +40,7 @@ Important Note:
 
 ## What is the Terminal?
 
-Terminal is a modern version of an 'original' `User Interface` for Unix based computers. At that time a [Text Terminal](http://en.wikipedia.org/wiki/Computer_terminal#Text_terminals) is all you would have seen, no windows, no mouse. Because of this history, it's very powerful but sometimes a little cryptic.
+Terminal is a modern version of an 'original' `User Interface` for Unix based computers. At that time a <a href="http://en.wikipedia.org/wiki/Computer_terminal#Text_terminals" target="_blank">Text Terminal</a> is all you would have seen, no windows, no mouse. Because of this history, it's very powerful but sometimes a little cryptic.
 
 Don't worry though, with a bit of practice you'll be flying around like a pro!
 
@@ -71,7 +55,7 @@ Terms related to a terminal environment.
   * csh
   * ksh
   * sh
-  * [UNIX Shell](http://en.wikipedia.org/wiki/Unix_shell)
+  * <a href="http://en.wikipedia.org/wiki/Unix_shell" target="_blank">UNIX Shell</a>
   * ZSH!
 
 ## Opening the Terminal
