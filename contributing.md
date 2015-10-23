@@ -8,6 +8,7 @@
   | day-02
     | drill
       - readme.md
+      - solutions.md
     | module-01
       - readme.md
     | module-02
