@@ -110,117 +110,124 @@ You know you're working with jQuery any time you see a `$` in your code.
 
 As you're working with jQuery to manipulate DOM elements, you are almost always either *getting* or *setting* a value. Memorize this pattern:
 
-- `$("CSS Selector").someJqueryMethodName()` - **getting** a value
-- `$("CSS Selector").someJqueryMethodName(setterValue)` - **setting** a value
+* `$('css-selector).someJqueryMethodName()` - **get** a value
+* `$('css-selector).someJqueryMethodName(setterValue)` - **set** a value
 
-For example, if you are viewing this readme on github.com, then you can try the following in your Chrome Developer Console:
+For example, if you are viewing this `readme` on GitHub, you can try the following in your Chrome Developer Console:
 
-- `$('article').text()` -- **get** the text of the readme (it lives inside of an `article` tag)
-- `$('article').text("Boo!")` -- **set** the text of the readme to "Boo!"
+* `$('article').text()` - **get** the `readme`'s text (it lives inside of an `article` tag)
+* `$('article').text("Boo!")` - **set** the `readme`'s text to "Boo!"
 
 Let's try another:
 
-- `$('article').css("background-color")` -- **get** the background color
-- `$('article').css("background-color", "blue")` -- **set** the background color to blue.
+* `$('article').css("background-color")` - **get** the background color
+* `$('article').css("background-color", "blue")` - **set** the background color to blue
 
 ### Documentation
 
-Check out the `.text()` and `.css()` methods in the jQuery API Documentation: [text](http://api.jquery.com/text/), [css](http://api.jquery.com/css/).
+Check out the `.text()` and `.css()` methods in the jQuery API Documentation: <a href="http://api.jquery.com/text" target="_blank">text</a>, <a href="http://api.jquery.com/css" target="_blank">css</a>
 
-- Pay close attention in the documentation: there's one section that talks about how to "get" text, and there's another section that talks about how to "set" text.
-- `.text()` and `.css()` are not native javascript methods! They only work on jQuery-wrapped DOM Elements (that's what that `$` is doing).
+* Pay close attention in the documentation - there's one section that talks about how to *get* text, and there's another section that talks about how to *set* text.
+* `.text()` and `.css()` are not native javascript methods! They only work on jQuery-wrapped DOM Elements (that's what that `$` is doing).
 
 For more cool DOM manipulation tricks, you'll need to hit the docs:
 
-- jQuery API [Documentation]([jquery.com](jquery.com))
-  - [Manipulation Methods](http://api.jquery.com/category/manipulation/)
-  - [Tree Traversal Methods](http://api.jquery.com/category/traversing/)
+* <a href="http://api.jquery.com" target="_blank">jQuery API Documentation</a>
+  * <a href="http://api.jquery.com/category/manipulation" target="_blank">DOM Manipulation Methods</a>
+  * <a href="http://api.jquery.com/category/traversing" target="_blank">Tree Traversal Methods</a>
 
 ## Challenges
 
-#### Nature Drawing 101: Draw a Tree!
-1. Draw the structure of the sf-wdi-21 github repository
-2. Draw the struture of the following HTML document:
+### Draw a Tree
 
-``` html
-<!DOCTYPE html>
-<html>
+1. Draw the structure of the sf-wdi-24 github repository
+2. Draw the structure of the following HTML document:
+
+  ``` html
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>My Site</title>
+    </head>
+    <body>
+      <header>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </header>
+
+      <section>  
+        <h1>Welcome to my site!</h1>
+        <img src="/static/say_cheese.jpg">
+        <p>Words and <a href="/">links</a></p>
+      </section>
+
+      <footer>
+        <small>Copyright 2015 Jon Doe.</small>
+      </footer>
+    </body>
+  </html>
+  ```
+
+  * How many children does `header` have?
+  * Name a direct child of the `p` element.
+  * Name a direct parent of the `p` element
+  * What is the parent of the `html` element?
+
+### CSS Selectors
+
+Please refer to <a href="https://docs.google.com/document/d/1sKbuZaSio1o65iRdkNpB03pwJfJj98GPHUJQsoKJmE4/edit?usp=sharing">this google doc</a>.
+
+<!-- TODO: get this out of google docs -->
+
+For each page, come up with as many CSS Selectors as you can think of to select the html elements in **red**, and *only* the elements in red.
+
+### jQuery Selectors
+
+1. Use jQuery to select the element containing the words "Hello There" with as many different selectors as you can think of:
+
+  ``` html
+  <!DOCTYPE html>
+  <html>
   <head>
-    <title>My Site</title>
+    <meta charset="utf-8">
+    <title>Ex 1</title>
   </head>
   <body>
-    <header>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
-    </header>
-
-    <section>  
-      <h1>Welcome to my site!</h1>
-      <img src="/static/say_cheese.jpg">
-      <p>Words and <a href="/">links</a></p>
-    </section>
-
-    <footer>
-      <small>Copyright 2015 Jon Doe.</small>
-    </footer>
+     <div id="greeting">Hello There</div>
   </body>
-</html>
-```
+  </html>
+  ```
 
-* How many children does `header` have?
-* Name a direct child of the `p` element.
-* Name a direct parent of the `p` element
-* What is the parent of the `html` element?
+2. How would you *get* the value "Hello There"?
+3. How would you change (or *set*) the value to "Hola"?
+4. How would you add an `<h1>` to the page that says "A Spanish Greeting"?
+5. How would you add a second greeting ("Que tal?") below the first?
+6. How would you add the class "greeting" to both greetings?
 
-#### CSS Selector Challenge
-Please refer to [this google doc](https://docs.google.com/document/d/1sKbuZaSio1o65iRdkNpB03pwJfJj98GPHUJQsoKJmE4/edit?usp=sharing).
+### Indiana Jones And the Temple of DOM
 
-For each page, come up with as many CSS Selectors as you can think of to select the html elments in **red**, and *only* the elements in red.
+Go to the <a href="https://generalassemb.ly" target="_blank">General Assembly homepage</a>, and open your Chrome Developer Console.
 
-#### jQuery Selector Challenge
+1. Select the huge text splashed across the front page.
+  * Get it's text.
+  * Change the text to "Indiana Jones and the Temple of DOM"
+  * Add a `small` tag containing the text "(Rated G)" at the end of the line.
+2. Turn the big red button blue.
+3. Change the background of the first section heading to yellow.
+4. Make the GA icon 100 pixels tall.
+5. Select the first big image on the right (the one with the red-cushioned chair).
+  * Get its image `src` (image url).
+  * Swap out the image for this <a href="http://media2.giphy.com/media/MS0fQBmGGMaRy/giphy.gif" target="_blank">GIF of Indiana Jones</a>.
+6. Change the text of *only* the first paragraph to: "Snakes. Why did it have to be snakes?"
+7. Now, change the text of *every* paragraph to the same quote.
+8. **Bonus:** Combine all your code into a single function called `changeAllTheThings`. When you call the function, it should make all your changes to the page.
 
-Use jquery to select the element containing the words "Hello There" with as many different selectors as you can think of:
+<!-- ## Stretch Challenges
 
-``` html
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Ex 1</title>
-</head>
-<body>
-   <div id="greeting">Hello There</div>
-</body>
-</html>
-```
-
-1. How would you *get* the value "Hello There"?
-2. How would you change (or *set*) the value to "Hola"?
-3. How would you add an h1 to the page that says "A Spanish Greeting"?
-4. How would you add a second greeting ("Que tal?"), below the first?
-5. How would you add the class "blue" to both greetings?
-
-#### Indiana Jones And the Temple of DOM
-
-Go to the [General Assembly homepage](https://generalassemb.ly/) and open your Chrome Developer Console.
-
-1. Grab the huge text splashed across the front page.
-    * Get its current text.
-        * Change it to "Indiana Jones and the Temple of DOM"
-    * Add a `small` tag containing the text "(Rated G)" at the end of the line.
-1. Turn the big red button blue.
-1. Change the background of the first section heading to yellow.
-1. Make the GA icon 100 pixels tall.
-1. Grab the first big image on the right (the one with the red-cushioned chair).
-    * Get its current image src. (image url)
-    * Swap it for this GIF of [Indiana Jones](http://media2.giphy.com/media/MS0fQBmGGMaRy/giphy.gif).
-1. Change the text of *only* the first paragraph to: "Snakes. Why did it have to be snakes?"
-    * Now, change the text of *every* paragraph to the same quote.
-
-1. Bonus: Combine all your code into a single function called `changeAllTheThings`. When you call the function, it should make all your changes to the page.
+TODO: Write disappearing boxes challenge in JSFiddle -->
 
 ## Resources
 
