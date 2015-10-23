@@ -6,7 +6,7 @@
 | Navigate and manipulate files through the Terminal |
 | Practice forking and cloning GitHub repositories |
 
-## Client vs Server
+## Client vs. Server
 
 Clients (ex. your computer) make requests to servers and servers send back responses. This is a really important mental model to have. Throughout this course, we'll be learning to write code that lives either on the client or on the server and it's important to know where it is.
 
@@ -333,8 +333,6 @@ More specifically, **a version control system allows you to:**
   ![screen-shot-2015-10-20-at-17 25 49](https://cloud.githubusercontent.com/assets/7833470/10625507/bc97d38a-7758-11e5-8fe9-e4846e06e454.png)
 
 ## Resources
-
-### Terminal Cheat Sheet
 
 * <a href="https://github.com/0nn0/terminal-mac-cheatsheet/wiki/Terminal-Cheatsheet-for-Mac-(-basics-)" target="_blank">Terminal Cheatsheet for Mac</a>
 * <a href="https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf" target="_blank">Git Cheat Sheet</a>
