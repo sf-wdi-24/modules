@@ -213,13 +213,6 @@ firstClassFunction("Functions are fun!", consoleMe);
   randArr(3) => [23, 11, 82]
   ```
 
-## Stretch Challenges
-
-1. Write a `getMax` function that finds the maximum number in an array.
-
-2. Write a function called `explainMather` that takes in three arguments: two numbers and a function called `mather`. The `explainMather` function should pass the two numbers into `mather` and write out a message in the console to show the two number inputs and the output from `mather`. Test `explainMather` by passing in your `multiply` function from challenge #1.
-
-3. Write a `vowels` function that counts the number of vowels in a given string.
 
 ## Evening Challenges
 
