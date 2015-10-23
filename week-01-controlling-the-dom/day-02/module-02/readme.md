@@ -68,7 +68,7 @@ Add the viewport meta tag and the <a href="http://getbootstrap.com/getting-start
 
 ## Challenges
 
-1. Creat an ```index.html``` file and add the Bootstrap CDN (or use this boilerplate to get started).
+1. Create an ```index.html``` file and add the Bootstrap CDN (or use this boilerplate to get started).
 2. Add one container, one row, and three col-** classes (your columns can be any width that add up to 12).
 3. Make sure your three columns stack vertically when you are on mobile (xs) devices.
 4. Add content to your columns.
@@ -79,3 +79,21 @@ Add the viewport meta tag and the <a href="http://getbootstrap.com/getting-start
 
 <a href="https://scotch.io/tutorials/understanding-the-bootstrap-3-grid-system">Understanding the Bootstrap System</a><br>
 <a href="http://expo.getbootstrap.com/">Inspiring Uses of Bootstrap</a>
+
+## Evening Lab (Site Recreation)
+
+As we’ve emphasized today, styling is very a very important role in web development.  Some of you will run into interview questions  in which you will have to recreate the look of a particular companies website.
+
+With that in mind we want you to take what you’ve learned and use that knowledge towards recreating the look of your favorite website.
+
+You can pick any site that you want and recreate the landing (i.e home page) of the site.
+
+Fork and clone the <a href="https://github.com/sf-wdi-24/site-recreation" target="_blank">site-recreation repo</a> and do your best to reproduce the look of your favorite page.
+
+__Some considerations for this lab:__
+
+You will need to create you HTML and CSS pages to begin the lab.
+
+Your main concern should be recreating the look of the website.  You do not need to worry about making components work on the site (i.e. buttons, dropdown menus, etc.).  This is strictly a static page intended to sharpen your front-end skills.  We will get to functionality very soon!
+
+Remember to follow <a href="https://github.com/sf-wdi-24/modules/tree/week-01-day-01-mod-02/week-01-controlling-the-dom/day-01/module-02#homework-submission-with-github" target="_blank">these</a> guidelines for submitting your work when you are finished.
