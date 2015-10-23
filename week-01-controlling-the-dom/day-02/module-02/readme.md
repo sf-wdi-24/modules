@@ -16,6 +16,18 @@
  3. Finally, many employers will use a challenge for front-end developers to recreate a site using views and specifications of their site.
 
 
+
+ ### Wireframing
+
+   Wireframing is a great way to organize the look of your website before you begin programming.
+
+ ![alt text](http://urlnextdoor.com/content-include-images/wireframe-gridded.jpg "Logo Title Text 1")
+
+
+
+
+
+
 ### Why you might want to use Bootstrap
  1. <b>Speed of Development</b><br>
   The use of Bootstrap really increases the speed at which a developer can stylize their webpage.  There are a lot of prewritten tools that allow the developer to put together a page without coding from scratch.
@@ -78,7 +90,11 @@ Add the viewport meta tag and the <a href="http://getbootstrap.com/getting-start
 ## Further Reading
 
 <a href="https://scotch.io/tutorials/understanding-the-bootstrap-3-grid-system">Understanding the Bootstrap System</a><br>
-<a href="http://expo.getbootstrap.com/">Inspiring Uses of Bootstrap</a>
+
+<a href="http://expo.getbootstrap.com/">Inspiring Uses of Bootstrap</a><br>
+
+<a href="http://www.creativebloq.com/wireframes/top-wireframing-tools-11121302">Some Wireframing Tools</a>
+
 
 ## Evening Lab (Site Recreation)
 
