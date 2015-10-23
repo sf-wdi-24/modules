@@ -16,24 +16,8 @@ Servers respond with `HTML`, `CSS`, `Javascript`, and/or pure data. Browsers hav
 
 * TCP/IP Basics
 
-## Terminal Introduction
 
-Items to cover.
-* `grep`
-* `cat`
-* Working with file systems
-  * `cd`
-  * `mkdir`
-  * `rmdir`
-  * `rm`
-  * `ls`
-  * `touch`
-* `find`
-* `locate`
-* `man`
-* `--help`, `-h` and `-help`
-
-# Living in the Command Line
+## Living in the Command Line
 
 Web programmers have to live on the command line.  It gives us fast, reliable, and automatable control over computers.  Web servers usually don't have graphical interfaces, so we need to interact with them through command line and programmatic interfaces.  Once you become comfortable using the command line, staying on the keyboard will also help you keep an uninterrupted flow of work going without the disruption of shifting to the mouse.
 
@@ -45,7 +29,7 @@ Important Note:
 
 *** You should not copy / paste scripts from web pages and run them in your terminal until you have read them and understand what they do, bad things can happen, particularly with sudo and su commands ***
 
-#Topics
+## Topics
 
 * [Introduction](#terminal-introduction)
   * What is the Terminal
@@ -98,7 +82,7 @@ __Follow Along:__
 2.  Once Terminal starts locate the icon in the doc and select `Options->Keep In Dock` so that it's always handy.
 
 
-# Current Working Directory
+## Current Working Directory
 
 The file structure you see in the Terminal is the same as the one you see in the `Finder` application. Finder tends to hide some of the folders from you to keep things simple for most users, but everywhere that you go in Finder is accessible through 'Terminal'.
 
@@ -148,7 +132,7 @@ Hidden Files are typically used by applications to store configurations and ther
 
 Hidden files are hidden because their names begin with "`.`".
 
-# Navigating Around
+## Navigating Around
 
 ## Root Directory
 Another important directory is the root directory `/`
@@ -188,7 +172,7 @@ __Exercise: 5 minutes in Pairs__
 2. Your Task: Navigate to that directory in a single command from your home directory using a relative or absolute path.
 3. Help your partner if they are having trouble and use Tab Completion.
 
-# File Manipulation
+## File Manipulation
 
 ## mkdir
 
