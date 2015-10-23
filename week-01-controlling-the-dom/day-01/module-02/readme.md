@@ -14,9 +14,6 @@ Clients (ex. your computer) make requests to servers and servers send back respo
 
 Servers respond with `HTML`, `CSS`, `Javascript`, and/or pure data. Browsers have been created to know what to do with the code that servers send back.
 
-* TCP/IP Basics
-
-
 ## Living on the Command Line
 
 Working as a developer requires a firm understanding of the command line. It will allow you to control many aspects of your computer as well as servers.
@@ -236,10 +233,6 @@ Are the old books still there?
 ➜  ~  ls ~/Desktop/books.txt
 ```
 
-### Terminal Cheat Sheet
-
-[Bookmark This](http://bit.ly/terminalcheats)
-
 # Create Development Directory
 
 As a developer, you'll want to have a designated directory on your computer where you keep all your projects. This makes it faster to navigate to specific projects, since you know you can find them all in one place.
@@ -340,6 +333,8 @@ More specifically, **a version control system allows you to:**
   ![screen-shot-2015-10-20-at-17 25 49](https://cloud.githubusercontent.com/assets/7833470/10625507/bc97d38a-7758-11e5-8fe9-e4846e06e454.png)
 
 ## Resources
+
+### Terminal Cheat Sheet
 
 * <a href="https://github.com/0nn0/terminal-mac-cheatsheet/wiki/Terminal-Cheatsheet-for-Mac-(-basics-)" target="_blank">Terminal Cheatsheet for Mac</a>
 * <a href="https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf" target="_blank">Git Cheat Sheet</a>
