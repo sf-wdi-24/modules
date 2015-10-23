@@ -25,8 +25,6 @@ Working as a developer requires a firm understanding of the command line. It wil
 
 ![Careful with scripts](http://www.commitstrip.com/wp-content/uploads/2014/05/Strip-Roulette-russe-650-finalenglish.jpg)
 
-Regarding scripts which you may find on the web while searching for solutions, assume they are going to do something bad
-
 Important Note:
 
 __You should not copy / paste scripts from web pages and run them in your terminal until you have read them and understand what they do, bad things can happen, particularly with sudo and su commands__
