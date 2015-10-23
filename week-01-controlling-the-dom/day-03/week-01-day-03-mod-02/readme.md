@@ -221,6 +221,10 @@ firstClassFunction("Functions are fun!", consoleMe);
 
 3. Write a `vowels` function that counts the number of vowels in a given string.
 
+## Evening Challenges
+
+Fork and clone the <a href="https://github.com/sf-wdi-24/functions-challenges/tree/masterfunctions-challenges" target="_blank">functions-challenges</a> repo, and work through the challenges.  When you are finished, submit a pull request.
+
 
 ## Further Reading
 
