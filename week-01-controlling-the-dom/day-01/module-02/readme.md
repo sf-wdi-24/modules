@@ -240,7 +240,7 @@ Are the old books still there?
 
 [Bookmark This](http://bit.ly/terminalcheats)
 
-## Create Development Directory
+# Create Development Directory
 
 As a developer, you'll want to have a designated directory on your computer where you keep all your projects. This makes it faster to navigate to specific projects, since you know you can find them all in one place.
 
