@@ -22,7 +22,7 @@
     <td>Culture Setting</td>
     <td>HTML/CSS, Sublime Text</td>
     <td>JavaScript Control Flow</td>
-    <td>Intro DOM Manipulation</td>
+    <td>[Intro DOM Manipulation & jQuery](day-04/module-01)</td>
     <td>Review</td>
   </tr>
   <tr>
