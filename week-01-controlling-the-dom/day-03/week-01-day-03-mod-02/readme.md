@@ -223,7 +223,7 @@ firstClassFunction("Functions are fun!", consoleMe);
 
 ## Evening Challenges
 
-Fork and clone the <a href="https://github.com/sf-wdi-24/functions-challenges/tree/masterfunctions-challenges" target="_blank">functions-challenges</a> repo, and work through the challenges.  When you are finished, submit a pull request.
+Fork and clone the <a href="https://github.com/sf-wdi-24/functions-challenges" target="_blank">functions-challenges</a> repo, and work through the challenges.  When you are finished, submit a pull request.
 
 
 ## Further Reading
