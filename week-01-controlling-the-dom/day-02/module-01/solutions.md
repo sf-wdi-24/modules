@@ -4,4 +4,4 @@
 
 ## Stretch Challenge
 
-css-grid-challenges (solution branch)
+<a href="https://github.com/sf-wdi-24/css-grid-challenges/tree/solution" target="_blank">css-grid-challenges (solution branch)</a>
