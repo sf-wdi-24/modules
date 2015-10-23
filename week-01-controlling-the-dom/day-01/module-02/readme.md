@@ -30,7 +30,7 @@ __You should not copy / paste scripts from web pages and run them in your termin
 # Terminal Introduction
 
 ```zsh
-➜  ~  man man
+➜  man man
 ```
 
 ## What is the Terminal?
@@ -72,7 +72,7 @@ Typically the shell will start in your `HOME` directory, each user has their own
 __Follow Along:__
 
 ```zsh
-➜  ~  pwd
+➜  pwd
 ```
 
 For me this is `/Users/erikerwitt`, what is the __current working directory__ of your shell process?
@@ -82,7 +82,7 @@ Wherever we are, `pwd`, short for __print working directory__, will show us whic
 __Follow Along:__
 
 ```zsh
-➜  ~  open .
+➜  open .
 ```
 
 Wherever we are, `open .`, opens a `Finder` window in the current directory, this can be handy sometimes but only works on Mac!
@@ -94,7 +94,7 @@ What can we find out about the  __current working directory__?
 One of the most useful commands is:
 
 ```zsh
-➜  ~  ls
+➜  ls
 ```
 
 Which lists the files and directories in the current working directory.
@@ -104,7 +104,7 @@ Which lists the files and directories in the current working directory.
 Have you ever heard of `hidden files`?
 
 ```zsh
-➜  ~  ls -a
+➜  ls -a
 ```
 
 Hidden Files are typically used by applications to store configurations and there will be a many of them in your home directory. Most users don't want to be editing these files so they don't show up in `Finder`, but you as a software developer will be editing some these for yourself later on in the course.
@@ -117,8 +117,8 @@ Hidden files are hidden because their names begin with "`.`".
 Another important directory is the root directory `/`
 
 ```zsh
-➜  /  cd /
-➜  /  pwd
+➜  cd /
+➜  pwd
 ```
 
 As we discovered the files on your computer are structured in a tree. The 'top' of the file system is know as the `root` directory.
@@ -131,7 +131,7 @@ We can move back to your __home directory__ with the command `cd ~`.
 
 
 ```zsh
-➜  ~  cd ../
+➜  cd ../
 ➜  /Users  pwd
 ```
 
@@ -162,8 +162,8 @@ __Operands__ (or arguments or parameters) are what comes after a command, so we 
 __Try This__
 
 ```zsh
-➜  ~  cd ~
-➜  ~  mkdir living_room
+➜  cd ~
+➜  mkdir living_room
 ```
 
 ## Adding and Editing Files
@@ -203,7 +203,7 @@ But using `cat` is a horrid idea, anyone guess why? Let's use `less`.
 We want the books in our living room! Let's copy them there with the command `cp`.
 
 ```zsh
-➜  ~  cp ~/Desktop/books.txt ~/living_room/
+➜  cp ~/Desktop/books.txt ~/living_room/
 ```
 
 ## Moving
@@ -211,26 +211,26 @@ We want the books in our living room! Let's copy them there with the command `cp
 Wait... Now we have two lists of books.
 
 ```zsh
-➜  ~  ls ~/Desktop/book*
-➜  ~  ls ~/living_room/book*
+➜  ls ~/Desktop/book*
+➜  ls ~/living_room/book*
 ```
 
 Let's remove the books from the living room with the `rm` command and try moving them instead `mv`.
 
 ```zsh
-➜  ~  rm ~/living_room/books.txt
+➜  rm ~/living_room/books.txt
 ```
 
 Now we're going to move them.
 
 ```zsh
-➜  ~  mv ~/Desktop/books.txt ~/living_room/
+➜  mv ~/Desktop/books.txt ~/living_room/
 ```
 
 Are the old books still there?
 
 ```zsh
-➜  ~  ls ~/Desktop/books.txt
+➜  ls ~/Desktop/books.txt
 ```
 
 # Create Development Directory
@@ -241,20 +241,20 @@ Follow these steps to set up your development directory (which we'll call `devel
 
 1. Change into your home directory:
 
-  ```bash
-  $ cd ~
+  ```zsh
+  ➜  cd ~
   ```
 
 2. Create a new directory called `develop`:
 
-  ```bash
-  $ mkdir develop
+  ```zsh
+  ➜  mkdir develop
   ```
 
 3. Whenever you start a new project, change into your `develop` directory, then you're ready to go!
 
-  ```bash
-  $ cd ~/develop
+  ```zsh
+  ➜  cd ~/develop
   ```
 
 **Important:** DO NOT turn your home (`~`) or development (`~/develop`) directory into a git repository. This would be done by running `git init` in either directory (which you DO NOT want to do). If `~` or `~/develop` is a git repository, any project you create inside `~/develop` won't be properly tracked by GitHub.
@@ -303,25 +303,25 @@ More specifically, **a version control system allows you to:**
 
 4. Use the "clone URL" to clone the repo onto your local machine. Make sure you're in your `~/develop` directory before you clone!
 
-  ```bash
-  $ cd ~/develop
-  $ git clone <clone-url>
+  ```zsh
+  ➜  cd ~/develop
+  ➜  git clone <clone-url>
   ```
 
 5. Change directories into the repo you just cloned (in this example, `command-line-mystery`).
 
-  ```bash
-  $ cd command-line-mystery
+  ```zsh
+  ➜  cd command-line-mystery
   ```
 
 6. At this point, begin writing code to complete the assignment. Make sure you're committing frequently and pushing to GitHub. A typical workflow looks something like this:
 
-  ```bash
+  ```zsh
   # make changes using your text editor
-  $ git status
-  $ git add .
-  $ git commit -m "message describing changes"
-  $ git push origin master
+  ➜  git status
+  ➜  git add .
+  ➜  git commit -m "message describing changes"
+  ➜  git push origin master
   ```
 
 7. Once you're done with the assignment and have committed and pushed ALL of your changes to GitHub, it's time to make a pull request back to the original homework repo. Go to your forked copy of the repo on GitHub, and click the "Pull Request" button.
