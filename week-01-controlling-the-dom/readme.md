@@ -14,7 +14,7 @@
     <td>Course Overview</td>
     <td><a href="day-02/drill">Debugging JavaScript</a></td>
     <td><a href="day-03/drill">JavaScript Data Types</a></td>
-    <td><a href="day-04/drill">JavaScript Functions</a></td>
+    <td><a href="day-04/drill">More Functions</a></td>
     <td>Assessment</td>
   </tr>
   <tr>
@@ -40,7 +40,7 @@
     <td>HW</td>
     <td><a href="https://github.com/sf-wdi-24/command-line-mystery" target="_blank">Command Line Mystery</a></td>
     <td><a href="https://github.com/sf-wdi-24/site-recreation" target="_blank">Build Website in HTML/CSS, Bootstrap</a></td>
-    <td><a href="https://github.com/sf-wdi-24/functions-challenges" target="_blank">JavaScript Functions</a></td>
+    <td><a href="https://github.com/sf-wdi-24/functions-challenges" target="_blank">Functions HW</a></td>
     <td><a href="https://github.com/sf-wdi-24/site-recreation-interactive" target="_blank">Add Interactivity to Tues HW</a></td>
     <td><a href="https://github.com/sf-wdi-24/tic-tac-toe" target="_blank">Weekend Lab (Tic Tac Toe)</a></td>
   </tr>
