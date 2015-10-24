@@ -24,7 +24,7 @@ Working as a developer requires a firm understanding of the command line. It wil
 
 Important Note:
 
-__You should not copy / paste scripts from web pages and run them in your terminal until you have read them and understand what they do, bad things can happen, particularly with sudo and su commands__
+__You should not copy / paste scripts from web pages and run them in your terminal until you have read them and understand what they do. Bad things can happen, particularly with sudo and su commands__
 
 
 # Terminal Introduction
@@ -107,7 +107,7 @@ Have you ever heard of `hidden files`?
 ➜  ls -a
 ```
 
-Hidden Files are typically used by applications to store configurations and there will be a many of them in your home directory. Most users don't want to be editing these files so they don't show up in `Finder`, but you as a software developer will be editing some these for yourself later on in the course.
+Hidden Files are typically used by applications to store configurations and there will be a many of them in your home directory. Most users don't want to be editing these files so they don't show up in `Finder`, but as a software developer you will be editing some these for yourself later on in the course.
 
 Hidden files are hidden because their names begin with "`.`".
 
@@ -172,7 +172,7 @@ Let's `cd` into our new `living_room`  Look around with `ls`, and `ls -la`.  Wha
 
 __Exercise__
 
-I want my living room to have a bookshelf full of books.  Let's make a file that lists all of our books.  Open Sublime Text and make a new file called `books.txt` and save them on your Desktop.  Add a few books, copy and paste the section below so we all have some books in common, and save the file.  Make sure the books you add are in the same format:  `<author_given_name>, <author_last_name>:<title>`.
+I want my living room to have a bookshelf full of books.  Let's make a file that lists all of our books.  Open Sublime Text and make a new file called `books.txt` and save it on your Desktop.  Add a few books, copy and paste the section below so we all have some books in common, and save the file.  Make sure the books you add are in the same format:  `<author_given_name>, <author_last_name>:<title>`.
 
 ```
 Carroll, Lewis:Through the Looking-Glass
@@ -215,7 +215,7 @@ Wait... Now we have two lists of books.
 ➜  ls ~/living_room/book*
 ```
 
-Let's remove the books from the living room with the `rm` command and try moving them instead `mv`.
+Let's remove the books from the living room with the `rm` command and try moving them instead with `mv`.
 
 ```zsh
 ➜  rm ~/living_room/books.txt
