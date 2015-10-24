@@ -58,7 +58,7 @@ So long as we know the name of the event we're listening for, we can "attach" or
 
 ### Callbacks & Event Listeners
 
-When you pass a function a function (recursive), we call the second function a "callback" function. This is a scary and confusing way of saying, "here are some instructions for you to follow later". This pattern is used a lot in jQuery.
+When you pass a function into a function (recursive), we call the second function a "callback" function. This is a scary and confusing way of saying, "here are some instructions for you to follow later". This pattern is used a lot in jQuery.
 
 In jQuery we often use a pattern called "Event Binding", we also talk about "Event Listeners".
 
@@ -139,8 +139,8 @@ Hijack the big red button on the <a href="https://generalassemb.ly/" target="_bl
 
 When you click the button...
 
-1. prevent the default link behavior, and print "Clicked!" to the console.
-2. use `$(this)` to change the text of the link to say "1".
+1. Prevent the default link behavior, and print "Clicked!" to the console.
+2. Use `$(this)` to change the text of the link to say "1".
 3. Display the number of times the link has been clicked. If I click it again it should say "2".
 
 # Exercises

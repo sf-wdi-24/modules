@@ -123,7 +123,7 @@ friends.push("Jane");
 
 ### Object Literals
 
-Object literals store data as key and value pairs. They're like arrays except that data isn't stored in any sorted order and keys don't have to numbered indexes.
+Object literals store data as key and value pairs. They're like arrays except that data isn't stored in any sorted order and keys don't have numbered indexes.
 
 ```js
 // create object literal

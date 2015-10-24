@@ -12,21 +12,21 @@
 Answer the two questions assigned to your group. Feel free to do some research if you're not sure!
 
 **Group 1:**
-1. What does CSS stand for?
-2. Explain the difference between an element, a class, and an id.
+* What does CSS stand for?
+* Explain the difference between an element, a class, and an id.
 
 **Group 2:**
 * Describe the concept of CSS specificity and how it is used.
 * What are the three ways to implement CSS styling? Which one is best practice and why?
 
 **Group 3:**
-1. Explain the CSS Box Model.
-2. What values can we use with the `display` property and what do they do?
+* Explain the CSS Box Model.
+* What values can we use with the `display` property and what do they do?
 
 **Group 4:**
 
-1. What is the difference between `absolute`, `fixed`, `relative` and `static` positioning?
-2. Explain floats and clears.
+* What is the difference between `absolute`, `fixed`, `relative` and `static` positioning?
+* Explain floats and clears.
 
 ## Another Perspective
 
