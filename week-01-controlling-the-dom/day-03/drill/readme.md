@@ -71,6 +71,8 @@ Math.floor(3.9999)
 //=> 3
 ```
 
+**Note:** JavaScript has a global property called `NaN`, meaning "Not A Number". `NaN` is the returned value when `Math` functions fail, e.g. `Math.sqrt(-1)`. [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN" target="_blank">more info</a>]
+
 ## Objects
 
 Primitive data types are not enough for most programming purposes. We need collections of data that we can use efficiently. Objects are **reference data types** that allow us to group primitives together.
