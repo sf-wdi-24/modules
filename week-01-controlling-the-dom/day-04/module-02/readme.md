@@ -10,6 +10,8 @@
 
 ### Events are always happening!
 
+![Click Event](http://www.createursoftware.net/Windows/XP/img/tous/gif/clicking.gif)
+
 In chrome we can use the following utility function to log events occurring in the window:
 
 ```js
