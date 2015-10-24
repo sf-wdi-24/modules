@@ -12,28 +12,28 @@
   <tr>
     <td>Drill</td>
     <td>Course Overview</td>
-    <td>[Debugging JavaScript](./day-02/drill)</td>
-    <td>[JavaScript Data Types](/day-03/drill)</td>
-    <td>[JavaScript Functions](day-04/drill)</td>
+    <td><a href="day-02/drill">Debugging JavaScript</a></td>
+    <td><a href="day-03/drill">JavaScript Data Types</a></td>
+    <td><a href="day-04/drill">JavaScript Functions</a></td>
     <td>Assessment</td>
   </tr>
   <tr>
     <td>Module1</td>
     <td>Culture Setting</td>
-    <td>[HTML/CSS, Sublime Text](day-02/module-01)</td>
-    <td>[JavaScript Control Flow](day-03/module-01)</td>
-    <td>[Intro DOM Manipulation & jQuery](day-04/module-01)</td>
+    <td><a href="day-02/module-01">HTML/CSS, Sublime Text</a></td>
+    <td><a href="day-03/module-01">JavaScript Control Flow</a></td>
+    <td><a href="day-04/module-01">Intro DOM Manipulation & jQuery</a></td>
     <td>Review</td>
   </tr>
   <tr>
     <td>Module2</td>
     <td>
       Assessment<br><br>
-      [What is the Internet, Terminal, Git/GitHub](day-01/module-02)
+      <a href="day-01/module-02">What is the Internet, Terminal, Git/GitHub</a>
     </td>
-    <td>[Intro Bootstrap](day-02/module-02)</td>
-    <td>[JavaScript Functions](day-03/module-02)</td>
-    <td>[DOM Context & Event-Binding](day-04/module-02)</td>
+    <td><a href="day-02/module-02">Intro Bootstrap</a></td>
+    <td><a href="day-03/module-02">JavaScript Functions</a></td>
+    <td><a href="day-04/module-02">DOM Context & Event-Binding</a></td>
     <td>Intro <a href="https://github.com/sf-wdi-24/tic-tac-toe" target="_blank">Weekend Lab (Tic Tac Toe)</a></td>
   </tr>
   <tr>
