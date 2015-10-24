@@ -4,10 +4,10 @@
 
 | Students will be able to... |
 | :--- |
-| Predict the output of boolean logic expressions|
-| Describe the structure of `if/else` and `switch` statements |
-| Explain the purpose of `for` loops and `while` loops, and when to use each |
-| Implement `if/else` logic, `for` and `while` loops, and combinations |
+| Predict the output of boolean logic expressions. |
+| Describe the structure of `if/else` and `switch` statements. |
+| Explain the purpose of `for` loops and `while` loops, and when to use each. |
+| Implement `if/else` logic, `for` and `while` loops, and combinations. |
 
 ## Motivation
 
