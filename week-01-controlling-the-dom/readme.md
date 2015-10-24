@@ -13,14 +13,14 @@
     <td>Drill</td>
     <td>Course Overview</td>
     <td>Debugging JavaScript</td>
-    <td>JavaScript Data Types</td>
+    <td>[JavaScript Data Types](day-03/drill)</td>
     <td>JavaScript Functions</td>
     <td>Assessment</td>
   </tr>
   <tr>
     <td>Module1</td>
     <td>Culture Setting</td>
-    <td>HTML/CSS, Sublime Text</td>
+    <td>[HTML/CSS, Sublime Text](day-02/module-01)</td>
     <td>JavaScript Control Flow</td>
     <td>Intro DOM Manipulation</td>
     <td>Review</td>
