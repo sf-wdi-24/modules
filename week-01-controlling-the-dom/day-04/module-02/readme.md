@@ -68,7 +68,7 @@ In jQuery we often use a pattern called "Event Binding", we also talk about "Eve
 
 All together this looks like:
 
-```
+```js
 $("p").on("mouseover", function handleHover(event){
     console.log("hi mousey!");
 })
@@ -76,7 +76,7 @@ $("p").on("mouseover", function handleHover(event){
 
 Sometimes you will see this shorthand:
 
-```
+```js
 $("p").mouseover(function(event){
     console.log("hi mousey!");
 })
@@ -102,7 +102,7 @@ As a digital native, you take these behaviors for granted.
 
 Try this on the [GA homepage](https://generalassemb.ly/):
 
-``` javascript
+```js
 var $links = $("a"); // every link on the page
 $links.on("click", function handleClick(event){
     alert("You just clicked a link. You are about to be redirected.");
@@ -115,7 +115,7 @@ We have two options: we can `return false` or we can use a special method called
 
 **`.preventDefault()`** (preferred because it is explicit):
 
-``` javascript
+```js
 $("a").on("click", function handleClick(event){
     event.preventDefault();
     // more code down here
@@ -124,7 +124,7 @@ $("a").on("click", function handleClick(event){
 
 **`return false`** (this works too!):
 
-``` javascript
+```js
 $("a").on("click", function handleClick(event){
     // more code up here
     return false;
