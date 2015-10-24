@@ -12,8 +12,8 @@
   <tr>
     <td>Drill</td>
     <td>Course Overview</td>
-    <td>[Debugging JavaScript](day-02/drill)</td>
-    <td>[JavaScript Data Types](day-03/drill)</td>
+    <td>[Debugging JavaScript](./day-02/drill)</td>
+    <td>[JavaScript Data Types](/day-03/drill)</td>
     <td>[JavaScript Functions](day-04/drill)</td>
     <td>Assessment</td>
   </tr>
