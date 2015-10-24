@@ -100,7 +100,7 @@ As a digital native, you take these behaviors for granted.
 * When you "submit" a form, you want it to send your data somewhere.
 * When you "click" on a link, you expect to navigate to a new page.
 
-Try this on the [GA homepage](https://generalassemb.ly/):
+Try this on the <a href="https://generalassemb.ly/" target="_blank">GA homepage</a>:
 
 ```js
 var $links = $("a"); // every link on the page
@@ -133,7 +133,7 @@ $("a").on("click", function handleClick(event){
 
 **Exercises**
 
-Hijack the big red button on the [GA homepage](https://generalassemb.ly/)!
+Hijack the big red button on the <a href="https://generalassemb.ly/" target="_blank">GA homepage</a>!
 
 When you click the button...
 
