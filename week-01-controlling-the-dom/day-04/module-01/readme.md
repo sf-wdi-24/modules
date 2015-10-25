@@ -238,9 +238,9 @@ Go to the <a href="https://generalassemb.ly" target="_blank">General Assembly ho
 4. Change the text of *every* paragraph on the page to: "Snakes. Why did it have to be snakes?"
 5. **Bonus:** Combine all your code into a single function called `changeAllTheThings`. When you call the function, it should make all your changes to the page. (You'll want to use a Script Snippet in your Chrome Developer Console for this. `cmd + option + J > Sources Tab > Snippets Sub-Tab`)
 
-<!-- ## Stretch Challenges
+## Stretch Challenge
 
-TODO: Write disappearing boxes challenge in JSFiddle -->
+Open up this <a href="http://jsfiddle.net/cameronjacoby/Lfnkg20h/1/" target="_blank">JSFiddle</a>. Write jQuery that makes the green boxes fade out one by one. The boxes should disappear in order from left to right, and there should be a one second delay before the next one goes away.
 
 ## Resources
 

@@ -172,3 +172,9 @@ Go to the <a href="https://generalassemb.ly" target="_blank">General Assembly ho
 
   changeAllTheThings();
   ```
+
+## Stretch Challenge
+
+Open up this <a href="http://jsfiddle.net/cameronjacoby/Lfnkg20h/1/" target="_blank">JSFiddle</a>. Write jQuery that makes the green boxes fade out one by one. The boxes should disappear in order from left to right, and there should be a one second delay before the next one goes away.
+
+<a href="http://jsfiddle.net/cameronjacoby/6hkmL5nr/2/" target="_blank">Solution</a>
