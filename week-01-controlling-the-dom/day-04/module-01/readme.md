@@ -182,23 +182,23 @@ For the following code blocks, come up with as many CSS selectors as you can thi
 
 **Code Block #1**
 
-<img src="https://cloud.githubusercontent.com/assets/7833470/10717913/b94098a2-7b22-11e5-8115-decf62e0b65b.png" style="border:1px solid #ddd">
+<img src="https://cloud.githubusercontent.com/assets/7833470/10717913/b94098a2-7b22-11e5-8115-decf62e0b65b.png">
 
 **Code Block #2**
 
-<img src="https://cloud.githubusercontent.com/assets/7833470/10717912/b9405ed2-7b22-11e5-9a64-07a19d7473d7.png" style="border:1px solid #ddd">
+<img src="https://cloud.githubusercontent.com/assets/7833470/10717912/b9405ed2-7b22-11e5-9a64-07a19d7473d7.png">
 
 **Code Block #3**
 
-<img src="https://cloud.githubusercontent.com/assets/7833470/10717909/b93ebabe-7b22-11e5-95a6-605fb5ca9312.png" style="border:1px solid #ddd">
+<img src="https://cloud.githubusercontent.com/assets/7833470/10717909/b93ebabe-7b22-11e5-95a6-605fb5ca9312.png">
 
 **Code Block #4**
 
-<img src="https://cloud.githubusercontent.com/assets/7833470/10717911/b940228c-7b22-11e5-84f5-0ee1b941f45e.png" style="border:1px solid #ddd">
+<img src="https://cloud.githubusercontent.com/assets/7833470/10717911/b940228c-7b22-11e5-84f5-0ee1b941f45e.png">
 
 **Code Block #5**
 
-<img src="https://cloud.githubusercontent.com/assets/7833470/10717910/b93fc8dc-7b22-11e5-8fc7-44d9f96e3fab.png" style="border:1px solid #ddd">
+<img src="https://cloud.githubusercontent.com/assets/7833470/10717910/b93fc8dc-7b22-11e5-8fc7-44d9f96e3fab.png">
 
 ### jQuery Selectors
 
@@ -246,4 +246,5 @@ Open up this <a href="http://jsfiddle.net/cameronjacoby/Lfnkg20h/1/" target="_bl
 
 * <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Selectors" target="_blank">Getting Started with CSS Selectors</a>
 * <a href="https://css-tricks.com/multiple-class-id-selectors" target="_blank">Multiple Class / ID and Class Selectors</a>
+* <a href="http://api.jquery.com" target="_blank">jQuery Docs</a>, <a href="http://api.jquery.com/category/manipulation" target="_blank">DOM Manipulation</a>, <a href="http://api.jquery.com/category/traversing" target="_blank">Tree Traversal</a>
 * <a href="https://www.codecademy.com/tracks/jquery" target="_blank">Codecademy jQuery Track</a>
