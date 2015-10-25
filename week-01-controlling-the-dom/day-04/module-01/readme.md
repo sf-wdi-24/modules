@@ -182,23 +182,23 @@ For the following code blocks, come up with as many CSS selectors as you can thi
 
 **Code Block #1**
 
-<img src="https://cloud.githubusercontent.com/assets/7833470/10717912/b9405ed2-7b22-11e5-9a64-07a19d7473d7.png" style="border:1px solid #ddd">
+<img src="https://cloud.githubusercontent.com/assets/7833470/10717913/b94098a2-7b22-11e5-8115-decf62e0b65b.png" style="border:1px solid #ddd">
 
 **Code Block #2**
 
-<img src="https://cloud.githubusercontent.com/assets/7833470/10717910/b93fc8dc-7b22-11e5-8fc7-44d9f96e3fab.png" style="border:1px solid #ddd">
+<img src="https://cloud.githubusercontent.com/assets/7833470/10717912/b9405ed2-7b22-11e5-9a64-07a19d7473d7.png" style="border:1px solid #ddd">
 
 **Code Block #3**
 
-<img src="https://cloud.githubusercontent.com/assets/7833470/10717913/b94098a2-7b22-11e5-8115-decf62e0b65b.png" style="border:1px solid #ddd">
+<img src="https://cloud.githubusercontent.com/assets/7833470/10717909/b93ebabe-7b22-11e5-95a6-605fb5ca9312.png" style="border:1px solid #ddd">
 
 **Code Block #4**
 
-<img src="https://cloud.githubusercontent.com/assets/7833470/10717909/b93ebabe-7b22-11e5-95a6-605fb5ca9312.png" style="border:1px solid #ddd">
+<img src="https://cloud.githubusercontent.com/assets/7833470/10717911/b940228c-7b22-11e5-84f5-0ee1b941f45e.png" style="border:1px solid #ddd">
 
 **Code Block #5**
 
-<img src="https://cloud.githubusercontent.com/assets/7833470/10717911/b940228c-7b22-11e5-84f5-0ee1b941f45e.png" style="border:1px solid #ddd">
+<img src="https://cloud.githubusercontent.com/assets/7833470/10717910/b93fc8dc-7b22-11e5-8fc7-44d9f96e3fab.png" style="border:1px solid #ddd">
 
 ### jQuery Selectors
 
@@ -221,7 +221,7 @@ For the following code blocks, come up with as many CSS selectors as you can thi
 3. How would you change (or *set*) the value to "Hola"?
 4. How would you add an `<h1>` to the page that says "A Spanish Greeting"?
 5. How would you add a second greeting ("Que tal?") below the first?
-6. How would you add the class "greeting" to both greetings?
+6. How would you add the class "section" to both greetings?
 
 ### Indiana Jones And the Temple of DOM
 
@@ -232,14 +232,11 @@ Go to the <a href="https://generalassemb.ly" target="_blank">General Assembly ho
   * Change (*set*) its text to "Indiana Jones and the Temple of DOM"
   * Add a `<small>` tag containing the text "(Rated G)" to the end of the line.
 2. Turn the big red button blue.
-3. Change the background of the first section heading to yellow.
-4. Make the GA icon 100 px tall.
-5. Select the first big image on the right (the one with the red-cushioned chair).
+3. Select the image to the right of the "Full-Time Courses" section (the one with the red-cushioned chair).
   * *Get* its image `src` (image url).
   * Swap out the image for this <a href="https://cloud.githubusercontent.com/assets/7833470/10717957/17c7ef00-7b24-11e5-8fea-4484b908f8a7.gif" target="_blank">GIF of Indiana Jones</a>.
-6. Change the text of *only* the first paragraph to: "Snakes. Why did it have to be snakes?"
-7. Now, change the text of *every* paragraph to the same quote.
-8. **Bonus:** Combine all your code into a single function called `changeAllTheThings`. When you call the function, it should make all your changes to the page. (You'll want to use a Script Snippet in your Chrome Developer Console for this. `cmd + option + J > Sources Tab > Snippets Sub-Tab`)
+4. Change the text of *every* paragraph on the page to: "Snakes. Why did it have to be snakes?"
+5. **Bonus:** Combine all your code into a single function called `changeAllTheThings`. When you call the function, it should make all your changes to the page. (You'll want to use a Script Snippet in your Chrome Developer Console for this. `cmd + option + J > Sources Tab > Snippets Sub-Tab`)
 
 <!-- ## Stretch Challenges
 
