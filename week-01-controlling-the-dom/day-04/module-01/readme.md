@@ -246,5 +246,7 @@ Open up this <a href="http://jsfiddle.net/cameronjacoby/Lfnkg20h/1/" target="_bl
 
 * <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Selectors" target="_blank">Getting Started with CSS Selectors</a>
 * <a href="https://css-tricks.com/multiple-class-id-selectors" target="_blank">Multiple Class / ID and Class Selectors</a>
-* <a href="http://api.jquery.com" target="_blank">jQuery Docs</a>, <a href="http://api.jquery.com/category/manipulation" target="_blank">DOM Manipulation</a>, <a href="http://api.jquery.com/category/traversing" target="_blank">Tree Traversal</a>
+* <a href="http://api.jquery.com" target="_blank">jQuery Docs</a>
+  * <a href="http://api.jquery.com/category/manipulation" target="_blank">DOM Manipulation</a>
+  * <a href="http://api.jquery.com/category/traversing" target="_blank">Tree Traversal</a>
 * <a href="https://www.codecademy.com/tracks/jquery" target="_blank">Codecademy jQuery Track</a>
