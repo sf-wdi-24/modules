@@ -28,7 +28,7 @@ A **GUI** exists to make an application more convenient for the user. An **API**
   ➜  curl -i "https://api.spotify.com/v1/artists/3jOstUTkEu2JkjvRdBA5Gu"
   ```
 
-2. RESTful API Explorer - <a href="https://chrome.google.com/webstore/detail/postman-rest-client-short/mkhojklkhkdaghjjfdnphfphiaiohkef">Postman</a>
+2. RESTful API Explorer - <a href="https://chrome.google.com/webstore/detail/postman-rest-client-short/mkhojklkhkdaghjjfdnphfphiaiohkef" target="_blank">Postman</a>
 
   ```
   https://api.spotify.com/v1/artists/3jOstUTkEu2JkjvRdBA5Gu
@@ -190,7 +190,17 @@ $.get(url).
   })
 ```
 
+## Challenges
+
+First, download the <a href="https://chrome.google.com/webstore/detail/postman-rest-client-short/mkhojklkhkdaghjjfdnphfphiaiohkef" target="_blank">Postman Chrome extension</a>.
+
+1. Use Postman to search the Spotify API for the artist "Weezer". Find the artist `id` in the response body. **Hint:** Use the <a href="https://developer.spotify.com/web-api/search-item" target="_blank">search endpoint</a>.
+2. Use Weezer's artist `id` to search for them directly using the <a href="https://developer.spotify.com/web-api/artist-endpoints" target="_blank">artist endpoint</a>.
+3. Find Weezer's top tracks in the US.
+4. Use the search endpoint to find albums or artists with the name "Clouds".
+5. Start tonight's lab!
+
 ## Resources
 
-* <a href="https://developer.spotify.com/web-api/search-item" target="_blank">Spotify API Search Endpoint</a>
 * <a href="https://api.jquery.com/jquery.get" target="_blank">jQuery.get()</a>
+* <a href="https://developer.spotify.com/web-api/endpoint-reference" target="_blank">Spotify API Docs</a>
