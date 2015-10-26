@@ -15,10 +15,45 @@ Application Program Interfaces (APIs) are similar to Graphical User Interfaces (
 
 A **GUI** exists to make an application more convenient for the user. An **API** does the same for its users, which are usually developers of other applications.
 
-#### Examples:
+#### Examples
 
 * Logging into Spotify with your Facebook account (Spotify uses Facebook's API)
 * Posting Instagram photos to Facebook or Twitter (Instagram uses Facebook's and Twitter's APIs)
+
+#### How to Interact with APIs
+
+1. `curl` in the terminal
+
+  ```zsh
+  ➜  curl -i "https://api.spotify.com/v1/artists/3jOstUTkEu2JkjvRdBA5Gu"
+  ```
+
+2. RESTful API Explorer - <a href="https://chrome.google.com/webstore/detail/postman-rest-client-short/mkhojklkhkdaghjjfdnphfphiaiohkef">Postman</a>
+
+  ```
+  https://api.spotify.com/v1/artists/3jOstUTkEu2JkjvRdBA5Gu
+  ```
+
+3. jQuery AJAX
+
+  ```js
+  $.get('https://api.spotify.com/v1/artists/3jOstUTkEu2JkjvRdBA5Gu', function(data) {
+    console.log(data);
+  });
+  ```
+
+#### Structure of a URL
+
+![url-structure](https://cloud.githubusercontent.com/assets/7833470/10722057/71282db8-7b69-11e5-867e-df5ef301ab19.png)
+
+| Spotify Query Type | Spotify Example URL |
+| :--- | :--- |
+| Artist Lookup by ID | `https://api.spotify.com/v1/artists/3jOstUTkEu2JkjvRdBA5Gu` |
+| Artist Search | `https://api.spotify.com/v1/search?type=artist&q=weezer` |
+
+#### Structure of a Response
+
+![response](https://cloud.githubusercontent.com/assets/7833470/10722166/95394272-7b6a-11e5-9679-3381c5baeaee.gif)
 
 ## AJAX
 
