@@ -49,7 +49,7 @@ A **GUI** exists to make an application more convenient for the user. An **API**
 | Spotify Query Type | Spotify Example URL |
 | :--- | :--- |
 | Artist Lookup by ID | `https://api.spotify.com/v1/artists/3jOstUTkEu2JkjvRdBA5Gu` |
-| Artist Search | `https://api.spotify.com/v1/search?type=artist&q=weezer` |
+| Artist Search | `https://api.spotify.com/v1/search?q=weezer&type=artist` |
 
 #### Structure of a Response
 

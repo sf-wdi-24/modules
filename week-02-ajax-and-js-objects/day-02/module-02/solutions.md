@@ -2,7 +2,7 @@
 
 1. Use Postman to search the Spotify API for the artist "Weezer". Find the artist `id` in the response body. **Hint:** Use the <a href="https://developer.spotify.com/web-api/search-item" target="_blank">search endpoint</a>.
 
-  ![screen shot 2015-10-25 at 22 56 34](https://cloud.githubusercontent.com/assets/7833470/10722508/2529c336-7b6e-11e5-8289-a20e168aa1db.png)
+  ![screen shot 2015-10-25 at 23 18 14](https://cloud.githubusercontent.com/assets/7833470/10722573/b98a1e22-7b6e-11e5-85c9-e3ae3e64066f.png)
 
 2. Use Weezer's artist `id` to search for them directly using the <a href="https://developer.spotify.com/web-api/artist-endpoints" target="_blank">artist endpoint</a>.
 
