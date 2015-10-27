@@ -1,4 +1,3 @@
-
 ## Swapping Variables: Solution
 ```
 var x = "a";
