@@ -102,7 +102,7 @@
 	var rainbowColors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
 
 	for (var i = 0; i <= rainbowColors.length; i++) {
-		console.log(rainbowColors[i]);
+	  console.log(rainbowColors[i]);
 	}
 	```
 
@@ -116,8 +116,7 @@
   //=> "violet"
 	//=> undefined
 
-	// note: `undefined` prints at the end, because the for loop goes
-  // through i <= rainbowColors.length (7). `rainbowColors[7]` is undefined.
+	// note: `undefined` prints at the end, because the for loop goes through i <= rainbowColors.length (7). `rainbowColors[7]` is undefined.
 	// we didn't mark it wrong if you missed the `undefined` part - that was tricky :)
   ```
 
