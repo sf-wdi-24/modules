@@ -2,8 +2,7 @@
 
 | Objectives |
 | :---- |
-| Pair program and contribute feedback to a colleague. |
-| Collaborate ideas on general program architecture. |
+| Collaborate on general program architecture. |
 
 ## Any general issues from homework?
 
