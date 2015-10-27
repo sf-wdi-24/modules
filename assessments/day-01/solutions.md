@@ -1,4 +1,4 @@
-# WDI 24 - Day 1 Assessment [SOLUTIONS]
+# <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" width="60"> WDI 24 - Day 1 Assessment [SOLUTIONS]
 
 **Instructions:** Do your best! Show your work - we’re more interested in your thought process and problem-solving skills than we are in exact syntax. Feel free to use code or "psuedo-code" (i.e. plain english).
 
