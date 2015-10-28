@@ -16,6 +16,6 @@
 
   ![screen shot 2015-10-25 at 23 10 09](https://cloud.githubusercontent.com/assets/7833470/10722509/2530fab6-7b6e-11e5-8633-3509fec8b6fa.png)
 
-5. Start <a href="https://github.com/sf-wdi-24/spotify-search" target="_blank">tonight's lab</a>!
+5. Start <a href="https://github.com/sf-wdi-24/spotify-search" target="_blank">tonight's homework</a>!
 
-  <a href="https://github.com/sf-wdi-24/spotify-search/tree/solution" target="_blank">spotify-search (solution branch)</a>
+  * <a href="https://github.com/sf-wdi-24/spotify-search/tree/solution" target="_blank">spotify-search (solution branch)</a>

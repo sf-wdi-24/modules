@@ -198,7 +198,7 @@ First, download the <a href="https://chrome.google.com/webstore/detail/postman-r
 2. Use Weezer's artist `id` to search for them directly using the <a href="https://developer.spotify.com/web-api/artist-endpoints" target="_blank">artist endpoint</a>.
 3. Find Weezer's top tracks in the US.
 4. Use the search endpoint to find albums or artists with the name "Clouds".
-5. Start <a href="https://github.com/sf-wdi-24/spotify-search" target="_blank">tonight's lab</a>!
+5. Start <a href="https://github.com/sf-wdi-24/spotify-search" target="_blank">tonight's homework</a>!
 
 ## Resources
 

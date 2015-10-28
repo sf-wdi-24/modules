@@ -1,4 +1,4 @@
-# JavaScript Data Types
+# <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" width="60"> JavaScript Data Types
 
 | Objectives |
 | :--- |
@@ -48,7 +48,7 @@ In order to perform certain number operations, JavaScript has a `Math` object wi
 ```js
 // 3^2
 Math.pow(3, 2)
-//=> 4
+//=> 9
 
 // 2^4
 Math.pow(2, 4)
@@ -111,7 +111,7 @@ var lastFriend = friends[2];
 JavaScript gives us some useful built-in methods:
 
 ```js
-friends.length();
+friends.length;
 //=> 3
 
 friends.indexOf("Larry");

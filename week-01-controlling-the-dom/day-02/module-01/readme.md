@@ -1,11 +1,11 @@
-# HTML/CSS, Sublime Text
+# <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" width="60"> HTML/CSS, Sublime Text
 
 | Objectives |
 | :--- |
-| Hand-code well-structured HTML documents |
-| Understand grid-based HTML structure |
-| Write better CSS |
-| Debug CSS more quickly |
+| Use HTML to create well-structured web pages |
+| Use CSS to make style changes and implement website design |
+| Understand CSS specificity, the box model, and CSS positioning |
+| Leverage Sublime and Emmet shortcuts to write faster HTML and CSS |
 
 ## Discussion: CSS Basics
 
@@ -75,7 +75,7 @@ h2.column-title>div#calendar>span>button
 
 Fork and clone the <a href="https://github.com/sf-wdi-24/css-basics-challenges" target="_blank">css-basics-challenges</a> repo, and work through the challenges below. *Note you will have to link the CSS file first.*
 
-1. Make an unordered HTML list of the following animals:  
+1. Make an unordered HTML list of the following animals:
   * mouse
   * canary
   * penguin
@@ -130,6 +130,7 @@ That said, there's still value in creating your own grid from scratch to solidif
 
 ## Resources
 
+* <a href="http://www.cheatography.com/martinprins/cheat-sheets/sublime-text-3-osx" target="_blank">Sublime Text 3 Cheat Sheet</a>
 * <a href="http://docs.emmet.io/cheat-sheet" target="_blank">Emmet Cheat Sheet</a>
 * <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Common_CSS_Questions" target="_blank">Common CSS Questions</a>
 * <a href="http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048" target="_blank">30 CSS Selectors You Must Memorize</a>
