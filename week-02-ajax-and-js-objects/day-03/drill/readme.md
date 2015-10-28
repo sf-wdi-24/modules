@@ -6,7 +6,7 @@ Functions practice.
 
 ## Letter Frequency Counter
 
-Start code w/ tests <a href="https://github.com/sf-wdi-24/letterCount/" target="_blank">here</a>.
+Start code <a href="https://github.com/sf-wdi-24/letterCount/" target="_blank">here</a>.
 
 Write a function that counts the number of times each letter occurs in a given string. It should return an object containing the count for each letter.
 
@@ -14,10 +14,10 @@ For example, given the word "apple", `letterCount("apple")` should return:
 
 ```javascript
 {
-  a: 1,
-  p: 2,
-  l: 1,
-  e: 1
+  "a": 1,
+  "p": 2,
+  "l": 1,
+  "e": 1
 }
 ```
 
@@ -28,3 +28,7 @@ For example, given the word "apple", `letterCount("apple")` should return:
 **Beyond**: Try out <a href="http://www.codewars.com/kata/character-frequency-1/javascript" target="_blank">this CodeWars challenge</a>.
 
 ## Solutions
+
+* [Base](https://github.com/sf-wdi-24/letterCount/compare/master...sf-wdi-24:solution)
+* [Bonus](https://github.com/sf-wdi-24/letterCount/compare/master...sf-wdi-24:solution-bonus)
+* [Super Bonus](https://github.com/sf-wdi-24/letterCount/compare/master...sf-wdi-24:solution-super-bonus)
