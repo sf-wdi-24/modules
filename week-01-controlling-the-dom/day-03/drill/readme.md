@@ -48,7 +48,7 @@ In order to perform certain number operations, JavaScript has a `Math` object wi
 ```js
 // 3^2
 Math.pow(3, 2)
-//=> 4
+//=> 9
 
 // 2^4
 Math.pow(2, 4)
