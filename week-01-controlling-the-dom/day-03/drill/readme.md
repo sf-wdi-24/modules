@@ -111,7 +111,7 @@ var lastFriend = friends[2];
 JavaScript gives us some useful built-in methods:
 
 ```js
-friends.length();
+friends.length;
 //=> 3
 
 friends.indexOf("Larry");
