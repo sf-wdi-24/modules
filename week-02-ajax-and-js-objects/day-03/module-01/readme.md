@@ -12,7 +12,7 @@
 
 * Thus far, we've been using jQuery to append HTML strings when we have data to send to the view from a server (via AJAX).
 
-* To avoid building long strings of HTML every time we have data to send to the view, we'll use <a href="http://handlebarsjs.com" target="_blank">Handlebars templating</a> to dynamically display data in our HTML. The parameters for for our data will live inside `{{}}` tags.
+* To avoid building long strings of HTML every time we have data to send to the view, we'll use <a href="http://handlebarsjs.com" target="_blank">Handlebars templating</a> to dynamically display data in our HTML. The parameters for our data will live inside `{{}}` tags.
 
 ## Why use client-side templating?
 
@@ -52,7 +52,7 @@
   </html>
   ```
 
-2. Next create element in your `index.html` where you will append the data from your template. Give this element an `id` (e.g. `results`) so you can select it with jQuery.
+2. Next create an element in your `index.html` where you will append the data from your template. Give this element an `id` (e.g. `results`) so you can select it with jQuery.
 
   ```html
   <body>
@@ -66,7 +66,7 @@
   </body>
   ```
 
-3. Create the template inside your `results` element. Give your template an `id` (e.g. `tracks-template`) so you can select it with jQuery.
+3. Create the template inside your `results` element. Give your template an `id` (e.g. `tracks-template`) so you can select it with jQuery. This template acts as an HTML "skeleton" which you'll fill with data. The `{{}}` parameters will be replaced by the data that comes back from your API call.
 
   ```html
   <body>
@@ -88,6 +88,8 @@
     </div>
   </body>
   ```
+
+  **Note:** The example above uses the Spotify API. We use `{{each}}` to iterate through the tracks that come back from Spotify. Each track has a `name` and an array of `artists`. Notice the extra `.` we need when accessing a value from array (this syntax is specific to Handlebars). `artists.[0]` gives us the first artist from the array.
 
 4. Compile your template in `main.js`. Calling `Handlebars.compile(source)` returns a function, which we save to the variable `template`. We will later use our new `template` function to pass in the data we want to render in the template.
 
@@ -116,7 +118,7 @@
 
 ## Challenges
 
-* Refactor your <a href="https://github.com/sf-wdi-24/spotify-search" target="_blank">Spotify Search app</a> app to use Handlebars templating. Feel free to pull down the <a href="https://github.com/sf-wdi-24/spotify-search/tree/solution" target="_blank">solution branch</a> if you want to start with fresh code.
+* Refactor your <a href="https://github.com/sf-wdi-24/spotify-search" target="_blank">Spotify Search app</a> to use Handlebars templating. Feel free to pull down the <a href="https://github.com/sf-wdi-24/spotify-search/tree/solution" target="_blank">solution branch</a> if you want to start with fresh code.
 
 ## Stretch Challenge
 

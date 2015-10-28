@@ -1,7 +1,7 @@
 ## Challenges
 
-* spotify-search (solution-underscore branch)
+* <a href="https://github.com/sf-wdi-24/spotify-search/tree/solution-handlebars" target="_blank">spotify-search (solution-handlebars branch)</a>
 
 ## Stretch Challenge
 
-* geoquakes
+* Geoquakes Lab
