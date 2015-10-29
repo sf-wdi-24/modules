@@ -17,7 +17,7 @@
 
 For the following code blocks, come up with as many CSS selectors as you can think of to select the HTML elements in **red**, and *only* the elements in red.
 
-**Code Block #1**
+#### Code Block #1:
 
 * `#fancy`
 * `p#fancy`
@@ -26,28 +26,28 @@ For the following code blocks, come up with as many CSS selectors as you can thi
 * `.page p#fancy`
 * `div.page p#fancy`
 
-**Code Block #2**
+#### Code Block #2:
 
 * `.small`
 * `div .small`
 * `div a.small`
 * `div.page a.small`
 
-**Code Block #3**
+#### Code Block #3:
 
 * `p a`
 * `div p a`
 * `.page p a`
 * `div.page p a`
 
-**Code Block #4**
+#### Code Block #4:
 
 * `.mad-favs li`
 * `ul.mad-favs li`
 * `.page .mad-favs li`
 * `div.page ul.mad-favs li`
 
-**Code Block #5**
+#### Code Block #5:
 
 * `.sparkles`
 * `p.sparkles`
