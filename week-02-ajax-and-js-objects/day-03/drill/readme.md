@@ -29,6 +29,6 @@ For example, given the word "apple", `letterCount("apple")` should return:
 
 ## Solutions
 
-* [Base](https://github.com/sf-wdi-24/letterCount/compare/master...sf-wdi-24:solution)
-* [Bonus](https://github.com/sf-wdi-24/letterCount/compare/master...sf-wdi-24:solution-bonus)
-* [Super Bonus](https://github.com/sf-wdi-24/letterCount/compare/master...sf-wdi-24:solution-super-bonus)
+* <a href="https://github.com/sf-wdi-24/letterCount/compare/master...sf-wdi-24:solution" target="_blank">Base</a>
+* <a href="https://github.com/sf-wdi-24/letterCount/compare/master...sf-wdi-24:solution-bonus" target="_blank">Bonus</a>
+* <a href="https://github.com/sf-wdi-24/letterCount/compare/master...sf-wdi-24:solution-super-bonus" target="_blank">Super Bonus</a>
