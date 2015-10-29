@@ -4,4 +4,4 @@
 
 ## Stretch Challenge
 
-* Geoquakes Lab
+* <a href="https://github.com/sf-wdi-24/geoquakes/tree/solution" target="_blank">geoquakes (solution branch)</a>

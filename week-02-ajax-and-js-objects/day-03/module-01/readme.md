@@ -122,7 +122,7 @@
 
 ## Stretch Challenge
 
-* Geoquakes Lab
+* <a href="https://github.com/sf-wdi-24/geoquakes" target="_blank">GeoQuakes</a>
 
 ## Resources
 
