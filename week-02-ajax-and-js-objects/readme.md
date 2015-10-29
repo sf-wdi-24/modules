@@ -21,7 +21,7 @@
     <td>Module1</td>
     <td>JavaScript Debugging Tools</td>
     <td>HTML Forms</td>
-    <td>Handlebars Templating</td>
+    <td><a href="day-03/module-01">Handlebars Templating</a></td>
     <td>JS Prototypes</td>
     <td>Review</td>
   </tr>
