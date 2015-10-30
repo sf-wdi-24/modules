@@ -1,15 +1,15 @@
-HTML Strings - solution
+## HTML Strings
 
 For the following challanges you are going to use the template from https://github.com/sf-wdi-24/frontend-template
 
-From the template repo copy the url to clone it (will be on the right hand side)
-In your terminal, go into your dev folder and type 'git clone' + paste the link
-Open this up in Sublime
-Paste the data object into the JS file.
-Type your solution into the document.ready method.
-You should console.log your solutions
-Run your file by opening your index.html page in Chrome
-Rejoice!
+1. From the template repo copy the url to clone it
+2. In your terminal, go into your dev folder and type 'git clone' + paste the link
+3. Open this up in Sublime
+4. Paste the data object into the JS file.
+5. Type your solution into the document.ready method.
+6. You should console.log your solutions
+7. Run your file by opening your index.html page in Chrome
+8. Rejoice!
 
 As a warmup, try to output the following values:
 
@@ -19,7 +19,7 @@ As a warmup, try to output the following values:
   * a list of github usernames
   * Create a function buildGithubLink that transforms a single student's info into an html string, with the following format:
 
-`<a href="https://github.com/torvalds">Linus Torvalds</a>`
+`<a href="https://github.com/hingle-mccringleberry">Hingle McCringleberry</a>`
 
 Using the function you just built, create a function called renderGithubLinks that takes an array of students and adds their github links to the page.
 
