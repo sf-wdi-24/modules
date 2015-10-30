@@ -1,227 +1,146 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" width="60"> JavaScript Prototypal Inheritance
 
-## Review
+## Review: Constructors & Prototypes
 
-We mentioned in the last lesson that a prototype was the building block of an object and that when we create a new class, we can attach attributes and methods to the prototype (as a better alternative to adding them in the constructor function to save memory).
-
-### Review of a Constructor and Prototype In JS
-
-In javascript we don't have classes, so we use constructor functions and prototypes to create them.
+In JavaScript, we don't have classes, so we use constructor functions and prototypes to create them. Prototypes are the building blocks of objects. When we create a new "class", we can attach attributes and methods to the prototype (as a better alternative to adding them in the constructor function to save memory).
 
 ```js
-function Person(name){
-	this.name = name
+function Person(name) {
+  this.name = name;
 }
 
-Person.prototype.greet = function(){
-	return "Hello, my name is " + this.name;
+Person.prototype.greet = function() {
+  return "Hello, my name is " + this.name;
 };
 ```
 
-## Inheritance
+## Prototypal Inheritance
 
-### Inheriting Via Prototypes
+Objects can inherit properties and methods from other objects. In JavaScript, we use prototypes to do this, and the process is called inheritance. The formal term for this inheritance via prototypes is called prototypal inheritance.
 
-We have previously mentioned briefly, that objects can inherit properties and methods from other objects. In JavaScript we use prototypes to do this and this process is called inheritance. The formal term for this inheritance via prototypes is called prototypal inheritance.
+### Setting Up Inheritance
 
-#### Inheritance is done in two steps ####
+1. Set the prototype of the subclass (the class that will get methods and properties from its parent, which is also known as the superclass) to a new instance of the superclass.
 
-1. Set the prototype of the subclass (the class that will get methods and properties from it's parent, which is also known as the superclass) to a new instance of the superclass (also known as parent class)
-
-2. Set the constructor of the subclass equal to it's constructor function (which was overwritten when the prototype was set to the superclass)
-
-Given the following example let's create a Student class that inherits from Person.
+2. Set the constructor of the subclass to its constructor function. We need to do this, because the subclass's constructor was overwritten when the prototype was set to the superclass.
 
 ```js
-function Person(name){
-	this.name = name
+function Person(name) {
+  this.name = name;
 }
 
-Person.prototype.greet = function(){
+Person.prototype.greet = function() {
 	return "Hello, my name is " + this.name;
 };
 
-function Student(name, course){
+function Student(name, course) {
 	this.name = name;
 	this.course = course;
 };
 
-Student.prototype = new Person
+// set prototype of subclass to new instance of superclass
+Student.prototype = new Person;
+
+// set constructor of subclass to its constructor function
 Student.prototype.constructor = Student;
 ```
 
-Why do we reset the constructor? See [this](http://stackoverflow.com/questions/8453887/why-is-it-necessary-to-set-the-prototype-constructor) answer.
-
-### Pitfalls/Side Effects - different properties for different classes
-
-When we inherit in JS we have to watch out for in the wild.
+Why do we reset the constructor? Let's look at an example:
 
 ```js
-function Person(name){
-	this.name = name;
-	this.friends = [];
+var student = new Student("Tim", "WDI");
+
+// if we DID NOT reset the constructor
+student.constructor
+//=> Person(name) {
+//   this.name = name;
+// }
+
+// resetting the constructor makes sure every
+// student instance returns the Student constructor
+student.constructor
+//=> Student(name, course) {
+//   this.name = name;
+//   this.course = course;
+// }
+```
+
+Read more about resetting the constructor on <a href="http://stackoverflow.com/questions/8453887/why-is-it-necessary-to-set-the-prototype-constructor" target="_blank">Stack Overflow</a>.
+
+### Useful Methods
+
+#### hasOwnProperty
+
+`object.hasOwnProperty('nameOfProperty')`
+
+Always make sure the name of the property is in quotes. Properties of objects that inherit from other objects will also return true.
+
+**Example:**
+
+```js
+var shirt = {
+  size: 'M',
+  color: 'blue'
 }
 
-Person.prototype.addFriend = function(name){
-	this.friends.push(new Person(name));
+shirt.hasOwnProperty(color);
+//=> Uncaught ReferenceError: color is not defined(…)
+
+shirt.hasOwnProperty('color');
+//=> true
+```
+
+**Example with Inheritance:**
+
+```js
+function Product(price, units) {
+	this.price = price;
+  this.units = units;
+}
+
+Product.prototype.sell = function(unitsSold) {
+	this.units -= unitsSold;
 };
 
-function Student(name){
-	Person.call(this, name)
+function Shirt(size, color, price, units) {
+	this.size = size;
+	this.color = color;
+  Product.call(this, price, units);
 };
 
-Student.prototype = new Person()
-Student.prototype.constructor = Student;
+Shirt.prototype = new Product;
+Shirt.prototype.constructor = Shirt;
+
+product = new Product(56, 100);
+shirt = new Shirt('M', 'blue', 28, 500);
+
+product.hasOwnProperty('price');
+//=> true
+
+shirt.hasOwnProperty('size');
+//=> true
+
+shirt.hasOwnProperty('units');
+//=> true
 ```
 
-* Create a person and a student and add different friends to each. Can you see the persons' friends from the student object? What about the other way around?
-
-### `call` and `apply`
-
-Example 1:
-
-```js
-var getAge = function(friend) {
-	return friend.age;
-}
-
-var john = { name: "john", age: 21 };
-var tom = { name: "tom", age: 31 };
-var bob = { name: "bob", age: 41 };
-getAge(john)
-getAge(tom)
-getAge(bob)
-
-```
-
-rewritten using `this`
-
-```js
-var getAge = function() {
-	return this.age;
-}
-
-var john = { name: "john", age: 21 };
-var tom = { name: "tom", age: 31 };
-var bob = { name: "bob", age: 41 };
-getAge.call(tom)
-getAge.call(john)
-getAge.call(bob)
-
-```
-
-Example 2:
-
-```js
-var setAge = function(friend, newAge) {
-	friend.age = newAge;
-}
-
-var john = { name: "john", age: 21 };
-setAge(john, 12)
-
-```
-
-rewritten using `this`
-
-```js
-var setAge = function(newAge) {
-	this.age = newAge;
-}
-
-var john = { name: "john", age: 21 };
-setAge.call(john, 12)
-
-```
-
-Apply works just like call, but your second parameter is an array of objects instead of a comma separated list.
-
-### Calling on a solution
-
-Let's talk about using `call` or `apply` to set the `this` context for a function before it is run.
-
-```js
-function Person(name){
-	this.name = name;
-	this.friends = [];
-}
-
-Person.prototype.addFriend = function(name){
-	this.friends.push(new Person(name));
-};
-
-function Student(name){
-	// masks all the constructor properties including name (as the second parameter)
-	Person.call(this, name);
-};
-
-Student.prototype = new Person()
-Student.prototype.constructor = Student;
-```
-
-Unfortunately, this breaks the **Law of Demeter** (AKA **Priniciple of Least Knowledge**), which state that modular units should only have limited knowledge of the other units they are tied to.
-
-### Useful methods when working with inheritance
-
-### hasOwnProperty ###
-
-Object.hasOwnProperty('nameOfProperty') - always make sure the name of the property is in quotes. Classes that inherit from other classes will also return true if the property is checked.
-
-Example 1
-
-```js
-var taco = {
-	food: "taco"
-}
-
-taco.hasOwnProperty(food) // returns an error
-taco.hasOwnProperty("food") // returns true
-```
-
-Example 2 with inheritance
-
-```js
-
-function Person(name){
-	this.name = name
-}
-
-Person.prototype.greet = function(){
-	return "Hello, my name is " + this.name;
-};
-
-function Student(name, course){
-	this.name = name;
-	this.course = course;
-};
-
-Student.prototype = new Person
-Student.prototype.constructor = Student;
-
-p = new Person("bob")
-s = new Student("tom")
-
-p.hasOwnProperty("name") //returns true
-s.hasOwnProperty("course") //returns true
-s.hasOwnProperty("name") //returns true
-
-```
-
-### instanceOf
-
-This method is a bit more common  and the syntax looks like this:
+#### instanceOf
 
 `object instanceOf Class`
 
-Example 1:
+**Exmaple:**
 
 ```js
 var color = "green";
-color1 instanceof String; // returns true
 
+color instanceof String;
+//=> true
+
+String instanceof Object
+//=> true
 ```
 
-Example 2 with inheritance
+**Example with Inheritance:**
 
 ```js
 
@@ -247,9 +166,6 @@ s = new Student("tom")
 s instanceof Person //returns true
 p instanceof Student //returns false
 Person instanceof Object //returns true
-String instanceof Object //returns true
-Object isntanceof Boolean //returns false
-
 ```
 
 #### Quirk with instanceOf
