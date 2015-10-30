@@ -40,7 +40,7 @@ Take a look at this <a href="http://bl.ocks.org/joyrexus/5322252" target="blank"
 
 ```js
 // jquery
-var divs = $('div');
+var $divs = $('div');
 
 // vanilla js
 var divs = document.querySelectorAll('div');
@@ -50,7 +50,7 @@ var divs = document.querySelectorAll('div');
 
 ```js
 // jquery
-var content = $('.content');
+var $content = $('.content');
 
 // vanilla js
 var content = document.getElementsByClassName('content');
@@ -60,7 +60,7 @@ var content = document.getElementsByClassName('content');
 
 ```js
 // jquery
-var about = $('#about');
+var $about = $('#about');
 
 // vanilla js
 var about = document.getElementById('about');
@@ -70,8 +70,8 @@ var about = document.getElementById('about');
 
 ```js
 // jquery
-var newDiv = $('<div></div>');
-$('body').append(newDiv);
+var $newDiv = $('<div></div>');
+$('body').append($newDiv);
 
 // vanilla js
 var newDiv = document.createElement('div');
@@ -110,18 +110,18 @@ You know you're working with jQuery any time you see a `$` in your code.
 
 As you're working with jQuery to manipulate DOM elements, you are almost always either *getting* or *setting* a value. Memorize this pattern:
 
-* `$('css-selector).someJqueryMethodName()` - **get** a value
-* `$('css-selector).someJqueryMethodName(setterValue)` - **set** a value
+* `$('css-selector').someJqueryMethodName()` - **get** a value
+* `$('css-selector').someJqueryMethodName(setterValue)` - **set** a value
 
 For example, if you are viewing this `readme` on GitHub, you can try the following in your Chrome Developer Console:
 
 * `$('article').text()` - **get** the `readme`'s text (it lives inside of an `article` tag)
-* `$('article').text("Boo!")` - **set** the `readme`'s text to "Boo!"
+* `$('article').text('Boo!')` - **set** the `readme`'s text to "Boo!"
 
 Let's try another:
 
-* `$('article').css("background-color")` - **get** the background color
-* `$('article').css("background-color", "blue")` - **set** the background color to blue
+* `$('article').css('background-color')` - **get** the background color
+* `$('article').css('background-color', 'blue')` - **set** the background color to blue
 
 ### Documentation
 
@@ -180,23 +180,23 @@ For more cool DOM manipulation tricks, you'll need to hit the docs:
 
 For the following code blocks, come up with as many CSS selectors as you can think of to select the HTML elements in **red**, and *only* the elements in red.
 
-**Code Block #1**
+#### Code Block #1:
 
 <img src="https://cloud.githubusercontent.com/assets/7833470/10717913/b94098a2-7b22-11e5-8115-decf62e0b65b.png">
 
-**Code Block #2**
+#### Code Block #2:
 
 <img src="https://cloud.githubusercontent.com/assets/7833470/10717912/b9405ed2-7b22-11e5-9a64-07a19d7473d7.png">
 
-**Code Block #3**
+#### Code Block #3:
 
 <img src="https://cloud.githubusercontent.com/assets/7833470/10717909/b93ebabe-7b22-11e5-95a6-605fb5ca9312.png">
 
-**Code Block #4**
+#### Code Block #4:
 
 <img src="https://cloud.githubusercontent.com/assets/7833470/10717911/b940228c-7b22-11e5-84f5-0ee1b941f45e.png">
 
-**Code Block #5**
+#### Code Block #5:
 
 <img src="https://cloud.githubusercontent.com/assets/7833470/10717910/b93fc8dc-7b22-11e5-8fc7-44d9f96e3fab.png">
 
