@@ -1,7 +1,7 @@
-HTML Strings
+## HTML Strings
 
-Good:
-
+### Good:
+```
 function buildGithubLink(student) {
   var full_name = student.first_name + " " + student.last_name;
   var url = "http://github.com/" + student.github_username;
@@ -25,3 +25,4 @@ function renderGithubLinks(students){
 }
 
 renderGithubLinks( data.students );
+```
