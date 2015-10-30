@@ -14,7 +14,7 @@
     <td>Weekend Lab Review</td>
     <td>JSON & HTML Strings</td>
     <td>Letter Frequency Counter</td>
-    <td>Merge Sorted Arrays</td>
+    <td><a href="day-04/drill">Array Drills</a></td>
     <td>Assessment</td>
   </tr>
   <tr>
