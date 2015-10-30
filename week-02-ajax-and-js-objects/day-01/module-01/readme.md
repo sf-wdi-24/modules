@@ -8,15 +8,15 @@
 
 **It's OK if you don't know what all the terms in the objective mean, you will by the end of this module.**
 
-# What is a debugger?
+# What does bug and debugging mean?
 
 > The terms "bug" and "debugging" are popularly attributed to Admiral Grace Hopper in the 1940s. While she was working on a Mark II Computer at Harvard University, her associates discovered a moth stuck in a relay and thereby impeding operation, whereupon she remarked that they were "debugging" the system. [Debugging Wikipedia](https://en.wikipedia.org/wiki/Debugging)
+
+# What is a debugger?
+
 > A debugger or debugging tool is a computer program that is used to test and debug other programs. [Debugger Wikipedia Entry](https://en.wikipedia.org/wiki/Debugger)
 
 It is software to help remove bugs from software.
-
-But. What is a *bug*?
-
 
 # Why use a debugger?
 
