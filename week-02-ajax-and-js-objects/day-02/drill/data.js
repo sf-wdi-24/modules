@@ -2,28 +2,28 @@ data = {
     school: "General Assembly",
     city: "San Francisco",
     course: "Web Development Immersive",
-    course_id: "WDI22",
-    classrootm: "1",
+    course_id: "WDI24",
+    classrootm: "7",
     students: [{
         id: 0,
-        last_name: "Aramayo",
-        first_name: "Angelo",
-        github_username: "angelo2dot0"
+        last_name: "Abeyta",
+        first_name: "Adam",
+        github_username: "abeytaadam"
     }, {
         id: 1,
-        last_name: "Bia",
-        first_name: "Racha",
-        github_username: "racha_bella"
+        last_name: "Lee",
+        first_name: "Alan",
+        github_username: "alanlee35"
     }, {
         id: 2,
-        last_name: "Gabot",
-        first_name: "Brian",
-        github_username: "bgabot89"
+        last_name: "Massey",
+        first_name: "Andre",
+        github_username: "DreTGiant"
     }, {
         id: 0,
-        last_name: "Dawsom",
-        first_name: "Chris",
-        github_username: "awhit012"
+        last_name: "Saavedra",
+        first_name: "Carlos",
+        github_username: "murcielago17"
     }, {
         id: 1,
         last_name: "Salinas",
@@ -31,88 +31,48 @@ data = {
         github_username: "Cyndy528"
     }, {
         id: 2,
-        last_name: "Zaghian",
-        first_name: "Danielle",
-        github_username: "DaniZaghian"
+        last_name: "Sloan",
+        first_name: "Dave",
+        github_username: "slnwlf"
     }, {
         id: 0,
-        last_name: "Long",
-        first_name: "Francesca",
-        github_username: "FrancescaLong"
+        last_name: "Chang",
+        first_name: "Eddy",
+        github_username: "TheEddyChang"
     }, {
         id: 1,
-        last_name: "Hollis",
-        first_name: "Jamey",
-        github_username: "HollisDayCheer"
+        last_name: "Dwyer",
+        first_name: "John",
+        github_username: "Jsdwyer26"
     }, {
         id: 2,
-        last_name: "Assaf",
-        first_name: "Jason",
-        github_username: "awhit012"
+        last_name: "Rockway",
+        first_name: "Michael",
+        github_username: "mrockway"
     }, {
         id: 0,
-        last_name: "Kwok",
-        first_name: "Jennifer",
-        github_username: "jenniferkwok"
+        last_name: "Stevens",
+        first_name: "Stanley",
+        github_username: "Stanleyyork"
     }, {
         id: 1,
-        last_name: "Shin",
-        first_name: "Josh",
-        github_username: "racha_bella"
+        last_name: "Noble",
+        first_name: "Steven",
+        github_username: "stevennoble78"
     }, {
         id: 2,
-        last_name: "Pangilinan",
-        first_name: "Kenneth",
-        github_username: "KennPangilinan"
+        last_name: "Huynh",
+        first_name: "Trung",
+        github_username: "tkhuynh"
     }, {
         id: 0,
-        last_name: "Buitrago",
-        first_name: "Laura",
-        github_username: "awhit012"
+        last_name: "Frambach",
+        first_name: "Victoria",
+        github_username: "vframbach"
     }, {
         id: 1,
-        last_name: "Evans",
-        first_name: "Laura",
-        github_username: "lauraevans99"
-    }, {
-        id: 2,
-        last_name: "Luzuriaga",
-        first_name: "Margaux",
-        github_username: "margauxwithanx"
-    }, {
-        id: 0,
-        last_name: "Cowles",
-        first_name: "Matthew",
-        github_username: "mpcowles726"
-    }, {
-        id: 1,
-        last_name: "Pawell",
-        first_name: "Mikey",
-        github_username: "mikeypawell"
-    }, {
-        id: 2,
-        last_name: "Gelwicks",
-        first_name: "Riley",
-        github_username: "awhit012"
-    }{
-        id: 2,
-        last_name: "Wills",
-        first_name: "Robert",
-        github_username: "robwills127"
-    }, {
-        id: 0,
-        last_name: "Kizer",
-        first_name: "Sameul",
-        github_username: "kizersam"
-    }, {
-        id: 1,
-        last_name: "Chavez",
-        first_name: "Uriel",
-        github_username: "awhit012"
-    }, {
-        id: 2,
-        last_name: "Cauthen",
-        first_name: "Will",
-        github_username: "willcauthen"
+        last_name: "Muzafi",
+        first_name: "Zohar",
+        github_username: "zoharmuzafi"
     }]
 }
