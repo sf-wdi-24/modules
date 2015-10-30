@@ -106,7 +106,7 @@ Validations avoids having users submit bad data to our application. Knowing how 
 
 Bad data could be anything from a required field being empty, an email address that was mistyped, or a password confirmation that doesn't match. Thankfully, HTML forms give us simple out-of-the-box validations for these common situations.
 
-###Required
+### Required
 
 Try submitting the below form without entering your name:
 
@@ -119,7 +119,7 @@ Try submitting the below form without entering your name:
 ```
 Notice the `required` attribute on the input. Therefore, the form will not submit until some information is entered into the field.
 
-###Pattern matching
+### Pattern matching
 
 ```html
 <form>
@@ -131,7 +131,7 @@ Notice the `required` attribute on the input. Therefore, the form will not submi
 
 The `pattern` attribute allows us to specify the values we will accept. In this case only `bob` or `bobert` are acceptable.
 
-###Length
+### Length
 
 You may need the user to enter a specific amount of characters. Let's say you need a username to be at least 6 characters. You can use the `minlength` or `maxlength` attributes to help.
 
@@ -144,7 +144,29 @@ You may need the user to enter a specific amount of characters. Let's say you ne
 ```
 
 
-##Further Reading (optional)
+### Forms -- solutions
+
+For the following exercises, please ONLY use html.
+
+**Login Form.** Create an html form with two inputs: one for a username (named "username"), the other for password (named "password") (normally you don't see your password when you type it, so make sure it's blocked out!). What happens when you click submit?
+
+**Doomed Yet?** Create an html form that, on submit, sends the user to "hasthelargehadroncolliderdestroyedtheworldyet.com". Hint: what's the form action? Bonus: Can you change the submit button to say "Are we doomed?".
+
+**Color Search.** Create an html form that contains the html5 color-picker input (named "q"). When the user picks a color and clicks submit, redirect them to, e.g. "https://duckduckgo.com/?q=%2300fa91".
+
+**Image Search.** Create an html form that has an action of "https://www.google.com/search" and contains three inputs:
+
+ * a hidden input with a name of "tbm" and a value of "isch".
+ * a (required) text input with a name of "q", and a default value of "http status cats".
+ * a submit button
+
+You should end up here: "https://www.google.com/search?tbm=isch&q=http+status+cats"
+
+**Movie Search.** Create an html form that searches for movies on the OMDB API by title and by year. You will need to take care to use the correct query parameters. The only way to find out what they are is to read their documentation.
+
+**Stretch:** Return of the Movie Search. It's great that we can find find data about movies using the Open Movie Database, but it's not very helpful having all that data somewhere else. It would be awesome if we could "pull in" that data and use it on our webpage. It's time to learn about AJAX! Your goal is to figure out how to use jQuery's get method to request information (JSON) about the movie "Primer". Can you console.log the movie description? HINT: start by hitting the endpoint directly, then figure out how to "drill down" through the json object to get to the data you want.
+
+## Further Reading (optional)
 
 MDN has a number of exhaustive resources on HTML forms and inputs. It can be a lot to absorb, so look for patterns and try to grasp the big picture.
 
