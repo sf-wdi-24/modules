@@ -1,7 +1,3 @@
-var testArr1 = [3, 6, 11];
-var testArr2 = [2, 4, 5, 8, 9];
-// output should be [2, 3, 4, 5, 6, 8, 9, 11]
-
 var merge = function(arr1, arr2) {
   var result = [];
 
@@ -22,4 +18,7 @@ var merge = function(arr1, arr2) {
   return result.concat(arr1).concat(arr2);
 };
 
+var testArr1 = [3, 6, 11];
+var testArr2 = [2, 4, 5, 8, 9];
 console.log(merge(testArr1, testArr2));
+// expected output: [2, 3, 4, 5, 6, 8, 9, 11]
