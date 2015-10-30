@@ -22,7 +22,7 @@ Objects can inherit properties and methods from other objects. In JavaScript, we
 
 1. Set the prototype of the subclass (the class that will get methods and properties from its parent, which is also known as the superclass) to a new instance of the superclass.
 
-2. Set the constructor of the subclass to its constructor function. We need to do this, because the subclass's constructor was overwritten when the prototype was set to the superclass.
+2. Set the constructor of the subclass to its constructor function. We need to do this, because the subclass's constructor gets overwritten when we set the prototype to an instance of the superclass.
 
 ```js
 function Person(name) {
@@ -71,7 +71,7 @@ Read more about resetting the constructor on <a href="http://stackoverflow.com/q
 
 #### hasOwnProperty
 
-`object.hasOwnProperty('nameOfProperty')`
+`object.hasOwnProperty("nameOfProperty")`
 
 Always make sure the name of the property is in quotes. Properties of objects that inherit from other objects will also return true.
 
@@ -79,14 +79,14 @@ Always make sure the name of the property is in quotes. Properties of objects th
 
 ```js
 var shirt = {
-  size: 'M',
-  color: 'blue'
+  size: "M",
+  color: "blue"
 }
 
 shirt.hasOwnProperty(color);
 //=> Uncaught ReferenceError: color is not defined(…)
 
-shirt.hasOwnProperty('color');
+shirt.hasOwnProperty("color");
 //=> true
 ```
 
@@ -112,15 +112,15 @@ Shirt.prototype = new Product;
 Shirt.prototype.constructor = Shirt;
 
 product = new Product(56, 100);
-shirt = new Shirt('M', 'blue', 28, 500);
+shirt = new Shirt("M", "blue", 28, 500);
 
-product.hasOwnProperty('price');
+product.hasOwnProperty("price");
 //=> true
 
-shirt.hasOwnProperty('size');
+shirt.hasOwnProperty("size");
 //=> true
 
-shirt.hasOwnProperty('units');
+shirt.hasOwnProperty("units");
 //=> true
 ```
 
@@ -136,71 +136,58 @@ var color = "green";
 color instanceof String;
 //=> true
 
-String instanceof Object
+String instanceof Object;
 //=> true
 ```
 
 **Example with Inheritance:**
 
 ```js
+product = new Product(56, 100);
+shirt = new Shirt("M", "blue", 28, 500);
 
-function Person(name){
-	this.name = name
-}
+shirt instanceof Product;
+//=> true
 
-Person.prototype.greet = function(){
-	return "Hello, my name is " + this.name;
-};
+product instanceof Shirt;
+//=> false
 
-function Student(name, course){
-	this.name = name;
-	this.course = course;
-};
-
-Student.prototype = new Person
-Student.prototype.constructor = Student;
-
-p = new Person("bob")
-s = new Student("tom")
-
-s instanceof Person //returns true
-p instanceof Student //returns false
-Person instanceof Object //returns true
+Product instanceof Object;
+//=> true
 ```
 
-#### Quirk with instanceOf
-
-Like we mentioned in the previous lecture, adding the word `new` when creating an object is essential. Let's look at these two examples
+Using the word `new` when creating an object is essential. Let's look at these two examples using `instanceof`:
 
 ```js
 var color1 = new String("green");
-color1 instanceof String; // returns true
+color1 instanceof String;
+//=> true
 
 var color2 = String("green");
-color2 instanceof String; // returns false
+color2 instanceof String;
+//=> false
 ```
-
-Let's examine these two using console.dir, what do you see?
 
 ### isPrototypeOf
 
-This method is used a bit less prequently, but the syntax looks like this:
+This method is used a bit less frequently, but the syntax looks like this:
 
-`Object.hasOwnProperty('nameOfProperty')`
+`Object.prototype.isPrototypeOf(object)`
 
-Example:
+**Example:**
 
 ```js
-Object.prototype.isPrototypeOf(Function) // returns true
-Boolean.prototype.isPrototypeOf(Number) // returns false
+Object.prototype.isPrototypeOf(Function);
+//=> true
+
+Boolean.prototype.isPrototypeOf(Number);
+//=> false
 ```
 
-You can read more about the difference between isPrototypeOf and isInstanceOf [here](http://stackoverflow.com/questions/2464426/whats-the-difference-between-isprototypeof-and-instanceof-in-javascript)
+Read about the difference between `instanceof` and `isPrototypeOf` on <a href="http://stackoverflow.com/questions/2464426/whats-the-difference-between-isprototypeof-and-instanceof-in-javascript" target="_blank">Stack Overflow</a>.
 
 ## Resources
 
+* <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript" target="_blank">Intro to Object Oriented JavaScript</a>
 * <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain" target="_blank">Inheritance and the prototype chain</a>
-
-[http://geekabyte.blogspot.com/2013/03/difference-between-protoype-and-proto.html](http://geekabyte.blogspot.com/2013/03/difference-between-protoype-and-proto.html)
-
-[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript#Inheritance](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript#Inheritance)
+* <a href="http://geekabyte.blogspot.com/2013/03/difference-between-protoype-and-proto.html" target="_blank">Difference Between Prototype and proto</a>
