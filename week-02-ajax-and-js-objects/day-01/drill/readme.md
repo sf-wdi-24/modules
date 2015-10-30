@@ -19,3 +19,11 @@ Now we have an opportunity collaborate with a colleague to get feedback on our s
 ### Why pair?
 
 Because we're a team and having a second perspective can enlighten us on alternate routes which may save us time or improve our code.
+
+### When pairing.
+
+When you pair, it is customary to have one person at the keyboard while the other person watches and offers advice.
+
+As the driver (person using the keyboard) you must trust your partner and listen to what they say.
+
+The navigator (person not using the keyboard) you can't touch the keyboard and must use your words to help describe what you would like to try. This requires a great deal of patience so if you become stuck try closing the computer and using a white board to describe your ideas.
