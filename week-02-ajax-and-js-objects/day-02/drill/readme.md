@@ -1,6 +1,6 @@
-## HTML Strings
+# <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" width="60"> HTML Strings
 
-For the following challanges you are going to use the template from https://github.com/sf-wdi-24/frontend-template
+For the following challenges you are going to use the template from <a href="https://github.com/sf-wdi-24/frontend-template" target="_blank">https://github.com/sf-wdi-24/frontend-template</a>
 
 1. From the template repo copy the url to clone it
 2. In your terminal, go into your dev folder and type 'git clone' + paste the link
