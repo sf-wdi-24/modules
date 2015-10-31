@@ -80,7 +80,7 @@ There are two ways to use labels correctly:
 
 ### Important Attributes
 
-All input types (including `<textarea>`s):
+**All input types (including `<textarea>`s):**
 
 - **`type`**: the type of data that is being input (affects the "widget" that is used to display this
   element by the browser).
@@ -92,7 +92,7 @@ All input types (including `<textarea>`s):
 - **`autofocus`**: defaults the cursor to a specific input when the page originally loads. You can only have one autofocus on your page.
 - **`disabled`**: a Boolean attribute indicating that the "widget" is not available for interaction.
 
-Radio buttons or checkboxes:
+**Radio buttons or checkboxes:**
 
 - **`checked`**: a Boolean that indicates whether the control is selected by default (is false unless).
 - **`name`**: the group to which this element is connected. For radio buttons, only one element per
