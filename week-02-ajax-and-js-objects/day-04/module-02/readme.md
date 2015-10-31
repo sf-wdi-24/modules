@@ -186,6 +186,18 @@ Boolean.prototype.isPrototypeOf(Number);
 
 Read about the difference between `instanceof` and `isPrototypeOf` on <a href="http://stackoverflow.com/questions/2464426/whats-the-difference-between-isprototypeof-and-instanceof-in-javascript" target="_blank">Stack Overflow</a>.
 
+## Challenges
+
+*Use the Chrome JavaScript console or a snippet for challenges 1-5.*
+
+1. Create an `Animal` constructor with the properties `name`, `age`, `color`, and `sound`.
+2. Animals should have a method called `speak` which outputs the `sound` they make.
+3. Create a `Cat` constructor with the same properties as `Animal` (bonus if you use the `call` method). Cats should also have a property called `isFluffy`.
+4. Implement prototypal inheritance with `Cat` as a subclass of `Animal`.
+5. Create a new instance of `Cat` and make them speak!
+6. Check if the cat you just created is an `instanceof` `Cat`. How about an `instanceof` `Animal`?
+7. Start <a href="" target="_blank">tonight's homework</a>!
+
 ## Resources
 
 * <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript" target="_blank">Intro to Object Oriented JavaScript</a>
