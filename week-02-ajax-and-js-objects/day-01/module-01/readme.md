@@ -1,4 +1,4 @@
-# Debugging JavaScript
+# <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" width="60">  Debugging JavaScript
 
 | Objectives |
 | :--- |
@@ -10,13 +10,13 @@
 
 # What does bug and debugging mean?
 
-[![How I feel while programming.](http://i.imgur.com/6usagmh.gif)](https://en.wikipedia.org/wiki/Debugging)
+<a href="http://i.imgur.com/6usagmh.gif" target="_blank"><img src="http://i.imgur.com/6usagmh.gif" alt="How I feel while programming."></a>
 
-> The terms "bug" and "debugging" are popularly attributed to Admiral Grace Hopper in the 1940s. While she was working on a Mark II Computer at Harvard University, her associates discovered a moth stuck in a relay and thereby impeding operation, whereupon she remarked that they were "debugging" the system. [Debugging Wikipedia](https://en.wikipedia.org/wiki/Debugging)
+> The terms "bug" and "debugging" are popularly attributed to Admiral Grace Hopper in the 1940s. While she was working on a Mark II Computer at Harvard University, her associates discovered a moth stuck in a relay and thereby impeding operation, whereupon she remarked that they were "debugging" the system. <a href="https://en.wikipedia.org/wiki/Debugging" target="_blank">Debugging Wikipedia</a>
 
 # What is a debugger?
 
-> A debugger or debugging tool is a computer program that is used to test and debug other programs. [Debugger Wikipedia Entry](https://en.wikipedia.org/wiki/Debugger)
+> A debugger or debugging tool is a computer program that is used to test and debug other programs. <a href="https://en.wikipedia.org/wiki/Debugger" target="_blank">Debugger Wikipedia Entry</a>
 
 It is software to help remove bugs from software. The software comes with many features which are designed to ease your ability to track down bugs and fix them.
 
@@ -69,22 +69,22 @@ debugger
 
 # Set a break point in Chrome's JavaScript Debugger
 
-Let's walk over the flow described in detail [on the JavaScript debugging page](https://developer.chrome.com/devtools/docs/javascript-debugging#breakpoints).
+Let's walk over the flow described in detail <a href="https://developer.chrome.com/devtools/docs/javascript-debugging#breakpoints" target="_blank">on the JavaScript debugging page</a>.
 
 # Inspect a variable's state while execution is paused
 
-Open today's [debugging challenge](https://github.com/sf-wdi-24/debugging-challenges) and we'll inspect a variables state.
+Open today's <a href="https://github.com/sf-wdi-24/debugging-challenges" target="_blank">debugging challenge</a> and we'll inspect a variables state.
 
 # Continue execution of the program
 
-Let's walk over more of the tools mentioned [on the JavaScript debugging page](https://developer.chrome.com/devtools/docs/javascript-debugging).
+Let's walk over more of the tools mentioned <a href="https://developer.chrome.com/devtools/docs/javascript-debugging" target="_blank">on the JavaScript debugging page</a>.
 
 # Challenges
 
-* [Debugging Challenge](https://github.com/sf-wdi-24/debugging-challenges)
+* <a href="https://github.com/sf-wdi-24/debugging-challenges" target="_blank">Debugging Challenge</a>
 
 ## References
 
-* [Chrome Developer Tools](https://developer.chrome.com/devtools/docs/javascript-debugging)
+* <a href="https://developer.chrome.com/devtools/docs/javascript-debugging" target="_blank">Chrome Developer Tools</a>
 * <a href="https://en.wikipedia.org/wiki/State_%28computer_science%29" target="_blank">Computer State Wiki</a>
 * <a href="https://pragprog.com/magazines/2012-04/sand-piles-and-software" target="_blank">Sand Piles and Software</a>
