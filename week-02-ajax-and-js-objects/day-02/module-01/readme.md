@@ -1,4 +1,4 @@
-# HTML5 Forms
+# <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" HTML5 Forms
 
 | Objectives |
 | :--- |
@@ -27,7 +27,7 @@ In the opening of the `<form>` tag you can see two attributes: `method` & `actio
 
 >For now simply understand that it is convention for [GET](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.3) to be used in a request when the client wants to receive data, and for [POST](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.5) to be used in a request when the client wants to send data.
 
-**Client / Server Model **
+**Client / Server Model**
 
 ![client/server](https://mdn.mozillademos.org/files/4291/client-server.png)
 
@@ -51,7 +51,7 @@ There are two ways to use labels correctly:
 
 #### `<label>`'s Attributes
 
-* The `for` in a label references an `<input>`s `id` attribute, not it's `name` attribute! Sometimes these values will be the same, but `for` always is matched with `id`.
+* The `for` in a label references an `<input>`'s `id` attribute, not it's `name` attribute! Sometimes these values will be the same, but `for` always is matched with `id`.
 
 * The `name` is the `key` of the `<input>`'s value when data is sent.
 
@@ -59,15 +59,15 @@ There are two ways to use labels correctly:
 
 | Field Type | HTML Code | Widget (Control) | Notes |
 |:-- |:-- |:-- |:-- |
-| plain text | `<input type="text">` | ![<input type="text">][text] | the type attribute can be omitted |
-| password field | `<input type="password">` | ![<input type="password">][text] | echoes dots instead of characters |
-| text area | `<textarea></textarea>` | ![<textarea></textarea>][area] | a more customizable plain text area |
-| checkbox | `<input type="checkbox">` | ![<input type="checkbox">][check] | can be toggled on or off |
-| radio button | `<input type="radio">` | ![<input type="radio" name="group"> <input type="radio" name="group">][radio] | can be grouped with other inputs |
-| drop-down lists | `<select><option>` | ![<select><option>Option 1</option><option>Option 2</option></select>][select] | [check here for more info](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select) |
-| file picker | `<input type="file">` | ![<input type="file">][file] | pops up an “open file” dialog |
-| hidden field | `<input type="hidden">` |  | nothing there!
-| submit button | `<input type="submit">` | ![<input type="submit">][submit] | activates the form's submission <br/>(a `POST` request or <br/>Javascript action) |
+| plain text | `<input type="text">` | <input type="text"> | the type attribute can be omitted |
+| password field | `<input type="password">` | <input type="password"> | echoes dots instead of characters |
+| text area | `<textarea></textarea>` | <textarea></textarea> | a more customizable plain text area |
+| checkbox | `<input type="checkbox">` | <input type="checkbox"> | can be toggled on or off |
+| radio button | `<input type="radio">` | <input type="radio" name="group"> <input type="radio" name="group"> | can be grouped with other inputs |
+| drop-down lists | `<select><option>` | <select><option>Option 1</option><option>Option 2</option></select> | [check here for more info](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select) |
+| file picker | `<input type="file">` | <input type="file"> | pops up an “open file” dialog |
+| hidden field | `<input type="hidden">` | <input type="hidden"> | nothing there!
+| submit button | `<input type="submit">` | <input type="submit"> | activates the form's submission <br/>(a `POST` request or <br/>Javascript action) |
 
 <!-- Images -->
 [text]:   https://raw.github.com/h4w5/html_form_cheatsheet_images/master/input-text.png
