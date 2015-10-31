@@ -11,18 +11,18 @@
   </tr>
   <tr>
     <td>Drill</td>
-    <td>Weekend Lab Review</td>
+    <td><a href="day-01/drill">Weekend Lab Review</a></td>
     <td>JSON & HTML Strings</td>
-    <td>Letter Frequency Counter</td>
+    <td><a href="day-03/drill">Letter Frequency Counter</a></td>
     <td><a href="day-04/drill">Array Drills</a></td>
     <td>Assessment</td>
   </tr>
   <tr>
     <td>Module1</td>
-    <td>JavaScript Debugging Tools</td>
+    <td><a href="day-01/module-01">JavaScript Debugging Tools</a></td>
     <td>HTML Forms</td>
     <td><a href="day-03/module-01">Handlebars Templating</a></td>
-    <td>JS Prototypes</td>
+    <td><a href="day-04/module-02">JS Prototypes</a></td>
     <td>Review</td>
   </tr>
   <tr>
