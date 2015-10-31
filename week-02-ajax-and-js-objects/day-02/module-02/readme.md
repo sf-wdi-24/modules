@@ -164,7 +164,7 @@ $('form').on('submit', function(event){
 
 #### Handling Success & Failure
 
-We can't guarantee that our API will respond or that it will respond quickly enough. In these, cases the AJAX request will fail or throw an error. Using the `jquery.get()` shorthand, we can handle these eventualities by "chaining" additional event-listeners to our initial request:
+We can't guarantee that our API will respond or that it will respond quickly enough. In these cases, the AJAX request will fail or throw an error. Using the `jquery.get()` shorthand, we can handle these eventualities by "chaining" additional event-listeners to our initial request:
 
 ```js
 var url = 'https://api.spotify.com/v1/artists/1jTAvg7eLZQFonjWIXHiiT';
