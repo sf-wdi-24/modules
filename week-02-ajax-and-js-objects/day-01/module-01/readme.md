@@ -10,13 +10,15 @@
 
 # What does bug and debugging mean?
 
+[![How I feel while programming.](http://i.imgur.com/6usagmh.gif)](https://en.wikipedia.org/wiki/Debugging)
+
 > The terms "bug" and "debugging" are popularly attributed to Admiral Grace Hopper in the 1940s. While she was working on a Mark II Computer at Harvard University, her associates discovered a moth stuck in a relay and thereby impeding operation, whereupon she remarked that they were "debugging" the system. [Debugging Wikipedia](https://en.wikipedia.org/wiki/Debugging)
 
 # What is a debugger?
 
 > A debugger or debugging tool is a computer program that is used to test and debug other programs. [Debugger Wikipedia Entry](https://en.wikipedia.org/wiki/Debugger)
 
-It is software to help remove bugs from software.
+It is software to help remove bugs from software. The software comes with many features which are designed to ease your ability to track down bugs and fix them.
 
 # Why use a debugger?
 
@@ -52,45 +54,37 @@ http://jsfiddle.net/eerwitt/uxazkv8m/
 
 # Launching Chrome's JavaScript Debugger
 
-* Launch from inspecting element
-* Launch from keyword
+There are a few ways to launch the JavaScript debugger (and Chrome development tools). Each can be useful in different scenarios.
+
+* Launch the debugger using `⌘ + ⌥ + j`.
+    * Quick and easy, the default method.
+* Launch the debugger by right clicking on an HTML element, then select "Inspect Element" and click the console tab.
+    * Useful when you want to interact with the element using `$0`.
+* Launch the debugger by using the keyword `debugger` in a JavaScript script.
+    * Useful when you are working on a large script and need to set a breakpoint.
+
+```js
+debugger
+```
 
 # Set a break point in Chrome's JavaScript Debugger
 
-* Debugging with console logging.
-* What is a break point.
-* Why set a break point.
-* Ask people to try setting a breakpoint.
-* Use the `debugger` keyword to set a breakpoint.
+Let's walk over the flow described in detail [on the JavaScript debugging page](https://developer.chrome.com/devtools/docs/javascript-debugging#breakpoints).
 
 # Inspect a variable's state while execution is paused
 
-* Look at a variables value
-* Inspect an object
-* Update an object
+Open today's [debugging challenge](https://github.com/sf-wdi-24/debugging-challenges) and we'll inspect a variables state.
 
 # Continue execution of the program
 
-* When to continue
+Let's walk over more of the tools mentioned [on the JavaScript debugging page](https://developer.chrome.com/devtools/docs/javascript-debugging).
 
-# Stepping in and over code
+# Challenges
 
-* Investigate deeper
-* Ignore misleading statements
-
-# Using the watch list in Chrome's JavaScript Debugger
-
-* Create for loop
-* Show outer scope, and inner scope
-
-# Conclusion
-
-* Challenge to try using the debugger.
-* Compare difficulty of debugging something more complex.
-* Practice with this tool will help in the projects you create and your ability to do them quicker.
-* Next time your program does something unexpected, try using the debugger.
+* [Debugging Challenge](https://github.com/sf-wdi-24/debugging-challenges)
 
 ## References
 
+* [Chrome Developer Tools](https://developer.chrome.com/devtools/docs/javascript-debugging)
 * <a href="https://en.wikipedia.org/wiki/State_%28computer_science%29" target="_blank">Computer State Wiki</a>
 * <a href="https://pragprog.com/magazines/2012-04/sand-piles-and-software" target="_blank">Sand Piles and Software</a>
