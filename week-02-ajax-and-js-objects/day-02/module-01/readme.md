@@ -59,15 +59,15 @@ There are two ways to use labels correctly:
 
 | Field Type | HTML Code | Widget (Control) | Notes |
 |:-- |:-- |:-- |:-- |
-| plain text | `<input type="text">` | <input type="text"> | the type attribute can be omitted |
-| password field | `<input type="password">` | <input type="password"> | echoes dots instead of characters |
-| text area | `<textarea></textarea>` | <textarea></textarea> | a more customizable plain text area |
-| checkbox | `<input type="checkbox">` | <input type="checkbox"> | can be toggled on or off |
-| radio button | `<input type="radio">` | <input type="radio" name="group"> <input type="radio" name="group"> | can be grouped with other inputs |
-| drop-down lists | `<select><option>` | <select><option>Option 1</option><option>Option 2</option></select> | [check here for more info](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select) |
-| file picker | `<input type="file">` | <input type="file"> | pops up an “open file” dialog |
-| hidden field | `<input type="hidden">` | <input type="hidden"> | nothing there!
-| submit button | `<input type="submit">` | <input type="submit"> | activates the form's submission <br/>(a `POST` request or <br/>Javascript action) |
+| plain text | `<input type="text">` | ![<input type="text">][text] | the type attribute can be omitted |
+| password field | `<input type="password">` | ![<input type="password">][text] | echoes dots instead of characters |
+| text area | `<textarea></textarea>` | ![<textarea></textarea>][area] | a more customizable plain text area |
+| checkbox | `<input type="checkbox">` | ![<input type="checkbox">][check] | can be toggled on or off |
+| radio button | `<input type="radio">` | ![<input type="radio" name="group"> <input type="radio" name="group">][radio] | can be grouped with other inputs |
+| drop-down lists | `<select><option>` | ![<select><option>Option 1</option><option>Option 2</option></select>][select] | [check here for more info](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select) |
+| file picker | `<input type="file">` | ![<input type="file">][file] | pops up an “open file” dialog |
+| hidden field | `<input type="hidden">` |  | nothing there!
+| submit button | `<input type="submit">` | ![<input type="submit">][submit] | activates the form's submission <br/>(a `POST` request or <br/>Javascript action) |
 
 <!-- Images -->
 [text]:   https://raw.github.com/h4w5/html_form_cheatsheet_images/master/input-text.png
