@@ -1,9 +1,9 @@
 ## HTML Strings
 
-For the following challanges you are going to use the template from https://github.com/sf-wdi-24/frontend-template
+For the following challenges you are going to use the template form: https://github.com/sf-wdi-24/frontend-template
 
 1. From the template repo copy the url to clone it
-2. In your terminal, go into your dev folder and type 'git clone' + paste the link
+2. In your terminal, go into your dev folder and type `git clone` + the link + `html-strings`
 3. Open this up in Sublime
 4. Paste the data object into the JS file.
 5. Type your solution into the document.ready method.
@@ -11,16 +11,20 @@ For the following challanges you are going to use the template from https://gith
 7. Run your file by opening your index.html page in Chrome
 8. Celebrate!!
 
-As a warmup, try to output the following values:
+### Challenges:
 
-  * the name of the course
-  * the first student's id and full name
-  * the number of students in the class
-  * a list of github usernames
-  * Create a function buildGithubLink that transforms a single student's info into an html string, with the following format:
+Output the following values:
 
-`<a href="https://github.com/hingle-mccringleberry">Hingle McCringleberry</a>`
+  1. the name of the course
+  2. the first student's id and full name
+  3. the number of students in the class
+  4. a list of github usernames
+  5. Create a function `buildGithubLink` that transforms a single student's info into an html string, with the following format:
 
-Using the function you just built, create a function called renderGithubLinks that takes an array of students and adds their github links to the page.
+        `<a href="https://github.com/hingle-mccringleberry">Hingle McCringleberry</a>`
 
-Extra points if you use built-in Array methods like forEach, map, and join and only insert into the DOM once.
+  6.  Using the function you just built, create a function called `renderGithubLinks` that takes an array of students and adds their github links to the page.
+
+### Stretch:
+
+  Use built-in Array methods like forEach, map, and join and only insert into the DOM once.

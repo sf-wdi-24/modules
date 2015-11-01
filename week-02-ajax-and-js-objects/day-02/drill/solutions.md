@@ -1,6 +1,6 @@
 ## HTML Strings
 
-### Good:
+### Challenges:
 ```
 function buildGithubLink(student) {
   var full_name = student.first_name + " " + student.last_name;
@@ -16,8 +16,10 @@ function renderGithubLinks(students){
 }
 
 renderGithubLinks( data.students );
-Better optimized:
+```
 
+### Stretch:
+```
 function renderGithubLinks(students){
   var anchors = students.map(buildGithubLink);
   var html = anchors.join("</br>");
