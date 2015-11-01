@@ -56,6 +56,6 @@
   //=> true
   ```
 
-7. Start <a href="" target="_blank">tonight's homework</a>!
+7. Start <a href="https://github.com/sf-wdi-24/apartment-oop" target="_blank">tonight's homework</a>!
 
-  * <a href="" target="_blank">apartment-oop (solution branch)</a>
+  * <a href="https://github.com/sf-wdi-24/apartment-oop/tree/solution" target="_blank">apartment-oop (solution branch)</a>

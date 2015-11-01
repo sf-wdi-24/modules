@@ -196,7 +196,7 @@ Read about the difference between `instanceof` and `isPrototypeOf` on <a href="h
 4. Implement prototypal inheritance with `Cat` as a subclass of `Animal`.
 5. Create a new instance of `Cat` and make them speak!
 6. Check if the cat you just created is an `instanceof` `Cat`. How about an `instanceof` `Animal`?
-7. Start <a href="" target="_blank">tonight's homework</a>!
+7. Start <a href="https://github.com/sf-wdi-24/apartment-oop" target="_blank">tonight's homework</a>!
 
 ## Resources
 

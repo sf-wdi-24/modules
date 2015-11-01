@@ -30,7 +30,7 @@
     <td>JavaScript Iterators</td>
     <td>Intro APIs & AJAX</td>
     <td>Intro OOP & JS Constructors</td>
-    <td>JS Prototypical Inheritance</td>
+    <td><a href="day-04/module-02">JS Prototypal Inheritance</a></td>
     <td>Intro Project 0 (Racing Game)</td>
   </tr>
   <tr>
@@ -38,7 +38,7 @@
     <td>Iterators Lab</td>
     <td>AJAX Lab</td>
     <td>JS Constructors Challenges</td>
-    <td>JS Prototypes Challenges</td>
+    <td><a href="https://github.com/sf-wdi-24/apartment-oop" target="_blank">Apartment Rental App</a></td>
     <td>Project 0 (Racing Game)</td>
   </tr>
 </table>
