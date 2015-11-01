@@ -30,12 +30,12 @@ function Person(name) {
 }
 
 Person.prototype.greet = function() {
-	return "Hello, my name is " + this.name;
+  return "Hello, my name is " + this.name;
 };
 
 function Student(name, course) {
-	this.name = name;
-	this.course = course;
+  this.name = name;
+  this.course = course;
 };
 
 // set prototype of subclass to new instance of superclass
