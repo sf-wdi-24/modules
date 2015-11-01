@@ -1,24 +1,14 @@
-Functional Programming
-======================
+# Iterators
 
 Programming with functions! Weren't we already doing that?
 Well yes, but we can use functions more heavily, especially in place
 of loops.
 
-Definitions:
+## Functional Programming
 
-- [First-class functions](http://en.wikipedia.org/wiki/First-class_function)
-- [Higher-order functions](http://en.wikipedia.org/wiki/Higher-order_function)
-
-
-Questions:
-
-- How do you structure a program?
-- Can't follow code I wrote last week.
-
-Iterators
----------
-
+Programming with functions! Weren't we already doing that?
+Well yes, but we can use functions more heavily, especially in place
+of loops.
 Let's stop writing `for` loops. Iterators are _functional programming_
 replacements for `for` loops. We can use these functions to perform
 common Array operations for us.
@@ -239,3 +229,11 @@ References
 - [Imperative Programming on Wikipedia](http://en.wikipedia.org/wiki/Imperative_programming)
   If we weren't doing _functional programming_, what were we doing?
   _Imperative programming_.
+
+- [First-class functions](http://en.wikipedia.org/wiki/First-class_function)
+- [Higher-order functions](http://en.wikipedia.org/wiki/Higher-order_function)
+
+  Questions:
+
+  - How do you structure a program?
+  - Can't follow code I wrote last week.
