@@ -25,10 +25,10 @@ loops is error prone and tiring. JavaScript provides iterator
 functions for all of these common operations. They are called
 (respectively):
 
-- [forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
-- [map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-- [filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
-- [reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+- <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach" target="_blank">forEach</a>
+- <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map" target="_blank">map</a>
+- <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter" target="_blank">filter</a>
+- <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce" target="_blank">reduce</a>
 
 forEach
 -------
@@ -222,18 +222,11 @@ console.log(sum);
 References
 ----------
 
-- [Functional Programming on Wikipedia](http://en.wikipedia.org/wiki/Functional_programming)
+- <a href="http://en.wikipedia.org/wiki/Functional_programming" target="_blank">Functional Programming on Wikipedia</a>
   (Don't read this.  It will take you down a rabbit hole. But know
   that it exists.)
-
-- [Imperative Programming on Wikipedia](http://en.wikipedia.org/wiki/Imperative_programming)
-  If we weren't doing _functional programming_, what were we doing?
-  _Imperative programming_.
-
-- [First-class functions](http://en.wikipedia.org/wiki/First-class_function)
-- [Higher-order functions](http://en.wikipedia.org/wiki/Higher-order_function)
-
-  Questions:
-
-  - How do you structure a program?
-  - Can't follow code I wrote last week.
+- <a href="http://en.wikipedia.org/wiki/Imperative_programming" target="_blank">Imperative Programming on Wikipedia</a>
+If we weren't doing _functional programming_, what were we doing?
+_Imperative programming_.
+- <a href="http://en.wikipedia.org/wiki/First-class_function" target="_blank">First-class functions</a>
+- <a href="http://en.wikipedia.org/wiki/Higher-order_function" target="_blank">Higher-order functions</a>
