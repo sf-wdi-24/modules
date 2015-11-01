@@ -28,9 +28,9 @@ We don't need to entertain these conversations, instead we need to understand an
 
 ## Great more abstract OOP stuff, what is a prototype?
 
-> Prototype-based programming is a style of object-oriented programming in which behaviour reuse (known as inheritance) is performed via a process of cloning existing objects that serve as prototypes. [Prototype-based_programming](https://en.wikipedia.org/wiki/Prototype-based_programming)
+> Prototype-based programming is a style of object-oriented programming in which behaviour reuse (known as inheritance) is performed via a process of cloning existing objects that serve as prototypes. <a href="https://en.wikipedia.org/wiki/Prototype-based_programming" target="_blank">Prototype-based_programming</a>
 
-JavaScript is a prototype-based programming language. Part of this design decision was actually [brought about based on marketing](https://www.computer.org/csdl/mags/co/2012/02/mco2012020007.pdf) requirements.
+JavaScript is a prototype-based programming language. Part of this design decision was actually <a href="https://www.computer.org/csdl/mags/co/2012/02/mco2012020007.pdf" target="_blank">brought about based on marketing</a> requirements.
 
 > If I had done classes in JavaScript back in May 1995, I would have been told that it was too much like Java or that JavaScript was competing with Java … I was under marketing orders to make it look like Java but not make it too big for its britches … [it] needed to be a silly little brother language.
 
@@ -73,7 +73,7 @@ new Carpet();
 
 Guess what will be logged in the JavaScript console and share with at least one other person what you think before running it.
 
-*Spoiler* `this` went from being the `window` or global state to being an object's internals. `this` changes around because of the `new` keyword and how `this` is `bound`. When we use the `new` keyword we follow a path similar to [this](http://eddmann.com/posts/how-the-new-keyword-works-in-javascript/) and [this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new).
+*Spoiler* `this` went from being the `window` or global state to being an object's internals. `this` changes around because of the `new` keyword and how `this` is `bound`. When we use the `new` keyword we follow a path similar to <a href="http://eddmann.com/posts/how-the-new-keyword-works-in-javascript/" target="_blank">this</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new" target="_blank">this</a>.
 
 * We create an object, a more formal way of doing `{}` and give it a default set of information.
   * `var obj = Object.create(Carpet.prototype);`
@@ -158,9 +158,9 @@ yourChaos.havoc();
 
 ## Github explore JS libraries which use prototypes
 
-* [jQuery](https://github.com/jquery/jquery/blob/15ac848868e993dfe5ccd7751a94f5c8edc288bc/src/core.js#L38)
-* [Bootstrap](https://github.com/twbs/bootstrap/search?utf8=%E2%9C%93&q=prototype)
-* Seriously, everything including [the kitchen sink](https://github.com/mozilla/KitchenSink/search?utf8=%E2%9C%93&q=prototype)
+* <a href="https://github.com/jquery/jquery/blob/15ac848868e993dfe5ccd7751a94f5c8edc288bc/src/core.js#L38" target="_blank">jQuery</a>
+* <a href="https://github.com/twbs/bootstrap/search?utf8=%E2%9C%93&q=prototype" target="_blank">Bootstrap</a>
+* Seriously, everything including <a href="https://github.com/mozilla/KitchenSink/search?utf8=%E2%9C%93&q=prototype" target="_blank">the kitchen sink</a>
 
 ## Challenges
 
