@@ -82,7 +82,25 @@ Guess what will be logged in the JavaScript console and share with at least one 
 
 Aha! Now we see the `prototype`, it is behind the scenes of `new`.
 
-# Using prototypes to make a library
+**Warning** side note on `.apply`. You'll often see `.apply` and `.call` in JavaScript. They are functions which change what `this` points to.
+
+```js
+function fly() {
+  console.log(this);
+  if (this.magic) {
+    console.info("We're flying!");
+  } else {
+    console.warn("Falling.");
+  }
+}
+
+fly(); // Falling.
+
+var magicCarpet = {"magic": true};
+fly.call(magicCarpet) // We're flying!
+```
+
+## Using prototypes to make a library
 
 Although prototypes are designed as part of the OO nature of JavaScript, they aren't as often used in the same way. Recently, this is becoming a common trend with different JavaScript frameworks including their own Data Abstraction Layer.
 
@@ -138,24 +156,24 @@ var yourChaos = new Chaos(0);
 yourChaos.havoc();
 ```
 
-# Github explore JS libraries which use prototypes
+## Github explore JS libraries which use prototypes
 
 * [jQuery](https://github.com/jquery/jquery/blob/15ac848868e993dfe5ccd7751a94f5c8edc288bc/src/core.js#L38)
 * [Bootstrap](https://github.com/twbs/bootstrap/search?utf8=%E2%9C%93&q=prototype)
 * Seriously, everything including [the kitchen sink](https://github.com/mozilla/KitchenSink/search?utf8=%E2%9C%93&q=prototype)
 
-# Challenges
+## Challenges
 
-## Create a library using prototypes.
+### Create a library using prototypes.
 
 In this challenge we will go through the process of creating a small library. Your library is named by you and must include five functions which are added to the library via its `prototype`. The contents of those functions are up to you but must be kept under 5 lines of code per function.
 
-### MVP
+#### MVP
 
 * 5 `function`s with less than 5 lines of code each.
 * A name which is reflected in the filename and name of the object.
 * Each `function` must be added via the object's prototype.
 
-### Bonus
+#### Bonus
 
 * Use another student's library and extend its functionality using prototypes.
