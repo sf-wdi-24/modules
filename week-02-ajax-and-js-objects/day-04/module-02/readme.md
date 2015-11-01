@@ -94,17 +94,17 @@ shirt.hasOwnProperty("color");
 
 ```js
 function Product(price, units) {
-	this.price = price;
+  this.price = price;
   this.units = units;
 }
 
 Product.prototype.sell = function(unitsSold) {
-	this.units -= unitsSold;
+  this.units -= unitsSold;
 };
 
 function Shirt(size, color, price, units) {
-	this.size = size;
-	this.color = color;
+  this.size = size;
+  this.color = color;
   Product.call(this, price, units);
 };
 
