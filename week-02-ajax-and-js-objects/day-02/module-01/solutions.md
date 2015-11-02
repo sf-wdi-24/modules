@@ -56,7 +56,7 @@ $.get("http://omdbapi.com", {t: "primer"}, function(response_data){
     console.log(response_data.Plot);
 });
 
-// or the more advanced syntax
+// or the alternative syntax
 
 $.ajax({
     method: "GET",

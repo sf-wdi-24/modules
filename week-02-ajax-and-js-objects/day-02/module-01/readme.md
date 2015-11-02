@@ -9,7 +9,7 @@
 ### An Example `<form>` Element (Tag)
 
 ```html
-<form method="POST" action="/page">
+<form method="POST" action="/pages">
   <label for="name">Page Name</label>
   <input id="name" type="text" name="page_name" />
   <input type="submit" value="Create" />
@@ -23,9 +23,9 @@ In the opening of the `<form>` tag you can see two attributes: `method` & `actio
 - **method**: the HTTP verb (method) that the browser uses to submit the form.
 - **action**: the path of the HTTP request page that processes the information submitted via the form.
 
->A `route` is simply a combination of a method & action. For example `GET '/page'` or `POST '/users'` are both valid routes.
+>A `route` is simply a combination of a method & action. For example `GET '/pages/1'` or `POST '/users'` are both valid routes.
 
->For now simply understand that it is convention for [GET](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.3) to be used in a request when the client wants to receive data, and for [POST](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.5) to be used in a request when the client wants to send data.
+>For now simply understand that it is convention for <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.3" target="_blank">GET</a> to be used in a request when the client wants to receive data, and for <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.5">POST</a> to be used in a request when the client wants to send data.
 
 **Client / Server Model**
 
@@ -106,6 +106,8 @@ Validations avoids having users submit bad data to our application. Knowing how 
 
 Bad data could be anything from a required field being empty, an email address that was mistyped, or a password confirmation that doesn't match. Thankfully, HTML forms give us simple out-of-the-box validations for these common situations.
 
+(Note: This is NOT supported in Safari (including on iOS). A good alternative to this is <a href="http://jqueryvalidation.org/" target="_blank">jQuery validate</a>.)
+
 ### Required
 
 Try submitting the below form without entering your name:
@@ -144,7 +146,7 @@ You may need the user to enter a specific amount of characters. Let's say you ne
 ```
 
 
-### Forms -- solutions
+### Challenges
 
 For the following exercises, please ONLY use html.
 
@@ -170,7 +172,7 @@ You should end up here: "https://www.google.com/search?tbm=isch&q=http+status+ca
 
 MDN has a number of exhaustive resources on HTML forms and inputs. It can be a lot to absorb, so look for patterns and try to grasp the big picture.
 
-* [HTML Form Reference](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms) is a great resource and has been distilled below.
-* [HTML Input Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
-* [Native Form Widgets](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/The_native_form_widgets)
-* [Form Validation](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/Data_form_validation).
+* <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms" target="_blank">HTML Form Reference</a> is a great resource and has been distilled below.
+* <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" target="_blank">HTML Input Reference</a>
+* <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/The_native_form_widgets">Native Form Widgets</a>
+* <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/Data_form_validation" target="_blank">Form Validation</a>
