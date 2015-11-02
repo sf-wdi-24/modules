@@ -218,6 +218,9 @@ console.log(sum);
 // > 20
 // which is, 10 + 1 + 2 + 3 + 4
 ```
+Home Work
+----------
+You'll be able to find tonight's HW <a hred="https://github.com/sf-wdi-24/iterators-challenges" target="_blank">here</a>.  The challenges for this evening are a test of you knowledge of how iterators work and how you can recreate them yourself.
 
 References
 ----------
