@@ -26,6 +26,22 @@ Using objects we're able to isolate and encapsulate logic. It isn't perfect and 
 
 We don't need to entertain these conversations, instead we need to understand and use what exists to express our ideas.
 
+## Object practice
+
+Let's practice creating some JavaScript `Object`s using custom `constructor` functions.
+
+Try these steps on your own first, then check the details to see if you did the same thing.
+
+1. Create a constructor which accepts two parameters `name`, `age` and `fluffiness` for an `Object` called `Dog`.
+
+<details>
+  <summary>Create a constructor which accepts the parameters `name`, `age` and `fluffiness` for an `Object` called `Dog`.</summary>
+  ```js
+  function Dog(name, age, fluffiness) {
+  }
+  ```
+</details>
+
 ## Great more abstract OOP stuff, what is a prototype?
 
 > Prototype-based programming is a style of object-oriented programming in which behaviour reuse (known as inheritance) is performed via a process of cloning existing objects that serve as prototypes. <a href="https://en.wikipedia.org/wiki/Prototype-based_programming" target="_blank">Prototype-based_programming</a>
