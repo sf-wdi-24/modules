@@ -54,6 +54,7 @@
 
 * Instructor assigned to `module-02` is always responsible for that night's homework.
 * Homework should always live in a separate repo in `sf-wdi-24` and should be linked to from weekly schedule.
+* Every homework repo should have a `solution` branch.
 * Every homework repo should have a `readme` including "Getting Started" and "Submission" instructions:
 
 > **Getting Started**
