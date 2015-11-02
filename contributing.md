@@ -54,14 +54,12 @@
 
 * Instructor assigned to `module-02` is always responsible for that night's homework.
 * Homework should always live in a separate repo in `sf-wdi-24` and should be linked to from weekly schedule.
-* Every homework repo should have a `readme` including "Getting Started" and "Submission" instructions. **Example:**
+* Every homework repo should have a `readme` including "Getting Started" and "Submission" instructions:
 
-  ##### Getting Started
-
-  * Fork this repo, and clone it into your `develop` folder on your local machine.
-  * *Any other steps to get started*
-
-  ##### Submission
-
-  * As you make code changes, frequently commit and push to GitHub.
-  * Once you've finished the assignment and pushed your work to GitHub, make a pull request from your fork to the original repo.
+  > **Getting Started**
+  > * Fork this repo, and clone it into your `develop` folder on your local machine.
+  > * *Any other steps to get started*
+  >
+  > **Submission**
+  > * As you make code changes, frequently commit and push to GitHub.
+  > * Once you've finished the assignment and pushed your work to GitHub, make a pull request from your fork to the original repo.
