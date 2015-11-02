@@ -1,9 +1,5 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" width="60">  Iterators
 
-Programming with functions! Weren't we already doing that?
-Well yes, but we can use functions more heavily, especially in place
-of loops.
-
 ## Functional Programming
 
 Programming with functions! Weren't we already doing that?
@@ -241,9 +237,9 @@ var array = [4,5,6,7,8];
 var singleVal = 0;
 ```
 
-Home Work
+Homework
 ----------
-You'll be able to find tonight's HW <a hred="https://github.com/sf-wdi-24/iterators-challenges" target="_blank">here</a>.  The challenges for this evening are a test of you knowledge of how iterators work and how you can recreate them yourself.
+You'll be able to find tonight's HW <a href="https://github.com/sf-wdi-24/iterators-challenges" target="_blank">here</a>. The challenges for this evening are a test of you knowledge of how iterators work and how you can recreate them yourself.
 
 References
 ----------
