@@ -220,7 +220,7 @@ console.log(sum);
 ```
 
 Challenges
-----------
+-----------
 1.  Implement the `.filter` iterator on an array of integers and returns an array of integers less than five.
 ```
 // .filter iterator
