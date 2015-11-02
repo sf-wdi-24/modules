@@ -42,7 +42,7 @@ Try these steps on your own first, then check the details to see if you did the 
   ```
 </details>
 
-## Great more abstract OOP stuff, what is a prototype?
+## Great, more abstract OOP stuff, what is a prototype?
 
 > Prototype-based programming is a style of object-oriented programming in which behaviour reuse (known as inheritance) is performed via a process of cloning existing objects that serve as prototypes. <a href="https://en.wikipedia.org/wiki/Prototype-based_programming" target="_blank">Prototype-based_programming</a>
 
@@ -52,7 +52,7 @@ JavaScript is a prototype-based programming language. Part of this design decisi
 
 ## Let's mess with some prototypes
 
-We should have an understanding of decisions driving prototypes but let's start using them.
+We should have an understanding of decisions driving prototypes, but let's start using them.
 
 In something which executes JavaScript, try typing in this.
 
@@ -74,7 +74,7 @@ We've done this before, can you see anything wrong with it? Any idea what `new` 
 
 ## `this`, `new` && `prototype`
 
-When we make objects in JavaScript, their also functions. What happens when we do this?
+When we make objects in JavaScript, they're also functions. What happens when we do this?
 
 ```js
 console.log(this);
