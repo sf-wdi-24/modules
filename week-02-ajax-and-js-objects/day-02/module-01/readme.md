@@ -1,4 +1,4 @@
-# HTML5 Forms
+# <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" width="60"> HTML5 Forms
 
 | Objectives |
 | :--- |
@@ -27,7 +27,7 @@ In the opening of the `<form>` tag you can see two attributes: `method` & `actio
 
 >For now simply understand that it is convention for <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.3" target="_blank">GET</a> to be used in a request when the client wants to receive data, and for <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.5">POST</a> to be used in a request when the client wants to send data.
 
-**Client / Server Model **
+**Client / Server Model**
 
 ![client/server](https://mdn.mozillademos.org/files/4291/client-server.png)
 
@@ -51,7 +51,7 @@ There are two ways to use labels correctly:
 
 #### `<label>`'s Attributes
 
-* The `for` in a label references an `<input>`s `id` attribute, not it's `name` attribute! Sometimes these values will be the same, but `for` always is matched with `id`.
+* The `for` in a label references an `<input>`'s `id` attribute, not it's `name` attribute! Sometimes these values will be the same, but `for` always is matched with `id`.
 
 * The `name` is the `key` of the `<input>`'s value when data is sent.
 
@@ -80,7 +80,7 @@ There are two ways to use labels correctly:
 
 ### Important Attributes
 
-All input types (including `<textarea>`s):
+**All input types (including `<textarea>`s):**
 
 - **`type`**: the type of data that is being input (affects the "widget" that is used to display this
   element by the browser).
@@ -92,7 +92,7 @@ All input types (including `<textarea>`s):
 - **`autofocus`**: defaults the cursor to a specific input when the page originally loads. You can only have one autofocus on your page.
 - **`disabled`**: a Boolean attribute indicating that the "widget" is not available for interaction.
 
-Radio buttons or checkboxes:
+**Radio buttons or checkboxes:**
 
 - **`checked`**: a Boolean that indicates whether the control is selected by default (is false unless).
 - **`name`**: the group to which this element is connected. For radio buttons, only one element per
