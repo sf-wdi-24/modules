@@ -88,4 +88,3 @@ Let's walk over more of the tools mentioned <a href="https://developer.chrome.co
 * <a href="https://en.wikipedia.org/wiki/State_%28computer_science%29" target="_blank">Computer State Wiki</a>
 * <a href="https://pragprog.com/magazines/2012-04/sand-piles-and-software" target="_blank">Sand Piles and Software</a>
 * <a href="https://remysharp.com/2015/10/14/the-art-of-debugging" target="_blank">The Art of Debugging</a>
->>>>>>> develop
