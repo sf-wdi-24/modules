@@ -218,6 +218,29 @@ console.log(sum);
 // > 20
 // which is, 10 + 1 + 2 + 3 + 4
 ```
+
+Challenges
+----------
+1.  Implement the `.filter` iterator on an array of integers and returns an array of integers less than five.
+```
+// .filter iterator
+
+var array = [1,2,3,4,5,6,7,8,9,10];
+```
+
+2. Implement a `.map` iterator that creates an array of values five times the original values.
+```
+// .map iterator
+var array = [1,2,3,4,5];
+```
+3. Implement the `.reduce` iterator in order to multiply all of the values of the array.
+```
+// .reduce iterator
+
+var array = [4,5,6,7,8];
+var singleVal = 0;
+```
+
 Home Work
 ----------
 You'll be able to find tonight's HW <a hred="https://github.com/sf-wdi-24/iterators-challenges" target="_blank">here</a>.  The challenges for this evening are a test of you knowledge of how iterators work and how you can recreate them yourself.
