@@ -11,8 +11,10 @@
       - solutions.md
     | module-01
       - readme.md
+      - solutions.md
     | module-02
       - readme.md
+      - solutions.md
   | day-03
   | day-04
   | day-05
@@ -40,9 +42,9 @@
 
 ## Making Contributions
 
-* Work on feature branches off "develop" branch (e.g. "week-01-day-01-mod-02")
-* Make pull requests from feature branches to "develop" branch
-* Add "WIP" to the title for in-progress pull requests
-* Don't merge your own branch - at least one other instructor must review your branch before it's ready to merge into "develop"
-* When done reviewing a pull request, add a comment with "+1"
-* DIR merges pull requests from "develop" into "master"
+* Work on feature branches off `develop` branch (e.g. `week-01-day-01-mod-02`)
+* Make pull requests from feature branches to `develop` branch
+* Add `[WIP]` to the title for in-progress pull requests
+* Don't merge your own branch - at least one other instructor must review your branch before it's ready to merge into `develop`
+* When done reviewing a pull request, add a comment with `+1`
+* DiR merges pull requests from `develop` into `master`
