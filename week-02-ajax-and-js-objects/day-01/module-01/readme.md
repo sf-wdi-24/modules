@@ -1,205 +1,91 @@
-Functional Programming
-Programming with functions! Weren't we already doing that? Well yes, but we can use functions more heavily, especially in place of loops.
+# <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" width="60">  Debugging JavaScript
 
-**Definitions:**
+| Objectives |
+| :--- |
+| Inspect a variable's state using Chrome's JavaScript Debugger. |
+| Summarize why a debugger is useful while developing software. |
+| Analyze a debugger's watch list to find an out of scope variable. |
 
-[First-class functions](https://en.wikipedia.org/wiki/First-class_function)<br>
-[Higher-order functions](https://en.wikipedia.org/wiki/Higher-order_function)
+**It's OK if you don't know what all the terms in the objectives mean, you will by the end of this module.**
 
+## What does bug and debugging mean?
 
-**Questions:**
+<a href="http://i.imgur.com/6usagmh.gif" target="_blank"><img src="http://i.imgur.com/6usagmh.gif" alt="How I feel while programming."></a>
 
-How do you structure a program?
-Can't follow code I wrote last week.
+> The terms "bug" and "debugging" are popularly attributed to Admiral Grace Hopper in the 1940s. While she was working on a Mark II Computer at Harvard University, her associates discovered a moth stuck in a relay and thereby impeding operation, whereupon she remarked that they were "debugging" the system. <a href="https://en.wikipedia.org/wiki/Debugging" target="_blank">Debugging Wikipedia</a>
 
-## Iterators
+## What is a debugger?
 
-Let's stop writing for loops. Iterators are functional programming replacements for for loops. We can use these functions to perform common Array operations for us.
+> A debugger or debugging tool is a computer program that is used to test and debug other programs. <a href="https://en.wikipedia.org/wiki/Debugger" target="_blank">Debugger Wikipedia Entry</a>
 
-What might we want to with an array?
+It is software to help remove bugs from software. The software comes with many features which are designed to ease your ability to track down bugs and fix them.
 
+## Why use a debugger?
 
-  * run some piece of logic on each item
-  * create a new array with each item being slightly transformed
-  * filter the array to contain only a subset of items
-  * combine all the items in some fashion
+> Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it. <a href="http://www.amazon.com/gp/product/0070342075" target="_blank">Brian W. Kernighan</a>
 
-We could accomplish all of this using for loops, but writing for loops is error prone and tiring. JavaScript provides iterator functions for all of these common operations. They are called (respectively):
+Have you written code which doesn't seem to work and it's all the computers fault? You've reached the limit of your patience because the stupid computer won't do what you said. Well, unfortunately it wasn't the computer's fault, <a href="http://blog.codinghorror.com/the-first-rule-of-programming-its-always-your-fault/" target="_blank">it's always your fault</a>.
 
-  * forEach
-  * map
-  * filter
-  * reduce
+Using a debugger will reduce the stress caused by your program not doing what you expect. It is a tool you will utilize when something strange is happening and you need to find out why.
 
-## forEach
+### The "real" world.
 
-`forEach` is the functional programming replacement for your standard for loop. You can take the body from your for loop, wrap it in a function, and pass that argument to forEach. Let's look at an example:
+![Move Fast and Break Things](https://imgs.xkcd.com/comics/move_fast_and_break_things.png)
 
-```
-var friends = ["Markus", "Tim", "Ilias", "Elie"];
+Have you ever received a broken product? Maybe a refrigerator which keeps food nice and warm instead of cold? It sucks but does it seem a little better when the refrigerator maker fixes it quickly?
 
-// old way, with a for loop
-for (var i = 0; i < friends.length; i++) {
-    console.log("Hello, " + friends[i] + "!");
-}
+When you deliver software to your boss, a client or your customers they expect it to "work". This often isn't the case, something will be broken and there is an assumption that you will fix it quickly.
 
+Sometimes your software doesn't make it to anyone. It is stuck in an unfinished state where you give up on it. One of the most common reasons I've seen to leave work unfinished was caused by a bug which couldn't be figured out.
 
-// cool new way, with the .forEach iterator
-friends.forEach(function (buddy) {
-    console.log("Hello, " + buddy + "!");
-});
+### Debug my coffee.
 
-// both output the same thing
-// > Hello, Markus!
-// > Hello, Tim!
-// > Hello, Ilias!
-// > Hello, Elie!
-```
-**Try it**
+Let's work together to figure out why my coffee tastes bad. I usually make a "perfect" cup of coffee.
 
-Use the `.forEach` iterator to loop over the following array of foods and say you like them.
+My perfect cup of coffee includes these things:
 
-```
-var foods = ["pizza", "tacos", "ice cream"];
+* Super hot water.
+* Super fresh coffee grounds.
+* 2 creamers.
+* 2 sugars.
 
-// your code here
+<a href="http://jsfiddle.net/eerwitt/uxazkv8m" target="_blank">http://jsfiddle.net/eerwitt/uxazkv8m</a>
 
-// The output should be
-// > "I like pizza"
-// > "I like tacos"
-// > "I like ice cream"
-```
-Try it again
+## Launching Chrome's JavaScript Debugger
 
-Use the `.forEach` iterator to loop over the following array of objects and say how delicious each one is.
+There are a few ways to launch the JavaScript debugger (and Chrome development tools). Each can be useful in different scenarios.
 
-```
-var foods = [
-  {name: "Pizza", level: "very"},
-  {name: "Tacos", level: "mostly"},
-  {name: "Cottage Cheese", level: "not very"}
-];
+* Launch the debugger using `⌘ + ⌥ + j`.
+    * Quick and easy, the default method.
+* Launch the debugger by right clicking on an HTML element, then select "Inspect Element" and click the console tab.
+    * Useful when you want to interact with the element using `$0`.
+* Launch the debugger by using the keyword `debugger` in a JavaScript script.
+    * Useful when you are working on a large script and need to set a breakpoint.
 
-// your code here
+    ```js
+    debugger
+    ```
 
-// The output should be
-// > Pizza is very delicious
-// > Tacos is mostly delicious
-// > Cottage Cheese is not very delicious
-```
+## Set a break point in Chrome's JavaScript Debugger
 
-**Implement it**
+Let's walk over the flow described in detail <a href="https://developer.chrome.com/devtools/docs/javascript-debugging#breakpoints" target="_blank">on the JavaScript debugging page</a>.
 
-What if JavaScript did not have the `forEach` iterator. Could we make it ourselves? What do we think it's doing under the hood?
+## Inspect a variable's state while execution is paused
 
-Create a function called each that will take two arguments:
+Open today's <a href="https://github.com/sf-wdi-24/debugging-challenges" target="_blank">debugging challenge</a> and we'll inspect a variables state.
 
-  *  an array to loop over
-  *  a function to run on every element of the array
+## Continue execution of the program
 
-```  
-var names = ["billy", "bob", "joe"];
+Let's walk over more of the tools mentioned <a href="https://developer.chrome.com/devtools/docs/javascript-debugging" target="_blank">on the JavaScript debugging page</a>.
 
-var each = function (items, callback) {
-    // your code here
-}
+## Challenges
 
-each(names, function (person) {
-    console.log("Hello, " + person + "!");
-});
+* <a href="https://github.com/sf-wdi-24/debugging-challenges" target="_blank">Debugging Challenge</a>
 
-// should output:
-// > Hello, billy!
-// > Hello, bob!
-// > Hello, joe!
-```
+## Resources
 
-## map
-
-Sometimes we want to loop over an array and build a new array in the process. This is what map helps us solve. It is like forEach, but it returns the new array that is created.
-
-```
-var names = ["tim", "ilias", "elie", "markus"];
-
-// old way with for loop
-var cased = [];
-for (var i = 0; i < names.length; i++) {
-    cased.push(names[i].toUpperCase());
-}
-console.log(cased);
-
-// new way with `map`
-var cased = names.map(function (person) {
-    return person.toUpperCase();
-});
-console.log(cased);
-
-// Should output
-// > ["TIM", "ILIAS", "ELIE", "MARKUS"]
-// > ["TIM", "ILIAS", "ELIE", "MARKUS"]
-```
-
-## filter
-
-Filter is an iterator that loops through your array and filters it down to a subset of the original array. A callback is called on each element of the original array: if it returns true, then the element is included in the new array, otherwise it is excluded.
-
-```
-var names = ["tim", "ilias", "elie", "markus"];
-
-var isEven = function (name) {
-  return name.length % 2 === 0;
-};
-var isOdd = function (name) {
-  return name.length % 2 !== 0;
-};
-
-var evenLengthNames = names.filter(isEven);
-var oddLengthNames = names.filter(isOdd);
-
-console.log(evenLengthNames);
-console.log(oddLengthNames);
-
-// Should output
-// > ["elie", "markus"]
-// > ["tim", "ilias"]
-```
-
-## reduce
-
-Reduce iterates over an array and turns it into one, accumulated value. In some other languages it is called fold. I like to imagine the game 2048 as it reduces, or folds up, several smaller blocks into fewer, bigger blocks.
-
-```
-var nums = [1,2,3,4];
-var add = function (a, b) {
-  return a + b;
-};
-
-var sum = nums.reduce(add);
-console.log(sum);
-
-// Should output:
-// > 10
-// which is, 1 + 2 + 3 + 4
-```
-
-Reduce also usually accepts an option third parameter that will be the initial accumulated value. If it is omitted, then the reduction starts with the first two values in the array.
-
-```
-var nums = [1,2,3,4];
-var add = function (a, b) {
-  return a + b;
-};
-
-var sum = nums.reduce(add, 10);
-console.log(sum);
-
-// Should output:
-// > 20
-// which is, 10 + 1 + 2 + 3 + 4
-```
-
-## References
-
-Functional Programming on Wikipedia (Don't read this. It will take you down a rabbit hole. But know that it exists.)
-
-Imperative Programming on Wikipedia If we weren't doing functional programming, what were we doing? Imperative programming.
+* <a href="https://developer.chrome.com/devtools/docs/javascript-debugging" target="_blank">Chrome Developer Tools</a>
+* <a href="https://en.wikipedia.org/wiki/State_%28computer_science%29" target="_blank">Computer State Wiki</a>
+* <a href="https://pragprog.com/magazines/2012-04/sand-piles-and-software" target="_blank">Sand Piles and Software</a>
+* <a href="https://remysharp.com/2015/10/14/the-art-of-debugging" target="_blank">The Art of Debugging</a>
+>>>>>>> develop
