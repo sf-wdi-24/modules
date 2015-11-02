@@ -217,25 +217,29 @@ console.log(sum);
 
 Challenges
 -----------
-1.  Implement the `.filter` iterator on an array of integers and returns an array of integers less than five.
-```
-// .filter iterator
 
-var array = [1,2,3,4,5,6,7,8,9,10];
-```
+
+1.  Implement the `.filter` iterator on an array of integers and returns an array of integers less than five.
+
+    ```
+    // .filter iterator
+    var array = [1,2,3,4,5,6,7,8,9,10];
+    ```
 
 2. Implement a `.map` iterator that creates an array of values five times the original values.
-```
-// .map iterator
-var array = [1,2,3,4,5];
-```
-3. Implement the `.reduce` iterator in order to multiply all of the values of the array.
-```
-// .reduce iterator
 
-var array = [4,5,6,7,8];
-var singleVal = 0;
-```
+    ```
+    // .map iterator
+    var array = [1,2,3,4,5];
+    ```
+
+3. Implement the `.reduce` iterator in order to multiply all of the values of the array.
+
+    ```
+    // .reduce iterator
+    var array = [4,5,6,7,8];
+    var singleVal = 0;
+    ```
 
 Homework
 ----------
