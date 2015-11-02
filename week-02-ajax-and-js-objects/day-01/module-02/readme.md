@@ -1,9 +1,5 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" width="60">  Iterators
 
-Programming with functions! Weren't we already doing that?
-Well yes, but we can use functions more heavily, especially in place
-of loops.
-
 ## Functional Programming
 
 Programming with functions! Weren't we already doing that?
