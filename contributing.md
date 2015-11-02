@@ -23,7 +23,7 @@
 
 ## Folder & File Names
 
-* Numbers in folder and file names should be zero-padded (e.g. "week-01" instead of "week-1")
+* Numbers in folder and file names should be zero-padded (e.g. `week-01` instead of `week-1`)
 * Folder and file names should be all lowercase and dash-separated
 * Folder and file names should only contain alpha-numerics [UTF-8] [0-9] [a-z]
 * Readmes should be lowercase and should always be markdown, with a `.md` extension: `readme.md`
@@ -43,8 +43,25 @@
 ## Making Contributions
 
 * Work on feature branches off `develop` branch (e.g. `week-01-day-01-mod-02`)
-* Make pull requests from feature branches to `develop` branch
-* Add `[WIP]` to the title for in-progress pull requests
+* Make pull requests from feature branches to `develop` branch.
+* Before making a pull request, add links to weekly schedule if applicable.
+* Add `[WIP]` to the title for in-progress pull requests.
 * Don't merge your own branch - at least one other instructor must review your branch before it's ready to merge into `develop`
 * When done reviewing a pull request, add a comment with `+1`
 * DiR merges pull requests from `develop` into `master`
+
+## Homework
+
+* Instructor assigned to `module-02` is always responsible for that night's homework.
+* Homework should always live in a separate repo in `sf-wdi-24` and should be linked to from weekly schedule.
+* Every homework repo should have a `readme` including "Getting Started" and "Submission" instructions. **Example:**
+
+  ##### Getting Started
+
+  * Fork this repo, and clone it into your `develop` folder on your local machine.
+  * *Any other steps to get started*
+
+  ##### Submission
+
+  * As you make code changes, frequently commit and push to GitHub.
+  * Once you've finished the assignment and pushed your work to GitHub, make a pull request from your fork to the original repo.
