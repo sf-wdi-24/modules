@@ -32,6 +32,21 @@ Let's look at the different types of requests and their corresponding CRUD actio
 | PUT | UPDATES |
 | DELETE | DESTROYS |
 
+## RESTful Routing
+
+REST follows a routing convention, meaning that the type of request you're making also determines what the URL (route) will look like. You'll often hear the term "RESTful API", which simply means that the API follows the convetions of REST (requests represet the action) and RESTful routing (URLs follow this convention, too).
+
+Here's what RESTful routing looks like:
+
+Note: "resources" represents the thing in the database that we're CRUD-ing. This could be `users`, `books`, `photos`, etc.
+
+| REQUEST | URL | CRUD Action |
+| :--- | :--- | :--- |
+| POST | `/resources` | CREATE |
+| GET | `/resources` | READ |
+| PUT | UPDATES | UPDATES |
+| DELETE | DESTROYS | DESTROYS |
+
 ## AJAX Refresher: GET & POST
 
 ## Challenges
