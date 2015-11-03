@@ -32,15 +32,47 @@ Let's practice creating some JavaScript `Object`s using custom `constructor` fun
 
 Try these steps on your own first, then check the details to see if you did the same thing.
 
-1. Create a constructor which accepts two parameters `name`, `age` and `fluffiness` for an `Object` called `Dog`.
-
-<details>
+1. <details>
   <summary>Create a constructor which accepts the parameters `name`, `age` and `fluffiness` for an `Object` called `Dog`.</summary>
   ```js
   function Dog(name, age, fluffiness) {
   }
   ```
 </details>
+
+1. <details>
+  <summary>Edit the constructor to save the `name`, `age` and `fluffiness` parameters as part of each `Dog` instance.</summary>
+  ```js
+  function Dog(name, age, fluffiness) {
+    this.name = name;
+    this.age = age;
+    this.fluffiness;
+  }
+  ```
+</details>
+
+1. <details>
+  <summary>Add an `instance` method to the Dog which allows it to `bark`.</summary>
+  ```js
+  function Dog(name, age, fluffiness) {
+    this.name = name;
+    this.age = age;
+    this.fluffiness;
+    this.bark = function () {
+      console.log("woof woof");
+    };
+  }
+  ```
+</details>
+
+1. <details>
+  <summary>Create a `3` year old dog named `shiba` who's `very fluffy`.</summary>
+  ```js
+  var shiba = Dog("shib", 3, "very fluffy");
+  shiba.bark()
+  ```
+</details>
+
 
 ## Great, more abstract OOP stuff, what is a prototype?
 
