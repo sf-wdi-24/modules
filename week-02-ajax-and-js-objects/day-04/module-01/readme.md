@@ -74,7 +74,7 @@ Try these steps on your own first, then check the details to see if you did the 
 </details>
 
 1. <details>
-  <summary>Edit the `Dog` constructor and add another instance method named `hi` which allows the dog to say `Hi, I'm a <age> year old puppy named <name> who's <fluffiness>!`.
+  <summary>Edit the `Dog` constructor and add another instance method named `hi` which allows the dog to say `Hi, I'm a <age> year old puppy named <name> who's <fluffiness>!`.</summary>
   ```js
   function Dog(name, age, fluffiness) {
     this.name = name;
