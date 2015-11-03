@@ -10,10 +10,14 @@
 
 ## What is CRUD?
 
-* **C:** Create
-* **R:** READ
-* **U:** Update
-* **D:** Delete
+CRUD describes the basic operations of a persistent database. Meaning that every database action can be categorized into one of the four CRUD operations:
+
+* **C:** Create - adds new data to the database
+* **R:** Read - retreives data from the database (can be one record or a collection of records)
+* **U:** Update - edits existing data in the database
+* **D:** Delete - removes data from the database
+
+Our own applications don't have databases yet (we'll get there!), but as you already learned, we can interact with external databases through APIs.
 
 ## The REST of CRUD
 
