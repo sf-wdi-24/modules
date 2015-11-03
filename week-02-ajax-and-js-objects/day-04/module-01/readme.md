@@ -41,7 +41,7 @@ Try these steps on your own first, then check the details to see if you did the 
 </details>
 
 1. <details>
-  <summary>Edit the constructor to save the `name`, `age` and `fluffiness` parameters as part of each `Dog` instance.</summary>
+  <summary>Edit the `Dog` constructor to save the `name`, `age` and `fluffiness` parameters as part of each `Dog` instance.</summary>
   ```js
   function Dog(name, age, fluffiness) {
     this.name = name;
@@ -68,8 +68,32 @@ Try these steps on your own first, then check the details to see if you did the 
 1. <details>
   <summary>Create a `3` year old dog named `shiba` who's `very fluffy`.</summary>
   ```js
-  var shiba = Dog("shib", 3, "very fluffy");
+  var shiba = new Dog("shiba", 3, "very fluffy");
   shiba.bark()
+  ```
+</details>
+
+1. <details>
+  <summary>Edit the `Dog` constructor and add another instance method named `hi` which allows the dog to say `Hi, I'm a <age> year old puppy named <name> who's <fluffiness>!`.
+  ```js
+  function Dog(name, age, fluffiness) {
+    this.name = name;
+    this.age = age;
+    this.fluffiness;
+    this.bark = function () {
+      console.log("woof woof");
+    };
+    this.hi = function () {
+      console.log("Hi I'm a " + this.age + " year old puppy named " + this.name + " who's " + this.fluffiness + "!");
+    };
+  }
+  ```
+</details>
+
+1. <details>
+  <summary>Without creating a new instance, try calling the `hi` method on your existing dog instance.</summary>
+  ```js
+  shiba.hi() // RAISES AN ERROR!
   ```
 </details>
 
