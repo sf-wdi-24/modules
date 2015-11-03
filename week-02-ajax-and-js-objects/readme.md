@@ -22,7 +22,7 @@
     <td><a href="day-01/module-01">JavaScript Debugging Tools</a></td>
     <td><a href="day-02/module-01">HTML Forms</a></td>
     <td><a href="day-03/module-01">Handlebars Templating</a></td>
-    <td>JS Prototypes</td>
+    <td><a href="day-04/module-01">JS Prototypes</a></td>
     <td>Review</td>
   </tr>
   <tr>
