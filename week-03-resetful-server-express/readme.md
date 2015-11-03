@@ -27,7 +27,7 @@
   </tr>
   <tr>
     <td>Module2</td>
-    <td>RESTful Routing Continued (Update, Delete)</td>
+    <td><a href="./day-01/module-01/readme.md">RESTful Routing Continued (Update, Delete)</a></td>
     <td>Express Routes, Params, & Queries</td>
     <td>CRUD Server Routes Continued (Update, Delete)</td>
     <td>Mongoose Models & CRUD</td>
