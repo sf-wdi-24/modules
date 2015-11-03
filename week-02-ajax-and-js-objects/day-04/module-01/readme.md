@@ -46,7 +46,7 @@ Try these steps on your own first, then check the details to see if you did the 
   function Dog(name, age, fluffiness) {
     this.name = name;
     this.age = age;
-    this.fluffiness;
+    this.fluffiness = fluffiness;
   }
   ```
 </details>
@@ -57,7 +57,7 @@ Try these steps on your own first, then check the details to see if you did the 
   function Dog(name, age, fluffiness) {
     this.name = name;
     this.age = age;
-    this.fluffiness;
+    this.fluffiness = fluffiness;
     this.bark = function () {
       console.log("woof woof");
     };
@@ -79,7 +79,7 @@ Try these steps on your own first, then check the details to see if you did the 
   function Dog(name, age, fluffiness) {
     this.name = name;
     this.age = age;
-    this.fluffiness;
+    this.fluffiness = fluffiness;
     this.bark = function () {
       console.log("woof woof");
     };
@@ -93,7 +93,7 @@ Try these steps on your own first, then check the details to see if you did the 
 1. <details>
   <summary>Without creating a new instance, try calling the `hi` method on your existing dog instance.</summary>
   ```js
-  shiba.hi() // RAISES AN ERROR!
+  shiba.hi() // RAISES AN ERROR! You can't teach an old dog new tricks unless you know prototypes.
   ```
 </details>
 
