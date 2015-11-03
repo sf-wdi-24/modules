@@ -37,7 +37,7 @@ A **GUI** exists to make an application more convenient for the user. An **API**
 3. jQuery AJAX
 
   ```js
-  $.get('https://api.spotify.com/v1/artists/3jOstUTkEu2JkjvRdBA5Gu', function(data) {
+  $.get('https://api.spotify.com/v1/artists/3jOstUTkEu2JkjvRdBA5Gu', function (data) {
     console.log(data);
   });
   ```
@@ -93,7 +93,7 @@ $.ajax({
   type: 'GET',
   url: 'https://api.spotify.com/v1/artists/1jTAvg7eLZQFonjWIXHiiT',
   dataType: 'json',
-  success: function(data) {
+  success: function (data) {
     console.log(data);
   }
 });
@@ -103,7 +103,7 @@ If we're doing a simple `GET` request, we can (and should) avoid the `$.ajax()` 
 
 ```js
 var url = 'https://api.spotify.com/v1/artists/1jTAvg7eLZQFonjWIXHiiT';
-$.get(url, function(data) {
+$.get(url, function (data) {
     console.log(data);
 });
 ```
@@ -121,7 +121,7 @@ $.ajax({
   url: "/books", // relative URL
   data: bookData,
   dataType: "json",
-  success: function(data) {
+  success: function (data) {
     console.log(data);
   }
 });
@@ -135,7 +135,7 @@ var bookData = {
   author: "Lowis Lowry"
 };
 
-$.post('/books', bookData, function(data) {
+$.post('/books', bookData, function (data) {
   console.log(data);
 });
 ```
@@ -150,7 +150,7 @@ var url = 'https://api.spotify.com/v1/search?q=goodbye&type=artist'
 // click event on button
 $('button').on('click', function (event) {
   event.preventDefault();
-  $.get(url, function(data) {
+  $.get(url, function (data) {
     console.log(data);
   });
 });
@@ -158,7 +158,7 @@ $('button').on('click', function (event) {
 // submit event on form
 $('form').on('submit', function (event) {
   event.preventDefault();
-  $.get(url, function(data) {
+  $.get(url, function (data) {
     console.log(data);
   });
 });
