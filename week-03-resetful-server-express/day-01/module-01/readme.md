@@ -18,6 +18,7 @@ In order to continue you'll need.
   * It must include jQuery (we'll use it to make requests).
   * There must be a form which can create a book.
   * We must be able to get a list of books.
+
 1. <details>
   <summary>A `main.js` file with the body surrounded by a function which is called on `document`'s ready event.</summary>
   ```js
@@ -27,6 +28,7 @@ In order to continue you'll need.
   });
   ```
 </details>
+
 
 ## Create objects we'll work with
 
