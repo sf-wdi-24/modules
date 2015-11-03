@@ -25,7 +25,7 @@ A **GUI** exists to make an application more convenient for the user. An **API**
 1. `curl` in the terminal
 
   ```zsh
-  ➜  curl -i "https://api.spotify.com/v1/artists/3jOstUTkEu2JkjvRdBA5Gu"
+  ➜  curl -X GET "https://api.spotify.com/v1/artists/3jOstUTkEu2JkjvRdBA5Gu"
   ```
 
 2. RESTful API Explorer - <a href="https://chrome.google.com/webstore/detail/postman-rest-client-short/mkhojklkhkdaghjjfdnphfphiaiohkef" target="_blank">Postman</a>
