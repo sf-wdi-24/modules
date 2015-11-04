@@ -30,7 +30,7 @@
     <td><a href="day-01/module-02">JavaScript Iterators</a></td>
     <td><a href="day-02/module-02">Intro APIs & AJAX</a></td>
     <td><a href="day-03/module-02">Intro OOP & JS Constructors</a></td>
-    <td>JS Prototypal Inheritance</td>
+    <td><a href="day-04/module-02" target="_blank">JS Prototypal Inheritance</a></td>
     <td>Intro <a href="https://github.com/sf-wdi-24/project-00" target="_blank">Project 0 (Racing Game)</a></td>
   </tr>
   <tr>
