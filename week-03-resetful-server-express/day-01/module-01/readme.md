@@ -10,48 +10,47 @@
 
 ## What is CRUD?
 
-CRUD describes the basic operations of a persistent database. Meaning that every database action can be categorized into one of the four CRUD operations:
+CRUD describes the **basic operations of a persistent database**. Every database action can be categorized into one of the four CRUD operations:
 
-* **C:** Create - adds new data to the database
-* **R:** Read - retreives data from the database (can be one record or a collection of records)
-* **U:** Update - edits existing data in the database
-* **D:** Destroy - removes data from the database
+* **Create** - adds new data to the database
+* **Read** - retrieves data from the database (can be one record or a collection of records)
+* **Update** - edits existing data in the database
+* **Delete** - removes data from the database
 
 Our own applications don't have databases yet (we'll get there!), but as you already learned, we can interact with external databases through APIs.
 
 ## The REST of CRUD
 
-REST stands for **Representational State Transfer**. By the type of request you are making (GET, POST, PUT, or DELETE) you are representing what you want to do server side (Create, Read, Update, Destroy).
+REST stands for **Representational State Transfer**. This means that the type of request you make to the server (`GET`, `POST`, `PUT`, or `DELETE`) represents the action you want to take (`CREATE`, `READ`, `UPDATE`, or `DELETE`).
 
-Let's look at the different types of requests and their corresponding CRUD actions:
+Let's look at the different types of server requests and their corresponding CRUD actions:
 
-| REQUEST | CRUD Action |
+| Request | CRUD Action |
 | :--- | :--- |
 | POST | CREATE |
 | GET | READ |
-| PUT | UPDATES |
-| DELETE | DESTROYS |
+| PUT | UPDATE |
+| DELETE | DELETE |
 
 ## RESTful Routing
 
-REST follows a routing convention, meaning that the type of request you're making also determines what the URL (route) will look like. You'll often hear the term "RESTful API", which simply means that the API follows the convetions of REST (requests represet the action) and RESTful routing (URLs follow this convention, too).
+REST follows a routing convention, meaning that the type of request you're making also determines what the URL (route) will look like. You'll often hear the term "RESTful API", which simply means that the API follows the conventions of REST and RESTful Routing.
 
-Here's what RESTful routing looks like:
+Here's what RESTful routing looks like for a database of `photos`:
 
-Note: "resources" represents the thing in the database that we're CRUD-ing. This could be `users`, `books`, `photos`, etc.
-
-| REQUEST | URL | CRUD Action |
+| Request | URL | CRUD Action |
 | :--- | :--- | :--- |
-| POST | `/resources` | CREATE |
-| GET | `/resources` | READ |
-| PUT | UPDATES | UPDATES |
-| DELETE | DESTROYS | DESTROYS |
+| GET | `/photos` | READS all photos |
+| POST | `/photos` | CREATES new photo |
+| GET | `/photos/:id` | READS one photo |
+| PUT | `/photos/:id` | UPDATES one photo |
+| DELETE | `/photos/:id` | DELETES one photo |
 
 ## AJAX Refresher: GET & POST
 
 ## Challenges
 
-*Use starter code for this; make solution branch*
+For these challenges, you'll be using the `books` endpoint of <a href="https://github.com/sf-wdi-24/crud-api" target="_blank">this RESTful API</a>. Your goal is to use AJAX to `READ` and `CREATE` data
 
 * Practice CREATE and READ with Postman
 * Set up new front-end project
@@ -60,5 +59,3 @@ Note: "resources" represents the thing in the database that we're CRUD-ing. This
 * Form to CREATE a new book
 * AJAX to POST `/books`
 * Add newly created book to page with Handlebars templating
-
-## Resources
