@@ -8,7 +8,7 @@
 
 ## What is an Object?
 
-As of today, we have been writing our Javascript code mainly using only functions, Strings, ints, and Arrays.   This has allowed us to parse through data objects given to us and reach out and pull data from the internet!  These are all great accomplishments, but like everything else in the world of programming, there is always a more efficient way of implementing what we have done.
+As of today, we have been writing our Javascript code mainly using only functions, Strings, integers, and Arrays.   This has allowed us to parse through data objects given to us and reach out and pull data from the internet!  These are all great accomplishments, but like everything else in the world of programming, there is always a more efficient way of implementing what we have done.
 
 Here's a truncated version of some data we might see from GitHub.  Take some time to study the structure and the data types within the data object.
 
@@ -152,7 +152,7 @@ That's more like it!  To change the value of the lily object properties. we simp
 <img src = https://seniorhikerphotos.files.wordpress.com/2012/06/lilysarina12052301.jpg width = 75%>
 
 ## Object Methods
-One of the most powerful features of Javascript Objects are Methods.  Methods are *"functions"* that are predefined and built into an object.  We all know and love the array Methods `forEach()`, `map()`, `filter()`, and `reduce()`; these are all Methods of the Array object.  We use arrays so much that Javascript automagically creates from an Array constructor without us having to instantiate them like we did above with the flowers.  Thanks, Javascript!
+One of the most powerful features of Javascript Objects are Methods.  Methods are *"functions"* that are predefined and built into an object.  We all know and love the array Methods `forEach()`, `map()`, `filter()`, and `reduce()`; these are all Methods of the Array object.  We use arrays so much that Javascript automagically creates them from an Array constructor without us having to instantiate them like we did above with the flowers.  Thanks, Javascript!
 
 Lets make a simple method in the flower object that outputs to the console whenever we call it.
 
@@ -217,8 +217,8 @@ function Flower() {
 }
 ```
 
-### Quick Challenge - She loves me, she loves me not...
-Create an object method for flower that will play the age old game ['He loves me, he loves me not...'](https://en.wikipedia.org/wiki/He_loves_me..._he_loves_me_not)
+### Quick Challenge - He loves me, he loves me not...
+Create an object method for flower that will play the old game ['He loves me, he loves me not...'](https://en.wikipedia.org/wiki/He_loves_me..._he_loves_me_not)
 - Count down from the petal number down to 1
 - Alternately display 'He loves me' or 'He loves me not' to the console for each petal count decrement.
 - Display the final phrase with an exclamation; that's the end of the game!
@@ -226,7 +226,7 @@ Create an object method for flower that will play the age old game ['He loves me
 
 There are many more aspects to objects that we will discover tomorrow.  For now, play with objects and think up some great object examples that we might use in class.
 
-PS. Here is the Literal equivalent of the flower constructor with all of the methods intact:
+PS. Here is the literal equivalent of the flower constructor with all of the methods intact:
 
 ```javascript
 var flower = {
@@ -253,7 +253,7 @@ var flower = {
 
 ### Home Work
 
-Once you've finished the in-class challenges, you can go <a href="https://github.com/sf-wdi-24/OOP-challenge" target="_blank">here</a> for the home work.
+Once you've finished the in-class challenges, you can go <a href="https://github.com/sf-wdi-24/OOP-challenge" target="_blank">here</a> for the homework.
 
 Further Suggested Reading:
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)
