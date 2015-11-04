@@ -37,7 +37,7 @@ A **GUI** exists to make an application more convenient for the user. An **API**
 3. jQuery AJAX
 
   ```js
-  $.get('https://api.spotify.com/v1/artists/3jOstUTkEu2JkjvRdBA5Gu', function(data) {
+  $.get('https://api.spotify.com/v1/artists/3jOstUTkEu2JkjvRdBA5Gu', function (data) {
     console.log(data);
   });
   ```
@@ -57,7 +57,7 @@ A **GUI** exists to make an application more convenient for the user. An **API**
 
 ## AJAX
 
-Asynchronous JavaScript And XML (AJAX) allows us to make requests to a server (ours or another application's) without refreshing the page.
+Asynchronous JavaScript and XML (AJAX) allows us to make requests to a server (ours or another application's) without refreshing the page.
 
 #### Why do we care?
 
@@ -93,7 +93,7 @@ $.ajax({
   type: 'GET',
   url: 'https://api.spotify.com/v1/artists/1jTAvg7eLZQFonjWIXHiiT',
   dataType: 'json',
-  success: function(data) {
+  success: function (data) {
     console.log(data);
   }
 });
@@ -102,26 +102,26 @@ $.ajax({
 If we're doing a simple `GET` request, we can (and should) avoid the `$.ajax()` method and use the helper method `$.get()` instead. Here, we only need to pass in the request URL and callback function for the same AJAX request as the example above.
 
 ```js
-var endpoint = 'https://api.spotify.com/v1/artists/1jTAvg7eLZQFonjWIXHiiT';
-$.get(endpoint, function(response_data) {
-    console.log(response_data);
+var url = 'https://api.spotify.com/v1/artists/1jTAvg7eLZQFonjWIXHiiT';
+$.get(url, function (data) {
+    console.log(data);
 });
 ```
 
 For a `POST` request, we can also use the `$.ajax()` method, but this time, the data type is `"POST"`. Since `POST` requests send data to a server, we also need to send an object of data (the `book`).
 
 ```js
-var book_data = {
+var bookData = {
   title: "The Giver",
   author: "Lowis Lowry"
 };
 
 $.ajax({
   type: "POST",
-  url: "/books", // this is a relative link
-  data: book_data,
+  url: "/books", // relative URL
+  data: bookData,
   dataType: "json",
-  success: function(data) {
+  success: function (data) {
     console.log(data);
   }
 });
@@ -130,12 +130,12 @@ $.ajax({
 Just like with `GET`, the `POST` request above can be refactored to use the much simpler `$.post()` method. We pass in the request URL, data, and callback function.
 
 ```js
-var book_data = {
+var bookData = {
   title: "The Giver",
   author: "Lowis Lowry"
 };
 
-$.post('/books', book, function(data) {
+$.post('/books', bookData, function (data) {
   console.log(data);
 });
 ```
@@ -148,15 +148,17 @@ We can combine AJAX calls with any jQuery event-handlers. You may want to execut
 var url = 'https://api.spotify.com/v1/search?q=goodbye&type=artist'
 
 // click event on button
-$('button').on('click', function(event) {
-  $.get(url, function(data) {
+$('button').on('click', function (event) {
+  event.preventDefault();
+  $.get(url, function (data) {
     console.log(data);
   });
 });
 
 // submit event on form
-$('form').on('submit', function(event){
-  $.get(url, function(data) {
+$('form').on('submit', function (event) {
+  event.preventDefault();
+  $.get(url, function (data) {
     console.log(data);
   });
 });
@@ -169,25 +171,25 @@ We can't guarantee that our API will respond or that it will respond quickly eno
 ```js
 var url = 'https://api.spotify.com/v1/artists/1jTAvg7eLZQFonjWIXHiiT';
 
-$.get(url).success(function(data) {
+$.get(url, function (data) {
   // We're all good! (status code in the 200s)
   console.log(data);
-}).fail(function() {
+}, function() {
   // Timeout or server error (status code in the 400s)
   console.log(':(');
 });
 
 // or with this alternate style:
 
-$.get(url).
-  success(function(data) {
+$.get(url)
+  .success(function (data) {
     // We're all good! (status code in the 200s)
     console.log(data);
-  }).
-  fail(function() {
+  })
+  .fail(function() {
     // Timeout or server error (status code in the 400s)
     console.log(':(');
-  })
+  });
 ```
 
 ## Challenges

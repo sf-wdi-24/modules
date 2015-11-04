@@ -78,7 +78,7 @@
             <!-- handlebars template -->
             <script id="tracks-template" type="text/x-handlebars-template">
               {{#each tracks}}
-              <p><strong>{{name}}</strong> by {{artists.[0].name}}</p>
+                <p><strong>{{name}}</strong> by {{artists.[0].name}}</p>
               {{/each}}
             </script>
 
@@ -89,7 +89,7 @@
   </body>
   ```
 
-  **Note:** The example above uses the Spotify API. We use `{{each}}` to iterate through the tracks that come back from Spotify. Each track has a `name` and an array of `artists`. Notice the extra `.` we need when accessing a value from array (this syntax is specific to Handlebars). `artists.[0]` gives us the first artist from the array.
+  **Note:** The example above uses the Spotify API. We use `{{each}}` to iterate through the tracks that come back from Spotify. Each track has a `name` and an array of `artists`. Notice the extra `.` we need when accessing a value from an array (this syntax is specific to Handlebars). `artists.[0]` gives us the first artist from the array.
 
 4. Compile your template in `main.js`. Calling `Handlebars.compile(source)` returns a function, which we save to the variable `template`. We will later use our new `template` function to pass in the data we want to render in the template.
 
