@@ -64,3 +64,8 @@ Can you think of another way to write your `fib` function without using recursio
 ## Yoga Challenge
 
 Solve <a href="http://www.codewars.com/kata/n-th-fibonacci/javascript" target="_blank">this Kata</a> using your new skills. Then compare to other solutions.
+
+## Solutions
+
+* <a href="https://github.com/sf-wdi-24/fibonacci/compare/solution" target="_blank">Challenge</a>
+* <a href="https://github.com/sf-wdi-24/fibonacci/compare/solution-recursive" target="_blank">Stretch Challenge</a>
