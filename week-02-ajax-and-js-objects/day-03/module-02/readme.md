@@ -13,7 +13,7 @@ As of today, we have been writing our Javascript code mainly using only function
 Here's a truncated version of some data we might see from GitHub.  Take some time to study the structure and the data types within the data object.
 
 ```javascript
-var data = {
+data = {
     school: "General Assembly",
     city: "San Francisco",
     course: "Web Development Immersive",
@@ -21,19 +21,19 @@ var data = {
     classrootm: "7",
     students: [{
         id: 0,
-        last_name: "Aramayo",
-        first_name: "Angelo",
-        github_username: "angelo2dot0"
+        last_name: "Abeyta",
+        first_name: "Adam",
+        github_username: "abeytaadam"
     }, {
         id: 1,
-        last_name: "Bia",
-        first_name: "Racha",
-        github_username: "racha_bella"
+        last_name: "Lee",
+        first_name: "Alan",
+        github_username: "alanlee35"
     }, {
         id: 2,
-        last_name: "Gabot",
-        first_name: "Brian",
-        github_username: "bgabot89"
+        last_name: "Massey",
+        first_name: "Andre",
+        github_username: "DreTGiant"
     }]
 }
 
