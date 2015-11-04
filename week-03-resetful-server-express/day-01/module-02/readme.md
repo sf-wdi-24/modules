@@ -84,13 +84,18 @@ What should happen when I try to `DELETE` something which doesn't exist?
 
 ## Challenges
 
-* Why do we use REST?
-* What is REST?
-* Find an alternate method for API interaction which isn't REST.
-* Create a record using a REST API.
-* Read a record's value using a REST API.
-* Update a record using a REST API.
-* Read a record's value (again) using a REST API.
-* Delete a record using a REST API.
-* What are HTTP Error codes?
-* Why are HTTP Error codes used?
+Research each question for ~10 minutes then we'll get together again and in groups discuss what we've found. You must have at least one website URL which can be used as reference.
+
+1. Why do we use REST?
+1. What is REST?
+1. What is an alternative to REST?
+1. What are HTTP Error codes?
+1. Why are HTTP Error codes used?
+
+After we've discussed terminology we'll break up and add these features to our front-end project. All these features are **required** for your MVP!
+
+1. Create a record using a REST API.
+1. Read a record's value using a REST API.
+1. Update a record using a REST API.
+1. Read a record's value (again) using a REST API.
+1. Delete a record using a REST API.
