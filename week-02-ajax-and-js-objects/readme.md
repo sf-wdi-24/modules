@@ -37,7 +37,7 @@
     <td>HW</td>
     <td><a href="https://github.com/sf-wdi-24/iterators-challenges" target="_blank">Iterators Lab</a></td>
     <td><a href="https://github.com/sf-wdi-24/spotify-search" target="_blank">Spotify Search</a></td>
-    <td<a href="https://github.com/sf-wdi-24/OOP-challenge target="_blank">JS Constructors Challenges</td>
+    <td<a href="https://github.com/sf-wdi-24/OOP-challenge target="_blank">JS Constructors Challenges</a></td>
     <td><a href="https://github.com/sf-wdi-24/apartment-oop" target="_blank">Apartment Rental App</a></td>
     <td><a href="https://github.com/sf-wdi-24/project-00" target="_blank">Project 0 (Racing Game)</a></td>
   </tr>
