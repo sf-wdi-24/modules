@@ -18,7 +18,7 @@ data = {
     city: "San Francisco",
     course: "Web Development Immersive",
     course_id: "WDI24",
-    classrootm: "7",
+    classroom: "7",
     students: [{
         id: 0,
         last_name: "Abeyta",
