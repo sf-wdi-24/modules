@@ -8,7 +8,7 @@
 
 ## What is an Object?
 
-As of today, we have been writing our Javascript code mainly using only functions, Strings, ints, and Arrays.   This has allowed us to parse through data objects given to us, reach out and pull data from the internet, and even make a pretty neat racing game!  These are all great accomplishments, but like everything else in the world of programming, there is always a more efficient way of implementing what we have done.
+As of today, we have been writing our Javascript code mainly using only functions, Strings, ints, and Arrays.   This has allowed us to parse through data objects given to us and reach out and pull data from the internet!  These are all great accomplishments, but like everything else in the world of programming, there is always a more efficient way of implementing what we have done.
 
 Here's a truncated version of some data we might see from GitHub.  Take some time to study the structure and the data types within the data object.
 
@@ -17,8 +17,8 @@ var data = {
     school: "General Assembly",
     city: "San Francisco",
     course: "Web Development Immersive",
-    course_id: "WDI22",
-    classrootm: "1",
+    course_id: "WDI24",
+    classrootm: "7",
     students: [{
         id: 0,
         last_name: "Aramayo",
@@ -45,7 +45,7 @@ var data = {
  	- How many of the properties are Arrays?
  	- If there is an array, what is the array data type?
 
-The `data` object is a grouping of key & value pairs (known as properties) that describe our class, WDI21.
+The `data` object is a grouping of key & value pairs (known as properties) that describe our class, WDI24.
 
 ```javascript
 school: "General Assembly"
@@ -60,7 +60,7 @@ To access this property, we can use dot-notation or bracket-notation on the key 
 
 `GA` has the value `General Assembly`.
 
-To access an array within an object,  the method is similar to accessing any other property.  The property `students` is an array of Objects.  To access that array and assign it to a variable, we simply perform the following:
+To access an array within an object, the method is similar to accessing any other property.  The property `students` is an array of Objects.  To access that array and assign it to a variable, we simply perform the following:
 
  ```javascript
  var studentArray = data.students //students
@@ -195,7 +195,7 @@ function Flower(){
 Methods can also access properties within the object with the `this` identifier then using dot or bracket notation.  Check out the method `describe()` below for an example.
 
 ```javascript
-function Flower(){
+function Flower() {
     this.color = "red";
     this.petals = 32;
     this.smellsPretty= true;
