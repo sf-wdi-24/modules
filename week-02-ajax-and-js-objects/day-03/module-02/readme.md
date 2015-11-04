@@ -70,7 +70,7 @@ Declaring variables and defining them as portions of a larger object helps us cr
 
 *We can assume that an Object is a collection of properties (key & value pairs) that all have some sort of relationship and are connected logically to one another.*
 
-###Quick Challenge
+### Quick Challenge
 - Copy the object above and save it to a javaScript file, `data.js`
 - Add some properties that logically fit into an object describing our class (address, floor number, and a list of instructors.
 - Run your file using 'node data.js' in your console.
@@ -79,7 +79,7 @@ Declaring variables and defining them as portions of a larger object helps us cr
 If everything worked out, you should have a fully functioning data object, only now with even MORE properties with us to play with!
 
 
-##Creating an object
+## Creating an object
 For relatively straightforward and small objects, it is perfectly fine to declare them as a variable and define them, as we did with `data.js`.  This is known as a *Literal* object definition.
 Here. I'll make you a flower using the *Literal* method:
 
@@ -138,7 +138,7 @@ var petalCount = lily.petals // 32
 var smellsNice = lily.smellsPretty //true
 ```
 
-##Changing an Object's properties
+## Changing an Object's properties
 I don't know about you, but I generally like my Lillies yellow. I have also never heard of a lily with 32 petals, holy smokes!  Can we change our `lily` object to better reflect my perfect lily? You bet!
 
 ```javascript
@@ -151,7 +151,7 @@ That's more like it!  To change the value of the lily object properties. we simp
 
 <img src = https://seniorhikerphotos.files.wordpress.com/2012/06/lilysarina12052301.jpg width = 75%>
 
-##Object Methods
+## Object Methods
 One of the most powerful features of Javascript Objects are Methods.  Methods are *"functions"* that are predefined and built into an object.  We all know and love the array Methods `forEach()`, `map()`, `filter()`, and `reduce()`; these are all Methods of the Array object.  We use arrays so much that Javascript automagically creates from an Array constructor without us having to instantiate them like we did above with the flowers.  Thanks, Javascript!
 
 Lets make a simple method in the flower object that outputs to the console whenever we call it.
@@ -217,7 +217,7 @@ function Flower() {
 }
 ```
 
-###Quick Challenge - She loves me, she loves me not...
+### Quick Challenge - She loves me, she loves me not...
 Create an object method for flower that will play the age old game ['He loves me, he loves me not...'](https://en.wikipedia.org/wiki/He_loves_me..._he_loves_me_not)
 - Count down from the petal number down to 1
 - Alternately display 'He loves me' or 'He loves me not' to the console for each petal count decrement.
@@ -250,6 +250,10 @@ var flower = {
     }
 }
 ```
+
+### Home Work
+
+Once you've finished the in-class challenges, you can go <a href="https://github.com/sf-wdi-24/OOP-challenge" target="_blank">here</a> for the home work.
 
 Further Suggested Reading:
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)
