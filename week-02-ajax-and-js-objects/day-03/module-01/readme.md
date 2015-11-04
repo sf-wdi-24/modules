@@ -78,7 +78,7 @@
             <!-- handlebars template -->
             <script id="tracks-template" type="text/x-handlebars-template">
               {{#each tracks}}
-              <p><strong>{{name}}</strong> by {{artists.[0].name}}</p>
+                <p><strong>{{name}}</strong> by {{artists.[0].name}}</p>
               {{/each}}
             </script>
 
