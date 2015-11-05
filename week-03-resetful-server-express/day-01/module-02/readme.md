@@ -1,4 +1,4 @@
-# RESTful Routing Continued (Update, Delete)
+# <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" width="60">  RESTful Routing Continued (Update, Delete)
 
 | Objectives |
 | :---- |
@@ -84,7 +84,7 @@ What should happen when I try to `DELETE` something which doesn't exist?
 
 ## Challenges
 
-Research each question for ~10 minutes then we'll get together again and in groups discuss what we've found. You must have at least one website URL which can be used as reference.
+Research each question for a few minutes then we'll get together again and in groups discuss what we've found. You must have at least one website URL which can be used as reference.
 
 1. Why do we use REST?
 1. What is REST?
