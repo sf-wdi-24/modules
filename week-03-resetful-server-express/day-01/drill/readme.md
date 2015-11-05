@@ -12,6 +12,12 @@ Recursion is best used for problems where a large task can be broken down into a
 
 In computer science, **recursion** is a problem-solving method where the solution depends on solutions to smaller instances of the same problem. When programming, we see recursion in practice when a function calls itself.
 
+**Base Case**
+
+In the base case, the routine does not call itself. But, when a routine does have to call itself in order to complete its sub-task, then that is known as the recursive case. So, there are 2 types of cases when using a recursive algorithm: base cases and recursive cases.
+
+Without a base case the stack overflows
+
 **Why?**
 --------
 Recursion is best used for problems where a large task can be broken down into a repetitive “sub-task”.
