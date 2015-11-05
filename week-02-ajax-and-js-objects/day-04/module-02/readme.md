@@ -1,5 +1,9 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" width="60"> JavaScript Prototypal Inheritance
 
+| Objective |
+| :--- |
+| Use JavaScript prototypes to implement inheritance between objects |
+
 ## Review: Constructors & Prototypes
 
 In JavaScript, we don't have classes, so we use constructor functions and prototypes to create them. Prototypes are the building blocks of objects. When we create a new "class", we can attach attributes and methods to the prototype (as a better alternative to adding them in the constructor function to save memory).
