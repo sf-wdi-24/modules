@@ -14,7 +14,7 @@
     <td>Intro to Recursion</td>
     <td>Fibonacci</td>
     <td>Merge Sort</td>
-    <td>Mongo Intro with CS Concepts</td>
+    <td><a href="./day-04/drill/">Mongo Intro with CS Concepts</a></td>
     <td>Assessment</td>
   </tr>
   <tr>
