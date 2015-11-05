@@ -59,9 +59,12 @@ factorial(0) => 1
 ```
 Here is some starter code:
 ```js
-var factorial = function(n) {
+var factorial = function(x) {
 };
 ```
+
+### Greatest Common Divisor
+Find the greatest common divisor between two positive integers
 
 ### Resources:
 
