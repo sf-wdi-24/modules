@@ -12,7 +12,7 @@
   <tr>
     <td>Drill</td>
     <td>Intro to Recursion</td>
-    <td>Fibonacci</td>
+    <td><a href="./day-02/drill/">Fibonacci</a></td>
     <td>Merge Sort</td>
     <td>Mongo Intro with CS Concepts</td>
     <td>Assessment</td>
