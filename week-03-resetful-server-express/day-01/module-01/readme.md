@@ -50,12 +50,18 @@ Here's what RESTful routing looks like for a database of `photos`:
 
 ## Challenges
 
-For these challenges, you'll be using the `books` endpoint of <a href="https://github.com/sf-wdi-24/crud-api" target="_blank">this RESTful API</a>. Your goal is to use AJAX to `READ` and `CREATE` data
+For these challenges, you'll be using the `books` endpoint of <a href="https://github.com/sf-wdi-24/crud-api" target="_blank">this RESTful API</a>. Your goal is to use AJAX to `READ` all the `books` from the API and `CREATE` new `books`.
 
-* Practice CREATE and READ with Postman
-* Set up new front-end project
-* AJAX to GET all books
-* Display all books on page with Handlebars templating
-* Form to CREATE a new book
-* AJAX to POST `/books`
-* Add newly created book to page with Handlebars templating
+Note that most APIs require an API key if you want to do anything other than read data, and a lot of them even require a key just to read. We made this API for you to explore CRUD, no API key required!
+
+* Use Postman to `GET` all the `books`. Now get just one book using the `_id`.
+* Use Postman to send a `POST` request to create a new book.
+
+For the rest of the challenges, fork and clone the ajax-book-app repo.
+
+* Use AJAX to `GET` all the `books` from the API. Your first step should be to `console.log` the data from the API.
+* Use Handlebars templating to display all the books on the page.
+
+* Form to create a new book
+* AJAX to POST request to create a new book
+* Use Handlebars templating to add newly created book to the page
