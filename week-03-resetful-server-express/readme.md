@@ -30,7 +30,7 @@
     <td>RESTful Routing Continued (Update, Delete)</td>
     <td>Express Routes, Params, & Queries</td>
     <td>CRUD Server Routes Continued (Update, Delete)</td>
-    <td>Mongoose Models & CRUD</td>
+    <td><a href="day-04/module-02">Mongoose Models & CRUD</a></td>
     <td>Intro Weekend Lab (Micro Blog)</td>
   </tr>
   <tr>
@@ -38,7 +38,7 @@
     <td>API Design</td>
     <td>Express Project Setup Drills</td>
     <td>To Do App</td>
-    <td>Do App with Mongo/Mongoose</td>
+    <td><a href="https://github.com/sf-wdi-24/express-todo-mongo" target="_blank">Do App Continued: MongoDB & Mongoose</a></td>
     <td>Weekend Lab (Micro Blog)</td>
   </tr>
 </table>
