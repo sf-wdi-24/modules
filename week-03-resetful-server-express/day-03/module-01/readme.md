@@ -8,66 +8,75 @@
 ## Steps to Create
 
 1. <details>
-    <summary>Create a server route to handle the `PUT` request.</summary>
+    <summary>Create a server route to handle the `POST` request.</summary>
     ```js
-    app.put('/api/todos/:id', function (req, res) {
+    app.post('/api/todos', function (req, res) {
 
     });
     ```
 </details>
 
 2. <details>
-    <summary>Get the todo id from the URL params and save it to a variable.</summary>
+    <summary>Create a new todo with form data</summary>
     ```js
     app.put('/api/todos/:id', function (req, res) {
-      var todoId = parseInt(req.params.id);
+      var newTodo = req.body;
     });
     ```
 </details>
 
 3. <details>
-    <summary>Use the id to find the todo we want to update (remember, we don't have a persistent database yet, so we're using an array called `todos` to represent our "database"). **Hint:** This is a good opportunity to use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter" target="_blank">filter</a>.</summary>
+    <summary>Set a sequential id to the todo</summary>
     ```js
     app.put('/api/todos/:id', function (req, res) {
-      var todoId = parseInt(req.params.id);
+      var newTodo = req.body;
 
-      var todoToUpdate = todos.filter(function (todo) {
-        return todo._id == todoId;
-      })[0];
+      if (todos.length > 0) {
+        newTodo._id = todos[todos.length - 1]._id + 1;
+      } else {
+        newTodo._id = 1;
+      }
     });
     ```
 </details>
 
 4. <details>
-    <summary>Update the todo's task and description.</summary>
+    <summary>Add new todo to the `todos` array</summary>
     ```js
     app.put('/api/todos/:id', function (req, res) {
-      var todoId = parseInt(req.params.id);
+      var newTodo = req.body;
 
-      var todoToUpdate = todos.filter(function (todo) {
-        return todo._id == todoId;
-      })[0];
+      if (todos.length > 0) {
+        newTodo._id = todos[todos.length - 1]._id + 1;
+      } else {
+        newTodo._id = 1;
+      }
 
-      todoToUpdate.task = req.body.task;
-      todoToUpdate.description = req.body.description;
+      todos.push(newTodo);
     });
     ```
 </details>
 
 5. <details>
-    <summary>Respond with the updated todo.</summary>
+    <summary>Send new todo as JSON response</summary>
     ```js
-    app.put('/api/todos/:id', function (req, res) {
-      var todoId = parseInt(req.params.id);
 
-      var todoToUpdate = todos.filter(function (todo) {
-        return todo._id == todoId;
-      })[0];
+    app.post('/api/todos', function (req, res) {
+    // create new todo with form data (`req.body`)
+      var newTodo = req.body;
 
-      todoToUpdate.task = req.body.task;
-      todoToUpdate.description = req.body.description;
+    // set sequential id (last id in `todos` array + 1)
+      if (todos.length > 0) {
+        newTodo._id = todos[todos.length - 1]._id + 1;
+      } else {
+        newTodo._id = 1;
+      }
 
-      res.json(todoToUpdate);
+    // add newTodo to `todos` array
+      todos.push(newTodo);
+
+    // send newTodo as JSON response
+      res.json(newTodo);
     });
     ```
 </details>
