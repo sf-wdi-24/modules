@@ -2,8 +2,8 @@
 
 | Objectives |
 | :--- |
-| Implement Express routes to UPDATE and DELETE data |
-| Write request specs to test our UPDATE and DELETE routes |
+| Implement Express routes to CREATE and READ data |
+| Write request specs to test our CREATE and READ routes |
 
 ## Steps to Create
 
