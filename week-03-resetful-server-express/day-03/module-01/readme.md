@@ -84,9 +84,9 @@
 ## Steps to Read
 
 1. <details>
-    <summary>Create a server route to handle the `DELETE` request.</summary>
+    <summary>Create a server route to handle the `GET` request.</summary>
     ```js
-    app.delete('/api/todos/:id', function (req, res) {
+    app.get('/api/todos/:id', function (req, res) {
 
     });
     ```
@@ -95,19 +95,19 @@
 2. <details>
     <summary>Get the todo id from the URL params and save it to a variable.</summary>
     ```js
-    app.delete('/api/todos/:id', function (req, res) {
+    app.get('/api/todos/:id', function (req, res) {
       var todoId = parseInt(req.params.id);
     });
     ```
 </details>
 
 3. <details>
-    <summary>Use the id to find the todo we want to delete.</summary>
+    <summary>Use the id to find the todo we want to read.</summary>
     ```js
     app.delete('/api/todos/:id', function (req, res) {
       var todoId = parseInt(req.params.id);
 
-      var todoToDelete = todos.filter(function (todo) {
+      var foundTodo = todos.filter(function (todo) {
         return todo._id == todoId;
       })[0];
     });
@@ -115,34 +115,22 @@
 </details>
 
 4. <details>
-    <summary>Remove the todo from our "database" (`todos` array). **Hint:** This is a good opportunity to use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice" target="_blank">splice</a>.</summary>
+    <summary>Respond with the selected todo.</summary>
     ```js
-    app.delete('/api/todos/:id', function (req, res) {
-      var todoId = parseInt(req.params.id);
+      // get one todo
+      app.get('/api/todos/:id', function (req, res) {
 
-      var todoToDelete = todos.filter(function (todo) {
-        return todo._id == todoId;
-      })[0];
+       // get todo id from url params (`req.params`)
+       var todoId = parseInt(req.params.id);
 
-      todos.splice(todos.indexOf(todoToDelete), 1);
-    });
-    ```
-</details>
+       // find todo to by its id
+       var foundTodo = todos.filter(function (todo) {
+       return todo._id == todoId;
+       })[0];
 
-5. <details>
-    <summary>Respond with the deleted todo.</summary>
-    ```js
-    app.delete('/api/todos/:id', function (req, res) {
-      var todoId = parseInt(req.params.id);
-
-      var todoToDelete = todos.filter(function (todo) {
-        return todo._id == todoId;
-      })[0];
-
-      todos.splice(todos.indexOf(todoToDelete), 1);
-
-      res.json(todoToDelete);
-    });
+     // send foundTodo as JSON response
+     res.json(foundTodo);
+     });
     ```
 </details>
 
