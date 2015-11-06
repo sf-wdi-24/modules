@@ -16,7 +16,7 @@ In computer science, **recursion** is a problem-solving method where the solutio
 
 In the base case, the routine does not call itself. But, when a routine does have to call itself in order to complete its sub-task, then that is known as the recursive case. So, there are 2 types of cases when using a recursive algorithm: base cases and recursive cases.
 
-Without a base case the stack overflows
+Without a base case the stack overflows.
 
 **Why?**
 --------
@@ -47,7 +47,7 @@ var guessNumber = function(num) {
 
 
 ### Factorial using recursion
-Write a function `factorial` that takes a single parameter `n`, and computes the [factorial](http://en.wikipedia.org/wiki/Factorial) of `n`. For example
+Write a function `factorial` that takes a single parameter `n`, and computes the [factorial](http://en.wikipedia.org/wiki/Factorial) of `n`. For example:
 
 ```
 factorial(5) => 5 * 4 * 3 * 2 * 1
@@ -64,10 +64,10 @@ var factorial = function(x) {
 ```
 
 ### Greatest Common Divisor
-Find the greatest common divisor between two positive integers
+Find the greatest common divisor between two positive integers.
 
 ### Resources:
 
 <a href="https://www.youtube.com/watch?v=Mv9NEXX1VHc" target="_blank">What on Earth is Recursion?</a><br>
-<a href="http://www.wolframalpha.com/input/?i=recursion">More Recursion</a><br>
-<a href="http://programmers.stackexchange.com/questions/25052/in-plain-english-what-is-recursion">And finally...</a>
+<a href="http://www.wolframalpha.com/input/?i=recursion">More Recursion" target="_blank"</a><br>
+<a href="http://programmers.stackexchange.com/questions/25052/in-plain-english-what-is-recursion" target="_blank">And finally...</a>

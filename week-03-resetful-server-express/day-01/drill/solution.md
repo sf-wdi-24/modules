@@ -8,8 +8,8 @@ function factorial(x) {
   }else{
     return x * factorial(x-1);  
   }  
-alert(factorial(5));
 }
+console.log(factorial(5));
 ```
 
 Greatest Common Divisor
@@ -17,7 +17,7 @@ Greatest Common Divisor
 
 ```
 var gcd = function(a, b) {  
-    if(!b) {  
+    if(b === 0) {  
       return a;  
     }  
   return gcd(b, a % b);  
