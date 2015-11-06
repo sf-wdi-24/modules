@@ -134,7 +134,7 @@
     ```
 </details>
 
-## Testing Update & Delete
+## Testing Create & Read
 
 #### Example Request Spec: Create
 
@@ -168,19 +168,20 @@ var request = require('request'),
     expect = require('chai').expect,
     baseUrl = 'http://localhost:3000';
 
-it('should return statusCode 200', function(done) {
-  request(baseUrl, function(error, response, body) {
-    expect(response.statusCode).to.equal(200);
-    done();
-  });
-});
-
-
+// testing for all blobs
 it('should return statusCode 200', function(done) {
   request(baseUrl + '/blobs', function(error, response, body) {
     expect(response.statusCode).to.equal(200);
     done();
   });
+});
+
+// testing for a single blob
+it('should return statusCode 200', function(done) {
+    request(baseUrl + '/blobs/:id', function(error, response, body) {
+      expect(response.statusCode).to.equal(200);
+      done();
+    });
 });
 ```
 
