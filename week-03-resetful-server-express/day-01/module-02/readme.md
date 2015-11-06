@@ -136,18 +136,3 @@ Research each question for a few minutes then we'll get together again and in gr
 1. What are HTTP Error codes?
 1. Why are HTTP Error codes used?
 
-## Homework
-
-Add in an interface to your Front-End project which creates, reads, updates and deletes Books.
-
-This will be your little library but we're treating this as a real-world project. You're required to keep a list of 5 issues which caused friction for you while using our API. An example could be "I found it difficult to find documentation on what was returned from the API".
-
-With your problems in hand, read <a href="https://github.com/gocardless/http-api-design" target="_blank">HTTP API Design Resources</a> and see if anything is covered in that github document.
-
-### MVP requirements for your library
-
-1. Create a book.
-1. Read a book. (punny)
-1. Update a book.
-1. Delete a book.
-1. Handle server errors.

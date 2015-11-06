@@ -35,7 +35,7 @@
   </tr>
   <tr>
     <td>HW</td>
-    <td><a href="./day-01/module-02/readme.md#homework">API Design / Library</a></td>
+    <td><a href="https://github.com/sf-wdi-24/ajax-book-app/">API Design / Library</a></td>
     <td>Express Project Setup Drills</td>
     <td>To Do App</td>
     <td>Do App with Mongo/Mongoose</td>
