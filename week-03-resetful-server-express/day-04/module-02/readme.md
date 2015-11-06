@@ -69,7 +69,7 @@ Mongoose allows us to use JavaScript and Object-Oriented Programming to talk to 
   <summary>In your model file (e.g. `todo.js`), create the model schema, and export it so that you can require it in other parts of your app.</summary>
   ```js
   var mongoose = require('mongoose'),
-      Schema = mongoose.Schema;
+    Schema = mongoose.Schema;
 
   var TodoSchema = new Schema({
     task: String,
@@ -77,6 +77,7 @@ Mongoose allows us to use JavaScript and Object-Oriented Programming to talk to 
   });
 
   var Todo = mongoose.model('Todo', TodoSchema);
+
   module.exports = Todo;
   ```
 </details>
@@ -90,132 +91,110 @@ Mongoose allows us to use JavaScript and Object-Oriented Programming to talk to 
 
 ## CRUD Operations with Mongoose
 
-### Get all: <a href="http://mongoosejs.com/docs/api.html#model_Model.find"  target="_blank">`.find()`</a>
+#### Get all todos: `.find()`
 
-We can use `.find()` to get all documents in the collection.
-
-```js
-// get all phrases
-app.get('/api/phrases', function (req, res) {
-  // find all phrases in db
-  Phrase.find(function (err, phrases) {
-    res.json(phrases);
-  });
-});
-```
-
-**Note:** We can also use `.find()` to get a specific set of documents in the collection (rather than ALL documents) by setting conditions. <a href="http://mongoosejs.com/docs/api.html#model_Model.find"  target="_blank">Read more in the docs.</a>
-
-### Create: `new` and `.save()`
-
-We've seen the `new` keyword before! It creates new instances of an object. We use it here to create new instances of our `Phrase` model. We then call `.save()` to store the new phrase in our database.
-
-```js
-// create new phrase
-app.post('/api/phrases', function (req, res) {
-  // create new phrase with form data (`req.body`)
-  var newPhrase = new Phrase({
-    word: req.body.word,
-    definition: req.body.definition
-  });
-
-  // save new phrase in db
-  newPhrase.save(function (err, savedPhrase) {
-    res.json(savedPhrase);
-  });
-});
-```
-
-### Get one: <a href="http://mongoosejs.com/docs/api.html#query_Query-findOne">`.findOne()`</a>
-
-We can use `.findOne()` to return the first document in the collection that matches certain criteria. In this case, we're looking for a phrase with our target id.
-
-```js
-// get one phrase
-app.get('/api/phrases/:id', function (req, res) {
-  // set the value of the id
-  var targetId = req.params.id;
-
-  // find phrase in db by id
-  Phrase.findOne({_id: targetId}, function (err, foundPhrase) {
-    res.json(foundPhrase);
-  });
-});
-```
-
-**Note:** The <a href="http://mongoosejs.com/docs/api.html#model_Model.findById" target="_blank">`.findById()`</a> method will also return a single document matching a specified id field.
-
-### Update: `.findOne()` and `.save()`
-
-Similar to the last example, we can use `.findOne()` to find the document with our target id. After updating the document, we use `.save()` to persist our changes to the database.
-
-```js
-// update phrase
-app.put('/api/phrases/:id', function (req, res) {
-  // set the value of the id
-  var targetId = req.params.id;
-
-  // find phrase in db by id
-  Phrase.findOne({_id: targetId}, function (err, foundPhrase) {
-    // update the phrase's word and definition
-    foundPhrase.word = req.body.word;
-    foundPhrase.definition = req.body.definition;
-
-    // save updated phrase in db
-    foundPhrase.save(function (err, savedPhrase) {
-      res.json(savedPhrase);
+<details>
+  <summary>We can use <a href="http://mongoosejs.com/docs/api.html#model_Model.find"  target="_blank">.find()</a> to get all documents in the collection.</summary
+  ```js
+  // get all todos
+  app.get('/api/todos', function (req, res) {
+    // find all todos in db
+    Todo.find(function (err, allTodos) {
+      res.json({ todos: allTodos });
     });
   });
-});
-```
+  ```
 
-### Delete: <a href="http://mongoosejs.com/docs/api.html#model_Model.findOneAndRemove" target="_blank">`.findOneAndRemove()`</a>
+  **Note:** We can also use `.find()` to get a specific set of documents in the collection (rather than ALL documents) by setting conditions. Read more <a href="http://mongoosejs.com/docs/api.html#model_Model.find"  target="_blank">in the docs</a>.
+</details>
 
-The `.findOneAndRemove()` method takes care of finding the document with our target id and removing it from the database.
+#### Create new todo: `new` and `.save()`
 
-```js
-// delete phrase
-app.delete('/api/phrases/:id', function (req, res) {
-  // set the value of the id
-  var targetId = req.params.id;
+<details>
+  <summary>We've seen the `new` keyword before! It creates new instances of an object. We use it here to create new instances of our `Todo` model. We then call `.save()` to store the new todo in our database.</summary>
+  ```js
+  // create new todo
+  app.post('/api/todos', function (req, res) {
+    // create new todo with form data (`req.body`)
+    var newTodo = new Todo(req.body);
 
-  // find phrase in db by id and remove
-  Phrase.findOneAndRemove({_id: targetId}, function (err, deletedPhrase) {
-    res.json(deletedPhrase);
+    // save new todo in db
+    newTodo.save(function (err, savedTodo) {
+      res.json(savedTodo);
+    });
   });
-});
-```
+  ```
+</details>
 
-**Note:** Another way to achieve the same functionality is by finding the document first (using `.findOne()` or  `.findById()`) and calling <a href="http://mongoosejs.com/docs/api.html#model_Model.remove" target="_blank">`.remove()`</a> on the found document.
+#### Get one todo: `.findOne()`
 
-## Challenges (& Tonight's Homework)
+<details>
+  <summary>We can use <a href="http://mongoosejs.com/docs/api.html#query_Query-findOne">.findOne()</a> to return the first document in the collection that matches certain criteria. In this case, we're looking for a todo that has a certain `_id`.</summary>
+  ```js
+  // get one todo
+  app.get('/api/todos/:id', function (req, res) {
+    // get todo id from url params (`req.params`)
+    var todoId = req.params.id;
 
-Add Mongo/Mongoose to your Project 0 Microblog. If you would like to start with fresh code, you can clone this <a href="https://github.com/sf-wdi-19-20/w4_microblog_starter_code" target="_blank">Microblog starter code</a>.
+    // find todo in db by id
+    Todo.findOne({ _id: todoId }, function (err, foundTodo) {
+      res.json(foundTodo);
+    });
+  });
+  ```
 
-### Base Challenges
+  **Note:** The <a href="http://mongoosejs.com/docs/api.html#model_Model.findById" target="_blank">.findById()</a> method will also return a single document matching a specified id field.
+</details>
 
-1. Set up Mongoose in your Microblog app. This includes installing the Mongoose module, creating a schema for your blog posts, and requiring the schema in your `server.js`.
-2. Use Mongoose methods to perform all of your API's CRUD operations. Your app should have five API routes:
-  * GET `/posts` should get all the posts from the database collection.
-  * POST `/posts` should create a new post in the database collection.
-  * GET `/posts/:id` should get one post document.
-  * PUT `/posts/:id` should update a post document.
-  * DELETE `/posts/:id` should delete a post document.
-3. Test all your API routes with Postman before testing if the addition of Mongoose affected anything on your client-side. **Note:** Your Mongo documents have an `_id` attribute, rather than `id`, so you'll need to update any instances of `id` on the client-side.
-4. Submit the link to your project on GitHub in the <a href="https://docs.google.com/a/generalassemb.ly/forms/d/14rNXnDaq5X5Rvda-1BRZCl9YmkOoZzf7oxGBEZG_YJE/viewform" target="_blank">homework submission form</a>.
+#### Update todo: `.findOne()` and `.save()`
 
-### Stretch Challenges / Bonus
+<details>
+  <summary>Similar to the last example, we can use `.findOne()` to find the document with a certain `_id`. After updating the document, we use `.save()` to persist our changes to the database.</summary>
+  ```js
+  // update todo
+  app.put('/api/todos/:id', function (req, res) {
+    // get todo id from url params (`req.params`)
+    var todoId = req.params.id;
 
-1. Read about <a href="http://mongoosejs.com/docs/validation" target="_blank">validations</a> and the built-in <a href="http://mongoosejs.com/docs/api.html#schematype_SchemaType-required" target="_blank">required validator</a> in Mongoose.
-2. Add the required validator to all fields in your blog post schema.
-3. **Super Bonus:** In your API routes to create and update blog posts, respond with the error if the required validation is not met.
+    // find todo in db by id
+    Todo.findOne({ _id: todoId }, function (err, foundTodo) {
+      // update the todos's attributes
+      foundTodo.task = req.body.task;
+      foundTodo.description = req.body.description;
 
+      // save updated todo in db
+      foundTodo.save(function (err, savedTodo) {
+        res.json(savedTodo);
+      });
+    });
+  });
+  ```
+</details>
 
-###Evening Reading
+#### Delete todo: `.findOneAndRemove()`
 
-For tomorrow morning, read "Model One-to-One Relationships with Embedded Documents", "Model One-to-Many Relationships with Embedded Documents", and "Model One-to-Many Relationships with Document References" from the [Mongo docs](http://docs.mongodb.org/manual/applications/data-models-relationships/).
+<details>
+  <summary>The <a href="http://mongoosejs.com/docs/api.html#model_Model.findOneAndRemove" target="_blank">.findOneAndRemove()</a> method takes care of finding the document with a certain `_id` and removing it from the database.</summary>
+  ```js
+  // delete todo
+  app.delete('/api/todos/:id', function (req, res) {
+    // get todo id from url params (`req.params`)
+    var todoId = req.params.id;
 
-## Docs & Reading
+    // find todo in db by id and remove
+    Todo.findOneAndRemove({ _id: todoId }, function (err, deletedTodo) {
+      res.json(deletedTodo);
+    });
+  });
+  ```
+  **Note:** Another way to remove the document is by finding the document first (using `.findOne()` or  `.findById()`) and calling <a href="http://mongoosejs.com/docs/api.html#model_Model.remove" target="_blank">`.remove()`</a>.
+</details>
+
+## Challenges
+
+Start <a href="https://github.com/sf-wdi-24/express-todo-mongo" target="_blank">tonight's homework</a>! Your goal is to add MongoDB and Mongoose to your To Do app.
+
+## Resources
 
 * <a href="http://mongoosejs.com/docs" target="_blank">Mongoose Docs</a>
 * <a href="http://mongoosejs.com/docs/api.html#model_Model.find" target="_blank">.find()</a>
