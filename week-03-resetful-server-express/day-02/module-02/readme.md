@@ -264,7 +264,13 @@ app.post('/cities', parseUrlencoded, function (request, response) {
 });
 ```
 
-There's something missing from this code? We need a template to display the cities. Break up into groups and create a template to display the cities then begin adding another route.
+There's something missing from this code?
+
+We haven't installed the `body-parser` package.
+
+We need a template to display the cities.
+
+Now we'll break up into groups and fix this code by adding the `body-parser` module then creating a handlebars template to display cities.
 
 ## Summary
 
