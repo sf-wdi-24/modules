@@ -11,7 +11,7 @@
   </tr>
   <tr>
     <td>Drill</td>
-    <td>Intro to Recursion</td>
+    <td><a href="day-01/drill">Intro to Recursion</a></td>
     <td><a href="./day-02/drill/">Fibonacci</a></td>
     <td>Merge Sort</td>
     <td>Mongo Intro with CS Concepts</td>
@@ -19,7 +19,7 @@
   </tr>
   <tr>
     <td>Module1</td>
-    <td>RESTful Routing (Create, Read)</td>
+    <td><a href="day-01/module-01">RESTful Routing: Create & Read</a></td>
     <td>Intro to Express</td>
     <td>CRUD Server Routes (Create, Read)</td>
     <td>Intro to Mongo / Mongoose</td>
@@ -27,7 +27,7 @@
   </tr>
   <tr>
     <td>Module2</td>
-    <td>RESTful Routing Continued (Update, Delete)</td>
+    <td><a href="./day-01/module-02/readme.md">RESTful Routing Continued (Update, Delete)</a></td>
     <td>Express Routes, Params, & Queries</td>
     <td>CRUD Server Routes Continued (Update, Delete)</td>
     <td>Mongoose Models & CRUD</td>
@@ -35,7 +35,7 @@
   </tr>
   <tr>
     <td>HW</td>
-    <td>API Design</td>
+    <td><a href="https://github.com/sf-wdi-24/ajax-book-app/">API Design / Library</a></td>
     <td>Express Project Setup Drills</td>
     <td>To Do App</td>
     <td>Do App with Mongo/Mongoose</td>
