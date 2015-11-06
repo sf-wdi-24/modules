@@ -48,6 +48,32 @@ Here's what RESTful routing looks like for a database of `photos`:
 
 ## AJAX Refresher: GET & POST
 
+```js
+// GET all books
+$.get(
+  "https://super-crud.herokuapp.com/books",
+  function (data) {
+    console.log(data);
+  }
+);
+
+// POST request to create new book
+$.post(
+  "https://super-crud.herokuapp.com/books",
+  {
+    title: "Harry Potter and the Sorcerer's Stone",
+    author: "J.K. Rowling",
+    image: "https://upload.wikimedia.org/wikipedia/en/b/bf/Harry_Potter_and_the_Sorcerer's_Stone.jpg",
+    releaseDate: "September 1, 1998"
+  },
+  function (data) {
+    console.log(data);
+  }
+);
+```
+
+Rather than `console.log`-ing the data that comes back from the API, we should use <a href="https://github.com/sf-wdi-24/modules/tree/master/week-02-ajax-and-js-objects/day-03/module-01" target="_blank">Handlebars templating</a> to display it on the page.
+
 ## Challenges
 
 For these challenges, you'll be using the `books` endpoint of <a href="https://github.com/sf-wdi-24/crud-api" target="_blank">this RESTful API</a>. Your goal is to use AJAX to `READ` all the `books` from the API and `CREATE` new `books`.
@@ -61,7 +87,6 @@ For the rest of the challenges, fork and clone the ajax-book-app repo.
 
 * Use AJAX to `GET` all the `books` from the API. Your first step should be to `console.log` the data from the API.
 * Use Handlebars templating to display all the books on the page.
-
-* Form to create a new book
-* AJAX to POST request to create a new book
-* Use Handlebars templating to add newly created book to the page
+* Add a form to create a new book in `index.html`.
+* When a user submits the form, use AJAX to send a `POST` request to create a new book.
+* Use Handlebars templating to add the newly created book to the page.
