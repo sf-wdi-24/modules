@@ -90,3 +90,9 @@ For the rest of the challenges, fork and clone the ajax-book-app repo.
 * Add a form to create a new book in `index.html`.
 * When a user submits the form, use AJAX to send a `POST` request to create a new book.
 * Use Handlebars templating to add the newly created book to the page.
+
+## Resources
+
+* <a href="https://api.jquery.com/jquery.get" target="_blank">jQuery.get()</a>
+* <a href="https://api.jquery.com/jquery.post" target="_blank">jQuery.post()</a>
+* <a href="http://handlebarsjs.com" target="_blank">Handlebars.js</a>
