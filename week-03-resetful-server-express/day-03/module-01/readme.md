@@ -104,7 +104,7 @@
 3. <details>
     <summary>Use the id to find the todo we want to read.</summary>
     ```js
-    app.delete('/api/todos/:id', function (req, res) {
+    app.get('/api/todos/:id', function (req, res) {
       var todoId = parseInt(req.params.id);
 
       var foundTodo = todos.filter(function (todo) {
