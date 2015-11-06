@@ -1,6 +1,6 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" width="60">  Intro to Express continued:
 
-![<a href="https://cloud.githubusercontent.com/assets/1329385/11004643/4eab3f6a-846e-11e5-9076-ebbeddd861e3" target="_blank">Lost Season 17</a>](https://simpsonswiki.com/wiki/Stranded)
+<img src="https://cloud.githubusercontent.com/assets/1329385/11004643/4eab3f6a-846e-11e5-9076-ebbeddd861e3" />
 
 ## Routes, Params, and Queries
 
