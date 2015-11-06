@@ -117,8 +117,8 @@
 4. <details>
     <summary>Respond with the selected todo.</summary>
     ```js
-      // get one todo
-      app.get('/api/todos/:id', function (req, res) {
+    // get one todo
+    app.get('/api/todos/:id', function (req, res) {
 
        // get todo id from url params (`req.params`)
        var todoId = parseInt(req.params.id);
@@ -130,7 +130,7 @@
 
      // send foundTodo as JSON response
      res.json(foundTodo);
-     });
+    });
     ```
 </details>
 
