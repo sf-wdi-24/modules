@@ -1,4 +1,4 @@
-# Mongo & Mongoose Continued
+# <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" width="60">  Mongo & Mongoose
 | Objectives |
 | :--- |
 | Traverse a MongoDB using the command line interface (CLI). |
@@ -8,7 +8,7 @@
 
 <img src="http://i.imgur.com/MVaVKG8.gif" />
 
-> MongoDB (from humongous) is a cross-platform document-oriented database. Classified as a NoSQL database, MongoDB eschews the traditional table-based relational database structure in favor of JSON-like documents with dynamic schemas (MongoDB calls the format BSON), making the integration of data in certain types of applications easier and faster. Released under a combination of the GNU Affero General Public License and the Apache License, MongoDB is free and open-source software. [WikiPedia](https://en.wikipedia.org/wiki/MongoDB)
+> MongoDB (from humongous) is a cross-platform document-oriented database. Classified as a NoSQL database, MongoDB eschews the traditional table-based relational database structure in favor of JSON-like documents with dynamic schemas (MongoDB calls the format BSON), making the integration of data in certain types of applications easier and faster. Released under a combination of the GNU Affero General Public License and the Apache License, MongoDB is free and open-source software. <a href="https://en.wikipedia.org/wiki/MongoDB" target="_blank">WikiPedia</a>
 
 Wow, hella hardcore... NO.
 
@@ -19,12 +19,12 @@ For this challenge, open up your solution from the challenge this morning and we
 ##RDBMS vs noSQL
 A great analogy from a fellow StackOverflow:
 > "NoSQL databases store information like you would recipes in a book. When you want to know how to make a cake, you go to that recipe, and all of the information about how to make that cake (ingredients, preparation, mixing, baking, finishing, etc.) are all on that one page.
-> 
+>
 > SQL is like shopping for the ingredients for the recipe. In order to get all of your ingredients into your cart, you have to go to many different aisles to get each ingredient. When you are done shopping, your grocery cart will be full of all the ingredients you had to run around and collect.
-> 
-> Wouldn’t it be nicer if there was a store was organized by recipe, so you could go to one place in the store and grab everything you need from that one spot? Granted you’ll find ingredients like eggs in 50 different places, so there’s a bit of overhead when stocking the shelves, but from a consumer standpoint it was much easier/faster to find what they were looking for."  
+>
+> Wouldn’t it be nicer if there was a store was organized by recipe, so you could go to one place in the store and grab everything you need from that one spot? Granted you’ll find ingredients like eggs in 50 different places, so there’s a bit of overhead when stocking the shelves, but from a consumer standpoint it was much easier/faster to find what they were looking for."
 
--[mgoffin, Jan 20 '13 at 19:15](http://stackoverflow.com/questions/14428069/sql-and-nosql-analogy-for-the-non-technical/14428221#14428221)  
+-<a href="http://stackoverflow.com/questions/14428069/sql-and-nosql-analogy-for-the-non-technical/14428221#14428221" target="_blank">mgoffin, Jan 20 '13 at 19:15</a>
 
 ## Mongo & Mongoose setup
 
@@ -67,4 +67,4 @@ A great analogy from a fellow StackOverflow:
 
 Typing in `mongo` from your shell connects to your local MongoDB instance by default. Now that we're there let's look over how to navigate our new database system.
 
-Now we'll go over [this scotch](https://scotch.io/tutorials/an-introduction-to-mongodb) tutorial while exploring what these commands actually mean using [Mongo's documentation](https://docs.mongodb.org/manual/reference/mongo-shell/).
+Now we'll go over <a href="https://scotch.io/tutorials/an-introduction-to-mongodb" target="_blank">this scotch</a> tutorial while exploring what these commands actually mean using <a href="https://docs.mongodb.org/manual/reference/mongo-shell/" target="_blank">Mongo's documentation</a>.
