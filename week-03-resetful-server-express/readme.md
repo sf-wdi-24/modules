@@ -29,7 +29,7 @@
     <td>Module2</td>
     <td>RESTful Routing Continued (Update, Delete)</td>
     <td>Express Routes, Params, & Queries</td>
-    <td>CRUD Server Routes Continued (Update, Delete)</td>
+    <td>CRUD Server Routes Continued: Update & Delete</td>
     <td>Mongoose Models & CRUD</td>
     <td>Intro Weekend Lab (Micro Blog)</td>
   </tr>
