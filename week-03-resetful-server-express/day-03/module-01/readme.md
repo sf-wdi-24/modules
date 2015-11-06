@@ -19,7 +19,7 @@
 2. <details>
     <summary>Create a new todo with form data</summary>
     ```js
-    app.put('/api/todos/:id', function (req, res) {
+    app.post('/api/todos', function (req, res) {
       var newTodo = req.body;
     });
     ```
@@ -28,7 +28,7 @@
 3. <details>
     <summary>Set a sequential id to the todo</summary>
     ```js
-    app.put('/api/todos/:id', function (req, res) {
+    app.post('/api/todos', function (req, res) {
       var newTodo = req.body;
 
       if (todos.length > 0) {
@@ -43,7 +43,7 @@
 4. <details>
     <summary>Add new todo to the `todos` array</summary>
     ```js
-    app.put('/api/todos/:id', function (req, res) {
+    app.post('/api/todos', function (req, res) {
       var newTodo = req.body;
 
       if (todos.length > 0) {
