@@ -11,7 +11,7 @@
   </tr>
   <tr>
     <td>Drill</td>
-    <td>Intro to Recursion</td>
+    <td><a href="day-01/drill">Intro to Recursion</a></td>
     <td>Fibonacci</td>
     <td>Merge Sort</td>
     <td>Mongo Intro with CS Concepts</td>
