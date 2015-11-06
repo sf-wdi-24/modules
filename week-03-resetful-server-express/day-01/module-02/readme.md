@@ -8,7 +8,7 @@
 
 ## Practice CR
 
-Last module you created a [small website](https://github.com/sf-wdi-24/ajax-book-app/tree/master) capable of `POST`ing and `GET`ting data from a REST API. Do you have it all setup?
+Last module you created a <a href="https://github.com/sf-wdi-24/ajax-book-app/tree/master" target="_blank">small website</a> capable of `POST`ing and `GET`ting data from a REST API. Do you have it all setup?
 
 Let's get into groups and checkout where everyone is. It's important we have this working in order to continue so if you've fallen behind let's work as a team and get everyone setup.
 
@@ -79,18 +79,30 @@ $.ajax({
 });
 ```
 
+<details>
+  <summary>Will all APIs raise an error if the item doesn't exist?</summary>
+  IT DEPENDS! Some APIs are worse than those geocities websites from the 90s. If they don't then you'll need to find a workaround.
+</details>
+
 ## Update and show changes
+
+If we need to make some changes we'll `POST` to the same endpoint in order to `UPDATE` the attributes we need to change.
 
 ```js
 $.ajax({
   type: "PUT",
   url: "https://super-crud.herokuapp.com/books/563950249f89f21100e7c2ff/",
-  data: {"title": "Huckleberry Finn"},
+  data: {title: "Huckleberry Finn", author: "Mark Twain", image: "https://media.giphy.com/media/xDRq2yipbOWDC/giphy.gif"},
   success: function (data) {
     console.log("UPDATED!");
   }
 });
 ```
+
+<details>
+  <summary>What if I only want to change one attribute?</summary>
+  That is a partial update and you use a `PATCH` HTTP verb. It accepts a partial object in the update.
+</details>
 
 ## Update a non-existent item
 
@@ -98,7 +110,7 @@ $.ajax({
 $.ajax({
   type: "PUT",
   url: "https://super-crud.herokuapp.com/books/563950249f89f21100e7c2ff/",
-  data: {"title": "Huckleberry Finn"},
+  data: {title: "Huckleberry Finn", author: "Mark Twain", image: "https://media.giphy.com/media/xDRq2yipbOWDC/giphy.gif"},
   success: function (data) {
     console.log("UPDATED!");
   },
@@ -110,9 +122,9 @@ $.ajax({
 
 ## Resources
 
-* [HTTP API Design Resources](https://github.com/gocardless/http-api-design)
-* [Best Practices](http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)
-* [Summary API Design](https://github.com/interagent/http-api-design)
+* <a href="https://github.com/gocardless/http-api-design" target="_blank">HTTP API Design Resources</a>
+* <a href="http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api" target="_blank">Best Practices</a>
+* <a href="https://github.com/interagent/http-api-design" target="_blank">Summary API Design</a>
 
 ## Challenges
 
@@ -124,10 +136,18 @@ Research each question for a few minutes then we'll get together again and in gr
 1. What are HTTP Error codes?
 1. Why are HTTP Error codes used?
 
-After we've discussed terminology we'll break up and add these features to our front-end project. All these features are **required** for your MVP!
+## Homework
 
-1. Create a record using a REST API.
-1. Read a record's value using a REST API.
-1. Update a record using a REST API.
-1. Read a record's value (again) using a REST API.
-1. Delete a record using a REST API.
+Add in an interface to your Front-End project which creates, reads, updates and deletes Books.
+
+This will be your little library but we're treating this as a real-world project. You're required to keep a list of 5 issues which caused friction for you while using our API. An example could be "I found it difficult to find documentation on what was returned from the API".
+
+With your problems in hand, read <a href="https://github.com/gocardless/http-api-design" target="_blank">HTTP API Design Resources</a> and see if anything is covered in that github document.
+
+### MVP requirements for your library
+
+1. Create a book.
+1. Read a book. (punny)
+1. Update a book.
+1. Delete a book.
+1. Handle server errors.

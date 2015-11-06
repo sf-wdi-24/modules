@@ -27,7 +27,7 @@
   </tr>
   <tr>
     <td>Module2</td>
-    <td><a href="./day-01/module-01/readme.md">RESTful Routing Continued (Update, Delete)</a></td>
+    <td><a href="./day-01/module-02/readme.md">RESTful Routing Continued (Update, Delete)</a></td>
     <td>Express Routes, Params, & Queries</td>
     <td>CRUD Server Routes Continued (Update, Delete)</td>
     <td>Mongoose Models & CRUD</td>
@@ -35,7 +35,7 @@
   </tr>
   <tr>
     <td>HW</td>
-    <td>API Design</td>
+    <td><a href="./day-01/module-02/readme.md#homework">API Design / Library</a></td>
     <td>Express Project Setup Drills</td>
     <td>To Do App</td>
     <td>Do App with Mongo/Mongoose</td>
