@@ -8,7 +8,7 @@
 
 ## Practice CR
 
-Last module you created a small website capable of `POST`ing and `GET`ting data from a REST API. Do you have it all setup?
+Last module you created a [small website](https://github.com/sf-wdi-24/ajax-book-app/tree/master) capable of `POST`ing and `GET`ting data from a REST API. Do you have it all setup?
 
 Let's get into groups and checkout where everyone is. It's important we have this working in order to continue so if you've fallen behind let's work as a team and get everyone setup.
 
@@ -28,10 +28,6 @@ In order to continue you'll need.
   });
   ```
 </details>
-
-## Create objects we'll work with
-
-TODO checkout how the Create and Read are done.
 
 ## Intro to why update/delete
 
@@ -70,11 +66,47 @@ A problem which comes up often for me is I forget the ID, it's hard to remember 
 
 What should happen when I try to `DELETE` something which doesn't exist?
 
-
+```js
+$.ajax({
+  type: "DELETE",
+  url: "https://super-crud.herokuapp.com/books/563950249f89f21100e7c2ff/",
+  success: function (data) {
+    console.log("DESTROYED!");
+  },
+  error: function (error) {
+    console.error(error);
+  }
+});
+```
 
 ## Update and show changes
 
+```js
+$.ajax({
+  type: "PUT",
+  url: "https://super-crud.herokuapp.com/books/563950249f89f21100e7c2ff/",
+  data: {"title": "Huckleberry Finn"},
+  success: function (data) {
+    console.log("UPDATED!");
+  }
+});
+```
+
 ## Update a non-existent item
+
+```js
+$.ajax({
+  type: "PUT",
+  url: "https://super-crud.herokuapp.com/books/563950249f89f21100e7c2ff/",
+  data: {"title": "Huckleberry Finn"},
+  success: function (data) {
+    console.log("UPDATED!");
+  },
+  error: function (error) {
+    console.error(error);
+  }
+});
+```
 
 ## Resources
 
