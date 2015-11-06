@@ -1,4 +1,4 @@
-# <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" width="60">  Fibonacci & Recursion
+# <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" width="60">  Fibonacci
 
 <a href="https://cloud.githubusercontent.com/assets/1329385/10953571/8afb5d82-82fd-11e5-9f07-5dea1c865dc1.gif" target="_blank"><img src="https://cloud.githubusercontent.com/assets/1329385/10953571/8afb5d82-82fd-11e5-9f07-5dea1c865dc1.gif" alt="Recursion"></a>
 
@@ -11,31 +11,6 @@ In mathematics, the **Fibonacci sequence** is the series of numbers that follow 
 ```
 
 By definition, each number in the sequence is the sum of the two numbers before it, with the exception of the first two numbers, which are both `1`.
-
-## Recursion
-
-In computer science, **recursion** is a problem-solving method where the solution depends on solutions to smaller instances of the same problem. When programming, we see recursion in practice when a function calls itself.
-
-```js
-var guessNumber = function(num) {
-  var guess = prompt("Guess the number.");
-
-  // base case (no recursion)
-  if (guess === num) {
-    alert("Your guess is correct!")
-
-  // recursive case (function calls itself)
-  } else if (guess > num) {
-    alert("Your guess is too high. Try again.");
-    guessNumber(num);
-
-  // another recursive case
-  } else if (guess < num) {
-    alert("Your guess is too low. Try again.");
-    guessNumber(num);
-  }
-};
-```
 
 ## Challenge
 
@@ -65,7 +40,3 @@ Can you think of another way to write your `fib` function without using recursio
 
 Solve <a href="http://www.codewars.com/kata/n-th-fibonacci/javascript" target="_blank">this Kata</a> using your new skills. Then compare to other solutions.
 
-## Solutions
-
-* <a href="https://github.com/sf-wdi-24/fibonacci/compare/solution" target="_blank">Challenge</a>
-* <a href="https://github.com/sf-wdi-24/fibonacci/compare/solution-recursive" target="_blank">Stretch Challenge</a>
