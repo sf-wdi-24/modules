@@ -1,6 +1,6 @@
-# Intro to Express continued:
+# <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" width="60">  Intro to Express continued:
 
-![[Lost Season 17](https://cloud.githubusercontent.com/assets/1329385/11004643/4eab3f6a-846e-11e5-9076-ebbeddd861e3)](https://simpsonswiki.com/wiki/Stranded)
+![<a href="https://cloud.githubusercontent.com/assets/1329385/11004643/4eab3f6a-846e-11e5-9076-ebbeddd861e3" target="_blank">Lost Season 17</a>](https://simpsonswiki.com/wiki/Stranded)
 
 ## Routes, Params, and Queries
 
@@ -12,7 +12,7 @@
 
 ## Pre-reading
 
-* [HTTP Intro](http://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177)
+* <a href="http://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177" target="_blank">HTTP Intro</a>
 
 ## General thought
 
@@ -198,7 +198,7 @@ Here we are seeing the first introduction to parameters that the application can
 
 Generally, you don't want to cram everything into a route. Just imagine when there are multiple parameters in route. Or maybe we don't care about getting the order of the parameters correct. Luckily, there are **query parameters** you can include with each request.
 
-Let's see query params in action. Go to [https://google.com/search?q=kittens&tbm=isch](https://google.com/search?q=kittens&tbm=isch)
+Let's see query params in action. Go to <a href="https://google.com/search?q=kittens&tbm=isch" target="_blank">https://google.com/search?q=kittens&tbm=isch</a>
 
 * `?` denotes the beginning of the query parameters.
 * `=` indicates an assignment; anything to the left is the key, while the right represents the value.
@@ -213,11 +213,11 @@ app.get("/thank", function (req, res) {
 });
 ```
 
-Reset your server and go to [localhost:3000/thank?name=jane](localhost:3000/thank?name=jane). Note how we can now define parameters in the url after a `?`.
+Reset your server and go to <a href="localhost:3000/thank?name=jane" target="_blank">localhost:3000/thank?name=jane</a>. Note how we can now define parameters in the url after a `?`.
 
 ## Middleware
 
-What is middleware? [In terms of Express](http://expressjs.com/guide/using-middleware.html), middleware is a function with access to the request object (req), the response object (res), and the next middleware in the application’s request-response cycle, commonly denoted by a variable named next.
+What is middleware? <a href="http://expressjs.com/guide/using-middleware.html" target="_blank">In terms of Express</a>, middleware is a function with access to the request object (req), the response object (res), and the next middleware in the application’s request-response cycle, commonly denoted by a variable named next.
 
 Middleware can:
 
@@ -228,7 +228,7 @@ Middleware can:
 
 You can create your own middleware, or use third-party modules. That's right, there are tons of useful middlewares that are already out there which you can use to handle common challenges like authentication, validations, and parsing.
 
-The [`body-parser`](https://github.com/expressjs/body-parser) module is an example of some middleware that makes Express awesome. You can use it to parse out params from the POST'd form. This provides a different way to collect data instead of relying on URL or query params.
+The <a href="https://github.com/expressjs/body-parser" target="_blank">`body-parser`</a> module is an example of some middleware that makes Express awesome. You can use it to parse out params from the POST'd form. This provides a different way to collect data instead of relying on URL or query params.
 
 `server.js`
 ```js
@@ -281,9 +281,9 @@ This will be essential knowledge for building and interacting with applications 
 
 ## Resources
 
-1. [Starting an Express Project](http://expressjs.com/starter/installing.html)
-2. [Express Hello World](http://expressjs.com/starter/hello-world.html)
-3. [Express Basic Routing](http://expressjs.com/starter/basic-routing.html)
+1. <a href="http://expressjs.com/starter/installing.html" target="_blank">Starting an Express Project</a>
+2. <a href="http://expressjs.com/starter/hello-world.html" target="_blank">Express Hello World</a>
+3. <a href="http://expressjs.com/starter/basic-routing.html" target="_blank">Express Basic Routing</a>
 
 # Homework
 
