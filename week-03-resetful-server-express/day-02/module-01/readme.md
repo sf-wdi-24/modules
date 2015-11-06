@@ -56,6 +56,15 @@ Remember that the interwebs is many clients querying many servers. We've done a 
 Let's look at a basic `get` method in an express app.
 
 ```js
+// server.js
+  var taquerias = [
+    { name: "La Taqueria" },
+    { name: "El Farolito" },
+    { name: "Taqueria Cancun" }
+  ]
+```
+
+```js
   app.get('/api/taquerias', function (req, res) {
     res.json(taquerias);
   });
