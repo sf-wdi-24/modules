@@ -14,6 +14,3 @@ Starter code is provided <a href="https://github.com/sf-wdi-24/irs-rebate" targe
 
 If you can't complete this challenge, it is OK. We'll get together at the end of class and talk over the solution.
 
-## Solution
-
-* <a href="https://github.com/sf-wdi-24/irs-rebate/compare/solution" target="_blank">We'll go over in class</a>
