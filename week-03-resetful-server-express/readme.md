@@ -22,7 +22,7 @@
     <td><a href="day-01/module-01">RESTful Routing: Create & Read</a></td>
     <td>Intro to Express</td>
     <td>CRUD Server Routes (Create, Read)</td>
-    <td>Intro to Mongo / Mongoose</td>
+    <td><a href="./day-04/module-01/">Intro to Mongo / Mongoose</a></td>
     <td>Review</td>
   </tr>
   <tr>
