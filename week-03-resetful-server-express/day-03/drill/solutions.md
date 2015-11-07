@@ -3,7 +3,6 @@
 ```js
 
 function mergeSort(arr) {
-
   // if the array is length one or zero, return the array
   if (arr.length < 2) {
     return arr;
