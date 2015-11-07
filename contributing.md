@@ -50,6 +50,12 @@
 * When done reviewing a pull request, add a comment with `+1`
 * DiR merges pull requests from `develop` into `master`
 
+## Drill Challenges
+
+* Drills are included in the daily `readme`.
+* Solutions to drills are included in the drill's `solutions.md` file.
+* Drills may use external projects which are linked to via the `readme`.
+
 ## Homework
 
 * Instructor assigned to `module-02` is always responsible for that night's homework.

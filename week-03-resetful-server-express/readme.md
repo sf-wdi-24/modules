@@ -11,8 +11,8 @@
   </tr>
   <tr>
     <td>Drill</td>
-    <td>Intro to Recursion</td>
-    <td>Fibonacci</td>
+    <td><a href="day-01/drill">Intro to Recursion</a></td>
+    <td><a href="./day-02/drill/">Fibonacci</a></td>
     <td>Merge Sort</td>
     <td>Mongo Intro with CS Concepts</td>
     <td>Assessment</td>
@@ -22,22 +22,22 @@
     <td><a href="day-01/module-01">RESTful Routing: Create & Read</a></td>
     <td>Intro to Express</td>
     <td>CRUD Server Routes (Create, Read)</td>
-    <td>Intro to Mongo / Mongoose</td>
+    <td><a href="./day-04/module-01/">Intro to Mongo / Mongoose</a></td>
     <td>Review</td>
   </tr>
   <tr>
     <td>Module2</td>
-    <td>RESTful Routing Continued (Update, Delete)</td>
-    <td>Express Routes, Params, & Queries</td>
-    <td>CRUD Server Routes Continued (Update, Delete)</td>
+    <td><a href="./day-01/module-02/readme.md">RESTful Routing Continued (Update, Delete)</a></td>
+    <td><a href="./day-02/module-02/">Express Routes, Params, & Queries</a></td>
+    <td><a href="day-03/module-02">CRUD Server Routes Continued: Update & Delete</a></td>
     <td><a href="day-04/module-02">Mongoose Models & CRUD</a></td>
     <td>Intro Weekend Lab (Micro Blog)</td>
   </tr>
   <tr>
     <td>HW</td>
-    <td>API Design</td>
-    <td>Express Project Setup Drills</td>
-    <td>To Do App</td>
+    <td><a href="https://github.com/sf-wdi-24/ajax-book-app/">API Design / Library</a></td>
+    <td><a href="https://github.com/sf-wdi-24/practicexpress">Express Project Setup Drills</a></td>
+    <td><a href="https://github.com/sf-wdi-24/express-todo-app/tree/master" target="_blank">To Do App</a></td>
     <td><a href="https://github.com/sf-wdi-24/express-todo-mongo" target="_blank">Do App Continued: MongoDB & Mongoose</a></td>
     <td>Weekend Lab (Micro Blog)</td>
   </tr>
