@@ -197,7 +197,7 @@ it('should return statusCode 200', function(done) {
 1. Begin working on your <a href="https://github.com/sf-wdi-24/express-todo-app" target="_blank">express-todo-app</a>.
 2. When you're ready, use the steps above to implement routes for creating and reading todos.
 3. Make sure your routes work by using Postman.
-4. Write request specs to test your update and delete routes.
+4. Write request specs to test your create and read routes.
 
 ## Resources
 
