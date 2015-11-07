@@ -44,6 +44,23 @@ Today, we'll focus on a recursive solution called merge sort.
 
 ## Challenge
 
+```js
+//assume that you have a working merge function
+function merge(left, right){
+  var result  = [],
+      il      = 0,
+      ir      = 0;
+
+  while (il < left.length && ir < right.length){
+      if (left[il] < right[ir]){
+          result.push(left[il++]);
+      } else {
+          result.push(right[ir++]);
+      }
+  }
+  return result.concat(left.slice(il)).concat(right.slice(ir));
+}
+```
 Write a function `mergeSort` that takes an array of numbers as input and returns a new array. The new array should have all the same elements as the input and they should be sorted in ascending order.
 
 ## Stretch Challenges
