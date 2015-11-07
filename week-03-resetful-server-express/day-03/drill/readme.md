@@ -26,7 +26,7 @@ In a recursive implementation, we first solve for the simplest version of the pr
 
 If you were given an array of 10 random numbers, how would you sort them in ascending order?
 
-Arrays in JavScript have a [`sort`](http://www.w3schools.com/jsref/jsref_sort.asp) function. If we have access to a JavaScript runtime, we can treat this as a small problem and simply call the built-in array function.
+Arrays in JavScript have a <a href="http://www.w3schools.com/jsref/jsref_sort.asp" target="_blank">sort</a> function. If we have access to a JavaScript runtime, we can treat this as a small problem and simply call the built-in array function.
 
 Without a JS runtime, we'd be on our own. We'd have to think of sorting arrays as a big problem and come up with an implementation ourselves.
 
