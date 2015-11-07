@@ -18,7 +18,7 @@ data = {
     city: "San Francisco",
     course: "Web Development Immersive",
     course_id: "WDI24",
-    classrootm: "7",
+    classroom: "7",
     students: [{
         id: 0,
         last_name: "Abeyta",
@@ -73,8 +73,8 @@ Declaring variables and defining them as portions of a larger object helps us cr
 ### Quick Challenge
 - Copy the object above and save it to a javaScript file, `data.js`
 - Add some properties that logically fit into an object describing our class (address, floor number, and a list of instructors.
-- Run your file using 'node data.js' in your console.
-- Add some lines to 'data.js' to console.log some of your new properties!
+- Run 'node' in your console and copy the contents of your `data.js` file into it.
+- Use the node console to drill down into you newly modified data object!
 
 If everything worked out, you should have a fully functioning data object, only now with even MORE properties with us to play with!
 
