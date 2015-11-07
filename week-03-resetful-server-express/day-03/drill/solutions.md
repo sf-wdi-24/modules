@@ -1,14 +1,15 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" width="60"> Solutions
 
-```
+```js
 
 function mergeSort(arr) {
+
   // if the array is length one or zero, return the array
   if (arr.length < 2) {
     return arr;
   }
   // figure out the middle point
-  var middle = parseInt(arr.length / 2);
+  var middle = Math.floor(arr.length / 2);
 
   // create an array of the left half
   var left = arr.slice(0, middle);
@@ -22,7 +23,8 @@ function mergeSort(arr) {
 ```
 
 ### Another way
-```
+```js
+
 function merge(left, right) {
   var result = [];
 
