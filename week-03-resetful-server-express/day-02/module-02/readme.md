@@ -27,7 +27,7 @@
 
 <details>
   <summary>Do you know what PaaS, IaaS, SaaS and BaaS stand for?</summary>
-  Please JFGI (Just Freaking Google It).
+  <a href="http://lmgtfy.com/?q=PaaS%2C+SaaS+and+IaaS" target="_blank">More Information on PaaS, SaaS and IaaS</a>.
 </details>
 
 ## Terminology
