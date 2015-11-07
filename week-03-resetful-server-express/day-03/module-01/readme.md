@@ -202,5 +202,5 @@ it('should return statusCode 200', function(done) {
 ## Resources
 
 * <a href="http://expressjs.com/api.html#req" target="_blank">Express Request Docs</a>
-* <a href="http://expressjs.com/api.html#app.put.method" target="_blank">Express app.put()</a>
-* <a href="http://expressjs.com/api.html#app.delete.method" target="_blank">Express app.delete()</a>
+* <a href="http://expressjs.com/api.html#app.get" target="_blank">Express app.get()</a>
+* <a href="http://expressjs.com/api.html#app.post.method" target="_blank">Express app.post()</a>
