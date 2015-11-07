@@ -35,8 +35,8 @@
   </tr>
   <tr>
     <td>HW</td>
-    <td>Add Comments to Micro-Blog</td>
-    <td>Add Auth to Micro-Blog</td>
+    <td>Add Comments to Microblog</td>
+    <td>Add Auth to Microblog</td>
     <td>Read Mythical Man-Month</td>
     <td>Read Mythical Man-Month</td>
     <td>Weekend Lab (Independent Research)</td>
