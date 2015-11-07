@@ -291,19 +291,3 @@ This will be essential knowledge for building and interacting with applications 
 2. <a href="http://expressjs.com/starter/hello-world.html" target="_blank">Express Hello World</a>
 3. <a href="http://expressjs.com/starter/basic-routing.html" target="_blank">Express Basic Routing</a>
 
-# Homework
-
-Your homework tonight is practice.
-
-You must do this without any copy/pasta at least 5 times.
-
-1. Create a directory to place a node project in.
-1. Use `npm` to create a `package.json` and install `express` and `hbs`.
-1. Make a new JavaScript file which creates a new express application.
-1. Add two routes to the express application.
-
-## Bonus
-
-1. Add an HTML page in your project which uses server side rendering.
-1. Make a route which returns JSON data.
-1. Use your JSON route from your server side rendered HTML page.
