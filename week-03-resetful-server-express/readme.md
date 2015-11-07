@@ -11,7 +11,7 @@
   </tr>
   <tr>
     <td>Drill</td>
-    <td>Intro to Recursion</td>
+    <td><a href="day-01/drill">Intro to Recursion</a></td>
     <td>Fibonacci</td>
     <td>Merge Sort</td>
     <td>Mongo Intro with CS Concepts</td>
@@ -19,7 +19,7 @@
   </tr>
   <tr>
     <td>Module1</td>
-    <td>RESTful Routing (Create, Read)</td>
+    <td><a href="day-01/module-01">RESTful Routing: Create & Read</a></td>
     <td>Intro to Express</td>
     <td>CRUD Server Routes (Create, Read)</td>
     <td>Intro to Mongo / Mongoose</td>
