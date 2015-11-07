@@ -31,7 +31,7 @@
     <td><a href="./day-02/module-02">Express Routes, Params, & Queries</a></td>
     <td><a href="./day-03/module-02">CRUD Server Routes Continued: Update & Delete</a></td>
     <td><a href="./day-04/module-02">Mongoose Models & CRUD</a></td>
-    <td>Intro <a href="https://github.com/sf-wdi-24/express-microblog" target="_blank">Weekend Lab (Micro Blog)</a></td>
+    <td>Intro <a href="https://github.com/sf-wdi-24/express-microblog" target="_blank">Weekend Lab (Microblog)</a></td>
   </tr>
   <tr>
     <td>HW</td>
@@ -39,6 +39,6 @@
     <td><a href="https://github.com/sf-wdi-24/practicexpress" target="_blank">Express Project Setup Drills</a></td>
     <td><a href="https://github.com/sf-wdi-24/express-todo-app" target="_blank">To Do App</a></td>
     <td><a href="https://github.com/sf-wdi-24/express-todo-mongo" target="_blank">Do App Continued: MongoDB & Mongoose</a></td>
-    <td><a href="https://github.com/sf-wdi-24/express-microblog" target="_blank">Weekend Lab (Micro Blog)</a></td>
+    <td><a href="https://github.com/sf-wdi-24/express-microblog" target="_blank">Weekend Lab (Microblog)</a></td>
   </tr>
 </table>
