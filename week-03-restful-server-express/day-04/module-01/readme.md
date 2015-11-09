@@ -17,7 +17,7 @@ Let's extend our challenge from this morning and speak about Data.
 For this challenge, open up your solution from the challenge this morning and we'll draw parallels between RDBMS and noSQL or document stores.
 
 ##RDBMS vs noSQL
-A great analogy from a fellow StackOverflow:
+A great analogy from a fellow on StackOverflow:
 > "NoSQL databases store information like you would recipes in a book. When you want to know how to make a cake, you go to that recipe, and all of the information about how to make that cake (ingredients, preparation, mixing, baking, finishing, etc.) are all on that one page.
 >
 > SQL is like shopping for the ingredients for the recipe. In order to get all of your ingredients into your cart, you have to go to many different aisles to get each ingredient. When you are done shopping, your grocery cart will be full of all the ingredients you had to run around and collect.

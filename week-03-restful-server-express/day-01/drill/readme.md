@@ -47,7 +47,7 @@ var guessNumber = function(num) {
 
 
 ### Factorial using recursion
-Write a function `factorial` that takes a single parameter `n`, and computes the [factorial](http://en.wikipedia.org/wiki/Factorial) of `n`. For example:
+Write a function `factorial` that takes a single parameter `n`, and computes the [factorial](http://en.wikipedia.org/wiki/Factorial) of `n`. For example: 
 
 ```
 factorial(5) => 5 * 4 * 3 * 2 * 1

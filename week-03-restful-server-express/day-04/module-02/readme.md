@@ -94,7 +94,7 @@ Mongoose allows us to use JavaScript and Object-Oriented Programming to talk to 
 #### Get all todos: `.find()`
 
 <details>
-  <summary>We can use <a href="http://mongoosejs.com/docs/api.html#model_Model.find"  target="_blank">.find()</a> to get all documents in the collection.</summary
+  <summary>We can use <a href="http://mongoosejs.com/docs/api.html#model_Model.find"  target="_blank">.find()</a> to get all documents in the collection.</summary>
   ```js
   // get all todos
   app.get('/api/todos', function (req, res) {
