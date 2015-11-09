@@ -23,10 +23,7 @@
     <td><a href="./day-02/module-01">Intro to Express</a></td>
     <td><a href="./day-03/module-01">CRUD Server Routes: Create & Read</a></td>
     <td><a href="./day-04/module-01">Intro to MongoDB / Mongoose</a></td>
-    <td>
-      Assessment<br><br>
-      Review
-    </td>
+    <td>Assessment / Review</td>
   </tr>
   <tr>
     <td>Module2</td>
