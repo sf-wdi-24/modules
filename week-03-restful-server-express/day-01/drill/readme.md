@@ -69,5 +69,5 @@ Find the greatest common divisor between two positive integers.
 ### Resources:
 
 <a href="https://www.youtube.com/watch?v=Mv9NEXX1VHc" target="_blank">What on Earth is Recursion?</a><br>
-<a href="http://www.wolframalpha.com/input/?i=recursion">More Recursion" target="_blank"</a><br>
+<a href="http://www.wolframalpha.com/input/?i=recursion" target="_blank">More Recursion</a><br>
 <a href="http://programmers.stackexchange.com/questions/25052/in-plain-english-what-is-recursion" target="_blank">And finally...</a>

@@ -41,7 +41,7 @@ In order to fix this we'll `DELETE` this book and create a new one with the prop
 
 ## Delete an item
 
-We don't have a slick `$.get` or `$.post` to `DELETE` items so instead we use the longer form `$.ajax` in order to make our request. In order to `DELETE` an item we'll need to know the ID we're going to `DELETE`.
+We don't have a slick method like `$.get` or `$.post` to `DELETE` items so instead we use the longer form `$.ajax` in order to make our request. In order to `DELETE` an item we'll need to know the ID of the item we're going to `DELETE`.
 
 This is similar to doing a `GET` on a book, we needed an ID of a book in the list but instead of returning the book we're going to destroy it.
 
@@ -62,7 +62,7 @@ $.ajax({
 
 ## Delete a non-existent item
 
-A problem which comes up often for me is I forget the ID, it's hard to remember an ID like `563950249f89f21100e7c2ff`.
+A problem which comes up often for me is that I forget the ID. It's hard to remember an ID like `563950249f89f21100e7c2ff`.
 
 What should happen when I try to `DELETE` something which doesn't exist?
 
@@ -81,7 +81,7 @@ $.ajax({
 
 <details>
   <summary>Will all APIs raise an error if the item doesn't exist?</summary>
-  IT DEPENDS! Some APIs are worse than those geocities websites from the 90s. If they don't then you'll need to find a workaround.
+  IT DEPENDS! Some APIs are worse than those geocities websites from the '90s. If they don't raise an error, then you'll need to find a workaround.
 </details>
 
 ## Update and show changes
@@ -128,7 +128,7 @@ $.ajax({
 
 ## Challenges
 
-Research each question for a few minutes then we'll get together again and in groups discuss what we've found. You must have at least one website URL which can be used as reference.
+Research each question for a few minutes then we'll get together again in groups and discuss what we've found. You must have at least one website URL which can be used as reference.
 
 1. Why do we use REST?
 1. What is REST?
