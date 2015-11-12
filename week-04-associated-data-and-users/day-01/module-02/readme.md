@@ -1,4 +1,4 @@
-# Mongoose Reference & Populate
+# Mongoose Reference (Relationships) & Populate
 
 | Objectives |
 | :---- |
