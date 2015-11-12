@@ -98,7 +98,7 @@ After we create the `Game` document, we push the `nintendo64` console document i
 
 ```js
 nin64.save(function(err, nintendo64) {
- if(err) {return console.log(err);}
+ if(err) {return console.error(err);}
  else console.log(nintendo64);
 });
 zelda.consoles.push(nin64);
@@ -131,7 +131,7 @@ Lets print out the Console Document `nintendo64` to make sure the `ObjectId` in 
 
 ```js
 Console.findOne({_id: "55e4eb857d6157f4d41a2980"}, function (err, foundConsole){
- if(err) {return console.log(err);}
+ if(err) {return console.error(err);}
  console.log(foundConsole);
 });
 
@@ -152,7 +152,7 @@ When we want to get full information from a Console Document we have inside the 
 Game.findOne({ name: 'The Legend of Zelda: Ocarina of Time' })
   .populate('consoles')
   .exec(function(err, game) {
-    if(err){return console.log(err);}
+    if(err){return console.error(err);}
     if (game.consoles.length > 0) {
       for (var i=0; i<game.consoles.length; i++) {
         console.log("/nI love " + game.name + " for the " + game.consoles[0].name);
