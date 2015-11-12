@@ -40,7 +40,7 @@ var consoleSchema = new Schema({
 });
 ```
 
-The `Console Schema` describes a videogame console such as Nintendo, Sega, or XBox.
+The `consoleSchema` describes a videogame console such as Nintendo, Sega, or XBox.
 
 
 ```js
