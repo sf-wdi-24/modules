@@ -3,7 +3,7 @@
 | Objectives |
 | :--- |
 | Review Mongoose setup in a Node/Express app |
-| Find documents with Mongoose |
+| Find and create documents with Mongoose |
 | Update and delete documents with Mongoose |
 
 ## Review: What is Mongoose?
