@@ -2,7 +2,7 @@
 
 | Objectives |
 | :---- |
-| Describe one-to-one, one-to-many and many-to-many data relationships. |
+| Describe one-to-one, one-to-many and many-to-many data **relationships**. |
 | Write mongoose schemas for referenced data. |
 | Build the appropriate queries for referenced data relationships using `populate()`. |
 
