@@ -1,24 +1,38 @@
-Project Planning Practices
-Workflow
-Best Practices
+# Project Planning Practices, Workflow, and Best Practices
 
-Objectives
-
-Create an effective strategy for planning projects
-Understand and implement an MVP
-Create and Adhere to a logical and productive Workflow
-Understand and utilize organization technologies
-Execute a project from beginning to end
+| Objectives |
+| ----------- |
+| Create an effective strategy for planning projects |
+| Understand and implement an MVP |
+| Implement and Execute an effective git workflow |
+| Understand and utilize organizational technologies |
+| Plan and execute a project from beginning to end |
 
 
-Why?
+## Why?
 
-Great planning is essential to saving time while creating a project.  Far too often programmers and students do not invest enough time into analyzing the creating a plan to build a project.  The end result of this is time wasted on creating features that are not necessary to the project or writing code that is not useful to the project.
+ * Great planning is essential to saving time while creating a project.  Far too often programmers and students do not invest enough time into analyzing the creating a plan to build a project.  The end result of this is time wasted on creating features that are not necessary to the project or writing code that is not useful to the project.
 
-Creating a roadmap for your work week helps one to become a more focused programmer.
+ * Creating a roadmap for your work week helps one to become a more focused programmer.
 
-Analyzing what issues you run into helps you to better plan how to approach the next day.
+ * Analyzing what issues you run into helps you to better plan how to approach the next day.
 
+## MVP....that's the Most Valuable Player Right?!?!
+
+**MVP** is short for **Minimal Viable Product**.
+
+* For our purposes, the MVP is the smallest possible project we want to create.  
+
+* It's the minimum goal that we want to accomplish when we are building out an application or a feature.
+(For example, if I am building a blog, I might want to make my MVP a site that simply allows a user to sign in and CRUD posts.  Anything beyond that functionality is extra and would not be counted as my MVP.)
+
+* Setting an MVP at the beginning of a project can help focus a developer on the features that are strictly needed to accomplish said project.
+
+## Wireframes
+
+* We've seen wireframing before.  This is simply a slight blue print to help guide our design of the website.  
+
+* Creating a wireframe at the beginning of a project can drastically same time during development as it guides where and why we place features on a page.
 
 Outside in--building things as you need them.
 
