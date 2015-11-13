@@ -78,26 +78,23 @@ This will place you in your new working branch.  This branch has the latest vers
 
 **Why are we doing all of this work?**
 *  Have you worked on a new feature and completely wrecked the working application you have?  If not....YOU'RE LYING!!!!
-*  Creating new branches allows us to take our working apps and make a copy for us to mess with.  We can tweak these new features confidently knowing that it will not have any adverse consequences on our working application.
- 
 
+*  Creating new branches allows us to take our working apps and make a copy for us to mess with.  We can tweak these new features confidently knowing that it will not have any adverse consequences on our working application.
 
 * **REMEMBER to build "outside-in"**
 Start with the basics of your view: an index.html file with static data directly in the file. Then, create a template based on the structure in the html and use the template to display dynamic data stored on the client. Then, move the data to the server and get it with a GET call to a route on the server.  Then, move the data to your database.
 
-## WHAT WE ARE LOOKING FOR
-#### Code should be...
+## Demo and Exercise:
 
-* Commented
-* Modular
-* DRY
-* Frequently committed, with descriptive commit messages
-* Properly indented
+* Sit back and relax WDI-24.  We're going to go through a detailed demonstration of the basic project planning concepts discussed today.
+* For this evenings exercise we want you to continue to read the "Mythical Man Month".  While reading this book and enjoying the harrowing tales of web development think of ways that this planning structure and reading will help you in your future projects.
 
-#### Workflow should be...
 
-* Strategic —
-*Were you mindful about balancing your own resourcefulness with seeking help when necessary? Did you think through logical units and plan (e.g., in comments) before starting to code?*
 
-* Documented —
-*Did you create a project README, illustrate wireframes, write user stories, draw an entity relationship diagram, etc?*
+#### Resources:
+* <a href="http://www.codeconquest.com/programming-projects/how-to-plan-a-programming-project/" target="_blank">Planning</a>
+* <a href="http://www.codeconquest.com/programming-projects/how-to-build-a-programming-project/" target="_blank">Building</a>
+* <a href="https://en.wikipedia.org/wiki/Minimum_viable_product" target="_blank">MVP</a>
+* <a href="http://searchsoftwarequality.techtarget.com/definition/user-story" target="_blank">User Story</a>
+* <a href="http://agilemethodology.org/" target="_blank">Agile Methodology</a>
+* <a href="https://sandofsky.com/blog/git-workflow.html" target="_blank">Git Workflow</a>
