@@ -6,7 +6,7 @@ If you'd like to work with fresh code, feel free to fetch the <a href="https://g
 
 ## Tutorial: Microblog with User Auth
 
-Adapted from <a href="http://mherman.org/blog/2015/01/31/local-authentication-with-passport-and-express-4/#.VkVw8t-rSRs" target="_blank">User Authentication With Passport and Express 4</a>
+Adapted from <a href="http://mherman.org/blog/2015/01/31/local-authentication-with-passport-and-express-4/#.VkVw8t-rSRs" target="_blank">User Authentication With Passport and Express 4</a>.
 
 ### Install, Require, & Configure Dependencies
 
@@ -207,7 +207,7 @@ Adapted from <a href="http://mherman.org/blog/2015/01/31/local-authentication-wi
   });
   ```
 
-4. Now, let's create the route that handles signing up new users. Again, the code in this route will run when the user submits the signup form (since you already set `method` and `action` in the signup form to match this route).
+4. Now, let's create the route that handles signing up new users. Again, the code in this route will run when the user submits the signup form (since you already set `method` and `action` in the form to match this route).
 
   ```js
   /*
@@ -258,7 +258,7 @@ Adapted from <a href="http://mherman.org/blog/2015/01/31/local-authentication-wi
       <input type="password" name="password" class="form-control" placeholder="Password">
     </div>
     <div class="form-group">
-      <input type="submit" class="btn btn-block btn-primary" value="Sign Up">
+      <input type="submit" class="btn btn-block btn-primary" value="Log In">
     </div>
   </form>
   ```
@@ -284,7 +284,7 @@ Adapted from <a href="http://mherman.org/blog/2015/01/31/local-authentication-wi
   });
   ```
 
-4. Now, let's create the route that handles logging in existing useres. Again, the code in this route will run when the user submits the login form (since you already set `method` and `action` in the login form to match this route).
+4. Now, let's create the route that handles logging in existing useres. Again, the code in this route will run when the user submits the login form (since you already set `method` and `action` in the form to match this route).
 
   ```js
   /*
@@ -335,7 +335,7 @@ Adapted from <a href="http://mherman.org/blog/2015/01/31/local-authentication-wi
   ➜  touch views/profile.hbs
   ```
 
-2. You don't have a ton of info about the user yet, so for now, display the `username` in the view. `{{user.username}}` is server-side templating with `hbs`! The next step is to set up a server route that renders this view with the user data already in it!
+2. You don't have a ton of info about the user yet, so for now, display the `username` in the view. `{{user.username}}` is server-side templating with `hbs`! The next step is to set up a server route that renders this view with the user data already in it.
 
   ```html
   <!-- profile.hbs -->
