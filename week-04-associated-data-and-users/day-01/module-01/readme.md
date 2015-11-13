@@ -48,7 +48,7 @@ Entity relationship diagrams (ERDs) represent the relationships between data or 
 
 Note: Attributes can be represented as line items under a heading (like all of the Item1, Item2, Item3 under each heading above) or as ovals stemming from the heading's rectangle.  
 
-[More guidelines for ERDs](http://docs.oracle.com/cd/A87860_01/doc/java.817/a81358/05_dev1.htm)
+<a href="http://docs.oracle.com/cd/A87860_01/doc/java.817/a81358/05_dev1.htm" target="_blank">More guidelines for ERDs</a>
 
 
 
@@ -270,3 +270,55 @@ app.delete('/api/lists/:listId/todos/:id', function (req, res) {
   });
 });
 ```
+
+## Challenges
+
+**Setting up an Embedded Model**
+
+1. Write a file called `post.js` that has a post model with an attribute `comments` that contains an embedded comment schema.
+
+**Writing User/Tweets Routes**
+
+The following challenges are psuedo code. Write a method for example.
+
+Here's an example where **Monsters have many Broods**:
+
+1. Write a route to create a new Monster.
+
+  ```js
+    app.post('/monsters', function(req, res) {
+      var monster = req.body.monster;
+      Monster.create(monster, function (err, monster) {
+        res.status(200).json(monster);
+      });
+    });
+  ```
+
+1. Write a route to create a new Brood that belongs to a Monster.
+
+  ```js
+    app.post('/monsters/:id/broods', function(req, res) {
+      Monster.findById(req.params.id, function(err, monster) {
+        var brood = req.body.brood;
+        monster.brood.push(brood);
+        monster.save(function(err) {
+          res.status(200).json(brood);
+        });
+      });
+    });
+  ```
+
+In the following challenges imagine that **Users have many Tweets**
+
+1. Write a route to create a new User.
+1. Return an array of all the users.
+1. Return an array of all tweets of a specific user.
+1. Create a new tweet that belongs to a user (who's id is in the `req.params.id`).
+1. Delete a tweet that belongs to a user (make sure to build the route to include the user and the tweet's id's - see example above).
+1. Update a tweet that belongs to a user (ditto on their id's!).
+
+
+**Questions**
+
+1. What are three examples of times when you would use embedded association pattern?
+1. What are three you would use a reference association pattern?
