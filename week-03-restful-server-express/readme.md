@@ -15,7 +15,7 @@
     <td><a href="./day-02/drill">Fibonacci</a></td>
     <td><a href="./day-03/drill">Merge Sort</a></td>
     <td><a href="./day-04/drill">Mongo Intro with CS Concepts</a></td>
-    <td>Assessment</td>
+    <td>Week 3 Feedback Survey</td>
   </tr>
   <tr>
     <td>Module1</td>
@@ -23,7 +23,7 @@
     <td><a href="./day-02/module-01">Intro to Express</a></td>
     <td><a href="./day-03/module-01">CRUD Server Routes: Create & Read</a></td>
     <td><a href="./day-04/module-01">Intro to MongoDB / Mongoose</a></td>
-    <td>Review</td>
+    <td>Assessment / Review</td>
   </tr>
   <tr>
     <td>Module2</td>

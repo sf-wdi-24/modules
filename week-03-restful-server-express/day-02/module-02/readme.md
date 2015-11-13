@@ -20,7 +20,7 @@
   <summary>Why would you make your own server instead of using a service like Parse?</summary>
   Some people argue it is for control. When you use a service you are becoming locked in to a vendor (vendor lockin) which isn't necessarily a bad thing. The downside to vendor lockin is that you are subject to any changes they make which could destroy your business.
 
-  Another viewpoint is that using a PaaS or SaaS service costs more money when you grow. This is a true statement but depends on "if you grow" instead of "when". If your project is a small school project then it won't matter to use Parse but if you're working for a funded startup with customers it may cost more to use Parse than it does to pay your salary and hosting.
+  Another viewpoint is that using a PaaS or SaaS service costs more money when you grow. This is a true statement but depends on "if you grow" instead of "when". If your project is a small school project then it won't matter if you use Parse, but if you're working for a funded startup with customers it may cost more to use Parse than it does to pay your salary and hosting.
 
   My viewpoint is that each service uses the same terminology. By building your own small API you can learn how those services work and better utilize them.
 </details>
@@ -65,7 +65,7 @@ Let's start with a simple **Express** application.
   touch server.js
   ```
 
-* Then create a `package.json`, use the first line below or `npm init`.
+* Then create a `package.json`. Use the first line below or `npm init`.
 
   ```zsh
   npm init
@@ -84,7 +84,7 @@ The folder structure will be as follows:
     package.json
 ```
 
-Now we need write some code for our simple application.
+Now we need to write some code for our simple application.
 
 `server.js`
 ```js
@@ -187,7 +187,7 @@ app.get("/greet/:name", function (req, res) {
 });
 ```
 
-Here we are seeing the first introduction to parameters that the application can identify. In the following route `:name` is consider a route parameter. We can access it using `req.params.name`.
+Here we are seeing the first introduction to parameters that the application can identify. In the following route `:name` is considered a route parameter. We can access it using `req.params.name`.
 
 | Request Type | Request Path | Response
 | :--- | :--- | :--- |
@@ -264,17 +264,17 @@ app.post('/cities', parseUrlencoded, function (request, response) {
 });
 ```
 
-There's something missing from this code?
+Is there something missing from this code?
 
 We haven't installed the `body-parser` package.
 
-We need a template to display the cities.
+And we need a template to display the cities.
 
 Now we'll break up into groups and fix this code by adding the `body-parser` module then creating a handlebars template to display cities.
 
 ## Summary
 
-We learned about
+We learned about:
 
 * Routing to different resources, i.e. `/burgers` and `/tacos`.
 * Using dynamic parameters, i.e. `/burgers/:index` and `/tacos/:index` to request specific data.
