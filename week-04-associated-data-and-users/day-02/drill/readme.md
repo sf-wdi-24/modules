@@ -41,11 +41,11 @@ array[mid] < target // 3 < 1
 
 This process continues, eliminating half of the elements, and comparing the target value to the value of the middle element of the remaining elements - until the target value is either found (and its associated element position is returned), or until the entire array has been searched (and "not found" is returned).
 
-[Source Wikipedia](https://en.wikipedia.org/wiki/Binary_search_algorithm)
+<a href="https://en.wikipedia.org/wiki/Binary_search_algorithm" target="_blank">Source Wikipedia</a>
 
 ## A real-life example
 
-Searching for a name in a telephone book using binary search - https://study.cs50.net/binary_search (an awesome introduction to binary search).
+Searching for a name in a telephone book using  <a href="https://study.cs50.net/binary_search" target="_blank">binary search</a> - (an awesome introduction to binary search).
 
 ## Exercise
 
@@ -70,18 +70,13 @@ var primeNumbers = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 
 // string arrays to sort:
 var array = ["Jan", "Feb", "mar", "Apr", "May", "Jun", "jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
 
-var wdi_22_enrollment = ['Angelo', 'Dani', 'Jennifer', 'Mikey', 'sam', 'Laura E.', 'Chris', 'Margaux', 'Uriel', 'Josh', 'Francesca', 'Racha', 'Brian', 'Jamey', 'Laura B.', 'Riley', 'Matt'];
+var wdi_24_1 = ['Adam', 'Alan', 'Andre', 'Carlos', 'cynthia', 'David', 'Eddy'];
 
-var wdi_23_enrollment = ['Ling', 'Annie', 'John', 'Meredith', 'Breana', 'Randee', 'Michael', 'Brendan', 'Vince', 'Emily A.', 'Jeehye', 'Emily K.', 'Jorge', 'Eric', 'Natasha', 'Scot', 'Zain', 'Isom', 'Noel', 'Roy'];
+var wdi_24_2 = ['John', 'Michael', 'Stanley', 'Steven', 'Trung', 'Victoria', 'Zohar'];
 
 // combined, with typos:
-var wdi_combined_enrollment = ['Angelo', 'dani', 'Jennifer', 'Mikey', 'Sam', 'Laura e.', 'Chris', 'Margaux', 'uriel', 'Josh', 'Francesca', 'racha', 'Brian', 'Jamey', 'Laura B.', 'Riley', 'Matt', 'Ling', 'Annie', 'John', 'Meredith', 'Breana', 'Randee', 'michael', 'Brendan', 'vince', 'Emily A.', 'Jeehye', 'Emily k.', 'jorge', 'Eric', 'Natasha', 'Scot', 'Zain', 'Isom', 'Noel', 'Roy'];
-
+var wdi_24 = ['Adam', 'Alan', 'Andre', 'Carlos', 'cynthia', 'David', 'Eddy', 'John', 'Michael', 'Stanley', 'Steven', 'Trung', 'Victoria', 'Zohar'];
 ```
-
-
-## Solutions
-[Solutions](https://github.com/sf-wdi-22-23/modules/blob/master/w04-associations-and-auth/d3-drills/solutions.js)
 
 ### Further Reading
 
