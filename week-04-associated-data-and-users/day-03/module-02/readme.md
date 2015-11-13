@@ -1,3 +1,13 @@
+# <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" width="60">  Web Scraping
+
+| Objectives |
+| :-- |
+| Scrape a site using Kimono Labs. |
+| Explain situations which call for web scraping. |
+| Name alternate methods which can be used instead of web scraping. |
+
+<img src="https://cloud.githubusercontent.com/assets/1329385/11154148/7dc09e6a-89f2-11e5-9680-6e6e709e59b6.gif" width="400px">
+
 # Issues
 inspected element to find classes
 
