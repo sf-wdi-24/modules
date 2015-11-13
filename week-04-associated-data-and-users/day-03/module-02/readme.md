@@ -38,16 +38,11 @@ Stanley has worked on scraping a site in advance of this module. Let's learn fro
 1. Serialize your results.
 1. Deserialize your results in your application and create records in your DB.
 
-# Issues
-inspected element to find classes
+## Let's try scraping something together
 
-get all elements and foreach
+Scraping sites is challenging, the simpler sites will be fairly trivial but this process involves a great deal of reverse engineering.
 
-Doesn't work, how to test?
-
-Ran into issues with names and types.
-
-Grab href and connect in.
+Let's scrape <a href="http://example.com/" target="_blank">http://example.com/</a> and make a REST route to return its information.
 
 ### I'm doing lots of `console.log`s in my scripts
 
@@ -85,9 +80,24 @@ document.body.appendChild(button);
 
 Any ideas on why we added a button instead of including it directly?
 
-
 ### THIS IS TOO MUCH WORK!
 
 I agree, for some projects a website called <a href="https://www.kimonolabs.com/" target="_blank">Kimono Labs</a> will do much of this work for us. It isn't always perfect but is a solid product worthy of a try.
 
 Let's create an account and try out the demo.
+
+### Challenges
+
+Make a group and look for a website with no API which you'll work together and try to retrieve information from.
+
+Use either Kimono or build your own to scrape at least one piece of information from the site you've chosen.
+
+The goal is to have at least one piece of information pulled from a site with no API.
+
+#### Extreme Challenge
+
+Once you have that information, save it into your db (mongo) and create a REST route to retrieve it.
+
+By the end of this challenge you **should** have a utility which scrapes a site and then structures the information into your API.
+
+## Make sure to always include proper attribution of where your data is originating!
