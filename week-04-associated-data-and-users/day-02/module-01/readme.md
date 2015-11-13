@@ -1,4 +1,4 @@
-# Intro Auth (Authentication & Authorization)
+# <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" width="60">  Intro Auth (Authentication & Authorization)
 
 | Objectives |
 | :--- |
@@ -87,5 +87,5 @@ Using a hash, we can use a mathematic trick to validate the password someone is 
 
 Research and explain the following types of attacks to one other person from class. How can you avoid these attacks while working with express applications?
 
-* [Cross-site Scripting](https://en.wikipedia.org/wiki/Cross-site_scripting)
-* [SQL Injection](https://en.wikipedia.org/wiki/SQL_injection)
+* <a href="https://en.wikipedia.org/wiki/Cross-site_scripting" target="_blank">Cross-site Scripting</a>
+* <a href="https://en.wikipedia.org/wiki/SQL_injection" target="_blank">SQL Injection</a>
