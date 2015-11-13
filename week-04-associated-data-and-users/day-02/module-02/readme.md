@@ -162,11 +162,255 @@ Adapted from <a href="http://mherman.org/blog/2015/01/31/local-authentication-wi
 
 ### Sign Up Routes
 
+1. Create a new view with a form for users to sign up.
+
+  ```zsh
+  ➜  touch views/signup.hbs
+  ```
+
+  Your signup form should look something like this:
+
+  ```html
+  <!-- signup.hbs -->
+
+  <h2>Sign Up</h2>
+  <br>
+  <form method="POST" action="/signup">
+    <div class="form-group">
+      <input type="text" name="username" class="form-control" placeholder="Username" autofocus>
+    </div>
+    <div class="form-group">
+      <input type="password" name="password" class="form-control" placeholder="Password">
+    </div>
+    <div class="form-group">
+      <input type="submit" class="btn btn-block btn-primary" value="Sign Up">
+    </div>
+  </form>
+  ```
+
+  Take note of the `method` and `action` in the form. This combination of request type `POST` and URL `/signup` will correspond to a server route for signing up new users.
+
+3. In `server.js`, you need two new routes for signing up new users: a route to render the `signup` view, and a route to handle the `signup` request when the user submits the form. Let's create the route to render the view first:
+
+  ```js
+  /*
+   * server.js
+   */
+
+  ...
+
+  // AUTH ROUTES
+
+  // show signup view
+  app.get('/signup', function (req, res) {
+    res.render('signup');
+  });
+  ```
+
+4. Now, let's create the route that handles signing up new users. Again, the code in this route will run when the user submits the signup form (since you already set `method` and `action` in the signup form to match this route).
+
+  ```js
+  /*
+   * server.js
+   */
+
+  ...
+
+  // AUTH ROUTES
+
+  ...
+
+  // sign up new user, then log them in
+  // hashes and salts password, saves new user to db
+  app.post('/signup', function (req, res) {
+    User.register(new User({ username: req.body.username }), req.body.password,
+      function (err, newUser) {
+        passport.authenticate('local')(req, res, function () {
+          res.send('signed up!!!');
+        });
+      }
+    );
+  });
+  ```
+
+5. Go to `http://localhost:3000/signup` in your browser. You should see the signup form. Fill out the form and hit submit. If it's working, you should see the "signed up!!!" message in your browser. If not, use the error messages you're getting to guide your debugging.
+
 ### Log In Routes
+
+1. Create a new view with a form for users to login.
+
+  ```zsh
+  ➜  touch views/login.hbs
+  ```
+
+  Your login form should look something like this:
+
+  ```html
+  <!-- login.hbs -->
+
+  <h2>Log In</h2>
+  <br>
+  <form method="POST" action="/login">
+    <div class="form-group">
+      <input type="text" name="username" class="form-control" placeholder="Username" autofocus>
+    </div>
+    <div class="form-group">
+      <input type="password" name="password" class="form-control" placeholder="Password">
+    </div>
+    <div class="form-group">
+      <input type="submit" class="btn btn-block btn-primary" value="Sign Up">
+    </div>
+  </form>
+  ```
+
+  Take note of the `method` and `action` in the form. This combination of request type `POST` and URL `/login` will correspond to a server route for logging in existing users.
+
+3. In `server.js`, you need two new routes for logging in existing users: a route to render the `login` view, and a route to handle the `login` request when the user submits the form. Let's create the route to render the view first:
+
+  ```js
+  /*
+   * server.js
+   */
+
+  ...
+
+  // AUTH ROUTES
+
+  ...
+
+  // show login view
+  app.get('/login', function (req, res) {
+    res.render('login');
+  });
+  ```
+
+4. Now, let's create the route that handles logging in existing useres. Again, the code in this route will run when the user submits the login form (since you already set `method` and `action` in the login form to match this route).
+
+  ```js
+  /*
+   * server.js
+   */
+
+  ...
+
+  // AUTH ROUTES
+
+  ...
+
+  // log in user
+  app.post('/login', passport.authenticate('local'), function (req, res) {
+    res.send('logged in!!!');
+  });
+  ```
+
+5. Go to `http://localhost:3000/login` in your browser. You should see the login form. Fill out the form with the username and password of the user you just created, then hit submit. If it's working, you should see the "logged in!!!" message in your browser. If not, use the error messages you're getting to guide your debugging.
+
+### Log Out Route
+
+1. You should also have a route for a user to log out. Set this up in `server.js` as well. You'll want to redirect the user to the homepage (`/`) after successfully logging out.
+
+  ```js
+  /*
+   * server.js
+   */
+
+  ...
+
+  // AUTH ROUTES
+
+  ...
+
+  // log out user
+  app.get('/logout', function (req, res) {
+    req.logout();
+    res.redirect('/');
+  });
+  ```
 
 ### User Profile Page
 
+1. At this point, it would be nice to show the user some information about their profile as opposed to a message about signing up or logging in. Create a new view for the user profile page:
+
+  ```zsh
+  ➜  touch views/profile.hbs
+  ```
+
+2. You don't have a ton of info about the user yet, so for now, display the `username` in the view. `{{user.username}}` is server-side templating with `hbs`! The next step is to set up a server route that renders this view with the user data already in it!
+
+  ```html
+  <!-- profile.hbs -->
+
+  <h2>Welcome, {{user.username}}!</h2>
+  <p>This is your profile page.</p>
+  ```
+
+3. In `server.js`, set up a route that renders the user profile page:
+
+  ```js
+  /*
+   * server.js
+   */
+
+  ...
+
+  // AUTH ROUTES
+
+  ...
+
+  // show user profile page
+  app.get('/profile', function (req, res) {
+    res.render('profile', { user: req.user });
+  });
+  ```
+
+  **Note:** `{ user: req.user }` passes the currently logged-in user to the view using `hbs` server-side templating. The key (in this case `user`) has to match the name of the parameter in the view (also `user`). `req.user` is part of the `passport` middleware, and always returns the currently logged-in user, if there is one.
+
+4. Go to `http://localhost:3000/profile` in your browser. You should see the welcome message displayed with your username (you may need to log in again for this to work).
+
+5. The last step is to refactor your signup and login routes to redirect to the user profile page when a user successfully signs up or logs in:
+
+  ```js
+  /*
+   * server.js
+   */
+
+  ...
+
+  // AUTH ROUTES
+
+  ...
+
+  // sign up new user, then log them in
+  // hashes and salts password, saves new user to db
+  app.post('/signup', function (req, res) {
+    User.register(new User({ username: req.body.username }), req.body.password,
+      function (err, newUser) {
+        passport.authenticate('local')(req, res, function () {
+          // res.send('signed up!!!');
+          res.redirect('/profile')
+        });
+      }
+    );
+  });
+
+  ...
+
+  // log in user
+  app.post('/login', passport.authenticate('local'), function (req, res) {
+    // res.send('logged in!!!');
+    res.redirect('/profile')
+  });
+  ```
+
 ## Stretch Challenges
 
-* Don't let logged in user sign up or log in again
-* Redirect away from profile page if not logged in
+* Add a navbar to your site with links to "Sign Up", "Log In", "Profile", and "Log Out".
+  * If a user is currently logged in, they should only see the "Profile" and "Log Out" links.
+  * If a user is not logged in, they should only see the "Sign Up" and "Log In" links.
+* Use the `req.user` middleware to *authorize* parts of your site
+  * Logged-in users should NOT be able to see the sign up or login.
+  * Users should only be able to see the profile page when logged in.
+
+## Super Stretch Challenge
+
+Implement a Mongoose relationship between users and blog posts: a user has many posts. Should posts be embedded or reference data? Logged-in users should be able to see a list of their blog posts on their profile page.
