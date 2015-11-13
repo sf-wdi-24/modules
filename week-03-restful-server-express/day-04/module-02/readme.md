@@ -3,7 +3,7 @@
 | Objectives |
 | :--- |
 | Review Mongoose setup in a Node/Express app |
-| Find documents with Mongoose |
+| Find and create documents with Mongoose |
 | Update and delete documents with Mongoose |
 
 ## Review: What is Mongoose?
@@ -94,7 +94,7 @@ Mongoose allows us to use JavaScript and Object-Oriented Programming to talk to 
 #### Get all todos: `.find()`
 
 <details>
-  <summary>We can use <a href="http://mongoosejs.com/docs/api.html#model_Model.find"  target="_blank">.find()</a> to get all documents in the collection.</summary
+  <summary>We can use <a href="http://mongoosejs.com/docs/api.html#model_Model.find"  target="_blank">.find()</a> to get all documents in the collection.</summary>
   ```js
   // get all todos
   app.get('/api/todos', function (req, res) {

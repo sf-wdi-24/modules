@@ -89,7 +89,7 @@ For the rest of the challenges, fork and clone the <a href="https://github.com/s
 2. Use Handlebars templating to display all the books on the page.
 3. Add a form to create a new book in `index.html`.
 4. When a user submits the form, use AJAX to send a `POST` request to create a new book.
-5. Use Handlebars templating to add the newly created book to the page.
+5. Use Handlebars templating to add the newly created book to the page. **Hint:** Our Handlebars template is for a *collection* (array) of data, so we can't use it to add just one book to the page. A way around this is to clear all the books from the page when a new book is added and re-render the template with the updated collection.
 
 ## Resources
 
