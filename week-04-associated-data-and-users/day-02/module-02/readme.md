@@ -45,7 +45,7 @@ Adapted from <a href="http://mherman.org/blog/2015/01/31/local-authentication-wi
       //  NEW ADDITIONS
       cookieParser = require('cookie-parser'),
       session = require('express-session'),
-      passport = require('passport');
+      passport = require('passport'),
       LocalStrategy = require('passport-local').Strategy;
   ```
 
