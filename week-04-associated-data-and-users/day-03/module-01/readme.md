@@ -106,7 +106,7 @@ Adapted from <a href="http://mherman.org/blog/2013/11/10/social-authentication-w
 
 4. Right under `serializeUser` and `deserializeUser`, configure `passport-github`. This allows users to log in to your application with their GitHub accounts.
 
-  ```
+  ```js
   /*
    * server.js
    */
@@ -272,5 +272,5 @@ Adapted from <a href="http://mherman.org/blog/2013/11/10/social-authentication-w
 
 ## Stretch Challenges
 
-* Figure out what other information GitHub gives you about the user (name, avatar, etc.), and pick a couple other attributes to save to the database. Display the additional attributes on the user profile page as well. **Hint:** Try `console.log`-ing `profile` in your `passport-github` config.
+* Figure out what other information GitHub gives you about the user (name, avatar, etc.), and pick a couple other attributes to save to the database. Display the additional attributes on the user profile page as well. **Hint:** Try `console.log`-ing `profile` in your `passport-github` config or use the debugger.
 * Keep practicing with as many OAuth providers as you want! Use <a href="http://mherman.org/blog/2013/11/10/social-authentication-with-passport-dot-js/#.VkWaBd-rSRs" target="_blank">this tutorial</a> as a guide.
