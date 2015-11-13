@@ -17,7 +17,16 @@
 
  * Analyzing what issues you run into helps you to better plan how to approach the next day.
 
-## MVP....that's the Most Valuable Player Right?!?!
+## Terms:
+* MVP
+* Agile Development
+* User story
+* Wireframes
+* Git workflow
+
+
+
+### MVP....that's the Most Valuable Player Right?!?!
 
 **MVP** is short for **Minimal Viable Product**.
 
@@ -28,72 +37,49 @@
 
 * Setting an MVP at the beginning of a project can help focus a developer on the features that are strictly needed to accomplish said project.
 
-## Wireframes
+### Agile Development
+
+* Agile methodology is an alternative to traditional project management, typically used in software development. It helps teams respond to unpredictability through incremental, iterative work cadences, known as sprints. Agile methodologies are an alternative to waterfall, or traditional sequential development.
+
+### User stories
+
+* A user story is a tool used in Agile software development to capture a description of a software feature from an end-user perspective. The user story describes the type of user, what they want and why. A user story helps to create a simplified description of a requirement.
+
+### Wireframes
 
 * We've seen wireframing before.  This is simply a slight blue print to help guide our design of the website.  
 
 * Creating a wireframe at the beginning of a project can drastically same time during development as it guides where and why we place features on a page.
 
-Outside in--building things as you need them.
+### Git workflow
 
+* When you are creating a web app you will be creating many different features.
 
+* Having a proper git workflow will allow you to create these new features without disturbing your finished product.
 
+* When creating a new feature you will want to create a branch based on that feature:
 
-## TIMELINE
+```bash
+git branch new-feature
+```
+You'll want to checkout into that branch once created.
+```bash
+git checkout new-feature
+```
+This will place you in your new working branch.  This branch has the latest version of your master branch implemented.  Anything you work on here will only effect the copy in your `new-feature` branch.
 
-* **Friday, July 17th by 9:00am** - **REQUIRED**:  Submit your project proposal to an instructor and make a Kaban board for it using Trello. Be ready to talk about the scope of your project -- you should only plan to build your [MVP (minimum viable product)](https://en.wikipedia.org/wiki/Minimum_viable_product). Before beginning work on your project, your project idea and the scope of your project must be checked-off by an instructor. You will need the following for an instructor check-off:
-    * Wireframes (simple/hand drawn are great)
-    * User narratives / user stories ("Users can create a meal with various foods." or "As a SpaceBook user looking for new friends, I want to be able to update my location to my current planet.")
-    * Models and DB design (ERD)
+* Once you've completed the working features of your new branch you will want to go through the `git add` and `git commit` flow.
 
+* When you're ready to merge these changes into your application you'll want to go though this flow.
 
-* **Weekend** - Suggestion:
-  - Build initial index file
-    - add bootstrap
-    - make a template to display the core resource (e.g. "Post", or "Article", or "Todo")
-  - Use the template to show dummy data from an array in the client side javascript code (add jQuery)
-  - Move array of static data to server (build server with 1 route to get all data)
-  - Move array of static data to DB (add mongoose and seed local DB)
+    1. `git checkout master` or `develop` depending on the layout of your branches.
+    2. Once you are in the `master` branch you can merge the feature branch into it. `git merge new-feature`.  This will merge everything that you have into your working app.
+    3. If this merge is successful you should have no merge conflicts and you can push this branch into github `git push origin master`
 
-
-* **Monday, July 20th** - **REQUIRED**:  Deploy your code to Heroku by the end of the day. We know the project won't be finished; deploy whatever you have.  This will make your life easier. We will have a workshop on Monday afternoon on deploying to Heroku with Mongo.
-
-  Also, Suggestion:
-  - Build any forms or form templates
-  - Add POST route(s)
-  - Add route tests
-
-
-* **Tuesday, July 21st** - Suggestion:
-
-  - Build signup ui/template
-  - Add User model and Signup route to server
-  - Build login ui/template
-  - Add login route to server
-  - Push to Heroku
-
-
-* **Wednesday, July 22nd** - Suggestion:
-
-  - Add another resource or a "reach" feature
-  - Push to Heroku
-
-
-* **Thursday, July 23rd** - Suggestion:
-  - Improve and customize styling
-  - Final Push to Heroku
-
-
-* **Friday, July 24th, 9:17am** - Project due and presentations!
-
-## PLANNING
-
-#### Before you start coding...
-
-* **Getting Ideas** Think about problems you know of - things that suck or are broken in the world. Could you build something that could grow into a solution? Try to do one thing well and then iterate.
-* **User stories** Outline your core user stories and divide them into sub-stories. Use your own [Trello](https://trello.com/) board to track your progress and keep you focused.
-* **Wireframes** Sketch out what a your core pages will look like and how they will work.
-* **Object Models** Use an entity relationship diagram to plan out the Models, their relationship(s), and properties.
+**Why are we doing all of this work?**
+*  Have you worked on a new feature and completely wrecked the working application you have?  If not....YOU'RE LYING!!!!
+*  Creating new branches allows us to take our working apps and make a copy for us to mess with.  We can tweak these new features confidently knowing that it will not have any adverse consequences on our working application.
+ 
 
 
 * **REMEMBER to build "outside-in"**
