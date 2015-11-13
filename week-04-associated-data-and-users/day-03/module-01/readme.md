@@ -1,6 +1,6 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> OAuth / Third-Party Login
 
-**Objective:** Today, you'll be using <a href="http://oauth.net/2">OAuth</a> to implement third-party login (specifically, GitHub login) in your <a href="https://github.com/sf-wdi-24/express-microblog" target="_blank">express-microblog</a> app.
+**Objective:** Today, you'll be using <a href="http://oauth.net/2" target="_blank">OAuth</a> to implement third-party login (specifically, GitHub login) in your <a href="https://github.com/sf-wdi-24/express-microblog" target="_blank">express-microblog</a> app.
 
 If you'd like to work with fresh code, feel free to fetch the <a href="https://github.com/sf-wdi-24/express-microblog/tree/solution-auth" target="_blank">solution-auth branch</a> before getting started on the tutorial.
 
@@ -51,7 +51,7 @@ Adapted from <a href="http://mherman.org/blog/2013/11/10/social-authentication-w
 
 ### Install, Require, & Configure Dependencies
 
-1. Install <a href="https://github.com/jaredhanson/passport-github" target="_blank">passport-github`</a>.
+1. Install <a href="https://github.com/jaredhanson/passport-github" target="_blank">passport-github</a>.
 
   ```zsh
   ➜  npm install --save passport-github
@@ -113,6 +113,10 @@ Adapted from <a href="http://mherman.org/blog/2013/11/10/social-authentication-w
 
   ...
 
+  // serialize and deserialize
+
+  ...
+
   // passport-github config
   passport.use(new GitHubStrategy({
     clientID: oauth.github.clientID,
@@ -153,7 +157,7 @@ Adapted from <a href="http://mherman.org/blog/2013/11/10/social-authentication-w
   );
   ```
 
-  The first route is what a user will request to indicate they'd like to log in with GitHub (you'll use this one in the view!), and the second route is where GitHub redirects the user after authenticating them. After the redirect, your application will handle logging in the user and creating them in the database if they're not already signed up.
+  The first route is what a user will request to indicate they'd like to log in with GitHub (you'll use this one in the view), and the second route is where GitHub redirects the user after authenticating them. After the redirect, your application will handle logging in the user and creating them in the database if they're not already signed up.
 
 2. Now, it's time to edit your signup and login forms to take advantage of GitHub login:
 
@@ -182,6 +186,8 @@ Adapted from <a href="http://mherman.org/blog/2013/11/10/social-authentication-w
 3. At this point, test out your GitHub login. You should first be redirected to GitHub, then to your profile page if it works.
 
   ![screen shot 2015-11-13 at 05 36 52](https://cloud.githubusercontent.com/assets/7833470/11147126/b1aa5b1e-89c8-11e5-98f1-058ea56a7ec4.png)
+
+  ---
 
   ![screen shot 2015-11-13 at 05 37 21](https://cloud.githubusercontent.com/assets/7833470/11147125/b1a6f654-89c8-11e5-90db-294e1d13d94b.png)
 
