@@ -1,8 +1,12 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Web Sockets
 
-A **web socket** is an open connection between a client and a server. Traditionally, we need to use HTTP to communicate between client and server, which involves the request/response cycle. With a web socket, the connection between client and server is always on, and "events" pass freely between the two. Web sockets are particularly useful for real-time communication such as chat applications, push notifications, and live-streaming data.
+A **web socket** is an open connection between a client and a server. Traditionally, we need to use HTTP to communicate between client and server, which involves the request/response cycle. With a web socket, the connection between client and server is always on, and "events" pass freely between the two.
 
-<a href="http://socket.io" target="_blank">Socket.io</a> is a web socket library that works well with our Node/Express stack. Today, you'll be using Socket.io to build your own chat application!
+*Web sockets are particularly useful for real-time communication such as chat applications, push notifications, and live-streaming data.*
+
+<a href="http://socket.io" target="_blank">Socket.io</a> is a web socket library that works well with our Node/Express stack.
+
+**Objective:** Today, you'll be using Socket.io to build your own chat application!
 
 ## Tutorial: Socket Chat App
 
