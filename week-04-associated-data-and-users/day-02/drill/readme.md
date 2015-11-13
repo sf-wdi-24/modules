@@ -80,6 +80,6 @@ var wdi_24 = ['Adam', 'Alan', 'Andre', 'Carlos', 'cynthia', 'David', 'Eddy', 'Jo
 
 ### Further Reading
 
-- [Big O Notation cheatsheet](http://bigocheatsheet.com/)
-- [Carnagie Mellon University - Binary Search](http://www.cs.cmu.edu/~15110-f12/Unit05PtB-handout.pdf)
-- [Rob Bell - beginner's guide to Big O notation](https://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/)
+- <a href="http://bigocheatsheet.com/" target="_blank">Big O Notation</a>
+- <a href="http://www.cs.cmu.edu/~15110-f12/Unit05PtB-handout.pdf" target="_target">Binary Search</a>
+- <a href="https://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/" target="_blank">Begginer's Guid to Big O</a>
