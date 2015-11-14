@@ -58,17 +58,17 @@
     <td>Drill</td>
     <td>Weekend Lab Discussion</td>
     <td><strong>Deadline for Project Approvals</strong></td>
-    <td>THANKSGIVING BREAK</td>
-    <td>THANKSGIVING BREAK</td>
-    <td>THANKSGIVING BREAK</td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>Module1</td>
     <td>Intro Project 1</td>
     <td>Project 1</td>
-    <td>THANKSGIVING BREAK</td>
-    <td>THANKSGIVING BREAK</td>
-    <td>THANKSGIVING BREAK</td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>Module2</td>
@@ -77,16 +77,16 @@
       <strong>Start Project Approvals</strong>
     </td>
     <td>Project 1</td>
-    <td>THANKSGIVING BREAK</td>
-    <td>THANKSGIVING BREAK</td>
-    <td>THANKSGIVING BREAK</td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>HW</td>
     <td>Project 1 Planning</td>
     <td>Project 1</td>
-    <td>THANKSGIVING BREAK</td>
-    <td>THANKSGIVING BREAK</td>
-    <td>THANKSGIVING BREAK</td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
 </table>
