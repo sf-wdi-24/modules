@@ -70,7 +70,7 @@ var primeNumbers = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 
 // string arrays to sort:
 var array = ["Jan", "Feb", "mar", "Apr", "May", "Jun", "jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
 
-var wdi_24_1 = ['Adam', 'Alan', 'Andre', 'Carlos', 'cynthia', 'David', 'Eddy'];
+var wdi_24_1 = ['Adam', 'Alan', 'André', 'Carlos', 'cynthia', 'David', 'Eddy'];
 
 var wdi_24_2 = ['John', 'Michael', 'Stanley', 'Steven', 'Trung', 'Victoria', 'Zohar'];
 
