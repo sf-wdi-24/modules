@@ -75,7 +75,7 @@ var wdi_24_1 = ['Adam', 'Alan', 'André', 'Carlos', 'cynthia', 'David', 'Eddy'];
 var wdi_24_2 = ['John', 'Michael', 'Stanley', 'Steven', 'Trung', 'Victoria', 'Zohar'];
 
 // combined, with typos:
-var wdi_24 = ['Adam', 'Alan', 'Andre', 'Carlos', 'cynthia', 'David', 'Eddy', 'John', 'Michael', 'Stanley', 'Steven', 'Trung', 'Victoria', 'Zohar'];
+var wdi_24 = ['Adam', 'Alan', 'André', 'Carlos', 'cynthia', 'David', 'Eddy', 'John', 'Michael', 'Stanley', 'Steven', 'Trung', 'Victoria', 'Zohar'];
 ```
 
 ### Further Reading
