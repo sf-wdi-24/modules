@@ -14,7 +14,7 @@ I CAN! But that is because I've ran into these challenges and had to overcome th
 
 Let's break up into groups and see if we can figure out possible problems with our binary search implementations.
 
-**Hint** Are you comfortable with the acronyms DFS and BFS? Do you know what they mean and why you'd use them?
+**Hint:** Are you comfortable with the acronyms DFS and BFS? Do you know what they mean and why you'd use them?
 
 ## Challenge v2.01-a omega release
 
@@ -22,4 +22,4 @@ After we've discussed possible issues with binary search, let's look at how we c
 
 In groups let's investigate ways we can improve our binary search and even store some information in advance to make searching even quicker.
 
-**Hint** Are binary search and binary search trees the same thing?
+**Hint:** Are binary search and binary search trees the same thing?
