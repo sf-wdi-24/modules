@@ -31,7 +31,7 @@
     <td><a href="./day-02/module-02/">Auth Implementation</a></td>
     <td><a href="./day-03/module-02/">Web Scraping</a></td>
     <td><a href="./day-04/module-02/">Project Planning Process / Workflow Best-Practices</a></td>
-    <td>Intro Weekend Lab (Independent Research)</td>
+    <td>Intro <a href="https://github.com/sf-wdi-24/independent-research" target="_blank">Weekend Lab (Independent Research)</a></td>
   </tr>
   <tr>
     <td>HW</td>
@@ -39,7 +39,7 @@
     <td><a href="https://github.com/sf-wdi-24/express-microblog-auth" target="_blank">Add Auth to Microblog</a></td>
     <td>Read Mythical Man-Month</td>
     <td>Read Mythical Man-Month</td>
-    <td>Weekend Lab (Independent Research)</td>
+    <td><a href="https://github.com/sf-wdi-24/independent-research" target="_blank">Weekend Lab (Independent Research)</a></td>
   </tr>
 </table>
 
