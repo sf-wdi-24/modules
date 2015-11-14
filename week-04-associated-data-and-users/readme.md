@@ -37,7 +37,7 @@
     <td>HW</td>
     <td>Add Comments to Microblog</td>
     <td><a href="https://github.com/sf-wdi-24/express-microblog-auth" target="_blank">Add Auth to Microblog</a></td>
-    <td>Read Mythical Man-Month</td>
+    <td><a href="https://github.com/sf-wdi-24/TMMM-Chapter-One" target="_blank">Read Mythical Man-Month</a></td>
     <td>Read Mythical Man-Month</td>
     <td><a href="https://github.com/sf-wdi-24/independent-research" target="_blank">Weekend Lab (Independent Research)</a></td>
   </tr>
