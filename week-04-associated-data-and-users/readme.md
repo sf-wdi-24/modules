@@ -15,7 +15,7 @@
     <td><a href="./day-02/drill/">Binary Search</a></td>
     <td><a href="./day-03/drill/">Bubble Sort</a></td>
     <td><a href="./day-04/drill/">Indexing Drills</a></td>
-    <td>Review</td>
+    <td>Review: Data Validation, Error-Handling, Testing</td>
   </tr>
   <tr>
     <td>Module1</td>
