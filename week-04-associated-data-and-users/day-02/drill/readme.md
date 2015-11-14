@@ -59,7 +59,7 @@ After this real-life demo, students will pseudocode their plan for implementing 
 1. Implement a recursive solution (instead of iterative).
 1. Implement a solution for an array of names (strings).
 1. Refactor the string search to alphabetize and capitalize first and last initials
-1. Implement a solution that handles non-unique data sets. ```// no solution provided```
+1. Implement a solution that handles non-unique data sets.
 
 
 ### Sample Data
@@ -82,4 +82,4 @@ var wdi_24 = ['Adam', 'Alan', 'Andre', 'Carlos', 'cynthia', 'David', 'Eddy', 'Jo
 
 - <a href="http://bigocheatsheet.com/" target="_blank">Big O Notation</a>
 - <a href="http://www.cs.cmu.edu/~15110-f12/Unit05PtB-handout.pdf" target="_target">Binary Search</a>
-- <a href="https://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/" target="_blank">Begginer's Guid to Big O</a>
+- <a href="https://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/" target="_blank">Begginer's Guide to Big O</a>
