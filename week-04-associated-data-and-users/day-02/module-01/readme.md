@@ -1,4 +1,3 @@
-
 # Relationships in Mongo(ose)
 
 #### Setup
