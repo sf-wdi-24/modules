@@ -164,6 +164,7 @@ Game.findOne({ name: 'The Legend of Zelda: Ocarina of Time' })
     console.log(game);
   });
 ```
+
 Let's go over this method call line by line:
 
 1. Line 1: We call a method to find only **one** Game Document that matches the name: `The Legend of Zelda: Ocarina of Time`.
@@ -176,10 +177,8 @@ Let's go over this method call line by line:
 
 1. Line 13 demonstrates that we are able to access both data from the original Game Document we found **and** the referenced Console Document we summoned.
 
-This is the actual output from the above `findOne()` method call:
-
 <details>
-  <summary>What is the actual output from the above `findOne()` method call?</summary>
+  <summary>What is the actual output from the above `findOne()` method call with populate?</summary>
 
   ```js
   { _id: 55e4eb857d6157f4d41a2981,
