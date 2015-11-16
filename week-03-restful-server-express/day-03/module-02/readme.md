@@ -139,14 +139,21 @@
 
 ## Testing Update & Delete
 
+[Testing Setup Steps](./../module-01/#testing-setup)
+
 #### Example Request Spec: Update
 
 ```js
-var request = require('request'),
-    expect = require('chai').expect,
-    baseUrl = 'http://localhost:3000';
+/*
+ * blobsTest.js
+ */
+
+...
 
 describe('Blobs', function() {
+
+  ...
+
   it('should update a SINGLE blob on PUT /blobs/:id', function (done) {
     request(baseUrl + '/blobs', function (error, response, body) {
       var allBlobs = JSON.parse(body).blobs;
@@ -166,17 +173,23 @@ describe('Blobs', function() {
       );
     });
   });
+
 });
 ```
 
 #### Example Request Spec: Delete
 
 ```js
-var request = require('request'),
-    expect = require('chai').expect,
-    baseUrl = 'http://localhost:3000';
+/*
+ * blobsTest.js
+ */
+
+...
 
 describe('Blobs', function() {
+
+  ...
+
   it('should delete a SINGLE blob on DELETE /blobs/:id', function (done) {
     request(baseUrl + '/blobs', function (error, response, body) {
       var allBlobs = JSON.parse(body).blobs;
@@ -187,6 +200,7 @@ describe('Blobs', function() {
       });
     });
   });
+
 });
 ```
 
