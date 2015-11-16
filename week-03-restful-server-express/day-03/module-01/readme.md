@@ -163,7 +163,7 @@
 
 3. In Sublime, edit your `mocha.opts` file to include `--recursive`. This allows you to run tests in all sub-directories at once.
 
-  ```js
+  ```
   /*
    * mocha.opts
    */
@@ -281,8 +281,8 @@ describe('Blobs', function() {
 ## Challenges
 
 1. Begin working on your <a href="https://github.com/sf-wdi-24/express-todo-app" target="_blank">express-todo-app</a>.
-2. When you're ready, use the steps above to implement routes for creating and reading todos.
-3. Make sure your routes work by using Postman.
+2. Use the steps above to implement routes for reading and creating todos.
+3. Test your routes with Postman.
 4. Write request specs to test your create and read routes.
 
 ## Resources
