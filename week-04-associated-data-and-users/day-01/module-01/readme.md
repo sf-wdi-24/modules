@@ -156,16 +156,6 @@ Remember to always make "RESTful" routes. RESTful routes are the most popular mo
 
 
 
-
-# Intro to Document-Based Associations
-
-
-## Mongoose Data Relationships
-
-**Embedded Data** is directly nested inside of other data. Each record has a copy of the data.
-
-**Referenced Data** is stored as an id inside other data. The id can be used to look up the information. All records that reference the same data look up the same copy.
-
 There are trade-offs between *efficiency* and *consistency* depending on which type of data relationship you choose.
 
 ## Embedded Data Example: To-Do Lists
