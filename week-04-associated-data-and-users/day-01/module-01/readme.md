@@ -279,7 +279,7 @@ app.delete('/api/lists/:listId/todos/:id', function (req, res) {
 
 **Writing User/Tweets Routes**
 
-The following challenges are psuedo code. Write a method for example.
+The following challenges are psuedo code. Write a method for each example.
 
 Here's an example where **Monsters have many Broods**:
 

@@ -13,7 +13,7 @@
 
  * Great planning is essential to saving time while creating a project.  Far too often programmers and students do not invest enough time into analyzing the creating a plan to build a project.  The end result of this is time wasted on creating features that are not necessary to the project or writing code that is not useful to the project.
 
- * Creating a roadmap for your work week helps one to become a more focused programmer.
+ * Creating a roadmap for your work week helps you to become a more focused programmer.
 
  * Analyzing what issues you run into helps you to better plan how to approach the next day.
 
@@ -77,7 +77,7 @@ This will place you in your new working branch.  This branch has the latest vers
     3. If this merge is successful you should have no merge conflicts and you can push this branch into github `git push origin master`
 
 **Why are we doing all of this work?**
-*  Have you worked on a new feature and completely wrecked the working application you have?  If not....YOU'RE LYING!!!!
+*  Have you worked on a new feature and completely wrecked the working application you had?  If not....YOU'RE LYING!!!!
 
 *  Creating new branches allows us to take our working apps and make a copy for us to mess with.  We can tweak these new features confidently knowing that it will not have any adverse consequences on our working application.
 
@@ -87,7 +87,7 @@ Start with the basics of your view: an index.html file with static data directly
 ## Demo and Exercise:
 
 * Sit back and relax WDI-24.  We're going to go through a detailed demonstration of the basic project planning concepts discussed today.
-* For this evenings exercise we want you to continue to read the "Mythical Man Month".  While reading this book and enjoying the harrowing tales of web development think of ways that this planning structure and reading will help you in your future projects.
+* For this evening's exercise we want you to continue to read the "Mythical Man Month".  While reading this book and enjoying the harrowing tales of web development think of ways that this planning structure and reading will help you in your future projects.
 
 
 
