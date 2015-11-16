@@ -15,7 +15,7 @@
     <td><a href="./day-02/drill/">Binary Search</a></td>
     <td><a href="./day-03/drill/">Bubble Sort</a></td>
     <td><a href="./day-04/drill/">Indexing Drills</a></td>
-    <td>Review: Data Validation, Error-Handling, Testing</td>
+    <td>Mythical Man-Month Discussion</td>
   </tr>
   <tr>
     <td>Module1</td>
@@ -23,7 +23,7 @@
     <td><a href="./day-02/module-01/">Intro Auth</a></td>
     <td><a href="./day-03/module-01/">OAuth / Third-Party Login</a></td>
     <td><a href="./day-04/module-01/">Web Sockets</a></td>
-    <td>Review</td>
+    <td>Review: Data Validation, Error-Handling, Testing</td>
   </tr>
   <tr>
     <td>Module2</td>
@@ -57,7 +57,7 @@
   <tr>
     <td>Drill</td>
     <td>Weekend Lab Discussion</td>
-    <td><strong>Deadline for Project Approvals</strong></td>
+    <td><strong>Deadline for Project 1 Approvals</strong></td>
     <td></td>
     <td></td>
     <td></td>
@@ -74,7 +74,7 @@
     <td>Module2</td>
     <td>
       Project 1 Planning<br><br>
-      <strong>Start Project Approvals</strong>
+      <strong>Start Project 1 Approvals</strong>
     </td>
     <td>Project 1</td>
     <td></td>
