@@ -303,9 +303,9 @@ In the following challenges imagine that **Users have many Tweets**
 2. Write a route to create a new User.
 3. Return an array of all the users.
 4. Return an array of all tweets of a specific user.
-5. Create a new tweet that belongs to a user (who's id is in the `req.params.id`).
-6. Delete a tweet that belongs to a user (make sure to build the route to include the user and the tweet's id's - see example above).
-7. Update a tweet that belongs to a user (ditto on their id's!).
+5. Create a new post that belongs to a user (who's id is in the `req.params.id`).
+6. Delete a post that belongs to a user (make sure to build the route to include the user and the post's id's - see example above).
+7. Update a post that belongs to a user (ditto on their id's!).
 
 
 **Questions**
