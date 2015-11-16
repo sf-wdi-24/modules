@@ -173,7 +173,7 @@ var mongoose = require('mongoose'),
 var ListSchema = new Schema({
   name: String,
   // embed todos in list
-  todos: [Todo.schema]
+  todos: [TodoSchema]
 });
 
 var List = mongoose.model('List', ListSchema);
@@ -300,12 +300,12 @@ Here's an example where **Monsters have many Broods**:
 
 In the following challenges imagine that **Users have many Tweets**
 
-1. Write a route to create a new User.
-1. Return an array of all the users.
-1. Return an array of all tweets of a specific user.
-1. Create a new tweet that belongs to a user (who's id is in the `req.params.id`).
-1. Delete a tweet that belongs to a user (make sure to build the route to include the user and the tweet's id's - see example above).
-1. Update a tweet that belongs to a user (ditto on their id's!).
+2. Write a route to create a new User.
+3. Return an array of all the users.
+4. Return an array of all tweets of a specific user.
+5. Create a new tweet that belongs to a user (who's id is in the `req.params.id`).
+6. Delete a tweet that belongs to a user (make sure to build the route to include the user and the tweet's id's - see example above).
+7. Update a tweet that belongs to a user (ditto on their id's!).
 
 
 **Questions**
