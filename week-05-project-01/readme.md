@@ -15,7 +15,7 @@
     <td>Project 1</td>
     <td>Project 1</td>
     <td>Project 1</td>
-    <td>Project 1 Presentations</td>
+    <td><strong>10:00am - Project 1 Presentations</strong></td>
   </tr>
   <tr>
     <td>Module1</td>

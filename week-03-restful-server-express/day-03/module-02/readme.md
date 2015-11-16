@@ -139,50 +139,68 @@
 
 ## Testing Update & Delete
 
+[Testing Setup Steps](./../module-01/#testing-setup)
+
 #### Example Request Spec: Update
 
 ```js
-var request = require('request'),
-    expect = require('chai').expect,
-    baseUrl = 'http://localhost:3000';
+/*
+ * blobsTest.js
+ */
 
-it('should update a SINGLE blob on PUT /blobs/:id', function (done) {
-  request(baseUrl + '/blobs', function (error, response, body) {
-    var allBlobs = JSON.parse(body).blobs;
-    var singleBlob = allBlobs[allBlobs.length - 1];
-    request.put(
-      {
-        url: '/blobs' + singleBlob._id,
-        form: {
-          name: 'WDI 24',
-          location: 'SF'
+...
+
+describe('Blobs', function() {
+
+  ...
+
+  it('should update a SINGLE blob on PUT /blobs/:id', function (done) {
+    request(baseUrl + '/blobs', function (error, response, body) {
+      var allBlobs = JSON.parse(body).blobs;
+      var singleBlob = allBlobs[allBlobs.length - 1];
+      request.put(
+        {
+          url: '/blobs' + singleBlob._id,
+          form: {
+            name: 'WDI 24',
+            location: 'SF'
+          }
+        },
+        function (error, response, body) {
+          expect(response.statusCode).to.equal(200);
+          done();
         }
-      },
-      function (error, response, body) {
-        expect(response.statusCode).to.equal(200);
-        done();
-      }
-    );
+      );
+    });
   });
+
 });
 ```
 
 #### Example Request Spec: Delete
 
 ```js
-var request = require('request'),
-    expect = require('chai').expect,
-    baseUrl = 'http://localhost:3000';
+/*
+ * blobsTest.js
+ */
 
-it('should delete a SINGLE blob on DELETE /blobs/:id', function (done) {
-  request(baseUrl + '/blobs', function (error, response, body) {
-    var allBlobs = JSON.parse(body).blobs;
-    var singleBlob = allBlobs[allBlobs.length - 1];
-    request.del(baseUrl + '/blobs' + singleBlob._id, function (error, response, body) {
-      expect(response.statusCode).to.equal(200);
-      done();
+...
+
+describe('Blobs', function() {
+
+  ...
+
+  it('should delete a SINGLE blob on DELETE /blobs/:id', function (done) {
+    request(baseUrl + '/blobs', function (error, response, body) {
+      var allBlobs = JSON.parse(body).blobs;
+      var singleBlob = allBlobs[allBlobs.length - 1];
+      request.del(baseUrl + '/blobs' + singleBlob._id, function (error, response, body) {
+        expect(response.statusCode).to.equal(200);
+        done();
+      });
     });
   });
+
 });
 ```
 

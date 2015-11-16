@@ -15,7 +15,7 @@
     <td><a href="./day-02/drill/">Binary Search</a></td>
     <td><a href="./day-03/drill/">Bubble Sort</a></td>
     <td><a href="./day-04/drill/">Indexing Drills</a></td>
-    <td>Review</td>
+    <td>Mythical Man-Month Discussion</td>
   </tr>
   <tr>
     <td>Module1</td>
@@ -23,7 +23,7 @@
     <td><a href="./day-02/module-01/">Intro Auth</a></td>
     <td><a href="./day-03/module-01/">OAuth / Third-Party Login</a></td>
     <td><a href="./day-04/module-01/">Web Sockets</a></td>
-    <td>Review</td>
+    <td>Review: Data Validation, Error-Handling, Testing</td>
   </tr>
   <tr>
     <td>Module2</td>
@@ -37,7 +37,7 @@
     <td>HW</td>
     <td><a href="https://github.com/sf-wdi-24/express-microblog-comments" target="_blank">Add Comments to Microblog</a></td>
     <td><a href="https://github.com/sf-wdi-24/express-microblog-auth" target="_blank">Add Auth to Microblog</a></td>
-    <td>Read Mythical Man-Month</td>
+    <td><a href="https://github.com/sf-wdi-24/TMMM-Chapter-One" target="_blank">Read Mythical Man-Month</a></td>
     <td>Read Mythical Man-Month</td>
     <td><a href="https://github.com/sf-wdi-24/independent-research" target="_blank">Weekend Lab (Independent Research)</a></td>
   </tr>
@@ -57,36 +57,36 @@
   <tr>
     <td>Drill</td>
     <td>Weekend Lab Discussion</td>
-    <td><strong>Deadline for Project Approvals</strong></td>
-    <td>THANKSGIVING BREAK</td>
-    <td>THANKSGIVING BREAK</td>
-    <td>THANKSGIVING BREAK</td>
+    <td><strong>9:17am - Deadline for Project 1 Approvals</strong></td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>Module1</td>
     <td>Intro Project 1</td>
     <td>Project 1</td>
-    <td>THANKSGIVING BREAK</td>
-    <td>THANKSGIVING BREAK</td>
-    <td>THANKSGIVING BREAK</td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>Module2</td>
     <td>
       Project 1 Planning<br><br>
-      <strong>Start Project Approvals</strong>
+      <strong>Start Project 1 Approvals</strong>
     </td>
     <td>Project 1</td>
-    <td>THANKSGIVING BREAK</td>
-    <td>THANKSGIVING BREAK</td>
-    <td>THANKSGIVING BREAK</td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>HW</td>
     <td>Project 1 Planning</td>
     <td>Project 1</td>
-    <td>THANKSGIVING BREAK</td>
-    <td>THANKSGIVING BREAK</td>
-    <td>THANKSGIVING BREAK</td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
 </table>

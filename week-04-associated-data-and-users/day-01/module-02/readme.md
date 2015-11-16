@@ -55,7 +55,7 @@ var gameSchema = new Schema({
 ```
 The `Game Schema` above describes an actual videogame such as Super Mario Bros., MegaMan, Final Fantasy, and Skyrim.
 
-Note the specific code on line 7 within the [] brackets. With the brackets, we're letting the Game Schema know that each game will have an array called `consoles` in it. Inside the `[]`, we're describing what kind of data will go inside a game's `consoles` array as we work with the database. In this case we are telling the Game Schema that we will be filling the `consoles` array with ObjectIds, which is the type of that big beautiful `_id` that Mongo automatically generates for us.
+Note the specific code on line 7 within the `[]` brackets. With the brackets, we're letting the Game Schema know that each game will have an array called `consoles` in it. Inside the `[]`, we're describing what kind of data will go inside a game's `consoles` array as we work with the database. In this case we are telling the Game Schema that we will be filling the `consoles` array with ObjectIds, which is the type of that big beautiful `_id` that Mongo automatically generates for us.
 
 If you forgot, it looks like this: `55e4ce4ae83df339ba2478c6`. That's what's going on with `type: Schema.Types.Objectid`.
 
@@ -117,7 +117,7 @@ This is the result after executing the code we've written thus far:
 
 What are we looking at?
 
-1. Line 1: `__v` represents the number of times the document has been accessed
+1. Line 1: `__v` represents the number of times the document has been accessed.
 
 1. Line 2: The name property of the Game Document we have created.
 
@@ -168,7 +168,7 @@ Let's go over this method call line by line:
 
 1. Line 1: We call a method to find only **one** Game Document that matches the name: `The Legend of Zelda: Ocarina of Time`.
 
-1. Line 2: We ask the consoles array within that Game Document to fetch the actual Console Document instead of the `ObjectId` referencing that Console Document
+1. Line 2: We ask the consoles array within that Game Document to fetch the actual Console Document instead of the `ObjectId` referencing that Console Document.
 
 1. Line 3: When we use `find` without a callback, then `populate`, like here, we can put a callback inside an `.exec()` method call. Technically we have made a query with `find`, but only executed it when we call `.exec()`.
 
@@ -214,6 +214,7 @@ Now, instead of seeing **only** the `ObjectId` that pointed us to the `Console` 
   cd ~/develop
   mkdir mongoose-games
   cd mongoose-games
+  touch server.js
   npm init
   npm install mongoose --save
   subl server.js

@@ -10,7 +10,7 @@
 
 Earlier this week we implemented binary search but can you see some instances where a binary search may take a long time to complete?
 
-I CAN! But that is because I've ran into these challenges and had to overcome them the hard way.
+I CAN! But that is because I've run into these challenges and had to overcome them the hard way.
 
 Let's break up into groups and see if we can figure out possible problems with our binary search implementations.
 
