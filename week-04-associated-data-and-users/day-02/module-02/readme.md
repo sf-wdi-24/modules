@@ -421,12 +421,12 @@ Adapted from <a href="http://mherman.org/blog/2015/01/31/local-authentication-wi
 ## Stretch Challenges
 
 * Add a navbar to your site with links to "Sign Up", "Log In", "Profile", and "Log Out".
-  * If a user is currently logged in, they should only see the "Profile" and "Log Out" links.
-  * If a user is not logged in, they should only see the "Sign Up" and "Log In" links.
-* Use the `req.user` middleware to *authorize* parts of your site
-  * Logged-in users should NOT be able to see the sign up or log in views.
-  * Users should only be able to see the profile page when logged in.
+  * If a user is currently logged in, they should ONLY see the "Profile" and "Log Out" links.
+  * If a user is NOT logged in, they should ONLY see the "Sign Up" and "Log In" links.
+* Use the `req.user` middleware to *authorize* parts of your site.
+  * If a user is currently logged in, they should NOT be able to see the sign up or log in views.
+  * If a user is NOT logged in, they should NOT able to see the profile page.
 
 ## Super Stretch Challenge
 
-Implement a Mongoose relationship between users and blog posts: a user has many posts. Should posts be embedded or reference data? Logged-in users should be able to see a list of their blog posts on their profile page.
+Implement a Mongoose relationship between users and blog posts: a user has many posts. Should posts be embedded or referenced data? Logged-in users should be able to see a list of their own blog posts on their profile page.
