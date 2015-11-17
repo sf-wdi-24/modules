@@ -1,4 +1,4 @@
-# <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60">  Deploying to Heroku with Rails & Postgres
+# <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Deploying to Heroku with Rails & Postgres
 
 ## Before You Do Anything
 
@@ -177,7 +177,7 @@ Hopefully your app works on Heroku, however, you may see a sad page that looks l
 
 2. Set environment variables on Heroku:
 
-  *Change MY_API_KEY to your variable name and your actual key*
+  *Change `MY_API_KEY` to your variable name and your actual key*
 
   ```zsh
   ➜  heroku config:set MY_API_KEY=0932nv8d17vhd72o2e8cfv82csd9n1dcd98
