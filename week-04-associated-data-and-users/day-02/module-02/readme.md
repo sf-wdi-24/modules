@@ -157,6 +157,8 @@ Adapted from <a href="http://mherman.org/blog/2015/01/31/local-authentication-wi
     username: String,
     password: String
   });
+  
+  UserSchema.plugin(passportLocalMongoose);
 
   var User = mongoose.model('User', UserSchema);
   module.exports = User;
