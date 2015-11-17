@@ -102,8 +102,8 @@ Adapted from <a href="http://mherman.org/blog/2015/01/31/local-authentication-wi
    */
 
   var mongoose = require('mongoose'),
-     Schema = mongoose.Schema,
-     passportLocalMongoose = require('passport-local-mongoose');
+      Schema = mongoose.Schema,
+      passportLocalMongoose = require('passport-local-mongoose');
   ```
 
 3. Also in `user.js`, define the `UserSchema`. Users should have the attributes `email` and `password`.
@@ -113,7 +113,9 @@ Adapted from <a href="http://mherman.org/blog/2015/01/31/local-authentication-wi
    * models/user.js
    */
 
-  ...
+  var mongoose = require('mongoose'),
+      Schema = mongoose.Schema,
+      passportLocalMongoose = require('passport-local-mongoose');
 
   var UserSchema = new Schema({
     username: String,
@@ -121,32 +123,46 @@ Adapted from <a href="http://mherman.org/blog/2015/01/31/local-authentication-wi
   });
   ```
 
-4. Next, add `passportLocalMongoose` to your `UserSchema`. `passportLocalMongoose` takes care of hashing and salting the user's plain-text password when they sign up. It also takes of comparing the password the user enters when logging in to their hashed and salted password which is stored in the database.
+4. Next, add `passportLocalMongoose` to the `UserSchema`. `passportLocalMongoose` takes care of hashing and salting the user's plain-text password when they sign up. It also takes of comparing the password the user enters at login to their hashed and salted password stored in the database.
 
   ```js
   /*
    * models/user.js
    */
 
-  ...
+  var mongoose = require('mongoose'),
+      Schema = mongoose.Schema,
+      passportLocalMongoose = require('passport-local-mongoose');
+
+  var UserSchema = new Schema({
+    username: String,
+    password: String
+  });
 
   UserSchema.plugin(passportLocalMongoose);
   ```
 
-5. The last step is to create your `User` model and export it.
+5. The last step is to create the `User` model and export it.
 
   ```js
   /*
    * models/user.js
    */
 
-  ...
+  var mongoose = require('mongoose'),
+      Schema = mongoose.Schema,
+      passportLocalMongoose = require('passport-local-mongoose');
+
+  var UserSchema = new Schema({
+    username: String,
+    password: String
+  });
 
   var User = mongoose.model('User', UserSchema);
   module.exports = User;
   ```
 
-6. Back in `server.js`, require your `User` model (you can do this right under where you require your `Post` model).
+6. Back in `server.js`, require the `User` model (you can do this right under where you required the `Post` model).
 
   ```js
   /*
