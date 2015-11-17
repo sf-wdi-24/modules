@@ -19,26 +19,26 @@
   </tr>
   <tr>
     <td>Module1</td>
-    <td><a href="./day-01/module-01/"></a></td>
-    <td><a href="./day-02/module-01/"></a></td>
-    <td><a href="./day-03/module-01/"></a></td>
-    <td><a href="./day-04/module-01/"></a></td>
-    <td></td>
+    <td><a href="./day-01/module-01/">Project 1 Peer Review</a></td>
+    <td><a href="./day-02/module-01/">Ruby Methods</a></td>
+    <td><a href="./day-03/module-01/">Ruby OOP</a></td>
+    <td><a href="./day-04/module-01/">Intro Rails</a></td>
+    <td>ActiveRecord Review / Rock ‘n Rails Lab</td>
   </tr>
   <tr>
     <td>Module2</td>
-    <td><a href="./day-01/module-02/"></a></td>
-    <td><a href="./day-02/module-02/"></a></td>
-    <td><a href="./day-03/module-02/"></a></td>
-    <td><a href="./day-04/module-02/"></a></td>
-    <td></td>
+    <td><a href="./day-01/module-02/">Intro Ruby</a></td>
+    <td><a href="./day-02/module-02/">Username Generator Lab</a></td>
+    <td><a href="./day-03/module-02/">Ruby OOP Lab</a></td>
+    <td><a href="./day-04/module-02/">Intro ActiveRecord</a></td>
+    <td>Intro Weekend Lab</td>
   </tr>
   <tr>
     <td>HW</td>
-    <td><a href="" target="_blank"></a></td>
-    <td><a href="" target="_blank"></a></td>
-    <td><a href="" target="_blank"></a></td>
-    <td><a href="" target="_blank"></a></td>
-    <td><a href="" target="_blank"></a></td>
+    <td><a href="" target="_blank">Ruby Language Reading, Ruby Koans Exercises, IP Address Lab</a></td>
+    <td><a href="" target="_blank">OOP Reading</a></td>
+    <td><a href="" target="_blank">Intro Rails Reading</a></td>
+    <td><a href="" target="_blank">Rails for Zombies</a></td>
+    <td><a href="" target="_blank">Weekend Lab</a></td>
   </tr>
 </table>
