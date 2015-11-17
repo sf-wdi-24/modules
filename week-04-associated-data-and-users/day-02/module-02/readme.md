@@ -102,8 +102,8 @@ Adapted from <a href="http://mherman.org/blog/2015/01/31/local-authentication-wi
    */
 
   var mongoose = require('mongoose'),
-     Schema = mongoose.Schema,
-     passportLocalMongoose = require('passport-local-mongoose');
+      Schema = mongoose.Schema,
+      passportLocalMongoose = require('passport-local-mongoose');
   ```
 
 3. Also in `user.js`, define the `UserSchema`. Users should have the attributes `email` and `password`.
@@ -113,7 +113,9 @@ Adapted from <a href="http://mherman.org/blog/2015/01/31/local-authentication-wi
    * models/user.js
    */
 
-  ...
+  var mongoose = require('mongoose'),
+      Schema = mongoose.Schema,
+      passportLocalMongoose = require('passport-local-mongoose');
 
   var UserSchema = new Schema({
     username: String,
@@ -121,32 +123,46 @@ Adapted from <a href="http://mherman.org/blog/2015/01/31/local-authentication-wi
   });
   ```
 
-4. Next, add `passportLocalMongoose` to your `UserSchema`. `passportLocalMongoose` takes care of hashing and salting the user's plain-text password when they sign up. It also takes of comparing the password the user enters when logging in to their hashed and salted password which is stored in the database.
+4. Next, add `passportLocalMongoose` to the `UserSchema`. `passportLocalMongoose` takes care of hashing and salting the user's plain-text password when they sign up. It also takes of comparing the password the user enters at login to their hashed and salted password stored in the database.
 
   ```js
   /*
    * models/user.js
    */
 
-  ...
+  var mongoose = require('mongoose'),
+      Schema = mongoose.Schema,
+      passportLocalMongoose = require('passport-local-mongoose');
+
+  var UserSchema = new Schema({
+    username: String,
+    password: String
+  });
 
   UserSchema.plugin(passportLocalMongoose);
   ```
 
-5. The last step is to create your `User` model and export it.
+5. The last step is to create the `User` model and export it.
 
   ```js
   /*
    * models/user.js
    */
 
-  ...
+  var mongoose = require('mongoose'),
+      Schema = mongoose.Schema,
+      passportLocalMongoose = require('passport-local-mongoose');
+
+  var UserSchema = new Schema({
+    username: String,
+    password: String
+  });
 
   var User = mongoose.model('User', UserSchema);
   module.exports = User;
   ```
 
-6. Back in `server.js`, require your `User` model (you can do this right under where you require your `Post` model).
+6. Back in `server.js`, require the `User` model (you can do this right under where you required the `Post` model).
 
   ```js
   /*
@@ -188,7 +204,7 @@ Adapted from <a href="http://mherman.org/blog/2015/01/31/local-authentication-wi
   </form>
   ```
 
-  Take note of the `method` and `action` in the form. This combination of request type `POST` and URL `/signup` will correspond to a server route for signing up new users.
+  Take note of the `method` and `action` in the form. This combination of the request type `POST` and the URL `/signup` will correspond to a server route for signing up new users.
 
 3. In `server.js`, you need two new routes for signing up new users: a route to render the `signup` view, and a route to handle the `signup` request when the user submits the form. Let's create the route to render the view first:
 
@@ -225,7 +241,7 @@ Adapted from <a href="http://mherman.org/blog/2015/01/31/local-authentication-wi
   app.post('/signup', function (req, res) {
     User.register(new User({ username: req.body.username }), req.body.password,
       function (err, newUser) {
-        passport.authenticate('local')(req, res, function () {
+        passport.authenticate('local')(req, res, function() {
           res.send('signed up!!!');
         });
       }
@@ -263,7 +279,7 @@ Adapted from <a href="http://mherman.org/blog/2015/01/31/local-authentication-wi
   </form>
   ```
 
-  Take note of the `method` and `action` in the form. This combination of request type `POST` and URL `/login` will correspond to a server route for logging in existing users.
+  Take note of the `method` and `action` in the form. This combination of the request type `POST` and the URL `/login` will correspond to a server route for logging in existing users.
 
 3. In `server.js`, you need two new routes for logging in existing users: a route to render the `login` view, and a route to handle the `login` request when the user submits the form. Let's create the route to render the view first:
 
@@ -367,7 +383,7 @@ Adapted from <a href="http://mherman.org/blog/2015/01/31/local-authentication-wi
 
 4. Go to `http://localhost:3000/profile` in your browser. You should see the welcome message displayed with your username (you may need to log in again for this to work).
 
-5. The last step is to refactor your signup and login routes to redirect to the user profile page when a user successfully signs up or logs in:
+5. The last step is to refactor your sign up and log in routes to redirect to the user profile page when a user successfully signs up or logs in:
 
   ```js
   /*
@@ -385,7 +401,7 @@ Adapted from <a href="http://mherman.org/blog/2015/01/31/local-authentication-wi
   app.post('/signup', function (req, res) {
     User.register(new User({ username: req.body.username }), req.body.password,
       function (err, newUser) {
-        passport.authenticate('local')(req, res, function () {
+        passport.authenticate('local')(req, res, function() {
           // res.send('signed up!!!');
           res.redirect('/profile')
         });
@@ -405,12 +421,12 @@ Adapted from <a href="http://mherman.org/blog/2015/01/31/local-authentication-wi
 ## Stretch Challenges
 
 * Add a navbar to your site with links to "Sign Up", "Log In", "Profile", and "Log Out".
-  * If a user is currently logged in, they should only see the "Profile" and "Log Out" links.
-  * If a user is not logged in, they should only see the "Sign Up" and "Log In" links.
-* Use the `req.user` middleware to *authorize* parts of your site
-  * Logged-in users should NOT be able to see the sign up or login.
-  * Users should only be able to see the profile page when logged in.
+  * If a user is currently logged in, they should ONLY see the "Profile" and "Log Out" links.
+  * If a user is NOT logged in, they should ONLY see the "Sign Up" and "Log In" links.
+* Use the `req.user` middleware to *authorize* parts of your site.
+  * If a user is currently logged in, they should NOT be able to see the sign up or log in views.
+  * If a user is NOT logged in, they should NOT able to see the profile page.
 
 ## Super Stretch Challenge
 
-Implement a Mongoose relationship between users and blog posts: a user has many posts. Should posts be embedded or reference data? Logged-in users should be able to see a list of their blog posts on their profile page.
+Implement a Mongoose relationship between users and blog posts: a user has many posts. Should posts be embedded or referenced data? Logged-in users should be able to see a list of their own blog posts on their profile page.

@@ -163,7 +163,7 @@
 
 3. In Sublime, edit your `mocha.opts` file to include `--recursive`. This allows you to run tests in all sub-directories at once.
 
-  ```
+  ```js
   /*
    * mocha.opts
    */
@@ -175,7 +175,7 @@
 
   ```js
   /*
-   * blobsTest.js
+   * package.json
    */
 
   {

@@ -223,10 +223,10 @@ Now, instead of seeing **only** the `ObjectId` that pointed us to the `Console` 
 
 ### Base Exercises
 
-1. Assemble the code in this module's README into your `server.js` file and redactor it to create your own models that use referenced documents. Be creative and make it interesting and relevant (easier said than done).
+1. Assemble the code in this module's README into your `server.js` file and refactor it to create your own models that use referenced documents. Be creative and make it interesting and relevant (easier said than done).
 1. Create at least 5 'top-level' documents (in my case, five games) and at least 3 referenced documents (in my case, three consoles).
 1. Demonstrate the ability to display the documents with just an ObjectId for the referenced documents.
-1. Finally, call `populate()` on a query and demonstrate the **full** referenced documents as in the README with the Legend of Zelda: Ocarina of Time and the Nintendo 64. 
+1. Finally, call `populate()` on a query and demonstrate the **full** referenced documents as in the README with the Legend of Zelda: Ocarina of Time and the Nintendo 64.
 
 ### Stretch Exercises
 
