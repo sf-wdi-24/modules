@@ -38,7 +38,7 @@
     <td><a href="https://github.com/sf-wdi-24/express-microblog-comments" target="_blank">Add Comments to Microblog</a></td>
     <td><a href="https://github.com/sf-wdi-24/express-microblog-auth" target="_blank">Add Auth to Microblog</a></td>
     <td><a href="https://github.com/sf-wdi-24/TMMM-Chapter-One" target="_blank">Read Mythical Man-Month</a></td>
-    <td>Read Mythical Man-Month</td>
+    <td><a href="https://github.com/sf-wdi-24/TMMM-Individual-Chapter" target="_blank">Read Mythical Man-Month</a></td>
     <td><a href="https://github.com/sf-wdi-24/independent-research" target="_blank">Weekend Lab (Independent Research)</a></td>
   </tr>
 </table>
