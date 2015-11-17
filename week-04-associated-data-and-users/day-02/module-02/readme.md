@@ -204,7 +204,7 @@ Adapted from <a href="http://mherman.org/blog/2015/01/31/local-authentication-wi
   </form>
   ```
 
-  Take note of the `method` and `action` in the form. This combination of request type `POST` and URL `/signup` will correspond to a server route for signing up new users.
+  Take note of the `method` and `action` in the form. This combination of the request type `POST` and the URL `/signup` will correspond to a server route for signing up new users.
 
 3. In `server.js`, you need two new routes for signing up new users: a route to render the `signup` view, and a route to handle the `signup` request when the user submits the form. Let's create the route to render the view first:
 
