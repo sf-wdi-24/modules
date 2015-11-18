@@ -1,4 +1,4 @@
-# <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Hiding environment Variables with Node.js
+# <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Hiding Environment Variables with Node.js
 
 ## Install & Require dotenv Module
 
@@ -44,7 +44,7 @@
   .env
   ```
 
-3. **After you add `.env` to your `.gitignore`,** add your API keys to `.env`. *Change `MY_API_KEY` to your variable name and your actual key.*
+3. **After you add `.env` to your `.gitignore`,** add your API keys to `.env`. *Change MY_API_KEY to your variable name and your actual key.*
 
   ```js
   /*
@@ -53,3 +53,20 @@
 
   MY_API_KEY=0932nv8d17vhd72o2e8cfv82csd9n1dcd98
   ```
+
+## Access Environment Variables
+
+1. In `server.js`, or any other back-end JS file (models, etc.), you can access your API keys and other environment-specific variables through `process.env`.
+
+  ```js
+  /*
+   * server.js (or any other back-end JS file)
+   */
+
+  // I need to use my API key! How do I access it?
+  process.env.MY_API_KEY // returns value of MY_API_KEY
+  ```
+
+## Resources
+
+* <a href="https://github.com/motdotla/dotenv" target="_blank">dotenv</a>

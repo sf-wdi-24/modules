@@ -172,25 +172,22 @@ Hopefully your app works on Heroku, however, you may see a sad page that looks l
 
 ## Add Your API Keys
 
-<!-- 1. If you haven't added your API keys locally, first read <a href="#" target="_blank">these instructions</a>.
-@TODO: Create "how to" for dotenv-rails gem and link to it here -->
+1. Set environment variables on Heroku:
 
-2. Set environment variables on Heroku:
-
-  *Change `MY_API_KEY` to your variable name and your actual key*
+  *Change MY_API_KEY to your variable name and your actual key*
 
   ```zsh
   ➜  heroku config:set MY_API_KEY=0932nv8d17vhd72o2e8cfv82csd9n1dcd98
   ```
 
-3. Check that it worked:
+2. Check that it worked:
 
   ```zsh
   ➜  heroku config
   MY_API_KEY: 0932nv8d17vhd72o2e8cfv82csd9n1dcd98
   ```
 
-4. If you made a mistake and need to unset an API key:
+3. If you made a mistake and need to unset an API key:
 
   ```zsh
   ➜  heroku config:unset MY_API_KEY
