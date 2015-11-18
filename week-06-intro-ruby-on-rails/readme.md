@@ -23,7 +23,7 @@
     <td><a href="./day-02/module-01/">Ruby Methods</a></td>
     <td><a href="./day-03/module-01/">Ruby OOP</a></td>
     <td><a href="./day-04/module-01/">Intro Rails</a></td>
-    <td>ActiveRecord Review / Rock ‘n Rails Lab</td>
+    <td>Review</td>
   </tr>
   <tr>
     <td>Module2</td>
@@ -35,10 +35,10 @@
   </tr>
   <tr>
     <td>HW</td>
-    <td><a href="" target="_blank">Ruby Language Reading, Ruby Koans Exercises, IP Address Lab</a></td>
-    <td><a href="" target="_blank">OOP Reading</a></td>
-    <td><a href="" target="_blank">Intro Rails Reading</a></td>
-    <td><a href="" target="_blank">Rails for Zombies</a></td>
-    <td><a href="" target="_blank">Weekend Lab</a></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
 </table>
