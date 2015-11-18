@@ -33,7 +33,7 @@
   ➜  touch .env
   ```
 
-2. **Before you do anything else,** add `.env` to your `.gitignore`! This is what actually "hides" your API keys and prevents them from being exposed on GitHub.
+2. **Before you do anything else,** add `.env` to your `.gitignore`! This is what "hides" your API keys and prevents them from being exposed on GitHub.
 
   ```js
   /*
