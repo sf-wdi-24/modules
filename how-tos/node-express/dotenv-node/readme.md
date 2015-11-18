@@ -54,19 +54,19 @@
   MY_API_KEY=0932nv8d17vhd72o2e8cfv82csd9n1dcd98
   ```
 
-## Access Environment Variables
+## Accessing Environment Variables
 
-1. In `server.js`, or any other back-end JS file (models, etc.), you can access your API keys and other environment-specific variables through `process.env`.
+In `server.js`, or any other back-end JS file (models, etc.), you can access your API keys and other environment-specific variables through `process.env`.
 
-  ```js
-  /*
-   * server.js (or any other back-end JS file)
-   */
+```js
+/*
+ * server.js (or any other back-end JS file)
+ */
 
-  // I need to use my API key! How do I access it?
-  process.env.MY_API_KEY // returns value of MY_API_KEY
-  ```
+// I need to use my API key! How do I access it?
+process.env.MY_API_KEY // returns value of MY_API_KEY
+```
 
 ## Resources
 
-* <a href="https://github.com/motdotla/dotenv" target="_blank">dotenv</a>
+<a href="https://github.com/motdotla/dotenv" target="_blank">dotenv</a>
