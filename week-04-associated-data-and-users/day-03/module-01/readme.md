@@ -212,7 +212,7 @@ Adapted from <a href="http://mherman.org/blog/2013/11/10/social-authentication-w
   });
   ```
 
-2. Next, update the `GitHubStrategy' so that it saves the user if they don't already exist in the database:
+2. Next, update the `GitHubStrategy` so that it saves the user if they don't already exist in the database:
 
   ```js
   /*
