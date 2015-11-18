@@ -157,9 +157,9 @@ Adapted from <a href="http://mherman.org/blog/2013/11/10/social-authentication-w
   );
   ```
 
-  The first route is what a user will request to indicate they'd like to log in with GitHub (you'll use this one in the view), and the second route is where GitHub redirects the user after authenticating them. After the redirect, your application will handle logging in the user and creating them in the database if they're not already signed up.
+  The first route is what a user will request to indicate they'd like to log in with GitHub (you'll use this one in the sign up and log in views), and the second route is where GitHub redirects the user after authenticating them. After the redirect, your application will handle logging in the user and creating them in the database if they're not already signed up.
 
-2. Now, it's time to edit your signup and login forms to take advantage of GitHub login:
+2. Now, it's time to edit your sign up and log in forms to take advantage of GitHub login:
 
   ```html
   <!-- signup.hbs -->
