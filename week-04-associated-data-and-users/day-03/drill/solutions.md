@@ -5,14 +5,14 @@
 ```js
 function bubbleSort(arr) {
 
-  // we'll need to make at most `arr.length - 1` passes through the array to sort it
-  for (var i = 0; i < arr.length - 1; i++) {
+  // we'll need to make at most `arr.length` passes through the array to sort it
+  for (var i = 0; i <= arr.length; i++) {
 
     // to start each pass, we haven't swapped at all
     var swapped = false;
 
     // loop through the array
-    for (var j = 0; j < arr.length-1; j++) {
+    for (var j = 0; j <= arr.length - 1; j++) {
 
       // swap if two values are out of order
       if (arr[j] > arr[j + 1]) {
