@@ -222,7 +222,7 @@ Adapted from <a href="http://mherman.org/blog/2013/11/10/social-authentication-w
   ...
 
   // passport-github config
-  passport.use(new GithubStrategy({
+  passport.use(new GitHubStrategy({
     clientID: oauth.github.clientID,
     clientSecret: oauth.github.clientSecret,
     callbackURL: oauth.github.callbackURL
