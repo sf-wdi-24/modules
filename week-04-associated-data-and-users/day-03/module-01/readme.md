@@ -75,7 +75,7 @@ Adapted from <a href="http://mherman.org/blog/2013/11/10/social-authentication-w
       LocalStrategy = require('passport-local').Strategy,
 
       // NEW ADDITIONS
-      GithubStrategy = require('passport-github').Strategy,
+      GitHubStrategy = require('passport-github').Strategy,
       oauth = require('./oauth.js');
   ```
 
@@ -96,10 +96,10 @@ Adapted from <a href="http://mherman.org/blog/2013/11/10/social-authentication-w
 
   // ADD THESE INSTEAD
   // serialize and deserialize
-  passport.serializeUser(function(user, done) {
+  passport.serializeUser(function (user, done) {
     done(null, user);
   });
-  passport.deserializeUser(function(obj, done) {
+  passport.deserializeUser(function (obj, done) {
     done(null, obj);
   });
   ```
