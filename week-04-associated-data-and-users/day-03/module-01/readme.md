@@ -44,9 +44,20 @@ Adapted from <a href="http://mherman.org/blog/2013/11/10/social-authentication-w
       clientSecret: 'YOUR_GITHUB_SECRET',
       callbackURL: 'http://localhost:3000/auth/github/callback'
     }
-  }
+  };
 
-  module.exports = ids
+  module.exports = ids;
+  ```
+  
+4. **Before you do anything else,** add `oauth.js` to your `.gitignore`! This is what "hides" your API keys and prevents them from being exposed on GitHub.
+  
+  ```js
+  /*
+   * .gitignore
+   */
+
+  node_modules
+  oauth.js
   ```
 
 ### Install, Require, & Configure Dependencies
@@ -75,7 +86,7 @@ Adapted from <a href="http://mherman.org/blog/2013/11/10/social-authentication-w
       LocalStrategy = require('passport-local').Strategy,
 
       // NEW ADDITIONS
-      GithubStrategy = require('passport-github').Strategy,
+      GitHubStrategy = require('passport-github').Strategy,
       oauth = require('./oauth.js');
   ```
 
@@ -96,10 +107,10 @@ Adapted from <a href="http://mherman.org/blog/2013/11/10/social-authentication-w
 
   // ADD THESE INSTEAD
   // serialize and deserialize
-  passport.serializeUser(function(user, done) {
+  passport.serializeUser(function (user, done) {
     done(null, user);
   });
-  passport.deserializeUser(function(obj, done) {
+  passport.deserializeUser(function (obj, done) {
     done(null, obj);
   });
   ```
@@ -157,9 +168,9 @@ Adapted from <a href="http://mherman.org/blog/2013/11/10/social-authentication-w
   );
   ```
 
-  The first route is what a user will request to indicate they'd like to log in with GitHub (you'll use this one in the view), and the second route is where GitHub redirects the user after authenticating them. After the redirect, your application will handle logging in the user and creating them in the database if they're not already signed up.
+  The first route is what a user will request to indicate they'd like to log in with GitHub (you'll use this one in the sign up and log in views), and the second route is where GitHub redirects the user after authenticating them. After the redirect, your application will handle logging in the user and creating them in the database if they're not already signed up.
 
-2. Now, it's time to edit your signup and login forms to take advantage of GitHub login:
+2. Now, it's time to edit your sign up and log in forms to take advantage of GitHub login:
 
   ```html
   <!-- signup.hbs -->
@@ -212,7 +223,7 @@ Adapted from <a href="http://mherman.org/blog/2013/11/10/social-authentication-w
   });
   ```
 
-2. Next, update the `GitHubStrategy' so that it saves the user if they don't already exist in the database:
+2. Next, update the `GitHubStrategy` so that it saves the user if they don't already exist in the database:
 
   ```js
   /*
@@ -222,7 +233,7 @@ Adapted from <a href="http://mherman.org/blog/2013/11/10/social-authentication-w
   ...
 
   // passport-github config
-  passport.use(new GithubStrategy({
+  passport.use(new GitHubStrategy({
     clientID: oauth.github.clientID,
     clientSecret: oauth.github.clientSecret,
     callbackURL: oauth.github.callbackURL
@@ -272,5 +283,5 @@ Adapted from <a href="http://mherman.org/blog/2013/11/10/social-authentication-w
 
 ## Stretch Challenges
 
-* Figure out what other information GitHub gives you about the user (name, avatar, etc.), and pick a couple other attributes to save to the database. Display the additional attributes on the user profile page as well. **Hint:** Try `console.log`-ing `profile` in your `passport-github` config or use the debugger.
+* Figure out what other information GitHub gives you about the user (name, avatar, etc.), and pick a couple other attributes to save to the database. Display the additional attributes on the user profile page. **Hint:** Try `console.log`-ing `profile` in your passport-github config or use the debugger.
 * Keep practicing with as many OAuth providers as you want! Use <a href="http://mherman.org/blog/2013/11/10/social-authentication-with-passport-dot-js/#.VkWaBd-rSRs" target="_blank">this tutorial</a> as a guide.
