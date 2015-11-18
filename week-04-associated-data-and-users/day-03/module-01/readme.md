@@ -44,9 +44,9 @@ Adapted from <a href="http://mherman.org/blog/2013/11/10/social-authentication-w
       clientSecret: 'YOUR_GITHUB_SECRET',
       callbackURL: 'http://localhost:3000/auth/github/callback'
     }
-  }
+  };
 
-  module.exports = ids
+  module.exports = ids;
   ```
 
 ### Install, Require, & Configure Dependencies
