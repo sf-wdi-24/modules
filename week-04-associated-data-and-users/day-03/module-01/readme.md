@@ -48,6 +48,17 @@ Adapted from <a href="http://mherman.org/blog/2013/11/10/social-authentication-w
 
   module.exports = ids;
   ```
+  
+ 4. **Before you do anything else,** add `oauth.js` to your `.gitignore`! This is what "hides" your API keys and prevents them from being exposed on GitHub.
+  
+  ```js
+  /*
+   * .gitignore
+   */
+
+  node_modules
+  oauth.js
+  ```
 
 ### Install, Require, & Configure Dependencies
 
