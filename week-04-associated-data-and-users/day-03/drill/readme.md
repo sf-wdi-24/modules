@@ -4,7 +4,7 @@ Sorting is a common problem in interviews and in the real world (sorting books b
 
 So, there are a lot of solutions! The term **algorithm** is used in software development to describe a solution to a problem that will work in all or many programming languages, without going into the specifics of coding it in any particular language.
 
-**<a href="http://www.sorting-algorithms.com" target="_blank">See a bunch of different sorting algorithms in action.</a>**
+<a href="http://www.sorting-algorithms.com" target="_blank">See a bunch of different sorting algorithms in action.</a>
 
 ## Why Bubble Sort?
 
