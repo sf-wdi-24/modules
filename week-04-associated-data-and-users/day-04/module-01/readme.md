@@ -307,7 +307,7 @@ Adapted from <a href="http://socket.io/get-started/chat" target="_blank">Socket.
 
   // receive message from socket (server)
   socket.on('chat message', function (msg) {
-    $messages.append($('<li>' + msg + '</li>'));
+    $('#messages').append($('<li>' + msg + '</li>'));
   });
   ```
 
