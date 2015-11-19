@@ -63,7 +63,7 @@ For a more complete list of basic regex patterns, see <a href="http://rubular.co
 Use <a href="http://rubular.com" target="_blank">Rubular</a> for all challenges *except* Base Challenge #1.
 
 ### Base Challenges
-1. In the terminal, type `irb` (you're now in the ruby console!). Type `/hello world/.class`. What does it return? Note: To exit `irb` in the terminal, simply type `exit`.
+1. In the terminal, type `irb` (you're now in the ruby console!). Type `/hello world/.class`. What does it return? **Note:** To exit `irb` in the terminal, simply type `exit`.
 
 2. Write a regexp to match instances of "regex" in the text below. Copy and paste the text (including the HTML tags!) into Rubular as the test string.
 
