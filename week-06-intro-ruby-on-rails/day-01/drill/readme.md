@@ -16,7 +16,7 @@
 * Discuss one minor issue your project has. Make sure it's a relatively small addition that could be solved with the tools we already have (Express, jQuery, etc.).
 * Create a new GitHub issue on your project's repo. Be descriptive of what's wrong and how you'd like it fixed. You could even give some rough steps you'd take to solve it.
 
-![issues](imgs/issue.png)
+![issues](https://cloud.githubusercontent.com/assets/7833470/11285453/61cd4efc-8ec4-11e5-966e-933ba09e7f20.png)
 
 ## Step 2: Set Up Your Partner's Project
 
@@ -30,7 +30,7 @@
 
 * See if you can successfully set up your partner's project by following the instructions in their `readme`. Note any roadblocks you hit along the way (and create GitHub issues for those roadblocks).
 
-![fork](imgs/fork.png)
+![fork](https://cloud.githubusercontent.com/assets/7833470/11285452/61ccccca-8ec4-11e5-9f1f-549f36de2531.png)
 
 ## Step 3: Pair Program to Fix the Issue
 
@@ -48,7 +48,7 @@
 * Navigate to your remote fork on github.com, and submit the branch `fix-login-redirect` as a pull request.
 * Your partner should code review and merge the pull request. They can code review small changes on github.com, or they can fetch the pull request's branch and test it locally.
 
-![pull_request](imgs/pull_request.png)
+![compare](https://cloud.githubusercontent.com/assets/7833470/11285454/61dbc9f0-8ec4-11e5-8441-8333a735c023.png)
 
 ## Step 5: Repeat
 
