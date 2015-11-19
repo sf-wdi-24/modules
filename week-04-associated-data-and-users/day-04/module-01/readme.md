@@ -313,7 +313,7 @@ Adapted from <a href="http://socket.io/get-started/chat" target="_blank">Socket.
 
 ## Stretch Challenges
 
-* Use Handlebars client-side templating to append new chat messages to the homepage.
+* Use Handlebars client-side templating to append new chat messages to the view.
 * Allow users to enter a username that displays next to all their messages.
 * Broadcast a message to connected users when someone connects or disconnects.
 * Add "{user} is typing" functionality.
