@@ -137,7 +137,7 @@ Adapted from <a href="http://socket.io/get-started/chat" target="_blank">Socket.
     <title>Socket Chat</title>
   </head>
   <body>
-    <h1><h1>
+    <h1>Hello world<h1>
 
     <!-- jquery -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -307,13 +307,13 @@ Adapted from <a href="http://socket.io/get-started/chat" target="_blank">Socket.
 
   // receive message from socket (server)
   socket.on('chat message', function (msg) {
-    $messages.append($('<li>' + msg + '</li>'));
+    $('#messages').append($('<li>' + msg + '</li>'));
   });
   ```
 
 ## Stretch Challenges
 
-* Use Handlebars client-side templating to append new chat messages to the homepage.
+* Use Handlebars client-side templating to append new chat messages to the view.
 * Allow users to enter a username that displays next to all their messages.
 * Broadcast a message to connected users when someone connects or disconnects.
 * Add "{user} is typing" functionality.
