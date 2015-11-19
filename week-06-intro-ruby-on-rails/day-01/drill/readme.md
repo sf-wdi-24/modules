@@ -4,9 +4,9 @@
 
 | Objectives |
 | :--- |
-| Create one or more GitHub issues on your Project 1 repo |
+| Create at least one GitHub issue on your Project 1 repo |
 | Fork and clone your partner's project |
-| Pair program to resolve the issue and submit a pull request |
+| Pair program to resolve the issue, and submit a pull request |
 
 **Please keep track of time - you should spend roughly 1.5 hours on each project.**
 
