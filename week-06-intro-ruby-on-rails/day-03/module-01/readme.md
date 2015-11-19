@@ -89,7 +89,7 @@ fiat.color
 **Challenge:**
 How would we create an instance method `color?` for our `Car` class instances, which tests whether the color matches what is passed in?
 
-**Note:** Methods ending in `?` are conventionally used to denote that they return a boolean value. [Source](https://github.com/bbatsov/ruby-style-guide#naming)
+**Note:** Methods ending in `?` are conventionally used to denote that they return a boolean value. <a href="https://github.com/bbatsov/ruby-style-guide#naming" target="_blank">Source</a>
 
 ```ruby
 alpha = Car.new
