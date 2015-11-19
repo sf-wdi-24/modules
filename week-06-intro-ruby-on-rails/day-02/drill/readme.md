@@ -4,7 +4,7 @@
 
 <img src="http://stream1.gifsoup.com/view4/2239283/homer-bird-o.gif">
 
-> You can't grep dead trees [Jargonfile](http://jargon.net/jargonfile/d/documentation.html)
+> You can't grep dead trees <a href="http://jargon.net/jargonfile/d/documentation.html" target="_blank">Jargonfile</a>
 
 Regular expressions were designed because programmers are lazy.
 
