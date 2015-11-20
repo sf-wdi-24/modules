@@ -34,7 +34,7 @@ rspec -e "handles zero"
 
 
 # Bubble Sort Refresher
-Pre-work: [First, some Hungarian ("Csángó") folk dance](https://www.youtube.com/watch?v=lyZQPjUT5B4)
+Pre-work: <a href="https://www.youtube.com/watch?v=lyZQPjUT5B4" target="_blank">First, some Hungarian ("Csángó") folk dance.</a>
 
 Bubble sort is one of the first sorting algorithms you should try and master.  It essentially forces larger elements to 'sink' to the bottom/back while inadvertently 'floating' smaller elements to the top/front of a list.  This is done with numerous comparisons between one element in an array and its neighbor.  
 
