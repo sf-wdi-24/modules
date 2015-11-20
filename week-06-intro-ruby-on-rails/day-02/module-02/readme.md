@@ -113,3 +113,7 @@ STRETCH: If a username already exists, append "_1". Then, increment the counter 
 #### BONUS -- Command-line inputs
 * OPTION 1 -- Interactively get user input from the command line and output a username to the console. I.e. when I run `ruby username.rb` I should be prompted (from the command line) for my name, birth year, etc.
 * OPTION 2 -- Accept command line arguments (e.g. `ruby username.rb john doe 1980`) and output a username to the console.
+
+## Homework:
+
+Tonight you will be working through a this module introducing you to OOP in Ruby.  If you don't entirely complete the homework it is okay.  We will be taking a much deeper dive into OOP tomorrow.
