@@ -1,5 +1,7 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Week 5 - Project 1
 
+<a href="https://github.com/sf-wdi-24/project-01" target="_blank">Project 1 Requirements</a>
+
 <table>
   <tr>
     <th></th>
@@ -29,7 +31,7 @@
     <td>Module2</td>
     <td>
       Project 1<br><br>
-      Deploy to Heroku
+      <a href="./../how-tos/node-express/heroku-node-mongo">Deploy to Heroku</a>
     </td>
     <td>Project 1</td>
     <td>Project 1</td>
