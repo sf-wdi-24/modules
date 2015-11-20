@@ -116,4 +116,4 @@ STRETCH: If a username already exists, append "_1". Then, increment the counter 
 
 ## Homework:
 
-Tonight you will be working through a this module introducing you to OOP in Ruby.  If you don't entirely complete the homework it is okay.  We will be taking a much deeper dive into OOP tomorrow.
+Tonight you will be working through a this <a href="https://github.com/sf-wdi-24/ruby-oop-reading" target="_blank">repo</a> introducing you to OOP in Ruby.  If you don't entirely complete the homework it is okay.  We will be taking a much deeper dive into OOP tomorrow.
