@@ -34,7 +34,7 @@ bundle
 
 You can also install gems individually (e.g. `gem install ffaker`), but `bundle` is better in this case.
 
-Now dive into [FFaker's Documentation](https://github.com/ffaker/ffaker/blob/master/REFERENCE.md)!
+Now dive into <a href="https://github.com/ffaker/ffaker/blob/master/REFERENCE.md" target="_blank">FFaker's Documentation</a>!
 
 ####Pro Tip: Requiring Gems & the Ruby Console
 You're probably asking yourself, "how can I play with this ffaker data?". Why, in the Ruby Console of course!
@@ -212,3 +212,7 @@ The `seed.rb` file is magic, because it _already_ knows about all of the models 
 **Can you seed your database with speaker and talks?**
 
 **Bonus**: can you do it with the FFaker gem?
+
+### Homework:
+
+This evening you should go <a href="http://railsforzombies.org/" target="_blank">here</a> and complete all of the challenges.
