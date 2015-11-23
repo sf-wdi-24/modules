@@ -45,6 +45,8 @@
 
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Week 4.5 - Project 1 Planning
 
+<a href="https://github.com/sf-wdi-24/project-01" target="_blank">Project 1 Requirements</a>
+
 <table>
   <tr>
     <th></th>
@@ -57,7 +59,10 @@
   <tr>
     <td>Drill</td>
     <td>Weekend Lab Discussion</td>
-    <td><strong>9:17am - Deadline for Project 1 Approvals</strong></td>
+    <td>
+      <strong>9:17am</strong> - Deadline for Project 1 Approvals<br><br>
+      <strong>10:00am</strong> - WDI 22-23 Project 2 Presentations
+    </td>
     <td></td>
     <td></td>
     <td></td>
@@ -74,7 +79,7 @@
     <td>Module2</td>
     <td>
       Project 1 Planning<br><br>
-      <strong>Start Project 1 Approvals</strong>
+      Start Project 1 Approvals
     </td>
     <td>Project 1</td>
     <td></td>
