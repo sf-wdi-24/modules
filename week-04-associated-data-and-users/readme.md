@@ -59,7 +59,10 @@
   <tr>
     <td>Drill</td>
     <td>Weekend Lab Discussion</td>
-    <td><strong>9:17am - Deadline for Project 1 Approvals</strong></td>
+    <td>
+      <strong>9:17am</strong> - Deadline for Project 1 Approvals<br><br>
+      <strong>10:00am</strong> - WDI 22-23 Project 2 Presentations
+    </td>
     <td></td>
     <td></td>
     <td></td>
@@ -76,7 +79,7 @@
     <td>Module2</td>
     <td>
       Project 1 Planning<br><br>
-      <strong>Start Project 1 Approvals</strong>
+      Start Project 1 Approvals
     </td>
     <td>Project 1</td>
     <td></td>
