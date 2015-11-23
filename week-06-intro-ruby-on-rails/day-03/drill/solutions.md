@@ -1,24 +1,28 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Ruby Binary Search - Solutions
 
 ```ruby
-# Input: sorted array of integers, target value
-
-# Output:
-# return index of target if target is found
-# return false if target is not present
-
-# Pseudocode:
+##
+# Input should be a sorted array of integers and a target value.
+#
+# Output should be the index of the target value if found or `false` if not found.
+#
 # Find the low, high, and mid indexes of the input array.
+#
 # Keep looping while the low index is less than the high index.
+#
 # If the target value is equal to the value at the mid index, return the mid index.
+#
 # If the target value is greater than value at the mid index:
-  # => Set the low index to the mid index + 1.
-  # => Set the mid index to the sum of the high index and the low index, divided by two.
+# Set the low index to the mid index + 1.
+# Set the mid index to the sum of the high index and the low index, divided by two.
+#
 # Else if the target value is less than value at the mid index:
-  # => Set the high index to the mid index - 1.
-  # => Set the mid index to the sum of the high index and the low index, divided by two.
+# Set the high index to the mid index - 1.
+# Set the mid index to the sum of the high index and the low index, divided by two.
 
-# binary search iterative solution
+##
+# Binary search iterative solution
+#
 def binary_search_iterative(array, target)
 
   # declare variables for low, high, and mid indexes
@@ -46,7 +50,9 @@ def binary_search_iterative(array, target)
   return false
 end
 
-# binary search recursive solution
+##
+# Binary search recursive solution
+#
 def binary_search_recursive(array, target, low = 0, high = array.length - 1)
 
   # if target not found, return false

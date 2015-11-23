@@ -74,5 +74,5 @@ The process continues, eliminating half of the elements, then comparing the targ
 
 * <a href="https://en.wikipedia.org/wiki/Binary_search_algorithm" target="_blank">Binary search algorithm - Wikipedia</a>
 * <a href="http://bigocheatsheet.com" target="_blank">Big-O Cheat Sheet</a>
-* <a href="http://www.cs.cmu.edu/~15110-f12/Unit05PtB-handout.pdf" target="_blank">Binary Search - Carnagie Mellon University</a>
+* <a href="http://www.cs.cmu.edu/~15110-f12/Unit05PtB-handout.pdf" target="_blank">Binary Search - Carnegie Mellon University</a>
 * <a href="https://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation" target="_blank">A beginner's guide to Big O notation - Rob Bell</a>
