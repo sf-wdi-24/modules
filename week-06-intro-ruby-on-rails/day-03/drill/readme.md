@@ -8,7 +8,7 @@ def binary_search(array, target)
 end
 
 sample = [0, 1, 3, 5, 8, 13, 21]
-target = 8
+target = 1
 
 binary_search(sample, 1)
 #=> 1 (the index that the target value is located in the sample array)
@@ -51,7 +51,7 @@ array[mid] < target
 # this condition won't occur because it's false
 ```
 
-The process continues, eliminating half of the elements, then comparing the target value to the value of the middle element of the remaining elements, until the target value is either found (and its position is returned), or until the entire array has been searched (and "not found", or `nil` is returned).
+The process continues, eliminating half of the elements, then comparing the target value to the value of the middle element of the remaining elements, until the target value is either found (and its position is returned), or until the entire array has been searched (and `false` is returned).
 
 ## Real-Life Example
 
@@ -62,25 +62,13 @@ The process continues, eliminating half of the elements, then comparing the targ
 1. Pair up! Have one partner pick a number between 1 and 100. The other partner should start at 50 and attempt to guess the number. The first partner should provide feedback of "higher", "lower", or "correct" to help guide the guesses to get to the chosen number.
 
 2. After this real-life implementation:
-  * Pseudocode the steps for implementing a binary search.
+  * Pseudocode the steps for implementing binary search.
   * Swap solutions with another pair of students and exchange feedback.
   * Code your binary search solution in Ruby.
 
-## Stretch Challenges
+## Stretch Challenge
 
-1. Implement a recursive solution (instead of iterative).
-
-2. Implement a solution for an array of names (strings).
-
-### Sample Data
-
-```ruby
-# integer data set
-prime_numbers = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 271, 277, 281, 283, 293, 307, 311, 313, 317, 331, 337, 347, 349, 353, 359, 367, 373, 379, 383, 389, 397, 401, 409, 419, 421, 431, 433, 439, 443, 449, 457, 461, 463, 467, 479, 487, 491, 499, 503, 509, 521, 523, 541]
-
-# string data set
-wdi_24_students = ["Adam", "Alan", "André", "Carlos", "Cynthia", "Dave", "Eddy", "John", "Michael", "Stanley", "Steven", "Trung", "Victoria", "Zohar"]
-```
+* Implement a recursive solution (instead of iterative).
 
 ## Resources
 
