@@ -15,31 +15,31 @@
     <td>Drill</td>
     <td>
       Project 1<br><br>
-      <strong>10:00am - Project Group Stand-Up</strong>
+      <strong>10:00am</strong> - Project Group Stand-Up
     </td>
     <td>
       Project 1<br><br>
-      <strong>10:00am - Project Group Stand-Up</strong>
+      <strong>10:00am</strong> - Project Group Stand-Up
     </td>
     <td>
       Project 1<br><br>
-      <strong>10:00am - Project Group Stand-Up</strong>
+      <strong>10:00am</strong> - Project Group Stand-Up
     </td>
     <td>
       Project 1<br><br>
-      <strong>10:00am - Project Group Stand-Up</strong>
+      <strong>10:00am</strong> - Project Group Stand-Up
     </td>
-    <td><strong>10:00am - Project 1 Presentations</strong></td>
+    <td><strong>10:00am</strong> - Project 1 Presentations</td>
   </tr>
   <tr>
     <td>Module1</td>
     <td>
       Project 1<br><br>
-      <strong>11:00am - Mongo/Mongoose Breakout Review</strong>
+      <strong>11:00am</strong> - Mongo/Mongoose Breakout Review
     </td>
     <td>
       Project 1<br><br>
-      <strong>11:00am - Auth Breakout Review</strong>
+      <strong>11:00am</strong> - Auth Breakout Review
     </td>
     <td>Project 1</td>
     <td>Project 1</td>
@@ -49,20 +49,20 @@
     <td>Module2</td>
     <td>
       Project 1<br><br>
-      <strong>1:30pm - <a href="./../how-tos/node-express/heroku-node-mongo">Deploy to Heroku</a></strong><br><br>
-      <strong>3-5pm - 1:1s</strong>
+      <strong>1:30pm</strong> - <a href="./../how-tos/node-express/heroku-node-mongo">Deploy to Heroku</a><br><br>
+      <strong>3-5pm</strong> - 1:1s
     </td>
     <td>
       Project 1<br><br>
-      <strong>2-4pm - 1:1s</strong>
+      <strong>2-4pm</strong> - 1:1s
     </td>
     <td>
       Project 1<br><br>
-      <strong>2-4pm - 1:1s</strong>
+      <strong>2-4pm</strong> - 1:1s
     </td>
     <td>
       Project 1<br><br>
-      <strong>2-4pm - 1:1s</strong>
+      <strong>2-4pm</strong> - 1:1s
     </td>
     <td>Project 1 Celebration</td>
   </tr>
