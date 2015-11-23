@@ -12,32 +12,32 @@
 # Keep looping while the low index is less than the high index.
 # If the target value is equal to the value at the mid index, return the mid index.
 # If the target value is greater than value at the mid index:
-  # => Set the low index to the mid index.
-  # => Set the mid index to the sum of the high index minus the low index, divided by two.
+  # => Set the low index to the mid index + 1.
+  # => Set the mid index to the sum of the high index and the low index, divided by two.
 # Else if the target value is less than value at the mid index:
-  # => Set the high index to the mid index.
-  # => Set the mid index to the sum of the high index minus the low index, divided by two.
+  # => Set the high index to the mid index - 1.
+  # => Set the mid index to the sum of the high index and the low index, divided by two.
 
 # binary search iterative solution
 def binary_search_iterative(array, target)
 
-  # declare variables for low, hight, and mid indexes
+  # declare variables for low, high, and mid indexes
   low = 0
   high = array.length - 1
   mid = (low + high) / 2
 
-  # while the low index is less than the high index
-  while low <= high do
+  # while low index is less than high index
+  while low < high do
     return mid if target == array[mid]
     puts "low: #{low}, mid: #{mid}, high: #{high}"
 
     if target > array[mid]
-      # move lower bound up to mid, recalculate new mid
-      low = mid
+      # move lower bound up to mid + 1, recalculate new mid
+      low = mid + 1
       mid = (low + high) / 2
     elsif target < array[mid]
-      # move upper bound down to mid, recalculate new mid
-      high = mid
+      # move upper bound down to mid - 1, recalculate new mid
+      high = mid - 1
       mid = (low + high) / 2
     end
   end
@@ -50,7 +50,7 @@ end
 def binary_search_recursive(array, target, low = 0, high = array.length - 1)
 
   # if target not found, return false
-  return false if low > high
+  return false if low >= high
 
   # declare variable for mid index
   mid = (low + high) / 2
