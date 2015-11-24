@@ -182,6 +182,6 @@ Finally, we can refactor the `app/views/site/index.html.erb` file so that it use
 
 1. Create a new route: a `GET` request to `/about` that hits the controller#action `site#about`.
 2. Have `site#about` render a view in `app/views/site/about.html.erb`.
-3. Set a variable equal to your favorite programming language in your `site#about` controller method, and have the controller pass that variable to the view.  
+3. Set a variable equal to your favorite programming language in your `site#about` controller method, and have the controller pass that variable to the view.
 4. Update the `app/views/site/about.html.erb` view template to show the variable you passed in. Your view should now display your favorite programming language!
 5. Create an array of your favorite programming libraries and/or frameworks in your `site#about` controller method. Pass them into your view and iterate through each of them inside a `<ul>` tag. Create an `<li>` tag for each favorite language/framework.
