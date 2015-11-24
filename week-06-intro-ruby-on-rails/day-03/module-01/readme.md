@@ -16,31 +16,31 @@ Let's create a new Hash
 
 * Hashes are simple key/value stores.
 
-**Challenge:**
+<details>
+  <summary>How can I organize my data using key/value pairs in Ruby?</summary>
 
-How can I organize my data using key/value pairs in Ruby? Like so:
+  ```ruby
+  # hash rocket notation
+  # accessed like hash["key"] #=> value
+  hash = {"name"=>"Napoleon", "fav_food"=>"steak", "skills"=>["archery", "combat", "egg farming"]}
+  hash["name"] #=> "Napoleon"
+  hash['skills'].first #=> "archery"
+  test =  { 0 => "Zero", 1 => "One", 2 => "Two" }
+  test[0] #=> "Zero"
 
-```ruby
-# hash rocket notation
-# accessed like hash["key"] #=> value
-hash = {"name"=>"Napoleon", "fav_food"=>"steak", "skills"=>["archery", "combat", "egg farming"]}
-hash["name"] #=> "Napoleon"
-hash['skills'].first #=> "archery"
-test =  { 0 => "Zero", 1 => "One", 2 => "Two" }
-test[0] #=> "Zero"
+  website = { 'url' => 'http://myblog.wordpress.com', 'author' => 'Melissa ', 'likes' => 3000 }
+  website['url'] #=> 'http://myblog.wordpress.com'
+  website['likes'] #=> 3000
 
-website = { 'url' => 'http://myblog.wordpress.com', 'author' => 'Melissa ', 'likes' => 3000 }
-website['url'] #=> 'http://myblog.wordpress.com'
-website['likes'] #=> 3000
+  # symbol notation, use this more often
+  # accessed like hash[:key] #=> value
+  agent = {name: "James Bond", fav_food: "Vodka Martini",
+  skills: ["hand to hand combat", "marksmanship", "espionage"]}
 
-# symbol notation, use this more often
-# accessed like hash[:key] #=> value
-agent = {name: "James Bond", fav_food: "Vodka Martini",
-skills: ["hand to hand combat", "marksmanship", "espionage"]}
-
-agent[:name] #=> "James Bond"
-agent[:skills] #=> ["hand to hand combat", "marksmanship", "espionage"]
-```
+  agent[:name] #=> "James Bond"
+  agent[:skills] #=> ["hand to hand combat", "marksmanship", "espionage"]
+  ```
+</details>
 
 ## Objects
 
@@ -48,30 +48,31 @@ Everything in Ruby is an Object; however, we almost never use plain vanilla Obje
 
 Different objects provide different types of functionality for storing data and performing behaviors. However, for more complex applications, classes (a certain kind of object) are used to model real-world interactions.
 
-**Challenge:**
-How can we prove that the Hash we just created inherited from `Basic Object`?
+<details>
+  <summary>How can we prove that the Hash we just created inherited from `Basic Object`?</summary>
 
-*Hint:* use the `#is_a?` method
+  Use the `#is_a?` method to compare the hash with an object.
+</details>
 
 ### Class Inheritance Tree
 
 ![Class inheritance](http://i.stack.imgur.com/rvcEi.png)
 
-##Classes
+## Classes
 
-**Challenge:**
-How do we create a class in Ruby?
+<details>
+  <summary>How do we create a class named Car that goes "Putt-Putt" when it's initialized?</summary>
 
-Goal: Let's create a Car that goes "Putt-Putt" when it's first *initialized*
-
-*Refresher: Classes are datatypes used to create more data. They are analogous to constructors in JavaScript.*
+  ```ruby
+  class Car
+    def initialize
+      p "Putt-Putt"
+    end
+  end
+  ```
+</details>
 
 ## Attributes
-
-What should we do if we want to set attributes on the car, such as a paint color and year?
-
-**Challenge:**
-Enable this code...
 
 ```ruby
 fiat = Car.new
@@ -80,18 +81,38 @@ fiat.color
 => "hot pink"
 ```
 
-*Hint*: Use `attr_accessor`.
+<details>
+  <summary>What should we do if we want to set attributes on the car, such as a paint color and year?</summary>
 
-*Bonus*: Don't use `attr_accessor`.
+  ```ruby
+  class Car
+    attr_accessor :color
+  end
+  ```
+</details>
 
 ## Methods
 
-**Challenge:**
-How would we create an instance method `color?` for our `Car` class instances, which tests whether the color matches what is passed in?
+Do you remember the difference between methods and functions in JavaScript?
 
-**Note:** Methods ending in `?` are conventionally used to denote that they return a boolean value. <a href="https://github.com/bbatsov/ruby-style-guide#naming" target="_blank">Source</a>
+Methods ending in `?` are conventionally used to denote that they return a boolean value. <a href="https://github.com/bbatsov/ruby-style-guide#naming" target="_blank">Ruby Style Guide</a>.
+
+<details>
+  <summary>How would we create an instance method `color?` for our `Car` class instances, which tests whether the color matches what is passed in?</summary>
+
+  ```ruby
+  class Car
+    attr_accessor :color
+
+    def color?(other_color)
+      return color == other_color
+    end
+  end
+  ```
+</details>
 
 ```ruby
+# Example call.
 alpha = Car.new
 alpha.color = "orange"
 alpha.color?("blue")
@@ -100,26 +121,48 @@ alpha.color?("orange")
 => true
 ```
 
-*Hint*: define a new method with the `def` keyword inside the class.
-
 ## Initialization and Instance Variables
 
-**Challenge:**
-What if I want to set the color of the car at the moment I'm creating it? How could I enable code like this?
+<details>
+  <summary>What if I want to set the color of the car at the moment I'm creating it? How could I enable code like this?
 
-```ruby
-lambo = Car.new("red")
-lambo.color
-=> "red"
-```
+  ```ruby
+  lambo = Car.new("red")
+  lambo.color
+  => "red"
+  ```
+  </summary>
 
-*Hint*: Create an instance variable with `@`.
+  ```ruby
+  class Car
+    attr_reader :color
+
+    def initialize(color)
+      @color = color
+    end
+  end
+  ```
+</details>
 
 ## Class Variables
 
-What if I wanted a running counter for all the cars I've ever created? Enable the code: `Car.total` which outputs the total number of all cars ever created.
+<details>
+  <summary>What if I wanted a running counter for all the cars I've ever created? Enable the code: `Car.total` which outputs the total number of all cars ever created.</summary>
 
-*Hint*: Create a class variable with `@@` to store the count and use the `self` keyword to add a class method.
+  ```ruby
+  class Car
+    @@total = 0
+
+    def initialize
+      @@total += 1
+    end
+
+    def self.total
+      @@total
+    end
+  end
+  ```
+</details>
 
 ## Quick Review
 
@@ -144,14 +187,28 @@ class Vehicle
   def initialize
     @speed = 0
   end
+
   def accelerate(speed)
     @speed += speed
   end
 end
 ```
 
-**Challenge:**
-How can I create both `Car` and `Motorbike` classes while being DRY and not duplicating the method `accelerate` in each?
+<details>
+  <summary>How can I create a `Car` class while being DRY and not duplicating the method `accelerate`? Let's inherit from the `Vehicle` class above and make the car hella fast.</summary>
+
+  ```ruby
+  class Car < Vehicle
+    def initialize
+      @speed = 2
+    end
+
+    def accelerate(speed)
+      @speed *= speed
+    end
+  end
+  ```
+</details>
 
 ## Exercise: Characters and Superheroes
 
@@ -176,7 +233,7 @@ Superheroes are still Characters after all. In this exercise, you'll define:
     - Adds 2 new methods:
       - `persuade`, which
         - takes another instance of the `Superhero` class as an argument
-        - compares charisma of the character using the method to the character passed to the method as an argument *Hint*: use if / else
+        - compares charisma of the character using the method to the character passed to the method as an argument
         - prints a message stating whether the character calling the method was able to persuade the other character or not
       - `study_rhetoric`, which increments `charisma` and optionally prints a message about the character's new charisma level
     - Superheroes must keep their identities secret! Make sure your `Superhero` class *overrides* the existing `greet` method (in `Character`) so that a `Superhero` doesn't reveal their true `"name"`
