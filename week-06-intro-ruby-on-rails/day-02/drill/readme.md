@@ -58,12 +58,19 @@ For a more complete list of basic regex patterns, see <a href="http://rubular.co
 /(a|b)/ # matches 'a' or 'b'
 ```
 
+<details>
+  <summary>What does `\w` match?</summary>
+
+  Any word character (letter, number, underscore).
+</details>
+
 ## Challenges
 
 Use <a href="http://rubular.com" target="_blank">Rubular</a> for all challenges *except* Base Challenge #1.
 
 ### Base Challenges
-1. In the terminal, type `irb` (you're now in the ruby console!). Type `/hello world/.class`. What does it return? Note: To exit `irb` in the terminal, simply type `exit`.
+
+1. In the terminal, type `irb` (you're now in the ruby console!). Type `/hello world/.class`. What does it return?
 
 2. Write a regexp to match instances of "regex" in the text below. Copy and paste the text (including the HTML tags!) into Rubular as the test string.
 
@@ -71,8 +78,18 @@ Use <a href="http://rubular.com" target="_blank">Rubular</a> for all challenges 
   <p>A Regular Expression (regex or regexp for short) is a special text string for describing a search pattern.
   You can think of regular expressions as <span>wildcards</span> on steroids. You are probably familiar with wildcard
   notations such as *.txt to find all text files in a file manager. The regex equivalent is <span>\.txt\</span></p>
+  <a href="tel:867-5309">Call the RegEx Experts if you get lost.</a>
+  <a href="mailto:theregexexperts@example.com">The RegEx Experts</a>
   ```
 
 3. With the same test string (text above), write a regexp to match instances of "regex", "regexp", or "regular expression".
 
 4. Edit the regexp you just wrote to make sure it's case-insensitive (i.e. it should match "Regular Expression" as well as "regular expression"). **Hint:** Look up `/i`.
+
+5. Match any phone numbers in the HTML like "867-5309".
+
+6. Match any email addresses in the HTML.
+
+### Real World Challenge
+
+* [Parse Log Files](http://www.codewars.com/kata/parse-the-log)
