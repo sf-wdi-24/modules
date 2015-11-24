@@ -37,7 +37,7 @@
     <td>HW</td>
     <td></td>
     <td></td>
-    <td>Finish <a href="https://github.com/sf-wdi-24/ruby-oop-lab" target="_blank">Ruby OOP Lab</a> & <a href="" target="_blank">Intro Rails Reading</a></td>
+    <td>Finish <a href="https://github.com/sf-wdi-24/ruby-oop-lab" target="_blank">Ruby OOP Lab</a> & <a href="https://github.com/sf-wdi-24/intro-rails-reading" target="_blank">Intro Rails Reading</a></td>
     <td></td>
     <td></td>
   </tr>
