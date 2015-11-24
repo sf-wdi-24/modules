@@ -15,50 +15,38 @@ Nope, this is OK and normal. Learning another programming language's approach to
 
 What you've learned about functions and methods in JavaScript will still be valid in Ruby even though the syntax is different.
 
-
-### Parts of A Language
-
-* `Primitives`
-* `Combinations`
-* **`Abstractions`**
-
-
-### Some Abstractions
-
 #### Javascript
 
 * Function
-    * Anonymous: `function (param1, [..param2, [...]]){...}`,
-    * Named: `function Name(param1, [..param2, [...]]){...}`
-    * Use *lexical scope* (look up variables in outer scopes)
-    * Captures scope (think of closures)
-    * Used as values, passed around like other variables
-    * Require explicit `return`
-    * All parameters are optional
+  * Anonymous: `function (param1, [..param2, [...]]){...}`.
+  * Named: `function Name(param1, [..param2, [...]]){...}`.
+  * Use *lexical scope* (look up variables in outer scopes).
+  * Captures scope (think of closures).
+  * Used as values, passed around like other variables.
+  * Require explicit `return`.
+  * All parameters are optional.
 
 #### Ruby
 
- * Function
-    * Uses `def`
-    * Does not capture scope
-    * Not used as values or passed around
-    * Optional parameters must be specified
-    * Implicitly returns last evaluation
+* Function
+  * Uses `def`.
+  * Does not capture scope. See `lambda`.
+  * Not used as values or passed around.
+  * Optional parameters must be specified.
+  * Implicitly returns last evaluation.
 
 * Block
-    * Used with `.each`, `.map`, et cetera
+  * Used with `.each`, `.map` and all sorts of others. Any ideas why?
 
-    ```
-    some_method do |param1, [param2, [...]]
-        # some code
-    end
+  ```ruby
+  some_method do |param1, [param2, [...]]
+      # some code
+  end
+  ```
 
-    ```
-    * Captures scope
+  * Captures scope.
 
 ##Ruby Methods
-
-### Syntax
 
 #### Define a method
 
@@ -162,7 +150,7 @@ implicitly_return_5
 # => 5
 ```
 
-Sometimes, we do have to use the reserved word `return`. The best example is if we might to break out of a loop early. This next example simulates a kid taking 3 swings at a pinata. It returns the number of swings remaining at the end of the kid's turn (usually 0). But! each swing might burst the pinata. We use random chance to determine if the pinata bursts. If it does, the method shows a message that the pinata burst and returns early.
+Sometimes, we do have to use the reserved word `return`. The best example is if we might to break out of a loop early. This next example simulates a kid taking 3 swings at a piñata. It returns the number of swings remaining at the end of the kid's turn (usually 0). But! Each swing might burst the piñata. We use random chance to determine if the piñata bursts. If it does, the method shows a message that the piñata burst and returns early.
 
 ```ruby
 def pinata
@@ -215,8 +203,7 @@ p list_numbers_quietly(5,6)
 # => [5, 6]
 ```
 
- The `puts` method is the most commonly used one for printing/logging.
-
+The `puts` method is the most commonly used one for printing/logging but shouldn't be. If you do I'll erase your code.
 
 #### Parameters can have default values
 
@@ -233,6 +220,7 @@ say "Goodbye"
 # Goodbye
 # => nil
 ```
+
 #### Recursion: methods can call themselves
 
 ```ruby
@@ -258,8 +246,7 @@ recurse 3
 # => nil
 ```
 
-
-#### Functions have locally scoped variables (biggest difference from javascript!)
+#### Functions have locally scoped variables (biggest difference from JavaScript!)
 
 The following code won't change `foo`. Why?
 
@@ -327,6 +314,8 @@ puts foo
 # => nil
 ```
 
+Block scoping vs functional scoping...
+
 ###Example: Factorial
 
 A simple, common interview question asks candidates to compute the *factorial* of a number. (The factorial of a number just multiplies it by all lower positive numbers. For example, `6` factorial (written `6!`) is  `6*5*4*3*2*1`, which equals `720`.)
@@ -352,32 +341,32 @@ factorial(-1)
 ```
 
 ## How to run a ruby script inside a file
-1. `$ touch script.rb`
-2. `$ sublime script.rb`
-3. `$ ruby script.rb`
+1. `touch script.rb`
+2. `subl script.rb`
+3. `ruby script.rb`
 4. THAT'S IT!
-5. From irb you can run a ruby file by loading it `$ load './filename.rb'`
+5. From irb you can run a ruby file by loading it `load './script.rb'`
 
 ## How to use gems in irb
 
 Gems in Ruby are a lot like node modules. Say you want to use a gem like "Awesome Print" to make your printing of objects and strings colorized and indented?
 
-1. First install the gem on your computer: `$ gem install awesome_print`
+1. First install the gem on your computer: `gem install awesome_print`
 2. Now just require it at the top of your file or in irb and then use it according to its documentation.
   ```ruby
   require 'awesome_print'
   a = ["value1", "value2", "value3"]
   ap a
   ```
-[Ruby Toolbox](https://www.ruby-toolbox.com/)
 
+[Ruby Toolbox](https://www.ruby-toolbox.com/)
 
 ##Basic Challenges
 
 1. Make a folder called ruby-methods to keep all these ruby scripts we're about to write!
 2. In a new file, write a method called `full_name` that takes in two arguments `first` and `last` and returns a concatenated full name string.
 
-  **Challenge Set 1: Primes**
+**Challenge Set 1: Primes**
 
 1. Write an `is_prime?` method to check if a number is prime. A prime number is:
   * greater than 1
@@ -387,20 +376,19 @@ Gems in Ruby are a lot like node modules. Say you want to use a gem like "Awesom
 
 1. Write a method that takes in a number and returns a list of **all** prime numbers less than the given number.
 
-   **Challenge Set 2: Command Line Interaction**
+**Challenge Set 2: Command Line Interaction**
 
 1. Write a method called `get_contact` that
-
   * takes in a `contacts` hash as a parameter, where the keys in `contacts` are names and the values are phone numbers,
   * prompts the terminal for a **new** `name` and a `phone` number,
   * and then adds the `name` and `phone` as a key value pair respectively **only if** `name` is not already a contact name,
   * and `return`s the updated `contacts` hash.
 
-   A sample contacts hash you could use to test would be `sample = {"Bob"=> 4152890045, "Emergency"=> 911, "Jenny"=> 8675309}`.
+A sample contacts hash you could use to test would be `sample = {"Bob"=> 4152890045, "Emergency"=> 911, "Jenny"=> 8675309}`.
 
 1. Using `Array#map`, write a method called `get_responses` that takes an array of questions (strings) and returns an array of responses input from the console for each question. (Hint: you will need to use `gets.chomp` and `puts` ).
 
-  **Challenge Set 3: Let's have a HTTParty!**
+**Challenge Set 3: Let's have a HTTParty!**
 
 4. Let's have an [HTTParty](https://github.com/jnunemaker/httparty)!
 
