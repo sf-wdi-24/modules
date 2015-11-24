@@ -180,7 +180,7 @@ Adapted from <a href="http://socket.io/get-started/chat" target="_blank">Socket.
   ...
   ```
 
-  This listens for users (clients) connecting and disconnecting to the web socket. Open `http://localhost:3000` in multiple browser tabs, then check your terminal where you have `nodemon` running. What do you see? Now close some of the tabs, and look at the terminal again.
+  This listens for users (clients) connecting and disconnecting to the web socket. Once you set up the socket connection on the client (steps 2-3), you'll see these messages every time a user connects or disconnects.
 
 2. To set up the socket connection on the client, add the `socket.io` client-side library to `index.hbs` BEFORE you require `main.js`:
 
@@ -220,7 +220,7 @@ Adapted from <a href="http://socket.io/get-started/chat" target="_blank">Socket.
   });
   ```
 
-  Now you're ready to use the socket to pass messages between your client and server!
+  Open `http://localhost:3000` in multiple browser tabs, then check your terminal where you have `nodemon` running. What do you see? Now close some of the tabs, and look at the terminal again. Now you're ready to use the socket to pass messages between your client and server!
 
 4. The first thing you need is a form in `index.hbs` for the user to type a message. You also need an element on the page to list all the messages.
 
