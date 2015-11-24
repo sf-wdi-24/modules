@@ -53,6 +53,10 @@ array[mid] < target
 
 The process continues, eliminating half of the elements, then comparing the target value to the value of the middle element of the remaining elements, until the target value is either found (and its position is returned), or until the entire array has been searched (and `false` is returned).
 
+Here's a visual example of the same process outlined above, with a different input array:
+
+![binary-search](https://cloud.githubusercontent.com/assets/7833470/11384130/11ef7962-92c2-11e5-83cf-bb9d918446d9.png)
+
 ## Real-Life Example
 
 <a href="https://study.cs50.net/binary_search" target="_blank">Searching for a name in a telephone book using binary search</a> (an awesome introduction to binary search).
