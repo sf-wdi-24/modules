@@ -1,89 +1,92 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Intro Rails
 
-## Learning Objectives
+| Objectives |
+| :--- |
+| Articulate the Rails philosophy and the MVC pattern. |
+| Start a Rails project with no database, and create routes that render dynamic templates. |
+| Distinguish between Express and Rails. |
 
-By the end of this lecture you should be able to...
+## Rails Philosophy
 
-- Articulate the Rails philosophy & the MVC pattern
-- Start a rails project with no database and create routes to dynamic templates.
-- Distinguish between Express and Rails
-
-## Philosophy
-
-Rails values...
+**Rails values:**
 
 * DRYness
-* Separation of Concerns & Modularity
-* Abstraction & encapsulation
+* Separation of concerns and modularity
+* Abstraction and encapsulation
 * Convention over configuration
 
 ## Separation of Concerns
 
-In writing a large application it is important to establish something known as **Separation of Concerns**, *writing modular code that focuses on one aspect within the application.* The benefit of this is similar to idea of **compartmentalization** with respect to a production line, which allows for *more rapid development* by being able to **divide and conquer** the construction of a product.
+In writing a large application, it's important to establish something known as **separation of concerns**, *writing modular code that focuses on one aspect within the application.* The benefit of this is similar to the idea of **compartmentalization** with respect to a production line, which allows for *more rapid development* by being able to **divide and conquer** the construction of a product.
 
 ## MVC
 
-Rails uses an **MVC** architecture
+Rails uses an **MVC** architecture.
 
-**M** odel - The model refers to the data objects that we use. It's the object oriented approach to design. The data in our database will be the most common type of object that we'll put there.
+**M** odel - The model refers to the data objects in our application. It's the object-oriented approach to design. The data in our database will be the most common type of object our models will represent.
 
-**V** iew - The view is the Presentation layer. It's what the user sees and interacts with, essentially the web pages. The HTML, the CSS and the JavaScript. The controller processes and responds to user events, such as clicking on links and submitting forms.
+**V** iew - The view is the presentation layer. It's what the user sees and interacts with, essentially the web pages. The HTML, the CSS, and the JavaScript. The controller processes and responds to user events, such as clicking on links and submitting forms.
 
-**C** ontroller - The controller will make decisions based on the request and then control what happens in response. It controls the interaction with our models and with our views.
+**C** ontroller - The controller makes decisions based on user requests, and then it controls what happens in the response. It controls the interaction between our models and our views.
 
-![MVC Diagram](http://elibildner.files.wordpress.com/2012/06/screen-shot-2012-06-05-at-2-12-18-am.png)
+![mvc](https://cloud.githubusercontent.com/assets/7833470/11377666/dfa363ae-929b-11e5-9b39-c93ff5347a99.png)
 
 ## Railstaurant Metaphor
 
-The **client** is a customer eating in the restaurant, **rails** is the kitchen, the **request** is the order made, the **router** is the waiter, the **controller** is a chef, the **model** is a recipe, the **database** is the giant walk-in refrigerator with ingredients, the **view** is plating the dish to look pretty, the **response** with a file is a waiter finally serving the dish to the customer.
+* **Client:** a customer eating in the restaurant
+* **Rails:** the kitchen
+* **Request:** the customer's order
+* **Router:** the waiter
+* **Controller:** the chef
+* **Model:** a recipe
+* **Database:** the giant, walk-in refrigerator with ingredients
+* **View:** plating the dish to look pretty
+* **Response:** the waiter serving the dish to the customer
 
 ## Rails App Setup
 
-## How to create a rails project
+#### Rails New
 
-`rails new NAME_OF_APP`
+Run `rails new your_app_name` from your Terminal to create a new Rails project.
 
-But then it says, bundle install at the end, so, it's created all the files, and now it's telling bundler to install all of the gems that might be missing.
+#### Gems
 
-## Gems
+Gems are like Node packages (modules). You can put any gem you'd like to use in your project in your `Gemfile`. Run `bundle install` from your Terminal anytime you change your `Gemfile` to install the added gems into your app. You need to restart your Rails server after installing new gems.
 
-Gems are like Node packages. You have to put any gem you want to use in your Gemfile. You have to run bundle anytime you change your Gemfile. Your rails server needs to be restarted after any changes to your Gemfile.
+#### Bundler
 
-## Bundler
+Bundler is a separate gem from Rails and can be used outside of Rails, but Rails depends on it to manage the RubyGems that your application needs. There are two files that matter to bundler: `Gemfile` and `Gemfile.lock`. `Gemfile` contains configuration information about what gems are part of our project; it is similar to the `package.json` file in Node.
 
-Bundler is a separate gem from Rails and can be used outside of Rails, but Rails is going to depend on it to manage the RubyGems that the application needs. The first thing that you need to know is that there are two files that matter to bundler: `Gemfile` and `Gemfile.lock`. Gemfile contains configuration information about what gems are part of our project; it is similar to the `package.json` file in Node.
+Bundler looks at the `Gemfile`, loading all the included gems in addition to each gem's dependencies. It then generates a manifest file that is stored in `Gemfile.lock`. **Never** edit `Gemfile.lock`!
 
-Bundler looks at the `Gemfile`, loading all the included gems in addition to each gem's dependencies. It then generates a manifest file that is stored in Gemfile.lock. **Never** edit Gemfile.lock!
+So how do you tell Bundler to take your `Gemfile` and generate `Gemfile.lock`? Run `bundle install` in your Terminal. When you create a new Rails app, it will automatically `bundle install` in the Terminal unless you specify otherwise.
 
-So how do you tell Bundler to take your Gemfile and turn it into Gemfile.lock? Run: `bundle install`. When we create a rails application, it will run this command for us unless we specify otherwise.
+## Running Rails Server
 
-## Running Rails
-
-- Create a new rails app with `rails new railsFun --skip-activerecord`
-    - the last flag tells the application not use ActiveRecord
-    - ActiveRecord is our ORM that manages our Models and our database, we'll learn more about it this afternoon
-- `cd` into your `railsFun` folder
-- run `rails server` or just `rails s` and see what happens
-- This will start a server on `localhost:3000` head there in the browser and see what it says...
+1. Create a new rails app from the Terminal with `rails new intro_rails --skip-activerecord`. (The last flag tells the application not use Active Record, which is Rails's built-in ORM. We'll learn more about it this afternoon.)
+2. Change directories into your `intro_rails` app.
+3. Run `rails server` or just `rails s` from the Terminal, and see what happens.
+4. This will start a server on `localhost:3000`. Go there in the browser, and see what it says...
 
 ## Rails File Structure
 
-![Rails File Structure](http://i.imgur.com/whOL4DQ.png)
+![whol4dq](https://cloud.githubusercontent.com/assets/7833470/11381832/3f659a16-92b3-11e5-829d-be029b3566c9.png)
 
 ## Routing
 
-- In routes.rb we write logic to map our routes to controllers we will make.
-- Let's say when a user sends a `GET` request to the root route, `/`, we want the `welcome` controller's `index` method to run. In order to do that we could write:
-
-route.rb
+* Write logic to define routes in `routes.rb`.
+* Let's say when a user sends a `GET` request to the root route, `/`, we want the `site` controller's `index` method to run. In order to do that we could write:
 
 ```ruby
-get "/" => "welcome#index"
+#
+# config/routes.rb
+#
+get "/", to: "site#index"
 ```
 
-Try saving the file and heading to your root route. What error do you get?
+Save the file, and navigate to your root route in the browser, `localhost:3000`. What error do you get?
 
-**Pro tip:** run `rake route` in your rails app to see a list of all the application's routes
+**Tip:** run `rake routes` in the Terminal from the root directory of your Rails app to see a list of all your app's routes.
 
 ## Controllers
 
