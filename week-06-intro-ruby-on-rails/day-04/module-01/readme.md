@@ -81,6 +81,7 @@ So how do you tell Bundler to take your `Gemfile` and generate `Gemfile.lock`? R
 #
 # config/routes.rb
 #
+
 get "/", to: "site#index"
 ```
 
