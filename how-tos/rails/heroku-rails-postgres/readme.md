@@ -1,4 +1,4 @@
-# <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" width="60">  Deploying to Heroku with Rails & Postgres
+# <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Deploying to Heroku with Rails & Postgres
 
 ## Before You Do Anything
 
@@ -14,21 +14,21 @@
 
   In the Terminal, from your project's root directory, run:
 
-	```bash
-	$ heroku create YOUR_APP_NAME
+	```zsh
+	➜  heroku create YOUR_APP_NAME
 	```
 
   If you don't supply a name for your app, Heroku will create a random one for you. We strongly suggest giving your app a name to personalize it and reflect its purpose.
 
 2. Also in the Terminal, from your project's root directory, run:
 
-  ```bash
-  $ git remote -v
+  ```zsh
+  ➜  git remote -v
   ```
 
   You should see something like this:
 
-  ```bash
+  ```zsh
   heroku	https://git.heroku.com/YOUR_APP_NAME.git (fetch)
   heroku	https://git.heroku.com/YOUR_APP_NAME.git (push)
   origin	https://github.com/YOUR_GITHUB_USERNAME/YOUR_GITHUB_REPO_NAME.git (fetch)
@@ -43,6 +43,7 @@
   #
   # Gemfile
   #
+
   gem 'pg'
   ```
 
@@ -52,6 +53,7 @@
   #
   # Gemfile
   #
+
   group :production do
     gem 'rails_12factor'
   end
@@ -59,25 +61,25 @@
 
 3. Run this command in your Terminal to bundle install locally:
 
-  ```bash
-  $ bundle install --without production
+  ```zsh
+  ➜  bundle install --without production
   ```
 
 ## Deploy to Heroku
 
 1. You should be all set up now, so add and commit your changes, then push to Heroku:
 
-  ```bash
-  $ git status
-  $ git add -A
-  $ git commit -m "ready for deploy"
-  $ git push origin master
-  $ git push heroku master
+  ```zsh
+  ➜  git status
+  ➜  git add -A
+  ➜  git commit -m "ready for deploy"
+  ➜  git push origin master
+  ➜  git push heroku master
   ```
 
   Your Terminal output should look something like this (but a little longer):
 
-  ```bash
+  ```zsh
   Initializing repository, done.
   Counting objects: 64, done.
   Delta compression using up to 4 threads.
@@ -128,30 +130,30 @@
 
   * From the Terminal, precompile your assets:
 
-    ```bash
-    $ rake assets:precompile
+    ```zsh
+    ➜  rake assets:precompile
     ```
 
   * Add and commit new changes, then try pushing to Heroku again:
 
-    ```bash
-    $ git status
-    $ git add -A
-    $ git commit -m "precompiling assets"
-    $ git push origin master
-    $ git push heroku master
+    ```zsh
+    ➜  git status
+    ➜  git add -A
+    ➜  git commit -m "precompiling assets"
+    ➜  git push origin master
+    ➜  git push heroku master
     ```
 
 3. Your deployed app has a separate database from your development environment. To set up your Heroku database, run your migrations in production:
 
-  ```bash
-  $ heroku run rake db:migrate
+  ```zsh
+  ➜  heroku run rake db:migrate
   ```
 
 4. If all went well, you should be able to visit your live application by running:
 
-  ```bash
-  $ heroku open
+  ```zsh
+  ➜  heroku open
   ```
 
 ## Debugging
@@ -162,36 +164,33 @@ Hopefully your app works on Heroku, however, you may see a sad page that looks l
 
 1. If this happens to you, check your Heroku logs in the Terminal:
 
-  ```bash
-  $ heroku logs
+  ```zsh
+  ➜  heroku logs
   ```
 
 2. Scan all of the logs for error messages. If you see obvious error messages, goole what they mean. If you still can't find a solution, now would be a good time to ask an instructor for help.
 
 ## Add Your API Keys
 
-<!-- 1. If you haven't added your API keys locally, first read <a href="#" target="_blank">these instructions</a>.
-@TODO: Create "how to" for dotenv-rails gem and link to it here -->
-
-2. Set environment variables on Heroku:
+1. Set environment variables on Heroku:
 
   *Change MY_API_KEY to your variable name and your actual key*
 
-  ```bash
-  $ heroku config:set MY_API_KEY=0932nv8d17vhd72o2e8cfv82csd9n1dcd98
+  ```zsh
+  ➜  heroku config:set MY_API_KEY=0932nv8d17vhd72o2e8cfv82csd9n1dcd98
   ```
 
-3. Check that it worked:
+2. Check that it worked:
 
-  ```bash
-  $ heroku config
+  ```zsh
+  ➜  heroku config
   MY_API_KEY: 0932nv8d17vhd72o2e8cfv82csd9n1dcd98
   ```
 
-4. If you made a mistake and need to unset an API key:
+3. If you made a mistake and need to unset an API key:
 
-  ```bash
-  $ heroku config:unset MY_API_KEY
+  ```zsh
+  ➜  heroku config:unset MY_API_KEY
   Unsetting MY_API_KEY and restarting myapp... done, v13
   ```
 
@@ -211,4 +210,4 @@ Hopefully your app works on Heroku, however, you may see a sad page that looks l
 
 Your Heroku collaborators should add the project's Heroku remote to their local git repositories.
 
-*  <a href="https://help.github.com/articles/adding-a-remote/" target="_blank">Adding a Remote</a>
+*  <a href="https://help.github.com/articles/adding-a-remote/" target="_blank">Adding a remote (GitHub Help)</a>
