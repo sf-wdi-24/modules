@@ -77,13 +77,13 @@ So how do you tell Bundler to take your `Gemfile` and generate `Gemfile.lock`? R
 * Write logic to define routes in `routes.rb`.
 * Let's say when a user sends a `GET` request to the root route, `/`, we want the `site` controller's `index` method to run. In order to do that we could write:
 
-```ruby
-#
-# config/routes.rb
-#
+  ```ruby
+  #
+  # config/routes.rb
+  #
 
-get "/", to: "site#index"
-```
+  get "/", to: "site#index"
+  ```
 
 Save the file, and navigate to your root route in the browser, `localhost:3000`. What error do you get?
 
@@ -91,90 +91,97 @@ Save the file, and navigate to your root route in the browser, `localhost:3000`.
 
 ## Controllers
 
-If you did the last step correctly, you should see an error message: `*uninitialized constant WelcomeController*`. This means that we need to create a controller with the name `welcome` as that is where we told our route to go in the first place!
+If you did the last step correctly, you should see an error message: "Uninitialized constant SiteController". This means we need to create a controller with the name `site`, since that's where we told our route to go in the first place!
 
-- Run: `rails generate controller welcome`
+From the Terminal, run `rails generate controller site`.
 
-Reload the page again and find a different error message: `*The action 'index' could not be found for WelcomeController*`. We have created the welcome controller correctly, but there is no `index` method defined. Let's make one:
-
-welcome_controller.rb
+Reload `localhost:3000` again, and find a different error message: "The action 'index' could not be found for SiteController". We created the site controller correctly, but there is no `index` method defined. Let's make one:
 
 ```ruby
-class WelcomeController < ApplicationController
-    def index
-    end
-end
-```
+#
+# app/controllers/site_controller.rb
+#
 
-Wow, another error! `*Missing template welcome/index...*` Since we have a `welcome` controller and an `index` method, Rails automatically will try to render a view with the path `app/views/welcome/index.html.erb`.  A directory called `app/views/welcome` should already exist; it was generated when the welcome controller was generated (thanks Rails!). Inside of that directory, create the file `index.html.erb`. Inside `index.html.erb`, add some html:
-
-app/views/welcome/index.html.erb
-
-```html
-<h1>I make internets with Rails</h1>
-<img src="http://i.giphy.com/SPZFhfUJjsJO0.gif" alt="learning internet" style="width: 300px">
-```
-Check out out your root route in the browser one more time.
-
-## View
-
-- This will not change the behavior, but you may wish to be more explicit in our controller by stating to `render` the template `index`
-
-app/controllers/welcome_controller.rb
-
-```ruby
-def index
-  render('index')
-end
-```
-
-Could we change these names to whatever we want? Absolutely!
-
-## ERB
-
-`.html.erb` files are templates that are processed with embedded ruby, `.erb` to generate an `.html` file. This is known as **server-side templating**. This enables Rails to serve up dynamic views based on the data it is served.
-
-Let's say we want to pass a random number to our view from 0-100... Try adding this to your html:
-
-```html
-<h1>I make internets with Rails</h1>
-<p>Random number is... <%= Random.new.rand(100) %></p>
-<img src="http://i.giphy.com/SPZFhfUJjsJO0.gif" alt="learning internet" style="width: 300px">
-```
-
-Woah, what is happening? Ruby code is being evaluated, and the result is printed into our html. The `<%` symbols escape our html. Remember from previous lessons we've seen on templating `<%` will *evaluate* the code while `<%=` will *interpolate* the result.
-
-## Passing Data to our View
-
-There's certainly some business logic happening in our View. This is bad. Our view should only be concerned with presenting the data, but not actually generating it. We currently have a violation of **separation of concerns**. To fix this, let's move the `Random.new.rand(100)` code to our controller and save it to a variable. Then, we will pass the variable into our view.
-
-app/controllers/welcome_controller.rb
-
-```ruby
-class WelcomeController < ApplicationController
+class SiteController < ApplicationController
   def index
-    @random = Random.new.rand(100)
-    render('index')
   end
 end
 ```
 
-Notice we did not create a variable named `random`. Instead we created an instance variable named `@random`. The **@** is VERY important. Normal variables' scope do not reach the view; only **instance variables**' scope reach the view.
-
-Finally, we can refactor the `welcome/index.html.erb` file so that it will use this new variable.
+Wow, another error! "Missing template site/index...". Since we have a `site` controller and an `index` method, Rails automatically tries to render a view with the path `app/views/site/index.html.erb`. A directory called `app/views/site` should already exist; it was generated when the site controller was generated (thanks Rails!). Inside of that directory, create the file `index.html.erb`. Inside `index.html.erb`, add some HTML:
 
 ```html
+<!-- app/views/site/index.html.erb -->
+
 <h1>I make internets with Rails</h1>
-<p>Random number is... <%= @random %></p>
 <img src="http://i.giphy.com/SPZFhfUJjsJO0.gif" alt="learning internet" style="width: 300px">
 ```
-Wooo, nice!
+
+Check out out `localhost:3000` in the browser one more time.
+
+## Rendering Views
+
+This will not change the behavior we just set up, but you may wish to be more explicit in our controller by stating to `render` the template `index`:
+
+```ruby
+#
+# app/controllers/site_controller.rb
+#
+
+def index
+  render :index
+end
+```
+
+## ERB
+
+`.html.erb` files are templates that are processed with embedded Ruby, `.erb`, to generate an `.html` file. This is known as **server-side templating**. ERB enables Rails to serve dynamic views based on the data in our app.
+
+Let's say we want to pass a random number to our view from 0-100. Try adding this to your HTML:
+
+```html
+<!-- app/views/site/index.html.erb -->
+
+<h1>I make internets with Rails</h1>
+<p>Random number is: <%= Random.new.rand(100) %></p>
+<img src="http://i.giphy.com/SPZFhfUJjsJO0.gif" alt="learning internet" style="width: 300px">
+```
+
+Woah, what is happening?! Ruby code is evaluated, and the result is printed into our HTML. The `<%` symbols escape our HTML. Templating with `<%` will *evaluate* the code, while `<%=` will *interpolate* the result.
+
+## Passing Data to the View
+
+There's certainly some business logic happening in our `index` view. This is bad. Our view should only be concerned with presenting the data, not actually generating it. We currently have a violation of **separation of concerns**. To fix this, let's move the `Random.new.rand(100)` code to the controller and save it to a variable. Then, we will pass the variable to the view.
+
+```ruby
+#
+# app/controllers/site_controller.rb
+#
+
+class SiteController < ApplicationController
+  def index
+    @random = Random.new.rand(100)
+    render :index
+  end
+end
+```
+
+Notice we did not create a variable named `random`. Instead we created an instance variable named `@random`. The **@** is VERY important. Normal variables do not have a scope that reaches the view; only **instance variables have a scope that reaches the view**.
+
+Finally, we can refactor the `app/views/site/index.html.erb` file so that it uses this new variable:
+
+```html
+<!-- app/views/site/index.html.erb -->
+
+<h1>I make internets with Rails</h1>
+<p>Random number is: <%= @random %></p>
+<img src="http://i.giphy.com/SPZFhfUJjsJO0.gif" alt="learning internet" style="width: 300px">
+```
 
 ## Challenges
 
-* Create a new route: a GET request to `/about` will hit the controller#action `welcome#about`.
-* Have `welcome#about` render a view in `welcome/about.html.erb`.
-* Set a variable equal to your favorite computing language in your `welcome#about` controller, and have the controller pass that variable into the view.  
-* Update the `welcome/about.html.erb` view template to show the variable you passed in.
-* Your view should now display your favorite language!
-* Bonus: create an array of your favorite languages in your controller. Pass them into your view and iterate through each of them inside a `<ul>`. Create an `<li>` tag for each favorite language.
+1. Create a new route: a `GET` request to `/about` that hits the controller#action `site#about`.
+2. Have `site#about` render a view in `app/views/site/about.html.erb`.
+3. Set a variable equal to your favorite programming language in your `site#about` controller method, and have the controller pass that variable to the view.  
+4. Update the `app/views/site/about.html.erb` view template to show the variable you passed in. Your view should now display your favorite programming language!
+5. Create an array of your favorite programming libraries and/or frameworks in your `site#about` controller method. Pass them into your view and iterate through each of them inside a `<ul>` tag. Create an `<li>` tag for each favorite language/framework.
