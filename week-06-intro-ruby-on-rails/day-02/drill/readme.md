@@ -84,7 +84,7 @@ Use <a href="http://rubular.com" target="_blank">Rubular</a> for all challenges 
 
 3. With the same test string (text above), write a regexp to match instances of "regex", "regexp", or "regular expression".
 
-4. Edit the regexp you just wrote to make sure it's case-insensitive (i.e. it should match "Regular Expression" as well as "regular expression"). **Hint:** Look up `/i`.
+4. Edit the regexp you just wrote to make sure it's case-insensitive (i.e. it should match "Regular Expression" as well as "regular expression").
 
 5. Match any phone numbers in the HTML like "867-5309".
 
