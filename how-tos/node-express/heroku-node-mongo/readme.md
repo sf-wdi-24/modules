@@ -139,7 +139,7 @@ Hopefully your app works on Heroku, however, you may see a sad page that looks l
   ➜  heroku logs
   ```
 
-2. Scan all of the logs for error messages. If you see obvious error messages, goole what they mean. If you still can't find a solution, now would be a good time to ask an instructor for help.
+2. Scan all of the logs for error messages. If you see obvious error messages, google what they mean. If you still can't find a solution, now would be a good time to ask an instructor for help.
 
 ## Add Your API Keys
 
