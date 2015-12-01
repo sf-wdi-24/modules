@@ -1,39 +1,7 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Ruby Bubble Sort
 
-Run the tests in the `spec` folder, and write your code in `bubble_sort.rb`.
 
-----
-
-Keep in mind all the different ways you can explore your code:
-
-**From the Command Line**:  
-```ruby
-ruby bubble_sort.rb # just make sure you're printing some output!
-```
-
-**In the REPL**:  
-```ruby
-irb
-# or
-pry
-```
-
-```ruby
-pry > require "./bubble_sort.rb"
-pry > bubble_sort([3,2,1])  # => when we start this returns nil
-```
-
-**Using Rspec Tests**:   
-```bash
-rspec
-# or
-rspec spec/bubble_sort_spec.rb
-# or, run an individual test
-rspec -e "handles zero"
-```
-
-
-# Bubble Sort Refresher
+## Bubble Sort Refresher
 Pre-work: <a href="https://www.youtube.com/watch?v=lyZQPjUT5B4" target="_blank">First, some Hungarian ("Csángó") folk dance.</a>
 
 Bubble sort is one of the first sorting algorithms you should try and master.  It essentially forces larger elements to 'sink' to the bottom/back while inadvertently 'floating' smaller elements to the top/front of a list.  This is done with numerous comparisons between one element in an array and its neighbor.  
@@ -111,3 +79,31 @@ When there is only one element (the first element) left in our unsorted list, it
 ### Now write your own bubble <a href="https://github.com/sf-wdi-24/ruby-bubble-sort" target="_blank">sort</a>!
 
 Run the tests in the `spec` folder, and write your code in `bubble_sort.rb`.
+
+Keep in mind all the different ways you can explore your code:
+
+**From the Command Line**:  
+```ruby
+ruby bubble_sort.rb # just make sure you're printing some output!
+```
+
+**In the REPL**:  
+```ruby
+irb
+# or
+pry
+```
+
+```ruby
+pry > require "./bubble_sort.rb"
+pry > bubble_sort([3,2,1])  # => when we start this returns nil
+```
+
+**Using Rspec Tests**:   
+```bash
+rspec
+# or
+rspec spec/bubble_sort_spec.rb
+# or, run an individual test
+rspec -e "handles zero"
+```
