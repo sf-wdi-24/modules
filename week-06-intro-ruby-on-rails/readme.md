@@ -31,7 +31,7 @@
     <td><a href="./day-02/module-02/">Username Generator Lab</a></td>
     <td><a href="./day-03/module-02/">Ruby OOP Lab</a></td>
     <td><a href="./day-04/module-02/">Intro ActiveRecord</a></td>
-    <td>Intro <a href="https://github.com/sf-wdi-24/rails_bog_app" target="_blank">Weekend Lab (Bog App)</a></td>
+    <td>Intro <a href="https://github.com/sf-wdi-24/rails_bog_app" target="_blank">Weekend Lab (Rails Bog App)</a></td>
   </tr>
   <tr>
     <td>HW</td>
@@ -39,6 +39,6 @@
     <td></td>
     <td>Finish <a href="https://github.com/sf-wdi-24/ruby-oop-lab" target="_blank">Ruby OOP Lab</a> & <a href="https://github.com/sf-wdi-24/intro-rails-reading" target="_blank">Intro Rails Reading</a></td>
     <td></td>
-    <td><a href="https://github.com/sf-wdi-24/rails_bog_app" target="_blank">Weekend Lab (Bog App)</a></td>
+    <td><a href="https://github.com/sf-wdi-24/rails_bog_app" target="_blank">Weekend Lab (Rails Bog App)</a></td>
   </tr>
 </table>
