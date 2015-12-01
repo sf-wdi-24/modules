@@ -107,3 +107,4 @@ rspec spec/bubble_sort_spec.rb
 # or, run an individual test
 rspec -e "handles zero"
 ```
+If you need guidance for the challenges <a href="https://github.com/sf-wdi-24/ruby-bubble-sort/tree/solutions" target="_blank">here</a> are the solutions.
