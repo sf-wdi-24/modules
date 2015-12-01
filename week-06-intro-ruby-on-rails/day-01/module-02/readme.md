@@ -81,7 +81,9 @@ As we learn Ruby, it's important to revisit how we learned our first language an
 
 2. Write a program that maps an array of words to the reverse of each word. (**Hint:** Look up `.reverse`)
 
-3. Create a simple temperature convertor. It should function like the example below:
+### More Stretch Challenges
+
+1. Create a simple temperature convertor. It should function like the example below:
 
   ```
   Type '1' to convert from Celsius to Fahrenheit or '2' to convert from Fahrenheit to Celsius
@@ -91,7 +93,7 @@ As we learn Ruby, it's important to revisit how we learned our first language an
   24 degrees Celsius is equal to 75.2 degrees Fahrenheit
   ```
 
-4. Create a simple calculator that first asks the user what method they would like to use (addition, subtraction, multiplication, or division), then asks the user for two numbers, printing the result of the method with the two numbers. Here is a sample prompt:
+2. Create a simple calculator that first asks the user what method they would like to use (addition, subtraction, multiplication, or division), then asks the user for two numbers, printing the result of the method with the two numbers. Here is a sample prompt:
 
   ```
   What calculation would you like to do? (add, sub, mult, div)
@@ -105,6 +107,7 @@ As we learn Ruby, it's important to revisit how we learned our first language an
 
 ## Docs & Resources
 
+* [Ruby Data Types & Variables](./ruby-data-types-variables.md)
 * <a href="http://ruby-doc.org/core-2.2.0/Array.html" target="_blank">Ruby Docs: Array</a>
 * <a href="http://ruby-doc.org/core-2.2.0/Hash.html" target="_blank">Ruby Docs: Hash</a>
 * <a href="https://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Control_Structures" target="_blank">Ruby Control Flow Structures</a>

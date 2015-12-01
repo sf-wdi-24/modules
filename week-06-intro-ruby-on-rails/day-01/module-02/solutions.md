@@ -1,7 +1,7 @@
-# <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Solutions
-
+# <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Intro Ruby Solutions
 
 ## Data Types
+
 ```rb
 # 1. Store your `first_name` in a variable and your `last_name`
 # in another variable.
@@ -17,9 +17,11 @@ full_name.split
 ```
 
 ## Loops
+
 ```rb
-# 1. Print (`puts`) "Ruby is awesome!" 50 times. Implement this
-# 3 different ways, using:
+# 1. Print (`puts`) "Ruby is awesome!" 50 times.
+# Implement this 3 different ways, using:
+
   # `while`
   i = 0
   while i < 50
@@ -81,7 +83,7 @@ while verses > 0
 end
 ```
 
-## Iterators
+## Stretch Challenges
 
 ```rb
 # Iterators: Each
@@ -105,7 +107,9 @@ phrases.each_with_index do |phrase, index|
     puts "Phrase at index #{index} is too short."
   end
 end
+```
 
+```ruby
 # Iterators: Map
 
 # 1. Write a program that maps an array of numbers to double each number.
@@ -118,10 +122,9 @@ words = ["San Francisco", "General Assembly", "web development"]
 mapped_words = words.map {|word| word.reverse}
 ```
 
-
-## Stretch Challenges
-
 ```rb
+# More Stretch Challenges
+
 # 1. Create a simple temperature convertor.
 puts "Type '1' to convert from Celsius to Fahrenheit or '2' to convert from Fahrenheit to Celsius"
 response = gets.chomp

@@ -1,17 +1,12 @@
-# <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60">Intro to Ruby - Data Types & Variables
+# <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Ruby Data Types & Variables
 
 ### Objectives
+
 *After this reading, students will be able to:*
 
 - Identify and describe use cases for Ruby's data types
 - Describe the different types of variables (locals, instance, constants) in Ruby & when to use them
 - Run a Ruby file in the command line
-
-### Preparation
-*Before this lesson, students should already be able to:*
-
-- Describe JavaScript data types
-- Declare and use variables in JavaScript
 
 ## Intro
 
@@ -26,10 +21,10 @@ We're not going to jump right into Rails immediately, we're going to build up to
 But even before _that_, let's get our hands dirty with some straight **Ruby**. It's super readable and easy to get started with, you're gonna like it a lot.
 
 ### "Matz is Nice And So We Are Nice"
+
 Ruby was created by Yukihiro Matsumoto a.k.a. "Matz" in the mid-1990s. It is an object-oriented scripting language built on-top of C which Matz created to help programmers enjoy coding!
 
 > <cite>"I hope to see Ruby help every programmer in the world to be productive, and to enjoy programming, and to be happy. That is the primary purpose of Ruby language."</cite>
-
 
 ## The Beauty of Ruby
 
@@ -232,7 +227,6 @@ some_method # => "donuts"
 
 Remember that it works this way, because when we get to Objects & Methods later this week, you'll see that instance variables let us store a variable once and use it however many methods we need inside an object.
 
-
 #### Constant
 
 Mostly, we're able to change what a variable's holding if we so choose – constants are designed for the opposite. Constants are meant to be placeholders that _never change_.
@@ -254,7 +248,7 @@ We can use a constant anywhere in a Ruby application – inside a method, outsid
 
 ## Ruby & ruby
 
-Until now, we have been running and debugging our HTML, CSS and JavaScript files using the browser. However, when using Ruby, we run our code using the command-line Ruby intepreter called ruby (with a lowercase 'r'). But don't worry, the process of writing our code and checking for errors is exactly the same!
+Until now, we have been running and debugging our HTML, CSS and JavaScript files using the browser. However, when using Ruby, we run our code using the command-line Ruby interpreter called ruby (with a lowercase 'r'). But don't worry, the process of writing our code and checking for errors is exactly the same!
 
 So, let's create our first Ruby file and run it with ruby. First, let's create a new `.rb` file and open it with Sublime:
 
@@ -276,9 +270,6 @@ Finally, run the file using:
 ```bash
 ruby my_first_ruby_file.rb
 ```
-
-Great! Now let's move on to some practise using IRB.
-
 
 ## Conclusion
 
