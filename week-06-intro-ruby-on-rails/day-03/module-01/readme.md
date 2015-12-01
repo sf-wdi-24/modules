@@ -179,7 +179,7 @@ Think, pair, share...
 
 ## Inheritance
 
-Given an `Vehicle` class that contains the method `accelerate` and attribute `speed`..
+Given an `Vehicle` class that contains the method `accelerate` and attribute `speed`.
 
 ```ruby
 class Vehicle
@@ -229,7 +229,7 @@ Superheroes are still Characters after all. In this exercise, you'll define:
     * Adds 2 new instance variables (which initialize takes as arguments):
       * `charisma`
       * `secret_identity`
-    * initializes using `super`, passing `name` as an argument
+    * Initializes using `super`, passing `name` as an argument
     - Adds 2 new methods:
       - `persuade`, which
         - takes another instance of the `Superhero` class as an argument
