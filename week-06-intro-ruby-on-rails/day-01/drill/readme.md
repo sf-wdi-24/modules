@@ -21,7 +21,7 @@
 ## Step 2: Set Up Your Partner's Project
 
 * **Fork** your partner's project.
-* **Clone** the fork you into your `develop` folder on your local machine.
+* **Clone** the fork into your `develop` folder on your local machine.
 * Make a new **branch** named after the issue you're solving.
 
   ```zsh
