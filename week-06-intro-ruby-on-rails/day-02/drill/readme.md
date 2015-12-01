@@ -8,11 +8,11 @@
 
 Regular expressions were designed because programmers are lazy.
 
-We've been matching patterns in strings often in class so let's try to see if the word `hello` exists in an example string without using regular expressions using pseudo code.
+We've been matching patterns in strings often in class so let's try to see if the word `hello` exists in an example string. Let's do it without using regular expressions, just using pseudo code.
 
 How would we do this?
 
-It isn't impossible but it's quite a bit of work.
+It isn't impossible, but it's quite a bit of work.
 
 Let's then say instead of `hello` we're looking for misspellings of `hello` which include `He11o` and `Hell0`. This starts to get tricky fast and that's where regular expressions come into play.
 

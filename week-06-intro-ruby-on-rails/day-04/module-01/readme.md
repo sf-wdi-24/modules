@@ -47,7 +47,7 @@ Rails uses an **MVC** architecture.
 
 #### Rails New
 
-Run `rails new your_app_name` from your Terminal to create a new Rails project.
+You will run `rails new your_app_name` from your Terminal to create a new Rails project.
 
 #### Gems
 
