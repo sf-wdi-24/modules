@@ -109,3 +109,5 @@ When there is only one element (the first element) left in our unsorted list, it
 ![](http://cdn2.crunchify.com/wp-content/uploads/2013/01/BubbleSort-Algorithm-Crunchify.jpg)
 
 ### Now write your own bubble <a href="https://github.com/sf-wdi-24/ruby-bubble-sort" target="_blank">sort</a>!
+
+Run the tests in the `spec` folder, and write your code in `bubble_sort.rb`.
