@@ -7,6 +7,8 @@
 | Work with inheritance in your models |
 | Create models in ActiveRecord |
 
+Go to this repo to do the exercises for <a href="https://github.com/sf-wdi-24/active-record" target="_blank">this</a> module.
+
 ## Hacktive Record
 In this lab you will learn how to create seed data and use a simplified ORM dubbed "HacktiveRecord" (a pun on "ActiveRecord" which you'll be using in Rails). We will be working with the `FFaker` gem and modeling our data using classes and inheritance.
 
