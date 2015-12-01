@@ -28,7 +28,7 @@ As we learn Ruby, it's important to revisit how we learned our first language an
 * How did we use JavaScript to build things? How did we build up from the fundamentals of the language?
 * What could possibly be different in another language? How could we change the syntax, but keep the semantics?
 
-## Base Challenges
+## Challenges
 
 *Use `irb` in your terminal for these challenges. Feel free to copy your solutions into a file in Sublime so you can reference them later.*
 
@@ -67,6 +67,8 @@ As we learn Ruby, it's important to revisit how we learned our first language an
   * Make sure your song prints "1 **bottle** of beer".
   * When the song gets to "0 bottles of beer on the wall", it should print "No more bottles of beer on the wall" instead.
 
+## Stretch Challenges
+
 ### Iterators: Each
 
 1. Define an array of 4 phrases: `"Hello, world"`, `"OMG"`, `"Ruby"`, and `"Pair Programming"`. Use <a href="http://www.tutorialspoint.com/ruby/ruby_iterators.htm" target="_blank">`.each`</a> to iterate over the array and `puts` each phrase.
@@ -79,9 +81,7 @@ As we learn Ruby, it's important to revisit how we learned our first language an
 
 2. Write a program that maps an array of words to the reverse of each word. (**Hint:** Look up `.reverse`)
 
-## Stretch Challenges
-
-1. Create a simple temperature convertor. It should function like the example below:
+3. Create a simple temperature convertor. It should function like the example below:
 
   ```
   Type '1' to convert from Celsius to Fahrenheit or '2' to convert from Fahrenheit to Celsius
@@ -91,7 +91,7 @@ As we learn Ruby, it's important to revisit how we learned our first language an
   24 degrees Celsius is equal to 75.2 degrees Fahrenheit
   ```
 
-2. Create a simple calculator that first asks the user what method they would like to use (addition, subtraction, multiplication, or division), then asks the user for two numbers, printing the result of the method with the two numbers. Here is a sample prompt:
+4. Create a simple calculator that first asks the user what method they would like to use (addition, subtraction, multiplication, or division), then asks the user for two numbers, printing the result of the method with the two numbers. Here is a sample prompt:
 
   ```
   What calculation would you like to do? (add, sub, mult, div)
