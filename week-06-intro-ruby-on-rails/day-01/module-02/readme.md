@@ -105,6 +105,11 @@ As we learn Ruby, it's important to revisit how we learned our first language an
 
 ## Docs & Resources
 
+* <a href="https://github.com/sf-wdi-21/notes/blob/master/week-06/day-01-review-and-ruby/dusk-intro-to-ruby/reading-ruby-data-types.md" target="_blank">WDI 21: Intro to Ruby</a>
 * <a href="http://ruby-doc.org/core-2.2.0/Array.html" target="_blank">Ruby Docs: Array</a>
 * <a href="http://ruby-doc.org/core-2.2.0/Hash.html" target="_blank">Ruby Docs: Hash</a>
 * <a href="https://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Control_Structures" target="_blank">Ruby Control Flow Structures</a>
+
+## Evening Home Work
+
+This afternoon/evening you will be working on <a href="https://github.com/sf-wdi-24/ruby-koans" target="_blank">these</a> challenges.  Remember to fork and clone the repo.  Submit your solutions through a pull request when you are finished.
