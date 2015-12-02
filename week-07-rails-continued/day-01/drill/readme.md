@@ -53,8 +53,6 @@ Balanced binary trees are another basic variant of binary trees. A "balanced" tr
 Balanced binary search trees combine the balanced structure requirement with the node value requirement of binary search trees.  If an interview question asks about a tree, try to clarify whether the tree is balanced and whether it is a binary search tree.
 
 
-
-
 ### Tries
 
 Tries, also called prefix trees, aren't usually binary.  They allow each node to have as many children as needed. The special thing about tries is how they store data. The data builds up over the path from the root to each node.  Here's an example:
@@ -83,25 +81,22 @@ Also assume a `trie` data structure that allows you to:
 
 1. Create a binary search tree from the following array: [0,1,2,3,4,5,6].
 
-1. Describe an algorithm to check if a particular number value is inside a binary search tree.  *Hint: start by checking if it's the value of the root.*
+2. Describe an algorithm to check if a particular number value is inside a binary search tree.  *Hint: start by checking if it's the value of the root.*
 
-1. In a binary search tree, how can you find the minimum element? The maximum?
+3. In a binary search tree, how can you find the minimum element? The maximum?
 
+4. Assume for the following challenges that you have a binary search tree data structure. The structure will be recursive, meaning each node is actually represented as a full subtree, an instance of `BinarySearchTree`.
 
-### Challenges - Tries
+The constructor for a `BinarySearchTree` instance requires that you specify the key for the current node, and it sets the left and right subtrees/nodes to  `None` (or `nil` or `null` depending on what programming language you're using; the "pseudocode" solutions use `None`).
 
-1. Create a trie for the following word list: ["hey", "hello", "howdy", "g'day"].
+The data structure allows you to do the following:
 
-1. Add the phrase "hello, govnuh" to your trie from above.  
+* given a tree called `my_bst`, access the "root node" with `my_bst`
+* given any node, find the left child node/subtree of that node with `.left`
+* given any node, find the right child node/subtree of that node with `.right`
+* given any node, find its key with `.key`
 
-1. In a normal tree, the number of nodes determines the tree's minimum possible height. What determines the minimum possible height of a trie?
-
-
-### Stretch Challenges
-
-1. A "min heap" is another abstract data structure often thought of as a type of binary tree. It has an additional restriction called the "min heap property:" every node's value is less than the values of its children. What is special about the root of a min heap?  
-
-1. How could you print out all the numbers in a binary search tree in order from least to greatest?  *Hint*: This problem is probably easiest using recursion.
+**Get as far in this challenge (number 4) as you can in 15 minutes.**
 
 
 ### Actual Interview Questions

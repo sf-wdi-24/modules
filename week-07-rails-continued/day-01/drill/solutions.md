@@ -42,7 +42,7 @@ Also assume a `trie` data structure that allows you to:
   0           6
   ```
 
-1. Describe an algorithm to check if a particular number value is inside a binary search tree.  *Hint: start by checking if it's the value of the root.*
+2. Describe an algorithm to check if a particular number value is inside a binary search tree.  *Hint: start by checking if it's the value of the root.*
 
   *algorithm*:
 
@@ -54,7 +54,7 @@ Also assume a `trie` data structure that allows you to:
     * otherwise if the node's value is greater than our target number, restart the process with this node's left child (move down the left subtree to check the nodes with lesser values)
   * if we ever try to make one of those moves into a subtree where our target should be but find out that the subtree is empty, then we know the target number isn't in the tree
 
-1. In a binary search tree, how can you find the minimum element? The maximum?
+3. In a binary search tree, how can you find the minimum element? The maximum?
 
   *min algorithm: relies on the insight that the minimum will be the leftmost node in the tree (convince yourself!)*
     * start at root
@@ -68,32 +68,30 @@ Also assume a `trie` data structure that allows you to:
       * move to its right child
     * when we can't move anymore, we're at the max
 
-### Challenges - Tries
+4. You run a website where users can assign creative names to colors. You store named colors as nodes in a self-balancing binary search tree, where the key of a node is the hex code of its color (for example: `#30af99`, `#c0ffee`). Each node also contains the name assigned to the color, the username of the user who named it, and the date and time when it was named. Users shouldn't be able to change the name of a color.  Pseudocode a `has_key` function to check if a particular hex value is already in the tree.  If the key is in the tree, your function should return `true`. If the key is not in the tree, your function should return `false`. Your function should take the tree and the hex color key as arguments.
 
-1. Create a trie for the following word list: ["hey", "hello", "howdy", "g'day"].
+       ```rb
+       def has_key(tree, key):
+         # start at root
+         current_node = tree
 
-  *solution is left out for space; see trie example*
+         # go down the tree until we can't any more
+         while current_node is not None:
 
-1. Add the phrase "hello, govnuh" to your trie from above.  
+           # each time we go down, move left if we're looking for a smaller key...
+           if current_node.key > key:
+             current_node = current_node.left
+           # ... or move right if we're looking for a larger key
+           elsif current_node.key < key:
+             current_node = current_node.right
+           # ... or if we've found the key, we're done!
+           else:
+             return true
 
-  *solution is left out for space*
-
-1. In a normal tree, the number of nodes determines the tree's minimum possible height. What determines the minimum possible height of a trie?
-
-  *The height of a trie is determined by the length of the longest word.*
-
-
-### Stretch Challenges
-
-1. A "min heap" is another abstract data structure often thought of as a type of binary tree. It has an additional restriction called the "min heap property:" every node's value is less than the values of its children. What is special about the root of a min heap?  
-
-  *The root node of a min heap is the minimum element!  There's a similar data structure called a "max heap".*
-
-1. How could you print out all the numbers in a binary search tree in order from least to greatest?  *Hint*: This problem is probably easiest using recursion.
-
-  *Stay tuned for the rest of tree week!*
-
-
+         # if we get to the bottom without finding our key,
+         # it must not be in the tree
+         return false
+      ```
 
 ### Actual Interview Questions
 
