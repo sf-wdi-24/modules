@@ -10,15 +10,15 @@
 
 ## Intro
 
-Now that we've got your feet wet with HTML, CSS, and JavaScript, you've got a taste of what it's like to start building for the web – and we're about to kick it up a notch.
+Now that we've gotten your feet wet with HTML, CSS, and JavaScript, you've got a taste of what it's like to start building for the web – and we're about to kick it up a notch.
 
 Originally, the web was meant just as a place for documents – HTML pages that linked to each other, that was it.
 
-But as developers started creating more and more pages, and desiring more and more interactivity with those pages, we got to a point historically where we started writing that created HTML for us. That was where the concept of web development frameworks came from, and undoubtedly one of the most prolific has been Ruby on Rails – one of the first frameworks to use the language of Ruby to build web applications.
+But as developers started creating more and more pages, and desiring more and more interactivity with those pages, we got to a point historically where we started writing programs that created HTML for us. That was where the concept of web development frameworks came from, and undoubtedly one of the most prolific has been Ruby on Rails – one of the first frameworks to use the language of Ruby to build web applications.
 
 We're not going to jump right into Rails immediately, we're going to build up to it over the course of the next week, and make sure you have an understanding of the concepts that go into building it first.
 
-But even before _that_, let's get our hands dirty with some straight **Ruby**. It's super readable and easy to get started with, you're gonna like it a lot.
+But even before _that_, let's get our hands dirty with some straight **Ruby**. It's super readable and easy to get started with. You're gonna like it a lot.
 
 ### "Matz is Nice And So We Are Nice"
 
@@ -32,7 +32,7 @@ There are a few general points to know about Ruby, and then we're going to be co
 
 We'll go over a bunch of basics you need to know in the next two days.
 
-One of the things that's important to people who write code in Ruby is how the code _reads_. Rubyists are known for wanting beautiful code, and writing it in a way that reads as much like normal English as possible. That's part of what makes it great for beginners, is that it's instantly readable.
+One of the things that's important to people who write code in Ruby is how the code _reads_. Rubyists are known for wanting beautiful code, and writing it in a way that reads as much like normal English as possible. That's part of what makes it great for beginners -  it's instantly readable.
 
 Check out this example:
 

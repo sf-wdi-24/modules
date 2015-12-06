@@ -150,7 +150,7 @@ implicitly_return_5
 # => 5
 ```
 
-Sometimes, we do have to use the reserved word `return`. The best example is if we might to break out of a loop early. This next example simulates a kid taking 3 swings at a piñata. It returns the number of swings remaining at the end of the kid's turn (usually 0). But! Each swing might burst the piñata. We use random chance to determine if the piñata bursts. If it does, the method shows a message that the piñata burst and returns early.
+Sometimes, we do have to use the reserved word `return`. The best example is if we might want to break out of a loop early. This next example simulates a kid taking 3 swings at a piñata. It returns the number of swings remaining at the end of the kid's turn (usually 0). But! Each swing might burst the piñata. We use random chance to determine if the piñata bursts. If it does, the method shows a message that the piñata burst and returns early.
 
 ```ruby
 def pinata
@@ -397,7 +397,7 @@ Gems in Ruby are a lot like node modules. Say you want to use a gem like "Awesom
 
 5. Install the httparty gem `$ gem install httparty`.
 
-6. Now require it in a new ruby script file, and use it to call an album search on the word "White" to the spotify API.
+6. Now require it in a new ruby script file, and use it to call an album search on the word "White" to the Spotify API.
 
 7. Can you require both `httparty` and `awesome_print` to have the output look nice? (remember just require awesome_print and then use `ap` instead of `p`)
 
