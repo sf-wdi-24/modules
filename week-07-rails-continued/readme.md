@@ -30,7 +30,7 @@
     <td><a href="./day-01/module-02/">SQL Continued</a></td>
     <td><a href="./day-02/module-02/">Validations &amp; Error-Handling</a></td>
     <td><a href="./day-03/module-02/">Rails Asset Pipeline</a></td>
-    <td><a href="./day-04/module-02/">Lab - Testing and Validation</a></td>
+    <td><a href="./day-04/module-02/">Lab - Testing & Validations</a></td>
     <td>Intro Weekend Lab</td>
   </tr>
   <tr>
