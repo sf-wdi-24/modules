@@ -39,6 +39,9 @@
     <td><a href="https://github.com/sf-wdi-24/ruby-oop-reading"target="_blank">Ruby OOP Reading</a></td>
     <td>Finish <a href="https://github.com/sf-wdi-24/ruby-oop-lab" target="_blank">Ruby OOP Lab</a> & <a href="https://github.com/sf-wdi-24/intro-rails-reading" target="_blank">Intro Rails Reading</a></td>
     <td><a href="https://github.com/sf-wdi-24/rails-for-zombies" target="_blank">Rails for Zombies</a></td>
-    <td><a href="https://github.com/sf-wdi-24/rails_bog_app" target="_blank">Weekend Lab (Rails Bog App)</a></td>
+    <td>
+      <a href="https://github.com/sf-wdi-24/rails_bog_app" target="_blank">Weekend Lab (Rails Bog App)</a><br><br>
+      <a href="https://www.khanacademy.org/computing/computer-programming/sql/sql-basics/v/welcome-to-sql" target="_blank">SQL Basics Tutorial</a> (Optional)
+    </td>
   </tr>
 </table>
