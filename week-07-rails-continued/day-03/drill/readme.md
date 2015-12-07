@@ -17,7 +17,7 @@ Breadth-first search spreads across the tree or graph, moving outward one step a
   * Given a tree or node, get the key of the node with `.key`
   * Given a tree or node, get the children of the node with `.children`
 
-3. Fork and clone the <a href="" target="_blank">starter code</a> into your `develop` folder. Implement the `breadth_first_search` method in `tree.rb`. Run the tests with the `rspec` command in the Terminal. **Make sure all tests run green before continuing.**
+3. Fork and clone the <a href="https://github.com/sf-wdi-24/ruby-breadth-first-search" target="_blank">starter code</a> into your `develop` folder. Implement the `breadth_first_search` method in `tree.rb`. Run the tests with the `rspec` command in the Terminal. **Make sure all tests run green before continuing.**
 
 4. In English or pseudocode, how would you modify your breadth-first search method to work on a binary search tree?
 
