@@ -72,97 +72,108 @@ The <a href="http://edgeguides.rubyonrails.org/active_record_validations.html#va
 
 Right now, our error-handling is happening in the Rails console. Next we'll look at how we can incorporate this logic in our controllers and views to display the error messages to the user.
 
-## Handling Errors in Controllers & Views
+## Handling Errors in Controllers
 
 The `airplanes#create` controller method currently looks like this:
 
-We should refactor it to use `.new` and `.save` instead:
-
-
-
 ```ruby
-# app/controllers/owners_controller.rb
-def create
-  @owner = Owner.create(name: "Taco")
+#
+# app/controllers/airplanes_controller.rb
+#
+
+class AirplanesController < ApplicationController
+
+  def create
+    airplane_params = params.require(:airplane).permit(:name, :description)
+    airplane = airplane.create(airplane_params)
+    redirect_to airplane_path(airplane)
+  end
+
 end
 ```
 
-If someone tried to `save` a new owner in the database with a duplicate username, or no username, or a name with fewer than 6 characters, an error would be generated.
+If a user tried to add an invalid airplane to the database, they would get a server error:
+
+![heroku_err](https://cloud.githubusercontent.com/assets/7833470/11666054/50c8dede-9d9f-11e5-8484-7f547b224638.png)
+
+We should refactor `airplanes#create` to use `.new` and `.save` instead, so we can better handle the error:
 
 ```ruby
-ActiveRecord::RecordInvalid: Validation failed: Name is too short (minimum is 6 characters)
+#
+# app/controllers/airplanes_controller.rb
+#
+
+class AirplanesController < ApplicationController
+
+  def create
+    airplane_params = params.require(:airplane).permit(:name, :description)
+    airplane = airplane.new(airplane_params)
+    if airplane.save
+      redirect_to airplane_path(airplane)
+    else
+      redirect_to new_airplane_path
+    end  
+  end
+
+end
 ```
 
-However, this error would be displayed in the server. So how can we get it to the view where the owner can see it? Well, fortunately the error message is stored on the object that was attempting to be saved (`@owner` in this case).
+After the refactor, if a user tries to add an invalid airplane, they get redirected to `airplanes_new_path` (the form to create a new airplane) so they can try again. The last piece of the error-handling userflow is to use flash messages to display errors to the user.
 
-Speaking of `@owner`, where is that being used in the view? It's here:
+## Flash Messages
+
+Unlike Express, Rails comes with <a href="http://api.rubyonrails.org/classes/ActionDispatch/Flash.html" target="_blank">built-in flash messages</a>! If you want to send a flash message, you need to set the flash in the controller, and render the flash in the view.
+
+`flash` is a hash of key/value pairs. The most common keys for `flash` are `:notice` for general information and/or success messages and `:error` for error messages.
+
+We can implement `flash[:error]` in our `airplanes#create` controller method like this:
+
+```ruby
+#
+# app/controllers/airplanes_controller.rb
+#
+
+class AirplanesController < ApplicationController
+
+  def create
+    airplane_params = params.require(:airplane).permit(:name, :description)
+    airplane = airplane.new(airplane_params)
+    if airplane.save
+      redirect_to airplane_path(airplane)
+    else
+      # save error messages to flash[:error] hash
+      flash[:error] = airplane.errors.full_messages.join(", ")
+      redirect_to new_airplane_path
+    end  
+  end
+
+end
+```
+
+Just one last step! We've sent `flash` to the view, but we haven't rendered it yet. Let's do that in our `application.html.erb` layout, so we can render flash messages in *every* view:
 
 ```html
-<!-- app/views/owners/new.html.erb -->
-<div class='owner-form'>
-  <%= form_for @owner do |f| %>
-  <!-- error-handling code will go here -->
-  <p class="owner-form-title">
-    <%= f.text_field :name, placeholder: 'name' %>
-  </p>
-  <p class="owner-form-submit">
-    <%= f.submit %>
-  </p>
+<!-- app/views/layouts/application.html.erb -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  ...
+</head>
+<body>
+  <!-- display flash messages above the yield block -->
+  <% flash.each do |name, msg| %>
+    <div><%= msg %></div>
   <% end %>
-</div>
+
+  <%= yield %>
+
+</body>
+</html>
 ```
-
-There is a lot going on here. A few important things to note:
-
-**`form_for`**
-
-```ruby
-<%= form_for @owner do |f| %>
-# ERB code here  
-<% end %>
-```
-
-`form_for` is a [form helper](http://guides.rubyonrails.org/form_helpers.html#binding-a-form-to-an-object) method Rails provides which can take several parameters:
-  - the actual object which is the form is creating or updating, e.g, `@owner`
-  - a hash of options, which itself consists of a `url` hash and an `html` hash, which will affect how the form renders in HTML and what route it aligns with
-
-`form_for` yields a form builder object, `f`, which is used to generate the various different form tags like text fields, text areas, and submit buttons. Like this:
-
-```ruby
-<%= f.text_field :name, placeholder: 'name' %>
-<%= f.submit %>
-```
-
-The `text_field` takes a symbol as an argument, which is uses to determine which attribute on the model to link the field to, along with a [hash of options](http://apidock.com/rails/ActionView/Helpers/FormHelper/text_field), such as deciding placeholders, classes, and more.
-
-The [form builder API docs](http://api.rubyonrails.org/classes/ActionView/Helpers/FormBuilder.html) for other methods, and the [Form Helpers documentation](http://guides.rubyonrails.org/form_helpers.html) for general information about forms in Rails.
-
-Okay, so we have our owner form. Let's make some owners! But wait, what if we make owners that don't pass our validations? How can we inform the user what needs to be corrected?
-
-We can access the errors using `@owner.errors.full_messages` method provided by `ActiveRecord::Base`. See the docs [here](http://api.rubyonrails.org/classes/ActiveModel/Errors.html#method-i-full_message).  We can display the errors in the view by iterating over the array of error message strings on the Owner object.
-
-Look at the following code snippet. What does it do?
-
-```html
-<% if @owner.errors.any? %>
-  <div id="error_explanation">
-    <h2 class="error-warning">
-      <%= pluralize(@owner.errors.count, "error") %> prohibited
-      this owner from being saved:
-    </h2>
-    <ul>
-      <% @owner.errors.full_messages.each do |msg| %>
-      <li class="error-message"><%= msg %></li>
-      <% end %>
-    </ul>
-  </div>
-<% end %>
-```
-
-Add the above code to your form, right below the `form_for` opening tag. With our new and improved form, users will get error messages telling them what fields they need to fix when they make an invalid owner form submission. Awesome!
 
 ## Challenges
 
-Now that you've seen how to implement validations and propagate the Active Record errors from your database models to the controller and then pass that into the view, it's your turn!
+Now that you've seen how to implement validations, propagate the Active Record errors from your database models to the controller, and then pass the errors into the view, it's your turn!
 
-[Exercise repo](https://github.com/sf-wdi-22-23/rails-forms-validations)
+See <a href="" target="_blank">this repo</a> the starter code and challenges.
