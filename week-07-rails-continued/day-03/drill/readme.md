@@ -27,7 +27,7 @@ Breadth-first search spreads across the tree or graph, moving outward one step a
 
 ## Stretch Challenges
 
-1. In English or pseudocode, how could you modify breadth-first search to return a parent node that's two nodes above the target key? Three nodes above? Example:
+1. In English or pseudocode, how could you modify breadth-first search to return a parent node that's two nodes above the target key? Three nodes above? **Example:**
 
   ```ruby
   # return parent node two nodes above target key
