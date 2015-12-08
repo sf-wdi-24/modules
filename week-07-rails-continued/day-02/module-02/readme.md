@@ -176,4 +176,4 @@ Just one last step! We've sent `flash` to the view, but we haven't rendered it y
 
 Now that you've seen how to implement validations, propagate the Active Record errors from your database models to the controller, and then pass the errors into the view, it's your turn!
 
-See <a href="" target="_blank">this repo</a> the starter code and challenges.
+See <a href="https://github.com/sf-wdi-24/rails_validations_errors" target="_blank">this repo</a> for the starter code and challenges.
