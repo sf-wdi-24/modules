@@ -49,7 +49,7 @@ This snippet of code is calling the `validate` method, and accepting two argumen
 If you try adding a new airplane to the database witout a name, or with a duplicate name, or with a name with fewer than 6 characters, you'll get an error:
 
 ```zsh
-irb(main):001:0> Airplane.create(name: "747")
+irb(main):001:0> airplane = Airplane.create(name: "747")
   (0.2ms)  BEGIN
   Airplane Exists (1.1ms)  SELECT  1 AS one FROM "airplanes" WHERE "airplanes"."name" = '747' LIMIT 1
   (0.2ms)  ROLLBACK
@@ -85,7 +85,7 @@ class AirplanesController < ApplicationController
 
   def create
     airplane_params = params.require(:airplane).permit(:name, :description)
-    airplane = airplane.create(airplane_params)
+    airplane = Airplane.create(airplane_params)
     redirect_to airplane_path(airplane)
   end
 
