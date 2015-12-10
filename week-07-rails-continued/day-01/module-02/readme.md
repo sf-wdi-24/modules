@@ -61,7 +61,7 @@ That's it for review. I hope you remember everything perfectly and never make a 
   ```
 </details>
 
-<a href="http://dbareactions.com/post/101404927746/when-i-meet-the-now-former-admin-who-caused-the" target="_blank">This is what happens when you destroy something else.</a>.
+<a href="http://dbareactions.com/post/101404927746/when-i-meet-the-now-former-admin-who-caused-the" target="_blank">This is what happens when you destroy the wrong thing in production.</a>
 
 ## Joins
 
