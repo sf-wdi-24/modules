@@ -315,4 +315,4 @@ Yikes, `Total runtime: 1.580 ms`. That's ~24 times slower than with our index.
 
 OK enough of this. Let's play with SQL on our own.
 
-Fork, clone and try to complete <a href="https://github.com/sf-wdi-24/w7_apartment_lab_sql">today's lab</a>.
+Fork, clone and try to complete <a href="https://github.com/sf-wdi-24/w7_apartment_lab_sql" target="_blank">today's lab</a>.
