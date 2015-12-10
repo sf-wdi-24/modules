@@ -267,7 +267,7 @@ CREATE INDEX people_age_idx ON people (age);
   <summary>Repeat the `EXPLAIN` you did before.</summary>
 
   ```sql
-  EXPLAIN ANALYZE SELECT * FROM PEOPLE WHERE age=7 LIMIT 1;
+  EXPLAIN ANALYZE SELECT * FROM PEOPLE WHERE age=7;
   ```
 </details>
 
