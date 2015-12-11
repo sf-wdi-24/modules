@@ -21,14 +21,14 @@ Let's go into the terminology a little more with some diagrams.
 Graphs have vertices (aka "nodes") that usually represent data, or the current "state" (configuration) of something.  Edges connect the vertices and usually represent a relationship between data objects, or a transistion from one state to another.  A sequence of edges is called a "path".
 
 
-<img src="images/paths.jpg" width="300px">
+<img src="https://cloud.githubusercontent.com/assets/8397980/11751255/47bebfc0-9fed-11e5-9d4b-3b16f25732f5.jpg" width="300px">
 
 Tree data structures adopt language from family trees. If an edge in a tree connects two vertices, the source vertex is called the "parent", and the target vertex is called the "child".  From the perspective of a single node, some other nodes will be on the path between that node and the root. These are the node's "ancestors." Other nodes might be children of the  node, or children of the node's children. These are called the node's "descendants."  Nodes that share the same "parent" are known as "siblings."
 
 
 Trees start with a unique "root" node at the top of the tree.  The edges in a tree are sometimes referred to as "branches".  Nodes of the tree that do not have any children are called "leaves" because no branches lead away from them. The length of the longest path from the root to a leaf is called the tree's "height".
 
-<img src="images/tree_terms.jpg" width="300px">
+<img src="https://cloud.githubusercontent.com/assets/8397980/11751262/4ec8d62a-9fed-11e5-876a-49880df45288.jpg" width="300px">
 
 ## Trees to Know for Interviews
 
@@ -41,7 +41,7 @@ The most common types of trees for interviews are "binary trees," which allow ea
 Binary search trees add on an extra restriction to binary trees: each node's left child subtree (if it has one) will  contain only nodes whose values are lower than the original node's value.  In each node's right child subtree (if it has one), all nodes must have a greater value than the original node itself.
 
 
-<img src="images/bst.jpg" width="300px">
+<img src="https://cloud.githubusercontent.com/assets/8397980/11751252/4232a814-9fed-11e5-8bcf-2efa30f8d355.jpg" width="300px">
 
 
 ### Balanced Binary Trees
@@ -57,7 +57,7 @@ Balanced binary search trees combine the balanced structure requirement with the
 
 Tries, also called prefix trees, aren't usually binary.  They allow each node to have as many children as needed. The special thing about tries is how they store data. The data builds up over the path from the root to each node.  Here's an example:
 
-<img src="images/trie.jpg" width="300px">
+<img src="https://cloud.githubusercontent.com/assets/8397980/11751248/39165f5a-9fed-11e5-9a9e-04867719515c.jpg" width="300px">
 
 ## Challenges
 
