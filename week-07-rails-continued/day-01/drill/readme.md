@@ -92,8 +92,6 @@ Also assume a `trie` data structure that allows you to:
 
 ### Actual Interview Questions
 
-<!--1. You have a series of tasks that you need to schedule. Let's say you're getting dressed, so you need to put on your: shoes, underwear, shirt, pants, and socks. Some of these things have to happen in a certain order (like socks before shoes). How can you use a tree to plan the order of your tasks?-->
-
 1. You're tasked with setting up a quiz that adapts to the user by displaying different questions based on the percent of questions the user has gotten right so far. If the user has above 70% right so far, the next question should be slightly harder. If the user has below 70% right, the next set question should be slightly easier.  Question difficulty is rated on a scale from 1 to 10. Describe how you could use a tree to run this quiz.
 
 1. Your job is to write a program that recognizes common words typed in on a 10-digit phone keypad (see the image below). Assume the user input comes to you as a sequence of numbers types into the phone.  Also assume you get a list of all the words you should include ahead of time. How would you structure your data?  
