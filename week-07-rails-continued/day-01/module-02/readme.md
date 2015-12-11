@@ -221,8 +221,6 @@ Let's ask PostgreSQL to `EXPLAIN` what it intends on doing when we ask for infor
 EXPLAIN ANALYZE SELECT * FROM PEOPLE WHERE age=7;
 ```
 
-Wow, that's some interesting information. Let's break it apart.
-
 A sample response to that command may look like the following:
 
 ```
@@ -235,6 +233,8 @@ practice=# EXPLAIN ANALYZE SELECT * FROM PEOPLE WHERE age=7;
  Total runtime: 0.022 ms
 (4 rows)
 ```
+
+Wow, that's some interesting information. Let's break it apart.
 
 The `EXPLAIN` procedure will list out the steps it'll take and indent over the next step. The information which is most important to us at this moment is the first procedure `Seq Scan` which is short for Sequential Scan aka "Full Table Scan".
 
