@@ -35,7 +35,7 @@
   </tr>
   <tr>
     <td>HW</td>
-    <td>SQL Lab</td>
+    <td><a href="https://github.com/sf-wdi-24/apartment-lab-sql" target="_blank">SQL Lab</a></td>
     <td>Start Rails Blog</td>
     <td>Continue Rails Blog</td>
     <td>Continue Rails Blog</td>
