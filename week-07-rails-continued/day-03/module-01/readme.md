@@ -16,7 +16,7 @@
 
 
 
-# SQL `JOIN`S
+# SQL `JOIN`S REVISITED
 
 ## Joins
 
@@ -138,22 +138,22 @@ The foreign key always goes on the table with the data that belongs to data from
   ```ruby
   Pet.count
   Owner.count
-  fido = Pet.create(name: "Fido")
-  lassie = Pet.create(name: "Lassie")
-  nathan = Owner.create(name: "Nathan")
-  nathan.pets
-  fido.owner
-  nathan.pets << fido # makes Fido one of Nathan's pets
+  milo = Pet.create(name: "Milo")
+  otis = Pet.create(name: "Otis")
+  ben = Owner.create(name: "Ben")
+  ben.pets
+  milo.owner
+  ben.pets << otis # makes Otis one of Ben's pets
   # ^ same as:
-  # nathan.pets.push(fido)
-  nathan.pets << lassie # makes Lassie another one of Nathan's pets
-  nathan.pets.count
-  nathan.pets.map(&:name)
-  nathan.pets.each do |pet| puts "My pet is named #{pet.name}!" end
-  fido.owner
+  # ben.pets.push(milo)
+  ben.pets << lassie # makes Lassie another one of Nathan's pets
+  ben.pets.count
+  ben.pets.map(&:name)
+  ben.pets.each do |pet| puts "My pet is named #{pet.name}!" end
+  otis.owner
 
   # What will be returned when we do this?
-  fido.owner.name
+  otis.owner.name
   ```
 
 
