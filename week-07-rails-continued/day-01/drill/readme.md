@@ -85,16 +85,7 @@ Also assume a `trie` data structure that allows you to:
 
 3. In a binary search tree, how can you find the minimum element? The maximum?
 
-4. Assume for the following challenges that you have a binary search tree data structure. The structure will be recursive, meaning each node is actually represented as a full subtree, an instance of `BinarySearchTree`.
-
-The constructor for a `BinarySearchTree` instance requires that you specify the key for the current node, and it sets the left and right subtrees/nodes to  `None` (or `nil` or `null` depending on what programming language you're using; the "pseudocode" solutions use `None`).
-
-The data structure allows you to do the following:
-
-* given a tree called `my_bst`, access the "root node" with `my_bst`
-* given any node, find the left child node/subtree of that node with `.left`
-* given any node, find the right child node/subtree of that node with `.right`
-* given any node, find its key with `.key`
+4. You run a website where users can assign creative names to colors. You store named colors as nodes in a self-balancing binary search tree, where the key of a node is the hex code of its color (for example: `#30af99`, `#c0ffee`). Each node also contains the name assigned to the color, the username of the user who named it, and the date and time when it was named. Users shouldn't be able to change the name of a color.  Pseudocode a `has_key` function to check if a particular hex value is already in the tree.  If the key is in the tree, your function should return `true`. If the key is not in the tree, your function should return `false`. Your function should take the tree and the hex color key as arguments.
 
 **Get as far in this challenge (number 4) as you can in 15 minutes.**
 
