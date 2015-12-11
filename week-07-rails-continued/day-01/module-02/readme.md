@@ -1,7 +1,5 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> SQL Continued
 
-# SQL Continued (JOINS)
-
 | Objectives |
 | :--- |
 | `INSERT` information using SQL syntax. |
@@ -146,7 +144,7 @@ INSERT INTO pets (name, breed, age, person_id)
   VALUES ('Goldy', 'Fish', 1, null);
 ```
 
-### Let's try some `JOINS` operations
+### Let's try some `JOIN` operations
 
 For each of these `JOIN` operations, we need to answer three questions using proper technical phrasing.
 
@@ -209,7 +207,7 @@ WHERE people.id = 1;
 
 ## Indexes
 
-If your table is small then you're done but this is rarely the case.
+If your table is small then you're done, but this is rarely the case.
 
 As your table gets larger we need to tune the performance for our usage. We do this by adding indexes in many cases.
 
@@ -315,4 +313,4 @@ Yikes, `Total runtime: 1.580 ms`. That's ~24 times slower than with our index.
 
 OK enough of this. Let's play with SQL on our own.
 
-Fork, clone and try to complete <a href="https://github.com/sf-wdi-24/w7_apartment_lab_sql" target="_blank">today's lab</a>.
+Fork, clone and try to complete <a href="https://github.com/sf-wdi-24/apartment-lab-sql" target="_blank">today's lab</a>.
