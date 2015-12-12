@@ -16,13 +16,17 @@ I get it, some of you have heard of <a href="https://github.com/plataformatec/de
 
 > If you are building your first Rails application, we recommend you do not use Devise. Devise requires a good understanding of the Rails Framework. In such cases, we advise you to start a simple authentication system from scratch. ... <a href="https://github.com/plataformatec/devise#starting-with-rails" target="_blank">[docs]</a>
 
-Today we're going to try and implement all this fantastic stuff from "scratch".
-
 ## Challenges
+
+Today we're going to implement our own auth setup using a combination of the challenges provided in this module and <a href="https://gist.github.com/eerwitt/b36db29a025366037925" target="_blank">this tutorial</a> which is a little more guided.
+
+Both the module and the tutorial miss important elements (and conflict) on ideas. Combined together you can build a solid custom authentication for users in Rails.
+
+**WHEN THERE ARE CONFLICTS BETWEEN THE TWO, YOU MAKE THE DECISION WHICH ROUTE TO TAKE.**
 
 #### App Set Up
 
-1. Create a new rails app called `rails_auth`. Your app should not have the default rails test framework and have a Postgres database (**Hint:** `-T -d postgresql`). Once your app is created, remember to run `rake db:create` to create your database.
+1. Create a new rails app called `rails_auth`.
 
 #### Model Set Up
 
@@ -32,9 +36,7 @@ Today we're going to try and implement all this fantastic stuff from "scratch".
   rails g model User email password_digest
   ```
 
-  **Note:** `string` is the default attribute type, so we don't need to explicitly specify it. `email` serves as a natural username for our users, and `password_digest` attribute for a hashed password.
-
-3. From the terminal, `rake db:migrate` to run your migration (which creates the user table in your database).
+3. From the terminal, `rake db:migrate` to run your migration.
 
 4. Open up your app in Sublime, and navigate to your `User` model. Add `has_secure_password` to the model. This line of code gives our `User` model authentication methods via `bcrypt`.
 
@@ -45,20 +47,20 @@ Today we're going to try and implement all this fantastic stuff from "scratch".
   class User < ActiveRecord::Base
     has_secure_password
   end
-
-  # Here's the behavior that has_secure_password gives you
+  ```
+  Here's the behavior that has_secure_password gives you
+  ```ruby
   # Schema: User(name:string, password_digest:string)
-  # user = User.new(name: 'david', password: '', password_confirmation: 'nomatch')
-  # user.save                                                       # => false, password required
-  # (omit a password_confirmation column to disable this behavior)
-  # user.password = 'mUc3m00RsqyRe'
-  # user.save                                                       # => false, confirmation doesn't match
-  # user.password_confirmation = 'mUc3m00RsqyRe'
-  # user.save                                                       # => true
-  # user.authenticate('notright')                                   # => false
-  # user.authenticate('mUc3m00RsqyRe')                              # => user
-  # User.find_by(name: 'david').try(:authenticate, 'notright')      # => false
-  # User.find_by(name: 'david').try(:authenticate, 'mUc3m00RsqyRe') # => user
+  user = User.new(name: 'david', password: '', password_confirmation: 'nomatch')
+  user.save                                                       # => false, password required
+  user.password = 'mUc3m00RsqyRe'
+  user.save                                                       # => false, confirmation doesn't match
+  user.password_confirmation = 'mUc3m00RsqyRe'
+  user.save                                                       # => true
+  user.authenticate('notright')                                   # => false
+  user.authenticate('mUc3m00RsqyRe')                              # => user
+  User.find_by(name: 'david').try(:authenticate, 'notright')      # => false
+  User.find_by(name: 'david').try(:authenticate, 'mUc3m00RsqyRe') # => user
   ```
 
 #### Secure Password with BCrypt
@@ -97,7 +99,7 @@ Today we're going to try and implement all this fantastic stuff from "scratch".
   $ rails g controller users new create show
   ```
 
-11. Open up your `UsersController`. At the bottom of the file, add a private method called `user_params` that creates strong parameters by whitelisting specific user attributes.
+11. Open up your `UsersController`. At the bottom of the file, add a private method called `user_params` that creates strong parameters by allowing specific user attributes.
 
   ```ruby
   #
@@ -126,7 +128,7 @@ Today we're going to try and implement all this fantastic stuff from "scratch".
 
 #### User Flow for Sign Up
 
-12. The `users#new` action should render a view called `new.html.erb`. The view should have a form that posts to `users#create` with the parameters `email` and `password`. Because `password` is not an attribute of your User model, if you try to use a standard `form_for @user` pattern, rails will bork, so your form should look something like this:
+12. The `users#new` action should render a view called `new.html.erb`. The view should have a form that posts to `users#create` with the parameters `email` and `password`. Because `password` is not an attribute of your User model, if you try to use a standard `form_for @user` pattern, rails will break, so your form should look something like this:
 
   ```erb
   <!-- app/views/users/new.html.erb -->
