@@ -22,7 +22,7 @@ Today we're going to implement our own auth setup using a combination of the cha
 
 Both the module and the tutorial miss important elements (and conflict) on ideas. Combined together you can build a solid custom authentication for users in Rails.
 
-**WHEN THERE ARE CONFLICTS BETWEEN THE TWO, YOU MAKE THE DECISION WHICH ROUTE TO TAKE.**
+<marquee>**WHEN THERE ARE CONFLICTS BETWEEN THE TWO, YOU MAKE THE DECISION WHICH ROUTE TO TAKE.**</marquee>
 
 #### App Set Up
 
