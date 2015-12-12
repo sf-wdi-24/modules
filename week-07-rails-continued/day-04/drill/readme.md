@@ -21,5 +21,3 @@
 > The interview will last 30-45 minutes with time at the end for questions.
 >
 > Does Thursday December 17th at 9:17am PST work OK for you?
->
-> Jess
