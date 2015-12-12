@@ -39,6 +39,6 @@
     <td>Start Rails Blog</td>
     <td>Continue Rails Blog</td>
     <td>Continue Rails Blog</td>
-    <td>Weekend Lab</td>
+    <td><a href="https://github.com/sf-wdi-24/crud-anything">Weekend Lab</a></td>
   </tr>
 </table>
