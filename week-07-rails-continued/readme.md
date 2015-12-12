@@ -36,7 +36,7 @@
   <tr>
     <td>HW</td>
     <td>SQL Lab</td>
-    <td>Start Rails Blog</td>
+    <td><a href="https://github.com/sf-wdi-24/rails_blog_app" target="_blank">Start Rails Blog</a></td>
     <td>Continue Rails Blog</td>
     <td>Continue Rails Blog</td>
     <td>Weekend Lab</td>
