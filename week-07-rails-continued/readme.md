@@ -30,7 +30,7 @@
     <td><a href="./day-01/module-02/">SQL Continued</a></td>
     <td><a href="./day-02/module-02/">Validations &amp; Error-Handling</a></td>
     <td><a href="./day-03/module-02/">Rails Asset Pipeline</a></td>
-    <td><a href="./day-04/module-02/">Lab - Testing & Validations</a></td>
+    <td><a href="./day-04/module-02/">Testing Lab</a></td>
     <td>Intro <a href="https://github.com/sf-wdi-24/crud-anything" target="_blank">Weekend Lab (CRUD Anything)</a></td>
   </tr>
   <tr>
