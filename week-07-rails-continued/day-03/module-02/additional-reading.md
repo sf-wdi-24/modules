@@ -54,7 +54,7 @@ In JavaScript files, Sprockets directives begin with `//=`. In the above case, t
 
 **Note about turbolinks:** Turbolinks is a gem that ships with Rails that eliminates page refreshes when navigating around your app in the browser. This sounds pretty cool, but the downside is that it only loads your assets once, on the first page-load, then it never loads them again, so any jQuery events you have set to run on page-load won't work on subsequent pages. We suggest removing turbolinks for the time being, and you'll learn how to build apps without page refreshes when we get to Angular :)
 
-Removing turbolinks requires three steps:
+**Removing turbolinks requires three steps:**
 
 1. Remove `'data-turbolinks-track' => true` from `<%= stylesheet_link_tag 'application' %>` and `<%= javascript_include_tag 'application' %>` in `app/views/layouts.application.html.erb`.
 2. Remove `//= require turbolinks` from `app/assets/javascripts/application.js`.
