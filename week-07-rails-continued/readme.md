@@ -36,8 +36,8 @@
   <tr>
     <td>HW</td>
     <td><a href="https://github.com/sf-wdi-24/apartment-lab-sql" target="_blank">SQL Lab</a></td>
-    <td>Start Rails Blog</td>
-    <td>Continue Rails Blog</td>
+    <td><a href="https://github.com/sf-wdi-24/rails_blog_app" target="_blank">Start Rails Blog</a></td>
+    <td><a href="https://github.com/sf-wdi-24/rails_blog_app_posts" target="_blank">Continue Rails Blog: Posts</a></td>
     <td><a href="https://github.com/sf-wdi-24/rails_blog_app_testing" target="_blank">Continue Rails Blog: Testing</a></td>
     <td><a href="https://github.com/sf-wdi-24/crud-anything" target="_blank">Weekend Lab (CRUD Anything)</a></td>
   </tr>
