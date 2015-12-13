@@ -191,7 +191,12 @@ To destroy your precompiled assets in development, simply run:
 
 Note you will typically only precompile your assets in development for debugging purposes. You'll set up your app to automatically precompile assets on deploy when you get ready to push to Heroku.
 
+## Challenges
+
+* <a href="https://github.com/sf-wdi-24/asset_pipeline_poem" target="_blank">Asset Pipeline Poem</a>
+
 ## Resources
 
 * [Asset Pipeline Additional Reading](./additional-reading.md)
 * <a href="http://guides.rubyonrails.org/asset_pipeline.html">Rails Guides: Asset Pipeline</a>
+* <a href="https://github.com/rails/sprockets#sprockets-directives">Sprockets Directives</a>
