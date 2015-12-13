@@ -10,7 +10,7 @@
 
 **The goal of the asset pipeline is to:**
 
-* Compress assets (CSS, JavaScript, and images) so they are as small as possible, since smaller files load faster
+* Compress assets (CSS and JavaScript) so they are as small as possible, since smaller files load faster
 * Reduce the number of files transferred to the client, by:
   * Combining files before sending them to the browser
     * All CSS files are combined into a single `application.css` file
@@ -193,4 +193,5 @@ Note you will typically only precompile your assets in development for debugging
 
 ## Resources
 
+* [Asset Pipeline Additional Reading](./additional-reading.md)
 * <a href="http://guides.rubyonrails.org/asset_pipeline.html">Rails Guides: Asset Pipeline</a>
