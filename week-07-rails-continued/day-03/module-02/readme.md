@@ -2,121 +2,139 @@
 
 | Objectives |
 | :--- |
-| Describe the Rails Asset Pipeline, what it does, and why we use it. |
-| Require assets in Rails. |
+| Describe how the Rails Asset Pipeline works and why we use it. |
+| Require custom and third-party assets in Rails. |
 | Precompile assets for running in production. |
 
-#### Overview
+## Asset Pipeline Overview
 
-The goal of the asset pipeline is to:
+**The goal of the asset pipeline is to:**
 
-- Compress files so they are as small as possible
-    + Smaller files load faster
-- Reduce the number of files transferred to the client
-    + By combining files
-        - CSS files are combined into a single file
-        - Javascript files are combined into a single file
-    + By caching files in the browser
+* Compress assets (CSS, JavaScript, and images) so they are as small as possible, since smaller files load faster
+* Reduce the number of files transferred to the client, by:
+  * Combining files before sending them to the browser
+    * All CSS files are combined into a single `application.css` file
+    * All JavaScript files are combined into a single `application.js` file
+  * Caching files in the browser
 
 #### Remember this?
 
-``` html
+```html
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Load all the things!</title>
-    <script type="text/javascript" src="/vendor/jquery.js"></script>
-    <script type="text/javascript" src="/vendor/underscore.js"></script>
-    <script type="text/javascript" src="application.js"></script>
+  <meta charset="UTF-8">
+  <title>Load all the things!</title>
 </head>
+<body>
+  <script type="text/javascript" src="vendor/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="vendor/handlebars-v4.0.5.js"></script>
+  <script type="text/javascript" src="application.js"></script>
+</body>
+</html>
 ```
 
-That's 3 different requests to the server, for 3 different javascript files. Ouch!
+That's three different requests to the server, for three different JavaScript files. Ouch! There's got to be a better way!
 
-There's got to be a better way!
+## Caching
 
-#### Caching
-Your application can be configured to "cache" common javascript and css files in the client's browser.
+Your application can be configured to "cache" common JavaScript and CSS files in the client's browser.
 
-Cached files don't need to be requested _on every page load_. They're already there, ready to go: meaning **less wait time** and **faster page loads**.
+Cached files don't need to be requested *on every page load*. They're already there, ready to go, meaning **less wait time** and **faster page loads**.
 
 But how does the browser know when to update a cached file? What if you changed the file and the browser is using an older version?
 
 We need a way to "bust" the cache!
 
-**Cache Busting with Fingerprints**
+#### Cache-Busting with Fingerprints
 
 In Rails, assets are given a "fingerprint" that changes every time the file is updated (almost like a timestamp).
 
-For example, `application.js` file, with a fingerprint looks like this:
+For example, the `application.js` file with a fingerprint looks like this: `application-908e25f4bf641868d8683022a5b62f54.js`.
 
-`application-908e25f4bf641868d8683022a5b62f54.js`
+**Cache-busting works like this:**
 
-- If the fingerprint is the same, the browser simply uses its cached copy.
-- If the fingerprint has changed, the browser requests the new version of the file (and then caches it!).
-    + This is called "cache busting"
+* If the fingerprint is the same, the browser simply uses its cached copy.
+* If the fingerprint has changed, the browser requests the new version of the file (and then caches it!).
 
-#### Compression / Minification / Uglification
-What's the difference between [jquery.js](http://code.jquery.com/jquery-2.1.4.js) and [jquery.min.js](http://code.jquery.com/jquery-2.1.4.min.js)?
+## Compression / Minification / Uglification
+
+What's the difference between <a href="https://code.jquery.com/jquery-1.11.3.js" target="_blank">jquery-1.11.3.js</a> and <a href="https://code.jquery.com/jquery-1.11.3.min.js" target="_blank">jquery-1.11.3.min.js</a>?
 
 Let's do a quick comparison on the command line:
 
-``` bash
-# uncompressed jquery file
-curl http://code.jquery.com/jquery-2.1.4.js | wc
-#   lines  words   bytes
-#   9210   37959   247597
+```zsh
+# uncompressed jQuery file
+➜  curl https://code.jquery.com/jquery-1.11.3.js | wc
+#   lines   words   bytes
+#   10351   43235   284394
 
-# compressed jquery file
-curl http://code.jquery.com/jquery-2.1.4.min.js | wc
-#   lines  words   bytes
-#   4      1305    84345
+# compressed (minified) jQuery file
+➜  curl https://code.jquery.com/jquery-1.11.3.min.js | wc
+#   lines   words   bytes
+#   5       1413    95957
 ```
 
-#### What about CDNs?
-A CDN is a "content delivery network" and a handy way to deliver common "vendor" or "third party" libraries to your application. It's common to use a CDN for jQuery, Bootstrap, Underscore, Handlebars, etc.
+## What about CDNs?
+
+A CDN is a "content delivery network" and a handy way to deliver common "vendor" or "third-party" libraries to your application. It's common to use a CDN for jQuery, Bootstrap, Handlebars, etc.
 
 But is it fast?
 
 If a common file, like jQuery is delivered via CDN it is likely:
 
-    1. cached in your browser
-    2. cached by your ISP (Internet Service Provider)
-    3. dispatched from a nearby server
+  1. Cached in your browser.
+  2. Cached by your ISP (Internet Service Provider).
+  3. Dispatched from a nearby server.
 
-But is that faster than just sending 1 javascript file from your own server?
+But is that faster than just sending one JavaScript file from your own server?
 
-Could be! You'll have to make a decision about whether you want to host third party libraries (like jquery), or if you want to use a public CDN.
+It could be! You'll have to make a decision about whether you want to host third-party libraries (like jQuery), or if you want to use a public CDN.
 
+## How the Rails Asset Pipeline Works
 
-## The Asset Pipeline in Rails
-
-#### Remember This?
+#### Remember this?
 
 How we used to require files (manually):
 
-``` html
+```html
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Load all the things!</title>
-    <script type="text/javascript" src="/vendor/jquery.js"></script>
-    <script type="text/javascript" src="/vendor/underscore.js"></script>
-    <script type="text/javascript" src="application.js"></script>
-
-    <link rel="stylesheet" href="/vendor/bootstrap.css">
-    <link rel="stylesheet" href="application.css">
+  <meta charset="UTF-8">
+  <title>Load all the things!</title>
 </head>
+<body>
+  <script type="text/javascript" src="vendor/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="vendor/handlebars-v4.0.5.js"></script>
+  <script type="text/javascript" src="application.js"></script>
+</body>
+</html>
 ```
 
-How rails requires files (using the asset pipeline):
+How Rails requires files (using the asset pipeline):
 
-``` html
-<script src="/assets/application-908e25f4bf641868d8683022a5b62f54.js"></script>
-<link href="/assets/application-4dd5b109ee3439da54f5bdfd78a80473.css" rel="stylesheet" />
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <%= csrf_meta_tags %>
+  <!-- application stylesheet -->
+  <%= stylesheet_link_tag :application, media: :all %>
+  <title>Rails Asset Pipeline!</title>
+</head>
+<body>
+  <!-- application javascript file -->
+  <%= javascript_include_tag :application %>
+</body>
+</html>
 ```
 
-That's just two files!
+That's just two files! (Note that by default, Rails puts `<%= javascript_include_tag :application %>` in the HTML `<head></head>` tag, but you can move it to the bottom of the `<body></body>` to make sure it doesn't block the loading of your HTML).
 
-#### The Manifest
+### The Manifest
 
-In rails, instead of manually adding all those script tags, you're going to take advantage of `app/assets/javascripts/application.js`. Inside it there's a weird looking comment called a `manifest`:
+In rails, instead of manually adding all those script tags, you're going to take advantage of `app/assets/javascripts/application.js`. Inside the file there's a weird looking comment called a `manifest`:
 
 ``` javascript
 //= require jquery
@@ -125,43 +143,54 @@ In rails, instead of manually adding all those script tags, you're going to take
 //= require_tree .
 ```
 
-Actually, **It's not a comment!**. It's instructions saying _which files_ need to be loaded in the `head` of your html, and _in what order_.
+Actually, **it's not a comment!** It's instructions saying *which files* need to be loaded in your HTML, and *in what order*.
 
-It will look for the name of the file (e.g. "jquery") in the following directories:
+It will look for the name of the file (e.g. `jquery`) in the following directories:
 
-1. `app/assets/` -- application specific code
-2. `lib/assets/` -- custom libraries
-3. `vendor/assets/` -- third party libraries
+1. `app/assets/` - application specific code
+2. `lib/assets/` - custom libraries
+3. `vendor/assets/` - third-party libraries
 
+### Precompiling Assets
 
-#### Precompiling Assets
-So far we've been working on our applications _in development_. You may have noticed that when you create a rails application it has three databases: `development`, `test`, and `production`.
+So far we've been working on our applications *in development*. You may have noticed that when you create a rails application it has three databases, `development`, `test`, and `production`.
 
-The assets pipeline is designed for _production_ applications. That's when we care about _speed_!
+The asset pipeline is designed for *production* applications. That's when we care about *speed*!
 
-To turn your _many_ javascript and css files into _one_ javascript file and _one_ css file, you need to "precompile" your assets.
+To turn your *many* JavaScript and CSS files into *one* JavaScript file and _one_ CSS file, you need to "precompile" your assets.
 
 Precompiled assets live in `public/assets/`. Right now it's an empty folder!
 
-We need to run:
+You can run the following command to precompile your assets:
 
-``` bash
-rake assets:precompile
+```zsh
+➜  rake assets:precompile
 ```
 
-Now look inside `public/assets/` and you'll see _minified_ and _fingerprinted_ versions of your assets, ready to be compiled into a single file.
+Now look inside `public/assets/`, and you'll see *minified* and *fingerprinted* versions of your assets, compiled into a single file.
 
-``` html
-<script src="/assets/application-908e25f4bf641868d8683022a5b62f54.js"></script>
-<link href="/assets/application-4dd5b109ee3439da54f5bdfd78a80473.css" rel="stylesheet" />
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="/assets/application-4dd5b109ee3439da54f5bdfd78a80473.css" rel="stylesheet" />
+  <title>Precompiled Assets!</title>
+</head>
+<body>
+  <script src="/assets/application-908e25f4bf641868d8683022a5b62f54.js"></script>
+</body>
+</html>
 ```
 
-To destroy all your precompiled assets, simply run:
+To destroy your precompiled assets in development, simply run:
 
-``` bash
-rake assets:clobber
+```zsh
+➜  rake assets:clobber
 ```
 
-## Reference
-For more info, hit the docs:
-[Rails Guides: Asset Pipeline](http://guides.rubyonrails.org/asset_pipeline.html)
+Note you will typically only precompile your assets in development for debugging purposes. You'll set up your app to automatically precompile assets on deploy when you get ready to push to Heroku.
+
+## Resources
+
+* <a href="http://guides.rubyonrails.org/asset_pipeline.html">Rails Guides: Asset Pipeline</a>
