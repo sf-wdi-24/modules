@@ -31,7 +31,7 @@
     <td><a href="./day-02/module-02/">Validations &amp; Error-Handling</a></td>
     <td><a href="./day-03/module-02/">Rails Asset Pipeline</a></td>
     <td><a href="./day-04/module-02/">Lab - Testing & Validations</a></td>
-    <td>Intro Weekend Lab</td>
+    <td>Intro <a href="https://github.com/sf-wdi-24/crud-anything" target="_blank">Weekend Lab (CRUD Anything)</a></td>
   </tr>
   <tr>
     <td>HW</td>
@@ -39,6 +39,6 @@
     <td>Start Rails Blog</td>
     <td>Continue Rails Blog</td>
     <td>Continue Rails Blog</td>
-    <td><a href="https://github.com/sf-wdi-24/crud-anything">Weekend Lab</a></td>
+    <td><a href="https://github.com/sf-wdi-24/crud-anything" target="_blank">Weekend Lab (CRUD Anything)</a></td>
   </tr>
 </table>
