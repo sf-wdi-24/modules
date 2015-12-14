@@ -52,11 +52,11 @@ SQL, Structured Query Language, is a specialized language used to create, manipu
 
 Let's create our first relational database (RDB) using the Terminal.
 
-  `createdb practice`
+  `CREATE DATABASE practice`
 
 Then let's connect to it by name so we can practice our SQL.
 
-  `psql practice`
+  `\connect practice`
 
 In your Terminal, you should see a prompt like the following:
 
