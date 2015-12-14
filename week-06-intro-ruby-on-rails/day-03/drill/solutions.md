@@ -31,7 +31,7 @@ def binary_search_iterative(array, target)
   mid = (low + high) / 2
 
   # while low index is less than high index
-  while low < high do
+  while low <= high do
     return mid if target == array[mid]
     puts "low: #{low}, mid: #{mid}, high: #{high}"
 
@@ -56,7 +56,7 @@ end
 def binary_search_recursive(array, target, low = 0, high = array.length - 1)
 
   # if target not found, return false
-  return false if low >= high
+  return false if low > high
 
   # declare variable for mid index
   mid = (low + high) / 2
