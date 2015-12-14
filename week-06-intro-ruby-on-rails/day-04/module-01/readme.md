@@ -63,7 +63,7 @@ So how do you tell Bundler to take your `Gemfile` and generate `Gemfile.lock`? R
 
 ## Running Rails Server
 
-1. Create a new rails app from the Terminal with `rails new intro_rails --skip-activerecord`. (The last flag tells the application not use Active Record, which is Rails's built-in ORM. We'll learn more about it this afternoon.)
+1. Create a new rails app from the Terminal with `rails new intro_rails -T`. (The `-T` flag tells the application not to include the default testing framework.)
 2. Change directories into your `intro_rails` app.
 3. Run `rails server` or just `rails s` from the Terminal, and see what happens.
 4. This will start a server on `localhost:3000`. Go there in the browser, and see what it says...
