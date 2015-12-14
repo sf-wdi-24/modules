@@ -44,7 +44,7 @@ Don't copy/paste the tutorial, this is the most important part and to avoid copy
 
 ## Challenges
 
-1. Don't let a logged in user signup or login again.
+1. Don't let an authenticated user signup or login a second time.
 1. Implement `password_confirmation` for new users.
 1. Create the ability to "<a href="http://railscasts.com/episodes/274-remember-me-reset-password" target="_blank">remember me</a>" for users logging in.
   * How long do you remember them for?
