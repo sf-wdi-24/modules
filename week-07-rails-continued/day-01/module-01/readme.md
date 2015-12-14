@@ -1,10 +1,10 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Intro SQL
-#### In which we suffer through SQL to appreciate Active Records
+#### In which we suffer through SQL to appreciate Active Record
 
 
 ## What is a Relational Database (RDB)?
 
-Relational databases were invented in the 1970's as a way to structure data so that it can be queried by a "relational algebra." The basic idea of relational model, though, was to use collections of data, Tables, where each database manages Relations among the data in various tables. Each table is organized like a spreadsheet with a Row (also known as "record") for each data item and with attributes of those items arranged in Columns*.
+Relational databases were invented in the 1970's as a way to structure data so that it can be queried by "relational algebra." The basic idea of relational model, though, was to use collections of data (Tables) where each database manages Relations among the data in various tables. Each table is organized like a spreadsheet with a Row (also known as "record") for each data item and with attributes of those items arranged in Columns.
 
 
 **Authors Table**
@@ -25,7 +25,7 @@ Relational databases were invented in the 1970's as a way to structure data so t
 | 4 | Through the Looking-Glass | 1871 | 9781489500182 | 2 |
 | 5 | The Time Machine |  1895  | 9781423794417 | 3 |
 
-**Primary Key:** The primary key of a relational table uniquely identifies each record in the table. This column is automatically assigned a btree index in postgres.
+**Primary Key:** The primary key of a relational table uniquely identifies each record in the table. This column is automatically assigned a btree index in Postgres.
 
 ## What is SQL?
 

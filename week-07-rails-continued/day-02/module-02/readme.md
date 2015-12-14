@@ -44,7 +44,7 @@ class Airplane < ActiveRecord::Base
 end
 ```
 
-This snippet of code is calling the `validate` method, and accepting two arguments, an attribute from a model, and a hash of configurations: `{ presence: true, uniqueness: true, length: { minimum: 6 }`.
+This snippet of code is calling the `validate` method, and accepting two arguments, an attribute from a model, and a hash of configurations: `{ presence: true, uniqueness: true, length: { minimum: 6 } }`.
 
 If you try adding a new airplane to the database witout a name, or with a duplicate name, or with a name with fewer than 6 characters, you'll get an error:
 

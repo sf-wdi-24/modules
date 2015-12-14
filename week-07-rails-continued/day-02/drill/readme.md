@@ -6,7 +6,7 @@
 
 We've been discussing trees and using them constantly in class. Have you noticed?
 
-Let's take yesterday's module as an example, when we created an `INDEX` in PostgreSQL it defaulted to be a special type of index. The default indexing method is `btree` which we can find out by looking at the <a href="http://www.postgresql.org/docs/9.2/static/sql-createindex.html" target="_blank">PostgreSQL `CREATE INDEX` Documentation</a>.
+Let's take yesterday's module as an example - when we created an `INDEX` in PostgreSQL it defaulted to be a special type of index. The default indexing method is `btree` which we can find out by looking at the <a href="http://www.postgresql.org/docs/9.2/static/sql-createindex.html" target="_blank">PostgreSQL `CREATE INDEX` Documentation</a>.
 
 <details>
   <summary>What do you think `btree` stands for? **Hint** programmers are lazy.</summary>
@@ -38,7 +38,7 @@ People grow trees and they're a core data structure used in computers. We use th
 
 Let's do a quick dive into PostgreSQL to see how they implement trees. Maybe this will give you some ideas for the drill tomorrow.
 
-Oh, and this code you may not recognize syntax but I'm hoping you'll be able to recognize a few things.
+Oh, and in this code you may not recognize syntax but I'm hoping you'll be able to recognize a few things.
 
 The <a href="https://github.com/postgres/postgres/blob/71fc49dfe1d99bd83cd99c2e7a39f93e07d19310/src/backend/lib/rbtree.c" target="_blank">Red/Black Binary Search Trees of PostgreSQL</a>.
 
