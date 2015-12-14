@@ -304,14 +304,6 @@ We'll build off a rails app with auth. Fork and clone the [rails_auth app](https
 
 6. Write a `generate_username` method in the `User` model that passes your tests.
 
-
-
-
-
-
-
-
-
 **Controller Tests with Recipes!**
 
 1. Create a `Recipe` model and its controller. A recipe should include the dish's title and the instructions for making the dish. You can assume the instructions are plain text.
@@ -373,7 +365,7 @@ We'll build off a rails app with auth. Fork and clone the [rails_auth app](https
 
 1. **<a href="https://github.com/rspec/rspec-rails" target="_blank">rspec-rails Documentation</a>**
 2. **<a href="http://rspec.info/documentation/3.3/rspec-rails" target="_blank">More rspec-rails Documentation</a>**
-3. **<a href"https://www.relishapp.com/rspec/rspec-rails/docs/model-specs" target="_blank">Model Specs</a>**
+3. **<a href="https://www.relishapp.com/rspec/rspec-rails/docs/model-specs" target="_blank">Model Specs</a>**
 4. **<a href="https://www.relishapp.com/rspec/rspec-rails/docs/controller-specs" target="_blank">Controller Specs</a>**
 5. **<a href="https://www.relishapp.com/rspec/rspec-rails/docs/request-specs/request-spec" target="_blank">Request Specs</a>**
 6. **<a href="https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers" target="_blank">Matchers</a>**
