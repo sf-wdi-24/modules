@@ -47,16 +47,16 @@ Don't copy paste the tutorial, this is the most important part and to avoid copy
 
 1. Don't let a logged in user signup or login again.
 1. Implement `password_confirmation` for new users.
-1. Create the ability to "remember me" for users logging in.
+1. Create the ability to "<a href="http://railscasts.com/episodes/274-remember-me-reset-password" target="_blank">remember me</a>" for users logging in.
   * How long do you remember them for?
-1. Add ability to reset a password.
-1. Add a login form to a header navigation.
-1. Support 3rd-party authentication on your own.
+1. Add ability to <a href="http://api.rubyonrails.org/classes/ActiveModel/SecurePassword/ClassMethods.html#method-i-has_secure_password" target="_blank">reset a password</a>.
+1. Instead of a separate login view, give your site a navbar and add the login form to the nav.
+1. Support <a href="https://github.com/intridea/omniauth-github" target="_blank">3rd-party authentication</a> on your own.
   * Could be github auth.
 
 ## Docs & Resources
 
 * <a href="http://api.rubyonrails.org/classes/ActiveModel/SecurePassword/ClassMethods.html#method-i-has_secure_password" target="_blank">`has_secure_password`</a>
-* <a href="https://github.com/sf-wdi-19-20/modules/tree/master/w7_d3_1_rails_auth_signup" target="_blank">WDI 19-20 tutorial - signup</a>
-* <a href="https://github.com/sf-wdi-19-20/modules/tree/master/w7_d3_2_login_rails" target="_blank">WDI 19-20 tutorial - login</a>
-* <a href="https://github.com/sf-wdi-22-23/modules-23/tree/master/w07-ruby-on-rails-cont/d1-homework" target="_blank">WDI 22-23 homework</a>
+* <a href="https://www.railstutorial.org/book/modeling_users" target="_blank">Rails Tutorial on Modeling Users</a>
+* <a href="http://railscasts.com/episodes/250-authentication-from-scratch" target="_blank">Kinda Old Railscast</a>
+* <a href="https://www.codecademy.com/en/learn/rails-auth" target="_blank">Code Academy: Auth</a>
