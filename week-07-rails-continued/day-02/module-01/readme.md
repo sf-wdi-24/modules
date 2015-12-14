@@ -1,6 +1,5 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Rails Auth
 
-
 | Objectives |
 | :--- |
 | Implement a User model that securely stores passwords. |
@@ -17,11 +16,11 @@ I get it, some of you have heard of <a href="https://github.com/plataformatec/de
 
 ## Auth in Rails
 
-An auth flow hasn't changed from what <a href="https://github.com/sf-wdi-24/modules/blob/master/week-04-associated-data-and-users/day-02/module-01/readme.md#implementing-authentication" target="_blank">we learned in week 4</a> but with Rails we can build these route scaffolds with less work.
+An auth flow hasn't changed from what <a href="https://github.com/sf-wdi-24/modules/blob/master/week-04-associated-data-and-users/day-02/module-01/readme.md#implementing-authentication" target="_blank">we learned in week 4</a>, but with Rails we can build these route scaffolds with less work.
 
 In order to "roll our own" authentication we're going to follow <a href="https://gist.github.com/eerwitt/b36db29a025366037925" target="_blank">this tutorial</a>.
 
-Don't copy paste the tutorial, this is the most important part and to avoid copy-pasta we're going to change some core pieces.
+Don't copy/paste the tutorial, this is the most important part and to avoid copy-pasta we're going to change some core pieces.
 
 ## Requirements
 
