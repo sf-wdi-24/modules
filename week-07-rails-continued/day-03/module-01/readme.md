@@ -146,7 +146,7 @@ The foreign key always goes on the table with the data that belongs to data from
   ben.pets << otis # makes Otis one of Ben's pets
   # ^ same as:
   # ben.pets.push(milo)
-  ben.pets << lassie # makes Lassie another one of Nathan's pets
+  ben.pets << lassie # makes Lassie another one of Ben's pets
   ben.pets.count
   ben.pets.map(&:name)
   ben.pets.each do |pet| puts "My pet is named #{pet.name}!" end
@@ -374,8 +374,6 @@ rake db:migrate
 rails c
 > Pet.create(name: "Wowzer")
 > Pet.create(name: "Rufus")
-
-# --- OR ---
 
 # but later we will run a seed task
 rake db:seed

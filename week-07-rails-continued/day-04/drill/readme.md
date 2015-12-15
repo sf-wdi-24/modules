@@ -12,7 +12,7 @@
 >
 > The interview will involve a few general technical questions followed by a challenge.
 >
-> We are expecting you to complete the challenge using Ruby and our questions will be related to the Ruby programming language or fundamentals not related to a language's implementation.
+> We are expecting you to complete the challenge using Ruby and our questions will be related to the Ruby programming language or fundamentals not related to the language's implementation.
 >
 > Please prepare in advance to be in a quiet location with adequate headphones which include a microphone.
 >
