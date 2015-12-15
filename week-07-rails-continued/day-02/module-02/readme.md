@@ -32,7 +32,7 @@ Today we'll be focusing on server-side validations in Rails, using <a href="http
 
 ## Model Validations
 
-Validations provide security against invalid or harmful data entering into the database. Active Record provides a convenient and easy set of built-in methods for validating model attributes, as well as the ability to define custom validator methods. An example of a built-in validation:
+Validations provide security against invalid or harmful data entering into the database. Active Record provides a <a href="http://guides.rubyonrails.org/active_record_validations.html" target="_blank">convenient and easy set of built-in methods</a> for validating model attributes, as well as the ability to define custom validator methods. An example of a built-in validation:
 
 ```ruby
 #
@@ -177,3 +177,7 @@ Just one last step! We've sent `flash` to the view, but we haven't rendered it y
 Now that you've seen how to implement validations, propagate the Active Record errors from your database models to the controller, and then pass the errors into the view, it's your turn!
 
 See <a href="https://github.com/sf-wdi-24/rails_validations_errors" target="_blank">this repo</a> for the starter code and challenges.
+
+## Resources
+
+* <a href="http://guides.rubyonrails.org/active_record_validations.html" target="_blank">Active Record Validation Docs</a>
