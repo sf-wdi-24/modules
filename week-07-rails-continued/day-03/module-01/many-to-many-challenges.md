@@ -6,7 +6,7 @@ Here's what our models' attributes might look like for actors and movies:
   * `Actor`: first_name, last_name
   * `Movie`: title, description, year
 
-For these challenges, continue to work in your `practice` Rails app.
+For these challenges, continue to work in your `practice_associations` Rails app.
 
 ## Your Task
 

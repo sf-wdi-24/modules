@@ -46,14 +46,14 @@
 
 *Solutions for Rails console portions:*
 
-* Create actor, movie, and association:
+Create actor, movie, and association:
 
-  ```ruby
-  arnold = Actor.create(first_name: "Arnold", last_name: "Schwarzenegger")
-  terminator = Movie.create(title: "The Terminator", description: "science fiction film", year: 1984)
-  terminator.actors << arnold
+```ruby
+arnold = Actor.create(first_name: "Arnold", last_name: "Schwarzenegger")
+terminator = Movie.create(title: "The Terminator", description: "science fiction film", year: 1984)
+terminator.actors << arnold
 
-  # check associations
-  terminator.actors
-  arnold.movies
-  ```
+# check associations
+terminator.actors
+arnold.movies
+```
