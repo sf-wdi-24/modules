@@ -176,7 +176,7 @@ Assuming we've already set a `@user` variable with first and last names, we can 
 
 ### Testing Controllers
 
-To test authentication, we need to define some `@current_user` before each of our tests run. The last line in this `before do` block --   `allow_any_instance_of(...` -- creates a "stub" (fake) `current_user` instance method for the ApplicationController and sets it up as a getter that only every returns the `@current_user` we made with ffaker.
+To test authentication, we need to define some `@current_user` before each of our tests run. The last line in this `before do` block --   `allow_any_instance_of(...` -- creates a "stub" (fake) `current_user` instance method for the ApplicationController and sets it up as a getter that only ever returns the `@current_user` we made with ffaker.
 
   ```ruby
   #
