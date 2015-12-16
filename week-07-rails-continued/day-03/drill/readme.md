@@ -25,9 +25,9 @@ Breadth-first search spreads across the tree or graph, moving outward one step a
 
 6. In English or psuedocode, how could you modify breadth-first search to return a group of matching nodes?
 
-## Stretch Challenges
+## Stretch Challenge
 
-1. In English or pseudocode, how could you modify breadth-first search to return a parent node that's two nodes above the target key? Three nodes above? **Example:**
+* In English or pseudocode, how could you modify breadth-first search to return a parent node that's two nodes above the target key? Three nodes above? **Example:**
 
   ```ruby
   # return parent node two nodes above target key
