@@ -40,7 +40,7 @@
     <td><a href="https://github.com/sf-wdi-24/rails_blog_app_posts" target="_blank">Continue Rails Blog: Posts</a></td>
     <td><a href="https://github.com/sf-wdi-24/rails_blog_app_testing" target="_blank">Continue Rails Blog: Testing</a></td>
     <td>
-      <a href="https://github.com/sf-wdi-24/crud-anything" target="_blank">Weekend Lab (CRUD Anything)</a>
+      <a href="https://github.com/sf-wdi-24/crud-anything" target="_blank">Weekend Lab (CRUD Anything)</a><br><br>
       <a href="https://github.com/sf-wdi-24/holiday-break" target="_blank">Holiday Break Resources</a>
     </td>
   </tr>
