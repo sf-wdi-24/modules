@@ -11,9 +11,9 @@
   </tr>
   <tr>
     <td>Drill</td>
-    <td>Mock Interviews</td>
-    <td>Mock Interviews</td>
-    <td>Mock Interviews</td>
+    <td>[Mock Interviews](./day-01/drill)</td>
+    <td>[Mock Interviews](./day-02/drill)</td>
+    <td>[Mock Interviews](./day-03/drill)</td>
     <td>Project Vagabond</td>
     <td>Project 2</td>
   </tr>
