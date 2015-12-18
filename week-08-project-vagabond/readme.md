@@ -20,7 +20,7 @@
   <tr>
     <td>Module1</td>
     <td>
-      GitHub Collaboration Demo<br><br>
+      [GitHub Collaboration Demo](./../how-tos/github/collaboration-workflow)<br><br>
       Intro Project Vagabond
     </td>
     <td>
