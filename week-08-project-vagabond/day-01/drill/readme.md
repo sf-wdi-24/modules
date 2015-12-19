@@ -18,10 +18,10 @@
 
 #### Wednesday
 
-| Time | Interviewer 1 | Interviewer 2 | Interviewer 3 | Interviewer 4 | Interviewer 5 |
-| :---- | :---- | :---- | :---- | :---- | :---- |
-| 9:17 | Eddy | John | Michael | Stanley | Steven |
-| 9:47 | Trung | Victoria | Zohar |  |  |
+| Time | Interviewer 1 | Interviewer 2 | Interviewer 3 | Interviewer 4 |
+| :---- | :---- | :---- | :---- | :---- |
+| 9:17 | Eddy | John | Michael | Stanley |
+| 9:47 | Steven | Trung | Victoria | Zohar |
 
 ## Drills
 
