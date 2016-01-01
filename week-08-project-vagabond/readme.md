@@ -14,7 +14,7 @@
     <td>Mock Interviews</td>
     <td>Mock Interviews</td>
     <td>Mock Interviews</td>
-    <td>Project Vagabond</td>
+    <td><strong>10:00am</strong> - Project Vagabond Presentations</td>
     <td>Project 2</td>
   </tr>
   <tr>
@@ -33,10 +33,7 @@
       <strong>10:30am</strong> - “Client” Meetings<br><br>
       <strong>11:00am</strong> - Breakout Lesson: Photo-Uploading with Paperclip
     </td>
-    <td>
-      <strong>10:00am</strong> - Project Vagabond Presentations<br><br>
-      Project 2 Idea Pitches / Intro Project Requirements
-    </td>
+    <td>Project 2 Idea Pitches / Intro Project Requirements</td>
     <td>Project 2</td>
   </tr>
   <tr>
