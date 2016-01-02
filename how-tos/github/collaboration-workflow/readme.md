@@ -5,7 +5,7 @@ GitHub is a powerful tool for version control and collaborating on code. There a
 1. You **fork** another developer's project and make pull requests from *your remote fork* to the *project's remote*.
 2. Another developer makes you a **collaborator** on a project they own, giving you the ability to clone the project and make pull requests directly from the project's *remote branches* to the project's *remote master*. (Note that as a collaborator on a project, you also have the ability to push directly to the master branch, which you should NEVER do.
 
-<!-- TODO: Draw a diagram of the two scenarios. -->
+![github-collab-diagram](https://cloud.githubusercontent.com/assets/7833470/12072895/69abd404-b0b1-11e5-8d8c-4ff54c13b0a0.png)
 
 ## Collaborator Scenario
 
@@ -53,7 +53,7 @@ Your first task is to add user authentication. At the same time, Jessica is doin
 
 6. Now navigate in your browser to the original remote repo's GitHub page. GitHub will detect that you just pushed a new branch and give you a prompt to make that branch into a pull request. Go for it!
 
-  <!-- TODO: Add screenshot -->
+  ![pull-request](https://cloud.githubusercontent.com/assets/7833470/12072813/76841710-b0aa-11e5-9644-4f840081c986.png)
 
   This will notify all the collaborators that you just made a pull request, and it's waiting to be merged. The next step is for someone else on the team to review your code and suggest any changes needed before merging it in.
 
@@ -63,7 +63,27 @@ Your first task is to add user authentication. At the same time, Jessica is doin
 
 ## Resolving Merge Conflicts Locally
 
-<!-- TODO: Add screenshots of Terminal and Sublime -->
+1. When merging your local `master` branch into a local feature branch, the Terminal will let you know if there are conflicts, and if so, which files have conflicts.
+
+  ![conflict-terminal](https://cloud.githubusercontent.com/assets/7833470/12072814/7a636df4-b0aa-11e5-98b0-0e31b37dc41d.png)
+
+2. Open your project in Sublime, and open the file(s) with conflicts. You can see the conflict here on lines 27-33:
+
+  ![conflict-sublime](https://cloud.githubusercontent.com/assets/7833470/12072816/813bd576-b0aa-11e5-9b22-b6b41302f9fa.png)
+
+3. You AND one of your group members should decide together which version of the code to keep and which to delete. Remember to always delete the "merge junk" (`<<<<<<< HEAD`, `=======`, and `>>>>>>> master` lines) to prevent syntax errors.
+
+  ![delete-code](https://cloud.githubusercontent.com/assets/7833470/12072817/842c5cce-b0aa-11e5-9c9a-9eecb678a7ad.png)
+
+4. After deleting the decided-upon code and the merge junk, your file should now have the clean version of the code, ready to be checked into git.
+
+  ![final-code](https://cloud.githubusercontent.com/assets/7833470/12072818/8760301e-b0aa-11e5-8248-9201c1d70153.png)
+
+5. Add and commit your changes that resolved the conflict(s):
+
+  ![resolve-conflict](https://cloud.githubusercontent.com/assets/7833470/12072819/898221a4-b0aa-11e5-84ec-f6a1bedaa6de.png)
+
+  Your feature branch is now ready to be pushed up to GitHub, without conflicts!
 
 ## Resources
 
