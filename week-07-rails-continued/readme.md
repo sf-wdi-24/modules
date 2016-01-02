@@ -23,7 +23,7 @@
     <td><a href="./day-02/module-01/">Rails Auth</a></td>
     <td><a href="./day-03/module-01/">ActiveRecord Associations</a></td>
     <td><a href="./day-04/module-01/">Testing with RSpec</a></td>
-    <td>Review</td>
+    <td><a href="https://github.com/sf-wdi-24/rails_partials_helpers" target="_blank">Review: Rails Partials & Helpers</a></td>
   </tr>
   <tr>
     <td>Module2</td>
