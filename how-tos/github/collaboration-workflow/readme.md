@@ -88,3 +88,5 @@ Your first task is to add user authentication. At the same time, Jessica is doin
 ## Resources
 
 * <a href="https://help.github.com/articles/adding-collaborators-to-a-personal-repository" target="_blank">Adding collaborators to a personal repository</a>
+* <a href="http://nvie.com/posts/a-successful-git-branching-model" target="_blank">A successful Git branching model</a>
+* <a href=" https://help.github.com/articles/using-pull-requests" target="_blank">Using pull requests</a>
