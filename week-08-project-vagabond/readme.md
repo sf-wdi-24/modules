@@ -20,7 +20,7 @@
   <tr>
     <td>Module1</td>
     <td>
-      [GitHub Collaboration Demo](./../how-tos/github/collaboration-workflow)<br><br>
+      <a href="./../how-tos/github/collaboration-workflow">GitHub Collaboration Demo</a><br><br>
       Intro Project Vagabond / Initial "Client" Meetings
     </td>
     <td>
