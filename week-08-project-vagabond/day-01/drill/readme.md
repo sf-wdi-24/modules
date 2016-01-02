@@ -4,28 +4,28 @@
 
 #### Monday
 
-| Time | Interviewer 1 | Interviewer 2 | Interviewer 3 | Interviewer 4 | Interviewer 5 |
-| :---- | :---- | :---- | :---- | :---- | :---- |
-| 9:17 | Adam | Alan | André | Carlos | Cynthia |
-| 9:47 | Dave | Eddy | John | Michael | Stanley |
+| Time | Ben | Cameron | Erik | Zoe | Ian | Joe |
+| :---- | :---- | :---- | :---- | :---- | :---- | :---- |
+| 9:17 | Eddy | André | Carlos | John | Adam | Michael |
+| 9:47 | Dave | Cynthia | Stanley | Steven | Victoria | Alan |
 
 #### Tuesday
 
-| Time | Interviewer 1 | Interviewer 2 | Interviewer 3 | Interviewer 4 | Interviewer 5 |
-| :---- | :---- | :---- | :---- | :---- | :---- |
-| 9:17 | Steven | Trung | Victoria | Zohar | Adam |
-| 9:47 | Alan | André | Carlos | Cynthia | Dave |
+| Time | Ben | Cameron | Erik | Joe |
+| :---- | :---- | :---- | :---- | :---- |
+| 9:17 | Victoria | Trung | Alan | Stanley |
+| 9:47 | Adam | Michael | Zohar | Steven |
 
 #### Wednesday
 
-| Time | Interviewer 1 | Interviewer 2 | Interviewer 3 | Interviewer 4 |
+| Time | Myk | Pete | Tim | Vikash |
 | :---- | :---- | :---- | :---- | :---- |
-| 9:17 | Eddy | John | Michael | Stanley |
-| 9:47 | Steven | Trung | Victoria | Zohar |
+| 9:17 | Trung | Dave | Cynthia | John |
+| 9:47 | Zohar | Carlos | Eddy | André |
 
 ## Drills
 
-When you're not in a mock interview, please work on the drills below OR work through exercises of your choice on <a href="http://www.codewars.com/dashboard" target="_blank">Codewars</a> or <a href="http://exercism.io" target="_blank">Exercism.io</a>. Feel free to use JavaScript or Ruby.
+When you're not in a mock interview, please work on the drills below OR work through exercises of your choice on <a href="http://www.codewars.com/dashboard" target="_blank">Codewars</a> or <a href="http://exercism.io" target="_blank">Exercism.io</a>. Feel free to use JavaScript or Ruby to solve the following problems.
 
 1. **Sum Pairs:** Write a program to find all pairs of integers in an array that sum up to a specified value. Can you implement it in constant (`O(n)`) time? **Example:**
 

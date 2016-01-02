@@ -254,4 +254,4 @@ We could use a tool like <a href="https://github.com/jnicklas/capybara" target="
 ## Challenges
 
 
-We'll build off a rails app with auth. Fork and clone the <a href="https://github.com/sf-wdi-24/rspec_testing_app" target="_blank">rspec_testing app</a>. You will need to add the FFaker gem to your project to complete these exercises.
+Fork and clone the <a href="https://github.com/sf-wdi-24/rspec_testing_app" target="_blank">rspec_testing app</a>. You will need to add the FFaker gem to your project to complete these exercises.
