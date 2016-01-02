@@ -13,7 +13,7 @@ Imagine you, Jessica, and Sam want to build an app together. Jessica bootstraps 
 
 Your first task is to add user authentication. At the same time, Jessica is doing API integration and Sam is writing tests.
 
-1. You clone the project Jessica pushed up to GitHub after she makes you a collaborator. This creates a local repository with a `remote` called `origin` which is the original repo Jessica created and technically belongs to Jessica. From within your local repository, you can check the urls of all remote repos it's connected to.
+1. You clone the project Jessica pushed up to GitHub after she makes you a collaborator. This creates a local repository with a `remote` called `origin` which is the original repo Jessica created and technically belongs to Jessica. From within your local repository, you can check the URLs of all remote repos it's connected to.
 
   ```zsh
   ➜  git remote -v
@@ -25,7 +25,7 @@ Your first task is to add user authentication. At the same time, Jessica is doin
   ➜  git checkout -b auth
   ```
 
-  *Now you build the entire auth feature with sign up, log in, log out, etc. How do you get your new code up to the main group project?*
+  *Now you build the entire auth feature with sign up, log in, log out, etc. The following steps outline how to get your new code up to the main group project.*
 
 3. Make sure to commit all your changes on your `auth` branch. Switch back to your local `master` branch, then pull from `origin/master` to bring your local `master` branch up to date.
 
@@ -57,24 +57,13 @@ Your first task is to add user authentication. At the same time, Jessica is doin
 
   This will notify all the collaborators that you just made a pull request, and it's waiting to be merged. The next step is for someone else on the team to review your code and suggest any changes needed before merging it in.
 
-7. If there are no other pull requests in the queue, one of your team members can merge your pull request cleanly with the most up-to-date master. Otherwise, if your team merges other pull requests before yours, those pull requests might create merge conflicts with yours.
+7. If there are no other pull requests in the queue, one of your team members can merge your pull request cleanly with the most up-to-date `master`. Otherwise, if your team merges other pull requests before yours, those pull requests might create merge conflicts with yours.
 
-  In that case, GitHub will show that merge conflicts exist and must be resolved locally. You'll want to repeat steps 3-5 to resolve the conflicts locally. Remember it's not up to the project "owner" to fix all the merge conflicts! (How could they do that? They didn't write the code!) Each branch owner is responsible to get a clean pull request queued up.
-
-<!-- TODO: Edit "code review" and "resolving merge conflicts" sections -->
-
-## Code Review
-
-To do review merges that do not have conflicts use GitHub's "Diff" functionality in the browser.
+  In that case, GitHub will show that merge conflicts exist and must be resolved locally. You'll want to repeat steps 3-5 to resolve the conflicts locally. Remember it's not up to the project "owner" to fix all the merge conflicts. (How could they do that? They didn't write your code!) Each branch owner is responsible to get a clean pull request queued up.
 
 ## Resolving Merge Conflicts Locally
 
-1. Fetch the remote branch: `git fetch <<remote branch name>>`
-2. Checkout the new local branch: `git checkout <<branch name>>`
-3. Merge master into the local branch: `git merge master`
-4. Resolve conflicts.
-5. Push the branch to remote: `git push origin <<branch name>>`
-6. Now GitHub will be "happy" and the green button will be there to merge without conflicts.
+<!-- TODO: Add screenshots of Terminal and Sublime -->
 
 ## Resources
 
