@@ -21,16 +21,16 @@
     <td>Module1</td>
     <td>
       GitHub Collaboration Demo<br><br>
-      Intro Project Vagabond / Initial “Client” Meetings
+      Intro Project Vagabond / Initial "Client" Meetings
     </td>
     <td>
       Project Vagabond<br><br>
-      <strong>10:30am</strong> - “Client” Meetings<br><br>
+      <strong>10:30am</strong> - "Client" Meetings<br><br>
       <strong>11:00am</strong> - Breakout Lesson: Sending Emails
     </td>
     <td>
       Project Vagabond<br><br>
-      <strong>10:30am</strong> - “Client” Meetings<br><br>
+      <strong>10:30am</strong> - "Client" Meetings<br><br>
       <strong>11:00am</strong> - Breakout Lesson: Photo-Uploading with Paperclip
     </td>
     <td>Project 2 Idea Pitches / Intro Project Requirements</td>
