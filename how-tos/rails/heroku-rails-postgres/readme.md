@@ -2,7 +2,7 @@
 
 ## Before You Do Anything
 
-1. Make sure your app is under version control with `git`.  If you're not sure if your project is under version control yet, you definitely haven't been committing often enough. Run `git status` to check if your project directory is a git repo. If not, run `git init` to make it into one, then commit everything you have so far.
+1. Make sure your app is under version control with `git`.  If you're not sure if your project is under version control yet, you definitely haven't been committing often enough. Run `git status` to check if your project directory is a git repo. If not, run `git init` to make it into one, then commit everything you have so far. **If you have any secret keys (such as API keys), <a href="https://github.com/bkeepers/dotenv" target="_blank">hide them in environment variables</a> before committing!**
 
 2. If you haven't already, sign up for a <a href="https://www.heroku.com" target="_blank">Heroku account</a>.
 
