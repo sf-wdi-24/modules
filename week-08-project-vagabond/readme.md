@@ -28,7 +28,7 @@
     <td>
       Project Vagabond<br><br>
       <strong>10:30am</strong> - "Client" Meetings<br><br>
-      <strong>11:00am</strong> - Breakout Lesson: Sending Emails
+      <strong>11:00am</strong> - Breakout Lesson: <a href="./../how-tos/rails/sending-emails">Sending Emails</a>
     </td>
     <td>
       Project Vagabond<br><br>
