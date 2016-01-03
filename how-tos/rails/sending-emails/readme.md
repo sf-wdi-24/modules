@@ -1,12 +1,12 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Sending Emails with Action Mailer & SendGrid
 
-This tutorial builds off the starter code in the <a href="">rails_welcome_email</a> repo. You can find the solution in the <a href="">email branch</a> and see it live on <a href="https://rails-welcome-email.herokuapp.com">Heroku</a>.
+This tutorial builds off the starter code in the <a href="https://github.com/sf-wdi-24/rails_welcome_email" target="_blank">rails_welcome_email</a> repo. You can find the solution in the <a href="https://github.com/sf-wdi-24/rails_welcome_email/tree/email" target="_blank">email branch</a>.
 
 ## Sending Emails in Development
 
-1. You can use Gmail along with the Rails Action Mailer to send emails in development. Before setting up Action Mailer, create a new Gmail account for your app, e.g. "your_app_name@gmail.com". Keep the username and password handy, since you'll need it for the Action Mailer configuration. DON'T enable two-factor authentication or any extra security settings for this new gmail account.
+1. You can use Gmail along with the Rails Action Mailer to send emails in development. Before setting up Action Mailer, create a new Gmail account for your app, e.g. "your_app_name@gmail.com". Keep the username and password handy, since you'll need it for the Action Mailer configuration. DON'T enable two-factor authentication or any extra security settings for this new Gmail account.
 
-2. Add the following code to `config/environments/development.rb` to configure Action Mailer send emails from the new Gmail account you just created:
+2. Add the following code to `config/environments/development.rb` to configure Action Mailer to send emails from the new Gmail account you just created:
 
   ```ruby
   #
@@ -34,7 +34,7 @@ This tutorial builds off the starter code in the <a href="">rails_welcome_email<
   end
   ```
 
-  At this point, it's a good idea to store "your_gmail_username" and "your_gmail_password" in environment variables to make sure they are hidden from git. Use the <a href="https://github.com/bkeepers/dotenv">dotenv-rails</a> gem to set up an `.env` file to hide secret keys.
+  At this point, it's a good idea to store "your_gmail_username" and "your_gmail_password" in environment variables to make sure they are hidden from git. Use the <a href="https://github.com/bkeepers/dotenv" target="_blank">dotenv-rails</a> gem to set up an `.env` file to hide secret keys.
 
 3. Now you're ready to create your first mailer! Run this command in the Terminal:
 
@@ -124,7 +124,7 @@ This tutorial builds off the starter code in the <a href="">rails_welcome_email<
   ➜  heroku addons:create sendgrid:starter
   ```
 
-  Running that command creates a new account for your on SendGrid using your Heroku credentials. It also sets the environment variables `SENDGRID_USERNAME` and `SENDGRID_PASSWORD` for you on Heroku.
+  Running that command creates a new account for you on SendGrid using your Heroku credentials. It also sets the environment variables `SENDGRID_USERNAME` and `SENDGRID_PASSWORD` for you on Heroku.
 
 3. The last step is to configure Action Mailer to use SendGrid in production. Add this code to `config/environments/production.rb`:
 
