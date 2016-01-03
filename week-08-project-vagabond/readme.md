@@ -2,6 +2,7 @@
 
 * <a href="https://github.com/sf-wdi-24/project-vagabond" target="_blank">Project Vagabond Requirements</a>
 * <a href="https://github.com/sf-wdi-24/project-02-idea-pitches" target="_blank">Project 2 Idea Pitches</a> - PLEASE READ if you have an idea for Project 2!
+* <a href="https://github.com/sf-wdi-24/project-02" target="_blank">Project 2 Requirements</a>
 
 <table>
   <tr>
