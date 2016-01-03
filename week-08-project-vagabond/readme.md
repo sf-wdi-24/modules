@@ -11,9 +11,9 @@
   </tr>
   <tr>
     <td>Drill</td>
-    <td>Mock Interviews</td>
-    <td>Mock Interviews</td>
-    <td>Mock Interviews</td>
+    <td><a href="./day-01/drill">Mock Interviews</a></td>
+    <td><a href="./day-02/drill">Mock Interviews</a></td>
+    <td><a href="./day-03/drill">Mock Interviews</a></td>
     <td><strong>10:00am</strong> - Project Vagabond Presentations</td>
     <td>Project 2</td>
   </tr>
