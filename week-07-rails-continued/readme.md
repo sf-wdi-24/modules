@@ -23,7 +23,7 @@
     <td><a href="./day-02/module-01/">Rails Auth</a></td>
     <td><a href="./day-03/module-01/">ActiveRecord Associations</a></td>
     <td><a href="./day-04/module-01/">Testing with RSpec</a></td>
-    <td>Review</td>
+    <td><a href="https://github.com/sf-wdi-24/rails_partials_helpers" target="_blank">Review: Rails Partials & Helpers</a></td>
   </tr>
   <tr>
     <td>Module2</td>
@@ -39,6 +39,9 @@
     <td><a href="https://github.com/sf-wdi-24/rails_blog_app" target="_blank">Start Rails Blog</a></td>
     <td><a href="https://github.com/sf-wdi-24/rails_blog_app_posts" target="_blank">Continue Rails Blog: Posts</a></td>
     <td><a href="https://github.com/sf-wdi-24/rails_blog_app_testing" target="_blank">Continue Rails Blog: Testing</a></td>
-    <td><a href="https://github.com/sf-wdi-24/crud-anything" target="_blank">Weekend Lab (CRUD Anything)</a></td>
+    <td>
+      <a href="https://github.com/sf-wdi-24/crud-anything" target="_blank">Weekend Lab (CRUD Anything)</a><br><br>
+      <a href="https://github.com/sf-wdi-24/holiday-break" target="_blank">Holiday Break Resources</a>
+    </td>
   </tr>
 </table>
