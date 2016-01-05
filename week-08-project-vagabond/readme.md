@@ -19,7 +19,10 @@
     <td><a href="./day-02/drill">Mock Interviews</a></td>
     <td><a href="./day-03/drill">Mock Interviews</a></td>
     <td><strong>10:00am</strong> - Project Vagabond Presentations</td>
-    <td>Project 2</td>
+    <td>
+      Project 2<br><br>
+      <strong>10:00am</strong> - Project Group Stand-Up
+    </td>
   </tr>
   <tr>
     <td>Module1</td>
@@ -54,7 +57,10 @@
       Project Vagabond<br><br>
       <strong>2-2:30pm</strong> - Instructor/Group Meetings
     </td>
-    <td>Project 2 Planning</td>
+    <td>
+      Project 2 Planning<br><br>
+      <strong>2-2:30pm</strong> - Instructor/Group Meetings
+    </td>
     <td>Project 2</td>
   </tr>
   <tr>
