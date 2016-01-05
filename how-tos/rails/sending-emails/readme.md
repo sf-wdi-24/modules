@@ -63,7 +63,7 @@ This tutorial builds off the starter code in the <a href="https://github.com/sf-
   class UserMailer < ApplicationMailer
 
     def welcome(user)
-    	@user = user
+      @user = user
       mail( to: @user.email, subject: "Thanks for signing up!" )
     end
 
