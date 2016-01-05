@@ -18,10 +18,10 @@
 
 #### Wednesday
 
-| Time | Joe | Myk | Pete | Tim | Vikash |
+| Time | Brianna | Joe | Myk | Pete | Tim |
 | :---- | :---- | :---- | :---- | :---- | :---- |
-| 9:17 | Stanley | Trung | Dave | Cynthia | John |
-| 9:47 | Steven | Zohar | Carlos | Eddy | André |
+| 9:17 | John | Stanley | Trung | Dave | Cynthia |
+| 9:47 | André | Steven | Zohar | Carlos | Eddy |
 
 ## Drills
 
