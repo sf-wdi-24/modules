@@ -11,17 +11,17 @@
 
 #### Tuesday
 
-| Time | Ben | Cameron | Erik | Joe |
-| :---- | :---- | :---- | :---- | :---- |
-| 9:17 | Victoria | Trung | Alan | Stanley |
-| 9:47 | Adam | Michael | Zohar | Steven |
+| Time | Ben | Cameron | Erik |
+| :---- | :---- | :---- | :---- |
+| 9:17 | Victoria | Trung | Alan |
+| 9:47 | Adam | Michael | Zohar |
 
 #### Wednesday
 
-| Time | Myk | Pete | Tim | Vikash |
-| :---- | :---- | :---- | :---- | :---- |
-| 9:17 | Trung | Dave | Cynthia | John |
-| 9:47 | Zohar | Carlos | Eddy | André |
+| Time | Brianna | Joe | Myk | Pete | Tim |
+| :---- | :---- | :---- | :---- | :---- | :---- |
+| 9:17 | John | Stanley | Trung | Dave | Cynthia |
+| 9:47 | André | Steven | Zohar | Carlos | Eddy |
 
 ## Drills
 
