@@ -108,3 +108,11 @@ Image still not loading? Here are some things to check:
 *  Is your image uploading? Check in the bucket
 *  Are you getting an "Access Denied" error? Check that your AWS credentials are right in you .env file.
 *  Are you getting other bogus stuff!?
+
+### Resources
+
+*  Use these docs as guides when you're implementing Paperclip and S3 into your Rails app.
+
+<a href="https://github.com/thoughtbot/paperclip" target="_blank">Paperclip</a>
+
+<a href="https://devcenter.heroku.com/articles/paperclip-s3" target="_blank">Heroku Dev Center</a>
