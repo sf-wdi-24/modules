@@ -41,7 +41,10 @@
       <strong>11:00am</strong> - Breakout Lesson: Photo-Uploading with Paperclip
     </td>
     <td>Project 2 Idea Pitches / Intro Project Requirements</td>
-    <td>Project 2</td>
+    <td>
+      Project 2<br><br>
+      <strong>10:30am</strong> - Rails Refactoring Lesson
+    </td>
   </tr>
   <tr>
     <td>Module2</td>
@@ -59,7 +62,7 @@
     </td>
     <td>
       Project 2 Planning<br><br>
-      <strong>2-2:30pm</strong> - Instructor/Group Meetings
+      <strong>3-3:30pm</strong> - Instructor/Group Meetings
     </td>
     <td>Project 2</td>
   </tr>
