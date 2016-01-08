@@ -8,9 +8,6 @@
 
 * These tasks can be run with a rake command allow for the website to be optimized more effectively in production.
 
-
-
-
 ## How?
 
 To check all of the rake tasks available to you in the terminal:
@@ -18,13 +15,11 @@ To check all of the rake tasks available to you in the terminal:
 rake -T
 ```
 
-### Each task definition consists of:
-
-
 To create a custom task you can go into your terminal and run:
 ```cli
 touch lib/tasks/fun_task.rake
 ```
+**Note:  You will want to name the file with .rake in order to allow Rails to look for it.  However, you will be able to write all of your code using standard Ruby conventions**
 
 This will allow you to house all of your tasks in the
 * A description
@@ -46,6 +41,8 @@ which should output:
 ```cli
 Yo Adrian!  I did it!!!
 ```
+
+You can add as many tasks as you want into the same file.  Doing so will help with your organization of the code.
 
 
 ## Demo
