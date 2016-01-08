@@ -2,3 +2,4 @@
 
 * <a href="https://www.youtube.com/watch?v=xv5UFayTzcE" target="_blank">Rails Workout App, Part 1</a> (<a href="https://github.com/sf-wdi-24/rails_workout_app" target="_blank">code</a>)
 * <a href="https://www.youtube.com/watch?v=zeUE72ztiHA" target="_blank">Rails Workout App, Part 2</a> (<a href="https://github.com/sf-wdi-24/rails_workout_app" target="_blank">code</a>)
+* <a href="https://www.youtube.com/watch?v=FIpMulUnGGo" target="_blank">Rails Services</a> (<a href="https://github.com/sf-wdi-24/rails_services/tree/sms_service" target="_blank">code</a>)
