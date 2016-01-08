@@ -1,10 +1,35 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Custom Rake Tasks
 
-
-Why?
-How?
+<img src="http://cdn.meme.am/instances/400x/58907263.jpg">
 
 
+## Why?
+* Creating custom rake tasks help companies and developers automate redundant activities that are needed for the maintenance of a website.
+
+* These tasks can be run with a rake command allow for the website to be optimized more effectively
+
+
+## How?
+
+### Each task definition consists of:
+
+* A description
+* The name that identifies the task
+* The code to be executed by the task
+
+```rb
+desc "Rocky looks for Adrian after facing Creed"
+task :yo_adrian,
+  puts "Yo Adrian!  I did it!!!"
+end
+
+```
+
+## Demo
+
+Note: Feel free to watch a demo of how to implement a custom rake task.  The resources below will be a definitive guide for you as you begin to construct your own tasks in your applications.
+
+**Let's image that we have a data base of 100 users that need to be reformatted on a daily basis.  We need to create a task that will do this for us**
 
 ### Resources
 
