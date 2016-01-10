@@ -39,7 +39,7 @@
     </td>
     <td>
       Project 2<br><br>
-      <strong>11:00am</strong> - Breakout Lesson: Rake Tasks
+      <strong>11:00am</strong> - Breakout Lesson: <a href="./../how-tos/rails/rake-tasks">Rake Tasks</a>
     </td>
     <td>
       Project 2<br><br>
