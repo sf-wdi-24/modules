@@ -1,10 +1,24 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Background Jobs with Delayed Job
 
-To practice setting up background jobs with Delayed Job, clone the starter code in <a href="https://github.com/sf-wdi-24/rails_background_jobs">rails_background_jobs</a>. You can see a working solution on the <a href="https://github.com/sf-wdi-24/rails_background_jobs/tree/delayed_job">delayed_job branch</a>.
+## Why Use Background Jobs
+
+Not every request in a web application needs to be processed right away. Especially in Rails, where requests are synchronous, it's important to prioritize requests where the user *needs* a response immediately. Actions like signing up, logging in, and creating any resource the user immediately interacts with all need to happen as soon as the user sends the request.
+
+However, actions like sending an email or "liking" a post or comment can afford to be delayed. It's normal to receive a welcome email several minutes after signing up for a website. For actions such as "liking" or "favoriting", we can "fake" a response on the front-end by changing the state of the DOM. That "like" or "favorite" doesn't need to be persistent in the database until the next time the user visits that page.
+
+For any request that can afford to be delayed, we can use **background jobs** to add the action to a "queue" of actions that need to be processed at some point in the near future (usually several seconds to several minutes from the time the use make the request). In production, this "queue" has dedicated memory on the server, meaning the jobs don't tie up memory needed for those immediate, synchronous requests in our application.
+
+## Queue Systems
+
+This tutorial focuses on using <a href="https://github.com/collectiveidea/delayed_job target="_blank">Delayed Job</a> for background job queuing, but there are other technologies that do this as well. Delayed Job is very compatible with Active Record and Postgres, storing the queue of jobs that need processing directly in your Postgres database. This has the advantage of integrating seamlessly with your Rails app, but it's important to watch out for database overload (see these <a href="http://www.sitepoint.com/delayed-jobs-best-practices" target="_blank">best practices</a>).
+
+Another option for background job queuing is <a href="https://github.com/resque/resque" target="_blank">Resque</a>, which takes advantage of the NoSQL key-value store <a href="http://redis.io" target="_blank">Redis</a> to queue background jobs. Resque requires a little more setup locally and in production, but it has the advantage of not affecting your database load.
 
 ## Delayed Job Setup
 
-You should follow the <a href="https://github.com/collectiveidea/delayed_job">Delayed Job docs</a> to get set up. Here is a summary of the setup steps:
+To practice setting up background jobs with Delayed Job, clone the starter code in <a href="https://github.com/sf-wdi-24/rails_background_jobs" target="_blank">rails_background_jobs</a>. You can see a working solution on the <a href="https://github.com/sf-wdi-24/rails_background_jobs/tree/delayed_job" target="_blank">delayed_job branch</a>.
+
+You should follow the <a href="https://github.com/collectiveidea/delayed_job" target="_blank">Delayed Job docs</a> to get set up. Here is a summary of the setup steps:
 
 1. Add `delayed_job_active_record` to your `Gemfile`:
 
@@ -62,7 +76,9 @@ There are two main ways to add jobs to the queue:
   @user.activate!(user_params)
   ```
 
-  You can also create <a href="https://github.com/collectiveidea/delayed_job#custom-jobs">custom jobs</a> to customize the behavior of your background jobs.
+  You can also create <a href="https://github.com/collectiveidea/delayed_job#custom-jobs" target="_blank">custom jobs</a> to customize the behavior of your background jobs.
+
+  Additionally, delayed Job integrates with the Rails built-in `ActionMailer` class. See the <a href="http://guides.rubyonrails.org/action_mailer_basics.html#calling-the-mailer" target="_blank">Action Mailer docs</a> to learn about how to send emails in a background job.
 
 ## Running Jobs Locally
 
@@ -78,12 +94,12 @@ To start your `worker` and begin processing jobs, run `heroku ps:scale worker=1`
 
 #### Delayed Job
 
-* <a href="https://github.com/collectiveidea/delayed_job">Delayed Job Docs</a>
-* <a href="https://devcenter.heroku.com/articles/delayed-job">Delayed Job - Heroku</a>
-* <a href="http://www.sitepoint.com/delayed-jobs-best-practices">Delayed Job Best Practices</a>
+* <a href="https://github.com/collectiveidea/delayed_job" target="_blank">Delayed Job Docs</a>
+* <a href="https://devcenter.heroku.com/articles/delayed-job" target="_blank">Delayed Job - Heroku</a>
+* <a href="http://www.sitepoint.com/delayed-jobs-best-practices" target="_blank">Delayed Job Best Practices</a>
 
 #### Resque
 
-* <a href="https://github.com/resque/resque">Resque Docs</a>
-* <a href="http://tutorials.jumpstartlab.com/topics/performance/background_jobs.html">Background Jobs with Resque - JumpstartLab Tutorial</a>
-* <a href="https://devcenter.heroku.com/articles/queuing-ruby-resque">Queuing in Ruby with Redis and Resque - Heroku</a>
+* <a href="https://github.com/resque/resque" target="_blank">Resque Docs</a>
+* <a href="http://tutorials.jumpstartlab.com/topics/performance/background_jobs.html" target="_blank">Background Jobs with Resque - JumpstartLab Tutorial</a>
+* <a href="https://devcenter.heroku.com/articles/queuing-ruby-resque" target="_blank">Queuing in Ruby with Redis and Resque - Heroku</a>
