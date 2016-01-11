@@ -19,7 +19,7 @@ To create a custom task you can go into your terminal and run:
 ```cli
 touch lib/tasks/fun_task.rake
 ```
-**Note:  You will want to name the file with .rake in order to allow Rails to look for it.  However, you will be able to write all of your code using standard Ruby conventions**
+**Note:  You will want to name the file with .rake in order to allow Rails to look for it.  You will be able to write all of your code using standard Ruby conventions**
 
 This will allow you to house all of your tasks in the
 * A description
@@ -49,7 +49,7 @@ You can add as many tasks as you want into the same file.  Doing so will help wi
 
 Note: Feel free to watch a demo of how to implement a custom rake task.  The resources below will be a definitive guide for you as you begin to construct your own tasks in your applications.
 
-**Let's image that we have a data base of 100 users that need to be reformatted on a daily basis.  We need to create a task that will do this for us**
+**Let's imagine that we have a data base of users.  Some users have expired accounts while others don't.  We need to create a task that will email users about their expired accounts.**
 
 ### Resources
 
