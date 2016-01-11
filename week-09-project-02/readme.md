@@ -35,7 +35,7 @@
     <td>Module1</td>
     <td>
       Project 2<br><br>
-      <strong>11:00am</strong> - Breakout Lesson: Background Jobs
+      <strong>11:00am</strong> - Breakout Lesson: <a href="./../how-tos/rails/background-jobs">Background Jobs</a>
     </td>
     <td>
       Project 2<br><br>
