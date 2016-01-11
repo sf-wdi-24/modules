@@ -43,7 +43,7 @@
     </td>
     <td>
       Project 2<br><br>
-      <strong>11:00am</strong> - Breakout Lesson: Elasticsearch
+      <strong>11:00am</strong> - Breakout Lesson: <a href="./../how-tos/rails/elasticsearch">Elasticsearch</a>
     </td>
     <td>Project 2</td>
     <td>Project 2 Presentations</td>
