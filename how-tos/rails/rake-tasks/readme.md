@@ -54,7 +54,7 @@ You can add as many tasks as you want into the same file. Doing so will help wit
 
 Note: Feel free to watch a demo of how to implement a custom rake task. The resources below will be a definitive guide for you as you begin to construct your own tasks in your applications.
 
-**Let's imagine that we have a data base of users.  Some users have expired accounts while others don't.  We need to create a task that will email users about their expired accounts.**
+**Let's imagine that we have a database of users.  Some users have expired accounts while others don't.  We need to create a task that will email users about their expired accounts.**
 
 ### Resources
 
