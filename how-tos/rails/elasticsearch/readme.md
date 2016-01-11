@@ -9,7 +9,7 @@
 We'll go over this description in class and focus on terms which may not be clear.
 
 <details>
-  <summary>Question to ask yourself, what is the difference between Elasticsearch and PostgreSQL?</summary>
+  <summary>Question to ask yourself, what is the difference between Elasticsearch and other database systems we've learned?</summary>
 
   <a href="https://www.quora.com/What-are-the-main-differences-between-ElasticSearch-and-NoSQL-DBs-like-MongoDB" target="_blank">What are the main differences between ElasticSearch and NoSQL DBs like MongoDB?</a>
 </details>
