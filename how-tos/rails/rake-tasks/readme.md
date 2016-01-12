@@ -4,9 +4,7 @@
 
 ## Why?
 
-* Creating custom rake tasks help companies and developers automate redundant activities that are needed for the maintenance of a website.
-
-* These tasks can be run with a rake command allow for the website to be optimized more effectively in production.
+* Creating custom rake tasks help companies and developers automate activities that are needed for the maintenance of a website.
 
 ## How?
 
@@ -23,7 +21,7 @@ touch lib/tasks/fun_task.rake
 ```
 **Note:  You will want to name the file with .rake in order to allow Rails to look for it.  You will be able to write all of your code using standard Ruby conventions**
 
-This will allow you to house all of your tasks in the
+You will see a custom task written with these three elements:
 
 * A description
 * The name that identifies the task
