@@ -4,28 +4,30 @@
 
 ## Why?
 
-* Creating custom rake tasks help companies and developers automate activities that are needed for the maintenance of a website.
+"Rake enables you to define a set of tasks and the dependencies between them in a file, and then have the right thing happen when you run any given task. Each task may be either one of the built-in types, or a block of your own Ruby code. It was originally created to handle software build processes, but the combination of convenience and flexibility that it provides has made it the standard method of job automation for Ruby projects." --Stuart Ellis
+
+* Creating custom rake tasks help companies and developers better automate activities that are needed to improve the maintenance and performance of a website.
 
 ## How?
 
-To check all of the rake tasks available to you in the Terminal:
+1. To check all of the rake tasks available to you in the Terminal:
 
 ```cli
 rake -T
 ```
 
-To create a custom task, you can go into your Terminal and run:
+2. To create a custom task file, you can go into your Terminal and run:
 
 ```cli
-touch lib/tasks/fun_task.rake
+touch lib/tasks/<FILE NAME>.rake
 ```
 **Note:  You will want to name the file with .rake in order to allow Rails to look for it.  You will be able to write all of your code using standard Ruby conventions**
 
-You will see a custom task written with these three elements:
+3. You will see a custom task written with these three elements:
 
-* A description
-* The name that identifies the task
-* The code to be executed by the task
+  * A description
+  * The name that identifies the task
+  * The code to be executed by the task
 
 ```rb
 desc "Rocky looks for Adrian after facing Creed"
@@ -34,7 +36,7 @@ task :yo_adrian => :environment do
 end
 ```
 
-To run this task you can simply type:
+4. To run this task you can simply type:
 
 ```cli
 rake yo_adrian
