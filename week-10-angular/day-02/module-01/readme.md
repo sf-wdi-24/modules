@@ -26,7 +26,7 @@
 * "Not every app is a good fit for Angular. Angular was built with the CRUD application in mind."
 * "Angular is built around the belief that declarative code is better than imperative when it comes to building UIs and wiring software components together, while imperative code is excellent for expressing business logic."
 
-##HTML Setup
+## HTML Setup
 
 Create a new directory `ngFun`, inside initialize bower with `bower init` and hit enter a bunch of times to have it generate a `bower.json` file.
 
@@ -50,7 +50,7 @@ Now update your `body` element to `<body ng-app="ngFun">`.
 
 Great, we're up and running!
 
-##Templates & Expressions
+## Templates & Expressions
 
 Angular creates it's views by templating directly into HTML with expressions. This is it's declarative way of building the UI.
 
@@ -60,7 +60,7 @@ Try writing any regular javascript expression in side double curly brackets, suc
 * `"hola!".toUpperCase()`
 * `['s','w','e','e','t','n','e','s','s'].join("")`
 
-##Controllers & Scope
+## Controllers & Scope
 
 Controllers contain all the business logic for our application.
 
@@ -134,14 +134,14 @@ Great, now let's see if we can see them in our view by referencing the `pokemon`
 
 That's cool, but it doesn't look very great. What if we could format our data so that the View knows to render it as JSON?
 
-###Challenge
+### Challenge
 
 * Use an Angular [filter](https://docs.angularjs.org/guide/filter) to render the data as JSON! Here are a [list](https://docs.angularjs.org/api/ng/filter) of options you can implement.
 
 * Pass a new variable `catchphrase` from the Controller to the View. Set it's value as "gotta catch 'em all!" and use an angular filter to uppercase it in the View.
 
 
-##[Directives](https://docs.angularjs.org/guide/directive#what-are-directives-)
+## [Directives](https://docs.angularjs.org/guide/directive#what-are-directives-)
 
 In Angular, we **add behavior to HTML** through directives. A directive is a marker on a HTML tag that tells Angular to run or reference Angular code. You've already used several!
 
@@ -160,7 +160,7 @@ A few worth introducing:
 `ng-repeat` iterates over a collection.
 
 
-###ng-Model
+### ng-Model
 
 Our user wants to be able to input their name in a field, so that the application acknowledges them as the trainer for these Pokemon.
 
@@ -199,15 +199,15 @@ Additionally if we want the value of the `trainer.name` variable to be printed o
 ```
 
 
-###Challenge
+### Challenge
 
 * How could we create a default value for the trainer's name so that when the page loads it is set to `Ash`?
 
-###ng-repeat
+### ng-repeat
 
 `ngRepeat` is a very useful directive for iterating through a collection to render each item.
 
-###Challenge
+### Challenge
 
 Rendering the JSON Pokemon in a bootstrap table, where each attribute is a column. The final result should look like this:
 
@@ -215,12 +215,12 @@ Rendering the JSON Pokemon in a bootstrap table, where each attribute is a colum
 
 Hint: `bower install bootstrap-css-only`
 
-###etc
+### etc
 
 There are many more directives. For now, know that they exist and why they may be useful. Beyond that, reference the documentation. You can find a comprehensive list [here](https://docs.angularjs.org/api/ng/directive). By now, you should know that looking things up as needed is a better strategy than attempting to memorize everything by heart.
 
 
-###Challenge
+### Challenge
 
 * Sort the Pokemon by nDex number.
 * Create an input tag so that I can search for a particular Pokemon.
