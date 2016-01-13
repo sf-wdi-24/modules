@@ -137,7 +137,7 @@ You can set a default value in the Angular templating parameters:
 </html>
 ```
 
-Or directly on the `$scope`:
+Or directly on `$scope` in the controller:
 
 ```js
 // app.js
@@ -162,7 +162,7 @@ app.controller('PokemonCtrl', function ($scope) {
 
 ### ngRepeat
 
-Let's use `ngRepeat` to iterate through the collection of Pokemon and display them on the page!
+You can use `ngRepeat` to iterate through the collection of Pokemon and display them on the page!
 
 ```html
 <!-- index.html.erb -->
@@ -184,7 +184,9 @@ Let's use `ngRepeat` to iterate through the collection of Pokemon and display th
 
 ### Filtering Data
 
-Sort the Pokemon by nDex number:
+In addition to directives, Angular also has built-in  <a href="https://docs.angularjs.org/api/ng/filter">filter components</a> that format data for displaying it to the user.
+
+You can use the <a href="https://docs.angularjs.org/api/ng/filter/orderBy">orderBy</a> filter to sort the Pokemon by nDex number:
 
 ```html
 <!-- index.html.erb -->
@@ -204,7 +206,7 @@ Sort the Pokemon by nDex number:
 </html>
 ```
 
-Search for a particular Pokemon:
+You can use the <a href="https://docs.angularjs.org/api/ng/filter/filter">filter</a> filter to allow users to search the list of Pokemon by typing any Pokemon attribute (name, nDex, etc.). Notice the use of `ng-model` to bind the value of the search field to the filter on the collection.
 
 ```html
 <!-- index.html.erb -->
@@ -229,7 +231,7 @@ Search for a particular Pokemon:
 
 ## Resources
 
+* <a href="https://www.codeschool.com/courses/shaping-up-with-angular-js">Shaping up with Angular.js - Code School Tutorial</a>
 * <a href="https://docs.angularjs.org/guide/directive#what-are-directives-">AngularJS Developer Guide - Directives</a>
 * <a href="https://docs.angularjs.org/api/ng/directive">AngularJS API Reference - Directives</a>
-* <a href="https://docs.angularjs.org/api/ng/filter/orderBy">AngularJS API Reference - orderBy</a>
-* <a href="https://docs.angularjs.org/api/ng/filter/filter">AngularJS API Reference - filter</a>
+* <a href="https://docs.angularjs.org/api/ng/filter">AngularJS API Reference - Filter Components</a>
