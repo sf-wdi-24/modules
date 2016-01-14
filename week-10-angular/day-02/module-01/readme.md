@@ -128,7 +128,13 @@ Great, now let's see if we can see them in our view by referencing the `pokemon`
 </div>
 ```
 
-That's cool, but it doesn't look very great. What if we could format our data so that the View knows to render it as JSON?
+## Two Way Data Binding
+
+Data-binding in Angular apps is the automatic synchronization of data between the model and view components. The way that Angular implements data-binding lets you treat the model as the single-source-of-truth in your application. The view is a projection of the model at all times. When the model changes, the view reflects the change, and vice versa.
+
+In previous templating systems that you've worked with the data will only bind in one direction.  For instance, if you've made a change in your model it is not immediately reflected in the view.  
+
+An example of this would be if you had written blog title.  The title might exist in the view but you would need to trigger an event (hitting a submit button) in order to have that change reflected in the model.  This is not so in Angular.  There are continuous updates between the model and the view.
 
 ### Challenge
 
