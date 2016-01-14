@@ -16,6 +16,14 @@ Many of these terms will be completely foreign to software developers. Looking u
   <tbody>
     <tr>
       <td>Exception</td>
+      <td>Recursion</td>
+      <td>Modulo</td>
+      <td>Graph (Data structure)</td>
+      <td>XOR</td>
+      <td>Lambda</td>
+      <td>Zip (FP)</td>
+    </tr>
+    <tr>
       <td>Tuple</td>
       <td>Binary</td>
       <td>Base64</td>
@@ -25,7 +33,6 @@ Many of these terms will be completely foreign to software developers. Looking u
       <td>POST</td>
     </tr>
     <tr>
-      <td>Recursion</td>
       <td>Function</td>
       <td>`O(1)`</td>
       <td>Sort</td>
@@ -35,7 +42,6 @@ Many of these terms will be completely foreign to software developers. Looking u
       <td>Tree</td>
     </tr>
     <tr>
-      <td>Modulo</td>
       <td>Try</td>
       <td>Catch</td>
       <td>Scope</td>
@@ -45,7 +51,6 @@ Many of these terms will be completely foreign to software developers. Looking u
       <td>Hash (Index)</td>
     </tr>
     <tr>
-      <td>Graph (Data structure)</td>
       <td>Breadth First Search</td>
       <td>TCP</td>
       <td>IP</td>
@@ -62,11 +67,9 @@ Many of these terms will be completely foreign to software developers. Looking u
       <td>Type</td>
       <td>OR</td>
       <td>AND</td>
-      <td>XOR</td>
     </tr>
     <tr>
       <td>Higher Order Function</td>
-      <td>Lambda</td>
       <td>Clojure</td>
       <td>Callback</td>
       <td>Curry</td>
@@ -79,16 +82,23 @@ Many of these terms will be completely foreign to software developers. Looking u
       <td>Debugger</td>
       <td>Unintended Side Effect</td>
       <td>Separation of Concerns</td>
-      <td>Zip (FP)</td>
       <td>Map</td>
       <td>Reduce</td>
       <td>Filter</td>
     </tr>
     <tr>
+      <td>OSI Model</td>
+      <td>Inheritance</td>
+      <td>Library</td>
+      <td>Symbol</td>
+      <td>Continue</td>
+      <td>Promise</td>
+      <td>Encryption</td>
+    </tr>
+    <tr>
       <td>Ecma</td>
       <td>IEEE</td>
       <td>EFF</td>
-      <td>OSI Model</td>
       <td>Linked List</td>
       <td>Matrix</td>
       <td>Vector</td>
@@ -99,14 +109,12 @@ Many of these terms will be completely foreign to software developers. Looking u
       <td>Prototype</td>
       <td>Class</td>
       <td>Instance</td>
-      <td>Inheritance</td>
       <td>Injection</td>
       <td>Singleton</td>
       <td>Inversion of Control</td>
     </tr>
     <tr>
       <td>Façade Pattern</td>
-      <td>Library</td>
       <td>Encapsulation</td>
       <td>Windowing</td>
       <td>Destructor</td>
@@ -121,7 +129,6 @@ Many of these terms will be completely foreign to software developers. Looking u
       <td>Unit Test</td>
       <td>Assertion</td>
       <td>Pass</td>
-      <td>Continue</td>
       <td>Break</td>
     </tr>
     <tr>
@@ -132,7 +139,6 @@ Many of these terms will be completely foreign to software developers. Looking u
       <td>Class Method</td>
       <td>Prototype</td>
       <td>Reference</td>
-      <td>Promise</td>
     </tr>
     <tr>
       <td>Anti-Pattern</td>
@@ -140,13 +146,11 @@ Many of these terms will be completely foreign to software developers. Looking u
       <td>Embedding</td>
       <td>Salt</td>
       <td>Hashing (Cryptogrophy)</td>
-      <td>Encryption</td>
       <td>Serialization</td>
       <td>HTTP Status</td>
     </tr>
     <tr>
       <td>Merge</td>
-      <td>Symbol</td>
       <td>Shell</td>
       <td>Terminal</td>
       <td>Emulation</td>
@@ -170,9 +174,17 @@ Don't judge yourself if you only know one or two servers. That is normal.
   </thead>
   <tbody>
     <tr>
+      <td>Elasticsearch</td>
+      <td>MSSQL</td>
+      <td>NFS</td>
+      <td>Tomcat</td>
+      <td>InfluxDB</td>
+      <td>Django Server</td>
+      <td>Counter Strike Server</td>
+    </tr>
+    <tr>
       <td>PostgreSQL</td>
       <td>MongoDB</td>
-      <td>Elasticsearch</td>
       <td>Redis</td>
       <td>MemcacheDB</td>
       <td>NGinx</td>
@@ -182,7 +194,6 @@ Don't judge yourself if you only know one or two servers. That is normal.
     <tr>
       <td>CouchDB</td>
       <td>MySQL</td>
-      <td>MSSQL</td>
       <td>Oracle (Many Types)</td>
       <td>IIS</td>
       <td>Varnish</td>
@@ -193,7 +204,6 @@ Don't judge yourself if you only know one or two servers. That is normal.
       <td>QMail</td>
       <td>SSHd</td>
       <td>FTPd</td>
-      <td>NFS</td>
       <td>ClusterFS</td>
       <td>NPTd</td>
       <td>Remote Desktop</td>
@@ -202,7 +212,6 @@ Don't judge yourself if you only know one or two servers. That is normal.
     <tr>
       <td>GUnicorn</td>
       <td>WSGI</td>
-      <td>Tomcat</td>
       <td>LightHTTPd</td>
       <td>Dancer</td>
       <td>Jabber</td>
@@ -217,11 +226,9 @@ Don't judge yourself if you only know one or two servers. That is normal.
       <td>MonetDB</td>
       <td>Greenplum</td>
       <td>OpenTSDB</td>
-      <td>InfluxDB</td>
     </tr>
     <tr>
       <td>Rails Server</td>
-      <td>Django Server</td>
       <td>Node Servers</td>
       <td>Rack</td>
       <td>Express Server</td>
