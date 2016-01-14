@@ -15,7 +15,7 @@ Many of these terms will be completely foreign to software developers. Looking u
   </thead>
   <tbody>
     <tr>
-      <td style="background-color: read;">Exception</td>
+      <td>Exception</td>
       <td>Tuple</td>
       <td>Binary</td>
       <td>Base64</td>
