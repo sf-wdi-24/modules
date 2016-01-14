@@ -20,6 +20,9 @@ Today we'll practice vocabulary which people seem to have trouble with. These te
 | Object | Prototype | Class | Instance | Inheritance | Injection | Singleton | Inversion of Control |
 | Façade Pattern | Library | Encapsulation | Windowing | Destructor | Constructor | Factory | Builder |
 | Integration Test | Functional Test | Behavior Test | Unit Test | Assertion | Pass | Continue | Break |
+| Namespace | Module | Element | Method | Class Method | Prototype | Reference | Promise |
+| Anti-Pattern | CAP Theorem | Embedding | Salt | Hashing (Cryptogrophy) | Encryption | Serialization | HTTP Status |
+| Merge | Symbol | Shell | Terminal | Emulation | Virtual Machine | Source Control | Duck Typing |
 
 
 ## Servers
@@ -32,3 +35,30 @@ Today we'll practice vocabulary which people seem to have trouble with. These te
 | GUnicorn | WSGI | Tomcat | LightHTTPd | Dancer | Jabber | Git | Subversion |
 | Mercurial | Rexter | Neo4j | OrientDB | MonetDB | Greenplum | OpenTSDB | InfluxDB |
 | Rails Server | Django Server | Node Servers | Rack | Express Server | Gunicorn | Passenger | Twisted |
+
+
+## Well Known Hard Working Professionals
+
+* Admiral Grace M. Hopper
+* Blaise Pascal
+* John Horton Conway
+* Alan Turing
+* Ada Lovelace
+* Donal Knuth
+* Betty Holberton
+* Richard Stallman
+* Leah Culver
+* John Resig
+* Adele Goldberg
+* Marvin Minsky
+* Larry Page
+* Danese Cooper
+* John von Neumann
+* Ken Thompson
+* Dennis Ritchie
+* Sophie Wilson
+* Edsger W. Dijkstra
+* Larry Wall
+* Marissa Mayer
+* Linus Torvalds
+* Rich Hickey
