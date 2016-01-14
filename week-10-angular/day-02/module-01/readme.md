@@ -28,17 +28,15 @@
 
 ## HTML Setup
 
-Create a new directory `ngFun`, inside initialize bower with `bower init` and hit enter a bunch of times to have it generate a `bower.json` file.
+1. Create a new directory `ngFun`.
 
-Pull down angular with bower with `bower install angular`.
+2. Create a new file `index.html` and link your html file to angular `<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>`.
 
-Create a new file `index.html` and link your html file to angular `<script type="text/javascript" src="bower_components/angular/angular.js"></script>`.
+3. In your HTML try changing the `<body>` to `<body ng-app>`. This will tell your HTML page to use use angular.
 
-In your HTML try changing the `<body>` to `<body ng-app>`. This will tell your HTML page to use use angular.
+4. Create an empty `app.js` file in your `index.html` and require it in your `<head>` after angular.
 
-Create an empty `app.js` file in your `index.html` and require it in your `<head>` after angular.
-
-Let's name our app `ngFun`. To do this we can create an empty angular module.
+5. Let's name our app `ngFun`. To do this we can create an empty angular module.
 
 app.js
 
