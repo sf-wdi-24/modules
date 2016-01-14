@@ -7,12 +7,10 @@
 | Experiment with templating & expressions |
 | Organize your code with controllers |
 | Pass data between the View & Controller with $scope|
-| Leverage built-in filters |
-| Leverage built-in directives |
 | Implement 2-way data binding |
 
 
-## Prereading Highlights
+## Highlights of AngularJS
 
 <a href="https://docs.angularjs.org/guide/introduction" target="_blank">Angular Guide Introduction</a>
 
@@ -30,7 +28,7 @@
 
 1. Create a new directory `ngFun`.
 
-2. Create a new file `index.html` and link your html file to angular `<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>`.
+2. Create a new file `index.html` and link your html file to angular `<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>`.
 
 3. In your HTML try changing the `<body>` to `<body ng-app>`. This will tell your HTML page to use use angular.
 
@@ -134,28 +132,8 @@ That's cool, but it doesn't look very great. What if we could format our data so
 
 ### Challenge
 
-* Use an Angular <a href="https://docs.angularjs.org/guide/filter" target="_blank">filter</a> to render the data as JSON! Here are a <a href="https://docs.angularjs.org/api/ng/filter" target="_blank">list</a> of options you can implement.
-
 * Pass a new variable `catchphrase` from the Controller to the View. Set it's value as "gotta catch 'em all!" and use an angular filter to uppercase it in the View.
 
-
-## <a href="https://docs.angularjs.org/guide/directive#what-are-directives-" target="_blank">Directives</a>
-
-In Angular, we **add behavior to HTML** through directives. A directive is a marker on a HTML tag that tells Angular to run or reference Angular code. You've already used several!
-
-Angular directives start with the prefix `ng-`
-
-A few we already know:
-
-`ng-app` turns ordinary HTML into an Angular application.
-
-`ng-controller` registers a controller for a section of our application.
-
-A few worth introducing:
-
-`ng-model` binds an HTML element's value to a model.
-
-`ng-repeat` iterates over a collection.
 
 
 ### ng-Model
@@ -180,29 +158,11 @@ If we want our input field to map its value to an attribute `name` on a `trainer
 <input ng-model="trainer.name"/>
 ```
 
-Additionally if we want the value of the `trainer.name` variable to be printed onto our page in an `h1` tag, we can reference it in an expression, such that our HTML looks like:
-
-```html
-  <div ng-controller="PokemonCtrl">
-
-    <h1>Trainer: {{trainer.name}}</h1>
-
-    <span>Enter your name:</span>
-    <input ng-model="trainer.name"/>
-
-    <pre>{{ pokemon | json }}</pre>
-
-  </div>
-```
-
-
 ### Challenge
 
 * How could we create a default value for the trainer's name so that when the page loads it is set to `Ash`?
 
-### ng-repeat
 
-`ngRepeat` is a very useful directive for iterating through a collection to render each item.
 
 ### Challenge
 
@@ -211,13 +171,3 @@ Rendering the JSON Pokemon in a bootstrap table, where each attribute is a colum
 ![pokemon-table](http://i.imgur.com/or1CwF7.png)
 
 Hint: Bootstrap CDN
-
-### etc
-
-There are many more directives. We will be exploring those directives in more depth in the afternoon module.
-
-
-### Challenge
-
-* Sort the Pokemon by nDex number.
-* Create an input tag so that I can search for a particular Pokemon.
