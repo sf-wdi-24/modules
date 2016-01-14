@@ -84,7 +84,7 @@ To use our controller in our View we have to declare it somewhere. Create a new 
 </div>
 ```
 
-In order to pass data or behavior to our HTMl view we need to use the object `$scope`. It is the interface to pass data and behavior into our views. Both the View and Controller share access to the $scope object.
+In order to pass data or behavior to our HTML view we need to use the object `$scope`. It is the interface to pass data and behavior into our views. Both the View and Controller share access to the $scope object.
 
 ![scope](http://devgirl.org/wp-content/uploads/2013/03/concepts-controller.png)
 
