@@ -10,22 +10,152 @@ Today we'll practice technical vocabulary. We'll start by trying to match the de
 
 Many of these terms will be completely foreign to software developers. Looking up each term will add to your growing depth of knowledge.
 
-|     A     |   B   |   C    |   D    |   E  |  F   |  G   |  H   |
-| :-------: | :---: | :----: | :----: | :--: | :--: | :--: | :--: |
-| Exception | Tuple | Binary | Base64 | Socket | HTTP | GET | POST |
-| Recursion | Function | `O(1)` | Sort | Index | BTree | Trie | Tree |
-| Modulo | Try | Catch | Scope | Global | Stack | Queue | Hash (Index) |
-| Graph (Data structure) | Breadth First Search | TCP | IP | Exponent | Search | Loop | List |
-| Depth First Search | Interpreter | Runtime | Compiler | Type | OR | AND | XOR |
-| Higher Order Function | Lambda | Clojure | Callback | Curry | Immutable | Monad | Reactive |
-| Bug | Debugger | Unintended Side Effect | Separation of Concerns | Zip (FP) | Map | Reduce | Filter |
-| Ecma | IEEE | EFF | OSI Model | Linked List | Matrix | Vector | Multi-dimensional Array |
-| Object | Prototype | Class | Instance | Inheritance | Injection | Singleton | Inversion of Control |
-| Façade Pattern | Library | Encapsulation | Windowing | Destructor | Constructor | Factory | Builder |
-| Integration Test | Functional Test | Behavior Test | Unit Test | Assertion | Pass | Continue | Break |
-| Namespace | Module | Element | Method | Class Method | Prototype | Reference | Promise |
-| Anti-Pattern | CAP Theorem | Embedding | Salt | Hashing (Cryptogrophy) | Encryption | Serialization | HTTP Status |
-| Merge | Symbol | Shell | Terminal | Emulation | Virtual Machine | Source Control | Duck Typing |
+<table>
+  <thead>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Exception</td>
+      <td>Tuple</td>
+      <td>Binary</td>
+      <td>Base64</td>
+      <td>Socket</td>
+      <td>HTTP</td>
+      <td>GET</td>
+      <td>POST</td>
+    </tr>
+    <tr>
+      <td>Recursion</td>
+      <td>Function</td>
+      <td>`O(1)`</td>
+      <td>Sort</td>
+      <td>Index</td>
+      <td>BTree</td>
+      <td>Trie</td>
+      <td>Tree</td>
+    </tr>
+    <tr>
+      <td>Modulo</td>
+      <td>Try</td>
+      <td>Catch</td>
+      <td>Scope</td>
+      <td>Global</td>
+      <td>Stack</td>
+      <td>Queue</td>
+      <td>Hash (Index)</td>
+    </tr>
+    <tr>
+      <td>Graph (Data structure)</td>
+      <td>Breadth First Search</td>
+      <td>TCP</td>
+      <td>IP</td>
+      <td>Exponent</td>
+      <td>Search</td>
+      <td>Loop</td>
+      <td>List</td>
+    </tr>
+    <tr>
+      <td>Depth First Search</td>
+      <td>Interpreter</td>
+      <td>Runtime</td>
+      <td>Compiler</td>
+      <td>Type</td>
+      <td>OR</td>
+      <td>AND</td>
+      <td>XOR</td>
+    </tr>
+    <tr>
+      <td>Higher Order Function</td>
+      <td>Lambda</td>
+      <td>Clojure</td>
+      <td>Callback</td>
+      <td>Curry</td>
+      <td>Immutable</td>
+      <td>Monad</td>
+      <td>Reactive</td>
+    </tr>
+    <tr>
+      <td>Bug</td>
+      <td>Debugger</td>
+      <td>Unintended Side Effect</td>
+      <td>Separation of Concerns</td>
+      <td>Zip (FP)</td>
+      <td>Map</td>
+      <td>Reduce</td>
+      <td>Filter</td>
+    </tr>
+    <tr>
+      <td>Ecma</td>
+      <td>IEEE</td>
+      <td>EFF</td>
+      <td>OSI Model</td>
+      <td>Linked List</td>
+      <td>Matrix</td>
+      <td>Vector</td>
+      <td>Multi-dimensional Array</td>
+    </tr>
+    <tr>
+      <td>Object</td>
+      <td>Prototype</td>
+      <td>Class</td>
+      <td>Instance</td>
+      <td>Inheritance</td>
+      <td>Injection</td>
+      <td>Singleton</td>
+      <td>Inversion of Control</td>
+    </tr>
+    <tr>
+      <td>Façade Pattern</td>
+      <td>Library</td>
+      <td>Encapsulation</td>
+      <td>Windowing</td>
+      <td>Destructor</td>
+      <td>Constructor</td>
+      <td>Factory</td>
+      <td>Builder</td>
+    </tr>
+    <tr>
+      <td>Integration Test</td>
+      <td>Functional Test</td>
+      <td>Behavior Test</td>
+      <td>Unit Test</td>
+      <td>Assertion</td>
+      <td>Pass</td>
+      <td>Continue</td>
+      <td>Break</td>
+    </tr>
+    <tr>
+      <td>Namespace</td>
+      <td>Module</td>
+      <td>Element</td>
+      <td>Method</td>
+      <td>Class Method</td>
+      <td>Prototype</td>
+      <td>Reference</td>
+      <td>Promise</td>
+    </tr>
+    <tr>
+      <td>Anti-Pattern</td>
+      <td>CAP Theorem</td>
+      <td>Embedding</td>
+      <td>Salt</td>
+      <td>Hashing (Cryptogrophy)</td>
+      <td>Encryption</td>
+      <td>Serialization</td>
+      <td>HTTP Status</td>
+    </tr>
+    <tr>
+      <td>Merge</td>
+      <td>Symbol</td>
+      <td>Shell</td>
+      <td>Terminal</td>
+      <td>Emulation</td>
+      <td>Virtual Machine</td>
+      <td>Source Control</td>
+      <td>Duck Typing</td>
+    </tr>
+  </tbody>
+</table>
 
 
 ## Servers
@@ -34,15 +164,73 @@ Each server does something for you and might be helpful. It is rare to find some
 
 Don't judge yourself if you only know one or two servers. That is normal.
 
-| A | B | C | D | E | F | G | H |
-| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-| PostgreSQL | MongoDB | Elasticsearch | Redis | MemcacheDB | NGinx | Apache HTTPd | Unicorn |
-| CouchDB | MySQL | MSSQL | Oracle (Many Types) | IIS | Varnish | Squid | Sendmail |
-| QMail | SSHd | FTPd | NFS | ClusterFS | NPTd | Remote Desktop | Solr |
-| GUnicorn | WSGI | Tomcat | LightHTTPd | Dancer | Jabber | Git | Subversion |
-| Mercurial | Rexter | Neo4j | OrientDB | MonetDB | Greenplum | OpenTSDB | InfluxDB |
-| Rails Server | Django Server | Node Servers | Rack | Express Server | Gunicorn | Passenger | Twisted |
 
+<table>
+  <thead>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PostgreSQL</td>
+      <td>MongoDB</td>
+      <td>Elasticsearch</td>
+      <td>Redis</td>
+      <td>MemcacheDB</td>
+      <td>NGinx</td>
+      <td>Apache HTTPd</td>
+      <td>Unicorn</td>
+    </tr>
+    <tr>
+      <td>CouchDB</td>
+      <td>MySQL</td>
+      <td>MSSQL</td>
+      <td>Oracle (Many Types)</td>
+      <td>IIS</td>
+      <td>Varnish</td>
+      <td>Squid</td>
+      <td>Sendmail</td>
+    </tr>
+    <tr>
+      <td>QMail</td>
+      <td>SSHd</td>
+      <td>FTPd</td>
+      <td>NFS</td>
+      <td>ClusterFS</td>
+      <td>NPTd</td>
+      <td>Remote Desktop</td>
+      <td>Solr</td>
+    </tr>
+    <tr>
+      <td>GUnicorn</td>
+      <td>WSGI</td>
+      <td>Tomcat</td>
+      <td>LightHTTPd</td>
+      <td>Dancer</td>
+      <td>Jabber</td>
+      <td>Git</td>
+      <td>Subversion</td>
+    </tr>
+    <tr>
+      <td>Mercurial</td>
+      <td>Rexter</td>
+      <td>Neo4j</td>
+      <td>OrientDB</td>
+      <td>MonetDB</td>
+      <td>Greenplum</td>
+      <td>OpenTSDB</td>
+      <td>InfluxDB</td>
+    </tr>
+    <tr>
+      <td>Rails Server</td>
+      <td>Django Server</td>
+      <td>Node Servers</td>
+      <td>Rack</td>
+      <td>Express Server</td>
+      <td>Gunicorn</td>
+      <td>Passenger</td>
+      <td>Twisted</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Well Known Hard Working Professionals
 
