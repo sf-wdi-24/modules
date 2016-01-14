@@ -36,7 +36,7 @@
   <tr>
     <td>HW</td>
     <td></td>
-    <td><a href="" target="_blank">Intro Angular Lab</a></td>
+    <td><a href="https://github.com/sf-wdi-24/intro-angular-lab" target="_blank">Intro Angular Lab</a></td>
     <td></td>
     <td></td>
     <td>Weekend Lab (Angular App)</td>
