@@ -7,7 +7,7 @@
 
 ## What are directives?
 
-> At a high level, directives are markers on a DOM element (such as an attribute, element name, comment or CSS class) that tell AngularJS's **HTML compiler** (`$compile`) to attach a specified behavior to that DOM element (e.g. via event listeners), or even to transform the DOM element and its children. <a href="https://docs.angularjs.org/guide/directive#what-are-directives-">AngularJS Developer Guide</a>
+> At a high level, directives are markers on a DOM element (such as an attribute, element name, comment or CSS class) that tell AngularJS's **HTML compiler** (`$compile`) to attach a specified behavior to that DOM element (e.g. via event listeners), or even to transform the DOM element and its children. <a href="https://docs.angularjs.org/guide/directive#what-are-directives-" target="_blank">AngularJS Developer Guide</a>
 
 In Angular, we **add behavior to HTML** by using directives. A directive is a marker on an HTML tag that tells Angular to run or reference Angular code.
 
@@ -21,7 +21,7 @@ Two more that you will use often:
 * `ng-model`: binds a form element's value to a property on `$scope`.
 * `ng-repeat`: iterates over a collection.
 
-Here is a full <a href="https://docs.angularjs.org/api/ng/directive">list of Angular's built-in directives</a>.
+Here is a full <a href="https://docs.angularjs.org/api/ng/directive" target="_blank">list of Angular's built-in directives</a>.
 
 ### ngModel
 
@@ -33,15 +33,18 @@ Assume you have the following Angular app set up for a trainer to manage their P
 <!DOCTYPE html>
 <html ng-app="pokemonApp">
 <head>
- 	...
-</head>
-<body ng-controller="PokemonCtrl">
+  ...
 
   <!-- angular -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.min.js"></script>
 
   <!-- custom script (angular app) -->
   <script type="text/javascript" src="app.js"></script>
+
+</head>
+<body ng-controller="PokemonCtrl">
+
+  ...
 
 </body>
 </html>
@@ -54,7 +57,7 @@ And here is the JavaScript code that initializes your Angular app and adds the c
 
 var app = angular.module('pokemonApp', []);
 
-app.controller('PokemonCtrl', function ($scope) {
+app.controller('PokemonCtrl', ['$scope', function ($scope) {
   $scope.pokemon = [
     {
       nDex: 25,
@@ -82,7 +85,7 @@ app.controller('PokemonCtrl', function ($scope) {
       type: 'Normal'
     }
   ];
-});
+}]);
 ```
 
 You want the user to be able to input their name in a form field so that the application acknowledges them as the trainer for these Pokemon. You can use the `ngModel` directive to bind the form input to another element on the page:
@@ -97,8 +100,6 @@ You want the user to be able to input their name in a form field so that the app
 
   <span>Enter your name:</span>
   <input type="text" ng-model="trainer.name">
-
-  ...
 
 </body>
 </html>
@@ -131,8 +132,6 @@ You can set a default value in the Angular templating parameters:
   <span>Enter your name:</span>
   <input type="text" ng-model="trainer.name">
 
-  ...
-
 </body>
 </html>
 ```
@@ -144,7 +143,7 @@ Or directly on `$scope` in the controller:
 
 var app = angular.module('pokemonApp', []);
 
-app.controller('PokemonCtrl', function ($scope) {
+app.controller('PokemonCtrl', ['$scope', function ($scope) {
   $scope.trainer = {
     name: "Ash"
   };
@@ -157,7 +156,7 @@ app.controller('PokemonCtrl', function ($scope) {
     },
     ...
   ];
-});
+}]);
 ```
 
 ### ngRepeat
@@ -176,17 +175,15 @@ You can use `ngRepeat` to iterate through the collection of Pokemon and display 
     <p>{{poke.name}}</p>
   </div>
 
-  ...
-
 </body>
 </html>
 ```
 
 ### Filtering Data
 
-In addition to directives, Angular also has built-in  <a href="https://docs.angularjs.org/api/ng/filter">filter components</a> that format data for displaying it to the user.
+In addition to directives, Angular also has built-in  <a href="https://docs.angularjs.org/api/ng/filter" target="_blank">filter components</a> that format data for displaying it to the user.
 
-You can use the <a href="https://docs.angularjs.org/api/ng/filter/orderBy">orderBy</a> filter to sort the Pokemon by nDex number:
+You can use the <a href="https://docs.angularjs.org/api/ng/filter/orderBy" target="_blank">orderBy</a> filter to sort the Pokemon by nDex number:
 
 ```html
 <!-- index.html.erb -->
@@ -200,13 +197,11 @@ You can use the <a href="https://docs.angularjs.org/api/ng/filter/orderBy">order
     <p>{{poke.name}}</p>
   </div>
 
-  ...
-
 </body>
 </html>
 ```
 
-You can use the <a href="https://docs.angularjs.org/api/ng/filter/filter">filter</a> filter to allow users to search the list of Pokemon by typing any Pokemon attribute (name, nDex, etc.). Notice the use of `ng-model` to bind the value of the search field to the filter on the collection.
+You can use the <a href="https://docs.angularjs.org/api/ng/filter/filter" target="_blank">filter</a> filter to allow users to search the list of Pokemon by typing any Pokemon attribute (name, nDex, etc.). Notice the use of `ng-model` to bind the value of the search field to the filter on the collection.
 
 ```html
 <!-- index.html.erb -->
@@ -223,15 +218,17 @@ You can use the <a href="https://docs.angularjs.org/api/ng/filter/filter">filter
     <p>{{poke.name}}</p>
   </div>
 
-  ...
-
 </body>
 </html>
 ```
 
+## Challenges
+
+Work on the <a href="" target="_blank">Intro Angular Lab</a> (which is also tonight's homework).
+
 ## Resources
 
-* <a href="https://www.codeschool.com/courses/shaping-up-with-angular-js">Shaping up with Angular.js - Code School Tutorial</a>
-* <a href="https://docs.angularjs.org/guide/directive#what-are-directives-">AngularJS Developer Guide - Directives</a>
-* <a href="https://docs.angularjs.org/api/ng/directive">AngularJS API Reference - Directives</a>
-* <a href="https://docs.angularjs.org/api/ng/filter">AngularJS API Reference - Filter Components</a>
+* <a href="https://www.codeschool.com/courses/shaping-up-with-angular-js" target="_blank">Shaping up with Angular.js - Code School Tutorial</a>
+* <a href="https://docs.angularjs.org/guide/directive#what-are-directives-" target="_blank">AngularJS Developer Guide - Directives</a>
+* <a href="https://docs.angularjs.org/api/ng/directive" target="_blank">AngularJS API Reference - Directives</a>
+* <a href="https://docs.angularjs.org/api/ng/filter" target="_blank">AngularJS API Reference - Filter Components</a>
