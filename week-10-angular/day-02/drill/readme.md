@@ -5,6 +5,7 @@
 Today we'll practice vocabulary which people seem to have trouble with. These technical words are important to understand. If you don't understand a word, ask another student.
 
 
-| Core Concepts |      |      |      |
+## Core Concepts
+
 | ------------- | ---- | ---- | ---- |
 | Exception | Tuple | Binary | Base64 |
