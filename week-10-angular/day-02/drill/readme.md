@@ -7,5 +7,6 @@ Today we'll practice vocabulary which people seem to have trouble with. These te
 
 ## Core Concepts
 
+| | | | |
 | ------------- | ---- | ---- | ---- |
 | Exception | Tuple | Binary | Base64 |
