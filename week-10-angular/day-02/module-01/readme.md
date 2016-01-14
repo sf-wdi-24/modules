@@ -211,11 +211,11 @@ Rendering the JSON Pokemon in a bootstrap table, where each attribute is a colum
 
 ![pokemon-table](http://i.imgur.com/or1CwF7.png)
 
-Hint: `bower install bootstrap-css-only`
+Hint: Bootstrap CDN
 
 ### etc
 
-There are many more directives. For now, know that they exist and why they may be useful. Beyond that, reference the documentation. You can find a comprehensive list [here](https://docs.angularjs.org/api/ng/directive). By now, you should know that looking things up as needed is a better strategy than attempting to memorize everything by heart.
+There are many more directives. For now, know that they exist and why they may be useful. We will be exploring those directives in more depth in the afternoon module.
 
 
 ### Challenge

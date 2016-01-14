@@ -11,39 +11,45 @@
 `index.html`
 ```html
 
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Intro Angular</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<meta charset="UTF-8">
+	<title>First Angular App</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 	<script type="text/javascript" src="app.js"></script>
 </head>
-<body ng-app="ngFun">
-	{{ "lower cap string" | uppercase }}
+	<body ng-app="ngFun">
 
-	<div ng-controller="PokemonCtrl">
-		<h1>Trainer: {{trainer.name || "Ash"}}</h1>
-		<span>Enter your name:</span>
-    <input ng-model="trainer.name"/>
-    <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>Ndex</th>
-        <th>Name</th>
-        <th>Type</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr ng-repeat="(key, value) in pokemon | orderBy: '-Ndex' | filter:searchText">
-        <td>{{value.Ndex}}</td>
-        <td>{{value.name}}</td>
-        <td>{{value.type}}</td>
-      </tr>
-    </tbody>
-    <br>
-    <span>Search Pokemon: </span>
-    <input ng-model="searchText"/>
-	</div>
-</body>
+		<div ng-controller="PokemonCtrl">
+			<h1>Trainer: {{ trainer.name || "Ash" }}</h1>
+
+	    <span>Enter your name:</span>
+	    <input ng-model="trainer.name"/>
+
+	    <table class="table table-striped">
+	    <thead>
+	      <tr>
+	        <th>Ndex</th>
+	        <th>Name</th>
+	        <th>Type</th>
+	      </tr>
+	    </thead>
+	    <tbody>
+	      <tr ng-repeat="(key, value) in pokemon | orderBy: reverse | filter:searchText">
+	        <td>{{value.Ndex}}</td>
+	        <td>{{value.name}}</td>
+	        <td>{{value.type}}</td>
+	      </tr>
+	    </tbody>
+		</div>
+
+		<span>Search Pokemon:</span>
+	    <input ng-model="searchText"/>
+
+		<script type="text/javascript" src="app.js"></script>
+	</body>
 </html>
 ```
 
@@ -53,7 +59,7 @@ var app = angular.module("ngFun", []);
 
 app.controller("PokemonCtrl", ['$scope', function($scope) {
     $scope.pokemon = [
-    	{
+      {
       Ndex: 25,
       name: 'Pikachu',
       type: 'Electric'
@@ -79,6 +85,7 @@ app.controller("PokemonCtrl", ['$scope', function($scope) {
       type: 'Normal'
     }
   ];
+  $scope.catchphrase = "Gotta catch 'em all!";
 }]);
 
 app.filter('reverse', function() {
