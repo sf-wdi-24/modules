@@ -136,6 +136,20 @@ In previous templating systems that you've worked with the data will only bind i
 
 An example of this would be if you had written blog title.  The title might exist in the view but you would need to trigger an event (hitting a submit button) in order to have that change reflected in the model.  This is not so in Angular.  There are continuous updates between the model and the view.
 
+Let's take a look at this in action:  
+
+We'll create an input form and a display for this input.
+```html
+<input type="text"
+       ng-model="name"
+       placeholder="Enter your name">
+
+<h1>Hello <span ng-bind="name"></span><h1>
+```
+
+What happens when you type in your name?
+
+
 ### Challenge
 
 * Pass a new variable `catchphrase` from the Controller to the View. Set it's value as "gotta catch 'em all!" and use an angular filter to uppercase it in the View.
