@@ -14,7 +14,7 @@
 
 ## Prereading Highlights
 
-[Angular Guide Introduction](https://docs.angularjs.org/guide/introduction)
+<a href="https://docs.angularjs.org/guide/introduction" target="_blank">Angular Guide Introduction</a>
 
 * A "framework for dynamic web apps"
 * "Lets you use HTML as your template language"
@@ -46,7 +46,7 @@
 
 6. Now update your `body` element to `<body ng-app="ngFun">`.
 
-Great, we're up and running!
+Sweet, we're up and running!
 
 ## Templates & Expressions
 
@@ -134,12 +134,12 @@ That's cool, but it doesn't look very great. What if we could format our data so
 
 ### Challenge
 
-* Use an Angular [filter](https://docs.angularjs.org/guide/filter) to render the data as JSON! Here are a [list](https://docs.angularjs.org/api/ng/filter) of options you can implement.
+* Use an Angular <a href="https://docs.angularjs.org/guide/filter" target="_blank">filter</a> to render the data as JSON! Here are a <a href="https://docs.angularjs.org/api/ng/filter" target="_blank">list</a> of options you can implement.
 
 * Pass a new variable `catchphrase` from the Controller to the View. Set it's value as "gotta catch 'em all!" and use an angular filter to uppercase it in the View.
 
 
-## [Directives](https://docs.angularjs.org/guide/directive#what-are-directives-)
+## <a href="https://docs.angularjs.org/guide/directive#what-are-directives-" target="_blank">Directives</a>
 
 In Angular, we **add behavior to HTML** through directives. A directive is a marker on a HTML tag that tells Angular to run or reference Angular code. You've already used several!
 
@@ -165,14 +165,13 @@ Our user wants to be able to input their name in a field, so that the applicatio
 Above our list of Pokemon, but still inside our `PokemonCtrl` `div` tag, let's create an input field for our trainers name.
 
 ```html
-  <div ng-controller="PokemonCtrl">
+<div ng-controller="PokemonCtrl">
 
-    <span>Enter your name:</span>
-    <input/>
+  <span>Enter your name:</span>
+  <input/>
 
-    <pre>{{ pokemon | json }}</pre>
-
-  </div>
+  <pre>{{ pokemon | json }}</pre>
+</div>
 ```
 
 If we want our input field to map its value to an attribute `name` on a `trainer` object we could add an `ng-model` directive to it.
@@ -215,7 +214,7 @@ Hint: Bootstrap CDN
 
 ### etc
 
-There are many more directives. For now, know that they exist and why they may be useful. We will be exploring those directives in more depth in the afternoon module.
+There are many more directives. We will be exploring those directives in more depth in the afternoon module.
 
 
 ### Challenge
