@@ -228,7 +228,6 @@ Work on the <a href="https://github.com/sf-wdi-24/intro-angular-lab" target="_bl
 
 ## Resources
 
-* <a href="https://www.codeschool.com/courses/shaping-up-with-angular-js" target="_blank">Shaping up with Angular.js - Code School Tutorial</a>
 * <a href="https://docs.angularjs.org/guide/directive#what-are-directives-" target="_blank">AngularJS Developer Guide - Directives</a>
 * <a href="https://docs.angularjs.org/api/ng/directive" target="_blank">AngularJS API Reference - Directives</a>
 * <a href="https://docs.angularjs.org/api/ng/filter" target="_blank">AngularJS API Reference - Filter Components</a>
