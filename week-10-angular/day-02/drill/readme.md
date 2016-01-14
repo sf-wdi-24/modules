@@ -17,3 +17,18 @@ Today we'll practice vocabulary which people seem to have trouble with. These te
 | Higher Order Function | Lambda | Clojure | Callback | Curry | Immutable | Monad | Reactive |
 | Bug | Debugger | Unintended Side Effect | Separation of Concerns | Zip (FP) | Map | Reduce | Filter |
 | Ecma | IEEE | EFF | OSI Model | Linked List | Matrix | Vector | Multi-dimensional Array |
+| Object | Prototype | Class | Instance | Inheritance | Injection | Singleton | Inversion of Control |
+| Façade Pattern | Library | Encapsulation | Windowing | Destructor | Constructor | Factory | Builder |
+| Integration Test | Functional Test | Behavior Test | Unit Test | Assertion | Pass | Continue | Break |
+
+
+## Servers
+
+| A | B | C | D | E | F | G | H |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+| PostgreSQL | MongoDB | Elasticsearch | Redis | MemcacheDB | NGinx | Apache HTTPd | Unicorn |
+| CouchDB | MySQL | MSSQL | Oracle (Many Types) | IIS | Varnish | Squid | Sendmail |
+| QMail | SSHd | FTPd | NFS | ClusterFS | NPTd | Remote Desktop | Solr |
+| GUnicorn | WSGI | Tomcat | LightHTTPd | Dancer | Jabber | Git | Subversion |
+| Mercurial | Rexter | Neo4j | OrientDB | MonetDB | Greenplum | OpenTSDB | InfluxDB |
+| Rails Server | Django Server | Node Servers | Rack | Express Server | Gunicorn | Passenger | Twisted |
