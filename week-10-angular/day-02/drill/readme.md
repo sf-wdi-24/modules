@@ -7,6 +7,13 @@ Today we'll practice vocabulary which people seem to have trouble with. These te
 
 ## Core Concepts
 
-| | | | |
-| ------------- | ---- | ---- | ---- |
-| Exception | Tuple | Binary | Base64 |
+|     A     |   B   |   C    |   D    |   E  |  F   |  G   |  H   |
+| :-------: | :---: | :----: | :----: | :--: | :--: | :--: | :--: |
+| Exception | Tuple | Binary | Base64 | Socket | HTTP | GET | POST |
+| Recursion | Function | `O(1)` | Sort | Index | BTree | Trie | Tree |
+| Modulo | Try | Catch | Scope | Global | Stack | Queue | Hash (Index) |
+| Graph (Data structure) | Breadth First Search | TCP | IP | Exponent | Search | Loop | List |
+| Depth First Search | Interpreter | Runtime | Compiler | Type | OR | AND | XOR |
+| Higher Order Function | Lambda | Clojure | Callback | Curry | Immutable | Monad | Reactive |
+| Bug | Debugger | Unintended Side Effect | Separation of Concerns | Zip (FP) | Map | Reduce | Filter |
+| Ecma | IEEE | EFF | OSI Model | Linked List | Matrix | Vector | Multi-dimensional Array |
