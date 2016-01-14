@@ -10,6 +10,11 @@ Today we'll practice technical vocabulary. We'll start by trying to match the de
 
 Many of these terms will be completely foreign to software developers. Looking up each term will add to your growing depth of knowledge.
 
+<style>
+  td:hover {
+    background-color: red;
+  }
+</style>
 <table>
   <thead>
   </thead>
