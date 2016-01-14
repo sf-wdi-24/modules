@@ -38,13 +38,13 @@
 
 5. Let's name our app `ngFun`. To do this we can create an empty angular module.
 
-app.js
+6. `app.js`
 
-```js
-var app = angular.module("ngFun", []);
-```
+    ```js
+    var app = angular.module("ngFun", []);
+    ```
 
-Now update your `body` element to `<body ng-app="ngFun">`.
+6. Now update your `body` element to `<body ng-app="ngFun">`.
 
 Great, we're up and running!
 
@@ -64,7 +64,7 @@ Controllers contain all the business logic for our application.
 
 We can seed our application with some data, but first we have to create a controller.
 
-app.js
+`app.js`
 
 ```js
 app.controller("PokemonCtrl", function() {
@@ -76,7 +76,7 @@ Most applications will have several controllers that map to a particular resourc
 
 To use our controller in our View we have to declare it somewhere. Create a new `div` tag that will house our Pokemon Controller.
 
-index.html
+`index.html`
 
 ```html
 <div ng-controller="PokemonCtrl">
