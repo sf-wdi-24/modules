@@ -134,37 +134,7 @@ That's cool, but it doesn't look very great. What if we could format our data so
 
 * Pass a new variable `catchphrase` from the Controller to the View. Set it's value as "gotta catch 'em all!" and use an angular filter to uppercase it in the View.
 
-
-
-### ng-Model
-
-Our user wants to be able to input their name in a field, so that the application acknowledges them as the trainer for these Pokemon.
-
-Above our list of Pokemon, but still inside our `PokemonCtrl` `div` tag, let's create an input field for our trainers name.
-
-```html
-<div ng-controller="PokemonCtrl">
-
-  <span>Enter your name:</span>
-  <input/>
-
-  <pre>{{ pokemon | json }}</pre>
-</div>
-```
-
-If we want our input field to map its value to an attribute `name` on a `trainer` object we could add an `ng-model` directive to it.
-
-```html
-<input ng-model="trainer.name"/>
-```
-
-### Challenge
-
 * How could we create a default value for the trainer's name so that when the page loads it is set to `Ash`?
-
-
-
-### Challenge
 
 Rendering the JSON Pokemon in a bootstrap table, where each attribute is a column. The final result should look like this:
 
