@@ -2,10 +2,13 @@
 
 <img src="https://cloud.githubusercontent.com/assets/1329385/12332909/092cb3e2-baa6-11e5-9f76-a4d0f6975cc2.gif">
 
-Today we'll practice vocabulary which people seem to have trouble with. These technical words are important to understand. If you don't understand a word, ask another student.
+Today we'll practice technical vocabulary. We'll start by trying to match the definition to the term for a reduced set of the following terms. After that we'll explore additional terms and people will breakup into groups of two in order to practice the terms we've found.
 
+**NOTE:** You're not expected to memorize all this and I found myself looking up many terms while making this list. However, these terms are useful to understand and will help in future growth.
 
 ## Core Concepts
+
+Many of these terms will be completely foreign to software developers. Looking up each term will add to your growing depth of knowledge.
 
 |     A     |   B   |   C    |   D    |   E  |  F   |  G   |  H   |
 | :-------: | :---: | :----: | :----: | :--: | :--: | :--: | :--: |
@@ -27,6 +30,10 @@ Today we'll practice vocabulary which people seem to have trouble with. These te
 
 ## Servers
 
+Each server does something for you and might be helpful. It is rare to find someone who's an expert with many different servers.
+
+Don't judge yourself if you only know one or two servers. That is normal.
+
 | A | B | C | D | E | F | G | H |
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
 | PostgreSQL | MongoDB | Elasticsearch | Redis | MemcacheDB | NGinx | Apache HTTPd | Unicorn |
@@ -38,6 +45,8 @@ Today we'll practice vocabulary which people seem to have trouble with. These te
 
 
 ## Well Known Hard Working Professionals
+
+These names are not intended to be memorized or idolized. These people have contributed quality literature (or product) in our industry. As you progress I'd recommend finding literature each has written and taking time to read it.
 
 * Admiral Grace M. Hopper
 * Blaise Pascal
