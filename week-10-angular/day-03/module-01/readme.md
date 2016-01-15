@@ -62,16 +62,38 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, 
 
 ## ngRoute Setup
 
-## Add `ngRoute` to A Project
+#### Add ngRoute to your Angular app
 
-1. Include `angular-route.js` in your index.html file after `angular.js`
+1. Include the CDN for ngRoute in your `index.html`, after the Angular CDN:
+
   ```html
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-route.min.js"></script>
+  <!-- index.html.erb -->
+
+  <!DOCTYPE html>
+  <html ng-app="sampleApp">
+  <head>
+
+    <!-- angular -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+
+    <!-- angular route -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-route.min.js"></script>
+
+    <!-- custom script (angular app) -->
+    <script type="text/javascript" src="app.js"></script>
+
+  </head>
+  <body>
+    ...
+  </body>
+  </html>
   ```
+
 1. Now you need to load the `ngRoute` module into your application.
   ```js
     angular.module('starter', ['ngRoute'])
   ```
+
 1. Now we're ready to set up our routes!
 
 ** a quick note on naming conventions -- modules like `ng-route` will sometimes be written as `ngRoute`. They are referring to the same module, just in different contexts. **
