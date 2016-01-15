@@ -12,7 +12,7 @@
   <tr>
     <td>Drill</td>
     <td><a href="./day-01/drill/"></a></td>
-    <td><a href="./day-02/drill/">Tech Vocab</a></td>
+    <td><a href="./day-02/drill/">Vocab</a></td>
     <td><a href="./day-03/drill/">File Manipulation</a></td>
     <td><a href="./day-04/drill/">Whiteboarding in Pairs</a></td>
     <td>Review: Insta-Angular Lab</td>
