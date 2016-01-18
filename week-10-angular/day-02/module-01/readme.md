@@ -36,7 +36,7 @@
 
 3. In your HTML try changing the `<body>` to `<body ng-app>`. This will tell your HTML page to use use angular.
 
-4. Create an empty `app.js` file in your `index.html` and require it in your `<head>` after angular.
+4. Create an empty `app.js` file in your `ngFun` directory and require it in your `<head>` after angular.
 
 5. Let's name our app `ngFun`. To do this we can create an empty angular module.
 
