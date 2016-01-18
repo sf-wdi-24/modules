@@ -28,11 +28,15 @@
 
 1. Create a new directory `ngFun`.
 
-2. Create a new file `index.html` and link your html file to angular `<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>`.
+2. Create a new file `index.html` and link your html file to angular. 
+
+    ```html
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    ```
 
 3. In your HTML try changing the `<body>` to `<body ng-app>`. This will tell your HTML page to use use angular.
 
-4. Create an empty `app.js` file in your `index.html` and require it in your `<head>` after angular.
+4. Create an empty `app.js` file in your `ngFun` directory and require it in your `<head>` after angular.
 
 5. Let's name our app `ngFun`. To do this we can create an empty angular module.
 
@@ -50,7 +54,7 @@ Sweet, we're up and running!
 
 Angular creates it's views by templating directly into HTML with expressions. This is it's declarative way of building the UI.
 
-Try writing any regular javascript expression in side double curly brackets, such as: `{{ <someExpression> }}` and see what your HTML evaluates to. What happens what you express:
+Try writing any regular javascript expression inside double curly brackets, such as: `{{ <someExpression> }}` and see what your HTML evaluates to. What happens what you express:
 
 * `4 * 4`
 * `"hola!".toUpperCase()`
@@ -92,27 +96,27 @@ Let's register some Pokemon with $scope!
 app.controller("PokemonCtrl", function($scope){
   $scope.pokemon = [
     {
-      Ndex: 25,
+      nDex: 25,
       name: 'Pikachu',
       type: 'Electric'
     },
     {
-      Ndex: 10,
+      nDex: 10,
       name: 'Caterpie',
       type: 'Bug'
     },
     {
-      Ndex: 39,
+      nDex: 39,
       name: 'Jigglypuff',
       type: 'Fairy'
     },
     {
-      Ndex: 94,
+      nDex: 94,
        name: 'Gengar',
       type: 'Ghost'
     },
     {
-      Ndex: 143,
+      nDex: 143,
       name: 'Snorlax',
       type: 'Normal'
     }
@@ -156,7 +160,7 @@ What happens when you type in your name?
 
 * How could we create a default value for the trainer's name so that when the page loads it is set to `Ash`?
 
-Rendering the JSON Pokemon in a bootstrap table, where each attribute is a column. The final result should look like this:
+Rendering the JSON Pokemon in a Bootstrap table, where each attribute is a column. The final result should look like this:
 
 ![pokemon-table](http://i.imgur.com/or1CwF7.png)
 

@@ -107,7 +107,7 @@ You want the user to be able to input their name in a form field so that the app
 
 This "binds" the value of `trainer.name` between the form input and the `h2` tag. Whenever the user types something in the form, the `h2` tag's text will automatically update.
 
-Using `ngModel` with `trainer.name` adds a `trainer` object to `$scope.`. If you were to inspect `$scope` using the debugger, it would look something like this:
+Using `ngModel` with `trainer.name` adds a `trainer` object to `$scope`. If you were to inspect `$scope` using the debugger, it would look something like this:
 
 ```js
 $scope = {
