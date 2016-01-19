@@ -525,6 +525,8 @@ Now that your Angular app is all set up, it's time to CRUD a resource! You'll ne
   ➜  touch app/assets/templates/home.html
   ```
 
+  At this point, you should `bundle install` and restart your Rails server if you haven't already.
+
 4. Add the `templates` module to your Angular app's dependencies in `app.js`:
 
   ```js
