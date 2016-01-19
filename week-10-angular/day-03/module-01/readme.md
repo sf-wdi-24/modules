@@ -74,6 +74,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
   <!DOCTYPE html>
   <html ng-app="sampleApp">
   <head>
+    <base href="/">
 
     <!-- angular -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
