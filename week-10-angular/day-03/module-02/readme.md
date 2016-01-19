@@ -3,7 +3,7 @@
 | Objectives |
 | :--- |
 | Request remote resources with `$http`. |
-| Interact with REST APIs using `ngresource`. |
+| Interact with REST APIs using `ng-resource`. |
 | CRUD items on a REST API. |
 
 ## Angular `$http`
@@ -24,18 +24,19 @@ Let's look at an example of how it is used and walk over the separate components
 
 [Echo App](https://jsfiddle.net/eerwitt/wwo7vthb/)
 
-You must be able to point out where these pieces happen in the code:
+You must be able to answer these questions.
 
-* `echoApp` is defined.
-* The name of the `ng-app` for this page.
-* `EchoCtl` is defined.
-* The name of the `ng-controller` for this page.
-* Injecting (including) required libraries for a controller.
-* Making a GET request to an API.
-* The API's URL.
-* Promises when an API request has finished.
-* Error callback.
-* Setting the `results` to be the response from an API.
+* Where is `echoApp` defined?
+* What is the name of the `ng-app` used on this page?
+* Where is `EchoCtl` defined?
+* What is the name of the `ng-controller` used on the page?
+* How did we inject (include) required libraries for a controller?
+* How did we make a GET request to an API?
+* How did we set the API's URL?
+* Where is the success callback defined?
+* Dow we use promises in our code?
+* Where is the error callback defined?
+* How do we set `results` to be the response from an API?
 
 ## `ng-resource` and REST APIs
 
@@ -43,4 +44,37 @@ Built on the top of the `$http` service, Angular’s `$resource` is a service th
 
 Let's explore a Pokémon REST API using `ng-resource`.
 
-[Pokemon App](http://jsfiddle.net/eerwitt/s50xs57x/)
+[Pokémon App](http://jsfiddle.net/eerwitt/s50xs57x/)
+
+You must be able to answer these questions.
+
+* Where is `pokemonApp` defined?
+* What is the name of the `ng-app` used on this page?
+* Where is `PokemonCtl` defined?
+* What is the name of the `ng-controller` used on the page?
+* How did we inject (include) required libraries for a controller?
+* How did we create the `Pokemon` resource?
+* How did we make a GET request to an API?
+* How did we customize the results returned from getting a list of Pokémon?
+* How did we set the API's URL?
+* Where is the success callback defined?
+* Dow we use promises in our code?
+* Where is the error callback defined?
+* How do we update the page to show `pokemon` returned from the API?
+* How did we get `caterpie`'s information?
+* Could we delete `caterpie`?
+
+## Your Turn
+
+We've gone over how to work with remote servers using Angular. Now it is your turn to create a web-app using Angular which speaks to a remote server.
+
+### MVP
+
+Your web-app will work with books found on [super-crud API](https://github.com/sf-wdi-24/crud-api) and has a few requirements.
+
+1. List all books.
+1. Creates a book with form values.
+1. Get a book by ID.
+1. Update a book based on ID and form input.
+1. Delete books based on ID in response to a button being clicked.
+1. Must have at least two routes.
