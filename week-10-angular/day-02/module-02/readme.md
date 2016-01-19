@@ -28,7 +28,7 @@ Here is a full <a href="https://docs.angularjs.org/api/ng/directive" target="_bl
 Assume you have the following Angular app set up for a trainer to manage their Pokémon. Here is the HTML snippet containing your Angular app:
 
 ```html
-<!-- index.html.erb -->
+<!-- index.html -->
 
 <!DOCTYPE html>
 <html ng-app="pokemonApp">
@@ -91,7 +91,7 @@ app.controller('PokemonCtrl', ['$scope', function ($scope) {
 You want the user to be able to input their name in a form field so that the application acknowledges them as the trainer for these Pokémon. You can use the `ngModel` directive to bind the form input to another element on the page:
 
 ```html
-<!-- index.html.erb -->
+<!-- index.html -->
 
 <body ng-controller="PokemonCtrl">
 
@@ -120,7 +120,7 @@ What if you wanted to set a default value for the trainer's name so that when th
 You can set a default value in the Angular templating parameters:
 
 ```html
-<!-- index.html.erb -->
+<!-- index.html -->
 
 <body ng-controller="PokemonCtrl">
 
@@ -160,7 +160,7 @@ app.controller('PokemonCtrl', ['$scope', function ($scope) {
 You can use `ngRepeat` to iterate through the collection of Pokémon and display them on the page!
 
 ```html
-<!-- index.html.erb -->
+<!-- index.html -->
 
 <body ng-controller="PokemonCtrl">
 
@@ -178,7 +178,7 @@ In addition to directives, Angular also has built-in  <a href="https://docs.angu
 You can use the <a href="https://docs.angularjs.org/api/ng/filter/orderBy" target="_blank">orderBy</a> filter to sort the Pokémon by nDex number:
 
 ```html
-<!-- index.html.erb -->
+<!-- index.html -->
 
 <body ng-controller="PokemonCtrl">
 
@@ -192,7 +192,7 @@ You can use the <a href="https://docs.angularjs.org/api/ng/filter/orderBy" targe
 You can use the <a href="https://docs.angularjs.org/api/ng/filter/filter" target="_blank">filter</a> filter to allow users to search the list of Pokémon by typing any Pokémon attribute (name, nDex, etc.). Notice the use of `ng-model` to bind the value of the search field to the filter on the collection.
 
 ```html
-<!-- index.html.erb -->
+<!-- index.html -->
 
 <body ng-controller="PokemonCtrl">
 
