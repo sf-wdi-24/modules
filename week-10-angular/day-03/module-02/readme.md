@@ -22,7 +22,7 @@ In our projects, we've used these methods often. We can still use these but Angu
 
 Let's look at an example of how it is used and walk over the separate components.
 
-[Echo App](https://jsfiddle.net/eerwitt/wwo7vthb/)
+<a href="https://jsfiddle.net/eerwitt/wwo7vthb/" target="_blank">Echo App</a>
 
 You must be able to answer these questions.
 
@@ -44,7 +44,7 @@ Built on the top of the `$http` service, Angular’s `$resource` is a service th
 
 Let's explore a Pokémon REST API using `ng-resource`.
 
-[Pokémon App](http://jsfiddle.net/eerwitt/s50xs57x/)
+<a href="http://jsfiddle.net/eerwitt/s50xs57x/" target="_blank">Pokémon App</a>
 
 You must be able to answer these questions.
 
@@ -70,7 +70,7 @@ We've gone over how to work with remote servers using Angular. Now it is your tu
 
 ### MVP
 
-Your web-app will work with books found on [super-crud API](https://github.com/sf-wdi-24/crud-api) and has a few requirements.
+Your web-app will work with books found on <a href="https://github.com/sf-wdi-24/crud-api" target="_blank">super-crud API</a> and has a few requirements.
 
 1. List all books.
 1. Creates a book with form values.
