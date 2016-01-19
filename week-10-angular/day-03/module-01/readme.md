@@ -1,6 +1,6 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Angular Routing
 
-In a client-side framework like Angular, routing is managed not by the server, but by the client itself. Angular detects the path of your URL and conventionally maps that URL to a controller and template.
+In a client-side framework like Angular, routing is not managed by the server, but by the client itself. Angular detects the path of your URL and maps that URL to a controller and template.
 
 ## Background
 
@@ -8,7 +8,9 @@ Angular first shipped with a simple routing module that let you connect one URL 
 
 Angular's built-in `ngRoute` will most likely have all the routing features you need for your apps as you're first learning Angular. As your Angular apps become more robust, it's worth looking into the third-party `ui-router` module, which supports nested views, multiple named views, and "states".
 
-<a href="http://stackoverflow.com/questions/21023763/angularjs-difference-between-angular-route-and-angular-ui-router">Difference between angular-route and angular-ui-router</a>
+<a href="http://stackoverflow.com/questions/21023763/angularjs-difference-between-angular-route-and-angular-ui-router" target="_blank">Difference between angular-route and angular-ui-router</a> [Stack Overflow]
+
+Note that Angular is updating `ngRoute` to compete with some of the features of `ui-router`, but it won't be released until Angular v. 1.5. See this <a href="https://medium.com/angularjs-meetup-south-london/angular-just-another-introduction-to-ngnewrouter-vs-ui-router-72bfcb228017#.uvb7zouk7" target="_blank">Introduction to ngNewRouter vs ui-router</a> [Medium].
 
 #### ngRoute
 
@@ -40,7 +42,7 @@ app.config(['$routeProvider', function ($routeProvider) {
 
 var app = angular.module('sampleApp', ['ui.router']);
 
-myApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
+app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
 
   $urlRouterProvider.otherwise('/books');
 
@@ -64,10 +66,10 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, 
 
 #### Add ngRoute to your Angular app
 
-1. Include the CDN for ngRoute in your `index.html`, after the Angular CDN:
+1. Include the CDN for `ngRoute` in your `index.html`, after the Angular CDN:
 
   ```html
-  <!-- index.html.erb -->
+  <!-- index.html -->
 
   <!DOCTYPE html>
   <html ng-app="sampleApp">
@@ -77,7 +79,7 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
 
     <!-- angular route -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-route.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8m/angular-route.min.js"></script>
 
     <!-- custom script (angular app) -->
     <script type="text/javascript" src="app.js"></script>
@@ -89,99 +91,117 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, 
   </html>
   ```
 
-1. Now you need to load the `ngRoute` module into your application.
+2. Include the `ngRoute` module in your Angular app's list of dependencies:
+
   ```js
-    angular.module('starter', ['ngRoute'])
+  // app.js
+
+  var app = angular.module('sampleApp', ['ngRoute']);
   ```
 
-1. Now we're ready to set up our routes!
+#### Create templates for your app's "views"
 
-** a quick note on naming conventions -- modules like `ng-route` will sometimes be written as `ngRoute`. They are referring to the same module, just in different contexts. **
+As your app grows, your single `index.html` file is going to get very big and messy. To combat this, you're going to turn your `index.html` file into a "layout template." Similar to the application layout in your Rails apps, this file will be the shared layout for all views in your application. Depending on the current route, the Angular router (`ngRoute`) will include the correct template, or view, in the layout to be displayed to the user.
 
+1. Create a folder in the top level of your application called `templates`.
 
-## Setting up our Templates
-As you can probably imagine, as our app grows, our single `html` file is going to get very big and messy. To combat this, we're going to turn our `index.html` into a "layout template." Like in Rails, this template will be the common template for all the views in our application. Other "partial templates" are then included into this layout template depending on the current "route" -- the view that is currently displayed to the user.
+  ```zsh
+  ➜  mkdir templates
+  ```
 
-To create application routes, we are going to use `ng-route`. `ng-route` helps us wire together controllers, view templates, and the current URL location.
+2. Create some templates for the different "views" in your application. We'll start with templates for the homepage and the about page. Make sure to create your templates inside the `templates` folder.
 
-1. Create a folder in the top level of your app called `templates`.
-1. Create a new file called `todos.html` and put it in the `templates` folder.
-1. In `index.html`, move the code between the `<body></body>` tags to your new `todos.html` file.
-1. In `index.html` add an `ng-view` directive in the `body`.
+  ```zsh
+  ➜  touch templates/home.html
+  ➜  touch templates/about.html
+  ```
+
+3. In `index.html`, add the `ng-view` directive inside the `<body>` tag (`ng-view` acts just like the `<%= yield %>` block in the Rails application layout).
+
   ```html
-  <body ng-controller="MainCtrl">
-        <div ng-view></div>
+  <!-- index.html -->
+
+  <body>
+    <div ng-view></div>
   </body>
   ```
 
-## Configure our Routes
+#### Configure your routes
 
-1. Using the `.config()` method, we request the `$routeProvider` to be injected into our config function and use the `$routeProvider.when()` method to define our routes. Open up your `app.js` file. We're going to dot-chain our route information off our app. Put this code at the top of the file right below where you define the app.
-
-  ```js
-  angular.module('starter', ['ngRoute'])
-  .config(['$routeProvider',
-      function($routeProvider) {
-        $routeProvider.
-          when('/', {
-            templateUrl: 'templates/todos.html',
-            controller: 'TodoIndexCtrl'
-          }).
-          otherwise({
-            redirectTo: '/'
-          });
-      }]);
-  ```
-  **Remember** to rename your `TodoCtrl` to `TodoIndexCtrl` - Gotta keep things **RESTful**.
-
-## Setting up our Controllers
-
-1. Create a new file in your top level called `controllers.js`.
-1. Add the file to your `<head>` `<script src="controllers.js"></script>`
-1. Move your `MainCtrl` from `app.js` to this new file.
-  ```js
-  angular.module('starter.controllers', [])
-  .controller('MainCtrl', ['$scope', '$rootScope',
-      function($scope, $rootScope) {
-        ...
-      }
-  ])
-  ```
-1. Move your `TodoCtrl` from `app.js` to this new file.
-  ```js
-  .controller('TodoIndexCtrl', ['$scope',
-      function($scope) {
-        ...
-      }
-  ])
-  ```
-
-1. Inject `starter.controllers` in to your app like this:
+1. Right after you define your Angular app, use the `.config` method to set up your routes. Your routes are configured by injecting `$routeProvider` into `config`'s dependencies and using the `$routeProvider.when()` method to define your routes.
 
   ```js
-    angular.module('starter', ['ngRoute', 'starter.controllers'])
+  // app.js
+
+  var app = angular.module('sampleApp', ['ngRoute']);
+
+  app.config(['$routeProvider', function ($routeProvider) {
+    $routeProvider
+      .when('/', {
+        templateUrl: 'templates/home.html',
+        controller: 'HomeCtrl'
+      })
+      .when('/about', {
+        templateUrl: 'templates/about.html',
+        controller: 'AboutCtrl'
+      })
+      .otherwise({
+        redirectTo: '/'
+      });
+  }]);
   ```
 
-1. Use `console.log` to see if your controllers are working.
+#### Set up your controllers
 
-## Accessing URL Params
+Each route that you just set up points to its own controller, which contains it's own scope. Following the homepage and about page example above, you'll need two controllers, `HomeCtrl` and `AboutCtrl`.
 
-Using `ngRoute` we will want to access URL parameters in a controller, like when you want to use an `:id` to GET a single resource or when you want to. We'll inject `$routeParams`
+1. After configuring your routes, define your controllers in `app.js`:
+
+  ```js
+  // app.js
+
+  var app = angular.module('sampleApp', ['ngRoute']);
+
+  app.config(['$routeProvider', function ($routeProvider) {
+    ...
+  }]);
+
+  app.controller('HomeCtrl', ['$scope', function ($scope) {
+    ...
+  }]);
+
+  app.controller('AboutCtrl', ['$scope', function ($scope) {
+    ...
+  }]);
+  ```
+
+If you're having trouble getting your routes to work, the first thing to check is the spelling and file path of the `templateUrl` and the spelling of your controller (also double check that you properly defined the controller).
+
+
+#### Accessing URL params
+
+In some cases, you'll want to use `ngRoute` to access URL parameters in a controller, just like you're used to doing on the server-side. Say we have an application that keeps track of books for the local library. The route `/books/:bookId` should `show` one particular book based on the `bookId`.
 
 ```js
-app.controller("GuitarDetailsController", ['$scope','$http','$routeParams',
- function($scope, $http, $routeParams)
-  {
-    $http.get('js/data.json').success (function(data){
-      $scope.guitarVariable = data;
-      $scope.whichGuitar = $routeParams.guitarID;
+var app = angular.module('sampleApp', ['ngRoute']);
+
+app.config(['$routeProvider', function ($routeProvider) {
+  $routeProvider
+    .when('/books/:bookId', {
+      templateUrl: 'templates/books/show.html',
+      controller: 'BooksShowCtrl'
     });
-  }]
-);
+}]);
+
+app.controller('BooksShowCtrl', ['$scope', '$routeParams', function ($scope, $routeParams) {
+  var bookId = $routeParams.bookId;
+  // use `bookId` to find specific book
+}]);
 ```
 
 ## Resources
 
-* <a href="https://docs.angularjs.org/api/ngRoute">Angular API Reference - ngRoute</a>
-* <a href="http://angular-ui.github.io/ui-router">Angular UI-Router Docs</a>
-* <a href="https://github.com/angular-ui/ui-router/wiki">Angular UI-Router Wiki</a>
+* <a href="https://docs.angularjs.org/api/ngRoute" target="_blank">Angular API Reference - ngRoute</a>
+* <a href="https://github.com/angular-ui/ui-router" target="_blank">Angular UI-Router</a>
+* <a href="http://stackoverflow.com/questions/21023763/angularjs-difference-between-angular-route-and-angular-ui-router" target="_blank">Difference between angular-route and angular-ui-router</a> [Stack Overflow]
+* <a href="https://medium.com/angularjs-meetup-south-london/angular-just-another-introduction-to-ngnewrouter-vs-ui-router-72bfcb228017#.uvb7zouk7" target="_blank">Introduction to ngNewRouter vs ui-router</a> [Medium]
