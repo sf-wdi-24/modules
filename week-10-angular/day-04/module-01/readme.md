@@ -4,15 +4,329 @@
 
 #### Base Application
 
+1. Create a new Node/Express application:
+
+  ```zsh
+  ➜  mkdir mean_sample
+  ➜  cd mean_sample
+  ➜  touch server.js
+  ➜  npm init
+  ```
+
+2. Install the following `node_modules`:
+
+  ```zsh
+  ➜  npm install --save express body-parser hbs mongoose
+  ```
+
+3. Set up your Express boilerplate:
+
+  ```js
+  /* server.js
+   *
+   */
+
+  // require express and other modules
+  var express = require('express'),
+      app = express(),
+      bodyParser = require('body-parser'),
+      mongoose = require('mongoose');
+
+  // configure bodyParser (for receiving form data)
+  app.use(bodyParser.urlencoded({ extended: true }));
+
+  // serve static files from public folder
+  app.use(express.static(__dirname + '/public'));
+
+  // set view engine to hbs (handlebars)
+  app.set('view engine', 'hbs');
+
+  // connect to mongodb
+  mongoose.connect('mongodb://localhost/mean_sample');
+
+  // listen on port 3000
+  app.listen(3000, function() {
+    console.log('server started');
+  });
+  ```
+
+4. Set up your folder structure for your assets and views. It should look something like this:
+
+  ```
+  | mean_sample
+    | node_modules
+      ...
+    | public
+      | scripts
+      | styles
+    | views
+      - index.hbs
+  ```
+
+  Make sure to create an `index.hbs` file inside the `views` folder. Your `index.hbs` will serve as the "layout" for your Angular app.
+
 #### Server Routes
+
+1. Since `index.hbs` is the "layout" for your Angular app, you want the server to respond with this view every time a route is requested. This will allow Angular to handle routing on the client-side.
+
+  You can use `app.get('*')` to send every server-requested route to `index.hbs`:
+
+  ```js
+  /*
+   * server.js
+   */
+
+  app.get('*', function (req, res) {
+    res.render('index');
+  });
+  ```
 
 #### Requiring Angular
 
+1. Require the CDNs for Angular and `ngRoute` in `index.hbs`:
+
+  ```html
+  <!-- views/index.hbs -->
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/">
+
+    <!-- angular -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+
+    <!-- ngRoute -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js"></script>
+
+    <title>MEAN Sample</title>
+  </head>
+  <body></body>
+  </html>
+  ```
+
 #### Configuring Your Angular App
+
+1. Create a new JavaScript file `public/scripts/app.js`. This is where you'll put all the logic for your Angular app.
+
+2. Make sure to require your newly created `app.js` in `index.hbs`:
+
+  ```html
+  <!-- views/index.hbs -->
+
+  <head>
+    ...
+
+    <!-- angular -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+
+    <!-- ngRoute -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js"></script>
+
+    <!-- custom script (angular app) -->
+    <script type="text/javascript" src="scripts/app.js"></script>    
+  </head>
+  ```
+
+3. Add the `ng-app` directive in the `<html>` tag in `index.hbs`:
+
+  ```html
+  <!-- views/index.hbs -->
+
+  <!DOCTYPE html>
+  <html lang="en" ng-app="sampleApp">
+  <head>
+    ...
+  </head>
+  <body></body>
+  </html>
+  ```
+
+4. Add the `ng-view` directive inside the `<body>` tag in `views/index.hbs`:
+
+  ```html
+  <!-- views/index.hbs -->
+
+  <body>
+    <nav class="navbar navbar-default">
+      ...
+    </nav>
+    <div ng-view></div>
+  </body>
+  ```
+
+  **Note:** Since this file serves as the "layout" for your Angular app, it's a good idea to place any shared code here, like a navbar.
+
+5. Configure your Angular app in `app.js`:
+
+  ```js
+  /*
+   * public/scripts/app.js
+   */
+
+  var app = angular.module('sampleApp', ['ngRoute']);
+  ```
 
 #### Adding Templates
 
+1. Make a `templates` directory inside `public`, and create a template:
+
+  ```
+  ➜  mkdir public/templates
+  ➜  touch public/templates/home.html
+  ```
+
+#### Configuring Angular Routes
+
+1. Configure your Angular routes in `app.js` to hook everything up:
+
+  ```js
+  /*
+   * public/scripts/app.js
+   */
+
+  app.config(['$routeProvider', '$locationProvider',
+    function ($routeProvider, $locationProvider) {
+      $routeProvider
+        .when('/', {
+          templateUrl: 'home.html',
+          controller: 'HomeCtrl'
+        })
+        .otherwise({
+          redirectTo: '/'
+        });
+
+      $locationProvider.html5Mode({
+        enabled: true,
+        requireBase: false
+      });
+    }
+  ]);
+  ```
+
+2. Configure your controller with some test data, so you can check to see if the route, template, and controller are properly connected:
+
+  ```js
+  /*
+   * public/scripts/app.js
+   */
+
+  app.controller('HomeCtrl', ['$scope', function ($scope) {
+    $scope.homeTest = "Welcome to the homepage!";
+  }]);
+  ```
+
 #### Miscellaneous Setup
+
+1. To allow `body-parser` to send and receive JSON data, add this line to `server.js`:
+
+  ```js
+  /* server.js
+   *
+   */
+
+  ...
+
+  // configure bodyParser (for receiving form data)
+  app.use(bodyParser.urlencoded({ extended: true }));
+  // ADD THIS LINE
+  app.use(bodyParser.json());
+
+  ...
+
+  ```
+
+#### CRUD
+
+Now that your Angular app is all set up, it's time to CRUD a resource! You'll need:
+
+1. CRUD routes for your resource:
+
+  ```js
+  /* server.js
+   *
+   */
+
+  ...
+
+  /*
+   * API routes
+   */
+
+  app.get('/api/todos', function (req, res) {
+    ...
+  });
+
+  app.post('/api/todos', function (req, res) {
+    ...
+  });
+
+  app.get('/api/todos/:id', function (req, res) {
+    ...
+  });
+
+  app.put('/api/todos/:id', function (req, res) {
+    ...
+  });
+
+  app.delete('/api/todos/:id', function (req, res) {
+    ...
+  });
+
+  /*
+   * Load `views/index.hbs` file
+   * when any route is requested from the server
+   */
+
+  app.get('*', function (req, res) {
+    res.render('index');
+  });
+
+  ...
+
+  ```
+
+2. CRUD actions that render JSON:
+
+  ```js
+  /* server.js
+   *
+   */
+
+  ...
+
+  /*
+   * API routes
+   */
+
+  app.get('/api/todos', function (req, res) {
+    Todo.find(function (err, allTodos) {
+      if (err) {
+        res.status(500).json({ error: err.message });
+      } else {
+        res.json(allTodos);
+      }
+    });
+  });
+
+  app.post('/api/todos', function (req, res) {
+    var newTodo = new Todo(req.body);
+    newTodo.save(function (err, savedTodo) {
+      if (err) {
+        res.status(500).json({ error: err.message });
+      } else {
+        res.json(savedTodo);
+      }
+    });
+  });
+
+  ...
+
+  ```
+
+3. The Angular `$http` or `$resource` service to interact with your JSON API endpoints. See the module on <a href="https://github.com/sf-wdi-24/modules/tree/master/week-10-angular/day-03/module-02" target="_blank">http and ng-resource</a> for reference. Instead of calling an external API, you're now querying your own application's server.
 
 ## Rails Angular Setup
 
@@ -138,15 +452,17 @@
   </html>
   ```
 
-4. Add the `ng-view` directive inside `app/views/site/index.html.erb`:
+4. Add the `ng-view` directive inside the `<body>` tag in `app/views/site/index.html.erb`:
 
   ```html
   <!-- app/views/site/index.html.erb -->
 
-  <nav class="navbar navbar-default">
-    ...
-  </nav>
-  <div ng-view></div>
+  <body>
+    <nav class="navbar navbar-default">
+      ...
+    </nav>
+    <div ng-view></div>
+  </body>
   ```
 
   **Note:** Since this file serves as the "layout" for your Angular app, it's a good idea to place any shared code here, like a navbar.
@@ -163,7 +479,7 @@
 
 #### Adding Templates
 
-1. You can use the <a href="https://github.com/pitr/angular-rails-templates" target="">angular-rails-templates</a> gem to add your Angular templates to the Rails asset pipeline.
+1. You can use the <a href="https://github.com/pitr/angular-rails-templates" target="_blank">angular-rails-templates</a> gem to add your Angular templates to the Rails asset pipeline.
 
   Require the gem in your `Gemfile`:
 
@@ -210,7 +526,9 @@
   var app = angular.module('sampleApp', ['ngRoute', 'templates']);
   ```
 
-5. Configure your Angular routes in `app.js` to hook everything up:
+#### Configuring Angular Routes
+
+1. Configure your Angular routes in `app.js` to hook everything up:
 
   ```js
   /*
@@ -236,7 +554,7 @@
   ]);
   ```
 
-6. Configure your controller with some test data, so you can check to see if the route, template, and controller are properly connected:
+2. Configure your controller with some test data, so you can check to see if the route, template, and controller are properly connected:
 
   ```js
   /*
@@ -282,8 +600,66 @@ Now that your Angular app is all set up, it's time to CRUD a resource! You'll ne
 
 1. CRUD routes for your resource:
 
+  ```ruby
+  #
+  # config/routes.rb
+  #
+
+  Rails.application.routes.draw do
+    root 'site#index'
+
+    namespace :api, defaults: { format: :json } do
+      resources :todos, except: [:new, :edit]
+    end
+
+    get '*path', to: 'site#index'
+  end
+  ```
+
 2. A controller with CRUD actions that renders JSON:
 
-3. The Angular `$http` or `$resource` service to interact with your JSON API endpoints. See the module on <a href="https://github.com/sf-wdi-24/modules/tree/master/week-10-angular/day-03/module-02" target="">http and ng-resource</a> for reference.
+  ```ruby
+  #
+  # app/controllers/api/todos_controller.rb
+  #
+
+  class Api::TodosController < ApplicationController
+    def index
+      @todos = Todo.all.order("created_at DESC")
+      render json: @todos
+    end
+
+    def create
+      @todo = Todo.new(todo_params)
+      if @todo.save
+        render json: @todo
+      else
+        render json: { errors: @todo.errors.full_messages.join(", ") }, status: :unprocessable_entity
+      end
+    end
+
+    ...
+
+    private
+      def todo_params
+        params.require(:todo).permit(:title, :description, :done)
+      end
+
+  end
+  ```
+
+3. The Angular `$http` or `$resource` service to interact with your JSON API endpoints. See the module on <a href="https://github.com/sf-wdi-24/modules/tree/master/week-10-angular/day-03/module-02" target="_blank">http and ng-resource</a> for reference. Instead of calling an external API, you're now querying your own application's server.
 
 ## Challenges
+
+1. Follow the steps above to set up a new MEAN Stack application. Pause once you get a single Angular route (`/`) successfully connected to its template and controller.
+
+2. Follow the steps above to set up a new Rails Angular application. Pause once you get a single Angular route (`/`) successfully connected to its template and controller.
+
+## Stretch Challenges
+
+1. Once your two apps are set up, pick one app, and build a JSON API to CRUD one resource (`todos` are always a good start).Test your API routes on Postman.
+
+2. Use Angular `$http` or `$resource` to query your API endpoints from the client side to implement full CRUD in your single-page app.
+
+3. If you finish CRUD for one of your apps, do the same thing for the other - build a JSON API, then query it from the client.
