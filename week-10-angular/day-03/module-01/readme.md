@@ -199,6 +199,10 @@ app.controller('BooksShowCtrl', ['$scope', '$routeParams', function ($scope, $ro
 }]);
 ```
 
+## Challenges
+
+Work on the <a href="https://github.com/sf-wdi-24/angular-routing-lab" target="_blank">Angular Routing Lab</a>
+
 ## Resources
 
 * <a href="https://docs.angularjs.org/api/ngRoute" target="_blank">Angular API Reference - ngRoute</a>
