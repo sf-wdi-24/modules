@@ -1,5 +1,10 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Angular Routing
 
+| Objectives |
+| :--- |
+| Discuss the differences between server-side and client-side routing  |
+| Implement client-side routing in a single-page app using Angular's `ngRoute` module |
+
 In a client-side framework like Angular, routing is not managed by the server, but by the client itself. Angular detects the path of your URL and maps that URL to a controller and template.
 
 ## Background
