@@ -93,7 +93,6 @@ You want the user to be able to input their name in a form field so that the app
 ```html
 <!-- index.html.erb -->
 
-...
 <body ng-controller="PokemonCtrl">
 
   <h2>Trainer: {{trainer.name}}</h2>
@@ -102,7 +101,6 @@ You want the user to be able to input their name in a form field so that the app
   <input type="text" ng-model="trainer.name">
 
 </body>
-</html>
 ```
 
 This "binds" the value of `trainer.name` between the form input and the `h2` tag. Whenever the user types something in the form, the `h2` tag's text will automatically update.
@@ -124,7 +122,6 @@ You can set a default value in the Angular templating parameters:
 ```html
 <!-- index.html.erb -->
 
-...
 <body ng-controller="PokemonCtrl">
 
   <h2>Trainer: {{trainer.name || "Ash"}}</h2>
@@ -133,7 +130,6 @@ You can set a default value in the Angular templating parameters:
   <input type="text" ng-model="trainer.name">
 
 </body>
-</html>
 ```
 
 Or directly on `$scope` in the controller:
@@ -166,17 +162,13 @@ You can use `ngRepeat` to iterate through the collection of Pokémon and display
 ```html
 <!-- index.html.erb -->
 
-...
 <body ng-controller="PokemonCtrl">
-
-  ...
 
   <div ng-repeat="poke in pokemon">
     <p>{{poke.name}}</p>
   </div>
 
 </body>
-</html>
 ```
 
 ### Filtering Data
@@ -188,17 +180,13 @@ You can use the <a href="https://docs.angularjs.org/api/ng/filter/orderBy" targe
 ```html
 <!-- index.html.erb -->
 
-...
 <body ng-controller="PokemonCtrl">
-
-  ...
 
   <div ng-repeat="poke in pokemon | orderBy:'nDex'">
     <p>{{poke.name}}</p>
   </div>
 
 </body>
-</html>
 ```
 
 You can use the <a href="https://docs.angularjs.org/api/ng/filter/filter" target="_blank">filter</a> filter to allow users to search the list of Pokémon by typing any Pokémon attribute (name, nDex, etc.). Notice the use of `ng-model` to bind the value of the search field to the filter on the collection.
@@ -206,10 +194,7 @@ You can use the <a href="https://docs.angularjs.org/api/ng/filter/filter" target
 ```html
 <!-- index.html.erb -->
 
-...
 <body ng-controller="PokemonCtrl">
-
-  ...
 
   <span>Search Pokémon:</span>
   <input type="text" ng-model="searchPokemon">
@@ -219,7 +204,6 @@ You can use the <a href="https://docs.angularjs.org/api/ng/filter/filter" target
   </div>
 
 </body>
-</html>
 ```
 
 ## Challenges
