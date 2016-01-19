@@ -22,11 +22,11 @@ var app = angular.module('sampleApp', ['ngRoute']);
 app.config(['$routeProvider', function ($routeProvider) {
   $routeProvider
     .when('/books', {
-      templateUrl: '/templates/books/index.html',
+      templateUrl: 'templates/books/index.html',
       controller: 'BooksIndexCtrl'
     })
     .when('/books/:bookId', {
-      templateUrl: '/templates/books/show.html',
+      templateUrl: 'templates/books/show.html',
       controller: 'BooksShowCtrl'
     })
     .otherwise({
@@ -49,14 +49,14 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
   $stateProvider
     .state('booksIndex', {
       url: '/books',
-      templateUrl: '/templates/books/index.html',
+      templateUrl: 'templates/books/index.html',
       controller: 'BooksIndexCtrl'
     })
     .state('booksShow', {
       url: '/books/:bookId',
       // alternate syntax
       // url: '/books/{bookId}',
-      templateUrl: '/templates/books/show.html',
+      templateUrl: 'templates/books/show.html',
       controller: 'BooksShowCtrl'
     });
 }]);
@@ -138,11 +138,11 @@ As your app grows, your single `index.html` file is going to get very big and me
   app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: '/templates/home.html',
+        templateUrl: 'templates/home.html',
         controller: 'HomeCtrl'
       })
       .when('/about', {
-        templateUrl: '/templates/about.html',
+        templateUrl: 'templates/about.html',
         controller: 'AboutCtrl'
       })
       .otherwise({
@@ -188,7 +188,7 @@ var app = angular.module('sampleApp', ['ngRoute']);
 app.config(['$routeProvider', function ($routeProvider) {
   $routeProvider
     .when('/books/:bookId', {
-      templateUrl: '/templates/books/show.html',
+      templateUrl: 'templates/books/show.html',
       controller: 'BooksShowCtrl'
     });
 }]);
