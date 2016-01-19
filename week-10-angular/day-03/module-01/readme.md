@@ -79,7 +79,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
 
     <!-- angular route -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8m/angular-route.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js"></script>
 
     <!-- custom script (angular app) -->
     <script type="text/javascript" src="app.js"></script>
