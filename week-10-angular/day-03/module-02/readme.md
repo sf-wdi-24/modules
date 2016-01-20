@@ -76,5 +76,6 @@ Your web-app will work with books found on <a href="https://github.com/sf-wdi-24
 1. Creates a book with form values.
 1. Get a book by ID.
 1. Update a book based on ID and form input.
-1. Delete books based on ID in response to a button being clicked.
-1. Must have at least two routes.
+1. Delete books based on ID in response to being clicked.
+
+Work against <a href="https://github.com/sf-wdi-24/ng-super-crud" target="_blank">ng-super-crud</a> which will be your homework as well. Follow instructions in the readme to fork, clone and submit a pull request for your submission.
