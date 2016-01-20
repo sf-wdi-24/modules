@@ -34,7 +34,7 @@ You must be able to answer these questions.
 * How did we make a GET request to an API?
 * How did we set the API's URL?
 * Where is the success callback defined?
-* Dow we use promises in our code?
+* How do we use promises in our code?
 * Where is the error callback defined?
 * How do we set `results` to be the response from an API?
 
@@ -58,7 +58,7 @@ You must be able to answer these questions.
 * How did we customize the results returned from getting a list of Pokémon?
 * How did we set the API's URL?
 * Where is the success callback defined?
-* Dow we use promises in our code?
+* How do we use promises in our code?
 * Where is the error callback defined?
 * How do we update the page to show `pokemon` returned from the API?
 * How did we get `caterpie`'s information?
