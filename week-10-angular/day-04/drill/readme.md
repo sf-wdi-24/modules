@@ -1,6 +1,6 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Whiteboarding in Pairs
 
-Today you will be pairing up and taking turns performing whiteboard interviews.  When you are divided into pairs each person A should interview person B for roughly 25 minutes.  At the end of that time they should switch roles and person B will interview person A for 25 minutes.
+Today you'll be pairing up and taking turns performing whiteboarding interviews.  When you are divided into pairs, person A should interview person B for roughly 25 minutes.  At the end of that time, switch roles and person B will interview person A for 25 minutes.
 
 
 ## Problem # 1 - Palindrome

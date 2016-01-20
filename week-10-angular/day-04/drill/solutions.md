@@ -1,9 +1,12 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Whiteboarding in Pairs - Solutions
 
-## 1 Palindrome
+## Problem # 1 - Palindrome
 
 ```js
-// javascript
+/*
+ * javascript
+ */
+
 function isPalindrome(str) {
   // simple solution
   str = str.toLowerCase();
@@ -21,7 +24,10 @@ function isPalindrome(str) {
 ```
 
 ```rb
+#
 # ruby
+#
+
 def is_palindrome(str)
   # simple solution
   str = str.downcase
@@ -41,12 +47,15 @@ def is_palindrome(str)
 end
 ```
 
-## 2 Greatest Difference
+## Problem # 2 - Greatest Difference
 
 ```js
-// javascript
+/*
+ * javascript
+ */
 
-// Solution 1 - nested for loops (O(n^2) time)
+// Solution 1 - nested `for` loops (O(n^2) time)
+
 function greatestDiff(array) {
   var maxDiff = 0;
   for (var i = 0; i < array.length; i++) {
@@ -59,7 +68,8 @@ function greatestDiff(array) {
   return maxDiff;
 }
 
-// Solution 2 - single for loop (O(n) time)
+// Solution 2 - single for `loop` (O(n) time)
+
 function greatestDiff(array) {
   var min = Infinity;
   var max = - Infinity;
@@ -76,8 +86,12 @@ function greatestDiff(array) {
 ```
 
 ```rb
+#
 # ruby
-# Solution 1 - nested for loops (O(n^2) time)
+#
+
+# Solution 1 - nested `for` loops (O(n^2) time)
+
 def greatest_diff(array)
   max_diff = 0
 
@@ -96,7 +110,8 @@ def greatest_diff(array)
   max_diff
 end
 
-# Solution 2 - single for loop (O(n) time)
+# Solution 2 - single `for` loop (O(n) time)
+
 def greatest_diff(array)
   min = Float::INFINITY
   max = -Float::INFINITY
@@ -113,26 +128,39 @@ def greatest_diff(array)
 end
 ```
 
-## 3 List Combination
+## Problem # 3 - List Combination
+
 ```js
+/*
+ * javascript
+ */
+
 var a = ['a', 'b', 'c']
 var b = [1, 2, 3]
 
 var c = a.map(function (e, i) {
-    return [a[i], b[i]];
+  return [a[i], b[i]];
 });
 ```
 
 ```rb
+#
+# ruby
+#
+
 a = ["a", "b", "c"]
 b = [1, 2, 3]
 
 list = a.zip(b)
 ```
-## 4 Shuffle
+
+## Problem # 4 - Shuffle
 
 ```js
-// javascript
+/*
+ * javascript
+ */
+
 function shuffle(array) {
   var tempValue;
   var randomIndex;
@@ -153,7 +181,10 @@ function shuffle(array) {
 ```
 
 ```rb
+#
 # ruby
+#
+
 def shuffle(array)
   current_index = array.length - 1
 
