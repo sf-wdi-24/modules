@@ -92,6 +92,6 @@ Pair up with a classmate and attempt to complete these challenges:
   * favorite activity
   * a country you would like to visit
 
-2.  Open the riddle.txt file and have the contents displayed in your terminal.  If you can read the riddles append your answers to the file.
+2.  Open the `riddle.txt` file and have the contents displayed in your terminal.  If you can read the riddles append your answers to the file.
 
-3.  Create a file called `favorite.html` and copy the contents of the landing page of your favorite website to that file.  
+3.  Create a file called `favorite.html` and copy the contents of the landing page of your favorite website to that file.  (Hint:  you may have to look up how to use a gem in the terminal.  Specifically 'rest-client')
