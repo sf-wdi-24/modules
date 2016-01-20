@@ -88,7 +88,6 @@ Pair up with a classmate and attempt to complete these challenges:
 
 1.  Create a file called `pair-info.txt` that contains this information of you and your classmate:
   * first and last name
-  * city of birth
   * favorite activity
   * a country you would like to visit
 
