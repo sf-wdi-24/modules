@@ -17,7 +17,7 @@ You will also find that it's common for interviews to test your knowledge of man
 
 ## Read from a File
 
-Reading a file in Ruby uses the `File.open` method and takes a second argument of "w".  This allows you to open the file and be able to access it for reading.  From there you can use a variety of methods.  Here are two examples of how you can read files:  
+Reading a file in Ruby uses the `File.open` method and takes a second argument of "r".  This allows you to open the file and be able to access it for reading.  From there you can use a variety of methods.  Here are two examples of how you can read files:  
 
 ```rb
 file = File.open("sample.txt", "r")
@@ -45,7 +45,7 @@ end
 
 ## Create and Write a file
 
-Much like the example of how to read a file, you can also write to a file using `File.open`.  The following code is verbose so that it is broken down into smaller steps for understanding.
+Much like the example of how to read a file, you can also write to a file using `File.open`.  In this case, the second argument is "w" for write. The following code is verbose so that it is broken down into smaller steps for understanding.
 
 ```rb
 fname = "sample.txt"
@@ -60,11 +60,11 @@ A few things to note here:
 *  The `puts` method actually places the contents in the file as opposed to the screen.
 *  The close method closes the file and finishes the process for us.  We can always open the file again to write to it.
 
-**If you want to add contents to a file, use the "a" ("a" stands for append) argument as opposed to the "w".  The "w" will erase the contents that exist on a file before you write to it.**
+**If you want to add content to a file, use the "a" ("a" stands for append) argument as opposed to the "w".  The "w" will erase the contents that exist on a file before you write to it.**
 
 ## Close a File
 
-To close a file you can simply chain `.close` to what you are referencing the file as.  For example:
+To close a file you can simply chain `.close` to what you are calling the file.  For example:
 
 ```rb
 somefile.close
@@ -74,7 +74,7 @@ The `close` method allows the pending data from the file to be written to the ha
 
 ## Check for a file and it's properties
 
-Besides reading and writing, the File and Dir classes have methods that can determine various properties of files, including size, its directory, and whether or not a file with a given name exists.
+Besides reading and writing, the File and Dir classes have methods that can determine various properties of files, including size, its parent directory, and whether or not a file with a given name exists.
 
 ```rb
 if File.exists?(filename)
