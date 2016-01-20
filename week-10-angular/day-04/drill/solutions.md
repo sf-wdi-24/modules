@@ -112,6 +112,23 @@ def greatest_diff(array)
   max - min
 end
 ```
+
+## 3 List Combination
+```js
+var a = ['a', 'b', 'c']
+var b = [1, 2, 3]
+
+var c = a.map(function (e, i) {
+    return [a[i], b[i]];
+});
+```
+
+```rb
+a = ["a", "b", "c"]
+b = [1, 2, 3]
+
+list = a.zip(b)
+```
 ## 4 Shuffle
 
 ```js
