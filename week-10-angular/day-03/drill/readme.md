@@ -16,10 +16,69 @@ In most real-world applications, you'll be working with datasets that are too la
 You will also find that most interviews test your knowledge on how to access and manipulate files as part of the technical questions
 (This is something similar to the interview question that was posed to me by Erik.)
 
-## Check for a file and it's properties
-
 ## Read from a File
+
+Reading a file uses the `File.open` method and takes a second argument of "w".  This allows you to open the file and be able to access the it for reading.  From there you can use a variety of methods.  Here are two examples of how you can read files:  
+
+```rb
+file = File.open("sample.txt", "r")
+contents = file.read
+puts contents   #=> Lorem ipsum etc.
+
+contents = file.read
+puts contents   #=> ""
+```
+
+And here's an example of the block format:
+```rb
+contents = File.open("sample.txt", "r"){ |file| file.read }
+puts contents
+#=>   Lorem ipsum etc.
+```
+
+Finally, if you have a bigger file that has many lines to go through you can use the `readlines` method on the file:
+
+```rb
+File.open("sample.txt").readlines.each do |line|
+   puts line
+end
+```
 
 ## Create and Write a file
 
+Much like the example of how to read a file, you can also write to a file using `File.open`.  The following code is verbose so that it is broken down into smaller steps for understanding.
+
+```rb
+fname = "sample.txt"
+somefile = File.open(fname, "w")
+somefile.puts "Hey man, you are a file."
+somefile.close
+```
+
+A few things to note here:
+*  fname is just a string that represents the filename
+*  the next line invokes the file class which then requires the two arguments (the first being the name and the second being the action we perform on the name)
+*  The puts method actually places the contents in the file as opposed to the screen.
+*  The close method closes the file and finishes the process for us.  We can always open the file again to write to it.
+
+**If you want to add contents to a file use the "a" ("a" stands for append) argument as opposed to the "w".  The "w" will erase the contents that exist on a file before you write to it.**
+
 ## Close a File
+
+To close a file you can simply chain '.close' to what you are referencing the file as.  For example:
+
+```rb
+somefile.close
+```
+
+The close method allows the pending data from the file to be written to the hard drive once you are finished.  You will be able to access the data again if you need to.
+
+## Check for a file and it's properties
+
+Besides reading and writing, the File and Dir classes have methods that can determine various properties of files, including size, its directory, and whether or not a file with a given name exists.
+
+```rb
+if File.exists?(filename)
+   puts "#{filename} exists"
+end
+```
