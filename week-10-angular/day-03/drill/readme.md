@@ -82,3 +82,16 @@ if File.exists?(filename)
    puts "#{filename} exists"
 end
 ```
+
+## Challenges
+Pair up with a classmate and attempt to complete these challenges:
+
+1.  Create a file called `pair-info.txt` that contains this information of you and your classmate:
+  * first and last name
+  * city of birth
+  * favorite activity
+  * a country you would like to visit
+
+2.  Open the riddle.txt file and have the contents displayed in your terminal.  If you can read the riddles append your answers to the file.
+
+3.  Create a file called `favorite.html` and copy the contents of the landing page of your favorite website to that file.  
