@@ -12,6 +12,7 @@ For additional complexity, discount white space and punctuation, so that a strin
 ```js
 isPalindrome('racecar');
 // => true
+
 isPalindrome('apple');
 // => false
 ```
