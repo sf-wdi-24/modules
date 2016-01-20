@@ -83,26 +83,27 @@ end
 ```
 
 ## Challenges
-Pair up with a classmate and attempt to complete these challenges:
 
-1.  Create a file called `pair-info.txt` that contains this information of you and your classmate:
+Pair up with a classmate to work on these challenges:
+
+1.  Create a file called `pair-info.txt` that contains the following information for you and your classmate:
   * first and last name
   * favorite activity
   * a country you would like to visit
 
 2.  Create a file called `riddle.txt` that contains the following:
 
-```txt
-1.  You're running a race and pass the person in 2nd place.  What place are you in now?
+	```txt
+	1.  You're running a race and pass the person in 2nd place.  What place are you in now?
 
-2.  Imagine you are in a dark room.  How you get out?
+	2.  Imagine you are in a dark room.  How you get out?
 
-3.  Who makes it, but has no need of it.
-    Who buys it, but has no use for it.
-    Who uses it but can neither see nor feel it.
-    What is it?
+	3.  Who makes it, but has no need of it.
+	    Who buys it, but has no use for it.
+	    Who uses it but can neither see nor feel it.
+	    What is it?
+	```
 
-```
-Open the `riddle.txt` file and have the contents displayed in your terminal.  If you can read the riddles in your terminal,  append your answers to the file you created.
+	Open the `riddle.txt` file and display the contents in your terminal.  If you can read the riddles in your terminal,  append your answers to the file you created.
 
-3.  Create a file called `favorite.html` and copy the contents of the landing page of your favorite website to that file.  (Hint:  you may have to look up how to use a gem in the terminal.  Specifically 'rest-client')
+3.  Create a file called `favorite.html` and copy the contents of the landing page of your favorite website to that file.  (Hint:  you may have to look up how to use a gem in the terminal.  Specifically `rest-client`.)
