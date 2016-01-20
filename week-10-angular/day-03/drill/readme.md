@@ -3,7 +3,7 @@
 ![whats-in-the-box](https://cloud.githubusercontent.com/assets/8397980/12435032/a2707b98-bebf-11e5-9db9-f54e3b90a7a5.png)
 
 | Objectives |
-|------------|
+| :--- |
 | Students will be able to create and write to a file. |
 | Students will be able to read from a file. |
 | Students will be able to close files. |
@@ -11,14 +11,13 @@
 
 ## Why?
 
-In most real-world applications, you'll be working with datasets that are too large to include in a program in a predefined string or collection.
+In most real-world applications, you'll be working with data sets that are too large to include in a program in a predefined string or collection.
 
-You will also find that most interviews test your knowledge on how to access and manipulate files as part of the technical questions
-(This is something similar to the interview question that was posed to me by Erik.)
+You will also find that it's common for interviews to test your knowledge of manipulating files in the technical portion of the interview (similar to the interview question that was posed to me by Erik).
 
 ## Read from a File
 
-Reading a file uses the `File.open` method and takes a second argument of "w".  This allows you to open the file and be able to access the it for reading.  From there you can use a variety of methods.  Here are two examples of how you can read files:  
+Reading a file in Ruby uses the `File.open` method and takes a second argument of "w".  This allows you to open the file and be able to access it for reading.  From there you can use a variety of methods.  Here are two examples of how you can read files:  
 
 ```rb
 file = File.open("sample.txt", "r")
@@ -56,22 +55,22 @@ somefile.close
 ```
 
 A few things to note here:
-*  fname is just a string that represents the filename
-*  the next line invokes the file class which then requires the two arguments (the first being the name and the second being the action we perform on the name)
-*  The puts method actually places the contents in the file as opposed to the screen.
+*  `fname` is just a string that represents the filename
+*  The next line invokes the file class which then requires the two arguments (the first being the name and the second being the action we perform on the name)
+*  The `puts` method actually places the contents in the file as opposed to the screen.
 *  The close method closes the file and finishes the process for us.  We can always open the file again to write to it.
 
-**If you want to add contents to a file use the "a" ("a" stands for append) argument as opposed to the "w".  The "w" will erase the contents that exist on a file before you write to it.**
+**If you want to add contents to a file, use the "a" ("a" stands for append) argument as opposed to the "w".  The "w" will erase the contents that exist on a file before you write to it.**
 
 ## Close a File
 
-To close a file you can simply chain '.close' to what you are referencing the file as.  For example:
+To close a file you can simply chain `.close` to what you are referencing the file as.  For example:
 
 ```rb
 somefile.close
 ```
 
-The close method allows the pending data from the file to be written to the hard drive once you are finished.  You will be able to access the data again if you need to.
+The `close` method allows the pending data from the file to be written to the hard drive once you are finished.  You will be able to access the data again if you need to.
 
 ## Check for a file and it's properties
 
