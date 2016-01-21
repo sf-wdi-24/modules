@@ -18,6 +18,15 @@ These services will often fall under the umbrella of Backend As A Service (BAAS)
 
 We'll go over a few services with their corresponding positive and negative traits. There isn't a one-size fits all solution.
 
+## HTML5 Pushstate
+
+In Angular we can use URLs like `/books` instead of `#/books` by using something in HTML5 named <a href="http://www.codelord.net/2015/05/12/angularjs-how-to-setup-pushstate-with-html5mode/" target="_blank">pushState</a>.
+
+This is something which works on the client side but with different servers it won't work unless you know what you're doing. It's safe to keep your app from using pushState by not enabling it.
+
+By default pushState is not enabled so please keep it that way until you understand how to work with it on the server.
+
+
 ## Parse
 
 > Building apps isn't easy, but we get you pretty close. <a href="https://parse.com/" target="_blank">Parse.com</a>
