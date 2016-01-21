@@ -20,7 +20,7 @@ We'll go over a few services with their corresponding positive and negative trai
 
 ## Parse
 
-> Building apps isn't easy, but we get you pretty close. [Parse.com](https://parse.com/)
+> Building apps isn't easy, but we get you pretty close. <a href="https://parse.com/" target="_blank">Parse.com</a>
 
 Pros:
 
@@ -36,15 +36,15 @@ Cons:
 
 Using Angular with Parse is a challenge, in order to get around it we'll use a feature of Angular called `$q`. `$q` is used to create JavaScript promises which are what power much of Angular.
 
-[Details on Angular with Parse](http://tumba.solutions/blog/angularjs-and-parse)
+<a href="http://tumba.solutions/blog/angularjs-and-parse" target="_blank">Details on Angular with Parse</a>
 
-[Hosting Apps with Parse](https://parse.com/apps/quickstart#hosting/unix)
-[Working with Parse Data](https://parse.com/apps/quickstart#parse_data/web/existing)
+<a href="https://parse.com/apps/quickstart#hosting/unix" target="_blank">Hosting Apps with Parse</a>
+<a href="https://parse.com/apps/quickstart#parse_data/web/existing" target="_blank">Working with Parse Data</a>
 
 
 ## Dropbox
 
-> The Datastore API lets you effortlessly sync all of your app's structured data such as contacts, to-do items, and game state. It enables your app to sync data quickly, manage conflicting changes, and even work offline. [Dropbox API](https://www.dropbox.com/developers-v1/datastore/sdks/other)
+> The Datastore API lets you effortlessly sync all of your app's structured data such as contacts, to-do items, and game state. It enables your app to sync data quickly, manage conflicting changes, and even work offline. <a href="https://www.dropbox.com/developers-v1/datastore/sdks/other" target="_blank">Dropbox API</a>
 
 Pros:
 
@@ -62,12 +62,12 @@ If you want to serve HTML from Dropbox you need a paid account to get a Public f
 
 Working with the DataStore API in Angular requires a new Angular service named `dropstore-ng`:
 
-[Dropstore NG GitHub](https://github.com/AnalogJ/dropstore-ng)
+<a href="https://github.com/AnalogJ/dropstore-ng" target="_blank">Dropstore NG GitHub</a>
 
 
 ## JAWS
 
-> Serverless Framework – Build and maintain web, mobile and IoT applications running on AWS Lambda and API Gateway (formerly known as JAWS) [Serverless](https://github.com/serverless/serverless)
+> Serverless Framework – Build and maintain web, mobile and IoT applications running on AWS Lambda and API Gateway (formerly known as JAWS) <a href="https://github.com/serverless/serverless" target="_blank">Serverless</a>
 
 Pros:
 
@@ -78,19 +78,19 @@ Cons:
 * High learning curve.
 * Initial setup isn't quick.
 
-[Serverless](https://github.com/serverless/serverless)
-[What is Serverless](http://docs.serverless.com/docs/backstory)
+<a href="https://github.com/serverless/serverless" target="_blank">Serverless</a>
+<a href="http://docs.serverless.com/docs/backstory" target="_blank">What is Serverless</a>
 
 ### Side Note
 
 What is AWS? You'll come across Amazon Web Services constantly and should be able to understand what AWS "is".
 
-[What is AWS?](https://aws.amazon.com/what-is-aws/)
+<a href="https://aws.amazon.com/what-is-aws/" target="_blank">What is AWS?</a>
 
-[AWS Lambda](https://aws.amazon.com/lambda/)
-[AWS API Gateway](https://aws.amazon.com/api-gateway/)
-[AWS EC2](https://aws.amazon.com/ec2/)
-[AWS S3](https://aws.amazon.com/s3/)
+<a href="https://aws.amazon.com/lambda/" target="_blank">AWS Lambda</a>
+<a href="https://aws.amazon.com/api-gateway/" target="_blank">AWS API Gateway</a>
+<a href="https://aws.amazon.com/ec2/" target="_blank">AWS EC2</a>
+<a href="https://aws.amazon.com/s3/" target="_blank">AWS S3</a>
 
 
 ## Hackathons
@@ -114,10 +114,10 @@ You are required to deliver a project which:
 
 It isn't important to know all these routes but it's useful to understand the number of choices when hosting your application in a "production" environment. Find a way you understand well and use it when you need a quick environment.
 
-[Google Drive Hosting](https://support.google.com/drive/answer/2881970?hl=en)
-[GitHub Pages Hosting](https://pages.github.com/)
-[Microsoft Hosting](https://msdn.microsoft.com/en-us/library/dn589776.aspx)
-[BitBalloon Hosting](https://www.bitballoon.com/)
-[Hosting on your Phone](http://www.androidguys.com/2014/04/22/host-website-android-device/)
-[Hosting with GCloud](https://cloud.google.com/)
-[RackSpace Hosting](https://www.rackspace.com/knowledge_center/article/serve-static-content-for-websites-by-using-cloud-files)
+<a href="https://support.google.com/drive/answer/2881970?hl=en" target="_blank">Google Drive Hosting</a>
+<a href="https://pages.github.com/" target="_blank">GitHub Pages Hosting</a>
+<a href="https://msdn.microsoft.com/en-us/library/dn589776.aspx" target="_blank">Microsoft Hosting</a>
+<a href="https://www.bitballoon.com/" target="_blank">BitBalloon Hosting</a>
+<a href="http://www.androidguys.com/2014/04/22/host-website-android-device/" target="_blank">Hosting on your Phone</a>
+<a href="https://cloud.google.com/" target="_blank">Hosting with GCloud</a>
+<a href="https://www.rackspace.com/knowledge_center/article/serve-static-content-for-websites-by-using-cloud-files" target="_blank">RackSpace Hosting</a>
