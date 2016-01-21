@@ -31,7 +31,7 @@
     <td><a href="./day-02/module-02/">Angular Directives</a></td>
     <td><a href="./day-03/module-02/">Angular $http & ng-resource</a></td>
     <td><a href="./day-04/module-02/">Angular with Parse & Dropbox</a></td>
-    <td>Intro Weekend Lab (Angular App)</td>
+    <td>Intro <a href="https://github.com/sf-wdi-24/angular-weekend-lab" target="_blank">Angular Weekend Lab</a></td>
   </tr>
   <tr>
     <td>HW</td>
@@ -39,6 +39,6 @@
     <td><a href="https://github.com/sf-wdi-24/intro-angular-lab" target="_blank">Intro Angular Lab</a></td>
     <td><a href="https://github.com/sf-wdi-24/ng-super-crud" target="_blank">NG Super Crud</a></td>
     <td><a href="https://github.com/sf-wdi-24/ng-serverless" target="_blank">NG Serverless</a></td>
-    <td>Weekend Lab (Angular App)</td>
+    <td><a href="https://github.com/sf-wdi-24/angular-weekend-lab" target="_blank">Angular Weekend Lab</a></td>
   </tr>
 </table>
