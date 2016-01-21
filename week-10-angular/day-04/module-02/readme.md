@@ -12,11 +12,11 @@
 
 There have been a number of projects which don't use a custom made server released recently. Instead of using a server they've branded themselves "serverless".
 
-The term serverless is misleading because these systems use servers to host shared data. The difference is that serverless projects rely on external services providing the server architecture. Although this process is easier to get setup with it comes with an additional price.
+The term serverless is misleading because these systems use servers to host shared data. The difference is that serverless projects rely on external services providing the server architecture. Although this process is easier to get setup with, it comes with an additional price.
 
 These services will often fall under the umbrella of Backend As A Service (BAAS). This means they're designed as a service which gives you features commonly found on your backend (server environment).
 
-We'll go over a few services with their corresponding positive and negative traits. There isn't a one-size fits all solution.
+We'll go over a few services with their corresponding positive and negative traits. There isn't a one-size-fits-all solution.
 
 ## HTML5 Pushstate
 
@@ -101,7 +101,7 @@ What is AWS? You'll come across Amazon Web Services constantly and should be abl
 
 ## Hackathons
 
-Creatively hosting your prototype projects shares what you've created. We've been using Heroku, but it won't always work in a short time frame. Sometimes you won't have time to setup your server environment and maintain server routes while building a Hackathon prototype.
+Creatively hosting your prototype projects allows you to share what you've created. We've been using Heroku, but it won't always work in a short time frame. Sometimes you won't have time to setup your server environment and maintain server routes while building a Hackathon prototype.
 
 In Hackathons these "serverless" environments can be incredibly useful. You'll be able to have a shareable prototype within the time frame of the Hackathon.
 
