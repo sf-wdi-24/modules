@@ -669,7 +669,7 @@ Now that your Angular app is all set up, it's time to CRUD a resource! You'll ne
 
 ## Stretch Challenges
 
-1. Once your two apps are set up, pick one app, and build a JSON API to CRUD one resource (`todos` are always a good start).Test your API routes on Postman.
+1. Once your two apps are set up, pick one app, and build a JSON API to CRUD one resource (`todos` are always a good start). Test your API routes on Postman.
 
 2. Use Angular `$http` or `$resource` to query your API endpoints from the client side to implement full CRUD in your single-page app.
 
