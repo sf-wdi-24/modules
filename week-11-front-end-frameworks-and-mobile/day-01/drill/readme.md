@@ -1,8 +1,26 @@
 
-Interview Tips & Best Practices
+# <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Interview Tips & Best Practices
 
 
-When in an interview it is important to follow these best practices in order to increase your chances of getting the job you want.
+The following pieces of information are things that you need to take into consideration as you go into your interviews:
+
+## Before the Interview
+
+Do your research about the company leading up to the interview.
+
+Practice your debugging skills.
+
+Ask what the interview format is going to be and practice that format leading up to the interview.
+
+Understand the different types of interviews that can be done and work through some.
+
+Get feedback from practice interviews
+
+Get a support system and believe in practice
+
+Understand the different types of interviews that can be done and work through some.
+
+## During the Interview
 
 Communicate clearly and effectively
 
@@ -12,13 +30,17 @@ If you say that you know a language or framework, make sure you know that langua
 
 Don't hijack the interview from the interviewer.
 
-Ask what the interview format is going to be and practice that format leading up to the interview.
+Make sure you feel comfortable answering in great
+detail anything on your resume.
+
+During the interview, don't obsess over little mistakes that happen.
+
+## After the Interview
 
 Be sure to thank the interviewer and follow up with them about the time spent on the interview.
 
-Understand the different types of interviews that can be done and work through some.
+Make sure you're preparing to be a good engineer, not just a good interviewee
 
-Some interviews are phone based.  Others are a take home coding challenge.  Still others are purely white boarding in from of the CTO's, and finally others are a coding challenge done with another developer.
 
 
 
