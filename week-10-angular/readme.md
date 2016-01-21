@@ -39,6 +39,9 @@
     <td><a href="https://github.com/sf-wdi-24/intro-angular-lab" target="_blank">Intro Angular Lab</a></td>
     <td><a href="https://github.com/sf-wdi-24/ng-super-crud" target="_blank">NG Super Crud</a></td>
     <td><a href="https://github.com/sf-wdi-24/ng-serverless" target="_blank">NG Serverless</a></td>
-    <td><a href="https://github.com/sf-wdi-24/angular-weekend-lab" target="_blank">Angular Weekend Lab</a></td>
+    <td>
+      <a href="https://github.com/sf-wdi-24/angular-weekend-lab" target="_blank">Angular Weekend Lab</a><br><br>
+      You will be giving <a href="https://github.com/sf-wdi-24/lightning-talks">Lightning Talks</a> next Wednesday - start preparing!
+    </td>
   </tr>
 </table>
