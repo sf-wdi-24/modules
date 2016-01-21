@@ -75,6 +75,8 @@ Cons:
 * High learning curve.
 * Initial setup isn't quick.
 
+Details:
+
 * <a href="https://github.com/serverless/serverless" target="_blank">Serverless</a>
 * <a href="http://docs.serverless.com/docs/backstory" target="_blank">What is Serverless</a>
 
