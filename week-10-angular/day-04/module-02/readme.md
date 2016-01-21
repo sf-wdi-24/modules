@@ -92,7 +92,7 @@ What is AWS? You'll come across Amazon Web Services constantly and should be abl
 
 ## Hackathons
 
-Creatively hosting your prototype projects shares what you've created. We've been using heroku but it won't always work in a short time frame. Sometimes you won't have time to setup your server environment and maintain server routes while building a Hackathon prototype.
+Creatively hosting your prototype projects shares what you've created. We've been using Heroku but it won't always work in a short time frame. Sometimes you won't have time to setup your server environment and maintain server routes while building a Hackathon prototype.
 
 In Hackathons these "serverless" environments can be incredibly useful. You'll be able to have a shareable prototype within the time frame of the Hackathon.
 
@@ -105,7 +105,8 @@ You are required to deliver a project which:
 1. Performs all CRUD operations.
 1. Is hosted on a service other than Heroku.
 1. Uses Angular Routing.
-1. Doesn't use a custom built server.
+
+Further information is <a href="https://github.com/sf-wdi-24/ng-serverless" target="_blank">found on the ng-serverless repository</a>.
 
 ## Other Routes to Host
 
