@@ -11,32 +11,41 @@
   </tr>
   <tr>
     <td>Drill</td>
-    <td><a href="./day-01/drill/">Interview Workshop: Tips & Best Practices</a></td>
-    <td><a href="./day-02/drill/">Interview Workshop: Basic Math `||` Hash-Mapping</a></td>
-    <td><a href="./day-03/drill/">Interview Workshop: Big-O</a></td>
-    <td><a href="./day-04/drill/">Interview Workshop: Tech Vocab</a></td>
+    <td><a href="./day-01/drill">Interview Workshop: Tips & Best Practices</a></td>
+    <td><a href="./day-02/drill">Interview Workshop: Basic Math || Hash-Mapping</a></td>
+    <td><a href="./day-03/drill">Interview Workshop: Big-O</a></td>
+    <td><a href="./day-04/drill">Interview Workshop: Tech Vocab</a></td>
     <td>Interview Workshop: Algorithm Design (Optional)</td>
   </tr>
   <tr>
     <td>Module1</td>
-    <td><a href="./day-01/module-01/">Angular Auth with Satellizer</a></td>
-    <td><a href="./day-02/module-01/">Intro React</a></td>
-    <td><a href="./day-03/module-01/">Lightning Talks</a></td>
-    <td>Deadline for Project 3 Approvals</td>
+    <td><a href="./day-01/module-01">Angular Auth with Satellizer</a></td>
+    <td><a href="./day-02/module-01">Intro React</a></td>
+    <td>Lightning Talks</td>
+    <td>
+      Project 3<br><br>
+      <strong>10:30am</strong> - Deadline for Project 3 Approvals
+    </td>
     <td>Project 3</td>
   </tr>
   <tr>
     <td>Module2</td>
-    <td><a href="./day-01/module-02/">Angular Lab</a></td>
-    <td><a href="./day-02/module-02/">Intro Swift</a></td>
-    <td><a href="./day-03/module-02/">Intro Project 3</a></td>
+    <td><a href="./day-01/module-02">Angular Lab</a></td>
+    <td><a href="./day-02/module-02">Intro Swift</a></td>
+    <td>
+      Intro Project 3<br><br>
+      Start Project 3 Approvals
+    </td>
     <td>Project 3</td>
     <td>Project 3</td>
   </tr>
   <tr>
     <td>HW</td>
-    <td>Finish Angular Lab</td>
-    <td>Prepare Lightning Talks</td>
+    <td>
+      Finish Angular Lab<br><br>
+      Work on <a href="https://github.com/sf-wdi-24/lightning-talks" target="_blank">Lightning Talk</a>
+    </td>
+    <td>Finish Preparing <a href="https://github.com/sf-wdi-24/lightning-talks" target="_blank">Lightning Talk</a></td>
     <td>Project 3 Planning</td>
     <td>Project 3</td>
     <td>Project 3</td>
