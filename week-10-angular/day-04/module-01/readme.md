@@ -31,8 +31,8 @@ If you're going to build your own server from scratch to connect to your Angular
 3. Set up your Express boilerplate:
 
   ```js
-  /* server.js
-   *
+  /*
+   * server.js
    */
 
   // require express and other modules
@@ -232,8 +232,8 @@ If you're going to build your own server from scratch to connect to your Angular
 1. To allow `body-parser` to send and receive JSON data, add this line to `server.js`:
 
   ```js
-  /* server.js
-   *
+  /*
+   * server.js
    */
 
   ...
@@ -254,8 +254,8 @@ Now that your Angular app is all set up, it's time to CRUD a resource! You'll ne
 1. CRUD routes for your resource:
 
   ```js
-  /* server.js
-   *
+  /*
+   * server.js
    */
 
   ...
@@ -300,8 +300,8 @@ Now that your Angular app is all set up, it's time to CRUD a resource! You'll ne
 2. CRUD actions that render JSON:
 
   ```js
-  /* server.js
-   *
+  /*
+   * server.js
    */
 
   ...
@@ -669,7 +669,7 @@ Now that your Angular app is all set up, it's time to CRUD a resource! You'll ne
 
 ## Stretch Challenges
 
-1. Once your two apps are set up, pick one app, and build a JSON API to CRUD one resource (`todos` are always a good start).Test your API routes on Postman.
+1. Once your two apps are set up, pick one app, and build a JSON API to CRUD one resource (`todos` are always a good start). Test your API routes on Postman.
 
 2. Use Angular `$http` or `$resource` to query your API endpoints from the client side to implement full CRUD in your single-page app.
 
