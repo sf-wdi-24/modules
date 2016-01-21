@@ -106,6 +106,10 @@ You are required to deliver a project which:
 1. Is hosted on a service other than Heroku.
 1. Uses Angular Routing.
 
+Your pull request must include a description of the process you used to host your app.
+
+Your pull request must include a description of issues you ran into while hosting your app.
+
 Further information is <a href="https://github.com/sf-wdi-24/ng-serverless" target="_blank">found on the ng-serverless repository</a>.
 
 ## Other Routes to Host
