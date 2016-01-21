@@ -31,8 +31,8 @@ If you're going to build your own server from scratch to connect to your Angular
 3. Set up your Express boilerplate:
 
   ```js
-  /* server.js
-   *
+  /*
+   * server.js
    */
 
   // require express and other modules
