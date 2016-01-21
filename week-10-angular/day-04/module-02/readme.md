@@ -36,11 +36,9 @@ Cons:
 
 Using Angular with Parse is a challenge, in order to get around it we'll use a feature of Angular called `$q`. `$q` is used to create JavaScript promises which are what power much of Angular.
 
-<a href="http://tumba.solutions/blog/angularjs-and-parse" target="_blank">Details on Angular with Parse</a>
-
-<a href="https://parse.com/apps/quickstart#hosting/unix" target="_blank">Hosting Apps with Parse</a>
-<a href="https://parse.com/apps/quickstart#parse_data/web/existing" target="_blank">Working with Parse Data</a>
-
+* <a href="http://tumba.solutions/blog/angularjs-and-parse" target="_blank">Details on Angular with Parse</a>
+* <a href="https://parse.com/apps/quickstart#hosting/unix" target="_blank">Hosting Apps with Parse</a>
+* <a href="https://parse.com/apps/quickstart#parse_data/web/existing" target="_blank">Working with Parse Data</a>
 
 ## Dropbox
 
@@ -62,8 +60,7 @@ If you want to serve HTML from Dropbox you need a paid account to get a Public f
 
 Working with the DataStore API in Angular requires a new Angular service named `dropstore-ng`:
 
-<a href="https://github.com/AnalogJ/dropstore-ng" target="_blank">Dropstore NG GitHub</a>
-
+* <a href="https://github.com/AnalogJ/dropstore-ng" target="_blank">Dropstore NG GitHub</a>
 
 ## JAWS
 
@@ -78,20 +75,18 @@ Cons:
 * High learning curve.
 * Initial setup isn't quick.
 
-<a href="https://github.com/serverless/serverless" target="_blank">Serverless</a>
-<a href="http://docs.serverless.com/docs/backstory" target="_blank">What is Serverless</a>
+* <a href="https://github.com/serverless/serverless" target="_blank">Serverless</a>
+* <a href="http://docs.serverless.com/docs/backstory" target="_blank">What is Serverless</a>
 
 ### Side Note
 
 What is AWS? You'll come across Amazon Web Services constantly and should be able to understand what AWS "is".
 
-<a href="https://aws.amazon.com/what-is-aws/" target="_blank">What is AWS?</a>
-
-<a href="https://aws.amazon.com/lambda/" target="_blank">AWS Lambda</a>
-<a href="https://aws.amazon.com/api-gateway/" target="_blank">AWS API Gateway</a>
-<a href="https://aws.amazon.com/ec2/" target="_blank">AWS EC2</a>
-<a href="https://aws.amazon.com/s3/" target="_blank">AWS S3</a>
-
+* <a href="https://aws.amazon.com/what-is-aws/" target="_blank">What is AWS?</a>
+* <a href="https://aws.amazon.com/lambda/" target="_blank">AWS Lambda</a>
+* <a href="https://aws.amazon.com/api-gateway/" target="_blank">AWS API Gateway</a>
+* <a href="https://aws.amazon.com/ec2/" target="_blank">AWS EC2</a>
+* <a href="https://aws.amazon.com/s3/" target="_blank">AWS S3</a>
 
 ## Hackathons
 
@@ -114,10 +109,10 @@ You are required to deliver a project which:
 
 It isn't important to know all these routes but it's useful to understand the number of choices when hosting your application in a "production" environment. Find a way you understand well and use it when you need a quick environment.
 
-<a href="https://support.google.com/drive/answer/2881970?hl=en" target="_blank">Google Drive Hosting</a>
-<a href="https://pages.github.com/" target="_blank">GitHub Pages Hosting</a>
-<a href="https://msdn.microsoft.com/en-us/library/dn589776.aspx" target="_blank">Microsoft Hosting</a>
-<a href="https://www.bitballoon.com/" target="_blank">BitBalloon Hosting</a>
-<a href="http://www.androidguys.com/2014/04/22/host-website-android-device/" target="_blank">Hosting on your Phone</a>
-<a href="https://cloud.google.com/" target="_blank">Hosting with GCloud</a>
-<a href="https://www.rackspace.com/knowledge_center/article/serve-static-content-for-websites-by-using-cloud-files" target="_blank">RackSpace Hosting</a>
+* <a href="https://support.google.com/drive/answer/2881970?hl=en" target="_blank">Google Drive Hosting</a>
+* <a href="https://pages.github.com/" target="_blank">GitHub Pages Hosting</a>
+* <a href="https://msdn.microsoft.com/en-us/library/dn589776.aspx" target="_blank">Microsoft Hosting</a>
+* <a href="https://www.bitballoon.com/" target="_blank">BitBalloon Hosting</a>
+* <a href="http://www.androidguys.com/2014/04/22/host-website-android-device/" target="_blank">Hosting on your Phone</a>
+* <a href="https://cloud.google.com/" target="_blank">Hosting with GCloud</a>
+* <a href="https://www.rackspace.com/knowledge_center/article/serve-static-content-for-websites-by-using-cloud-files" target="_blank">RackSpace Hosting</a>
