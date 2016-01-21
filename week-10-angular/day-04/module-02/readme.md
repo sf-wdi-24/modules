@@ -22,7 +22,7 @@ We'll go over a few services with their corresponding positive and negative trai
 
 In Angular we can use URLs like `/books` instead of `#/books` by using something in HTML5 named <a href="http://www.codelord.net/2015/05/12/angularjs-how-to-setup-pushstate-with-html5mode/" target="_blank">pushState</a>.
 
-This is something which works on the client side but with different servers it won't work unless you know what you're doing. It's safe to keep your app from using pushState by not enabling it.
+This is something which works on the client side, but with different servers it won't work unless you know what you're doing. It's safe to keep your app from using pushState by not enabling it.
 
 By default pushState is not enabled so please keep it that way until you understand how to work with it on the server.
 
@@ -101,7 +101,7 @@ What is AWS? You'll come across Amazon Web Services constantly and should be abl
 
 ## Hackathons
 
-Creatively hosting your prototype projects shares what you've created. We've been using Heroku but it won't always work in a short time frame. Sometimes you won't have time to setup your server environment and maintain server routes while building a Hackathon prototype.
+Creatively hosting your prototype projects shares what you've created. We've been using Heroku, but it won't always work in a short time frame. Sometimes you won't have time to setup your server environment and maintain server routes while building a Hackathon prototype.
 
 In Hackathons these "serverless" environments can be incredibly useful. You'll be able to have a shareable prototype within the time frame of the Hackathon.
 
