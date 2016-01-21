@@ -45,8 +45,8 @@ Make sure you're preparing to be a good engineer, not just a good interviewee
 
 Resources:
 
-http://www.cio.com/article/2383000/careers-staffing/how-to-prepare-for--and-ace--the-technical-interview.html
+<a href="http://www.cio.com/article/2383000/careers-staffing/how-to-prepare-for--and-ace--the-technical-interview.html" target="_blank">How to Prepare and Ace the Technical Interview</a>
 
-https://www.interviewcake.com/article/python/coding-interview-tips
+<a href="https://www.interviewcake.com/article/python/coding-interview-tips" target="_blank">Coding Interview Tips</a>
 
-https://www.quora.com/How-do-I-prepare-for-a-software-engineering-job-interview
+<a href="https://www.quora.com/How-do-I-prepare-for-a-software-engineering-job-interview" target="_blank">How Do I Prepare for a Software Engineering Job Interview</a>
