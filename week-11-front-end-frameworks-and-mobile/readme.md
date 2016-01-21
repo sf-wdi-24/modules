@@ -17,7 +17,7 @@
     <td><a href="./day-02/drill">Interview Workshop: Basic Math || Hash-Mapping</a></td>
     <td><a href="./day-03/drill">Interview Workshop: Big-O</a></td>
     <td><a href="./day-04/drill">Interview Workshop: Tech Vocab</a></td>
-    <td>Interview Workshop: Algorithm Design (Optional)</td>
+    <td><a href="./day-05/drill">Interview Workshop: Algorithm Design</a> (Optional)</td>
   </tr>
   <tr>
     <td>Module1</td>
