@@ -232,8 +232,8 @@ If you're going to build your own server from scratch to connect to your Angular
 1. To allow `body-parser` to send and receive JSON data, add this line to `server.js`:
 
   ```js
-  /* server.js
-   *
+  /*
+   * server.js
    */
 
   ...
@@ -254,8 +254,8 @@ Now that your Angular app is all set up, it's time to CRUD a resource! You'll ne
 1. CRUD routes for your resource:
 
   ```js
-  /* server.js
-   *
+  /*
+   * server.js
    */
 
   ...
@@ -300,8 +300,8 @@ Now that your Angular app is all set up, it's time to CRUD a resource! You'll ne
 2. CRUD actions that render JSON:
 
   ```js
-  /* server.js
-   *
+  /*
+   * server.js
    */
 
   ...
