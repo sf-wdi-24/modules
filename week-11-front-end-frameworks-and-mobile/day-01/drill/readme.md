@@ -54,6 +54,15 @@ Make sure you're preparing to be a good engineer, not just a good interviewee.
 
 Write an efficient function that takes stock_prices_yesterday and returns the best profit I could have made from 1 purchase and 1 sale of 1 Napster stock yesterday.
 
+For example:
+
+```rb
+  stock_prices_yesterday = [10, 7, 5, 8, 11, 9]
+
+get_max_profit(stock_prices_yesterday)
+# returns 6 (buying for $5 and selling for $11)
+```
+
 **We'll review the optimum solution and how to get to it after you attempt to solve it.**
 
 #### Resources:

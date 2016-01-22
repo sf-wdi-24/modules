@@ -1,8 +1,8 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Interview Workshop: Tips & Best Practices - Solutions
 
-**Taken from Interview Cake**
+**Taken from Interview Cake (www.interviewcake.com)**
 
-Write an efficient function that takes stock_prices_yesterday and returns the best profit I could have made from 1 purchase and 1 sale of 1 Napster stock yesterday.
+Write an efficient function that takes `stock_prices_yesterday` and returns the best profit I could have made from 1 purchase and 1 sale of 1 Napster stock yesterday.
 
 For example:
 
