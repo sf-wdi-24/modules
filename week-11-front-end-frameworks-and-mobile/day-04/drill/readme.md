@@ -53,43 +53,43 @@ function pascalRecursive(n, a) {
   </thead>
   <tbody>
     <tr>
-      <td>declared variable named `x`</td>
-      <td>`var x`</td>
+      <td>declared variable named <pre>x</pre></td>
+      <td><pre>var x</pre></td>
     </tr>
     <tr>
-      <td>defined variable named `x` to be the number `1`</td>
-      <td>`var x = 1`</td>
+      <td>defined variable named <pre>x</pre> to be the number <pre>1</pre></td>
+      <td><pre>var x = 1</pre></td>
     <tr>
-      <td>called a function named `x`</td>
-      <td>`x()`</td>
+      <td>called a function named <pre>x</pre></td>
+      <td><pre>x()</pre></td>
     </tr>
     <tr>
-      <td>declared a function named `x`</td>
-      <td>`function x() {}`</td>
+      <td>declared a function named <pre>x</pre></td>
+      <td><pre>function x() {}</pre></td>
     </tr>
     <tr>
       <td>threw an exception</td>
-      <td>`throw "exception"`</td>
+      <td><pre>throw "exception"</pre></td>
     </tr>
     <tr>
-      <td>when `x` is `1` it calls `y`</td>
-      <td>`if(x === 1) { y(); }`</td>
+      <td>when <pre>x</pre> is <pre>1</pre> it calls <pre>y</pre></td>
+      <td><pre>if(x === 1) { y(); }</pre></td>
     </tr>
     <tr>
-      <td>accessed the value of `x` on the object `y`</td>
-      <td>`y.x`</td>
+      <td>accessed the value of <pre>x</pre> on the object <pre>y</pre></td>
+      <td><pre>y.x</pre></td>
     </tr>
     <tr>
-      <td>initialized a new object `x`</td>
-      <td>`x = new Object()`</td>
+      <td>initialized a new object <pre>x</pre></td>
+      <td><pre>x = new Object()</pre></td>
     </tr>
     <tr>
-      <td>initialized `x` to be a new object of type `Object`</td>
-      <td>`x = new Object()`</td>
+      <td>initialized <pre>x</pre> to be a new object of type <pre>Object</pre></td>
+      <td><pre>x = new Object()</pre></td>
     </tr>
     <tr>
-      <td>returned the value of `x`</td>
-      <td>`function () { return x; }`</td>
+      <td>returned the value of <pre>x</pre></td>
+      <td><pre>function () { return x; }</pre></td>
     </tr>
   </tbody>
 </table>
