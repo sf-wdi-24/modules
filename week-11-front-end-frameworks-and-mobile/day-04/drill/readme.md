@@ -53,43 +53,43 @@ function pascalRecursive(n, a) {
   </thead>
   <tbody>
     <tr>
-      <td>declared variable named <pre>x</pre></td>
-      <td><pre>var x</pre></td>
+      <td>declared variable named <code>x</code></td>
+      <td><code>var x</code></td>
     </tr>
     <tr>
-      <td>defined variable named <pre>x</pre> to be the number <pre>1</pre></td>
-      <td><pre>var x = 1</pre></td>
+      <td>defined variable named <code>x</code> to be the number <code>1</code></td>
+      <td><code>var x = 1</code></td>
     <tr>
-      <td>called a function named <pre>x</pre></td>
-      <td><pre>x()</pre></td>
+      <td>called a function named <code>x</code></td>
+      <td><code>x()</code></td>
     </tr>
     <tr>
-      <td>declared a function named <pre>x</pre></td>
-      <td><pre>function x() {}</pre></td>
+      <td>declared a function named <code>x</code></td>
+      <td><code>function x() {}</code></td>
     </tr>
     <tr>
       <td>threw an exception</td>
-      <td><pre>throw "exception"</pre></td>
+      <td><code>throw "exception"</code></td>
     </tr>
     <tr>
-      <td>when <pre>x</pre> is <pre>1</pre> it calls <pre>y</pre></td>
-      <td><pre>if(x === 1) { y(); }</pre></td>
+      <td>when <code>x</code> is <code>1</code> it calls <code>y</code></td>
+      <td><code>if(x === 1) { y(); }</code></td>
     </tr>
     <tr>
-      <td>accessed the value of <pre>x</pre> on the object <pre>y</pre></td>
-      <td><pre>y.x</pre></td>
+      <td>accessed the value of <code>x</code> on the object <code>y</code></td>
+      <td><code>y.x</code></td>
     </tr>
     <tr>
-      <td>initialized a new object <pre>x</pre></td>
-      <td><pre>x = new Object()</pre></td>
+      <td>initialized a new object <code>x</code></td>
+      <td><code>x = new Object()</code></td>
     </tr>
     <tr>
-      <td>initialized <pre>x</pre> to be a new object of type <pre>Object</pre></td>
-      <td><pre>x = new Object()</pre></td>
+      <td>initialized <code>x</code> to be a new object of type <code>Object</code></td>
+      <td><code>x = new Object()</code></td>
     </tr>
     <tr>
-      <td>returned the value of <pre>x</pre></td>
-      <td><pre>function () { return x; }</pre></td>
+      <td>returned the value of <code>x</code></td>
+      <td><code>function () { return x; }</code></td>
     </tr>
   </tbody>
 </table>
