@@ -15,7 +15,7 @@
     <td><a href="./day-02/drill/">Vocab</a></td>
     <td><a href="./day-03/drill/">File Manipulation</a></td>
     <td><a href="./day-04/drill/">Whiteboarding in Pairs</a></td>
-    <td>Review: Insta-Angular Lab</td>
+    <td>Review: <a href="https://github.com/sf-wdi-24/ng-instagram" target="_blank">ngInstagram Lab</a></td>
   </tr>
   <tr>
     <td>Module1</td>
@@ -23,7 +23,7 @@
     <td><a href="./day-02/module-01/">Intro Angular</a></td>
     <td><a href="./day-03/module-01/">Angular Routing</a></td>
     <td><a href="./day-04/module-01/">MEAN Stack & Rails Angular</a></td>
-    <td>Review: Insta-Angular Lab</td>
+    <td>Review: <a href="https://github.com/sf-wdi-24/ng-instagram" target="_blank">ngInstagram Lab</a></td>
   </tr>
   <tr>
     <td>Module2</td>
