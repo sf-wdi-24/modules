@@ -21,22 +21,73 @@ Web applications can run on all these devices but have the drawback of being hel
 React Native is a bridge between the two, it offers natively compiled applications developed using JavaScript. This seems great except it introduces a great deal of complexity.
 
 ### Resources
+
 [Comparison of a WebView wrapped web app and React Native](https://medium.com/@sonnylazuardi/ionic-framework-hybrid-app-vs-react-native-4facdd93f690)
 
 ## Getting Started with React Native
 
 Downloading the required utilities takes the majority of your free disk space and a solid afternoon. We won't be able to accomplish this in an afternoon so instead we'll look at some terms which are used in mobile development which are not common in web development.
 
+We'll go over at a high level some of their getting started tutorial with a focus on new terms used:
+
+
+[React Native Getting Started](https://facebook.github.io/react-native/)
+
+### React Native Build Overview
+
+In general, you'd develop your React application the same as while you're working on the web except you'll have an emulator or simulator window open at all times with your application loaded in it.
+
+## Term Reference
+
+Following are useful terms if you begin developing with React Native.
+
+### Rage Shake
+
+Getting angry at your phone and shaking it like it'll feel the pain it's inflicted on you. Often used as a shortcut to bring up a developer menu.
+
 ### Emulator
 
-### Build Tool
+In order to test our applications locally we'll need to use either an emulator or a simulator which pretends it is the device we're testing on. Each native platform has a different set of emulators and simulators.
+
+With React Native you'll likely use:
+
+
+[Geny Motion](https://www.genymotion.com/)
+[iOS Simulator](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/iOS_Simulator_Guide/Introduction/Introduction.html)
+
+### Build Tools
+
+We used `rake` in Ruby and have spoken a little about `grunt`. These tools make it easier to run commands automatically.
+
+Native development requires many steps in order to build a professional application. These tools are called build tools.
+
+### Design Tools (Layouts)
+
+CSS is awesome! Well sorta but it doesn't work for native code. Instead there are design tools which help you to layout the code for different views in your application.
+
+
+[Apple UI Layout Tools](http://www.toptal.com/ios/ios-user-interfaces-storyboards-vs-nibs-vs-custom-code)
+[Android Layout Tool](http://developer.android.com/sdk/installing/studio-layout.html)
+
 
 ### Compiler
 
+We've been using JavaScript and Ruby via interpreters, these systems interpret source code at runtime. Native mobile applications depend on compiled code in that platform's bytecode....
+
+In order to get your source code to be in the bytecode of each mobile platform we use a compiler. The compiler takes in our source code and outputs and executable file which encapsulates our application's logic.
+
+
 ### Project Files
+
+Each mobile application development ecosystem includes a number of project related files to control how things are built.
+
+These project files are similar to `package.json` or `Gemfile` but may include more than dependency tracking.
+
 
 ### WebView
 
-### Component
+> A View that displays web pages. This class is the basis upon which you can roll your own web browser or simply display some online content within your Activity. It uses the WebKit rendering engine to display web pages and includes methods to navigate forward and backward through a history, zoom in and out, perform text searches and more. [WebView](http://developer.android.com/reference/android/webkit/WebView.html)
 
+If you need to use one, I'm sorry. This will likely be the slowest part of your app.
 
+These are similar to using `iframe` elements to embed content from other sites.
