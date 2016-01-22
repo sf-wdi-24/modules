@@ -191,7 +191,7 @@ To make sure we’re always buying at an earlier price, never the current_price,
 
 We'll also need to pay special attention to time 0. Make sure we don't try to buy and sell at time 0!
 
-Solution
+## Solution
 We’ll greedily ↴ walk through the array to track the max profit and lowest price so far.
 
 For every price, we check if:
@@ -221,7 +221,7 @@ We decided to return a negative profit if the price decreases all day and we can
 
         # skip the first time, since we already used it
         # when we initialized min_price and max_profit
-        if index == 0 then next end
+        next if index == 0
 
         # see what our profit would be if we bought at the
         # min price and sold at the current price
