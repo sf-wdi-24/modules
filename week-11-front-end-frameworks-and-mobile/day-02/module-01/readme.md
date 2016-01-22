@@ -8,7 +8,7 @@
 
 ## React Native
 
-> React Native enables you to build world-class application experiences on native platforms using a consistent developer experience based on JavaScript and React. The focus of React Native is on developer efficiency across all the platforms you care about — learn once, write anywhere. Facebook uses React Native in multiple production apps and will continue investing in React Native. [React Native Docs](https://facebook.github.io/react-native/)
+> React Native enables you to build world-class application experiences on native platforms using a consistent developer experience based on JavaScript and React. The focus of React Native is on developer efficiency across all the platforms you care about — learn once, write anywhere. Facebook uses React Native in multiple production apps and will continue investing in React Native. <a href="https://facebook.github.io/react-native/" target="_blank">React Native Docs</a>
 
 An important word which is often used in mobile application is "Native". Native app is used to describe an application which has been developed for a specific platform. A native Android app will be an application programmed to run on the Android operating system.
 
@@ -22,7 +22,7 @@ React Native is a bridge between the two, it offers natively compiled applicatio
 
 ### Resources
 
-[Comparison of a WebView wrapped web app and React Native](https://medium.com/@sonnylazuardi/ionic-framework-hybrid-app-vs-react-native-4facdd93f690)
+* <a href="https://medium.com/@sonnylazuardi/ionic-framework-hybrid-app-vs-react-native-4facdd93f690" target="_blank">Comparison of a WebView wrapped web app and React Native</a>
 
 ## Getting Started with React Native
 
@@ -31,7 +31,7 @@ Downloading the required utilities takes the majority of your free disk space an
 We'll go over at a high level some of their getting started tutorial with a focus on new terms used:
 
 
-[React Native Getting Started](https://facebook.github.io/react-native/)
+* <a href="https://facebook.github.io/react-native/" target="_blank">React Native Getting Started</a>
 
 ### React Native Build Overview
 
@@ -52,8 +52,8 @@ In order to test our applications locally we'll need to use either an emulator o
 With React Native you'll likely use:
 
 
-[Geny Motion](https://www.genymotion.com/)
-[iOS Simulator](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/iOS_Simulator_Guide/Introduction/Introduction.html)
+* <a href="https://www.genymotion.com/" target="_blank">Geny Motion</a>
+* <a href="https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/iOS_Simulator_Guide/Introduction/Introduction.html" target="_blank">iOS Simulator</a>
 
 ### Build Tools
 
@@ -66,9 +66,8 @@ Native development requires many steps in order to build a professional applicat
 CSS is awesome! Well sorta but it doesn't work for native code. Instead there are design tools which help you to layout the code for different views in your application.
 
 
-[Apple UI Layout Tools](http://www.toptal.com/ios/ios-user-interfaces-storyboards-vs-nibs-vs-custom-code)
-[Android Layout Tool](http://developer.android.com/sdk/installing/studio-layout.html)
-
+* <a href="http://www.toptal.com/ios/ios-user-interfaces-storyboards-vs-nibs-vs-custom-code" target="_blank">Apple UI Layout Tools</a>
+* <a href="http://developer.android.com/sdk/installing/studio-layout.html" target="_blank">Android Layout Tool</a>
 
 ### Compiler
 
@@ -86,7 +85,7 @@ These project files are similar to `package.json` or `Gemfile` but may include m
 
 ### WebView
 
-> A View that displays web pages. This class is the basis upon which you can roll your own web browser or simply display some online content within your Activity. It uses the WebKit rendering engine to display web pages and includes methods to navigate forward and backward through a history, zoom in and out, perform text searches and more. [WebView](http://developer.android.com/reference/android/webkit/WebView.html)
+> A View that displays web pages. This class is the basis upon which you can roll your own web browser or simply display some online content within your Activity. It uses the WebKit rendering engine to display web pages and includes methods to navigate forward and backward through a history, zoom in and out, perform text searches and more. <a href="http://developer.android.com/reference/android/webkit/WebView.html" target="_blank">WebView</a>
 
 If you need to use one, I'm sorry. This will likely be the slowest part of your app.
 
