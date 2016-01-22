@@ -15,14 +15,14 @@ get_max_profit(stock_prices_yesterday)
 
 No "shorting"—you must buy before you sell. You may not buy and sell in the same time step (at least 1 minute must pass).
 
-Gotchas
+### Gotchas
 It is not sufficient to simply take the difference between the highest price and the lowest price, because the highest price may come before the lowest price. You must buy before you sell.
 
 What if the stock value goes down all day? In that case, the best profit will be negative.
 
 You can do this in O(n)O(n) time and O(1)O(1) space!
 
-Breakdown
+### Breakdown
 To start, try writing an example value for stock_prices_yesterday and finding the maximum profit "by hand." What's your process for figuring out the maximum profit?
 
 The brute force ↴ approach would be to try every pair of times (treating the earlier time as the buy time and the later time as the sell time) and see which one is higher.
@@ -93,7 +93,7 @@ What’s our runtime now?
 Well, our outer for loop goes through all the times and prices, but our inner for loop goes through one fewer price each time. So our total number of steps is the sum n + (n - 1) + (n - 2) ... + 2 + 1n+(n−1)+(n−2)...+2+1 ↴ , which is still O(n^2)O(n
 ​2) time.
 
-We can do better!
+**We can do better!**
 
 If we're going to do better than O(n^2)O(n2), we're probably going to do it in either O(n\lg{n})O(nlgn) or O(n)O(n). O(n\lg{n})O(nlgn) comes up in sorting and searching algorithms where we're recursively cutting the set in half. It's not obvious that we can save time by cutting the set in half here. Let's first see how well we can do by looping through the set only once.
 
@@ -144,7 +144,7 @@ If the stock price doesn't change, the max possible profit is 0. Our function wi
 
 But if the value goes down all day, we’re in trouble. Our function would return 0, but there’s no way we could break even if the price always goes down.
 
-How can we handle this?
+**How can we handle this?**
 
 Well, what are our options? Leaving our function as it is and just returning zero is not a reasonable option—we wouldn't know if our best profit was negative or actually zero, so we'd be losing information. Two reasonable options could be:
 

@@ -27,6 +27,8 @@ Get a support system and believe in practice.
 
 Understand the different types of interviews that can be done and work through some.
 
+Become well versed in concepts such as Big O Notation.
+
 ## During the Interview
 
 Communicate clearly and effectively.
@@ -63,7 +65,7 @@ get_max_profit(stock_prices_yesterday)
 # returns 6 (buying for $5 and selling for $11)
 ```
 
-**We'll review the optimum solution and how to get to it after you attempt to solve it.**
+**We will review the optimum solution and how to get to it after you attempt to solve it.**
 
 #### Resources:
 
@@ -72,3 +74,5 @@ get_max_profit(stock_prices_yesterday)
 <a href="https://www.interviewcake.com/article/python/coding-interview-tips" target="_blank">Coding Interview Tips</a>
 
 <a href="https://www.quora.com/How-do-I-prepare-for-a-software-engineering-job-interview" target="_blank">How Do I Prepare for a Software Engineering Job Interview</a>
+
+<a href="https://www.interviewcake.com/" target="_blank">Interview Cake</a>
