@@ -1,7 +1,13 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Interview Tips & Best Practices
 
-![interview](https://cloud.githubusercontent.com/assets/8397980/12520145/abf410a0-c0f7-11e5-9e1e-1fd485417ba9.png)
+| Objectives |
+|------------|
+| Integrate effective practices for interview preparation |
+| Directly apply best practices during white-boarding interviews |
+| Effectively execute follow up communication post interview |
 
+
+![interview](https://cloud.githubusercontent.com/assets/8397980/12520145/abf410a0-c0f7-11e5-9e1e-1fd485417ba9.png)
 
 The following pieces of information are things that you need to take into consideration as you go into your interviews:
 
@@ -42,15 +48,15 @@ Be sure to thank the interviewer and follow up with them about the time spent on
 
 Make sure you're preparing to be a good engineer, not just a good interviewee.
 
-## Sample Problem
+### Sample Problem
 
-Take twenty minutes to solve the following problem:
+**Take the twenty minutes to solve the following problem:**
 
 Write an efficient function that takes stock_prices_yesterday and returns the best profit I could have made from 1 purchase and 1 sale of 1 Napster stock yesterday.
 
 **We'll review the optimum solution and how to get to it after you attempt to solve it.**
 
-Resources:
+#### Resources:
 
 <a href="http://www.cio.com/article/2383000/careers-staffing/how-to-prepare-for--and-ace--the-technical-interview.html" target="_blank">How to Prepare and Ace the Technical Interview</a>
 
