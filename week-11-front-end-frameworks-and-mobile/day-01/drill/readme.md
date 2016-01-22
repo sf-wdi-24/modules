@@ -1,5 +1,7 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Interview Tips & Best Practices
 
+![interview](https://cloud.githubusercontent.com/assets/8397980/12520145/abf410a0-c0f7-11e5-9e1e-1fd485417ba9.png)
+
 
 The following pieces of information are things that you need to take into consideration as you go into your interviews:
 
@@ -13,15 +15,15 @@ Ask what the interview format is going to be and practice that format leading up
 
 Understand the different types of interviews that can be done and work through some.
 
-Get feedback from practice interviews
+Get feedback from practice interviews.
 
-Get a support system and believe in practice
+Get a support system and believe in practice.
 
 Understand the different types of interviews that can be done and work through some.
 
 ## During the Interview
 
-Communicate clearly and effectively
+Communicate clearly and effectively.
 
 If you get stuck that's okay.  You can still work it out.
 
@@ -38,10 +40,15 @@ During the interview, don't obsess over little mistakes that happen.
 
 Be sure to thank the interviewer and follow up with them about the time spent on the interview.
 
-Make sure you're preparing to be a good engineer, not just a good interviewee
+Make sure you're preparing to be a good engineer, not just a good interviewee.
 
+## Sample Problem
 
+Take twenty minutes to solve the following problem:
 
+Write an efficient function that takes stock_prices_yesterday and returns the best profit I could have made from 1 purchase and 1 sale of 1 Napster stock yesterday.
+
+**We'll review the optimum solution and how to get to it after you attempt to solve it.**
 
 Resources:
 
