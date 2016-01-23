@@ -115,121 +115,34 @@ app.config(['$httpProvider', function ($httpProvider) {
 
 > <a href="http://blog.matoski.com/articles/jwt-express-node-mongoose" target="">Express4 + Mongoose + JSON Web Token Authentication</a> [matoski.com]
 
-#### Login
+#### Log In
 
-1. Client logs in with email and password.
-2. Server checks email and password and if valid sends back a JWT.
-3. Client receives the JWT and stores it in localStorage.
-4. Client makes requests with the token (this happens automatically using an **AngularJS Interceptor**)
-5. JWT is decoded on the server, and the server uses the token data to decide if user has access to the resource.
+1. User logs in with email and password (client).
+2. Server checks email and password, and if valid sends back a JWT.
+3. Client receives the JWT and stores it in `localStorage`.
+4. Client makes requests to the server with the JWT (this happens automatically using an **Angular Interceptor**).
+5. Server decodes the JWT and uses the token data to decide if user has access to the resource.
 
-#### Signup
+#### Sign Up
 
-1. Client sends in email and password.
+1. User signs up with email and password (client).
 2. Server creates a new user if everything is valid and sends back a JWT.
-3. Client receives the JWT and stores it in localStorage.
-4. Client makes requests with the token (this happens automatically using an **AngularJS Interceptor**)
-5. JWT is decoded on the server, and the server uses the token data to decide if user has access to the resource.
+3. Client receives the JWT and stores it in   `localStorage`.
+4. Client makes requests to the server with the JWT (this happens automatically using an **Angular Interceptor**).
+5. Server decodes the JWT and uses the token data to decide if user has access to the resource.
 
 ## Satellizer
 
-[Satellizer](https://github.com/sahat/satellizer) hides a lot of the complexity of using JWT tokens. This is both a good and a bad thing. Let's not lose sight of how Satellizer is helping us.
+<a href="https://github.com/sahat/satellizer" target="">Satellizer</a> is an Angular modules that hides a lot of the complexity of using JWTs. This is both a good and a bad thing. Let's not lose sight of how Satellizer is helping us:
 
-1. Generating the JWT token (resources/auth.js)
-1. Making some routes require authentication:
-
-  ```js
-  app.get('/api/me', auth.ensureAuthenticated, function(req, res) {
-    User.findById(req.userId, function(err, user) {
-      res.send(user);
-    });
-  });
-  ```
-1. Sending the JWT with every request using an angular interceptor.
+1. Provides methods to authenticate a user with email/password and any OAuth provider. These methods send requests to the server, and when the server responds, Satellizer takes care of saving the JWT to `localStorage`.
+2. Sends the JWT with every request using an **Angular Interceptor**.
 
 ## Resources
 
-- [jwt.io](http://jwt.io/)
-- [Atlassian JWT docs](https://developer.atlassian.com/static/connect/docs/latest/concepts/understanding-jwt.html)
-- [scotch.io tutorial](https://scotch.io/tutorials/the-anatomy-of-a-json-web-token)
-- [JWT Express Node Mongoose](http://blog.matoski.com/articles/jwt-express-node-mongoose/)
-
-## Challenges
-
-**Getting Started**
-
-1. Fork, clone, npm install, nodemon [mean-auth-html](https://github.com/ajbraus/mean-auth-html).
-1. Sign up, logout, and then login to make sure authentication is working.
-1. Look to see that the user was created.
-
-**Adding an Attribute**
-
-1. Add a `username` field to the sign up form in the `navbar.html` template. Add the username attribute to the `user.js` model. Sign up with a username.
-
-**Add a User Settings Page**
-
-1. Create a form to edit the user's details at the url `\settings`. This template will need a url, an angular controller, and a template.
-1. Set this link the navbar dropdown below `Profile`.
-1. You don't have a User service, so instead just make an `$http.get` request to `/api/me` to get the user's data.
-1. To submit the form, make an `$http.put` request to `/api/me`.
-1. Go to the `resources/users.js` file and write psuedocode explaining the logic of these routes.
-1. If the user update is successful redirect to `/profile`.
-
-**Add a Post Resource**
-
-1. In the `/profile`, display `user.posts` with an ng-repeat.
-1. Create a form in the `/profile` template that has an input and a textarea field that use the `ng-model` directives to attach them to `post.title` and `post.body` in `$scope`.
-1. Use the `ng-sumit` directive to run the function `createPost()` on submit. This function should run a `$http.post` function to post the `$scope.post` object to `/api/posts`.
-1. Create a new file in `resources` called `posts.js` and model it after `users.js` but require the `post.js` model not the `user.js` model. For now only create one route - `app.post('/api/posts', function(req,res){ ... })`.
-1. Require the `posts.js` file in your `server.js` file just as the `users.js` file is required so that the route is available.
-1. Create another model called `post.js`
-  ```js
-  var mongoose = require('mongoose'),
-    Schema = mongoose.Schema;
-
-  var PostSchema = Schema({
-    title  : String,
-    body   : String
-  });
-
-  var Post = mongoose.model('Post', PostSchema);
-
-  module.exports = Post;
-  ```
-1. Add a `posts` attribute to the User model in `user.js` that references the Post model.
-  ```js
-  var userSchema = Schema({
-    ...
-    posts : [{ type: Schema.Types.ObjectId, ref: 'Post' }]
-  });
-  ```
-1. When you submit your new post form, can you console log the new post object in the server?
-1. Now that your client is posting data to your server route, let's save it to the current user's posts. To find the current user, we have to add the `auth.ensureAuthenticated` function to our route.
-  ```js
-  app.post('/api/posts', auth.ensureAuthenticated, function (req,res) {
-    ...
-  })
-  ```
-1. Now find the current user using the mongoose User model and the `req.userId` that `auth.ensureAuthenticated` makes available through the JWT token.
-  ```js
-  User.findById(req.userId, function(err, user) {
-    ...
-  })
-  ```
-1. Now let's create a `new Post` with `req.body`, save the post, and in the callback push that `post` into `user.posts`, and then save the `user` object and send back the post `res.send(post)`.
-  ```js
-  app.post('/api/posts', auth.ensureAuthenticated, function (req,res) {
-    User.findById(req.userId).exec(function(err, user) {
-      var post = new Post(req.body);
-      post.save(function(err, post) {
-        user.posts.unshift(post._id);
-        user.save();
-        res.send(post);				
-      });
-    })
-  })  
-  ```
-1. In the client can you console log the response with the user object?
-1. Now unshift the post response into the `$scope.user.posts`.
-1. Do you see the posts displaying? Are the Posts saving to a collection in your database?
-1. Add `.populate('posts')` to your `/api/me` route in `users.js`. Now refresh the `/profile` page - do you see the user's posts?
+* <a href="https://auth0.com/blog/2014/01/07/angularjs-authentication-with-cookies-vs-token" target="">Cookies vs Tokens. Getting auth right with Angular.JS</a> [Auth0 Blog]
+* <a href="http://blog.matoski.com/articles/jwt-express-node-mongoose" target="">Express4 + Mongoose + JSON Web Token Authentication</a> [matoski.com]
+* <a href="http://jwt.io" target="">JSON Web Tokens</a> [jwt.io]
+* <a href="https://developer.atlassian.com/static/connect/docs/latest/concepts/understanding-jwt.html" target="">Understanding JWT</a> [Atlassian]
+* <a href="https://scotch.io/tutorials/the-anatomy-of-a-json-web-token" target="">The Anatomy of a JSON Web Token</a> [scotch.io]
+* <a href="https://github.com/sahat/satellizer" target="">Satellizer Docs</a>
