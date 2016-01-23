@@ -26,12 +26,26 @@ We can make an algorithm **quicker** by taking up **more space**.
 
 We can make an algorithm take up **less space** by **making it slower**.
 
-* [Space/Time Tradeoff](https://en.wikipedia.org/wiki/Space%E2%80%93time_tradeoff)
+* <a href="https://en.wikipedia.org/wiki/Space%E2%80%93time_tradeoff" target="_blank">Space/Time Tradeoff</a>
 
-## HashMap/Dictionary/Hash/HashTable...
+## Exercise
+
+### Step 1
+
+Create an algorithm which returns the number of occurrences for each word in this paragraph using an array:
+
+```
+Skateboard messenger bag echo park bespoke schlitz, keytar kinfolk salvia aesthetic 8-bit readymade taxidermy cold-pressed. Messenger bag man bun everyday carry tacos drinking vinegar, humblebrag pitchfork organic williamsburg sriracha godard tattooed tousled literally. Hammock cronut readymade twee. Celiac cornhole everyday carry butcher roof party green juice williamsburg. Tofu yuccie hashtag, skateboard affogato photo booth wayfarers tousled PBR&B DIY 3 wolf moon jean shorts normcore authentic. Chia twee lo-fi four loko, biodiesel trust fund franzen echo park tofu williamsburg chillwave. You probably haven't heard of them selvage organic, bicycle rights shabby chic waistcoat hammock tilde.
+```
+
+### Step 2
+
+Update your algorithm from <a href="#" target="_blank">Step 1</a> to use a HashTable instead of an array.
+
+### Step 3
 
 We've been making our algorithms run faster by using hash data structures often. These structures are convenient and how they're built will highlight an example of a space/time tradeoff.
 
-* [What is a HashTable](https://www.youtube.com/watch?v=h2d9b_nEzoA)
+Let's look at how HashTables work and as a class attempt to implement our own rudimentary HashTable.
 
-Now let's build our own HashTable in JavaScript using the Internet for reference. Near the end of this drill we'll come back together and walk over a simple HashTable implementation to highlight where we've used more space to lower the time to find an element in the HashTable.
+* <a href="https://www.youtube.com/watch?v=h2d9b_nEzoA" target="_blank">What is a HashTable</a>
