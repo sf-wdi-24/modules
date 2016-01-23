@@ -1,7 +1,5 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Angular Lab
 
-
-
 | Objectives |
 | :--- |
 | Hook up our backend (Node.js, Express, and MongoDB or Rails) with a front end (Angular.js) |
@@ -10,24 +8,15 @@
 
 ## Questions and Answers App
 
-We're going to add a front end on our previously "headless" app.
+You are working for a company that wants to prototype an app that mimics the capability of Stack Overflow, Quora or <a href="http://gaqa.herokuapp.com/" target="_blank">this app</a>.  Your challenge is to create this app connecting an Angular front end with either a Rails back end or a MEN back end.  This is your chance to put all of the pieces together.  Practice makes perfect!!
+
+**If the app you built for the weekend lab was created as a MEAN app you will be connecting Angular with Rails.  If the app you created was made with Rails and Angular, you will be creating a MEAN version of this app.  If you created an app using Parse or Dropbox you have your choice of either set up.**
 
 ## Project Structure Setup
 
-```bash
-cd QnA
-mkdir public
-cd public
-mkdir scripts
-touch scripts/app.js
-mkdir views
-touch views/index.html
-cd views
-mkdir templates
-touch templates/home.html
-touch templates/answers.html
-cd ../..
-```
+*  Use <a href="https://github.com/sf-wdi-24/modules/tree/master/week-10-angular/day-04/module-01" target="_blank">this</a> as a guide on how to connect your front end to your back end.
+
+*  Make sure to create the appropriate associations between you 'Questions' and 'Answers' models.
 
 ## Challenges
 
