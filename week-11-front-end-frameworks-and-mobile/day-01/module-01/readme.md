@@ -11,7 +11,7 @@ With Express and Rails you learned the Cookie-Session authentication strategy. H
 
 ![cookie-token-auth](https://cloud.githubusercontent.com/assets/7833470/12523189/095e1760-c10a-11e5-9c5a-09d4bf69f2c1.png)
 
-> <a href="https://auth0.com/blog/2014/01/07/angularjs-authentication-with-cookies-vs-token" target="">Cookies vs Tokens. Getting auth right with Angular.JS</a> [Auth0 Blog]
+> <a href="https://auth0.com/blog/2014/01/07/angularjs-authentication-with-cookies-vs-token" target="_blank">Cookies vs Tokens. Getting auth right with Angular.JS</a> [Auth0 Blog]
 
 ## Why Use JWT?
 
@@ -113,7 +113,7 @@ app.config(['$httpProvider', function ($httpProvider) {
 
 ## JWT Flow
 
-> <a href="http://blog.matoski.com/articles/jwt-express-node-mongoose" target="">Express4 + Mongoose + JSON Web Token Authentication</a> [matoski.com]
+> <a href="http://blog.matoski.com/articles/jwt-express-node-mongoose" target="_blank">Express4 + Mongoose + JSON Web Token Authentication</a> [matoski.com]
 
 #### Log In
 
@@ -133,16 +133,20 @@ app.config(['$httpProvider', function ($httpProvider) {
 
 ## Satellizer
 
-<a href="https://github.com/sahat/satellizer" target="">Satellizer</a> is an Angular modules that hides a lot of the complexity of using JWTs. This is both a good and a bad thing. Let's not lose sight of how Satellizer is helping us:
+<a href="https://github.com/sahat/satellizer" target="_blank">Satellizer</a> is an Angular modules that hides a lot of the complexity of using JWTs. This is both a good and a bad thing. Let's not lose sight of how Satellizer is helping us:
 
 1. Provides methods to authenticate a user with email/password and any OAuth provider. These methods send requests to the server, and when the server responds, Satellizer takes care of saving the JWT to `localStorage`.
 2. Sends the JWT with every request using an **Angular Interceptor**.
 
+## Challenges
+
+Work on the <a href="" target="_blank">Angular Auth Challenges</a>.
+
 ## Resources
 
-* <a href="https://auth0.com/blog/2014/01/07/angularjs-authentication-with-cookies-vs-token" target="">Cookies vs Tokens. Getting auth right with Angular.JS</a> [Auth0 Blog]
-* <a href="http://blog.matoski.com/articles/jwt-express-node-mongoose" target="">Express4 + Mongoose + JSON Web Token Authentication</a> [matoski.com]
-* <a href="http://jwt.io" target="">JSON Web Tokens</a> [jwt.io]
-* <a href="https://developer.atlassian.com/static/connect/docs/latest/concepts/understanding-jwt.html" target="">Understanding JWT</a> [Atlassian]
-* <a href="https://scotch.io/tutorials/the-anatomy-of-a-json-web-token" target="">The Anatomy of a JSON Web Token</a> [scotch.io]
-* <a href="https://github.com/sahat/satellizer" target="">Satellizer Docs</a>
+* <a href="https://auth0.com/blog/2014/01/07/angularjs-authentication-with-cookies-vs-token" target="_blank">Cookies vs Tokens. Getting auth right with Angular.JS</a> [Auth0 Blog]
+* <a href="http://blog.matoski.com/articles/jwt-express-node-mongoose" target="_blank">Express4 + Mongoose + JSON Web Token Authentication</a> [matoski.com]
+* <a href="http://jwt.io" target="_blank">JSON Web Tokens</a> [jwt.io]
+* <a href="https://developer.atlassian.com/static/connect/docs/latest/concepts/understanding-jwt.html" target="_blank">Understanding JWT</a> [Atlassian]
+* <a href="https://scotch.io/tutorials/the-anatomy-of-a-json-web-token" target="_blank">The Anatomy of a JSON Web Token</a> [scotch.io]
+* <a href="https://github.com/sahat/satellizer" target="_blank">Satellizer Docs</a>
