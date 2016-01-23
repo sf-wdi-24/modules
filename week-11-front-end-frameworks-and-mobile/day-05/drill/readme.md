@@ -47,4 +47,4 @@ We've been making our algorithms run faster by using hash data structures often.
 
 Let's look at how HashTables work and as a class attempt to implement our own rudimentary HashTable.
 
-* <a href="https://www.youtube.com/watch?v=h2d9b_nEzoA" target="_blank">What is a HashTable?</a>
+<a href="https://www.youtube.com/watch?v=h2d9b_nEzoA" target="_blank">What is a HashTable?</a>
