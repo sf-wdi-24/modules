@@ -1,6 +1,6 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Interview Workshop: Tech Vocab
 
-Today we're mastering basic vocabulary and speaking about code in a simplified manner. We'll start by breaking up into pairs and take turns speaking about code using simple terms.
+Today we're mastering basic vocabulary and speaking about code in a simplified manner. We'll start by breaking up into pairs and taking turns speaking about code using simple terms.
 
 An example of how we'd vocalize code, let's try and explain some code from <a href="https://gist.github.com/kgates-github/4695492" target="_blank">this example of solutions to Pascal's triangle</a>.
 
