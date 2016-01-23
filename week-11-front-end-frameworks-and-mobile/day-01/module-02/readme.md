@@ -2,21 +2,21 @@
 
 | Objectives |
 | :--- |
-| Hook up our backend (Node.js, Express, and MongoDB or Rails) with a front end (Angular.js) |
-| Implement RESTful routing |
-| CRUD data |
+| Hook up your back-end (Mongo/Express/Node or Rails) with a client-side AngularJS app. |
+| Implement RESTful routing with nested resources. |
+| CRUD associated data. |
 
 ## Questions and Answers App
 
-You are working for a company that wants to prototype an app that mimics the capability of Stack Overflow, Quora or <a href="http://gaqa.herokuapp.com/" target="_blank">this app</a>.  Your challenge is to create this app connecting an Angular front end with either a Rails back end or a MEN back end.  This is your chance to put all of the pieces together.  Practice makes perfect!!
+You are working for a company that wants to prototype an app that mimics the capability of Stack Overflow, Quora or <a href="http://gaqa.herokuapp.com" target="_blank">GA Q&A</a>. Your challenge is to create this app by connecting an Angular front-end with either a Mongo/Node/Express or a Rails back-end. This is your chance to put all of the pieces together. Practice makes perfect!
 
-**If the app you built for the weekend lab was created as a MEAN app you will be connecting Angular with Rails.  If the app you created was made with Rails and Angular, you will be creating a MEAN version of this app.  If you created an app using Parse or Dropbox you have your choice of either set up.**
+**If the app you built for the weekend lab was a MEAN Stack app, then today you should use Rails and Angular. If the app you created over the weekend was built with Rails and Angular, today you should build a MEAN Stack app. If you created an app using Parse and/or Dropbox, you have your choice of either stack.**
 
-## Project Structure Setup
+## Project Setup
 
-*  Use <a href="https://github.com/sf-wdi-24/modules/tree/master/week-10-angular/day-04/module-01" target="_blank">this</a> as a guide on how to connect your front end to your back end.
+*  Use <a href="https://github.com/sf-wdi-24/modules/tree/master/week-10-angular/day-04/module-01" target="_blank">this tutorial</a> as a guide on how to connect your front-end to your back-end.
 
-*  Make sure to create the appropriate associations between you 'Questions' and 'Answers' models.
+*  Make sure to create the appropriate associations between your `Question` and `Answer` models.
 
 ## Challenges
 
@@ -26,7 +26,7 @@ You are working for a company that wants to prototype an app that mimics the cap
 
 2. Add functionality to add new questions.
 
-3. Make the questions hyperlinks that link to a page that displays the question with its answers. **Hint:** `/:id`
+3. Each question should link to a page that displays the question with its answers. **Hint:** `/:id`.
 
 4. Make the answers on the answers page modifiable and deletable. **Hint:**
 
@@ -40,13 +40,4 @@ You are working for a company that wants to prototype an app that mimics the cap
   }]);
   ```
 
-5. Add functionality to add new answers.
-
-If you'd like, you can now safely get rid of the `#` in the url!
-
-```js
-$locationProvider.html5Mode({
-  enabled: true,
-  requireBase: false
-});
-```
+5. Add functionality to add new answers to a question.
