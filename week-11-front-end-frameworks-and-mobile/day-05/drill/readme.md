@@ -39,7 +39,7 @@ Create an algorithm which returns the number of occurrences for each word in thi
 
 ### Step 2
 
-Update your algorithm from <a href="#" target="_blank">Step 1</a> to use a HashTable instead of an array.
+Update your algorithm from <a href="#user-content-step-1">Step 1</a> to use a HashTable instead of an array.
 
 ### Step 3
 
