@@ -12,6 +12,7 @@
 Working with algorithms will require an attention to how they run on a computer. We'll simplify a computer into two major components.
 
 **Processor**: Time
+
 **Memory**: Space
 
 When we write an algorithm we've been paying attention to how quickly we can get the information we expect. Often we'd store extra information in order to be able to speed up how quickly we find the information.
@@ -34,9 +35,7 @@ We can make an algorithm take up **less space** by **making it slower**.
 
 Create an algorithm which returns the number of occurrences for each word in this paragraph using an array:
 
-```
-Skateboard messenger bag echo park bespoke schlitz, keytar kinfolk salvia aesthetic 8-bit readymade taxidermy cold-pressed. Messenger bag man bun everyday carry tacos drinking vinegar, humblebrag pitchfork organic williamsburg sriracha godard tattooed tousled literally. Hammock cronut readymade twee. Celiac cornhole everyday carry butcher roof party green juice williamsburg. Tofu yuccie hashtag, skateboard affogato photo booth wayfarers tousled PBR&B DIY 3 wolf moon jean shorts normcore authentic. Chia twee lo-fi four loko, biodiesel trust fund franzen echo park tofu williamsburg chillwave. You probably haven't heard of them selvage organic, bicycle rights shabby chic waistcoat hammock tilde.
-```
+> Skateboard messenger bag echo park bespoke schlitz, keytar kinfolk salvia aesthetic 8-bit readymade taxidermy cold-pressed. Messenger bag man bun everyday carry tacos drinking vinegar, humblebrag pitchfork organic williamsburg sriracha godard tattooed tousled literally. Hammock cronut readymade twee. Celiac cornhole everyday carry butcher roof party green juice williamsburg. Tofu yuccie hashtag, skateboard affogato photo booth wayfarers tousled PBR&B DIY 3 wolf moon jean shorts normcore authentic. Chia twee lo-fi four loko, biodiesel trust fund franzen echo park tofu williamsburg chillwave. You probably haven't heard of them selvage organic, bicycle rights shabby chic waistcoat hammock tilde.
 
 ### Step 2
 
