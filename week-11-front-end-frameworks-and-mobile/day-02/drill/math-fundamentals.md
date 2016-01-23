@@ -11,7 +11,7 @@
   </tr>
   <tr>
     <td><strong>Absolute Value</strong></td>
-    <td>The magnitude of a number. It is the number with the sign (`+` or `-`) removed and is symbolized using two vertical straight lines (`|5|`). Also called modulus.</td>
+    <td>The magnitude of a number. It is the number with the sign (+ or -) removed and is symbolized using two vertical straight lines (|5|). Also called modulus.</td>
   </tr>
   <tr>
     <td><strong>Abstract Number</strong></td>
@@ -23,7 +23,7 @@
   </tr>
   <tr>
     <td><strong>Arithmetic Mean</strong></td>
-    <td>`M = (x1 + x2 + .... xn) / n (n = sample size)`</td>
+    <td>M = (x1 + x2 + .... xn) / n (n = sample size)</td>
   </tr>
   <tr>
     <td><strong>Arithmetic Sequence</strong></td>
@@ -43,7 +43,7 @@
   </tr>
   <tr>
     <td><strong>Cartesian Coordinates</strong></td>
-    <td>Cartesian coordinates (`x, y`) specify the position of a point in a plane relative to the horizontal `x` and the vertical `y` axes. The `x` and `y` axes form the basis of two-dimensional Cartesian coordinate system.</td>
+    <td>Cartesian coordinates (x, y) specify the position of a point in a plane relative to the horizontal x and the vertical y axes. The x and y axes form the basis of two-dimensional Cartesian coordinate system.</td>
   </tr>
   <tr>
     <td><strong>Coefficient</strong></td>
@@ -59,15 +59,15 @@
   </tr>
   <tr>
     <td><strong>Common Logarithm</strong></td>
-    <td>Logarithm with a base of `10` shown as `log10` (`log1010x = x`).</td>
+    <td>Logarithm with a base of 10 shown as log10 (log1010x = x).</td>
   </tr>
   <tr>
     <td><strong>Complex Numbers</strong></td>
-    <td>A combination of real and imaginary numbers of the form `a + bi` where `a` and `b` are real numbers and `i` is the square root of `-1` (see imaginary number). While real numbers can be represented as points on a line, complex numbers can only be located on a plane. See Types of Numbers.</td>
+    <td>A combination of real and imaginary numbers of the form a + bi where a and b are real numbers and i is the square root of -1 (see imaginary number). While real numbers can be represented as points on a line, complex numbers can only be located on a plane. See Types of Numbers.</td>
   </tr>
   <tr>
     <td><strong>Composite Number</strong></td>
-    <td>Any integer which is not a prime number, i.e., evenly divisible by numbers other than `1` and itself.</td>
+    <td>Any integer which is not a prime number, i.e., evenly divisible by numbers other than 1 and itself.</td>
   </tr>
   <tr>
     <td><strong>Congruent</strong></td>
@@ -79,19 +79,19 @@
   </tr>
   <tr>
     <td><strong>Coordinate</strong></td>
-    <td>A set of numbers that locates the position of a point usually represented by (`x, y`) values.</td>
+    <td>A set of numbers that locates the position of a point usually represented by (x, y) values.</td>
   </tr>
   <tr>
     <td><strong>Cosine Law</strong></td>
-    <td>For any triangle, the side lengths `a`, `b`, `c` and corresponding opposite angles `A`, `B`, `C` are related as follows: `a2 = b2 + c2 - 2bc cosA`, etc. The law of cosines is useful to determine the unknown data of a triangle if two sides and an angle are known.</td>
+    <td>For any triangle, the side lengths a, b, c and corresponding opposite angles A, B, C are related as follows: a2 = b2 + c2 - 2bc cosA, etc. The law of cosines is useful to determine the unknown data of a triangle if two sides and an angle are known. See Wikipedia: Cosine Law.</td>
   </tr>
   <tr>
     <td><strong>Cube Root</strong></td>
-    <td>The factor of a number that, when it is cubed (i.e., `x3`) gives that number.</td>
+    <td>The factor of a number that, when it is cubed (i.e., x^3) gives that number.</td>
   </tr>
   <tr>
     <td><strong>Decimal</strong></td>
-    <td>A fraction having a power of ten as denominator, such as `0.34 = 34/100` (`102`) or `0.344 = 344/1000` (`103`). In the continent, a comma is used as the decimal point (between the unit figure and the numerator).</td>
+    <td>A fraction having a power of ten as denominator, such as 0.34 = 34/100 (102) or 0.344 = 344/1000 (103). In the continent, a comma is used as the decimal point (between the unit figure and the numerator).</td>
   </tr>
   <tr>
     <td><strong>Denominator</strong></td>
@@ -103,7 +103,7 @@
   </tr>
   <tr>
     <td><strong>Digit</strong></td>
-    <td>In the decimal system, the numbers `0` through `9`.</td>
+    <td>In the decimal system, the numbers 0 through 9.</td>
   </tr>
   <tr>
     <td><strong>Division</strong></td>
@@ -116,20 +116,20 @@
   <tr>
     <td><strong>Exponent (Power, Index)</strong></td>
     <td>
-      A number denoted by a small numeral placed above and to the right of a numerical quantity, which indicates the number of times that quantity is multiplied by itself. In the case of `X^n`, it is said that `X` is raised to the power of `n.` When `a`and `b` are non-zero real numbers and `p` and `q` are integers, the following rules of power apply:<br><br>
-      `ap x aq = ap + q`<br><br>
-      `(ap)q = apq`<br><br>
-      `(a1/n)m = am/n`<br><br>
-      `a^1/2 x b^1/2 = (ab)^1/2`
+      A number denoted by a small numeral placed above and to the right of a numerical quantity, which indicates the number of times that quantity is multiplied by itself. In the case of X^n, it is said that X is raised to the power of n. When aand b are non-zero real numbers and p and q are integers, the following rules of power apply:<br><br>
+      ap x aq = ap + q<br><br>
+      (ap)q = apq<br><br>
+      (a1/n)m = am/n<br><br>
+      a1/2 x b1/2 = (ab)1/2
     </td>
   </tr>
   <tr>
     <td><strong>Exponential Function</strong></td>
-    <td>A function in the form of `f(x) = ax` where `x` is a real number, and `a` is positive and not `1`. One exponential function is `f(x) = e^x`. See Mathlets: Exponential Functions.</td>
+    <td>A function in the form of f(x) = a^x where x is a real number, and a is positive and not 1. One exponential function is f(x) = e^x. See Mathlets: Exponential Functions.</td>
   </tr>
   <tr>
     <td><strong>Factorial</strong></td>
-    <td>The product of a series of consecutive positive integers from 1 to a given number (n). It is expressed with the symbol ( ! ). For example, 5! = 5x4x3x2x1 = 120. As a rule (n!+n) is evenly divisible by n.</td>
+    <td>The product of a series of consecutive positive integers from 1 to a given number (n). It is expressed with the symbol (!). For example, 5! = 5x4x3x2x1 = 120. As a rule (n!+n) is evenly divisible by n.</td>
   </tr>
   <tr>
     <td><strong>Factor</strong></td>
@@ -145,7 +145,7 @@
   </tr>
   <tr>
     <td><strong>Function (f)</strong></td>
-    <td>The mathematical operation that transforms a piece of data into a different one. For example, f(x) = x2 is a function transforming any number to its square.</td>
+    <td>The mathematical operation that transforms a piece of data into a different one. For example, f(x) = x^2 is a function transforming any number to its square.</td>
   </tr>
   <tr>
     <td><strong>Geometric Mean</strong></td>
@@ -189,7 +189,7 @@
   </tr>
   <tr>
     <td><strong>Inverse Function</strong></td>
-    <td>A function which 'does the reverse' of a given function. For example, functions with the prefix arc are inverse trigonometric functions; e.g. arcsin x for the inverse of sin(x). See also Wikipedia: Mathematics: Inverse Functions and Logarithmic Inverse Functions.</td>
+    <td>A function which "does the reverse" of a given function. For example, functions with the prefix arc are inverse trigonometric functions; e.g. arcsin x for the inverse of sin(x). See also Wikipedia: Mathematics: Inverse Functions and Logarithmic Inverse Functions.</td>
   </tr>
   <tr>
     <td><strong>Iteration</strong></td>
@@ -205,7 +205,15 @@
   </tr>
   <tr>
     <td><strong>Logarithm</strong></td>
-    <td>The logarithm of a number N to a given base b is the power to which the base must be raised to produce the number N. Written as logb N. Naturally, logb bx = x. In any base, the following rules apply: log (ab) = log a + log b; log (a/b) = log a - log b; log (1/a) = -log a; log ab = b log a; log 1 = 0 and log 0 is undefined. See Logarithmic Transformations.</td>
+    <td>
+      The logarithm of a number N to a given base b is the power to which the base must be raised to produce the number N. Written as logb N. Naturally, logb bx = x. In any base, the following rules apply:<br><br>
+      log (ab) = log a + log b<br><br>
+      log (a/b) = log a - log b<br><br>
+      log (1/a) = -log a<br><br>
+      log ab = b log a<br><br>
+      log 1 = 0 and log 0 is undefined<br><br>
+      See Logarithmic Transformations.
+    </td>
   </tr>
   <tr>
     <td><strong>Matrix</strong></td>
@@ -217,7 +225,7 @@
   </tr>
   <tr>
     <td><strong>Modulus</strong></td>
-    <td>The absolute value of a number regardless of its sign, shown as | x | or mod x. For a vector u, the modulus  | u | is used to indicate its magnitude calculated using Pythagoras’ theorem: | u | = (a2 + b2)1/2.</td>
+    <td>The absolute value of a number regardless of its sign, shown as |x| or mod x. For a vector u, the modulus  |u| is used to indicate its magnitude calculated using Pythagoras’ theorem: |u| = (a2 + b2)1/2.</td>
   </tr>
   <tr>
     <td><strong>Multiplication</strong></td>
