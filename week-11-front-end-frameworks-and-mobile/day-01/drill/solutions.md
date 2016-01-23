@@ -1,4 +1,4 @@
-# <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Interview Workshop: Tips & Best Practices - Solutions
+# <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Interview Tips & Best Practices - Solutions
 
 **Taken from Interview Cake (www.interviewcake.com)**
 
@@ -10,12 +10,13 @@ For example:
 stock_prices_yesterday = [10, 7, 5, 8, 11, 9]
 
 get_max_profit(stock_prices_yesterday)
-# returns 6 (buying for $5 and selling for $11)
+#=> 6 (buying for $5 and selling for $11)
 ```
 
-No "shorting"—you must buy before you sell. You may not buy and sell in the same time step (at least 1 minute must pass).
+No "shorting" — you must buy before you sell. You may not buy and sell in the same time step (at least 1 minute must pass).
 
 ### Gotchas
+
 It is not sufficient to simply take the difference between the highest price and the lowest price, because the highest price may come before the lowest price. You must buy before you sell.
 
 What if the stock value goes down all day? In that case, the best profit will be negative.
@@ -23,41 +24,43 @@ What if the stock value goes down all day? In that case, the best profit will be
 You can do this in O(n)O(n) time and O(1)O(1) space!
 
 ### Breakdown
-To start, try writing an example value for stock_prices_yesterday and finding the maximum profit "by hand." What's your process for figuring out the maximum profit?
+
+To start, try writing an example value for `stock_prices_yesterday` and finding the maximum profit "by hand." What's your process for figuring out the maximum profit?
 
 The brute force ↴ approach would be to try every pair of times (treating the earlier time as the buy time and the later time as the sell time) and see which one is higher.
 
 ```rb
-  def get_max_profit(stock_prices_yesterday)
+def get_max_profit(stock_prices_yesterday)
 
-    max_profit = 0
+  max_profit = 0
 
-    # go through every time
-    for outer_time in (0...stock_prices_yesterday.length)
+  # go through every time
+  for outer_time in (0...stock_prices_yesterday.length)
 
-        # for every time, go through every OTHER time
-        for inner_time in (0...stock_prices_yesterday.length)
+    # for every time, go through every OTHER time
+    for inner_time in (0...stock_prices_yesterday.length)
+      
+      # for each pair, find the earlier and later times
+      earlier_time = [outer_time, inner_time].min
+      later_time   = [outer_time, inner_time].max
 
-            # for each pair, find the earlier and later times
-            earlier_time = [outer_time, inner_time].min
-            later_time   = [outer_time, inner_time].max
+      # and use those to find the earlier and later prices
+      earlier_price = stock_prices_yesterday[earlier_time]
+      later_price   = stock_prices_yesterday[later_time]
 
-            # and use those to find the earlier and later prices
-            earlier_price = stock_prices_yesterday[earlier_time]
-            later_price   = stock_prices_yesterday[later_time]
+      # see what our profit would be if we bought at the
+      # earlier price and sold at the later price
+      potential_profit = later_price - earlier_price
 
-            # see what our profit would be if we bought at the
-            # earlier price and sold at the later price
-            potential_profit = later_price - earlier_price
-
-            # update max_profit if we can do better
-            max_profit = [max_profit, potential_profit].max
-        end
+      # update max_profit if we can do better
+      max_profit = [max_profit, potential_profit].max
     end
+  end
 
-    return max_profit
+  return max_profit
 end
 ```
+
 But that will take O(n^2)O(n2) time, since we have two nested loops—for every time, we're going through every other time. Can we do better?
 
 Well, we’re doing a lot of extra work. We’re looking at every pair twice. We know we have to buy before we sell, so in our inner for loop we could just look at every price after the price in our outer for loop.
@@ -65,33 +68,32 @@ Well, we’re doing a lot of extra work. We’re looking at every pair twice. We
 That could look like this:
 
 ```rb
-  def get_max_profit(stock_prices_yesterday)
+def get_max_profit(stock_prices_yesterday)
 
-    max_profit = 0
+  max_profit = 0
 
-    # go through every price (with it's index as the time)
-    stock_prices_yesterday.each_with_index do |earlier_price, earlier_time|
+  # go through every price (with it's index as the time)
+  stock_prices_yesterday.each_with_index do |earlier_price, earlier_time|
 
-        # and go through all the LATER prices
-        for later_price in stock_prices_yesterday[earlier_time+1..-1]
+    # and go through all the LATER prices
+    for later_price in stock_prices_yesterday[earlier_time+1..-1]
+      
+      # see what our profit would be if we bought at the
+      # earlier price and sold at the later price
+      potential_profit = later_price - earlier_price
 
-            # see what our profit would be if we bought at the
-            # earlier price and sold at the later price
-            potential_profit = later_price - earlier_price
-
-            # update max_profit if we can do better
-            max_profit = [max_profit, potential_profit].max
-        end
+      # update max_profit if we can do better
+      max_profit = [max_profit, potential_profit].max
     end
+  end
 
-    return max_profit
+  return max_profit
 end
 ```
 
 What’s our runtime now?
 
-Well, our outer for loop goes through all the times and prices, but our inner for loop goes through one fewer price each time. So our total number of steps is the sum n + (n - 1) + (n - 2) ... + 2 + 1n+(n−1)+(n−2)...+2+1 ↴ , which is still O(n^2)O(n
-​2) time.
+Well, our outer for loop goes through all the times and prices, but our inner for loop goes through one fewer price each time. So our total number of steps is the sum n + (n - 1) + (n - 2) ... + 2 + 1n+(n−1)+(n−2)...+2+1 ↴ , which is still O(n^2)O(n2) time.
 
 **We can do better!**
 
@@ -114,25 +116,25 @@ see if we can get a better profit
 Here’s one possible solution:
 
 ```rb
-  def get_max_profit(stock_prices_yesterday)
+def get_max_profit(stock_prices_yesterday)
 
-    min_price = stock_prices_yesterday[0]
-    max_profit = 0
+  min_price = stock_prices_yesterday[0]
+  max_profit = 0
 
-    stock_prices_yesterday.each do |current_price|
+  stock_prices_yesterday.each do |current_price|
 
-        # ensure min_price is the lowest price we've seen so far
-        min_price = [min_price, current_price].min
+    # ensure min_price is the lowest price we've seen so far
+    min_price = [min_price, current_price].min
 
-        # see what our profit would be if we bought at the
-        # min price and sold at the current price
-        potential_profit = current_price - min_price
+    # see what our profit would be if we bought at the
+    # min price and sold at the current price
+    potential_profit = current_price - min_price
 
-        # update max_profit if we can do better
-        max_profit = [max_profit, potential_profit].max
-    end
+    # update max_profit if we can do better
+    max_profit = [max_profit, potential_profit].max
+  end
 
-    return max_profit
+  return max_profit
 end
 ```
 
@@ -169,8 +171,8 @@ But we have the potential for an index out of bounds error here, if stock_prices
 We do want to throw an error in that case, since profit requires buying and selling, which we can't do with less than 2 prices. So rather than throwing a confusing index out of bounds error, let's explicitly catch that case and throw a more helpful error message:
 
 ```rb
-  if stock_prices_yesterday.length < 2
-    raise IndexError, 'Getting a profit requires at least 2 prices'
+if stock_prices_yesterday.length < 2
+  raise IndexError, 'Getting a profit requires at least 2 prices'
 end
 
 min_price = stock_prices_yesterday[0]
@@ -192,6 +194,7 @@ To make sure we’re always buying at an earlier price, never the current_price,
 We'll also need to pay special attention to time 0. Make sure we don't try to buy and sell at time 0!
 
 ## Solution
+
 We’ll greedily ↴ walk through the array to track the max profit and lowest price so far.
 
 For every price, we check if:
@@ -205,37 +208,36 @@ max_profit as the first profit we could get
 We decided to return a negative profit if the price decreases all day and we can't make any money. We could have thrown an error instead, but returning the negative profit is cleaner, makes our function less opinionated, and ensures we don't lose information.
 
 ```rb
-  def get_max_profit(stock_prices_yesterday)
+def get_max_profit(stock_prices_yesterday)
 
-    # make sure we have at least 2 prices
-    if stock_prices_yesterday.length < 2
-        raise IndexError, 'Getting a profit requires at least 2 prices'
-    end
+  # make sure we have at least 2 prices
+  if stock_prices_yesterday.length < 2
+    raise IndexError, 'Getting a profit requires at least 2 prices'
+  end
 
-    # we'll greedily update min_price and max_profit, so we initialize
-    # them to the first price and the first possible profit
-    min_price = stock_prices_yesterday[0]
-    max_profit = stock_prices_yesterday[1] - stock_prices_yesterday[0]
+  # we'll greedily update min_price and max_profit, so we initialize
+  # them to the first price and the first possible profit
+  min_price = stock_prices_yesterday[0]
+  max_profit = stock_prices_yesterday[1] - stock_prices_yesterday[0]
 
-    stock_prices_yesterday.each_with_index do |current_price, index|
+  stock_prices_yesterday.each_with_index do |current_price, index|
+    # skip the first time, since we already used it
+    # when we initialized min_price and max_profit
+    next if index == 0
 
-        # skip the first time, since we already used it
-        # when we initialized min_price and max_profit
-        next if index == 0
+    # see what our profit would be if we bought at the
+    # min price and sold at the current price
+    potential_profit = current_price - min_price
 
-        # see what our profit would be if we bought at the
-        # min price and sold at the current price
-        potential_profit = current_price - min_price
+    # update max_profit if we can do better
+    max_profit = [max_profit, potential_profit].max
 
-        # update max_profit if we can do better
-        max_profit = [max_profit, potential_profit].max
+    # update min_price so it's always
+    # the lowest price we've seen so far
+    min_price  = [min_price, current_price].min
+  end
 
-        # update min_price so it's always
-        # the lowest price we've seen so far
-        min_price  = [min_price, current_price].min
-    end
-
-    return max_profit
+  return max_profit
 end
 ```
 
