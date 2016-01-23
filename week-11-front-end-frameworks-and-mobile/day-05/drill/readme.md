@@ -19,7 +19,7 @@ When we write an algorithm we've been paying attention to how quickly we can get
 
 An example of this can be found when we discussed indexing with Elasticsearch. We'd index a document with one process (`indexer`) then search it with another (the search API). In this case, we'd store more information (indexing) so that we can search quicker. This is an example of trading space for time.
 
-Some systems can't store as much information so we may make the tradeoff in the other direction. Instead of saving processing time we'd instead save memory space. This may come up while working on mobile applications or embedded devices where memory isn't as large as on a personal computer.
+Some systems can't store as much information, so we may make the tradeoff in the other direction. Instead of saving processing time we'd instead save memory space. This may come up while working on mobile applications or embedded devices where memory isn't as large as on a personal computer.
 
 ### TL;DR
 
@@ -27,7 +27,7 @@ We can make an algorithm **quicker** by taking up **more space**.
 
 We can make an algorithm take up **less space** by **making it slower**.
 
-* <a href="https://en.wikipedia.org/wiki/Space%E2%80%93time_tradeoff" target="_blank">Space/Time Tradeoff</a>
+<a href="https://en.wikipedia.org/wiki/Space%E2%80%93time_tradeoff" target="_blank">Space/Time Tradeoff</a>
 
 ## Exercise
 
@@ -47,4 +47,4 @@ We've been making our algorithms run faster by using hash data structures often.
 
 Let's look at how HashTables work and as a class attempt to implement our own rudimentary HashTable.
 
-* <a href="https://www.youtube.com/watch?v=h2d9b_nEzoA" target="_blank">What is a HashTable</a>
+* <a href="https://www.youtube.com/watch?v=h2d9b_nEzoA" target="_blank">What is a HashTable?</a>
