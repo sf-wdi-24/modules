@@ -75,6 +75,40 @@ There is an extensive library of tools and technologies used with React, but you
 
 * **Babel:** Babel is a JavaScript compiler used to transform JSX to JavaScript code in development. You'll need to require the <a href="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js" target="">Babel CDN</a> in order to use JSX.
 
+## Challenges
+
+1. On the <a href="https://facebook.github.io/react/index.html" target="">React Homepage</a>, scroll down to the "Simple Component" example. You and your partner should walk through the code line-by-line and explain what you think it's doing.
+
+2. The examples are interactive, so in the same "Simple Component" example, create another React component called `Title`. `Title` should return an `<h1></h1>` with the text "My Awesome App". Insert `Title` as a child component to the existing `HelloMessage` component. **Hint:**
+
+  ```js
+  var HelloMessage = React.createClass({
+    render: function() {
+      // add () around returned components
+      return (
+        // returned components need to be inside a <div></div> tag
+        <div>
+
+        </div>
+      )
+    }
+  });
+  ```
+
+3. Now edit your `Title` component so that it also includes this tag: `<h2>Today is: {this.props.date}</h2>`. Pass the `date` as an attribute in the parent component (`HelloMessage`). **Hint:** Look at how this is done for `HelloMessage` - its parent is `ReactDOM`.
+
+4. **Bonus:** Instead of using `this.props.date` to pass in the date via an attribute, can you use `this.state.date` to set the date dynamically? **Hint:** Look at the next example, "A Stateful Component" as guidance.
+
+5. When you're doing editing the "Simple Component" example, you and your partner should look at the next two examples, "A Stateful Component" and "An Application" - walk through these examples line-by-line and explain what you think the code does.
+
+## React Tutorial
+
+If you've finished the challenges, head over to the <a href="https://facebook.github.io/react/docs/tutorial.html" target="">React Tutorial</a> and follow the steps to build a comments box. Please use <a href="https://github.com/sf-wdi-24/react-tutorial" target="">this starter code</a> as a base.
+
+Note that the tutorial tells you to write all your JavaScript code in between `<script></script>` tags in the HTML. In our version of the starter code, we've created a blank `public/scripts/app.js` file where you can write your JavaScript code. It's already connected to the view.
+
+Fetch the <a href="https://github.com/sf-wdi-24/react-tutorial/tree/solution" target="">solution branch</a> for a working demo of the comments box.
+
 ## Resources
 
 * <a href="https://facebook.github.io/react/docs/getting-started.html" target="">React Docs</a> [React]
