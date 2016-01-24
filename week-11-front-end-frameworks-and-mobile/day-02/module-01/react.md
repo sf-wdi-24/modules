@@ -57,18 +57,26 @@ Angular and React are both JavaScript libraries used to create dynamic, data-ric
 
 ## Terms
 
-* **One-Way Data-Binding**
-* **Virtual DOM**
-* **Isomorphic JavaScript**
+Three of the most popular features of React are One-Way Data-Binding, Virtual DOM, and Isomorphic JavaScript. Let's look at the definitions of these terms:
+
+* **One-Way Data-Binding:**
+* **Virtual DOM:**
+* **Isomorphic JavaScript:**
 
 ## Tools
 
-* React SDK
-* npm
-* JSX
-* Babel
+There is an extensive library of tools and technologies used with React, but you can easily get started with just a few of them:
+
+* **React CDNs:** You'll need <a href="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js" target="">React</a> and <a href="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js" target="">ReactDOM</a> to start building React components for the UI. Note that you can also install the React libraries via `npm` to take advantage of the Isomorphic JavaScript capabilities, but we won't go over this today.
+
+* **JSX:** JSX is a JavaScript syntax extension that looks similar to XML. JSX is not required to use React, but is recommended because of its ease of defining tree structures with attributes. Source: <a href="http://facebook.github.io/react/docs/jsx-in-depth.html" target="">JSX in Depth</a>.
+
+* **Babel:** Babel is a JavaScript compiler used to transform JSX to JavaScript in development. You'll need to require the <a href="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js" target="">Babel CDN</a> in order to use JSX.
 
 ## Resources
 
-* <a href="https://facebook.github.io/react/docs/getting-started.html">React Docs</a>
-* <a href="https://github.com/petehunt/react-howto" target="">react-howto</a>
+* <a href="https://facebook.github.io/react/docs/getting-started.html" target="">React Docs</a> [React]
+* <a href="https://github.com/petehunt/react-howto" target="">react-howto</a> [petehunt]
+* <a href="https://www.quora.com/How-is-Facebooks-React-JavaScript-library" target="">How is Facebook's React JavaScript library?</a> [Quora]
+* <a href="https://www.quora.com/profile/Pete-Hunt/Posts/React-Under-the-Hood" target="">React: Under the Hood</a> [Quora]
+* <a href="http://moduscreate.com/react-native-react-js-goes-mobile" target="">React Native – React.js Goes Mobile</a> [Modus Create]
