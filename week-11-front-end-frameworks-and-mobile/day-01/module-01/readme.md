@@ -140,7 +140,7 @@ app.config(['$httpProvider', function ($httpProvider) {
 
 ## Challenges
 
-Work on the <a href="" target="_blank">Angular Auth Challenges</a>.
+Work on the <a href="https://github.com/sf-wdi-24/angular_auth" target="_blank">Angular Auth Challenges</a>.
 
 ## Resources
 
