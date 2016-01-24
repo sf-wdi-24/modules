@@ -35,3 +35,31 @@ Output 2:
 Sales Tax: 9.52
 Total: 95.76
 ```
+
+## FizzBuzz
+
+Write a program that prints the numbers from 1 to 100. For multiples of 3 print "Fizz" instead of the number, and for multiples of 5 print "Buzz" instead of the number. For numbers which are multiples of both 3 and 5 print "FizzBuzz".
+
+```
+Input: (1..100)
+
+Output:
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz
+.
+.
+.
+```
