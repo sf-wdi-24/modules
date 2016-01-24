@@ -7,7 +7,7 @@
 
 ## Background
 
-With Express and Rails you learned the Cookie-Session authentication strategy. However, there's a better way to communicate authentication in **Single Page Applications**. You're going to use an encrypted chunk of JSON called a **JSON Web Token**, or JWT (pronounced *"jot"*), to communicate authentication between client and server.
+With Express and Rails you learned the Cookie-Session authentication strategy. However, there's a better way to communicate authentication in **Single Page Applications**. You're going to use an encoded and signed chunk of JSON called a **JSON Web Token**, or JWT (pronounced *"jot"*), to communicate authentication between client and server.
 
 ![cookie-token-auth](https://cloud.githubusercontent.com/assets/7833470/12523189/095e1760-c10a-11e5-9c5a-09d4bf69f2c1.png)
 
