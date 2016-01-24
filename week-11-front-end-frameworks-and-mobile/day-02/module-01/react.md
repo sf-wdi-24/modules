@@ -59,19 +59,21 @@ Angular and React are both JavaScript libraries used to create dynamic, data-ric
 
 Three of the most popular features of React are One-Way Data-Binding, Virtual DOM, and Isomorphic JavaScript. Let's look at the definitions of these terms:
 
-* **One-Way Data-Binding:**
-* **Virtual DOM:**
-* **Isomorphic JavaScript:**
+* **One-Way Data-Binding:** React uses a one-way binding architecture, meaning that data passed from a parent element into a child element is owned by the parent. Each component retains a unique state, which is mutable only by the component’s own methods. Source: <a href="http://moduscreate.com/react-native-react-js-goes-mobile" target="">React Native – React.js Goes Mobile</a>.
+
+* **Virtual DOM:** React's Virtual DOM is used for efficiently re-rendering the DOM when data changes. The Virtual DOM is what holds the "diff" of changes since the last update, and it prevents unnecessary re-renders when nothing has changed. Source: <a href="http://stackoverflow.com/questions/21109361/why-is-reacts-concept-of-virtual-dom-said-to-be-more-performant-than-dirty-mode" target="">Why is React's concept of Virtual DOM said to be more performant?</a>
+
+* **Isomorphic JavaScript:** Isomorphic JavaScript is JavaScript that runs both on the client-side and the server-side. Isomorphic JavaScript eliminates some of the problems associated with using front-end frameworks, such as slow page-load when first entering the application and SEO limitations. Source: <a href="http://nerds.airbnb.com/isomorphic-javascript-future-web-apps" target="">Isomorphic JavaScript: The Future of Web Apps</a>.
 
 ## Tools
 
 There is an extensive library of tools and technologies used with React, but you can easily get started with just a few of them:
 
-* **React CDNs:** You'll need <a href="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js" target="">React</a> and <a href="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js" target="">ReactDOM</a> to start building React components for the UI. Note that you can also install the React libraries via `npm` to take advantage of the Isomorphic JavaScript capabilities, but we won't go over this today.
+* **React CDNs:** You'll need the <a href="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js" target="">React</a> and <a href="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js" target="">ReactDOM</a> libraries to start building React components for the UI. Note that you can also install the React libraries via `npm` to take advantage of the Isomorphic JavaScript capabilities, but we won't go over this today.
 
 * **JSX:** JSX is a JavaScript syntax extension that looks similar to XML. JSX is not required to use React, but is recommended because of its ease of defining tree structures with attributes. Source: <a href="http://facebook.github.io/react/docs/jsx-in-depth.html" target="">JSX in Depth</a>.
 
-* **Babel:** Babel is a JavaScript compiler used to transform JSX to JavaScript in development. You'll need to require the <a href="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js" target="">Babel CDN</a> in order to use JSX.
+* **Babel:** Babel is a JavaScript compiler used to transform JSX to JavaScript code in development. You'll need to require the <a href="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js" target="">Babel CDN</a> in order to use JSX.
 
 ## Resources
 
