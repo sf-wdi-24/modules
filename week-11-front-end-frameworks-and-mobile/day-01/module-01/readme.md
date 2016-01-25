@@ -133,7 +133,7 @@ app.config(['$httpProvider', function ($httpProvider) {
 
 ## Satellizer
 
-<a href="https://github.com/sahat/satellizer" target="_blank">Satellizer</a> is an Angular modules that hides a lot of the complexity of using JWTs. This is both a good and a bad thing. Let's not lose sight of how Satellizer is helping us:
+<a href="https://github.com/sahat/satellizer" target="_blank">Satellizer</a> is an Angular module that hides a lot of the complexity of using JWTs. This is both a good and a bad thing. Let's not lose sight of how Satellizer is helping us:
 
 1. Provides methods to authenticate a user with email/password and any OAuth provider. These methods send requests to the server, and when the server responds, Satellizer takes care of saving the JWT to `localStorage`.
 2. Sends the JWT with every request using an **Angular Interceptor**.
