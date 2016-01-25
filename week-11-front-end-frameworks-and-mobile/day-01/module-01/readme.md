@@ -115,14 +115,6 @@ app.config(['$httpProvider', function ($httpProvider) {
 
 > <a href="http://blog.matoski.com/articles/jwt-express-node-mongoose" target="_blank">Express4 + Mongoose + JSON Web Token Authentication</a> [matoski.com]
 
-#### Log In
-
-1. User logs in with email and password (client).
-2. Server checks email and password, and if valid sends back a JWT.
-3. Client receives the JWT and stores it in `localStorage`.
-4. Client makes requests to the server with the JWT (this happens automatically using an **Angular Interceptor**).
-5. Server decodes the JWT and uses the token data to decide if user has access to the resource.
-
 #### Sign Up
 
 1. User signs up with email and password (client).
@@ -131,9 +123,17 @@ app.config(['$httpProvider', function ($httpProvider) {
 4. Client makes requests to the server with the JWT (this happens automatically using an **Angular Interceptor**).
 5. Server decodes the JWT and uses the token data to decide if user has access to the resource.
 
+#### Log In
+
+1. User logs in with email and password (client).
+2. Server checks email and password, and if valid sends back a JWT.
+3. Client receives the JWT and stores it in `localStorage`.
+4. Client makes requests to the server with the JWT (this happens automatically using an **Angular Interceptor**).
+5. Server decodes the JWT and uses the token data to decide if user has access to the resource.
+
 ## Satellizer
 
-<a href="https://github.com/sahat/satellizer" target="_blank">Satellizer</a> is an Angular modules that hides a lot of the complexity of using JWTs. This is both a good and a bad thing. Let's not lose sight of how Satellizer is helping us:
+<a href="https://github.com/sahat/satellizer" target="_blank">Satellizer</a> is an Angular module that hides a lot of the complexity of using JWTs. This is both a good and a bad thing. Let's not lose sight of how Satellizer is helping us:
 
 1. Provides methods to authenticate a user with email/password and any OAuth provider. These methods send requests to the server, and when the server responds, Satellizer takes care of saving the JWT to `localStorage`.
 2. Sends the JWT with every request using an **Angular Interceptor**.
