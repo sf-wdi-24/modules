@@ -17,6 +17,8 @@ You are working for a company that wants to prototype an app that mimics the cap
 
 ## Project Setup
 
+* Fork and clone <a href="https://github.com/sf-wdi-24/angularjs-lab" target="_blank">this</a> repo.  When you are finished creating your app submit a pull request.
+
 *  Use <a href="https://github.com/sf-wdi-24/modules/tree/master/week-10-angular/day-04/module-01" target="_blank">this tutorial</a> as a guide on how to connect your front-end to your back-end.
 
 *  Make sure to create the appropriate associations between your `Question` and `Answer` models.
