@@ -115,19 +115,19 @@ app.config(['$httpProvider', function ($httpProvider) {
 
 > <a href="http://blog.matoski.com/articles/jwt-express-node-mongoose" target="_blank">Express4 + Mongoose + JSON Web Token Authentication</a> [matoski.com]
 
-#### Log In
-
-1. User logs in with email and password (client).
-2. Server checks email and password, and if valid sends back a JWT.
-3. Client receives the JWT and stores it in `localStorage`.
-4. Client makes requests to the server with the JWT (this happens automatically using an **Angular Interceptor**).
-5. Server decodes the JWT and uses the token data to decide if user has access to the resource.
-
 #### Sign Up
 
 1. User signs up with email and password (client).
 2. Server creates a new user if everything is valid and sends back a JWT.
 3. Client receives the JWT and stores it in   `localStorage`.
+4. Client makes requests to the server with the JWT (this happens automatically using an **Angular Interceptor**).
+5. Server decodes the JWT and uses the token data to decide if user has access to the resource.
+
+#### Log In
+
+1. User logs in with email and password (client).
+2. Server checks email and password, and if valid sends back a JWT.
+3. Client receives the JWT and stores it in `localStorage`.
 4. Client makes requests to the server with the JWT (this happens automatically using an **Angular Interceptor**).
 5. Server decodes the JWT and uses the token data to decide if user has access to the resource.
 
