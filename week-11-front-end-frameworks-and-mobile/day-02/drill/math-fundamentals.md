@@ -58,10 +58,6 @@
     <td>Logarithm with a base of 10 shown as log10 (log1010x = x).</td>
   </tr>
   <tr>
-    <td><strong>Complex Numbers</strong></td>
-    <td>A combination of real and imaginary numbers of the form a + bi where a and b are real numbers and i is the square root of -1 (see imaginary number). While real numbers can be represented as points on a line, complex numbers can only be located on a plane. See Types of Numbers.</td>
-  </tr>
-  <tr>
     <td><strong>Composite Number</strong></td>
     <td>Any integer which is not a prime number, i.e., evenly divisible by numbers other than 1 and itself.</td>
   </tr>
@@ -95,7 +91,7 @@
   </tr>
   <tr>
     <td><strong>Diameter</strong></td>
-    <td>A straight line that passes from side to side thorough the centre of a circle.</td>
+    <td>A straight line that passes from side to side thorough the center of a circle.</td>
   </tr>
   <tr>
     <td><strong>Digit</strong></td>
@@ -112,7 +108,7 @@
   <tr>
     <td><strong>Exponent (Power, Index)</strong></td>
     <td>
-      A number denoted by a small numeral placed above and to the right of a numerical quantity, which indicates the number of times that quantity is multiplied by itself. In the case of X^n, it is said that X is raised to the power of n. When aand b are non-zero real numbers and p and q are integers, the following rules of power apply:<br><br>
+      A number denoted by a small numeral placed above and to the right of a numerical quantity, which indicates the number of times that quantity is multiplied by itself. In the case of X^n, it is said that X is raised to the power of n. When a and b are non-zero real numbers and p and q are integers, the following rules of power apply:<br><br>
       ap x aq = ap + q<br><br>
       (ap)q = apq<br><br>
       (a1/n)m = am/n<br><br>
@@ -121,7 +117,7 @@
   </tr>
   <tr>
     <td><strong>Exponential Function</strong></td>
-    <td>A function in the form of f(x) = a^x where x is a real number, and a is positive and not 1. One exponential function is f(x) = e^x. See Mathlets: Exponential Functions.</td>
+    <td>A function in the form of f(x) = a^x where x is a real number, and a is positive and not 1. One exponential function is f(x) = e^x.</td>
   </tr>
   <tr>
     <td><strong>Factorial</strong></td>
@@ -145,7 +141,7 @@
   </tr>
   <tr>
     <td><strong>Geometric Mean</strong></td>
-    <td>G = (x1.x2...xn)1/n where n is the sample size. This can also be expressed as antilog ((1/n) S log x). See Applications of the Geometric Mean; Spizman, 2008: Geometric Mean in Forensic Economy.</td>
+    <td>G = (x1.x2...xn)1/n where n is the sample size. This can also be expressed as antilog ((1/n) S log x).</td>
   </tr>
   <tr>
     <td><strong>Geometric Sequence</strong></td>
@@ -153,7 +149,7 @@
   </tr>
   <tr>
     <td><strong>Gradient</strong></td>
-    <td>The slope of a line. The gradient of two points on a line is calculated as rise (vertical increase) divided by run (horizontal increase), therefore, the gradient of a line is equal to the tangent of the angle it makes with the positive x-axis (y/x). See Mathlets: Lines and Slopes; Curve Bank: Slope.</td>
+    <td>The slope of a line. The gradient of two points on a line is calculated as rise (vertical increase) divided by run (horizontal increase), therefore, the gradient of a line is equal to the tangent of the angle it makes with the positive x-axis (y/x). </td>
   </tr>
   <tr>
     <td><strong>Hierarchy of Operations</strong></td>
@@ -165,7 +161,7 @@
   </tr>
   <tr>
     <td><strong>Imaginary Number</strong></td>
-    <td>The product of a real number x and i, where i2 + 1 = 0. A complex number in which the real part is zero. In general, imaginary numbers are the square roots of negative numbers. See Types of Numbers.</td>
+    <td>The product of a real number x and i, where i2 + 1 = 0. A complex number in which the real part is zero. In general, imaginary numbers are the square roots of negative numbers.</td>
   </tr>
   <tr>
     <td><strong>Improper Fraction</strong></td>
@@ -185,7 +181,7 @@
   </tr>
   <tr>
     <td><strong>Inverse Function</strong></td>
-    <td>A function which "does the reverse" of a given function. For example, functions with the prefix arc are inverse trigonometric functions; e.g. arcsin x for the inverse of sin(x). See also Wikipedia: Mathematics: Inverse Functions and Logarithmic Inverse Functions.</td>
+    <td>A function which "does the reverse" of a given function. For example, functions with the prefix arc are inverse trigonometric functions; e.g. arcsin x for the inverse of sin(x).</td>
   </tr>
   <tr>
     <td><strong>Iteration</strong></td>
@@ -207,8 +203,7 @@
       log (a/b) = log a - log b<br><br>
       log (1/a) = -log a<br><br>
       log ab = b log a<br><br>
-      log 1 = 0 and log 0 is undefined<br><br>
-      See Logarithmic Transformations.
+      log 1 = 0 and log 0 is undefined
     </td>
   </tr>
   <tr>
@@ -241,7 +236,7 @@
   </tr>
   <tr>
     <td><strong>Perfect Number</strong></td>
-    <td>A number which is equal to the sum of its proper divisors. 6, 28, and 496 are the three of seven known perfect numbers. [6 is a perfect number because its proper divisors (1,2, and 3) total 6.] See Types of Numbers.</td>
+    <td>A number which is equal to the sum of its proper divisors. 6, 28, and 496 are the three of seven known perfect numbers. [6 is a perfect number because its proper divisors (1,2, and 3) total 6.] </td>
   </tr>
   <tr>
     <td><strong>Permutation</strong></td>
@@ -277,7 +272,7 @@
   </tr>
   <tr>
     <td><strong>Radius</strong></td>
-    <td>The distance between the centre of a circle and any point on the circle's circumference.</td>
+    <td>The distance between the center of a circle and any point on the circle's circumference.</td>
   </tr>
   <tr>
     <td><strong>Rate</strong></td>
@@ -289,11 +284,11 @@
   </tr>
   <tr>
     <td><strong>Rational Number</strong></td>
-    <td>A number that can be expressed as the ratio of two integers, e.g. 6/7. The set of rational numbers is denotes as ‘Q’ for quotient. See Types of Numbers.</td>
+    <td>A number that can be expressed as the ratio of two integers, e.g. 6/7. The set of rational numbers is denotes as ‘Q’ for quotient.</td>
   </tr>
   <tr>
     <td><strong>Real Number</strong></td>
-    <td>Rational (fractions) and irrational (numbers with non-recurring decimal representation) numbers. The set of real numbers is denoted as ‘R’ for real. In computing, any number with a fractional (or decimal) part. Basically, real numbers are all numbers except imaginary numbers (such as the square root of -1). See Types of Numbers.</td>
+    <td>Rational (fractions) and irrational (numbers with non-recurring decimal representation) numbers. The set of real numbers is denoted as ‘R’ for real. In computing, any number with a fractional (or decimal) part. Basically, real numbers are all numbers except imaginary numbers (such as the square root of -1).</td>
   </tr>
   <tr>
     <td><strong>Root</strong></td>
@@ -302,10 +297,6 @@
   <tr>
     <td><strong>Rounding</strong></td>
     <td>To give a close approximation of a number by dropping the least significant numbers. For example 15.88 can be rounded up to 15.9 (or 16) and 15.12 can be rounded down to 15.1 (or 15).</td>
-  </tr>
-  <tr>
-    <td><strong>Scientific Notation (Exponential Notation, Standard Form)</strong></td>
-    <td>One way of writing very small or very large numbers. In this notation, numbers are shown as (0<N<10) x 10q. An equivalent form is N.Eq. For example; 365,000 is 3.65x105 or 3.65E5. See Wikipedia: Scientific Notation.</td>
   </tr>
   <tr>
     <td><strong>Sequence</strong></td>
