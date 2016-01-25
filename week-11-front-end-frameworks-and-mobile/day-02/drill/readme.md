@@ -1,4 +1,5 @@
-# <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Interview Workshop: Basic Math || Hash-Mapping
+# <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Interview Workshop: Math Fundamentals || Hash-Mapping
+
 
 ### Basic Math Terminology
 **These are terms you need to know but is by no means an exaustive list.**
@@ -164,3 +165,6 @@ ap x aq = ap+q;  (ap)q = apq;  (a1/n)m = am/n;  a1/2 x b1/2 = (ab)1/2.
 **Vertex:** The point where lines intersect.
 
 **Whole number:** Zero or any positive number with no fractional parts.
+
+* [Math Fundamentals](math-fundamentals.md)
+* [Hash Mapping](hash-mapping.md)
