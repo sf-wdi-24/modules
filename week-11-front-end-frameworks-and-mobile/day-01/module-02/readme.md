@@ -37,7 +37,7 @@ You are working for a company that wants to prototype an app that mimics the cap
 
   ```js
   app.service('Answer', ['$resource', function ($resource) {
-    return $resource('/api/questions/:questionId/answers/:id', {id: '@_id'}, {
+    return $resource('/api/questions/:questionId/answers/:id', {questionId: '@_id', id: '@_id'}, {
       update: {
         method: 'PUT'
       }
