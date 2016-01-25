@@ -350,3 +350,9 @@
 for all x > 0.
 9. Solve for x the equation log [ log (2 + log2(x + 1)) ] = 0
 10. Solve for x the equation 2 x b4 logbx = 486
+
+## Further Reading
+
+<a href="https://www.mathsisfun.com/algebra/logarithms.html" target="_blank">Intro to Logarithms</a>
+
+<a href="http://www.purplemath.com/modules/expofcns.htm" target="_blank">Intro to Exponential Functions</a>
