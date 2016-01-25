@@ -33,6 +33,37 @@ For the duration of this demo we will be working in this playground environment.
 
 ![playground](https://cloud.githubusercontent.com/assets/8397980/12565843/63ee1a28-c36b-11e5-8afe-af6987597b0b.png)(an example of a playground in Xcode)
 
+If you look at the initial playground window you will notice the second line
+
+`import UIKit`
+
+This lets our playground or application know that we are using the Swift language.
+
+## Data types
+  * String
+  ```swift-2
+    var name: String
+    name = "Chuck Norris"
+  ```
+  * Int
+  ```swift-2
+    var num: Int
+    num = 32
+  ```
+  * Double
+  * Float
+  ```swift-2
+    var latitude: Double
+    latitude = 36.166667
+
+    var longitude: Float
+    longitude = -86.783333
+  ```
+  * Boolean
+  ```swift-2
+    var isInteresting: Bool
+    isInteresting = true
+  ```
 
 
 For the last hour-ish, give them the option to work through an existing Swift tutorial or work on their lightning talk
