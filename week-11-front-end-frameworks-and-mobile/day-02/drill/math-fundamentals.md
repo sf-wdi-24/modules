@@ -336,3 +336,17 @@
     <td>Zero or any positive number with no fractional parts.</td>
   </tr>
 </table>
+
+## Logarithm and Exponential Practice
+
+1. Solve the equation (1/2)2x + 1 = 1
+2. Solve x ym = y x3 for m.
+3. Given: log8(5) = b. Express log4(10) in terms of b.
+4. Simplify without calculator: log6(216) + [ log(42) - log(6) ] / log(49)
+5. Simplify without calculator: ((3-1 - 9-1) / 6)1/3
+6. Express (logxa)(logab) as a single logarithm.
+7. Find a so that the graph of y = logax passes through the point (e , 2).
+8. Find constant A such that log3 x = A log5x
+for all x > 0.
+9. Solve for x the equation log [ log (2 + log2(x + 1)) ] = 0
+10. Solve for x the equation 2 x b4 logbx = 486
