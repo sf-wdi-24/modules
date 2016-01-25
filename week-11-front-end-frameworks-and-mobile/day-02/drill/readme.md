@@ -3,7 +3,7 @@
 ### Basic Math Terminology
 **These are terms you need to know but is by no means an exaustive list.**
 
-**Absolute value:** The magnitude of a number. It is the number with the sign (+ or -) removed and is symbolised using two vertical straight lines ( |5| ). Also called modulus.
+**Absolute value:** The magnitude of a number. It is the number with the sign (+ or -) removed and is symbolized using two vertical straight lines ( |5| ).
 
 **Abstract number:** A number with no associated units.
 
@@ -43,7 +43,7 @@
 
 **Cube root:** The factor of a number that, when it is cubed (i.e., x3) gives that number.
 
-**Decimal:** A fraction having a power of ten as denominator, such as 0.34 = 34/100 (102) or 0.344 = 344/1000 (103). In the continent, a comma is used as the decimal point (between the unit figure and the numerator).
+**Decimal:** A fraction having a power of ten as denominator, such as 0.34 = 34/100 or 0.344 = 344/1000. In the continent, a comma is used as the decimal point (between the unit figure and the numerator).
 
 **Denominator:** The bottom number in a fraction.
 
@@ -55,7 +55,7 @@
 
 **Even number:** A natural number that is divisible by two.
 
-**Exponent (power, index):** A number denoted by a small numeral placed above and to the right of a numerical quantity, which indicates the number of times that quantity is multiplied by itself. In the case of Xn, it is said that X is raised to the power of n. When a and b are non-zero real numbers and p and q are integers, the following rules of power apply:
+**Exponent (power, index):** A number denoted by a small numeral placed above and to the right of a numerical quantity, which indicates the number of times that quantity is multiplied by itself. In the case of X^n, it is said that X is raised to the power of n. When a and b are non-zero real numbers and p and q are integers, the following rules of power apply:
 
 ap x aq = ap+q;  (ap)q = apq;  (a1/n)m = am/n;  a1/2 x b1/2 = (ab)1/2.  
 
@@ -91,7 +91,7 @@ ap x aq = ap+q;  (ap)q = apq;  (a1/n)m = am/n;  a1/2 x b1/2 = (ab)1/2.
 
 **Interpolation:** Estimating the value of a function or a quantity from known values on either side of it.
 
-**Inverse function:** A function which 'does the reverse' of a given function. For example, functions with the prefix arc are inverse trigonometric functions; e.g. arcsin x for the inverse of sin(x). See also Wikipedia: Mathematics: Inverse Functions and Logarithmic Inverse Functions.
+**Inverse function:** A function which 'does the reverse' of a given function. For example, functions with the prefix arc are inverse trigonometric functions; e.g. arcsin x for the inverse of sin(x).
 
 **Iteration:** Repeatedly performing the same sequence of steps. Simply, solving an algebraic equation with an arbitrary value for the unknown and using the result to solve it again, and again.
 
@@ -104,8 +104,6 @@ ap x aq = ap+q;  (ap)q = apq;  (a1/n)m = am/n;  a1/2 x b1/2 = (ab)1/2.
 **Matrix:** A matrix (plural: matrices) is a rectangular table of data.
 
 **Mixed number:** A number that contains both a whole number and a fraction.
-
-**Modulus:** The absolute value of a number regardless of its sign, shown as | x | or mod x. For a vector u, the modulus  | u | is used to indicate its magnitude calculated using Pythagoras’ theorem: | u | = (a2 + b2)1/2.
 
 **Multiplication:** The process of finding the product of two quantities that are called the multiplicand and the multiplier.
 
