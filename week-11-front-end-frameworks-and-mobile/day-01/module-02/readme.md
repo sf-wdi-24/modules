@@ -23,7 +23,7 @@ You are working for a company that wants to prototype an app that mimics the cap
 
 ## Challenges
 
-**Use `$resource` to interact with the database.**
+**Use `$resource` to interact with the API.**
 
 1. Create a home view that has a list of questions. Make these questions modifiable and deletable.
 
