@@ -15,9 +15,21 @@ Swift is a multi-paradigm, compiled programming language created for iOS, OS X, 
 
 
 Intro / overview of tools / environment
+## Getting started
+
+Before we get started using Swift we need to have the latest version of Xcode.  You can head to the App Store and check if you have the latest version by clicking on the 'Updates' icon.  If you have the latest version you should see 'No Updates Available'.  If you need to upgrade the Xcode icon will appear under pending updates.
+
+
+![xcodemenu](https://cloud.githubusercontent.com/assets/8397980/12566356/17c1ba4e-c36e-11e5-81fb-b674755f89ed.png)
+When you start Xcode you will be given three options.  Choose the first option 'Get Started with a playground'
+
+In the next menu you'll want to create a name...let's say 'FirstPlayground' and set the platform to iOS.  When you're ready press 'Next'.  You will then be prompted for where you want to save the file.  Any location will do.
+
+The file will be saved as FirstPlayground.plaground.  
+
 ## Syntax
 
-For the duration of this demo we will be working in an environment know as a "playground".  You can think of this environment like a repl for Swift.  This is the area where you can experiment with the code and get to know the language a little more.
+For the duration of this demo we will be working in this playground environment.  
 
 ![playground](https://cloud.githubusercontent.com/assets/8397980/12565843/63ee1a28-c36b-11e5-8afe-af6987597b0b.png)(an example of a playground in Xcode)
 
