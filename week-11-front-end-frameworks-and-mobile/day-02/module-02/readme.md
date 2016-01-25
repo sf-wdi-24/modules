@@ -15,7 +15,14 @@ Swift is a multi-paradigm, compiled programming language created for iOS, OS X, 
 
 
 Intro / overview of tools / environment
-Intro to Swift syntax
+## Syntax
+
+For the duration of this demo we will be working in an environment know as a "playground".  You can think of this environment like a repl for Swift.  This is the area where you can experiment with the code and get to know the language a little more.
+
+![playground](https://cloud.githubusercontent.com/assets/8397980/12565843/63ee1a28-c36b-11e5-8afe-af6987597b0b.png)(an example of a playground in Xcode)
+
+
+
 For the last hour-ish, give them the option to work through an existing Swift tutorial or work on their lightning talk
 
 ## Challenges
