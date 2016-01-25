@@ -34,8 +34,6 @@
 
 **Composite number:** Any integer which is not a prime number, i.e., evenly divisible by numbers other than 1 and itself.
 
-**Congruent:** Alike in all relevant respects.
-
 **Constant:** A quality of a measurement that never changes in magnitude.
 
 **Coordinate:** A set of numbers that locates the position of a point usually represented by (x,y) values.
@@ -152,15 +150,13 @@ ap x aq = ap+q;  (ap)q = apq;  (a1/n)m = am/n;  a1/2 x b1/2 = (ab)1/2.
 
 **Sequence:** An ordered set of numbers derived according to a rule, each member being determined either directly or from the preceding terms.
 
-**Straight line:** A straight line is characterised by an equation (y = a + bx), where a is the intercept and b is the gradient/slope. One of the methods for fitting a straight line is the least squares method.
+**Straight line:** A straight line is characterized by an equation (y = a + bx), where a is the intercept and b is the gradient/slope. One of the methods for fitting a straight line is the least squares method.
 
 **Subtraction:** The inverse operation of addition. In the notation a - b = c, the terms a, b, and c are called the minuend, subtrahend and difference, respectively.
 
 **Unit:** A standard measurement.
 
 **Variable:** An amount whose value can change.
-
-**Vector:** A quantity characterised by a magnitude and a direction represented by (1) column form: two numbers (components) in a 2x1 matrix; (2) geometric form: by arrows in the (x,y)-plane; or (3) component form: the Cartesian unit vectors i (x-axis unit vector) and j (y-axis unit vector). The magnitude of a vector | u | is the length of the corresponding arrow and the direction is the angle (θ) the vector makes with the positive x-axis. When a1 and a­2­ are the components of the vector a (magnitude | a | = (a12 + a22)1/2), it equals to a = a1i + a2j in component form, which equals to a = | a | cos(θ)i + | a | sin(θ)j. The angle (θ) can be found as arctan (a2 / a1). Cosine rule and sine rule are used for conversion of vectors from one form to another.
 
 **Vertex:** The point where lines intersect.
 
