@@ -14,7 +14,7 @@
   <tr>
     <td>Drill</td>
     <td><a href="./day-01/drill">Interview Workshop: Tips & Best Practices</a></td>
-    <td><a href="./day-02/drill">Interview Workshop: Basic Math || Hash-Mapping</a></td>
+    <td><a href="./day-02/drill">Interview Workshop: Math Fundamentals || Hash-Mapping</a></td>
     <td><a href="./day-03/drill">Interview Workshop: Big-O</a></td>
     <td><a href="./day-04/drill">Interview Workshop: Tech Vocab</a></td>
     <td><a href="./day-05/drill">Interview Workshop: Algorithm Design</a> (Optional)</td>
