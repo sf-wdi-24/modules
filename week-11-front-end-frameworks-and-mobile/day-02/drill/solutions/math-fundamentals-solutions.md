@@ -30,6 +30,7 @@
 
 **Answer:** 192
 
+
 **7. What is 4x<sup>3</sup> * 2x<sup>3</sup> ?**
 
 **Answer:** 8x<sup>6</sup>

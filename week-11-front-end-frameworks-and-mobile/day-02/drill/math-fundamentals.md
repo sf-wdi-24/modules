@@ -360,8 +360,7 @@
 
 4. 3x<sup>3</sup>y<sup>-3</sup>/12<sup>6</sup>y<sup>3</sup>
 
-## Further Reading
+## Resources
 
-<a href="https://www.mathsisfun.com/algebra/logarithms.html" target="_blank">Intro to Logarithms</a>
-
-<a href="http://www.purplemath.com/modules/expofcns.htm" target="_blank">Intro to Exponential Functions</a>
+* <a href="https://www.mathsisfun.com/algebra/logarithms.html" target="_blank">Intro to Logarithms</a>
+* <a href="http://www.purplemath.com/modules/expofcns.htm" target="_blank">Intro to Exponential Functions</a>
