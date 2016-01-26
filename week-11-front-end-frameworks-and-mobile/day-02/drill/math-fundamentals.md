@@ -75,7 +75,7 @@
   </tr>
   <tr>
     <td><strong>Cosine Law</strong></td>
-    <td>For any triangle, the side lengths a, b, c and corresponding opposite angles A, B, C are related as follows: a2 = b2 + c2 - 2bc cosA, etc. The law of cosines is useful to determine the unknown data of a triangle if two sides and an angle are known. See Wikipedia: Cosine Law.</td>
+    <td>For any triangle, the side lengths a, b, c and corresponding opposite angles A, B, C are related as follows: a2 = b2 + c2 - 2bc cosA, etc. The law of cosines is useful to determine the unknown data of a triangle if two sides and an angle are known.</td>
   </tr>
   <tr>
     <td><strong>Cube Root</strong></td>
@@ -328,29 +328,33 @@
   </tr>
 </table>
 
-## Logarithm and Exponential Practice
+## Exponent & Logarithm Practice
 
-1.  What is log<sub>4</sub>(256)?
+Solve the following problems:
 
-2.  What is log<sub>5</sub>(0.0016)?
+1. 3 * 4<sup>3</sup>
 
-3.  What is log<sub>3</sub>(729)?
+2. 4x<sup>3</sup> * 2x<sup>3</sup>
 
-4.  What is log<sub>2</sub>(0.015625)?
+3. 2x<sup>3</sup> * 2x<sup>2</sup>
 
-5.  Write 1,024 = 2<sup>10</sup> in logarithmic form.
+4. x<sup>4</sup>/x<sup>7</sup>
 
-6.  3 * 4<sup>3</sup>
+5. 8x<sup>5</sup>/4x<sup>2</sup>
 
-7.  4x<sup>3</sup> * 2x<sup>3</sup>
+6. Express 1,024 = 2<sup>10</sup> in logarithmic form.
 
-8.  2x<sup>3</sup> * 2x<sup>2</sup>
+7. log<sub>4</sub>(256)
 
-9.  x<sup>4</sup>/x<sup>7</sup>
+8. log<sub>5</sub>(0.0016)
 
-10. 8x<sup>5</sup>/4x<sup>2</sup>  
-
+9. log<sub>3</sub>(729)
+
+10. log<sub>2</sub>(0.015625)
+
 ## Stretch Challenges
+
+Solve the following problems:
 
 1. x<sup>2</sup>y<sup>5</sup>/xy<sup>4</sup>
 
@@ -362,5 +366,5 @@
 
 ## Resources
 
-* <a href="https://www.mathsisfun.com/algebra/logarithms.html" target="_blank">Intro to Logarithms</a>
 * <a href="http://www.purplemath.com/modules/expofcns.htm" target="_blank">Intro to Exponential Functions</a>
+* <a href="https://www.mathsisfun.com/algebra/logarithms.html" target="_blank">Intro to Logarithms</a>
