@@ -334,13 +334,13 @@ Solve the following problems:
 
 1. 3 * 4<sup>3</sup>
 
-2. 4x<sup>3</sup> * 2x<sup>3</sup>
+2. 4x<sup>3</sup> * 2x<sup>3</sup>
 
-3. 2x<sup>3</sup> * 2x<sup>2</sup>
+3. 2x<sup>3</sup> * 2x<sup>2</sup>
 
 4. x<sup>4</sup>/x<sup>7</sup>
 
-5. 8x<sup>5</sup>/4x<sup>2</sup>
+5. 8x<sup>5</sup>/4x<sup>2</sup>
 
 6. Express 1,024 = 2<sup>10</sup> in logarithmic form.
 
