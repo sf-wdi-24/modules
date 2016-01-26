@@ -1,6 +1,7 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Week 11 - Front-End Frameworks & Mobile
 
 * <a href="https://github.com/sf-wdi-24/lightning-talks" target="_blank">Lightning Talk Requirements</a>
+* <a href="https://github.com/sf-wdi-24/project-03" target="_blank">Project 3 Requirements</a>
 
 <table>
   <tr>
