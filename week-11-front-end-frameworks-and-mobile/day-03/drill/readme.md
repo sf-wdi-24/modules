@@ -2,13 +2,14 @@
 
 ## What is an algorithm?
 
-A set of instructions to find the solution to a problem.
+An algorithm is a set of instructions to find the solution to a problem.
 
-Note: we use code to implement algoritms, but algorithms don't have to be written in code.
+We write code to implement algorithms, but algorithms don't have to be written in code.
 
 ## What is efficiency?
 
-Time efficiency helps us predict how long it could take a particular algorithm to run. Space efficiency helps us predict how much memory a particular algorithm could use up.
+**Time efficiency** helps us predict how long it could take a particular algorithm to run. **Space efficiency** helps us predict how much memory a particular algorithm could use up.
+
 
 ## Why study algorithms and efficiency?
 
