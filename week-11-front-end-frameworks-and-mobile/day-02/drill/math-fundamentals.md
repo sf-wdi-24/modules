@@ -329,19 +329,26 @@
 </table>
 
 ## Logarithm and Exponential Practice
-```
+
+1. What is log<sub>4</sub>(256)?
+
+2. What is log<sub>5</sub>(0.0016)?
+
+3. What is log<sub>3</sub>(729)?
+
+4. What is log<sub>2</sub>(0.015625)?
+
+5. Write 1,024 = 2<sup>10</sup> in logarithmic form
+
+
+## Stretch Challenges
+
 1. Solve the equation (1/2)2x + 1 = 1
 
 2. Solve x ym = y x3 for m.
 
 3. Given: log8(5) = b. Express log4(10) in terms of b.
 
-
-8. Find constant A such that log3 x = A log5x
-for all x > 0.
-
-
-```
 ## Further Reading
 
 <a href="https://www.mathsisfun.com/algebra/logarithms.html" target="_blank">Intro to Logarithms</a>
