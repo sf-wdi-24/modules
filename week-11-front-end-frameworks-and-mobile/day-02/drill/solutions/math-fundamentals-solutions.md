@@ -8,11 +8,11 @@ Solve the following problems:
 
   **Answer:** 192
 
-2. `4x^3 * 2x^3`
+2. 4X<sup>3</sup> * 2x<sup>3</sup>
 
   **Answer:** 8x<sup>6</sup>
 
-3. `2x^3 * 2x^2`
+3. 2X<sup>3</sup> * 2x<sup>2</sup>
 
   **Answer:** 4x<sup>5</sup>
 
@@ -20,7 +20,7 @@ Solve the following problems:
 
   **Answer:** 1/x<sup>3</sup>
 
-5. `8x^5 / 4x^2`
+5. 8X<sup>5</sup>/4x<sup>2</sup>
 
   **Answer:** 3x<sup>3</sup>
 
