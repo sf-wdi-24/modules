@@ -109,10 +109,10 @@
     <td><strong>Exponent (Power, Index)</strong></td>
     <td>
       A number denoted by a small numeral placed above and to the right of a numerical quantity, which indicates the number of times that quantity is multiplied by itself. In the case of X^n, it is said that X is raised to the power of n. When a and b are non-zero real numbers and p and q are integers, the following rules of power apply:<br><br>
-      ap x aq = ap + q<br><br>
-      (ap)q = apq<br><br>
-      (a1/n)m = am/n<br><br>
-      a1/2 x b1/2 = (ab)1/2
+      a^p x a^q = a^(p + q)<br><br>
+      (ap)^q = ap^q<br><br>
+      (a1/n)^m = a^m/n<br><br>
+      a^1/2 * b^1/2 = (ab)^1/2
     </td>
   </tr>
   <tr>
