@@ -10,81 +10,84 @@ We write code to implement algorithms, but algorithms don't have to be written i
 
 **Time efficiency** helps us predict how long it could take a particular algorithm to run. **Space efficiency** helps us predict how much memory a particular algorithm could use up.
 
-
 ## Why study algorithms and efficiency?
 
-* Understanding algorithms let us reuse knowledge from the field.
+* Understanding existing algorithms lets us reuse knowledge from the field.
 * Better-performing algorithms can enhance the user experience.
 * Better-performing algorithms can save companies money.
 * Algorithms and algorithm analysis are shared languages developers use to talk programs (especially in INTERVIEWS!).
 
-## Big-O notation
+## Big-O Notation
 
 1. Ask yourself: In the worst case scenario, how many calculations does your algorithm do?
 2. Phrase the answer in terms of the size of the input.  
-3. Ignore constant multiples or smaller things added on.
+3. Ignore constant multiples or smaller calculations added on.
 
-We will consider all mathematical operations constant time or **O(1)** operations: `+`, `-`, `*`, `/`, and `%`.
+Consider all mathematical operations (`+`, `-`, `*`, `/`, and `%`) constant time, or **O(1)**, operations.
 
 ```js
-function add(a,b){
-    return a+b;
+function add(a, b) {
+  return a + b;
 }
 ```
 
-Functions containing for loops that go through the whole input are generally implementing at least linear time or **O(n)** algorithms.
+Programs containing `for` loops that go through the whole input array are generally implementing at least linear time, or **O(n)**, algorithms.
 
 ```js
-function addAll(numArray){
-    var sum = 1;
-    for (var i=0; i<numArray.length; i++){
-        sum +=  numArray[i];
+function addAll(numArray) {
+  var sum = 1;
+  for (var i = 0; i < numArray.length; i++) {
+    sum += numArray[i];
+  }
+  return sum;
+}
+```
+
+Logarithm terms in Big-O notation (like `O(log(n)`) usually come from recursive functions that divide the problem into smaller sub-problems.
+
+TODO: Add example of `O(log(n))`
+
+Almost everything else is composed of combinations of those. For example, if a `for` loop has more complex operations inside it, time complexity is usually higher.
+
+The nested `for` loop below has a time complexity of `O(n^2)`.
+
+```js
+function addAllArrays(arrayOfArrays) {
+  var sum = 1;
+  var oneArray;
+  for (var i = 0; i < arrayOfArrays.length; i++) {
+    oneArray = arrayOfArrays[i];
+    for (var j = 0; j < oneArray.length; j++) {
+      sum +=  numArray[j];
     }
-    return sum;
+  }
+  return sum;
 }
 ```
 
-Logarithm terms in Big O notation (like O(log(n)) usually come from recursive functions that divide the problem into smaller subproblems. We'll see more about recursive algorithms as we go.
+### Common Orders of Complexity
 
-Almost everything else is composed of combinations of those. For example, if a for loop has more complex operations inside it, time complexity is usually higher.
+| Notation | Name |
+| :--- | :--- |
+| `O(1)` | constant |
+| `O(log(n))` | logarithmic |
+| `O(n)` | linear |
+| `O(n(log(n))` | linearithmic |
+| `O(n^2)` | quadratic |
+| `O(n^c)`, `for c > 1` | polynomial |
+| `O(c^n)`, `for c > 1` | exponential |
 
-```js
-function addAllArrays(arrayOfArrays){
-    var sum = 1;
-    var oneArray;
-    for (var i=0; i<arrayOfArrays.length; i++){
-        oneArray = arrayOfArrays[i];
-        for (var j=0; j<oneArray.length; j++){
-            sum +=  numArray[j];
-        }
-    }
-    return sum;
-}
-```
 
-### Names given to common orders of complexity.
-
-| notation | name |
-| :-----: | :------: |
-| O(1) | constant |
-| O(log(n)) | logarithmic |
-| O(n<sup>c</sup>), for c < 1 |  |
-| O(n) | linear |
-| O(n(log(n)) | linearithmic |
-| O(n<sup>2</sup>) | quadratic |
-| O(n<sup>c</sup>), for c > 1 | polynomial |
-| O(c<sup>n</sup>), for c > 1 | exponential |
-
-Every row listed in this table is more complex (takes more time or space) than the rows above it.  That means, if we decide an algorithm takes polynomial time to do one set of operations and then moves on and needs a linear amount of work to finish up, we can just say it's a polynomial algorithm for the purposes of Big O notation.
-
+Every row listed in this table is more complex (takes more time or space) than the rows above it.  That means, if we decide an algorithm takes polynomial time to do one set of operations and then moves on and needs a linear amount of work to finish up, we can just say it's a polynomial algorithm for the purposes of Big-O notation.
 
 Graph: how the number of operations (time) grows with the number of input    
-elements for various orders of complexity   
+elements for various orders of complexity  
+
 ![time complexity graph from daveperrett.com](http://www.daveperrett.com/images/articles/2010-12-07-comp-sci-101-big-o-notation/Time_Complexity.png)
 
 ### Bonus: Related Notations
 
-Big O is the most commonly-used notations for comparing functions in computer science, but there are others:
+Big-O is the most commonly-used notations for comparing functions in computer science, but there are others:
 
 | notation | analogy |
 | :----: | :----: |
