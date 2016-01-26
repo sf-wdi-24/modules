@@ -11,13 +11,13 @@
 
 ## Questions and Answers App
 
-You are working for a company that wants to prototype an app that mimics the capability of Stack Overflow, Quora or <a href="http://gaqa.herokuapp.com/" target="_blank">this app</a>.  Your challenge is to create this app connecting an Angular front end with either a Rails back end or a MEN back end.  This is your chance to put all of the pieces together.  Be resourceful and persistent.  Practice makes perfect!!
+You are working for a company that wants to prototype an app that mimics the capability of Stack Overflow, Quora or <a href="http://gaqa.herokuapp.com" target="_blank">this app</a>.  Your challenge is to create this app connecting an Angular front end with either a Rails back end or a MEN back end.  This is your chance to put all of the pieces together.  Be resourceful and persistent.  Practice makes perfect!!
 
 **If the app you built for the weekend lab was a MEAN Stack app, then today you should use Rails and Angular. If the app you created over the weekend was built with Rails and Angular, today you should build a MEAN Stack app. If you created an app using Parse and/or Dropbox, you have your choice of either stack.**
 
 ## Project Setup
 
-* Fork and clone <a href="https://github.com/sf-wdi-24/angularjs-lab" target="_blank">this</a> repo.  When you are finished creating your app submit a pull request.
+* Fork and clone <a href="https://github.com/sf-wdi-24/angularjs-lab" target="_blank">this</a> repo. When you're finished creating your app, submit a pull request.
 
 *  Use <a href="https://github.com/sf-wdi-24/modules/tree/master/week-10-angular/day-04/module-01" target="_blank">this tutorial</a> as a guide on how to connect your front-end to your back-end.
 
@@ -37,7 +37,7 @@ You are working for a company that wants to prototype an app that mimics the cap
 
   ```js
   app.service('Answer', ['$resource', function ($resource) {
-    return $resource('/api/questions/:questionId/answers/:id', {questionId: '@_id', id: '@_id'}, {
+    return $resource('/api/questions/:questionId/answers/:id', {questionId: '@questionId', id: '@_id'}, {
       update: {
         method: 'PUT'
       }

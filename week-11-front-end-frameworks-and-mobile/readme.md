@@ -44,7 +44,7 @@
   <tr>
     <td>HW</td>
     <td>
-      Finish Angular Lab<br><br>
+      Finish <a href="./day-01/module-02">Angular Lab</a><br><br>
       Work on <a href="https://github.com/sf-wdi-24/lightning-talks" target="_blank">Lightning Talk</a>
     </td>
     <td>Finish Preparing <a href="https://github.com/sf-wdi-24/lightning-talks" target="_blank">Lightning Talk</a></td>
