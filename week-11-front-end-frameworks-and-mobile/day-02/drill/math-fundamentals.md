@@ -109,9 +109,9 @@
     <td><strong>Exponent (Power, Index)</strong></td>
     <td>
       A number denoted by a small numeral placed above and to the right of a numerical quantity, which indicates the number of times that quantity is multiplied by itself. In the case of X^n, it is said that X is raised to the power of n. When a and b are non-zero real numbers and p and q are integers, the following rules of power apply:<br><br>
-      a^p x a^q = a^(p + q)<br><br>
-      (ap)^q = ap^q<br><br>
-      (a1/n)^m = a^m/n<br><br>
+      a^p x a^q = a^(p + q)<br>
+      (ap)^q = ap^q<br>
+      (a1/n)^m = a^m/n<br>
       a^1/2 * b^1/2 = (ab)^1/2
     </td>
   </tr>
@@ -199,10 +199,10 @@
     <td><strong>Logarithm</strong></td>
     <td>
       The logarithm of a number N to a given base b is the power to which the base must be raised to produce the number N. Written as logb N. Naturally, logb bx = x. In any base, the following rules apply:<br><br>
-      log (ab) = log a + log b<br><br>
-      log (a/b) = log a - log b<br><br>
-      log (1/a) = -log a<br><br>
-      log ab = b log a<br><br>
+      log (ab) = log a + log b<br>
+      log (a/b) = log a - log b<br>
+      log (1/a) = -log a<br>
+      log ab = b log a<br>
       log 1 = 0 and log 0 is undefined
     </td>
   </tr>
