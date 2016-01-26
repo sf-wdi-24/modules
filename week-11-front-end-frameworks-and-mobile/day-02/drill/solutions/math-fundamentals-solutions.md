@@ -26,24 +26,40 @@
 
    In 1,024 = 2<sup>10</sup>, the base number is 2 and the exponent is 10.
 
+**6. What is 3 * 4<sup>3</sup> ?**
+
+**Answer:** 192
+
+**7. What is 4x<sup>3</sup> * 2x<sup>3</sup> ?**
+
+**Answer:** 8x<sup>6</sup>
+
+**8. What is 2x<sup>3</sup> * 2x<sup>2</sup> ?**
+
+**Answer:** 4x<sup>5</sup>
+
+**9. What is x<sup>4</sup>/x<sup>7</sup> ?**
+
+**Answer:** 1/x<sup>3</sup>
+
+**10. What is 8x<sup>5</sup>/4x<sup>2</sup> ?**
+
+**Answer:** 3x<sup>3</sup>
+
 ## Stretch Challenges
 
-**1.Rewrite equation as (1/2)2x + 1 = (1/2)0**
-```
-   Leads to 2x + 1 = 0
+**1. x<sup>2</sup>y<sup>5</sup>/xy<sup>4</sup>**
 
-   Solve for x: x = -1/2
-```
-**2. Divide all terms by x y and rewrite equation as: ym -    1 = x2**
-```
-   Take ln of both sides (m - 1) ln y = 2 ln x
+**Answer:** xy
 
-   Solve for m: m = 1 + 2 ln(x) / ln(y)
-```
-**3. Use log rule of product: log4(10) = log4(2) + log4(5)**
-```
-   log4(2) = log4(41/2) = 1/2
+**2. (5x<sup>3</sup>y/20xy<sup>5</sup>)<sup>4</sup>**
 
-   Use change of base formula to write: log4(5) = log8(5) / log8(4) = b / (2/3) , since log8(4) = 2/3
-   log4(10) = log4(2) + log4(5) = (1 + 3b) / 2
-```
+**Answer:** x<sup>8</sup>/256y<sup>16</sup>
+
+**3. 5x<sup>2</sup>y(2x<sup>4</sup>y<sup>-3</sup>)**
+
+**Answer:** 10x<sup>6</sup>/y<sup>2</sup>
+
+**4. 3x<sup>3</sup>y<sup>-3</sup>/12<sup>6</sup>y<sup>3</sup>**
+
+**Answer:** 1/4x<sup>4</sup>y<sup>6</sup>

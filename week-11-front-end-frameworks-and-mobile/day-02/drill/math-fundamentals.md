@@ -330,24 +330,35 @@
 
 ## Logarithm and Exponential Practice
 
-1. What is log<sub>4</sub>(256)?
+1.  What is log<sub>4</sub>(256)?
 
-2. What is log<sub>5</sub>(0.0016)?
+2.  What is log<sub>5</sub>(0.0016)?
 
-3. What is log<sub>3</sub>(729)?
+3.  What is log<sub>3</sub>(729)?
 
-4. What is log<sub>2</sub>(0.015625)?
+4.  What is log<sub>2</sub>(0.015625)?
 
-5. Write 1,024 = 2<sup>10</sup> in logarithmic form
+5.  Write 1,024 = 2<sup>10</sup> in logarithmic form.
 
+6.  3 * 4<sup>3</sup>
 
+7.  4x<sup>3</sup> * 2x<sup>3</sup>
+
+8.  2x<sup>3</sup> * 2x<sup>2</sup>
+
+9.  x<sup>4</sup>/x<sup>7</sup>
+
+10. 8x<sup>5</sup>/4x<sup>2</sup>  
+
 ## Stretch Challenges
 
-1. Solve the equation (1/2)2x + 1 = 1
+1. x<sup>2</sup>y<sup>5</sup>/xy<sup>4</sup>
 
-2. Solve x ym = y x3 for m.
+2. (5x<sup>3</sup>y/20xy<sup>5</sup>)<sup>4</sup>
 
-3. Given: log8(5) = b. Express log4(10) in terms of b.
+3. 5x<sup>2</sup>y(2x<sup>4</sup>y<sup>-3</sup>)
+
+4. 3x<sup>3</sup>y<sup>-3</sup>/12<sup>6</sup>y<sup>3</sup>
 
 ## Further Reading
 
