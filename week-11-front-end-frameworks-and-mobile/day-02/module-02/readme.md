@@ -66,7 +66,9 @@ This lets our playground or application know that we are using the Swift languag
   ```
 
 
-For the last hour-ish, give them the option to work through an existing Swift tutorial or work on their lightning talk
+## Demo
+
+We'll be walking through a simple set up of a 'Hello World' app.  During the course of this walk through we'll become familiar with the Xcode environment for applications.
 
 ## Challenges
 
