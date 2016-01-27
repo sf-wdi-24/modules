@@ -1,6 +1,8 @@
-# <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Mock Interview Schedule
+## Mock Interview Schedule
+
+#### Monday, February 1
 
 | Time | Ben | Cameron | Erik | Zoe |
 | :--- | :--- | :--- | :--- | :--- |
-| 9:17 |  |  |  |  |
-| 9:47 |  |  |  |  |
+| 9:17 | Michael | Adam | Trung | Victoria |
+| 9:47 | Carlos | Dave | John | Stanley |
