@@ -29,7 +29,10 @@
       Project 3<br><br>
       <strong>10:30am</strong> - Deadline for Project 3 Approvals
     </td>
-    <td>Project 3</td>
+    <td>
+      Project 3<br><br>
+      <strong>10:30am</strong> - Project Group Stand-Up
+    </td>
   </tr>
   <tr>
     <td>Module2</td>
@@ -39,7 +42,10 @@
       Intro Project 3<br><br>
       Start Project 3 Approvals
     </td>
-    <td>Project 3</td>
+    <td>
+      Project 3<br><br>
+      <strong>2-4pm</strong> - 1:1s
+    </td>
     <td>Project 3</td>
   </tr>
   <tr>
