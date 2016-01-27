@@ -19,7 +19,7 @@
     </td>
     <td>
       Project 3<br><br>
-      <a href="./day-02/drill">Mock Interviews</a>
+      <a href="./day-01/drill">Mock Interviews</a>
     </td>
     <td>Project 3</td>
     <td><strong>10:00am</strong> - Project 3 Presentations</td>
