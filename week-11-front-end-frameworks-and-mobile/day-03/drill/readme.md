@@ -43,9 +43,19 @@ function addAll(numArray) {
 }
 ```
 
-Logarithm terms in Big-O notation (like `O(log(n)`) usually come from recursive functions that divide the problem into smaller sub-problems.
+Logarithm terms in Big-O notation (like `O(log(n)`) usually come from recursive functions that divide the problem into smaller sub-problems. The Binary Search algorithm is a good example of `O(log(n)` complexity, because each iteration only checks only half of the array.
 
-TODO: Add example of `O(log(n))`
+```js
+function binarySearch(array, target, low, high) {
+  // calculate low, high, mid
+  // return false if low > high (target not found)
+  // if target === array[mid], return mid
+  // if target < array[mid], high = mid - 1
+  // if target > array[mid], low = mid + 1
+
+  binarySearch(array, target, low, high)
+}
+```
 
 Almost everything else is composed of combinations of those. For example, if a `for` loop has more complex operations inside it, time complexity is usually higher.
 
